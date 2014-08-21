@@ -1,0 +1,2000 @@
+1/tối/N 2/nay/P 3/có/V 4/phim/N 5/gì/P 6/hay/C 
+4
+6
+
+1/có/V 2/phim/N 3/gì/P 4/hay/C 5/tối/N 6/nay/P 
+2
+4
+
+1/tối/N 2/nay/P 3/các/L 4/rạp/N 5/chiếu_phim/V 6/gì/P 
+5
+
+1/rạp/V 2/chiếu_phim/N 3/gì/P 4/tối/N 5/nay/P 
+2
+
+1/phim/N 2/gì/P 3/tối/N 4/nay/P 5/chiếu/V 6/rạp/N 
+1
+
+1/phim/N 2/gì/P 3/chiếu/V 4/rạp/N 5/tối/N 6/nay/P 
+1
+
+1/tối/N 2/nay/P 3/có/V 4/phim/N 5/gì/P 6/chiếu/V 7/rạp/N 
+4
+
+1/tối/N 2/nay/P 3/rạp/V 4/chiếu_phim/N 5/gì/P 
+4
+
+1/rạp/N 2/nào/P 3/còn/V 4/vé/N 5/phim/N 6/vệ_binh/N 7/dải/N 8/ngân_hà/N 9/tối/N 10/nay/P 
+1
+4 5 6 7 8
+
+1/tối/N 2/nay/P 3/rạp/N 4/nào/P 5/còn/V 6/vé/N 7/xem/V 8/phim/N 9/vệ_binh/N 10/dải/N 11/ngân_hà/N 
+3
+6 8 9 10 11
+
+1/tối/N 2/nay/P 3/rạp/N 4/nào/P 5/còn/V 6/vé/N 7/phim/N 8/vệ_binh/N 9/dải/N 10/ngân_hà/N 
+3
+6 7 8 9 10
+
+1/rạp/N 2/nào/P 3/còn/V 4/vé/N 5/xem/V 6/phim/N 7/vệ_binh/N 8/dải/N 9/ngân_hà/N 10/tối/N 11/nay/P 
+1
+4 6 7 8 9
+
+1/rạp/N 2/nào/P 3/còn/V 4/vé/N 5/phim/N 6/vệ_binh/N 7/dải/N 8/ngân_hà/N 9/tối/N 10/nay/P 
+1 
+4 5 6 7 8
+
+1/lịch/N 2/chiếu_phim/N 3/tối/N 4/nay/P 5/tại/E 6/rạp/N 7/quốc_gia/N 8/thế_nào/P 
+1 2
+6 7
+
+1/tối/N 2/nay/P 3/lịch/N 4/chiếu_phim/V 5/tại/E 6/rạp/N 7/quốc_gia/N 8/thế_nào/P 
+3 4
+6 7
+
+1/lịch/N 2/chiếu_phim/V 3/tại/E 4/rạp/N 5/quốc_gia/N 6/tối/N 7/nay/P 8/thế_nào/P
+1 2
+4 5
+ 
+1/lịch/N 2/chiếu_phim/V 3/tại/E 4/rạp/N 5/quốc_gia/N 6/thế_nào/P 7/tối/N 8/nay/P 
+1 2
+4 5
+
+1/cho/E 2/tôi/P 3/biết/V 4/lịch/N 5/chiếu_phim/N 6/tối/N 7/nay/P 8/tại/E 9/rạp/N 10/quốc_gia/N 
+4 5
+9 10
+
+1/cho/E 2/mình/P 3/biết/V 4/lịch/N 5/chiếu_phim/N 6/tối/N 7/nay/P 8/tại/E 9/rạp/N 10/quốc_gia/N 
+4 5
+9 10
+
+1/cho/E 2/tôi/P 3/biết/V 4/lịch/N 5/chiếu_phim/V 6/tại/E 7/rạp/N 8/quốc_gia/N 9/vào/E 10/tối/N 11/nay/P 
+4 5
+7 8
+
+1/cho/E 2/mình/P 3/biết/V 4/lịch/N 5/chiếu_phim/V 6/tại/E 7/rạp/N 8/quốc_gia/N 9/vào/E 10/tối/N 11/nay/P 
+4 5
+7 8
+
+1/lịch/N 2/chiếu_phim/N 3/tối/N 4/nay/P 5/tại/E 6/rạp/N 7/platinum/V 8/thế_nào/P 
+1 2
+6 7
+
+1/cho/E 2/tôi/P 3/biết/V 4/lịch/N 5/chiếu_phim/V 6/tại/E 7/rạp/N 8/platinum/V 9/vào/E 10/tối/N 11/nay/P 
+4 5
+7 8
+
+1/cho/E 2/mình/P 3/biết/V 4/lịch/N 5/chiếu_phim/V 6/tại/E 7/rạp/N 8/platinum/V 9/vào/E 10/tối/N 11/nay/P 
+4 5
+7 8
+
+1/cho/E 2/tôi/P 3/biết/V 4/lịch/N 5/chiếu_phim/V 6/tại/E 7/rạp/N 8/platinum/N 9/tối/N 10/nay/P 
+4 5
+7 8
+
+1/cho/E 2/mình/P 3/biết/V 4/lịch/N 5/chiếu_phim/V 6/tại/E 7/rạp/N 8/platinum/N 9/tối/N 10/nay/P 
+4 5
+7 8
+
+1/tối/N 2/nay/P 3/tại/E 4/rạp/N 5/quốc_gia/N 6/có/V 7/phim/N 8/gì/P 
+7
+4 5
+
+1/rạp/N 2/quốc_gia/N 3/tối/N 4/nay/P 5/chiếu_phim/V 6/gì/P 
+5
+1 2
+
+1/tối/N 2/nay/P 3/tại/E 4/rạp/N 5/quốc_gia/N 6/chiếu_phim/V 7/gì/P 
+6
+4 5
+
+1/tối/N 2/nay/P 3/rạp/V 4/quốc_gia/N 5/chiếu_phim/N 6/gì/P 
+5
+3 4
+
+1/rạp/N 2/quốc_gia/N 3/tối/N 4/nay/P 5/có/V 6/phim/N 7/gì/P 
+6
+1 2
+
+1/có/V 2/những/L 3/phim/N 4/gì/P 5/chiếu/V 6/tại/E 7/rạp/N 8/quốc_gia/N 9/tối/N 10/nay/P 
+3
+7 8
+
+1/hôm_nay/N 2/rạp/V 3/quốc_gia/N 4/chiếu_phim/V 5/một_triệu/V 6/kiểu/N 7/chết/V 8/miền/N 9/viễn/V 10/tây/N 11/vào/E 12/những/L 13/khung/N 14/giờ/N 15/nào/P 
+14
+2 3, 5 6 7 8 9 10
+
+1/rạp/N 2/quốc_gia/N 3/chiếu_phim/V 4/nhóc/N 5/nicolas/N 6/2/M 7/vào/E 8/những/L 9/khung/N 10/giờ/N 11/nào/P 
+10
+1 2, 4 5 6
+
+1/tối/N 2/nay/P 3/rạp/V 4/platinum/N 5/chiếu_phim/V 6/nhóc/N 7/nicolas/N 8/2/M 9/những/L 10/khung/N 11/giờ/N 12/nào/P 
+11
+3 4, 6 7 8
+
+1/tối/N 2/nay/P 3/rạp/V 4/platinum/N 5/chiếu_phim/V 6/nhóc/N 7/nicolas/N 8/2/M 9/vào/E 10/những/L 11/khung/N 12/giờ/N 13/nào/P 
+12
+3 4, 6 7 8
+
+1/rạp/V 2/platinum/N 3/chiếu_phim/V 4/nhóc/N 5/nicolas/N 6/2/M 7/những/L 8/khung/N 9/giờ/N 10/nào/P 11/tối/N 12/nay/P 
+9
+1 2, 4 5 6
+
+1/tối/N 2/nay/P 3/rạp/V 4/platinum/N 5/chiếu_phim/V 6/nhóc/N 7/nicolas/N 8/2/M 9/vào/E 10/những/L 11/khung/N 12/giờ/N 13/nào/P 14/tối/N 15/nay/P 
+12
+3 4, 6 7 8
+
+1/vé/N 2/xem/V 3/phim/N 4/một_triệu/V 5/kiểu/N 6/chết/V 7/miền/N 8/viễn/N 9/tây/N 10/tại/E 11/rạp/N 12/quốc_gia/N 13/lúc/N 14/12/M 15/giờ/Nu 16/còn/R 17/không/R 
+1
+3 4 5 6 7 8 9, 11 12
+
+1/đặt/V 2/vé/N 3/phim/N 4/này/P 5/tại/E 6/rạp/N 7/quốc_gia/N 8/lúc/N 9/12/M 10/giờ/Nu 11/có/V 12/được/R 13/không/R 
+2
+3 4, 6 7
+
+1/đặt/V 2/vé/N 3/phim/N 4/này/P 5/tại/E 6/rạp/N 7/quốc_gia/N 8/lúc/N 9/12/M 10/giờ/Nu 11/được/V 12/không/R 
+2
+3 4, 6 7
+
+1/tối/N 2/muốn/V 3/đặt/V 4/vé/N 5/phim/N 6/này/P 7/tại/E 8/rạp/N 9/quốc_gia/N 10/lúc/N 11/12/M 12/giờ/Nu 13/có/V 14/được/R 15/không/R 
+4
+5 6, 8 9
+
+1/tôi/P 2/muốn/V 3/đặt/V 4/vé/N 5/phim/N 6/này/P 7/tại/E 8/rạp/N 9/quốc_gia/N 10/lúc/N 11/12/M 12/giờ/Nu 13/được/V 14/không/R 
+4
+5 6, 8 9
+
+1/vé/N 2/xem/V 3/phim/N 4/một_triệu/V 5/kiểu/N 6/chết/V 7/miền/N 8/viễn/V 9/tây/N 10/lúc/N 11/12/M 12/giờ/Nu 13/tại/E 14/rạp/N 15/quốc_gia/N 16/còn/R 17/không/R 
+1
+3 4 5 6 7 8 9, 14 15
+
+1/đặt/V 2/vé/N 3/phim/N 4/này/P 5/lúc/N 6/12/M 7/giờ/Nu 8/tại/E 9/rạp/N 10/quốc_gia/N 11/có/V 12/được/V 13/không/R 
+2
+3 4, 9 10
+
+1/đặt/V 2/vé/N 3/phim/N 4/này/P 5/lúc/N 6/12/M 7/giờ/Nu 8/tại/E 9/rạp/N 10/quốc_gia/N 11/được/V 12/không/R 
+2
+3 4, 9 10
+
+1/tối/N 2/muốn/V 3/đặt/V 4/vé/N 5/phim/N 6/này/P 7/lúc/N 8/12/M 9/giờ/Nu 10/tại/E 11/rạp/N 12/quốc_gia/N 13/có/V 14/được/V 15/không/R 
+4
+5 6, 11 12
+
+1/tôi/P 2/muốn/V 3/đặt/V 4/vé/N 5/phim/N 6/này/P 7/lúc/N 8/12/M 9/giờ/Nu 10/tại/E 11/rạp/N 12/quốc_gia/N 13/được/V 14/không/R 
+4
+5 6, 11 12
+
+1/vé/N 2/xem/V 3/phim/N 4/một_triệu/V 5/kiểu/N 6/chết/V 7/miền/N 8/viễn/N 9/tây/N 10/tại/E 11/rạp/N 12/quốc_gia/N 13/lúc/N 14/12/M 15/giờ/Nu 16/giá/N 17/bao_nhiêu/P 
+1
+3 4 5 6 7 8 9, 11 12
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/thuộc/V 9/thể_loại/N 10/nào/P 
+9
+1 2 3 4 5 6 7
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/thuộc/V 9/thể_loại/N 10/phim/N 11/gì/P 
+9
+1 2 3 4 5 6 7
+
+1/phim/N 2/này/P 3/thuộc/V 4/thể_loại/N 5/nào/P 
+4
+1 2
+
+1/phim/N 2/đó/P 3/thuộc/V 4/thể_loại/N 5/nào/P 
+4
+1 2
+
+1/phim/N 2/này/P 3/thuộc/V 4/thể_loại/N 5/phim/N 6/gì/P
+4
+1 2
+ 
+1/phim/N 2/đó/P 3/thuộc/V 4/thể_loại/N 5/phim/N 6/gì/P 
+4
+1 2
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/có/V 9/hay/A 10/không/R 
+9 10
+1 2 3 4 5 6 7
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/được/V 9/đánh_giá/V 10/thế_nào/P 
+9
+1 2 3 4 5 6 7
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/được/V 9/đánh_giá/V 10/cao/A 11/không/R 
+9
+1 2 3 4 5 6 7
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/được/V 9/đánh_giá/V 10/tốt/A 11/không/R 
+9
+1 2 3 4 5 6 7
+
+1/phim/N 2/này/P 3/có/V 4/hay/C 5/không/R 
+4
+1 2
+
+1/phim/N 2/đó/P 3/có/V 4/hay/R 5/không/R 
+4
+1 2
+
+1/phim/N 2/này/P 3/được/V 4/đánh_giá/V 5/thế_nào/P 
+4
+1 2
+
+1/phim/N 2/đó/P 3/được/V 4/đánh_giá/V 5/thế_nào/P 
+4
+1 2
+
+1/phim/N 2/này/P 3/được/R 4/đánh_giá/V 5/cao/A 6/không/R 
+4
+1 2
+
+1/phim/N 2/đó/P 3/được/R 4/đánh_giá/V 5/cao/A 6/không/R
+4
+1 2
+
+1/phim/N 2/này/P 3/được/R 4/đánh_giá/V 5/tốt/A 6/không/R 
+4
+1 2
+
+1/phim/N 2/này/P 3/được/R 4/đánh_giá/V 5/có/V 6/tốt/A 7/không/R 
+4
+1 2
+
+1/phim/N 2/đó/P 3/được/R 4/đánh_giá/V 5/tốt/A 6/không/R 
+4
+1 2
+
+1/phim/N 2/đó/P 3/được/R 4/đánh_giá/V 5/có/V 6/tốt/A 7/không/R 
+4
+1 2
+
+1/phim/N 2/này/P 3/hay/C 4/không/R
+3
+1 2
+
+1/phim/N 2/đó/P 3/hay/R 4/không/R 
+3
+1 2
+
+1/tôi/P 2/muốn/V 3/biết/V 4/nội_dung/N 5/tóm_tắt/V 6/của/E 7/phim/N 8/một_triệu/V 9/kiểu/N 10/chết/V 11/miền/N 12/viễn/V 13/tây/N 
+4 5
+7 8 9 10 11 12 13
+
+1/mình/P 2/muốn/V 3/biết/V 4/nội_dung/N 5/tóm_tắt/V 6/của/E 7/phim/N 8/một_triệu/V 9/kiểu/N 10/chết/V 11/miền/N 12/viễn/V 13/tây/N 
+4 5
+7 8 9 10 11 12 13
+
+1/cho/E 2/tôi/P 3/biết/V 4/nội_dung/N 5/tóm_tắt/V 6/của/E 7/phim/N 8/một_triệu/V 9/kiểu/N 10/chết/V 11/miền/N 12/viễn/V 13/tây/N 
+4 5
+7 8 9 10 11 12 13
+
+1/cho/E 2/mình/P 3/biết/V 4/nội_dung/N 5/tóm_tắt/V 6/của/E 7/phim/N 8/một_triệu/V 9/kiểu/N 10/chết/V 11/miền/N 12/viễn/V 13/tây/N 
+4 5
+7 8 9 10 11 12 13
+
+1/tóm_tắt/V 2/nội_dung/N 3/phim/N 4/một_triệu/V 5/kiểu/N 6/chết/V 7/miền/N 8/viễn/V 9/tây/N 
+2
+3 4 5 6 7 8 9
+
+1/nội_dung/N 2/phim/N 3/một_triệu/V 4/kiểu/N 5/chết/V 6/miền/N 7/viễn/V 8/tây/N 9/thế_nào/P 
+1
+3 4 5 6 7 8
+
+1/nội_dung/N 2/tóm_tắt/V 3/phim/N 4/một_triệu/V 5/kiểu/N 6/chết/V 7/miền/N 8/viễn/N 9/tây/N 10/là/V 11/gì/P 
+1 2
+3 4 5 6 7 8 9
+
+1/nội_dung/N 2/tóm_tắt/V 3/phim/N 4/một_triệu/V 5/kiểu/N 6/chết/V 7/miền/N 8/viễn/V 9/tây/N 10/thế_nào/P 
+1 2
+3 4 5 6 7 8 9
+
+1/nội_dung/N 2/tóm_tắt/V 3/phim/N 4/một_triệu/V 5/kiểu/N 6/chết/V 7/miền/N 8/viễn/V 9/tây/N 10/ra_sao/X 
+1 2
+3 4 5 6 7 8 9
+
+1/cho/E 2/tôi/P 3/biết/V 4/nội_dung/N 5/phim/N 6/một_triệu/V 7/kiểu/N 8/chết/V 9/miền/N 10/viễn/V 11/tây/N 
+4
+5 6 7 8 9 10 11
+
+1/cho/E 2/mình/P 3/biết/V 4/nội_dung/N 5/phim/N 6/một_triệu/V 7/kiểu/N 8/chết/V 9/miền/N 10/viễn/V 11/tây/N 
+4
+5 6 7 8 9 10 11
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/có/V 9/sự/Nc 10/góp_mặt/V 11/của/E 12/những/L 13/diễn_viên/N 14/nào/P 
+13
+1 2 3 4 5 6 7
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/có/V 9/những/L 10/diễn_viên/N 11/nào/P 
+10
+1 2 3 4 5 6 7
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/có/V 9/sự/Nc 10/góp_mặt/V 11/của/E 12/những/L 13/diễn_viên/N 14/nổi_tiếng/A 15/nào/P 
+13
+14, 1 2 3 4 5 6 7
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/có/V 9/những/L 10/diễn_viên/N 11/nổi_tiếng/A 12/nào/P 
+10
+11, 1 2 3 4 5 6 7
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/có/V 9/sự/Nc 10/góp_mặt/V 11/của/E 12/những/L 13/sao/N 14/nào/P
+13
+1 2 3 4 5 6 7
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/có/V 9/những/L 10/sao/N 11/nào/P 
+10
+1 2 3 4 5 6 7
+
+1/tôi/P 2/muốn/V 3/biết/V 4/nội_dung/N 5/tóm_tắt/V 6/của/E 7/phim/N 8/này/P 
+4 5
+7 8
+
+1/mình/P 2/muốn/V 3/biết/V 4/nội_dung/N 5/tóm_tắt/V 6/của/E 7/phim/N 8/này/P 
+4 5
+7 8
+
+1/cho/E 2/tôi/P 3/biết/V 4/nội_dung/N 5/tóm_tắt/V 6/của/E 7/phim/N 8/này/P 
+4 5
+7 8
+
+1/cho/E 2/mình/P 3/biết/V 4/nội_dung/N 5/tóm_tắt/V 6/của/E 7/phim/N 8/này/P 
+4 5
+7 8
+
+1/tóm_tắt/V 2/nội_dung/N 3/phim/N 4/này/P 
+2
+3 4
+
+1/nội_dung/N 2/phim/N 3/này/P 4/thế_nào/X 
+1
+2 3
+
+1/nội_dung/N 2/tóm_tắt/V 3/phim/N 4/này/P 5/là/V 6/gì/P 
+1 2
+3 4
+
+1/nội_dung/N 2/tóm_tắt/V 3/phim/N 4/này/P 5/thế_nào/X 
+1 2
+3 4
+
+1/nội_dung/N 2/tóm_tắt/V 3/phim/N 4/này/P 5/ra_sao/X 
+1 2
+3 4
+
+1/cho/E 2/tôi/P 3/biết/V 4/nội_dung/N 5/phim/N 6/này/P 
+4
+5 6
+
+1/cho/E 2/mình/P 3/biết/V 4/nội_dung/N 5/phim/N 6/này/P 
+4
+5 6
+
+1/phim/N 2/này/P 3/có/V 4/sự/Nc 5/góp_mặt/V 6/của/E 7/những/L 8/diễn_viên/N 9/nào/P 
+8
+1 2
+
+1/phim/N 2/này/P 3/có/V 4/những/L 5/diễn_viên/N 6/nào/P 
+5
+1 2
+
+1/phim/N 2/này/P 3/có/V 4/sự/Nc 5/góp_mặt/V 6/của/E 7/những/L 8/diễn_viên/N 9/nổi_tiếng/A 10/nào/P 
+8
+9, 1 2
+
+1/phim/N 2/này/P 3/có/V 4/những/L 5/diễn_viên/N 6/nổi_tiếng/A 7/nào/P 
+5
+6, 1 2
+
+1/phim/N 2/này/P 3/có/V 4/sự/Nc 5/góp_mặt/V 6/của/E 7/những/L 8/sao/N 9/nào/P 
+8
+1 2
+
+1/phim/N 2/này/P 3/có/V 4/những/L 5/sao/N 6/nào/P 
+5
+1 2
+
+1/tôi/P 2/muốn/V 3/biết/V 4/nội_dung/N 5/tóm_tắt/V 6/của/E 7/phim/N 8/đó/P 
+4 5
+7 8
+
+1/mình/P 2/muốn/V 3/biết/V 4/nội_dung/N 5/tóm_tắt/V 6/của/E 7/phim/N 8/đó/P 
+4 5
+7 8
+
+1/cho/E 2/tôi/P 3/biết/V 4/nội_dung/N 5/tóm_tắt/V 6/của/E 7/phim/N 8/đó/P 
+4 5
+7 8
+
+1/cho/E 2/mình/P 3/biết/V 4/nội_dung/N 5/tóm_tắt/V 6/của/E 7/phim/N 8/đó/P 
+4 5
+7 8
+
+1/tóm_tắt/V 2/nội_dung/N 3/phim/N 4/đó/P 
+2
+3 4
+
+1/nội_dung/N 2/phim/N 3/đó/P 4/thế_nào/P 
+1
+2 3
+
+1/nội_dung/N 2/tóm_tắt/V 3/phim/N 4/đó/P 5/là/V 6/gì/P 
+1 2
+3 4
+
+1/nội_dung/N 2/tóm_tắt/V 3/phim/N 4/đó/P 5/thế_nào/P 
+1 2
+3 4
+
+1/nội_dung/N 2/tóm_tắt/V 3/phim/N 4/đó/P 5/ra_sao/X 
+1 2
+3 4
+
+1/cho/E 2/tôi/P 3/biết/V 4/nội_dung/N 5/phim/N 6/đó/P 
+4
+5 6
+
+1/cho/E 2/mình/P 3/biết/V 4/nội_dung/N 5/phim/N 6/đó/P 
+4
+5 6
+
+1/phim/N 2/đó/P 3/có/V 4/sự/Nc 5/góp_mặt/V 6/của/E 7/những/L 8/diễn_viên/N 9/nào/P 
+8
+1 2
+
+1/phim/N 2/đó/P 3/có/V 4/những/L 5/diễn_viên/N 6/nào/P 
+5
+1 2
+
+1/phim/N 2/đó/P 3/có/V 4/sự/Nc 5/góp_mặt/V 6/của/E 7/những/L 8/diễn_viên/N 9/nổi_tiếng/A 10/nào/P 
+8
+9, 1 2
+
+1/phim/N 2/đó/P 3/có/V 4/những/L 5/diễn_viên/N 6/nổi_tiếng/A 7/nào/P 
+5
+6, 1 2
+
+1/phim/N 2/đó/P 3/có/V 4/sự/Nc 5/góp_mặt/V 6/của/E 7/những/L 8/sao/N 9/nào/P 
+8
+1 2
+
+1/phim/N 2/đó/P 3/có/V 4/những/L 5/sao/N 6/nào/P 
+5
+1 2
+
+1/rạp/N 2/quốc_gia/N 3/mở_cửa/V 4/lúc/N 5/mấy/L 6/giờ/N 
+6
+3, 1 2
+
+1/rạp/N 2/quốc_gia/N 3/đóng_cửa/V 4/lúc/N 5/mấy/L 6/giờ/N 
+6
+3, 1 2
+
+1/rạp/N 2/quốc_gia/N 3/có/V 4/chỗ/N 5/gửi/V 6/xe/N 7/không/R 
+3 4 5
+1 2
+
+1/rạp/N 2/này/P 3/mở_cửa/V 4/lúc/N 5/mấy/L 6/giờ/N 
+6
+1 2, 3
+
+1/rạp/N 2/này/P 3/đóng_cửa/V 4/lúc/N 5/mấy/L 6/giờ/N 
+6
+1 2, 3
+
+1/rạp/N 2/này/P 3/có/V 4/chỗ/N 5/gửi/V 6/xe/N 7/không/R 
+4 5 6
+1 2
+
+1/rạp/N 2/đó/P 3/mở_cửa/V 4/lúc/N 5/mấy/L 6/giờ/N 
+6
+1 2, 3
+
+1/rạp/N 2/đó/P 3/đóng_cửa/V 4/lúc/N 5/mấy/L 6/giờ/N 
+6
+1 2, 3
+
+1/rạp/N 2/đó/P 3/có/V 4/chỗ/N 5/gửi/V 6/xe/N 7/không/R 
+4 5 6
+1 2
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/là/V 9/phim/N 10/2D/Np 11/hay/V 12/3D/M 
+10 11 12
+1 2 3 4 5 6 7
+
+1/phim/N 2/đó/P 3/là/V 4/phim/N 5/2D/Np 6/hay/V 7/3D/M 
+5 6 7
+1 2
+
+1/phim/N 2/đó/P 3/có/V 4/3D/M 5/không/R 
+4
+1 2
+
+1/phim/N 2/này/P 3/là/V 4/phim/N 5/2D/Np 6/hay/V 7/3D/M 
+5 6 7
+1 2
+
+1/phim/N 2/này/P 3/có/V 4/3D/M 5/không/R 
+4
+1 2
+
+1/rạp/N 2/nào/P 3/có/V 4/vé/N 5/xem/V 6/phim/N 7/2D/M 8/rẻ/A 9/nhất/A 
+1
+4 5 6 7, 8
+
+1/rạp/N 2/nào/P 3/bán/V 4/vé/N 5/rẻ/A 6/nhất/A 
+1
+4, 5
+
+1/rạp/N 2/nào/P 3/bán/V 4/vé/N 5/2D/M 6/rẻ/A 7/nhất/A 
+1
+4 5, 6
+
+1/rạp/N 2/nào/P 3/đang/R 4/có/V 5/khuyến_mãi/V 6/vào/R 7/hôm_nay/N 
+1
+5
+
+1/rạp/N 2/nào/P 3/có/V 4/khuyến_mãi/V 5/vào/R 6/hôm_nay/N 
+1
+4
+
+1/rạp/N 2/nào/P 3/đang/R 4/khuyến_mãi/V 5/vào/E 6/hôm_nay/N 
+1
+4
+
+1/rạp/N 2/nào/P 3/đang/R 4/có/V 5/khuyến_mãi/V 6/hôm_nay/N 
+1
+5
+
+1/rạp/N 2/nào/P 3/có/V 4/khuyến_mãi/V 5/hôm_nay/N 
+1
+4
+
+1/rạp/N 2/nào/P 3/đang/R 4/khuyến_mãi/V 5/hôm_nay/N 
+1 4
+
+1/rạp/N 2/quốc_gia/N 3/có/V 4/phát_hành/V 5/thẻ/N 6/thành_viên/N 7/không/R 
+5 6
+1 2
+
+1/mức/N 2/giảm_giá/V 3/cho/E 4/người/N 5/có/V 6/thẻ/N 7/thành_viên/N 8/ở/E 9/rạp/N 10/platinum/N 11/là/V 12/bao_nhiêu/P 
+2
+6 7, 9 10
+
+1/người/N 2/có/V 3/thẻ/N 4/thành_viên/N 5/ở/E 6/rạp/N 7/platinum/V 8/được/R 9/giảm_giá/V 10/bao_nhiêu/P 
+9
+3 4, 6 7
+
+1/rạp/N 2/platinum/V 3/giảm_giá/V 4/bao_nhiêu/P 5/cho/E 6/thành_viên/N 
+3
+1 2, 6
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/V 7/tây/N 8/kéo_dài/V 9/bao_lâu/P 
+8
+1 2 3 4 5 6 7
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/có/V 9/cấm/V 10/trẻ_em/N 11/dưới/E 12/16/M 13/tuổi/N 14/không/R 
+9 10 11 12 13
+1 2 3 4 5 6 7
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/có/V 9/cấm/V 10/trẻ_em/N 11/không/R 
+9 10
+1 2 3 4 5 6 7
+
+1/phim/N 2/này/P 3/có/V 4/cấm/V 5/trẻ_em/N 6/dưới/E 7/16/M 8/tuổi/N 9/không/R 
+4 5 6 7 8
+1 2
+
+1/phim/N 2/này/P 3/có/V 4/cấm/V 5/trẻ_em/N 6/không/R 
+4 5
+1 2
+
+1/phim/N 2/đó/P 3/có/V 4/cấm/V 5/trẻ_em/N 6/dưới/E 7/16/M 8/tuổi/N 9/không/R 
+4 5 6 7 8
+1 2
+
+1/phim/N 2/đó/P 3/có/V 4/cấm/V 5/trẻ_em/N 6/không/R 
+4 5
+1 2
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/có/V 9/dành/V 10/cho/E 11/thiếu_nhi/N 12/không/R 
+9 10 11 12
+1 2 3 4 5 6 7
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/có/V 9/dành/V 10/cho/E 11/trẻ_em/N 12/không/R 
+9 10 11
+1 2 3 4 5 6 7
+
+1/phim/N 2/này/P 3/có/V 4/dành/V 5/cho/E 6/thiếu_nhi/N 7/không/R 
+4 5 6
+1 2
+
+1/phim/N 2/này/P 3/có/V 4/dành/V 5/cho/E 6/trẻ_em/N 7/không/R 
+4 5 6
+1 2
+
+1/phim/N 2/đó/P 3/có/V 4/dành/V 5/cho/E 6/thiếu_nhi/N 7/không/R 
+4 5 6
+1 2
+
+1/phim/N 2/đó/P 3/có/V 4/dành/V 5/cho/E 6/trẻ_em/N 7/không/R 
+4 5 6
+1 2
+
+1/địa_chỉ/N 2/của/E 3/rạp/N 4/quốc_gia/N 5/là/V 6/gì/P 
+1
+3 4
+
+1/cho/E 2/tôi/P 3/biết/V 4/địa_chỉ/N 5/của/E 6/rạp/N 7/quốc_gia/N 
+4
+6 7
+
+1/cho/E 2/mình/P 3/biết/V 4/địa_chỉ/N 5/của/E 6/rạp/N 7/quốc_gia/N 
+4
+6 7
+
+1/rạp/N 2/quốc_gia/N 3/cách/V 4/đây/P 5/bao_xa/V 
+3 4
+1 2
+
+1/từ/E 2/đây/P 3/đến/E 4/rạp/N 5/quốc_gia/N 6/mất/V 7/bao_lâu/N 
+6 7
+1 2, 4 5
+
+1/từ/E 2/đây/P 3/đến/E 4/rạp/N 5/quốc_gia/N 6/bao_xa/V 
+6
+1 2, 4 5
+
+1/rạp/N 2/quốc_gia/N 3/cách/V 4/đây/P 5/có/V 6/xa/A 7/không/R 
+6
+1 2, 3 4
+
+1/rạp/N 2/quốc_gia/N 3/cách/V 4/đây/P 5/bao_nhiêu/P 6/phút/N 7/xe_máy/N 
+6
+7, 1 2, 3 4
+
+1/rạp/N 2/quốc_gia/N 3/cách/V 4/đây/P 5/bao_nhiêu/P 6/phút/N 7/đi/V 8/xe/N 
+6
+8, 1 2, 3 4
+
+1/rạp/N 2/này/P 3/cách/V 4/đây/P 5/bao_nhiêu/P 6/phút/N 7/xe_máy/N 
+6
+7, 1 2, 3 4
+
+1/rạp/N 2/này/P 3/cách/V 4/đây/P 5/bao_nhiêu/P 6/phút/N 7/đi/V 8/xe/N 
+6
+8, 1 2, 3 4
+
+1/rạp/N 2/đó/P 3/cách/V 4/đây/P 5/bao_nhiêu/P 6/phút/N 7/xe_máy/N 
+6
+1 2, 3 4, 7
+
+1/rạp/N 2/đó/P 3/cách/V 4/đây/P 5/bao_nhiêu/P 6/phút/N 7/đi/V 8/xe/N 
+6
+1 2, 3 4, 8
+
+1/đến/E 2/rạp/N 3/quốc_gia/N 4/mất/V 5/bao_lâu/N 
+5
+2 3
+
+1/mất/V 2/bao_lâu/N 3/để/E 4/đến/V 5/rạp/N 6/quốc_gia/N 
+2
+5 6
+
+1/chỉ/R 2/cho/E 3/tôi/P 4/đường/N 5/đến/V 6/rạp/V 7/quốc_gia/N 
+4
+6 7
+
+1/từ/E 2/đây/P 3/đến/E 4/rạp/N 5/quốc_gia/N 6/bao_xa/V 
+6
+2, 4 5
+
+1/từ/E 2/đây/P 3/đến/E 4/rạp/N 5/này/P 6/bao_xa/V 
+6
+2, 4 5
+
+1/từ/E 2/đây/P 3/đến/E 4/rạp/N 5/đó/P 6/bao_xa/V 
+6
+2, 4 5
+
+1/mất/V 2/bao_lâu/N 3/để/E 4/đi/V 5/từ/E 6/đây/P 7/đến/E 8/rạp/N 9/quốc_gia/N 
+2
+6, 8 9
+
+1/mất/V 2/bao_lâu/N 3/để/E 4/đi/V 5/đến/E 6/rạp/N 7/quốc_gia/N 
+2
+6 7
+
+1/mất/V 2/bao_lâu/N 3/để/E 4/đi/V 5/đến/E 6/rạp/N 7/này/P 
+2
+6 7
+
+1/mất/V 2/bao_lâu/N 3/để/E 4/đi/V 5/đến/E 6/rạp/N 7/đó/P 
+2
+6 7
+
+1/rạp/N 2/quốc_gia/N 3/còn/V 4/vé/N 5/cho/E 6/phim/N 7/một_triệu/V 8/kiểu/N 9/chết/V 10/miền/N 11/viễn/V 12/tây/N 13/suất/N 14/chiếu/N 15/12/M 16/giờ/Nu 17/không/R 
+4
+1 2, 6 7 8 9 10 11 12, 13 14 15 16
+
+1/rạp/N 2/quốc_gia/N 3/còn/V 4/vé/N 5/cho/E 6/phim/N 7/một_triệu/V 8/kiểu/N 9/chết/V 10/miền/N 11/viễn/V 12/tây/N 13/lúc/N 14/12/M 15/giờ/Nu 16/không/R 
+4
+1 2, 6 7 8 9 10 11 12, 13 14 15
+
+1/rạp/N 2/quốc_gia/N 3/còn/V 4/vé/N 5/phim/N 6/một_triệu/V 7/kiểu/N 8/chết/V 9/miền/N 10/viễn/V 11/tây/N 12/suất/N 13/chiếu/N 14/12/M 15/giờ/Nu 16/không/R 
+4
+1 2, 6 7 8 9 10 11 12, 13 14 15
+
+1/rạp/N 2/quốc_gia/N 3/còn/V 4/vé/N 5/phim/N 6/một_triệu/V 7/kiểu/N 8/chết/V 9/miền/N 10/viễn/V 11/tây/N 12/lúc/N 13/12/M 14/giờ/Nu 15/không/R 
+4
+1 2, 6 7 8 9 10 11 12, 12 13 14
+
+1/từ/E 2/tòa/N 3/nhà/N 4/fpt/V 5/đường/N 6/duy_tân/V 7/đến/E 8/rạp/N 9/quốc_gia/N 10/bao_xa/V 
+10
+1 2 3 4, 7 8 9
+
+1/từ/E 2/tòa/N 3/nhà/N 4/fpt/V 5/đến/E 6/rạp/N 7/quốc_gia/N 8/bao_xa/V 
+8
+1 2 3 4, 5 6 7
+
+1/đạo_diễn/V 2/phim/N 3/một_triệu/V 4/kiểu/N 5/chết/V 6/miền/N 7/viễn/N 8/tây/N 9/là/V 10/ai/P 
+1
+2 3 4 5 6 7 8
+
+1/đạo_diễn/V 2/phim/N 3/này/P 4/là/V 5/ai/P 
+1
+2 3
+
+1/đạo_diễn/V 2/phim/N 3/đó/P 4/là/V 5/ai/P 
+1
+2 3
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/có/V 9/diễn_viên/N 10/nào/P 11/nổi_tiếng/A 12/không/R 
+9
+11, 1 2 3 4 5 6 7
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/có/V 9/diễn_viên/N 10/nổi_tiếng/A 11/nào/P 
+9
+10, 1 2 3 4 5 6 7
+
+1/cho/E 2/tôi/P 3/biết/V 4/về/E 5/dàn/N 6/diễn_viên/N 7/phim/N 8/một_triệu/V 9/kiểu/N 10/chết/V 11/miền/N 12/viễn/V 13/tây/N 
+6
+7 8 9 10 11 12 13
+
+1/giá/N 2/vé/N 3/phim/N 4/3D/M 5/ghế/N 6/vip/N 7/tại/E 8/rạp/N 9/quốc_gia/N 10/vào/E 11/thứ/N 12/5/M 13/bao_nhiêu/P 
+1 2
+3 4, 5 6, 8 9, 11 12
+
+1/giá/N 2/vé/N 3/phim/N 4/3D/M 5/ghế/N 6/vip/N 7/tại/E 8/rạp/N 9/quốc_gia/N 10/vào/E 11/thứ/N 12/5/M 13/là/V 14/bao_nhiêu/P 
+1 2
+3 4, 5 6, 8 9, 11 12
+
+1/giá/N 2/vé/N 3/vip/N 4/phim/N 5/3D/M 6/tại/E 7/rạp/N 8/quốc_gia/N 9/vào/E 10/thứ/N 11/5/M 12/bao_nhiêu/P 
+1 2
+3, 4 5, 7 8, 10 11
+
+1/giá/N 2/vé/N 3/vip/N 4/phim/N 5/3D/M 6/tại/E 7/rạp/N 8/quốc_gia/N 9/vào/E 10/thứ/N 11/5/M 12/là/V 13/bao_nhiêu/P 
+1 2
+3, 4 5, 7 8, 10 11
+
+1/giá/N 2/vé/N 3/vip/N 4/phim/N 5/3D/M 6/tại/E 7/rạp/N 8/quốc_gia/N 9/thứ/N 10/5/M 11/bao_nhiêu/P 
+1 2
+3, 4 5, 7 8, 9 10
+
+1/giá/N 2/vé/N 3/vip/N 4/phim/N 5/3D/M 6/tại/E 7/rạp/N 8/quốc_gia/N 9/thứ/N 10/5/M 11/là/V 12/bao_nhiêu/P 
+1 2
+3, 4 5, 7 8, 9 10
+
+1/giá/N 2/vé/N 3/phim/N 4/3D/M 5/ghế/N 6/vip/N 7/vào/E 8/thứ/N 9/5/M 10/tại/E 11/rạp/N 12/quốc_gia/N 13/bao_nhiêu/P 
+1 2
+3 4, 5 6, 8 9, 11 12
+
+1/giá/N 2/vé/N 3/phim/N 4/3D/M 5/ghế/N 6/vip/N 7/vào/E 8/thứ/N 9/5/M 10/tại/E 11/rạp/N 12/quốc_gia/N 13/là/V 14/bao_nhiêu/P 
+1 2
+3 4, 5 6, 8 9, 11 12
+
+1/giá/N 2/vé/N 3/vip/N 4/phim/N 5/3D/Np 6/vào/E 7/thứ/N 8/5/M 9/tại/E 10/rạp/N 11/quốc_gia/N 12/bao_nhiêu/P 
+1 2
+3, 4 5, 7 8, 10 11
+
+1/giá/N 2/vé/N 3/vip/N 4/phim/N 5/3D/Np 6/vào/E 7/thứ/N 8/5/M 9/tại/E 10/rạp/N 11/quốc_gia/N 12/là/V 13/bao_nhiêu/P 
+1 2
+3, 4 5, 7 8, 10 11
+
+1/giá/N 2/vé/N 3/vip/N 4/phim/N 5/3D/Np 6/vào/E 7/thứ/N 8/5/M 9/tại/E 10/rạp/N 11/quốc_gia/N 12/bao_nhiêu/P 
+1 2
+3, 4 5, 7 8, 10 11
+
+1/giá/N 2/vé/N 3/vip/N 4/phim/N 5/3D/Np 6/vào/E 7/thứ/N 8/5/M 9/tại/E 10/rạp/N 11/quốc_gia/N 12/là/V 13/bao_nhiêu/P 
+1 2
+3, 4 5, 7 8, 10 11
+
+1/giá/N 2/vé/N 3/vip/N 4/phim/N 5/3D/M 6/thứ/N 7/5/M 8/tại/E 9/rạp/N 10/quốc_gia/N 11/bao_nhiêu/P 
+1 2
+3, 4 5, 6 7, 9 10
+
+1/giá/N 2/vé/N 3/vip/N 4/phim/N 5/3D/M 6/thứ/N 7/5/M 8/tại/E 9/rạp/N 10/quốc_gia/N 11/là/V 12/bao_nhiêu/P 
+1 2
+3, 4 5, 6 7, 9 10
+
+1/giá/N 2/vé/N 3/vip/N 4/phim/N 5/3D/M 6/thứ/N 7/5/M 8/tại/E 9/rạp/N 10/quốc_gia/N 11/bao_nhiêu/P 
+1 2
+3, 4 5, 6 7, 9 10
+
+1/giá/N 2/vé/N 3/vip/N 4/phim/N 5/3D/M 6/thứ/N 7/5/M 8/tại/E 9/rạp/N 10/quốc_gia/N 11/là/V 12/bao_nhiêu/P 
+1 2
+3, 4 5, 6 7, 9 10
+
+1/giá/N 2/vé/N 3/vip/N 4/thứ/N 5/5/M 6/phim/N 7/3D/Np 8/tại/E 9/rạp/N 10/quốc_gia/N 11/bao_nhiêu/P 
+1 2
+3, 4 5, 6 7, 9 10
+
+1/giá/N 2/vé/N 3/vip/N 4/thứ/N 5/5/M 6/phim/N 7/3D/Np 8/tại/E 9/rạp/N 10/quốc_gia/N 11/là/V 12/bao_nhiêu/P 
+1 2
+3, 4 5, 6 7, 9 10
+
+1/giá/N 2/vé/N 3/vip/N 4/thứ/N 5/5/M 6/phim/N 7/3D/Np 8/tại/E 9/rạp/N 10/quốc_gia/N 11/bao_nhiêu/P 
+1 2
+3, 4 5, 6 7, 9 10
+
+1/giá/N 2/vé/N 3/vip/N 4/thứ/N 5/5/M 6/phim/N 7/3D/Np 8/tại/E 9/rạp/N 10/quốc_gia/N 11/là/V 12/bao_nhiêu/P 
+1 2
+3, 4 5, 6 7, 9 10
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/bắt_đầu/V 9/khởi/V 10/chiếu/N 11/từ/E 12/khi/N 13/nào/P 
+12
+1 2 3 4 5 6 7, 8, 10
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/bắt_đầu/V 9/khởi/V 10/chiếu/N 11/từ/E 12/ngày/N 13/nào/P 
+12
+1 2 3 4 5 6 7, 8, 10
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/bắt_đầu/V 9/khởi/V 10/chiếu/N 11/từ/E 12/hôm/N 13/nào/P 
+12
+1 2 3 4 5 6 7, 8, 10
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/bắt_đầu/V 9/khởi/V 10/chiếu/N 11/hôm/N 12/nào/P 
+11
+1 2 3 4 5 6 7, 8, 10
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/bắt_đầu/V 9/khởi/V 10/chiếu/N 11/khi/N 12/nào/P 
+11
+1 2 3 4 5 6 7, 8, 10
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/bắt_đầu/V 9/khởi/V 10/chiếu/N 11/ngày/N 12/nào/P 
+11
+1 2 3 4 5 6 7, 8, 10
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/bắt_đầu/V 9/chiếu/V 10/từ/E 11/khi/N 12/nào/P 
+11
+1 2 3 4 5 6 7, 8, 9
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/bắt_đầu/V 9/chiếu/V 10/từ/E 11/ngày/N 12/nào/P 
+11
+1 2 3 4 5 6 7, 8, 9
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/bắt_đầu/V 9/chiếu/V 10/từ/E 11/hôm/N 12/nào/P 
+11
+1 2 3 4 5 6 7, 8, 9
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/bắt_đầu/V 9/chiếu/V 10/hôm/N 11/nào/P 
+10
+1 2 3 4 5 6 7, 8, 9
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/bắt_đầu/V 9/chiếu/V 10/khi/N 11/nào/P 
+10
+1 2 3 4 5 6 7, 8, 9
+
+1/phim/N 2/một_triệu/V 3/kiểu/N 4/chết/V 5/miền/N 6/viễn/N 7/tây/N 8/bắt_đầu/V 9/chiếu/V 10/ngày/N 11/nào/P 
+10
+1 2 3 4 5 6 7, 8, 9
+
+1/phim/N 2/này/P 3/bắt_đầu/V 4/khởi/V 5/chiếu/N 6/từ/E 7/khi/N 8/nào/P 
+7
+1 2, 3, 5
+
+1/phim/N 2/này/P 3/bắt_đầu/V 4/khởi/V 5/chiếu/N 6/từ/E 7/ngày/N 8/nào/P 
+7
+1 2, 3, 5
+
+1/phim/N 2/này/P 3/bắt_đầu/V 4/khởi/V 5/chiếu/N 6/từ/E 7/hôm/N 8/nào/P 
+7
+1 2, 3, 5
+
+1/phim/N 2/này/P 3/bắt_đầu/V 4/khởi/V 5/chiếu/N 6/hôm/N 7/nào/P 
+6
+1 2, 3, 5
+
+1/phim/N 2/này/P 3/bắt_đầu/V 4/khởi/V 5/chiếu/N 6/khi/N 7/nào/P 
+6
+1 2, 3, 5
+
+1/phim/N 2/này/P 3/bắt_đầu/V 4/khởi/V 5/chiếu/N 6/ngày/N 7/nào/P 
+6
+1 2, 3, 5
+
+1/phim/N 2/này/P 3/bắt_đầu/V 4/chiếu/V 5/từ/E 6/khi/N 7/nào/P 
+6
+1 2, 3, 4
+
+1/phim/N 2/này/P 3/bắt_đầu/V 4/chiếu/V 5/từ/E 6/ngày/N 7/nào/P 
+6
+1 2, 3, 4
+
+1/phim/N 2/này/P 3/bắt_đầu/V 4/chiếu/V 5/từ/E 6/hôm/N 7/nào/P 
+6
+1 2, 3, 4
+
+1/phim/N 2/này/P 3/bắt_đầu/V 4/chiếu/V 5/hôm/N 6/nào/P
+5
+1 2, 3, 4
+
+1/phim/N 2/này/P 3/bắt_đầu/V 4/chiếu/V 5/khi/N 6/nào/P 
+5
+1 2, 3, 4
+
+1/phim/N 2/này/P 3/bắt_đầu/V 4/chiếu/V 5/ngày/N 6/nào/P 
+5
+1 2, 3, 4
+
+1/phim/N 2/đó/P 3/bắt_đầu/V 4/khởi/V 5/chiếu/N 6/từ/E 7/khi/N 8/nào/P 
+7
+1 2, 3, 5
+
+1/phim/N 2/đó/P 3/bắt_đầu/V 4/khởi/V 5/chiếu/N 6/từ/E 7/ngày/N 8/nào/P 
+7
+1 2, 3, 5
+
+1/phim/N 2/đó/P 3/bắt_đầu/V 4/khởi/V 5/chiếu/N 6/từ/E 7/hôm/N 8/nào/P 
+7
+1 2, 3, 5
+
+1/phim/N 2/đó/P 3/bắt_đầu/V 4/khởi/V 5/chiếu/N 6/hôm/N 7/nào/P 
+6
+1 2, 3, 5
+
+1/phim/N 2/đó/P 3/bắt_đầu/V 4/khởi/V 5/chiếu/N 6/khi/N 7/nào/P 
+6
+1 2, 3, 5
+
+1/phim/N 2/đó/P 3/bắt_đầu/V 4/khởi/V 5/chiếu/N 6/ngày/N 7/nào/P 
+6
+1 2, 3, 5
+
+1/phim/N 2/đó/P 3/bắt_đầu/V 4/chiếu/V 5/từ/E 6/khi/N 7/nào/P 
+6
+1 2, 3, 4
+
+1/phim/N 2/đó/P 3/bắt_đầu/V 4/chiếu/V 5/từ/E 6/ngày/N 7/nào/P 
+6
+1 2, 3, 4
+
+1/phim/N 2/đó/P 3/bắt_đầu/V 4/chiếu/V 5/từ/E 6/hôm/N 7/nào/P 
+6
+1 2, 3, 4
+
+1/phim/N 2/đó/P 3/bắt_đầu/V 4/chiếu/V 5/hôm/N 6/nào/P 
+5
+1 2, 3, 4
+
+1/phim/N 2/đó/P 3/bắt_đầu/V 4/chiếu/V 5/khi/N 6/nào/P 
+5
+1 2, 3, 4
+
+1/phim/N 2/đó/P 3/bắt_đầu/V 4/chiếu/V 5/ngày/N 6/nào/P 
+5
+1 2, 3, 4
+
+1/lịch/N 2/chiếu_phim/V 3/hercules/N 4/tại/E 5/rạp/N 6/tháng/N 7/tám/M 8/thế_nào/X 
+1 2
+3, 5 6 7
+
+1/lịch/N 2/chiếu_phim/V 3/hercules/N 4/tại/E 5/rạp/N 6/này/P 7/thế_nào/X 
+1 2
+3, 5 6
+
+1/lịch/N 2/chiếu_phim/V 3/hercules/N 4/tại/E 5/rạp/N 6/đó/P 7/thế_nào/P 
+1 2
+3, 5 6
+
+1/cho/E 2/tôi/P 3/biết/V 4/lịch/N 5/chiếu_phim/V 6/hercules/N 7/tại/E 8/rạp/N 9/tháng/N 10/tám/M 
+4 5
+6, 8 9 10
+
+1/cho/E 2/mình/P 3/biết/V 4/lịch/N 5/chiếu_phim/V 6/hercules/N 7/tại/E 8/rạp/N 9/tháng/N 10/tám/M 
+4 5
+6, 8 9 10
+
+1/lịch/N 2/chiếu_phim/V 3/hercules/N 4/tại/E 5/rạp/N 6/tháng/N 7/8/M 8/thế_nào/X 
+1 2
+3, 5 6 7
+
+1/cho/E 2/tôi/P 3/biết/V 4/lịch/N 5/chiếu_phim/V 6/hercules/N 7/tại/E 8/rạp/N 9/tháng/N 10/8/M 
+4 5
+6, 8 9 10
+
+1/cho/E 2/mình/P 3/biết/V 4/lịch/N 5/chiếu_phim/V 6/hercules/N 7/tại/E 8/rạp/N 9/tháng/N 10/8/M 
+4 5
+6, 8 9 10
+
+1/cho/E 2/tôi/P 3/biết/V 4/lịch/N 5/chiếu_phim/V 6/hercules/N 7/tại/E 8/rạp/N 9/này/P 
+4 5
+6, 8 9
+
+1/cho/E 2/mình/P 3/biết/V 4/lịch/N 5/chiếu_phim/V 6/hercules/N 7/tại/E 8/rạp/N 9/này/P 
+4 5
+6, 8 9
+
+1/cho/E 2/tôi/P 3/biết/V 4/lịch/N 5/chiếu_phim/V 6/hercules/N 7/tại/E 8/rạp/N 9/đó/P 
+4 5
+6, 8 9
+
+1/cho/E 2/mình/P 3/biết/V 4/lịch/N 5/chiếu_phim/V 6/hercules/N 7/tại/E 8/rạp/N 9/đó/P 
+4 5
+6, 8 9
+
+1/cho/E 2/tôi/P 3/biết/V 4/rạp/N 5/chiếu_phim/V 6/gần/A 7/đây/P 8/nhất/R 9/có/V 10/chiếu_phim/N 11/hercules/N 
+4 5
+7 8 9, 11
+
+1/cho/E 2/tôi/P 3/biết/V 4/rạp/V 5/gần/A 6/đây/P 7/nhất/R 8/có/V 9/chiếu_phim/N 10/hercules/N 
+4 
+5 6 7, 10
+
+1/cho/E 2/tôi/P 3/biết/V 4/rạp/V 5/gần/A 6/nhất/R 7/có/V 8/chiếu_phim/N 9/hercules/N 
+4
+5 6, 9
+
+1/cho/E 2/tôi/P 3/biết/V 4/rạp/N 5/chiếu_phim/V 6/gần/A 7/đây/P 8/nhất/R 9/chiếu_phim/V 10/hercules/N 
+4 5
+6 7 8, 10
+
+1/cho/E 2/tôi/P 3/biết/V 4/rạp/V 5/gần/A 6/đây/P 7/nhất/R 8/chiếu_phim/V 9/hercules/N 
+4
+5 6 7, 9
+
+1/cho/E 2/tôi/P 3/biết/V 4/rạp/V 5/gần/A 6/nhất/M 7/chiếu_phim/N 8/hercules/N 
+4
+5 6, 8
+
+1/cho/E 2/mình/P 3/biết/V 4/rạp/N 5/chiếu_phim/V 6/gần/A 7/đây/P 8/nhất/R 9/có/V 10/chiếu_phim/N 11/hercules/N 
+4 5
+6 7 8, 11
+
+1/cho/E 2/mình/P 3/biết/V 4/rạp/V 5/gần/A 6/đây/P 7/nhất/R 8/có/V 9/chiếu_phim/N 10/hercules/N 
+4
+5 6 7, 10
+
+1/cho/E 2/mình/P 3/biết/V 4/rạp/V 5/gần/A 6/nhất/R 7/có/V 8/chiếu_phim/N 9/hercules/N 
+4
+5 6, 9
+
+1/cho/E 2/mình/P 3/biết/V 4/rạp/N 5/chiếu_phim/V 6/gần/A 7/đây/P 8/nhất/R 9/chiếu_phim/V 10/hercules/N 
+4 5
+6 7 8, 10
+
+1/cho/E 2/mình/P 3/biết/V 4/rạp/V 5/gần/A 6/đây/P 7/nhất/R 8/chiếu_phim/V 9/hercules/N 
+4
+5 6 7, 9
+
+1/cho/E 2/mình/P 3/biết/V 4/rạp/V 5/gần/A 6/nhất/M 7/chiếu_phim/N 8/hercules/N 
+4
+5 6, 8
+
+1/chỉ/R 2/đường/N 3/từ/E 4/đây/P 5/đến/E 6/rạp/N 7/chiếm/V 8/phim/N 9/gần/A 10/nhất/R 
+2
+3 4, 5 6 7 8 9 10
+
+1/suất/N 2/chiếu/V 3/hercules/N 4/gần/A 5/nhất/A 6/tại/E 7/rạp/N 8/platinum/V 9/vào/E 10/lúc/N 11/mấy/L 12/giờ/N 
+12
+3, 4 5, 7 8
+
+1/suất/N 2/chiếu/V 3/hercules/N 4/sớm/A 5/nhất/A 6/tại/E 7/rạp/N 8/platinum/V 9/vào/E 10/lúc/N 11/mấy/L 12/giờ/N 
+12
+3, 4 5, 7 8
+
+1/suất/N 2/chiếu/V 3/hercules/N 4/gần/A 5/nhất/A 6/tại/E 7/rạp/N 8/platinum/V 9/vào/E 10/lúc_nào/N 
+10
+3, 4 5, 7 8
+
+1/suất/N 2/chiếu/V 3/hercules/N 4/sớm/A 5/nhất/A 6/tại/E 7/rạp/N 8/platinum/V 9/vào/E 10/lúc_nào/N 
+10
+3, 4 5, 7 8
+
+1/suất/N 2/chiếu/V 3/hercules/N 4/gần/A 5/nhất/A 6/tại/E 7/rạp/N 8/platinum/V 9/lúc/N 10/mấy/L 11/giờ/N 
+11
+3, 4 5, 7 8
+
+1/suất/N 2/chiếu/V 3/hercules/N 4/sớm/A 5/nhất/A 6/tại/E 7/rạp/N 8/platinum/V 9/lúc/N 10/mấy/L 11/giờ/N 
+11
+3, 4 5, 7 8
+
+1/mấy/L 2/giờ/N 3/có/V 4/suất/N 5/chiếu/V 6/hercules/N 7/gần/A 8/nhất/A 9/tại/E 10/rạp/N 11/platinum/N 
+2
+6, 7 8, 10 11
+
+1/mấy/L 2/giờ/N 3/có/V 4/suất/N 5/chiếu/V 6/hercules/N 7/sớm/A 8/nhất/A 9/tại/E 10/rạp/N 11/platinum/N 
+2
+6, 7 8, 10 11
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/platinum/N 6/lúc/N 7/12/M 8/giờ/Nu 9/hôm_nay/N 10/còn/R 11/chỗ/N 12/không/R 
+11
+1 2, 4 5, 7 8, 9
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/này/P 6/lúc/N 7/12/M 8/giờ/Nu 9/hôm_nay/N 10/còn/R 11/chỗ/N 12/không/R 
+11
+1 2, 4 5, 7 8, 9
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/đó/P 6/lúc/N 7/12/M 8/giờ/Nu 9/hôm_nay/N 10/còn/R 11/chỗ/N 12/không/R 
+11
+1 2, 4 5, 7 8, 9
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/platinum/N 6/vé/N 7/lúc/N 8/12/M 9/giờ/Nu 10/hôm_nay/N 11/còn/R 12/không/R 
+6
+1 2, 4 5, 8 9, 10
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/này/P 6/vé/N 7/lúc/N 8/12/M 9/giờ/Nu 10/hôm_nay/N 11/còn/R 12/không/R 
+6
+1 2, 4 5, 8 9, 10
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/đó/P 6/vé/N 7/lúc/N 8/12/M 9/giờ/Nu 10/hôm_nay/N 11/còn/R 12/không/R 
+6
+1 2, 4 5, 8 9, 10
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/platinum/N 6/còn/V 7/chỗ/N 8/lúc/N 9/12/M 10/giờ/Nu 11/hôm_nay/N 12/không/R 
+7
+1 2, 4 5, 9 10, 11
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/này/P 6/còn/R 7/chỗ/N 8/lúc/N 9/12/M 10/giờ/Nu 11/hôm_nay/N 12/không/R 
+7
+1 2, 4 5, 9 10, 11
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/đó/P 6/còn/R 7/chỗ/N 8/lúc/N 9/12/M 10/giờ/Nu 11/hôm_nay/N 12/không/R 
+7
+1 2, 4 5, 9 10, 11
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/platinum/N 6/còn/V 7/vé/N 8/lúc/N 9/12/M 10/giờ/Nu 11/hôm_nay/N 12/không/R 
+7
+1 2, 4 5, 9 10, 11
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/này/P 6/còn/V 7/vé/N 8/lúc/N 9/12/M 10/giờ/Nu 11/hôm_nay/N 12/không/R 
+7
+1 2, 4 5, 9 10, 11
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/đó/P 6/còn/V 7/vé/N 8/lúc/N 9/12/M 10/giờ/Nu 11/hôm_nay/N 12/không/R 
+7
+1 2, 4 5, 9 10, 11
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/platinum/N 6/hôm_nay/N 7/lúc/N 8/12/M 9/giờ/Nu 10/còn/R 11/chỗ/N 12/không/R 
+11
+1 2, 4 5, 6, 8 9
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/này/P 6/hôm_nay/N 7/lúc/N 8/12/M 9/giờ/Nu 10/còn/R 11/chỗ/N 12/không/R 
+11
+1 2, 4 5, 6, 8 9
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/đó/P 6/hôm_nay/N 7/lúc/N 8/12/M 9/giờ/Nu 10/còn/R 11/chỗ/N 12/không/R 
+11
+1 2, 4 5, 6, 8 9
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/platinum/N 6/vé/N 7/hôm_nay/N 8/lúc/N 9/12/M 10/giờ/Nu 11/còn/R 12/không/R 
+6
+1 2, 4 5, 7, 9 10
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/này/P 6/vé/N 7/hôm_nay/N 8/lúc/N 9/12/M 10/giờ/Nu 11/còn/R 12/không/R 
+6
+1 2, 4 5, 7, 9 10
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/đó/P 6/vé/N 7/hôm_nay/N 8/lúc/N 9/12/M 10/giờ/Nu 11/còn/R 12/không/R 
+6
+1 2, 4 5, 7, 9 10
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/platinum/N 6/còn/R 7/chỗ/N 8/hôm_nay/N 9/lúc/N 10/12/M 11/giờ/Nu 12/không/R 
+7
+1 2, 4 5, 8, 10 11
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/này/P 6/còn/R 7/chỗ/N 8/hôm_nay/N 9/lúc/N 10/12/M 11/giờ/Nu 12/không/R 
+7
+1 2, 4 5, 8, 10 11
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/đó/P 6/còn/R 7/chỗ/N 8/hôm_nay/N 9/lúc/N 10/12/M 11/giờ/Nu 12/không/R 
+7
+1 2, 4 5, 8, 10 11
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/platinum/N 6/còn/R 7/vé/N 8/hôm_nay/N 9/lúc/N 10/12/M 11/giờ/Nu 12/không/R 
+7
+1 2, 4 5, 8, 10 11
+
+1/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/này/P 6/còn/R 7/vé/N 8/hôm_nay/N 9/lúc/N 10/12/M 11/giờ/Nu 12/không/R 
+7
+1 2, 4 5, 8, 10 11
+
+/phim/N 2/hercules/V 3/tại/E 4/rạp/N 5/đó/P 6/còn/R 7/vé/N 8/hôm_nay/N 9/lúc/N 10/12/M 11/giờ/Nu 12/không/R 
+7
+1 2, 4 5, 8, 10 11
+
+1/còn/C 2/vé/N 3/phim/N 4/hercules/V 5/tại/E 6/rạp/N 7/platinum/N 8/lúc/N 9/12/M 10/giờ/Nu 11/hôm_nay/N 12/không/R 
+2
+3 4,  6 7, 9 10, 11
+
+1/còn/C 2/vé/N 3/phim/N 4/hercules/V 5/tại/E 6/rạp/N 7/này/P 8/lúc/N 9/12/M 10/giờ/Nu 11/hôm_nay/N 12/không/R 
+2
+3 4,  6 7, 9 10, 11
+
+1/còn/C 2/vé/N 3/phim/N 4/hercules/V 5/tại/E 6/rạp/N 7/đó/P 8/lúc/N 9/12/M 10/giờ/Nu 11/hôm_nay/N 12/không/R 
+2
+3 4,  6 7, 9 10, 11
+
+1/còn/C 2/vé/N 3/phim/N 4/hercules/V 5/tại/E 6/rạp/N 7/platinum/N 8/hôm_nay/N 9/lúc/N 10/12/M 11/giờ/Nu 12/không/R 
+2
+3 4, 6 7, 8, 10 11
+
+1/còn/C 2/vé/N 3/phim/N 4/hercules/V 5/tại/E 6/rạp/N 7/này/P 8/hôm_nay/N 9/lúc/N 10/12/M 11/giờ/Nu 12/không/R 
+2
+3 4, 6 7, 8, 10 11
+
+1/còn/C 2/vé/N 3/phim/N 4/hercules/V 5/tại/E 6/rạp/N 7/đó/P 8/hôm_nay/N 9/lúc/N 10/12/M 11/giờ/Nu 12/không/R 
+2
+3 4, 6 7, 8, 10 11
+
+1/phim/N 2/nào/P 3/đang/R 4/được/V 5/quan_tâm/V 6/nhất/R 7/hiện_nay/N 
+1
+5 6, 7
+
+1/phim/N 2/gì/P 3/đang/R 4/được/V 5/quan_tâm/V 6/nhất/R 7/hiện_nay/N 
+1
+5 6, 7
+
+1/phim/N 2/gì/P 3/đang/R 4/được/V 5/quan_tâm/V 6/nhất/R 
+1
+5 6
+
+1/phim/N 2/nào/P 3/đang/R 4/được/V 5/quan_tâm/V 6/nhất/R 
+1
+5 6
+
+1/phim/N 2/nào/P 3/đang/R 4/được/V 5/quan_tâm/V 6/hiện_nay/N 
+1
+5, 6
+
+1/phim/N 2/gì/P 3/đang/R 4/được/V 5/quan_tâm/V 6/hiện_nay/N 
+1
+5, 6
+
+1/phim/N 2/gì/P 3/đang/R 4/được/V 5/quan_tâm/V 
+1
+5
+
+1/phim/N 2/nào/P 3/đang/R 4/được/V 5/quan_tâm/V 
+1
+5
+
+1/phim/N 2/nào/P 3/đang/R 4/được/V 5/giới/N 6/trẻ/A 7/quan_tâm/V 8/nhất/A 9/hiện_nay/N 
+1
+5 6, 7 8, 9
+
+1/phim/N 2/gì/P 3/đang/R 4/được/V 5/giới/N 6/trẻ/A 7/quan_tâm/V 8/nhất/A 9/hiện_nay/N 
+1
+5 6, 7 8, 9
+
+1/phim/N 2/gì/P 3/đang/R 4/được/V 5/giới/N 6/trẻ/A 7/quan_tâm/V 8/nhất/R 
+1
+5 6, 7 8
+
+1/phim/N 2/nào/P 3/đang/R 4/được/V 5/giới/N 6/trẻ/A 7/quan_tâm/V 8/nhất/R 
+1
+5 6, 7 8
+
+1/những/L 2/phim/N 3/nào/P 4/đang/R 5/được/V 6/quan_tâm/V 7/nhất/R 8/hiện_nay/N 
+2
+6 7, 8
+
+1/những/L 2/phim/N 3/gì/P 4/đang/R 5/được/V 6/quan_tâm/V 7/nhất/R 8/hiện_nay/N 
+2
+6 7, 8
+
+1/những/L 2/phim/N 3/gì/P 4/đang/R 5/được/V 6/quan_tâm/V 7/nhất/R 
+2
+6 7
+
+1/những/L 2/phim/N 3/nào/P 4/đang/R 5/được/V 6/quan_tâm/V 7/nhất/R 
+2
+6 7
+
+1/có/V 2/những/L 3/phim/N 4/nào/P 5/đang/R 6/được/V 7/quan_tâm/V 8/nhất/R 9/hiện_nay/N 
+3
+7 8, 9
+
+1/có/V 2/những/L 3/phim/N 4/gì/P 5/đang/R 6/được/V 7/quan_tâm/V 8/nhất/R 9/hiện_nay/N 
+3
+7 8, 9
+
+1/có/V 2/những/L 3/phim/N 4/gì/P 5/đang/R 6/được/V 7/quan_tâm/V 8/nhất/R 
+3
+7 8
+
+1/có/V 2/những/L 3/phim/N 4/nào/P 5/đang/R 6/được/V 7/quan_tâm/V 8/nhất/R 
+3
+7 8
+
+1/những/L 2/phim/N 3/nào/P 4/đang/R 5/được/V 6/quan_tâm/V 7/hiện_nay/N 
+2
+6, 7
+
+1/những/L 2/phim/N 3/gì/P 4/đang/R 5/được/V 6/quan_tâm/V 7/hiện_nay/N 
+2
+6, 7
+
+1/những/L 2/phim/N 3/gì/P 4/đang/R 5/được/V 6/quan_tâm/V 
+2
+6
+
+1/những/L 2/phim/N 3/nào/P 4/đang/R 5/được/V 6/quan_tâm/V 
+2
+6
+
+1/có/V 2/những/L 3/phim/N 4/nào/P 5/đang/R 6/được/V 7/quan_tâm/V 8/hiện_nay/N 
+3
+7, 8
+
+1/có/V 2/những/L 3/phim/N 4/gì/P 5/đang/R 6/được/V 7/quan_tâm/V 8/hiện_nay/N 
+3
+7, 8
+
+1/có/V 2/những/L 3/phim/N 4/gì/P 5/đang/R 6/được/V 7/quan_tâm/V 
+3
+7
+
+1/có/V 2/những/L 3/phim/N 4/nào/P 5/đang/R 6/được/V 7/quan_tâm/V 
+3
+7
+
+1/những/L 2/phim/N 3/nào/P 4/đang/R 5/được/V 6/giới/N 7/trẻ/A 8/quan_tâm/V 9/hiện_nay/N 
+2
+6 7, 8, 9
+
+1/những/L 2/phim/N 3/gì/P 4/đang/R 5/được/V 6/giới/N 7/trẻ/A 8/quan_tâm/V 9/hiện_nay/N 
+2
+6 7, 8, 9
+
+1/những/L 2/phim/N 3/gì/P 4/đang/R 5/được/V 6/giới/N 7/trẻ/A 8/quan_tâm/V 
+2
+6 7, 8
+
+1/những/L 2/phim/N 3/nào/P 4/đang/R 5/được/V 6/giới/N 7/trẻ/A 8/quan_tâm/V 
+2
+6 7, 8
+
+1/có/V 2/những/L 3/phim/N 4/nào/P 5/đang/R 6/được/V 7/giới/N 8/trẻ/A 9/quan_tâm/V 10/hiện_nay/N 
+3
+7 8, 9, 10
+
+1/có/V 2/những/L 3/phim/N 4/gì/P 5/đang/R 6/được/V 7/giới/N 8/trẻ/A 9/quan_tâm/V 10/hiện_nay/N 
+3
+7 8, 9, 10
+
+1/có/V 2/những/L 3/phim/N 4/gì/P 5/đang/R 6/được/V 7/giới/N 8/trẻ/A 9/quan_tâm/V 
+3
+7 8, 9
+
+1/có/V 2/những/L 3/phim/N 4/nào/P 5/đang/R 6/được/V 7/giới/N 8/trẻ/A 9/quan_tâm/V 
+3
+7 8, 9
+
+1/phim/N 2/nào/P 3/có/V 4/số_lượng/N 5/người/N 6/xem/V 7/nhiều/A 8/nhất/R 
+1
+4 5 6, 7 8
+
+1/những/L 2/phim/N 3/nào/P 4/có/V 5/số_lượng/N 6/người/N 7/xem/V 8/nhiều/A 9/nhất/R 
+2
+5 6 7, 8 9
+
+1/phim/N 2/nào/P 3/đang/R 4/được/V 5/xem/V 6/nhiều/A 7/nhất/R 
+1
+5 6 7
+
+1/phim/N 2/nào/P 3/đang/R 4/được/V 5/đánh_giá/V 6/cao/A 7/nhất/R 8/hiện_nay/N 
+1
+5 6 7, 8
+
+1/phim/N 2/nào/P 3/đang/R 4/được/V 5/đánh_giá/V 6/tốt/A 7/nhất/R 8/hiện_nay/N 
+1
+5 6 7, 8
+
+1/phim/N 2/nào/P 3/đang/R 4/được/V 5/đánh_giá/V 6/cao/A 7/nhất/R 
+1
+5 6 7
+
+1/phim/N 2/nào/P 3/đang/R 4/được/V 5/đánh_giá/V 6/tốt/A 7/nhất/R 
+1
+5 6 7
+
+1/những/L 2/phim/N 3/nào/P 4/đang/R 5/được/V 6/xem/V 7/nhiều/A 8/nhất/R 
+2
+6 7 8
+
+1/những/L 2/phim/N 3/nào/P 4/đang/R 5/được/V 6/đánh_giá/V 7/cao/A 8/nhất/R 9/hiện_nay/N 
+2
+6 7 8, 9
+
+1/những/L 2/phim/N 3/nào/P 4/đang/R 5/được/V 6/đánh_giá/V 7/tốt/A 8/nhất/R 9/hiện_nay/N 
+2
+6 7 8, 9
+
+1/những/L 2/phim/N 3/nào/P 4/đang/R 5/được/V 6/đánh_giá/V 7/cao/A 8/nhất/R 
+2
+6 7 8
+
+1/những/L 2/phim/N 3/nào/P 4/đang/R 5/được/V 6/đánh_giá/V 7/tốt/A 8/nhất/R 
+2
+6 7 8
+
+1/trong/E 2/các/L 3/phim/N 4/đang/R 5/chiếu/V 6/rạp/N 7/phim/N 8/nào/P 9/được/R 10/bình_luận/V 11/tốt/A 12/nhất/R 
+7
+4 5 6, 10 11 12
+
+1/phim/N 2/nào/P 3/đang/R 4/được/V 5/bình_luận/V 6/tốt/A 7/nhất/R 
+1
+5 6 7
+
+1/những/L 2/phim/N 3/nào/P 4/đang/R 5/được/V 6/bình_luận/V 7/tốt/A 8/nhất/R 
+2
+6 7 8
+
+1/phim/N 2/nào/P 3/có/V 4/bình_luận/N 5/tốt/A 6/nhất/R 
+1
+4 5 6
+
+1/những/L 2/phim/N 3/nào/P 4/có/V 5/bình_luận/N 6/tốt/A 7/nhất/R 
+2
+5 6 7
+
+1/trong/E 2/các/L 3/phim/N 4/đang/R 5/chiếu/V 6/rạp/N 7/phim/N 8/nào_hay/A 9/nhất/R 
+3
+4 5 6, 8 9
+
+1/phim/N 2/nào_hay/A 3/nhất/R 
+1
+2 3
+
+1/phim/N 2/nào/P 3/được/R 4/bình_luận/V 5/tốt/A 6/nhất/R 
+1
+4 5 6
+
+1/phim/N 2/nào/P 3/được/V 4/đánh_giá/V 5/cao/A 6/nhất/R 
+1
+4 5 6
+
+1/phim/N 2/nào/P 3/được/R 4/đánh_giá/V 5/tốt/A 6/nhất/R 
+1
+4 5 6
+
+1/những/L 2/rạp/N 3/nào/P 4/sẽ/R 5/chiếu_phim/V 6/hercules/V 7/vào/E 8/thứ/N 9/7/M 10/tới/E 
+2
+5 6, 8 9 10
+
+1/những/L 2/rạp/N 3/nào/P 4/sẽ/R 5/chiếu_phim/V 6/hercules/V 7/vào/E 8/12/M 9/giờ/Nu 10/thứ/N 11/7/M 12/tới/E 
+2
+5 6, 8 9 10 11 12
+
+1/những/L 2/rạp/N 3/nào/P 4/chiếu_phim/V 5/hercules/V 6/vào/E 7/thứ/N 8/7/M 9/tới/E 
+2
+4 5, 7 8 9
+
+1/những/L 2/rạp/N 3/nào/P 4/chiếu_phim/V 5/hercules/N 6/vào/E 7/12/M 8/giờ/Nu 9/thứ/N 10/7/M 11/tới/E 
+2
+4 5, 7 8 9 10 11
+
+1/những/L 2/rạp/N 3/nào/P 4/còn/V 5/vé/N 6/phim/N 7/hercules/V 8/lúc/N 9/12/M 10/giờ/Nu 11/thứ/N 12/7/M 13/tới/E 
+2
+5 6 7, 9 10 11 12 13
+
+1/phim/N 2/nào/P 3/được/V 4/trông_đợi/V 5/nhất/R 6/vào/E 7/tháng/N 8/8/M 9/này/P 
+2
+4 5, 7 8 9
+
+1/phim/N 2/nào/P 3/đang/R 4/được/V 5/trông_đợi/V 6/nhất/R 7/vào/E 8/tháng/N 9/8/M 10/này/P 
+1
+5 6, 8 9 10
+
+1/phim/N 2/nào/P 3/đang/R 4/được/V 5/trông_đợi/V 6/nhất/R 
+1
+5 6
+
+1/những/L 2/phim/N 3/nào/P 4/được/V 5/trông_đợi/V 6/nhất/R 7/vào/E 8/tháng/N 9/8/M 10/này/P 
+2
+5 6, 8 9 10
+
+1/những/L 2/phim/N 3/nào/P 4/đang/R 5/được/V 6/trông_đợi/V 7/nhất/R 8/vào/E 9/tháng/N 10/8/M 11/này/P 
+2
+6 7, 9 10 11
+
+1/những/L 2/phim/N 3/nào/P 4/đang/R 5/được/V 6/trông_đợi/V 7/nhất/R 
+2
+6 7
+
+1/rạp/N 2/nào/P 3/sẽ/R 4/chiếu_phim/V 5/step/N 6/up/V 7/all/N 8/in/V 9/vào/E 10/ngày/N 11/mồng/N 12/6/M 13/tháng/N 14/8/M 
+1
+4 5 6 7 8, 10 11 12 13 14
+
+1/rạp/N 2/nào/P 3/sẽ/R 4/chiếu_phim/V 5/step/N 6/up/V 7/all/N 8/in/V 9/vào/E 10/ngày/N 11/6/M 12/tháng/N 13/8/M 
+1
+4 5 6 7 8, 10 11 12 13
+
+1/rạp/N 2/nào/P 3/sẽ/R 4/chiếu_phim/V 5/step/N 6/up/V 7/all/N 8/in/V 9/vào/E 10/ngày/N 11/mồng/N 12/6/M 13/tháng/N 14/8/M 15/tới/E 
+1
+4 5 6 7 8, 10 11 12 13 14 15
+
+1/rạp/N 2/nào/P 3/sẽ/R 4/chiếu_phim/V 5/step/N 6/up/V 7/all/N 8/in/V 9/vào/E 10/ngày/N 11/6/M 12/tháng/N 13/8/M 14/tới/E 
+1
+4 5 6 7 8, 10 11 12 13 14
+
+1/rạp/N 2/nào/P 3/sẽ/R 4/chiếu_phim/V 5/step/N 6/up/V 7/all/N 8/in/V 9/đầu_tiên/A 
+1
+4 5 6 7 8, 9
+
+1/khi/N 2/nào/P 3/phim/N 4/step/V 5/up/N 6/all/N 7/in/V 8/sẽ/R 9/được/V 10/khởi/V 11/chiếu/N 
+1
+3 4 5 6 7, 10 11
+
+1/phim/N 2/step/V 3/up/N 4/all/N 5/in/V 6/sẽ/R 7/được/V 8/khởi/V 9/chiếu/N 10/đầu_tiên/A 11/tại/E 12/rạp/N 13/nào/P
+12
+1 2 3 4 5 6, 8 9 10
+ 
+1/phim/N 2/step/V 3/up/N 4/all/N 5/in/V 6/được/R 7/khởi/V 8/chiếu/N 9/đầu_tiên/A 10/tại/E 11/rạp/N 12/nào/P 
+11
+1 2 3 4 5 6, 7 8 9
+
+1/khi/N 2/nào/P 3/rạp/V 4/quốc_gia/N 5/khởi/V 6/chiếu_phim/V 7/step/N 8/up/V 9/all/N 10/in/V 
+1
+3 4, 5 6, 7 8 9 10
+
+1/rạp/N 2/quốc_gia/N 3/khởi/V 4/chiếu_phim/N 5/step/V 6/up/N 7/all/N 8/in/V 9/khi/N 10/nào/P 
+9
+1 2, 3 4, 5 6 7 8
+
+1/rạp/N 2/quốc_gia/N 3/khởi/V 4/chiếu_phim/V 5/step/N 6/up/V 7/all/N 8/in/V 9/hôm/N 10/nào/P 
+9
+1 2, 3 4, 5 6 7 8
+
+1/rạp/N 2/quốc_gia/N 3/khởi/V 4/chiếu_phim/V 5/step/N 6/up/V 7/all/N 8/in/V 9/ngày/N 10/nào/P 
+9
+1 2, 3 4, 5 6 7 8
+
+1/rạp/N 2/quốc_gia/N 3/khởi/V 4/chiếu_phim/N 5/step/V 6/up/N 7/all/V 8/in/V 9/vào/E 10/thứ/N 11/mấy/L 
+10 11
+1 2, 3 4, 5 6 7 8
+
+1/rạp/N 2/quốc_gia/N 3/khởi/V 4/chiếu_phim/V 5/step/N 6/up/V 7/all/N 8/in/V 9/thứ/N 10/mấy/L 
+9 10
+1 2, 3 4, 5 6 7 8
+
+1/rạp/N 2/quốc_gia/N 3/sẽ/R 4/khởi/V 5/chiếu_phim/N 6/step/V 7/up/N 8/all/V 9/in/V 10/vào/E 11/thứ/N 12/mấy/L 
+11 12
+1 2, 3 4, 5 6 7 8
+
+1/rạp/N 2/quốc_gia/N 3/sẽ/R 4/khởi/V 5/chiếu_phim/N 6/step/V 7/up/N 8/all/N 9/in/V 10/thứ/N 11/mấy/L 
+10 11
+1 2, 3 4, 5 6 7 8
+
+1/địa_chỉ/N 2/của/E 3/rạp/N 4/platinum/N 5/gần/A 6/đây/P 7/nhất/R 
+1
+3 4, 5 6 7
+
+1/địa_chỉ/N 2/của/E 3/rạp/N 4/platinum/N 5/gần/A 6/nhất/R 
+1
+3 4, 5 6
+
+1/cho/E 2/tôi/P 3/biết/V 4/địa_chỉ/N 5/của/E 6/rạp/N 7/platinum/N 8/gần/A 9/nhất/R 
+4
+6 7, 8 9
+
+1/cho/E 2/tôi/P 3/biết/V 4/địa_chỉ/N 5/của/E 6/rạp/N 7/platinum/N 8/gần/A 9/đây/P 10/nhất/R 
+4
+6 7, 8 9 10
+
+1/cho/E 2/mình/P 3/biết/V 4/địa_chỉ/N 5/của/E 6/rạp/N 7/platinum/N 8/gần/A 9/nhất/R 
+4
+6 7, 8 9
+
+1/cho/E 2/mình/P 3/biết/V 4/địa_chỉ/N 5/của/E 6/rạp/N 7/platinum/N 8/gần/A 9/đây/P 10/nhất/R 
+4
+6 7, 8 9 10
+
+1/tôi/P 2/muốn/V 3/biết/V 4/địa_chỉ/N 5/của/E 6/rạp/N 7/platinum/N 8/gần/A 9/nhất/R 
+4
+6 7, 8 9
+
+1/tôi/P 2/muốn/V 3/biết/V 4/địa_chỉ/N 5/của/E 6/rạp/N 7/platinum/N 8/gần/A 9/đây/P 10/nhất/R 
+4
+6 7, 8 9 10
+
+1/mình/P 2/muốn/V 3/biết/V 4/địa_chỉ/N 5/của/E 6/rạp/N 7/platinum/N 8/gần/A 9/nhất/R 
+4
+6 7, 8 9
+
+1/mình/P 2/muốn/V 3/biết/V 4/địa_chỉ/N 5/của/E 6/rạp/N 7/platinum/N 8/gần/A 9/đây/P 10/nhất/R 
+4
+6 7, 8 9 10
+
+1/rạp/N 2/platinum/N 3/nào/P 4/gần/A 5/đây/P 6/nhất/R 
+1 2
+4 5 6
+
+1/rạp/N 2/platinum/V 3/gần/A 4/nhất/R 5/cách/V 6/đây/P 7/bao_xa/V 
+7
+1 2, 3 4, 5 6
+
+1/chỉ/R 2/cho/E 3/tôi/P 4/đường/N 5/đến/V 6/rạp/V 7/platinum/N 8/gần/A 9/nhất/R 
+4
+6 7, 8 9
+
+1/chỉ/R 2/cho/E 3/tôi/P 4/đường/N 5/đến/V 6/rạp/V 7/platinum/N 8/gần/A 9/đây/P 10/nhất/R 
+4
+6 7, 8 9 10
+
+1/rạp/N 2/tháng/N 3/tám/M 4/ở/E 5/đâu/P 
+4
+1 2 3
+
+1/rạp/N 2/tháng/N 3/tám/M 4/nằm/V 5/trên/E 6/đường/N 7/nào/P 
+6
+1 2 3
+
+1/rạp/N 2/tháng/N 3/tám/M 4/nằm/V 5/ở/E 6/khu/N 7/nào/P 
+6
+1 2 3
+
+1/rạp/N 2/tháng/N 3/tám/M 4/cách/N 5/đây/P 6/có/V 7/xa/A 8/không/R 
+7 8
+1 2 3, 4 5
+
+1/rạp/N 2/tháng/N 3/tám/M 4/cách/V 5/đây/P 6/bao_xa/V 
+6
+1 2 3, 4 5
+
+1/rạp/N 2/này/P 3/ở/E 4/đâu/P 
+3
+1 2
+
+1/rạp/N 2/này/P 3/nằm/V 4/trên/E 5/đường/N 6/nào/P 
+5
+1 2
+
+1/rạp/N 2/này/P 3/nằm/V 4/ở/E 5/khu/N 6/nào/P 
+5
+1 2
+
+1/rạp/N 2/này/P 3/cách/V 4/đây/P 5/có/V 6/xa/A 7/không/R 
+6
+1 2, 3 4
+
+1/rạp/N 2/này/P 3/cách/V 4/đây/P 5/bao_xa/V 
+5
+1 2, 3 4
+
+1/rạp/N 2/đó/P 3/ở/V 4/đâu/P 
+3
+1 2
+
+1/rạp/N 2/đó/P 3/nằm/V 4/trên/E 5/đường/N 6/nào/P 
+5
+1 2
+
+1/rạp/N 2/đó/P 3/nằm/V 4/ở/E 5/khu/N 6/nào/P 
+5
+1 2
+
+1/rạp/N 2/đó/P 3/cách/V 4/đây/P 5/có/V 6/xa/A 7/không/R 
+6
+1 2
+
+1/rạp/N 2/đó/P 3/cách/V 4/đây/P 5/bao_xa/V 
+5
+1 2
+
+1/hôm_nay/N 2/rạp/V 3/tháng/N 4/tám/M 5/có/V 6/những/L 7/phim/N 8/gì/P 
+7
+1, 2 3 4
+
+1/hôm_nay/N 2/rạp/V 3/tháng/N 4/tám/M 5/chiếu/N 6/những/L 7/phim/N 8/gì/P 
+7
+1, 2 3 4
+
+1/hôm_nay/N 2/rạp/V 3/tháng/N 4/tám/M 5/chiếu_phim/N 6/gì/P 
+5
+1, 2 3 4
+
+1/hôm_nay/N 2/rạp/N 3/này/P 4/có/V 5/những/L 6/phim/N 7/gì/P 
+6
+1, 2 3
+
+1/hôm_nay/N 2/rạp/A 3/này/P 4/chiếu/V 5/những/L 6/phim/N 7/gì/P 
+6
+1, 2 3
+
+1/hôm_nay/N 2/rạp/N 3/này/P 4/chiếu_phim/V 5/gì/P 
+4
+1, 2 3
+
+1/hôm_nay/N 2/rạp/V 3/đó/P 4/có/V 5/những/L 6/phim/N 7/gì/P 
+6
+1, 2 3
+
+1/hôm_nay/N 2/rạp/V 3/đó/P 4/chiếu/V 5/những/L 6/phim/N 7/gì/P 
+6
+2, 2 3
+
+1/hôm_nay/N 2/rạp/V 3/đó/P 4/chiếu_phim/V 5/gì/P 
+4
+1, 2 3
+
+1/hôm_nay/N 2/rạp/V 3/tháng/N 4/tám/M 5/chiếu_phim/N 6/hercules/V 7/lúc/N 8/mấy/L 9/giờ/N 
+9
+1, 2 3 4, 6
+
+1/rạp/N 2/tháng/N 3/tám/M 4/chiếu_phim/N 5/hercules/V 6/lúc/N 7/mấy/L 8/giờ/N 9/hôm_nay/N 
+8
+1 2 3, 5, 9
+
+1/rạp/N 2/tháng/N 3/tám/M 4/có/V 5/chiếu_phim/N 6/hercules/N 7/không/R 
+6
+1 2 3, 5
+
+1/phim/N 2/hercules/N 3/có/V 4/được/V 5/chiếu/N 6/ở/E 7/rạp/N 8/tháng/N 9/tám/M 10/không/R 
+1 2
+4 5, 7 8 9
+
+1/rạp/N 2/tháng/N 3/tám/M 4/có/V 5/đông/N 6/khách/N 7/không/R 
+5 6 7
+1 2 3
+
+1/hôm_nay/N 2/rạp/N 3/này/P 4/chiếu_phim/V 5/hercules/N 6/lúc/N 7/mấy/L 8/giờ/N 
+8
+1, 2 3, 5
+
+1/rạp/N 2/này/P 3/chiếu_phim/V 4/hercules/N 5/lúc/N 6/mấy/L 7/giờ/N 8/hôm_nay/N 
+7
+1 2, 4, 8
+
+1/rạp/N 2/này/P 3/có/V 4/chiếu_phim/N 5/hercules/N 6/không/R 
+4 
+1 2, 5
+1/phim/N 2/hercules/N 3/có/V 4/được/V 5/chiếu/N 6/ở/E 7/rạp/N 8/này/P 9/không/R 
+5 
+1 2, 4 5, 7 8
+
+1/rạp/N 2/này/P 3/có/V 4/đông/A 5/khách/N 6/không/R 
+4
+1 2
+
+1/hôm_nay/N 2/rạp/V 3/đó/P 4/chiếu_phim/V 5/hercules/N 6/lúc/N 7/mấy/L 8/giờ/N 
+8
+1, 2 3 4, 6
+
+1/rạp/N 2/đó/P 3/chiếu_phim/V 4/hercules/N 5/lúc/N 6/mấy/L 7/giờ/N 8/hôm_nay/N 
+7
+1 2, 4, 8
+
+1/rạp/N 2/đó/P 3/có/V 4/chiếu_phim/N 5/hercules/N 6/không/R 
+4
+1 2, 5
+
+1/phim/N 2/hercules/N 3/có/V 4/được/V 5/chiếu/N 6/ở/E 7/rạp/N 8/đó/P 9/không/R 
+5
+1 2, 7 8
+
+1/rạp/N 2/đó/P 3/có/V 4/đông/N 5/khách/N 6/không/R 
+4
+1 2
+
+1/có/V 2/những/L 3/phim/N 4/hành_động/N 5/nào/P 6/đang/R 7/được/V 8/chiếu/V 9/tại/E 10/các/L 11/rạp/N 
+3
+4, 6, 8 9 10 11
+
+1/có/V 2/những/L 3/phim/N 4/hành_động/N 5/nào/P 6/đang/R 7/được/V 8/chiếu/V 9/tại/E 10/rạp/N 
+3
+4, 6 7 8 9 10
+
+1/có/V 2/những/L 3/phim/N 4/hành_động/N 5/nào/P 6/đang/R 7/được/V 8/chiếu/V 9/rạp/N 
+3
+4, 6 7 8 9
+
+1/có/V 2/những/L 3/phim/N 4/hài/A 5/nào/P 6/đang/R 7/được/V 8/chiếu/V 9/tại/E 10/các/L 11/rạp/N 
+3
+4, 6 7 8 9 10 11
+
+1/có/V 2/những/L 3/phim/N 4/hài/A 5/nào/P 6/đang/R 7/được/V 8/chiếu/V 9/tại/E 10/rạp/N 
+3
+4, 6 7 8 9 10
+
+1/có/V 2/những/L 3/phim/N 4/hài/A 5/nào/P 6/đang/R 7/được/V 8/chiếu/V 9/rạp/N 
+3
+4, 6 7 8 9
+
+1/có/V 2/phim/N 3/hài/A 4/nào/P 5/đang/R 6/chiếu/V 7/tại/E 8/rạp/N 9/tháng/N 10/tám/M 11/không/R 
+2
+3, 5 6 6 7 9 10 11
+
+1/có/V 2/những/L 3/phim/N 4/hài/A 5/nào/P 6/đang/R 7/chiếu/V 8/tại/E 9/rạp/N 10/tháng/N 11/tám/M 
+3
+4, 6 7 8 9 10 11
+
+1/có/V 2/những/L 3/phim/N 4/hài/A 5/nào/P 6/đang/R 7/được/V 8/chiếu/V 9/tại/E 10/rạp/N 11/tháng/N 12/tám/M 
+3
+4, 6 7 8 9 10 11 12
+
+1/rạp/N 2/tháng/N 3/tám/M 4/đang/R 5/chiếu/V 6/những/L 7/phim/N 8/hài/A 9/nào/P 
+7
+8, 1 2 3
+
+1/rạp/N 2/tháng/N 3/tám/M 4/đang/R 5/chiếu_phim/V 6/hài/A 7/nào/P 
+5
+6, 1 2 3
+
+1/có/V 2/phim/N 3/hài/A 4/nào/P 5/đang/R 6/chiếu/V 7/tại/E 8/rạp/N 9/này/P 10/không/R 
+2
+3, 5 6, 8 9
+
+1/có/V 2/những/L 3/phim/N 4/hài/A 5/nào/P 6/đang/R 7/chiếu/V 8/tại/E 9/rạp/N 10/này/P 
+3
+4, 6 7, 9 10
+
+1/có/V 2/những/L 3/phim/N 4/hài/A 5/nào/P 6/đang/R 7/được/V 8/chiếu/V 9/tại/E 10/rạp/N 11/này/P 
+3
+4, 7 8, 10 11
+
+1/rạp/N 2/này/P 3/đang/R 4/chiếu/V 5/những/L 6/phim/N 7/hài/A 8/nào/P 
+6
+7, 1 2
+
+1/rạp/N 2/này/P 3/đang/R 4/chiếu_phim/V 5/hài/A 6/nào/P 
+4
+5, 1 2
+
+1/có/V 2/phim/N 3/hài/A 4/nào/P 5/đang/R 6/chiếu/V 7/tại/E 8/rạp/N 9/đó/P 10/không/R 
+2
+3, 5 6, 8 9
+
+1/có/V 2/những/L 3/phim/N 4/hài/A 5/nào/P 6/đang/R 7/chiếu/V 8/tại/E 9/rạp/N 10/đó/P 
+3
+4, 6 7, 9 10
+
+1/có/V 2/những/L 3/phim/N 4/hài/A 5/nào/P 6/đang/R 7/được/V 8/chiếu/V 9/tại/E 10/rạp/N 11/đó/P 
+3
+4, 6, 10 11
+
+1/rạp/N 2/đó/P 3/đang/R 4/chiếu/V 5/những/L 6/phim/N 7/hài/A 8/nào/P 
+6
+1 2, 3 4, 7
+
+1/rạp/N 2/đó/P 3/đang/R 4/chiếu_phim/V 5/hài/A 6/nào/P 
+4
+5, 1 2
+
+1/có/V 2/phim_hoạt_hình/N 3/3D/M 4/nào/P 5/đang/R 6/được/V 7/chiếu/V 8/tại/E 9/các/L 10/rạp/N 11/không/R 
+2
+3, 5, 10
+
+1/có/V 2/phim_hoạt_hình/N 3/3D/M 4/nào/P 5/đang/R 6/được/V 7/chiếu/V 8/tại/E 9/rạp/N 10/không/R 
+2
+3, 5, 9
+
+1/có/V 2/phim/N 3/3D/M 4/nào/P 5/đang/R 6/được/V 7/chiếu/V 8/tại/E 9/các/L 10/rạp/N 11/không/R 
+2
+3, 5, 10
+
+1/có/V 2/phim/N 3/3D/M 4/nào/P 5/đang/R 6/được/V 7/chiếu/V 8/tại/E 9/rạp/N 10/không/R 
+2
+3, 5, 9
+
+1/có/V 2/phim/N 3/3D/M 4/nào/P 5/đang/R 6/chiếu/V 7/tại/E 8/các/L 9/rạp/N 10/không/R 
+2
+3, 5, 9
+
+1/có/V 2/phim/N 3/3D/M 4/nào/P 5/đang/R 6/chiếu/V 7/tại/E 8/rạp/N 9/không/R 
+2
+3, 5, 8
+
+1/trong/E 2/các/L 3/phim/N 4/chiếu/N 5/rạp/A 6/,/, 7/có/V 8/phim/N 9/nào/P 10/dành/V 11/cho/E 12/thiếu_nhi/N 13/không/R 
+8
+5, 10 11 12
+
+1/phim/N 2/dành/V 3/cho/E 4/thiếu_nhi/N 5/đang/R 6/chiếu/V 7/tại/E 8/rạp/N 9/là/V 10/phim/N 11/nào/P 
+1
+2 3 4, 5, 8
+
+1/phim/N 2/dành/V 3/cho/E 4/thiếu_nhi/N 5/đang/R 6/chiếu/V 7/tại/E 8/các/L 9/rạp/N 10/là/V 11/phim/N 12/nào/P 
+1
+2 3 4, 5, 9
+
+1/phim/N 2/dành/V 3/cho/E 4/thiếu_nhi/N 5/đang/R 6/chiếu/V 7/tại/E 8/rạp/N 9/là/V 10/những/L 11/phim/N 12/nào/P 
+1
+2 3 4, 5, 8
+
+1/phim/N 2/dành/V 3/cho/E 4/thiếu_nhi/N 5/đang/R 6/chiếu/V 7/tại/E 8/các/L 9/rạp/N 10/là/V 11/những/L 12/phim/N 13/nào/P 
+1
+2 3 4, 5, 9
+
+1/cho/E 2/tôi/P 3/biết/V 4/một/M 5/phim/N 6/dành/V 7/cho/E 8/thiếu_nhi/N 9/đang/R 10/được/V 11/chiếu/V 12/rạp/N 
+5
+6 7 8, 9, 12
+
+1/cho/E 2/tôi/P 3/biết/V 4/một/M 5/phim/N 6/tình_cảm/N 7/lãng_mạn/A 8/đang/R 9/chiếu/V 10/rạp/N 
+5
+6, 7, 8, 10
+
+1/có/V 2/phim/N 3/nào/P 4/dành/V 5/cho/E 6/thiếu_nhi/N 7/đang/R 8/chiếu/V 9/rạp/N 10/không/R 
+2
+4 5 6, 7, 9
+
+1/có/V 2/phim/N 3/việt/N 4/nam/N 5/nào/P 6/đang/R 7/được/V 8/chiếu/V 9/rạp/N 10/không/R 
+2
+3 4, 6, 9
+
+1/có/V 2/phim/N 3/hành_động/V 4/mỹ/N 5/nào/P 6/đang/R 7/được/V 8/chiếu/V 9/rạp/N 10/không/R 
+2
+3, 4, 6, 9
+
+1/có/V 2/phim/N 3/tâm_lý/N 4/tình_cảm/N 5/nào/P 6/đang/R 7/được/V 8/chiếu/V 9/rạp/N 10/không/R 
+2
+3, 4, 6, 9
+
+1/bao_nhiêu/P 2/tiền/N 3/một/M 4/vé/N 
+2
+4
+
+1/vé/N 2/giá/N 3/bao_nhiêu/P 
+2
+1
+
+1/vé/N 2/bao_nhiêu/P 
+2
+1
+
+1/vé/N 2/vip/N 3/giá/N 4/bao_nhiêu/P 
+3
+1 2
+
+1/đặt/V 2/vé/N 3/qua/E 4/mạng/N 5/có/V 6/được/R 7/không/R 
+1
+2, 3 4
+
+1/đặt/V 2/vé/N 3/qua/E 4/mạng/N 5/được/V 6/không/R 
+1
+2, 3 4
+
+1/tôi/P 2/muốn/V 3/đặt/V 4/vé/N 5/qua/E 6/mạng/N 7/có/V 8/được/R 9/không/R 
+3
+4, 5 6
+
+1/mình/P 2/muốn/V 3/đặt/V 4/vé/N 5/qua/E 6/mạng/N 7/có/V 8/được/R 9/không/R 
+3
+4, 5 6
+
+1/tôi/P 2/muốn/V 3/đặt/V 4/vé/N 5/qua/E 6/mạng/N 7/được/V 8/không/R 
+3
+4, 5 6
+
+1/mình/P 2/muốn/V 3/đặt/V 4/vé/N 5/qua/E 6/mạng/N 7/được/V 8/không/R 
+3
+4, 5 6
+

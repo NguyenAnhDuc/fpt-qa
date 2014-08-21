@@ -1,0 +1,267 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<head>
+	<link rel="stylesheet" type="text/css" href="resources/css/chat-widget.css" />
+	<link rel="stylesheet" type="text/css" href="resources/css/debug.css" />
+	<link rel="stylesheet" type="text/css" href="resources/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="resources/css/bootstrap/bootstrap.min.css" />
+	<script src="resources/js/jquery-1.11.1.min.js"></script>
+	<script src="resources/js/bootstrap/bootstrap.min.js"></script>
+	<script>
+	function onChat() {
+		//alert("searchtext");
+		var question = $('#btn-input').val();
+		$.ajax({
+			type : "POST",
+			url : "/rubyweb/app/getAnswer",
+			contentType : "application/x-www-form-urlencoded;charset=UTF-8",
+			data : "question=" + encodeURIComponent(question),
+			success : function(result) {
+				var htmlResult = "";
+				//question
+				htmlResult = htmlResult.concat("<li class=\"left clearfix\"><span class=\"chat-img pull-left\">");
+				htmlResult = htmlResult.concat("<img src=\"http://placehold.it/50/55C1E7/fff&text=U\" alt=\"User Avatar\" class=\"img-circle\" /></span>"); 
+				htmlResult = htmlResult.concat("<div class=\"chat-body clearfix\">");
+				htmlResult = htmlResult.concat("<p>");
+				htmlResult = htmlResult.concat(result.question);
+				htmlResult = htmlResult.concat("</p></div></li>");
+				//answer
+				htmlResult = htmlResult.concat("<li class=\"right clearfix\"><span class=\"chat-img pull-right\">");
+				htmlResult = htmlResult.concat("<img src=\"http://placehold.it/50/FA6F57/fff&text=ME\" alt=\"User Avatar\" class=\"img-circle\" /></span>"); 
+				htmlResult = htmlResult.concat("<div class=\"chat-body clearfix\">");
+				htmlResult = htmlResult.concat("<p>");
+				htmlResult = htmlResult.concat(result.answer);
+				htmlResult = htmlResult.concat("</p></div></li>");
+				$('#btn-input').val('');
+				$('.chat').append(htmlResult);
+				$('.panel-body').scrollTop(1E10);
+				//show debug 
+				$('#panel-debug').removeClass('hidden');
+				if (result.inCache){
+					$('#result-cache').html('The question is in cache');
+					$('#panel-process-question').addClass('hidden');
+					$('#panel-get-cache').removeClass('hidden');
+				}
+				else {
+					$('#result-cache').html('The question is NOT in cache');
+					$('#result-process-question').html('Process question to find intend and modifiers. Then, cached the question.');
+					$('#panel-get-cache').addClass('hidden');
+					$('#panel-process-question').removeClass('hidden');
+				}
+				// head and modifiers
+				var structureQuestion = "";
+				structureQuestion += 'Intend:	' + result.questionStructure.head + '</br> Modifiers:	'  ;
+				for (var i=0;i<result.questionStructure.modifiers.length - 1;i++){
+					structureQuestion += result.questionStructure.modifiers[i] + ", ";
+				}
+				if (result.questionStructure.modifiers.length > 0)
+					structureQuestion += result.questionStructure.modifiers[result.questionStructure.modifiers.length-1];
+				$('#result-question-structure').html(structureQuestion);
+				$('#result-final').html(result.answer);
+			},
+			error : function(result) {
+				alert("Error");
+			}
+		});
+	};
+</script>
+<style type="text/css">
+	body{
+		margin-top: 20px;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+    <header class="text-center">
+    	<img src="resources/images/fpt_logo.png" class="logo" /> 
+    	<h2>Ruby Project - Milestone 1</h2>
+    </header>
+    <div class="row">
+        <div class="col-md-5">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                   <!--  <span class="glyphicon glyphicon-comment"></span> --> Chat
+                    <!-- <div class="btn-group pull-right">
+                        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </button>
+                        <ul class="dropdown-menu slidedown">
+                            <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-refresh">
+                            </span>Refresh</a></li>
+                            <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-ok-sign">
+                            </span>Available</a></li>
+                            <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-remove">
+                            </span>Busy</a></li>
+                            <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-time"></span>
+                                Away</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-off"></span>
+                                Sign Out</a></li>
+                        </ul>
+                    </div> -->
+                </div>
+                <div class="panel-body">
+                    <ul class="chat">
+                        <li class="left clearfix"><span class="chat-img pull-left">
+                            <img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" />
+                        </span>
+                            <div class="chat-body clearfix">
+                                <!-- <div class="header"> -->
+                                    <!--  <strong class="primary-font"></strong> <small class="pull-right text-muted">
+                                     <span class="glyphicon glyphicon-time"></span>12 mins ago</small>  -->
+                                <!-- </div> -->
+                                <p>
+                                    Tối nay có phim gì?
+                                </p>
+                            </div>
+                        </li>
+                        <li class="right clearfix"><span class="chat-img pull-right">
+                            <img src="http://placehold.it/50/FA6F57/fff&text=ME" alt="User Avatar" class="img-circle" />
+                        </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <!-- <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>13 mins ago</small>
+                                    <strong class="pull-right primary-font">Bhaumik Patel</strong> -->
+                                </div>
+                                <p>
+                                   Tối nay có X-men, Trái tim máu, và Ninja Rùa.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="left clearfix"><span class="chat-img pull-left">
+                            <img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" />
+                        </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <!-- <strong class="primary-font">Jack Sparrow</strong> <small class="pull-right text-muted">
+                                        <span class="glyphicon glyphicon-time"></span>14 mins ago</small> -->
+                                </div>
+                                <p>
+                                    Gần đây có rạp nào tốt không?
+                                </p>
+                            </div>
+                        </li>
+                        <li class="right clearfix"><span class="chat-img pull-right">
+                            <img src="http://placehold.it/50/FA6F57/fff&text=ME" alt="User Avatar" class="img-circle" />
+                        </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <!-- <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>15 mins ago</small>
+                                    <strong class="pull-right primary-font">Bhaumik Patel</strong> -->
+                                </div>
+                                <p>
+                                    Gần đây có rạp Lotte Lanmard và rạp Plantium The Garden.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-footer">
+                    <div class="input-group">
+                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Hỏi tôi..." onkeyup="if (event.keyCode == 13) document.getElementById('btn-chat').click();"/>
+                        <span class="input-group-btn">
+                            <button class="btn btn-warning btn-sm" id="btn-chat" onclick="onChat()">
+                                Gửi</button>
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+		<div class="col-md-6 col-md-offset-1 " id="panel-debug" >
+				<div class="timeline-centered">
+					<article class="timeline-entry">
+					<div class="timeline-entry-inner">
+						<div class="timeline-icon bg-violet">
+							<i class="entypo-feather"></i>
+						</div>
+						<div class="timeline-label">
+							<h2>Search in cache Process</h2>
+							<p id="result-cache">The question is in cache.</p>
+						</div>
+					</div>
+					</article>
+					
+					<article class="timeline-entry">
+					<div id="panel-get-cache" class="timeline-entry-inner">
+						<div class="timeline-icon bg-coral">
+							<i class="entypo-suitcase"></i>
+						</div>
+						<div class="timeline-label">
+							<h2>Get Intend and modifiers from cache</h2>
+							<p id="result-get-cache">If the question was in cache, get question from cache.</p>
+						</div>
+					</div>
+					</article>
+					
+					<article class="timeline-entry">
+					<div id="panel-process-question" class="timeline-entry-inner">
+						<div class="timeline-icon bg-info">
+							<i class="entypo-suitcase"></i>
+						</div>
+
+						<div class="timeline-label">
+							<h2>Process question to find intend and modifiers</h2>
+							<p id="result-process-question">If the question was in cache, process question to find intend and modifiers. Then, cached the question.</p>
+						</div>
+					</div>
+					</article>
+
+					<article class="timeline-entry">
+					<div id="panel-result-question-structure" class="timeline-entry-inner">
+						<div class="timeline-icon bg-secondary">
+							<i class="entypo-suitcase"></i>
+						</div>
+						<div class="timeline-label">
+							<h2>Intend and modifiers</h2>
+							<p id="result-question-structure">Question structure result</p>
+						</div>
+					</div>
+					</article>
+					
+					<article class="timeline-entry">
+					<div id="panel-process-getanswer" class="timeline-entry-inner">
+						<div class="timeline-icon bg-warning">
+							<i class="entypo-suitcase"></i>
+						</div>
+						<div class="timeline-label">
+							<h2>Get Answer Process</h2>
+							<p id="result-getanswer">Query DB or get answer from Google</p>
+						</div>
+					</div>
+					</article>
+					
+					<article class="timeline-entry">
+					<div id="panel-result-final" class="timeline-entry-inner">
+						<div class="timeline-icon bg-success">
+							<i class="entypo-suitcase"></i>
+						</div>
+						<div class="timeline-label">
+							<h2>Result</h2>
+							<p id="result-final">Result</p>
+						</div>
+					</div>
+					</article>
+
+
+					<article class="timeline-entry begin">
+					<div class="timeline-entry-inner">
+						<div class="timeline-icon"
+							style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);">
+							<i class="entypo-flight"></i> +
+						</div>
+					</div>
+					</article>
+
+				</div>
+
+			</div>
+		</div>
+</div>
+<%@ include file="footer.jsp" %>
+<script type="text/javascript">
+
+</script>
+</body>
