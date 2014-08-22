@@ -40,7 +40,10 @@ public class App {
 		//System.out.println(getAnswer("what"));
 		List<QuestionStructure> questionStructures = app.questionStructureService.allQuestionStructures();
 		for (QuestionStructure questionStructure : questionStructures){
-			System.out.println("Key: " + questionStructure.getKey());
+			//app.questionStructureService.cached(questionStructure);
+			String key  = questionStructure.getKey();
+			System.out.println("Key: " + key);
+			questionStructure = app.questionStructureService.getInCache(key);
 		}
 		//questionStructure.setKey("test");
 		//app.questionStructureService.cached(questionStructure);*/

@@ -1,11 +1,9 @@
 package com.fpt.ruby.service.mongo;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.GenericXmlApplicationContext;
 import org.springframework.data.mongodb.core.MongoOperations;
 
 import redis.clients.jedis.Jedis;
@@ -34,43 +32,24 @@ public class QuestionStructureService {
 	
 	public void cached(QuestionStructure questionStructure) {
 		String key  = questionStructure.getKey();
-		if (questionStructure.getHead() != null && !questionStructure.getHead().isEmpty())
-			jedis.set(RedisHelper.getHeadKey(key), questionStructure.getHead());
-		for (String modifier : questionStructure.getModifiers()) {
-			jedis.lpush(RedisHelper.getModifiersKey(key),modifier);
-		}
+		String redisString = RedisHelper.toRedisString(questionStructure);
+		jedis.set(key, redisString);
 	}
 	
 	public boolean isInCache(String key) {
-		if (jedis.get(RedisHelper.getHeadKey(key)) == null) return false;
+		if (jedis.get(key) == null) return false;
 		return true;
 	}
 	
 	public QuestionStructure getInCache(String key){
-		QuestionStructure questionStructure = new QuestionStructure();
-		questionStructure.setKey(key);
-		String head = jedis.get(RedisHelper.getHeadKey(key));
-		if (head != null) 
-			questionStructure.setHead(head);
-		List<String> modifiers = new ArrayList<String>();
-		String modifier = jedis.lpop(RedisHelper.getModifiersKey(key));
-		while (modifier != null){
-			modifiers.add(modifier);
-			modifier = jedis.lpop(RedisHelper.getModifiersKey(key));
-		}
-		questionStructure.setModifiers(modifiers);
-		return questionStructure;
+		return  RedisHelper.toQuestionStructure(key, jedis.get(key));
 	}
 	
 	public void loadFromDBToCache(){
 		List<QuestionStructure> questionStructures = mongoOperations.findAll(QuestionStructure.class);
 		for (QuestionStructure questionStructure : questionStructures) {
 			String key  = questionStructure.getKey();
-			if (questionStructure.getHead() != null && !questionStructure.getHead().isEmpty())
-				jedis.set(RedisHelper.getHeadKey(key), questionStructure.getHead());
-			for (String modifier : questionStructure.getModifiers()) {
-				jedis.lpush(RedisHelper.getModifiersKey(key),modifier);
-			}
+			jedis.set(key, RedisHelper.toRedisString(questionStructure));
 		}
 	}
 	
