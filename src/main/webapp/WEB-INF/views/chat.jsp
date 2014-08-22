@@ -45,13 +45,13 @@
 				}
 				else {
 					$('#result-cache').html('The question is NOT in cache');
-					$('#result-process-question').html('Process question to find intend and modifiers. Then, cached the question.');
+					$('#result-process-question').html('Process question to find intent and modifiers. Then, cached the question.');
 					$('#panel-get-cache').addClass('hidden');
 					$('#panel-process-question').removeClass('hidden');
 				}
 				// head and modifiers
 				var structureQuestion = "";
-				structureQuestion += 'Intend:	' + result.questionStructure.head + '</br> Modifiers:	'  ;
+				structureQuestion += 'intent:	' + result.questionStructure.head + '</br> Modifiers:	'  ;
 				for (var i=0;i<result.questionStructure.modifiers.length - 1;i++){
 					structureQuestion += result.questionStructure.modifiers[i] + ", ";
 				}
@@ -190,7 +190,7 @@
 							<i class="entypo-suitcase"></i>
 						</div>
 						<div class="timeline-label">
-							<h2>Get Intend and modifiers from cache</h2>
+							<h2>Get intent and modifiers from cache</h2>
 							<p id="result-get-cache">If the question was in cache, get question from cache.</p>
 						</div>
 					</div>
@@ -203,8 +203,8 @@
 						</div>
 
 						<div class="timeline-label">
-							<h2>Process question to find intend and modifiers</h2>
-							<p id="result-process-question">If the question was in cache, process question to find intend and modifiers. Then, cached the question.</p>
+							<h2>Process question to find intent and modifiers</h2>
+							<p id="result-process-question">If the question was in cache, process question to find intent and modifiers. Then, cached the question.</p>
 						</div>
 					</div>
 					</article>
@@ -215,7 +215,7 @@
 							<i class="entypo-suitcase"></i>
 						</div>
 						<div class="timeline-label">
-							<h2>Intend and modifiers</h2>
+							<h2>Intent and modifiers</h2>
 							<p id="result-question-structure">Question structure result</p>
 						</div>
 					</div>
