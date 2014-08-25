@@ -1,8 +1,11 @@
 package fpt.qa.rubyweb;
 
+import java.util.List;
+
 import javax.annotation.PostConstruct;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -12,7 +15,7 @@ import com.fpt.ruby.App;
 import com.fpt.ruby.model.RubyAnswer;
 
 @Controller
-@RequestMapping("/app")
+@RequestMapping("/")
 public class AppController {
 	private App app;
 	
@@ -21,7 +24,12 @@ public class AppController {
 		app = new App();
 	}
 	
-	
+	@RequestMapping(value="/listCachedQuestion", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
+	@ResponseBody
+	public List<String> getListQuestion(){
+		return app.getListCachedQuestion();
+		//return "haha";
+	}
 	
 	@RequestMapping(value="/getAnswer", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
 	@ResponseBody
@@ -29,10 +37,16 @@ public class AppController {
 		return app.getAnswer(question);
 	}
 	
-	@RequestMapping(value="/test1", method = RequestMethod.GET)
-	@ResponseBody
-	public String test1(){
-	return "test";
+	@RequestMapping(value="/", method = RequestMethod.GET)
+	public String home(Model model){
+		List<String> questions = app.getListCachedQuestion();
+		model.addAttribute("questions", questions);
+		return "chat";
+	}
+	
+	@RequestMapping(value="/testCombo", method = RequestMethod.GET)
+	public String testCombo(Model model){
+		return "testCombo";
 	}
 	
 	/*@RequestMapping(value="/allCinema", method = RequestMethod.GET, produces = "application/json; charset=UTF-8")

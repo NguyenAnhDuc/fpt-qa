@@ -1,8 +1,8 @@
 <style type="text/css">
 #global_footer {
 	margin-top: 20px;
-    background: none repeat scroll 0 0 #FFFFFF;
-    border-top: 1px solid #EEEEEE;
+    /* background: none repeat scroll 0 0 #FFFFFF; */
+    border-top: 1px solid;
     clear: both;
     color: #999999;
     height: 20px;
