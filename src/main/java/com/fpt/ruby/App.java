@@ -1,5 +1,6 @@
 package com.fpt.ruby;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.fpt.ruby.helper.ProcessHelper;
@@ -49,6 +50,19 @@ public class App {
 		//app.questionStructureService.cached(questionStructure);*/
 		//app.questionStructureService.save(questionStructure);
 		System.out.println("DONE");
+	}
+
+	public List<String> getListCachedQuestion() {
+		List<QuestionStructure> allQuestion = this.questionStructureService.allQuestionStructures();
+		List<String> listCachedQuestion = new ArrayList<String>();
+		int count = 0;
+		for (QuestionStructure questionStructure : allQuestion) {
+			System.out.println(questionStructure.getKey());
+			listCachedQuestion.add(questionStructure.getKey());
+			count ++;
+			if (count > 50) break;
+		}
+		return listCachedQuestion;
 	}
 
 }
