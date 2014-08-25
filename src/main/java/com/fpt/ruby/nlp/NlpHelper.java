@@ -2,13 +2,15 @@ package com.fpt.ruby.nlp;
 
 import java.util.ArrayList;
 
+import com.fpt.ruby.helper.RedisHelper;
 import com.fpt.ruby.model.QuestionStructure;
 
 import fpt.qa.intent.detection.MovieIntentDetection;
 
 public class NlpHelper {
 	static{
-		MovieIntentDetection.init("qc", "dicts");
+		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
+		MovieIntentDetection.init(dir + "/qc", dir + "/dicts");
 	}
 	
 	public static QuestionStructure processQuestionStructure(String question){
