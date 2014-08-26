@@ -3,20 +3,33 @@ package com.fpt.ruby;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.data.mongodb.core.MongoOperations;
+
+import com.fpt.ruby.config.SpringMongoConfig;
 import com.fpt.ruby.helper.ProcessHelper;
 import com.fpt.ruby.model.QuestionStructure;
 import com.fpt.ruby.model.RubyAnswer;
 import com.fpt.ruby.nlp.NlpHelper;
+import com.fpt.ruby.service.mongo.MovieTicketService;
 import com.fpt.ruby.service.mongo.QuestionStructureService;
 
 public class App {
+	MongoOperations mongoOperations;
 	QuestionStructureService questionStructureService;
-	public App(QuestionStructureService questionStructureService){
+	MovieTicketService movieTicketService;
+	public App(QuestionStructureService questionStructureService, MovieTicketService movieTicketService){
 		this.questionStructureService = questionStructureService;
+		this.movieTicketService = movieTicketService;
+		
 	}
 	
 	public App(){
 		this.questionStructureService = new QuestionStructureService();
+		ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringMongoConfig.class);
+		mongoOperations = (MongoOperations) ctx.getBean("mongoTemplate");
+		this.movieTicketService = new MovieTicketService(mongoOperations);
 	}
 	
 	public RubyAnswer getAnswer(String question){

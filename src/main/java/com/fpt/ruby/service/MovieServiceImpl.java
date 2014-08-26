@@ -1,5 +1,7 @@
 package com.fpt.ruby.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -58,5 +60,16 @@ public class MovieServiceImpl implements MovieService{
 	public Movie getMovieByIdWithAllLazy(final int id) {
 		return MovieDAO.getMovieByIdWithAllLazy(id);
 	}
-
+	
+	@Override
+	@Transactional
+	public List<Movie> findAll() {
+		return MovieDAO.findAll();
+	}
+	
+	@Override
+	@Transactional
+	public List<Movie> findMovieMatchTitle(String matchTitle) {
+		return MovieDAO.findMovieMatchTitle(matchTitle);
+	}
 }

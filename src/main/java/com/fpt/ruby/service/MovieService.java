@@ -1,5 +1,7 @@
 package com.fpt.ruby.service;
 
+import java.util.List;
+
 import com.fpt.ruby.model.Movie;
 
 public interface MovieService {
@@ -17,4 +19,8 @@ public interface MovieService {
 	void deleteMovie(Movie movie);
 	
 	void saveMovie(Movie movie);
+	
+	List<Movie> findAll();
+	
+	List<Movie> findMovieMatchTitle(String matchTitle);
 }

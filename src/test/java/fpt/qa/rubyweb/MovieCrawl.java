@@ -3,6 +3,7 @@ package fpt.qa.rubyweb;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import org.apache.http.HttpResponse;
@@ -92,8 +93,25 @@ public class MovieCrawl {
 	}
 	
 	public static void testMovie() throws Exception{
-		Movie movie = movieService.findMovieById(550);
-		System.out.println(movie.getOriginal_title());
+		Movie movie = movieService.findMovieById(100);
+		System.out.println("Title: " + movie.getTitle());
+		System.out.println("Overview: " + movie.getOverview());
+		System.out.println("Tag line: " + movie.getTagline());
+	}
+	
+	public static void testFindMatchTitle(){
+		List<Movie> movies = movieService.findMovieMatchTitle("Guardians of the Galaxy");
+		int count = 0;
+		for (Movie movie : movies){
+			System.out.println("Title: " + movie.getTitle());
+			System.out.println("Overview: " + movie.getOverview());
+			System.out.println("Tag line: " + movie.getTagline());
+			for (Genre genre : movie.getGenres()){
+				System.out.println("Genre: " + genre.getName());
+			}
+			count ++;
+			if (count > 10) break;
+		}
 	}
 	
 	public static void crawlPage(int page) throws Exception{
@@ -116,6 +134,15 @@ public class MovieCrawl {
 		}
 	}
 	
+	public static void extractAllMovieTitle(){
+		List<Movie> movies = movieService.findAll();
+		StringBuilder movieTitles = new StringBuilder();
+		for (Movie movie : movies){
+			movieTitles.append(movie.getTitle());
+			movieTitles.append("\n");
+		}
+	}
+	
 	public static void init(){
 		ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		movieService = (MovieService) context.getBean("movieService");
@@ -128,7 +155,8 @@ public class MovieCrawl {
 	
 	public static void main(String[] args) throws Exception {
 		init();
-		testMovie();
+		//testMovie();
+		testFindMatchTitle();
 		//testDiscover();
 	}
 }
