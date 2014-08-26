@@ -1,0 +1,15 @@
+Static DB:
+- popularity	---> phim này có độ phổ biến là 
+- audience		---> phim này chỉ dành cho người lớn
+- rating		---> phim này có imdb rating là
+- content		---> phim này có nội dung tóm tắt là
+- genre			---> phim này thuộc thể loại phim hài
+- budget		---> phim này có kinh phí sản xuất là 
+- release		---> phim này đã/sẽ được công chiếu vào ngày
+
+
+Dynamic DB:
++ rạp			---> phim X đang được chiếu tại rạp 
++ phim			---> phim ... đang được chiếu tại rạp X
++ thể loại		---> phim này thuộc thể loại 
++ thời gian		---> phim X được chiếu tại rạp Y vào lúc 

@@ -1,0 +1,19 @@
+Phân loại các câu đầu vào thành các loại sau:
+PRICE: khoảng giá đồ ăn, giá vé
+DURation: film kéo dài bao lâu
+DIStance: khoảng cách bao xa
+NAMes: tên quán, tên rạp chiếu film, tên film, etc.
+HUMan: diễn viên nào, đạo diễn nào, phim dành cho đối tượng nào, quán phục vụ những đối tượng nào
+DTIme: quán mở cửa/đóng cửa lúc nào, phim bắt đầu chiếu lúc mấy giờ, suất chiếu gần nhất lúc mấy giờ
+DEScription: nội dung phim, không gian quán, phong cách phục vụ, bình luận về quán, etc.
+	đánh giá về quán, có ngon không, có được không, có tốt khôngs, có ổn không, có ok không,
+	pizza huts ăn có được không, chỉ đường đến quán ốc cay giảng võ
+POLar: phim này có dành cho trẻ em không, trước khi đến quán ngon phan bội châu tôi có cần gọi điện đặt chỗ trước không,
+	quán ốc cay có gần hồ giảng võ không
+ADDress: cho tôi biết địa chỉ quán ốc cay giảng võ
+CALendar: quán phục vụ những khung giờ nào, lịch chiếu phim
+SELection: phim này là phim 2D hay 3D
+NUMber: mức giảm giá cho người có thẻ thành viên ở rạp platinum là bao nhiêu
+	người có thẻ thành viên ở rạp platinum được giảm giá bao nhiêu
+	rạp platinum giảm giá bao nhiêu cho thành viên
+OTH: others
