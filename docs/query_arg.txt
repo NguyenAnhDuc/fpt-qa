@@ -5,3 +5,4 @@ Dynamic DB:
 + phim
 + rạp
 + thể loại (2D hay 3D)
++ thời gian

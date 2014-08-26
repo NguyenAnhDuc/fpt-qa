@@ -12,3 +12,4 @@ Dynamic DB:
 + rạp			---> phim X đang được chiếu tại rạp 
 + phim			---> phim ... đang được chiếu tại rạp X
 + thể loại		---> phim này thuộc thể loại 
++ thời gian		---> phim X được chiếu tại rạp Y vào lúc 
