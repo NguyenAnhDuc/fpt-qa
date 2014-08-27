@@ -6,6 +6,9 @@ Static DB:
 - genre			---> phim này thuộc thể loại phim hài
 - budget		---> phim này có kinh phí sản xuất là 
 - release		---> phim này đã/sẽ được công chiếu vào ngày
+- duration
+- production_company
+- production_country
 
 
 Dynamic DB:

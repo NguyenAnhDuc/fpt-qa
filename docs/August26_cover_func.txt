@@ -25,3 +25,5 @@ query static db:
  + giờ mở cửa/đóng cửa của rạp
  + địa chỉ, khoảng cách so với 1 địa điểm, đường đi đến 1 rạp chiếu phim
  + không gian, chất lượng phục vụ
+ 
+ 
