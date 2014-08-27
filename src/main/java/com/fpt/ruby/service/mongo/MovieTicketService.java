@@ -21,9 +21,9 @@ public class MovieTicketService {
 		List<MovieTicket> movieTickets = mongoOperations.findAll(MovieTicket.class);
 		List<MovieTicket> results = new ArrayList<MovieTicket>();
 		for (MovieTicket movieTicket : movieTickets){
-			if ( (matchMovieTicket.getCinema() == null || (movieTicket.getCinema().equals(matchMovieTicket.getCinema()))) 
+			if ( (matchMovieTicket.getCinema() == null || (movieTicket.getCinema().toLowerCase().contains(matchMovieTicket.getCinema().toLowerCase()))) 
 			 &&	 (matchMovieTicket.getCity() == null || (movieTicket.getCity().equals(matchMovieTicket.getCity())))
-			 &&  (matchMovieTicket.getMovie() == null || (movieTicket.getMovie().equals(matchMovieTicket.getMovie())))
+			 &&  (matchMovieTicket.getMovie() == null || (movieTicket.getMovie().toLowerCase().contains(matchMovieTicket.getMovie().toLowerCase())))
 			 &&  (matchMovieTicket.getType() == null || (movieTicket.getType().equals(matchMovieTicket.getType())))
 			 &&  (matchMovieTicket.getDate() == null || (movieTicket.getDate().equals(matchMovieTicket.getDate()))) )
 		    results.add(movieTicket);

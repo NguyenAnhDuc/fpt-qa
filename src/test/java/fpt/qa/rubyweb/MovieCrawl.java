@@ -100,7 +100,7 @@ public class MovieCrawl {
 	}
 	
 	public static void testFindMatchTitle(){
-		List<Movie> movies = movieService.findMovieMatchTitle("Guardians of the Galaxy");
+		List<Movie> movies = movieService.findMovieMatchTitle("Qua Tim Mau");
 		int count = 0;
 		for (Movie movie : movies){
 			System.out.println("Title: " + movie.getTitle());

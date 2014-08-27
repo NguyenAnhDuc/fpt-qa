@@ -1,6 +1,5 @@
 package fpt.qa.rubyweb;
 
-import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
@@ -11,8 +10,6 @@ import org.jsoup.select.Elements;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 import org.springframework.data.mongodb.core.MongoOperations;
-import org.springframework.data.mongodb.core.query.Criteria;
-import org.springframework.data.mongodb.core.query.Query;
 
 import com.fpt.ruby.model.MovieTicket;
 
@@ -23,12 +20,23 @@ public class JsoupTest {
 		mongoOperation = (MongoOperations) ctx.getBean("mongoTemplate");
 	}
 	
+	private static void showMovie(MovieTicket movieTicket){
+		System.out.println("Movie: " + movieTicket.getMovie());
+		System.out.println("Cinema: " + movieTicket.getCinema());
+		System.out.println("Date: " + movieTicket.getDate());
+		System.out.println("Type: " + movieTicket.getType());
+		System.out.println("------------------------------");
+	}
+	
 	public static void crawlCinema(String city, String cinema,String url,int date) throws Exception{
+		System.out.println("url: " + url);
 		System.out.println("Crawling cinema: " + cinema);
 		url += "?date=" + date;
 		Document doc = Jsoup.connect(url).timeout(100000).get();
 		Elements newsHeadlines = doc.select("#ShowtimeItemResult");
+		int count = 0;
 		for (Element element : newsHeadlines) {
+			count ++;
 			MovieTicket movieTicket = new MovieTicket();
 			Element headElement =  element.getElementsByClass("head").first();
 			//System.out.print(headElement.select("span").select("a").last().text());
@@ -39,6 +47,7 @@ public class JsoupTest {
 												  .select(".TimesContent").first()
 												  .select(".content").first()
 												  .select(".bntDigital");
+			
 			
 			for (Element element2 : btnDigitalElenments) {
 				String time = element2.select("span").first().text().trim();
@@ -53,6 +62,7 @@ public class JsoupTest {
 				dateTicket.setSeconds(0);
 				movieTicket.setDate(dateTicket);
 				mongoOperation.save(movieTicket);
+				//showMovie(movieTicket);
 			}
 
 			//3D
@@ -74,7 +84,9 @@ public class JsoupTest {
 				dateTicket.setSeconds(0);
 				movieTicket.setDate(dateTicket);
 				mongoOperation.save(movieTicket);
+				//showMovie(movieTicket);
 			}
+			
 		}
 	}
 	
@@ -108,8 +120,9 @@ public class JsoupTest {
 			String  cinemaLink = cinema.attr("value");
 			if (!cinemaLink.equals("0")){
 				String cinemaName = cinema.text().trim();
+				
 				String city = "ha-noi";
-				String cinemaUrl = url + "/" + cinemaLink;
+				String cinemaUrl = url + "/rap/" + cinemaLink;
 				int date = 0;
 				crawlCinema(city, cinemaName, cinemaUrl, date);
 			}
@@ -124,8 +137,8 @@ public class JsoupTest {
 		/*Query searchMovieTicketQuery = new Query(Criteria.where("cinema").is("lotte"));
 		MovieTicket movieTicket = mongoOperation.findOne(searchMovieTicketQuery, MovieTicket.class);
 		System.out.println(movieTicket.getDate().getDate());*/
-		//crawlCinema("lotte","http://phimchieurap.vn/lich-chieu/ha-noi/rap/platinum-garden-mall", 0);
-		showMovieTickets();
-		//crawlHaNoi();
+		//crawlCinema("Ha Noi","lotte landmark","http://phimchieurap.vn/lich-chieu/ha-noi/rap/lotte-cinema-landmark", 0);
+		//showMovieTickets();
+		crawlHaNoi();
 	}
 }
