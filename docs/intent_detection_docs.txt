@@ -7,9 +7,9 @@ yesno, where, when, what, how, how long, how far, which, selection, map, how muc
 (phim, when): rạp quốc gia chiếu phim này vào lúc nào
 (nội dung, what): nội dung tóm tắt của phim này là gì
 (phim, how): phim đó có hay không
-(phim, how long): phim này kéo dài bao lâu; thời lượng phim này bao lâu
-(phim, which): phim này thuộc thể loại nào
-(phim, selection): phim đó là phim hài hay phim hành động
+(phim, how long): phim này kéo dài bao lâu; thời lượng phim này bao lâu v
+(phim, which): phim này thuộc thể loại nào v
+(phim, selection): phim đó là phim hài hay phim hành động v
 (rạp, map): chỉ cho tôi đường đi đến rạp đó
 (rạp, how far): rạp quốc gia cách đây bao xa
 (rạp, how much): vé xem phim 2D tại rạp đó bao nhiêu

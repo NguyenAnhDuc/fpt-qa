@@ -5,16 +5,24 @@
 	<link rel="stylesheet" type="text/css" href="resources/css/chat-widget.css" />
 	<link rel="stylesheet" type="text/css" href="resources/css/debug.css" />
 	<link rel="stylesheet" type="text/css" href="resources/css/main.css" />
+	
 	<link rel="stylesheet" type="text/css" href="resources/css/bootstrap/bootstrap.min.css" />
-	<script src="resources/js/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="resources/css/combo_css/style.css" />
+	<!-- <script src="resources/js/jquery-1.11.1.min.js"></script>  -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
 	<script src="resources/js/bootstrap/bootstrap.min.js"></script>
+	<script src="resources/js/jquery.scrollablecombo.js"></script>
 	<script>
+	$(function() {
+	    $('#ui_element').scrollablecombo();
+	    
+	});
 	function onChat() {
 		//alert("searchtext");
 		var question = $('#btn-input').val();
 		$.ajax({
 			type : "POST",
-			url : "/rubyweb/app/getAnswer",
+			url : "/rubyweb/getAnswer",
 			contentType : "application/x-www-form-urlencoded;charset=UTF-8",
 			data : "question=" + encodeURIComponent(question),
 			success : function(result) {
@@ -45,13 +53,13 @@
 				}
 				else {
 					$('#result-cache').html('The question is NOT in cache');
-					$('#result-process-question').html('Process question to find intend and modifiers. Then, cached the question.');
+					$('#result-process-question').html('Process question to find intent and modifiers. Then, cached the question.');
 					$('#panel-get-cache').addClass('hidden');
 					$('#panel-process-question').removeClass('hidden');
 				}
 				// head and modifiers
 				var structureQuestion = "";
-				structureQuestion += 'Intend:	' + result.questionStructure.head + '</br> Modifiers:	'  ;
+				structureQuestion += 'intent:	' + result.questionStructure.head + '</br> Modifiers:	'  ;
 				for (var i=0;i<result.questionStructure.modifiers.length - 1;i++){
 					structureQuestion += result.questionStructure.modifiers[i] + ", ";
 				}
@@ -69,7 +77,27 @@
 <style type="text/css">
 	body{
 		margin-top: 20px;
+		background-color:#f0f0f0;
+        font-family:"Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
 	}
+	
+	
+           
+	.box{
+                border:15px solid #fff;
+                height:300px;
+                width:500px;
+                position:relative;
+                padding:10px 10px 10px 10px;
+                -moz-box-shadow:0px 0px 2px #ccc inset;
+                -webkit-box-shadow:0px 0px 2px #ccc inset;
+                box-shadow:0px 0px 2px #ccc inset;
+            }
+            .box h3{
+                text-transform: uppercase;
+                color:#ccc;
+                text-shadow:0 1px 0 #fff;
+            }
 </style>
 </head>
 <body>
@@ -169,6 +197,15 @@
                 </div>
                 
             </div>
+        	 <div class="box">
+                <h3 class="text-center">Cached Questions</h3>
+                <select class="questions_combo" id="ui_element">
+                    <option value="A" selected>Choose a question</option>
+                    <c:forEach var="question" items="${questions}">
+							<option value="${question}">${question}</option>
+						</c:forEach>
+                </select>
+            </div> 
         </div>
 		<div class="col-md-6 col-md-offset-1 " id="panel-debug" >
 				<div class="timeline-centered">
@@ -190,7 +227,7 @@
 							<i class="entypo-suitcase"></i>
 						</div>
 						<div class="timeline-label">
-							<h2>Get Intend and modifiers from cache</h2>
+							<h2>Get intent and modifiers from cache</h2>
 							<p id="result-get-cache">If the question was in cache, get question from cache.</p>
 						</div>
 					</div>
@@ -203,8 +240,8 @@
 						</div>
 
 						<div class="timeline-label">
-							<h2>Process question to find intend and modifiers</h2>
-							<p id="result-process-question">If the question was in cache, process question to find intend and modifiers. Then, cached the question.</p>
+							<h2>Process question to find intent and modifiers</h2>
+							<p id="result-process-question">If the question was in cache, process question to find intent and modifiers. Then, cached the question.</p>
 						</div>
 					</div>
 					</article>
@@ -215,7 +252,7 @@
 							<i class="entypo-suitcase"></i>
 						</div>
 						<div class="timeline-label">
-							<h2>Intend and modifiers</h2>
+							<h2>Intent and modifiers</h2>
 							<p id="result-question-structure">Question structure result</p>
 						</div>
 					</div>
@@ -260,8 +297,14 @@
 			</div>
 		</div>
 </div>
+
+ 
+
 <%@ include file="footer.jsp" %>
 <script type="text/javascript">
 
+	/* $( ".cb_down" ).change(function() {
+	  alert( "Handler for .change() called." ); 
+	}); */ 
 </script>
 </body>

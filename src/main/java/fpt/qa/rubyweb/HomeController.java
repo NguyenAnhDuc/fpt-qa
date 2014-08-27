@@ -26,6 +26,7 @@ import com.fpt.ruby.helper.HttpHelper;
  * Handles requests for the application home page.
  */
 @Controller
+@RequestMapping("/home")
 public class HomeController {
 	private final String LIST_ITEM_LINK = "http://localhost:8080/rubyweb/movie_ticket/allCinema";
 	private final String MOVIES_FIELD = "movies";

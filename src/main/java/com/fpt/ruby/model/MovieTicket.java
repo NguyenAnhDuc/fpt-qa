@@ -12,7 +12,13 @@ public class MovieTicket {
 	private String type;
 	private Date date;
 	private String  city;
-	
+	public MovieTicket(){
+		cinema = null;
+		movie = null;
+		type = null;
+		date = null;
+		city = null;
+	}
 	public String getCity() {
 		return city;
 	}

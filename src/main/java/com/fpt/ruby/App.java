@@ -1,21 +1,43 @@
 package com.fpt.ruby;
 
+import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.data.mongodb.core.MongoOperations;
+
+import com.fpt.ruby.config.SpringMongoConfig;
 import com.fpt.ruby.helper.ProcessHelper;
+import com.fpt.ruby.model.MovieFly;
+import com.fpt.ruby.model.MovieTicket;
 import com.fpt.ruby.model.QuestionStructure;
 import com.fpt.ruby.model.RubyAnswer;
 import com.fpt.ruby.nlp.NlpHelper;
+import com.fpt.ruby.service.MovieFlyService;
+import com.fpt.ruby.service.mongo.MovieTicketService;
 import com.fpt.ruby.service.mongo.QuestionStructureService;
 
 public class App {
+	MongoOperations mongoOperations;
 	QuestionStructureService questionStructureService;
-	public App(QuestionStructureService questionStructureService){
+	MovieTicketService movieTicketService;
+	MovieFlyService movieFlyService;
+	public App(QuestionStructureService questionStructureService, MovieTicketService movieTicketService, MovieFlyService movieFlyService){
 		this.questionStructureService = questionStructureService;
+		this.movieTicketService = movieTicketService;
+		this.movieFlyService = movieFlyService;
 	}
 	
 	public App(){
 		this.questionStructureService = new QuestionStructureService();
+		ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringMongoConfig.class);
+		mongoOperations = (MongoOperations) ctx.getBean("mongoTemplate");
+		this.movieTicketService = new MovieTicketService(mongoOperations);
+		this.movieFlyService = new MovieFlyService();
 	}
 	
 	public RubyAnswer getAnswer(String question){
@@ -33,22 +55,52 @@ public class App {
 		return rubyAnswer;
 	}
 	
-	public static void main(String[] args) {
-		App app = new App();
-		//System.out.println(app.getAnswer("tối nay có phim gì nhỉ"));
-		System.out.println(app.questionStructureService.isInCache("tối nay rạp chiếu phim gì")); 
-		//System.out.println(getAnswer("what"));
-		List<QuestionStructure> questionStructures = app.questionStructureService.allQuestionStructures();
-		for (QuestionStructure questionStructure : questionStructures){
-			//app.questionStructureService.cached(questionStructure);
-			String key  = questionStructure.getKey();
-			System.out.println("Key: " + key);
-			questionStructure = app.questionStructureService.getInCache(key);
-		}
-		//questionStructure.setKey("test");
-		//app.questionStructureService.cached(questionStructure);*/
-		//app.questionStructureService.save(questionStructure);
-		System.out.println("DONE");
+	public static void main(String[] args) throws UnsupportedEncodingException {
+		//testGetTicket();
+		testQueryStaticMovie();
 	}
-
+	
+	private static void testQueryStaticMovie() throws UnsupportedEncodingException{
+		App app = new App();
+		String title = "Guardians of the galaxy";
+		List<MovieFly> movieFlies = app.movieFlyService.searchOnImdb(title);
+		for (MovieFly movieFly : movieFlies){
+			System.out.println("Genre: " + movieFly.getGenre());
+			System.out.println("Imdb Rating: " + movieFly.getImdbRating());
+			System.out.println("Actors: " + movieFly.getActor());
+			System.out.println("Director: " + movieFly.getDirector());
+			System.out.println("Plot: " + movieFly.getPlot());
+		}
+	}
+	
+	private static void testGetTicket(){
+		App app = new App();
+		MovieTicket matchMovieTicket = new MovieTicket();
+		matchMovieTicket.setCinema("Lotte Cinema Landmark");
+		List<MovieTicket> movieTickets = app.movieTicketService.findMoviesMathCondition(matchMovieTicket); 
+		//List<MovieTicket> movieTickets = app.movieTicketService.findAll();
+		Set<String> movieNames = new HashSet<String>();
+		
+		for (MovieTicket movieTicket : movieTickets) {
+			movieNames.add(movieTicket.getMovie());
+		}
+		
+		for (String movieName : movieNames){
+			System.out.println(movieName);
+		}
+	}
+	
+	public List<String> getListCachedQuestion() {
+		List<QuestionStructure> allQuestion = this.questionStructureService.allQuestionStructures();
+		List<String> listCachedQuestion = new ArrayList<String>();
+		int count = 0;
+		for (QuestionStructure questionStructure : allQuestion) {
+			System.out.println(questionStructure.getKey());
+			listCachedQuestion.add(questionStructure.getKey());
+			count ++;
+			if (count > 50) break;
+		}
+		return listCachedQuestion;
+	}
+	
 }

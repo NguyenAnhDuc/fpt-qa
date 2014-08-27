@@ -1,6 +1,6 @@
 package com.fpt.ruby.dao;
 
-import org.springframework.transaction.annotation.Transactional;
+import java.util.List;
 
 import com.fpt.ruby.model.Movie;
 public interface MovieDAO {
@@ -18,5 +18,9 @@ public interface MovieDAO {
 		  void saveMovie(Movie movie);
 		  
 		  void deleteMovie(Movie movie);
+
+		  List<Movie> findAll();
+
+		  List<Movie> findMovieMatchTitle(String matchTitle);
 		  
 }

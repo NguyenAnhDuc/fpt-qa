@@ -44,7 +44,7 @@
     p:sessionFactory-ref="sessionFactory">
   </bean>
   
-    <mongo:mongo host="10.3.9.236" port="27017" />
+    <mongo:mongo host="10.3.9.236" port="2701" />
 	<mongo:db-factory dbname="yourdb" />
 
 	<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
