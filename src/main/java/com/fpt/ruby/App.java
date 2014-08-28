@@ -78,9 +78,9 @@ public class App {
 		App app = new App();
 		MovieTicket matchMovieTicket = new MovieTicket();
 		matchMovieTicket.setCinema("Lotte Cinema Landmark");
-		Date beforeDate = null;
+		Date beforeDate = new Date();
 		Date afterDate = new Date();
-		afterDate.setHours(20);
+		System.out.println(beforeDate.equals(afterDate));
 		List<MovieTicket> movieTickets = new ArrayList<MovieTicket>(); 
 		movieTickets = app.movieTicketService.findMoviesMatchCondition(matchMovieTicket, beforeDate, afterDate);
 	
