@@ -16,12 +16,15 @@ public class NlpHelper {
 	public static QuestionStructure processQuestionStructure(String question){
 		QuestionStructure questionStructure = new QuestionStructure();
 		questionStructure.setKey(normalizeQuestion(question));
-		questionStructure.setHead(MovieIntentDetection.getIntent(normalizeQuestion(question)));
+		questionStructure.setHead(question.isEmpty() ? "" : MovieIntentDetection.getIntent(normalizeQuestion(question)));
 		questionStructure.setModifiers(new ArrayList<String>());
 		return questionStructure;
 	}
 	
 	public static String normalizeQuestion(String question){
+		if(question.isEmpty()){
+			return "";
+		}
 		int j = question.length() - 1;
 		// remove question mark or special character
 		for (; j >= 0; j--){
