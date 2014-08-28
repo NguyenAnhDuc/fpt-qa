@@ -4,8 +4,6 @@ import java.util.List;
 
 import com.fpt.ruby.model.MovieTicket;
 
-import fpt.qa.intent.detection.MovieIntentDetection;
-
 public class TicketAnswerMapperImpl implements TicketAnswerMapper {
 	public String getTypeTicketAnswer(List<MovieTicket> ans){
 		if (ans.size() == 0){
@@ -45,6 +43,7 @@ public class TicketAnswerMapperImpl implements TicketAnswerMapper {
 
 		return res;
 	}
+	
 	public String getCinemaTicketAnswer(List<MovieTicket> ans){
 		if (ans.size() == 0){
 			return "Xin lỗi, chúng tôi không tìm thấy dữ liệu cho câu trả lời";
@@ -55,11 +54,11 @@ public class TicketAnswerMapperImpl implements TicketAnswerMapper {
 		}
 		return res.substring(0, res.length() - 3);
 	}
+	
 	public String getDateTicketAnswer(List<MovieTicket> ans){
 		if (ans.size() == 0){
 			return "Xin lỗi, chúng tôi không tìm thấy dữ liệu cho câu trả lời";
 		}
-		
 		return "";
 	}
 }

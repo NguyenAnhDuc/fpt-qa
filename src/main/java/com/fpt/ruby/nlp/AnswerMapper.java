@@ -10,6 +10,17 @@ import fpt.qa.intent.detection.IntentConstants;
 public class AnswerMapper {
 	private static MovieAnswerMapper mam = new MovieAnswerMapperImpl();
 	private static TicketAnswerMapper tam = new TicketAnswerMapperImpl();
+	public static String Static_Question = "static";
+	public static String Dynamic_Question = "dynamic";
+	
+	// detect question is static or dynamic
+	public static String getTypeOfAnswer(String intent){
+		if (intent.equals(IntentConstants.MOV_DATE)) return Dynamic_Question; 
+		if (intent.equals(IntentConstants.CIN_NAME)) return Dynamic_Question; 
+		if (intent.equals(IntentConstants.MOV_TITLE)) return Dynamic_Question; 
+		if (intent.equals(IntentConstants.MOV_TYPE)) return Dynamic_Question; 
+		return Static_Question;
+	}
 	
 	public static String getStaticAnswer(String intent, List<MovieFly> ans){
 		if(intent.equals(IntentConstants.MOV_ACTOR)){

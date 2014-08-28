@@ -78,11 +78,12 @@ public class MovieFlyService {
 	}
 	
 	public static void main(String[] args) throws Exception {
-		/*List<MovieFly> movieFlies = searchOnImdb("Starred Up");
+		MovieFlyService movieFlyService = new MovieFlyService();
+		List<MovieFly> movieFlies = movieFlyService.searchOnImdb("Starred Up");
 		for (MovieFly movieFly : movieFlies){
 			System.out.println("Genre: " + movieFly.getGenre());
 			System.out.println("Imdb Rating: " + movieFly.getImdbRating());
-		}*/
+		}
 	}
 
 }

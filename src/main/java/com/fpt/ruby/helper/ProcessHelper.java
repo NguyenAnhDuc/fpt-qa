@@ -13,6 +13,7 @@ public class ProcessHelper {
 	public static RubyAnswer getAnswer(String question,QuestionStructure questionStructure) {
 		RubyAnswer rubyAnswer = new RubyAnswer();
 		//rubyAnswer.setAnswer("this is answer of ruby");
+		
 		rubyAnswer.setAnswer(getSimsimiResponse(question));
 		rubyAnswer.setQuestionStructure(questionStructure);
 		return rubyAnswer;

@@ -244,6 +244,11 @@
 			<artifactId>JMDN</artifactId>
 			<version>1.0</version>
 		</dependency>
+		<dependency>
+			<groupId>AdditionalInformation</groupId>
+			<artifactId>AdditionalInformation</artifactId>
+			<version>AdditionalInformation</version>
+		</dependency>
 
 	</dependencies>
 	<build>

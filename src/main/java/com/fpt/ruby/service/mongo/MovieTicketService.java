@@ -5,14 +5,22 @@ import java.util.Date;
 import java.util.List;
 
 import org.apache.log4j.jmx.Agent;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.data.mongodb.core.MongoOperations;
 
+import com.fpt.ruby.config.SpringMongoConfig;
 import com.fpt.ruby.model.MovieTicket;
 
 public class MovieTicketService {
 	private MongoOperations mongoOperations;
 	public MovieTicketService(MongoOperations mongoOperations){
 		this.mongoOperations = mongoOperations;
+	}
+	
+	public MovieTicketService(){
+		ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringMongoConfig.class);
+		this.mongoOperations = (MongoOperations) ctx.getBean("mongoTemplate");
 	}
 	
 	public List<MovieTicket> findAll(){
