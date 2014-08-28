@@ -1,5 +1,7 @@
 package com.fpt.ruby.model;
 
+import java.sql.Date;
+
 
 public class MovieFly {
 	private String title;
@@ -15,6 +17,7 @@ public class MovieFly {
 	private String imdbId;
 	private String plot;
 	private int year;
+	private Date released;
 	
 	public String getDirector() {
 		return director;
@@ -89,6 +92,12 @@ public class MovieFly {
 	}
 	public void setPlot(String plot) {
 		this.plot = plot;
+	}
+	public Date getReleased() {
+		return released;
+	}
+	public void setReleased(Date released) {
+		this.released = released;
 	}
 	public int getYear() {
 		return year;

@@ -2,6 +2,8 @@ package com.fpt.ruby.service;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.sql.Date;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,6 +56,10 @@ public class MovieFlyService {
 			movieFly.setLanguage(jsonImdb.getString("Language"));
 			movieFly.setDirector(jsonImdb.getString("Director"));
 			movieFly.setPlot(jsonImdb.getString("Plot"));
+			
+			SimpleDateFormat format = new SimpleDateFormat("dd MMM yyyy");
+			java.util.Date utilDate = format.parse(jsonImdb.getString("Released"));
+			movieFly.setReleased(new Date(utilDate.getTime()));
 		}
 		catch (Exception ex){
 			System.out.println("Exception ex: " + ex.getMessage());

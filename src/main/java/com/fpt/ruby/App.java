@@ -115,4 +115,7 @@ public class App {
 		return listCachedQuestion;
 	}
 	
+	public MovieFlyService getMovieFlyService(){
+		return movieFlyService;
+	}
 }
