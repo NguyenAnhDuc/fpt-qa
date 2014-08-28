@@ -2,6 +2,7 @@ package com.fpt.ruby;
 
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -56,8 +57,8 @@ public class App {
 	}
 	
 	public static void main(String[] args) throws UnsupportedEncodingException {
-		//testGetTicket();
-		testQueryStaticMovie();
+		testGetTicket();
+		//testQueryStaticMovie();
 	}
 	
 	private static void testQueryStaticMovie() throws UnsupportedEncodingException{
@@ -77,9 +78,14 @@ public class App {
 		App app = new App();
 		MovieTicket matchMovieTicket = new MovieTicket();
 		matchMovieTicket.setCinema("Lotte Cinema Landmark");
-		List<MovieTicket> movieTickets = app.movieTicketService.findMoviesMathCondition(matchMovieTicket); 
+		Date beforeDate = null;
+		Date afterDate = new Date();
+		afterDate.setHours(20);
+		List<MovieTicket> movieTickets = new ArrayList<MovieTicket>(); 
+		movieTickets = app.movieTicketService.findMoviesMatchCondition(matchMovieTicket, beforeDate, afterDate);
+	
 		//List<MovieTicket> movieTickets = app.movieTicketService.findAll();
-		Set<String> movieNames = new HashSet<String>();
+		/*Set<String> movieNames = new HashSet<String>();
 		
 		for (MovieTicket movieTicket : movieTickets) {
 			movieNames.add(movieTicket.getMovie());
@@ -87,6 +93,12 @@ public class App {
 		
 		for (String movieName : movieNames){
 			System.out.println(movieName);
+		}*/
+		for (MovieTicket movieTicket : movieTickets){
+			System.out.println("Cinema: " + movieTicket.getCinema());
+			System.out.println("Movie: " + movieTicket.getMovie());
+			System.out.println("Date: " + movieTicket.getDate());
+			System.out.println("---------------------------------");
 		}
 	}
 	

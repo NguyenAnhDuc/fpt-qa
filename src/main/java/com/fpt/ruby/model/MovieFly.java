@@ -10,6 +10,11 @@ public class MovieFly {
 	private String country;
 	private String awards;
 	private String director;
+	private String runtime;
+	private float imdbRating;
+	private String imdbId;
+	private String plot;
+	private int year;
 	
 	public String getDirector() {
 		return director;
@@ -41,11 +46,7 @@ public class MovieFly {
 	public void setWriter(String writer) {
 		this.writer = writer;
 	}
-	private String runtime;
-	private float imdbRating;
-	private String imdbId;
-	private String plot;
-	private int year;
+	
 	public String getTitle() {
 		return title;
 	}

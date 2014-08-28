@@ -112,7 +112,7 @@ public class JsoupTest {
 	}
 	
 	public static void crawlHaNoi() throws Exception{
-		mongoOperation.dropCollection(MovieTicket.class);
+		//mongoOperation.dropCollection(MovieTicket.class);
 		String url = "http://phimchieurap.vn/lich-chieu/ha-noi";
 		Document doc = Jsoup.connect(url).timeout(100000).get();
 		Elements cinemas = doc.getElementById("ctl00_ContentPlaceHolder1_ddlrap").children();
