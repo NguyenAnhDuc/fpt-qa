@@ -1,5 +1,7 @@
 package com.fpt.ruby.nlp;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 import com.fpt.ruby.model.MovieTicket;
@@ -23,17 +25,24 @@ public class TicketAnswerMapperImpl implements TicketAnswerMapper {
 		if (ans.size() == 0){
 			return "Xin lỗi, chúng tôi không tìm thấy dữ liệu cho câu trả lời";
 		}
-		String res = "";
-		res = "Phim ";
-		for (int i = 0; i < ans.size(); i++) {
-			if (i > 0 && i == ans.size() - 1) {
-				res += "và " + ans.get(i).getMovie() + " đang được chiếu";
+		HashSet<String> movies = new HashSet<String>();
+		for (MovieTicket movieTicket : ans){
+			movies.add(movieTicket.getMovie());
+		}
+		List<String> movieNames = new ArrayList<String>();
+		for (String movie : movies){
+			movieNames.add(movie);
+		}
+		String res = "Phim ";
+		for (int i = 0; i < movieNames.size(); i++) {
+			if (i > 0 && i == movieNames.size() - 1) {
+				res += "và " + movieNames.get(i) + " đang được chiếu";
 				break;
-			} else if (i == ans.size() - 1) {
-				res += ans.get(i).getMovie() + " đang được chiếu";
+			} else if (i == movieNames.size() - 1) {
+				res += movieNames.get(i) + " đang được chiếu";
 				break;
 			}
-			res += ans.get(i).getMovie();
+			res += movieNames.get(i);
 			if (ans.size() > 1) {
 				res += ", ";
 			} else {
@@ -48,9 +57,13 @@ public class TicketAnswerMapperImpl implements TicketAnswerMapper {
 		if (ans.size() == 0){
 			return "Xin lỗi, chúng tôi không tìm thấy dữ liệu cho câu trả lời";
 		}
+		HashSet<String> cinemas = new HashSet<String>();
+		for (MovieTicket movieTicket : ans){
+			cinemas.add(movieTicket.getCinema());
+		}
 		String res = "Rạp ";
-		for (MovieTicket tick : ans){
-			res += tick.getCinema() + ", ";
+		for (String cinema : cinemas){
+			res += cinema + ", ";
 		}
 		return res.substring(0, res.length() - 3);
 	}

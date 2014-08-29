@@ -1,24 +1,71 @@
 package com.fpt.ruby.helper;
 
 import java.net.URLEncoder;
+import java.util.Date;
+import java.util.List;
 
 import org.json.JSONObject;
 
+import com.fpt.ruby.model.MovieFly;
+import com.fpt.ruby.model.MovieTicket;
 import com.fpt.ruby.model.QuestionStructure;
 import com.fpt.ruby.model.RubyAnswer;
+import com.fpt.ruby.nlp.AnswerMapper;
 import com.fpt.ruby.nlp.NlpHelper;
+import com.fpt.ruby.service.MovieFlyService;
+import com.fpt.ruby.service.mongo.MovieTicketService;
 import com.fpt.ruby.service.mongo.QuestionStructureService;
 
+import fpt.qa.intent.detection.MovieIntentDetection;
+
 public class ProcessHelper {
-	public static RubyAnswer getAnswer(String question,QuestionStructure questionStructure) {
+	
+	
+	public static RubyAnswer getAnswer(String question,QuestionStructure questionStructure,
+										MovieFlyService movieFlyService, MovieTicketService movieTicketService)  {
 		RubyAnswer rubyAnswer = new RubyAnswer();
-		//rubyAnswer.setAnswer("this is answer of ruby");
-		
-		rubyAnswer.setAnswer(getSimsimiResponse(question));
+		rubyAnswer.setAnswer("this is answer of ruby");
+		//rubyAnswer.setAnswer(getAnswer(question, movieFlyService, movieTicketService));
+		//rubyAnswer.setAnswer(getSimsimiResponse(question));
 		rubyAnswer.setQuestionStructure(questionStructure);
 		return rubyAnswer;
 	}
-
+	
+	public static RubyAnswer getAnswer(String question, MovieFlyService movieFlyService, MovieTicketService movieTicketService) {
+		RubyAnswer rubyAnswer = new RubyAnswer();
+		String intent = MovieIntentDetection.getIntent(question);
+		System.out.println("Intent: " + intent);
+		rubyAnswer.setQuestion(question);
+		rubyAnswer.setIntent(intent);
+		String questionType = AnswerMapper.getTypeOfAnswer(intent);
+		rubyAnswer.setAnswer("Xin lỗi, tôi không trả lời câu hỏi này được");
+		// static question
+		try{
+		if (questionType.equals(AnswerMapper.Static_Question)){
+			String movieTitle = NlpHelper.getMovieTitle(question);
+			System.out.println("Movie Title: " + movieTitle);
+			List<MovieFly> movieFlies = movieFlyService.searchOnImdb(movieTitle);
+			rubyAnswer.setAnswer(AnswerMapper.getStaticAnswer(intent, movieFlies));
+			rubyAnswer.setQuestionType(AnswerMapper.Static_Question);
+			rubyAnswer.setMovieTitle(movieTitle);
+		}
+		else {
+			MovieTicket matchMovieTicket = NlpHelper.getMovieTicket(question);
+			Date beforeDate = new Date();
+			beforeDate = null;
+			Date afterDate = new Date();
+			afterDate = null;
+			List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition(matchMovieTicket, beforeDate, afterDate);
+			rubyAnswer.setAnswer(AnswerMapper.getDynamicAnswer(intent, movieTickets));
+			rubyAnswer.setQuestionType(AnswerMapper.Dynamic_Question);
+			rubyAnswer.setMovieTicket(matchMovieTicket);
+		}}
+		catch (Exception ex){
+			System.out.println(ex.getMessage());
+		}
+		return rubyAnswer;
+	}
+	
 	public static String getSimsimiResponse(String question){
 		System.out.println("Simsimi get answer ....");
 		System.out.println("question: " + question);

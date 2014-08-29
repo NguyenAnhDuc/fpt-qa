@@ -4,7 +4,36 @@ public class RubyAnswer {
 	private String question;
 	private String answer;
 	private boolean isInCache;
+	private String intent;
+	private String questionType;
+	private String movieTitle;
+	private MovieTicket movieTicket;
 	private QuestionStructure questionStructure;
+	
+	public String getIntent() {
+		return intent;
+	}
+	public void setIntent(String intent) {
+		this.intent = intent;
+	}
+	public String getQuestionType() {
+		return questionType;
+	}
+	public void setQuestionType(String questionType) {
+		this.questionType = questionType;
+	}
+	public String getMovieTitle() {
+		return movieTitle;
+	}
+	public void setMovieTitle(String movieTitle) {
+		this.movieTitle = movieTitle;
+	}
+	public MovieTicket getMovieTicket() {
+		return movieTicket;
+	}
+	public void setMovieTicket(MovieTicket movieTicket) {
+		this.movieTicket = movieTicket;
+	}
 	public String getQuestion() {
 		return question;
 	}

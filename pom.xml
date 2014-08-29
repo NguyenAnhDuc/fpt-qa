@@ -247,7 +247,7 @@
 		<dependency>
 			<groupId>AdditionalInformation</groupId>
 			<artifactId>AdditionalInformation</artifactId>
-			<version>AdditionalInformation</version>
+			<version>1.0.0</version>
 		</dependency>
 
 	</dependencies>

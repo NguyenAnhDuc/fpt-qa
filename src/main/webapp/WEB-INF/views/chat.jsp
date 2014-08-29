@@ -8,8 +8,8 @@
 	
 	<link rel="stylesheet" type="text/css" href="resources/css/bootstrap/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="resources/css/combo_css/style.css" />
-	<!-- <script src="resources/js/jquery-1.11.1.min.js"></script>  -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+    <script src="resources/js/jquery-1.11.1.min.js"></script>  
+	<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
 	<script src="resources/js/bootstrap/bootstrap.min.js"></script>
 	<script src="resources/js/jquery.scrollablecombo.js"></script>
 	<script>
@@ -46,7 +46,7 @@
 				$('.panel-body').scrollTop(1E10);
 				//show debug 
 				$('#panel-debug').removeClass('hidden');
-				if (result.inCache){
+				/* if (result.inCache){
 					$('#result-cache').html('The question is in cache');
 					$('#panel-process-question').addClass('hidden');
 					$('#panel-get-cache').removeClass('hidden');
@@ -56,7 +56,7 @@
 					$('#result-process-question').html('Process question to find intent and modifiers. Then, cached the question.');
 					$('#panel-get-cache').addClass('hidden');
 					$('#panel-process-question').removeClass('hidden');
-				}
+				} 
 				// head and modifiers
 				var structureQuestion = "";
 				structureQuestion += 'intent:	' + result.questionStructure.head + '</br> Modifiers:	'  ;
@@ -65,7 +65,18 @@
 				}
 				if (result.questionStructure.modifiers.length > 0)
 					structureQuestion += result.questionStructure.modifiers[result.questionStructure.modifiers.length-1];
-				$('#result-question-structure').html(structureQuestion);
+				*/
+				$('#result-intent').html(result.intent);
+				$('#result-question-type').html(result.questionType);
+				if (result.questionType == 'static'){
+					$('#result-paramaters').html('Mov_title: ' + result.questionType);	
+				}
+				else{
+					var htmlParamater = '';
+					if (result.movieTicket.cinema != null) htmlParamater += 'Cin_name: ' + result.movieTicket.cinema + "</br>";
+					if (result.movieTicket.movie != null) htmlParamater += 'Mov_Title: ' + result.movieTicket.movie + "</br>";
+					$('#result-paramaters').html(htmlParamater);
+				} 				
 				$('#result-final').html(result.answer);
 			},
 			error : function(result) {
@@ -197,7 +208,7 @@
                 </div>
                 
             </div>
-        	 <div class="box">
+        	 <%-- <div class="box">
                 <h3 class="text-center">Cached Questions</h3>
                 <select class="questions_combo" id="ui_element">
                     <option value="A" selected>Choose a question</option>
@@ -205,12 +216,13 @@
 							<option value="${question}">${question}</option>
 						</c:forEach>
                 </select>
-            </div> 
+            </div>  --%>
         </div>
 		<div class="col-md-6 col-md-offset-1 " id="panel-debug" >
 				<div class="timeline-centered">
+					<!--
 					<article class="timeline-entry">
-					<div class="timeline-entry-inner">
+					 <div class="timeline-entry-inner">
 						<div class="timeline-icon bg-violet">
 							<i class="entypo-feather"></i>
 						</div>
@@ -231,7 +243,7 @@
 							<p id="result-get-cache">If the question was in cache, get question from cache.</p>
 						</div>
 					</div>
-					</article>
+					</article> 
 					
 					<article class="timeline-entry">
 					<div id="panel-process-question" class="timeline-entry-inner">
@@ -281,7 +293,56 @@
 						</div>
 					</div>
 					</article>
+					-->
+					
+					<article class="timeline-entry">
+					 <div class="timeline-entry-inner">
+						<div class="timeline-icon bg-violet">
+							<i class="entypo-feather"></i>
+						</div>
+						<div class="timeline-label">
+							<h2>Get Intent</h2>
+							<p id="result-intent">Intent of the question</p>
+						</div>
+					</div>
+					</article>
+					
+					<article class="timeline-entry">
+					<div class="timeline-entry-inner">
+						<div class="timeline-icon bg-coral">
+							<i class="entypo-suitcase"></i>
+						</div>
+						<div class="timeline-label">
+							<h2>Get question type depend the intent</h2>
+							<p id="result-question-type">The question is dynamic or static?</p>
+						</div>
+					</div>
+					</article>
+					
+					<article class="timeline-entry">
+					<div id="panel-process-question" class="timeline-entry-inner">
+						<div class="timeline-icon bg-info">
+							<i class="entypo-suitcase"></i>
+						</div>
 
+						<div class="timeline-label">
+							<h2>Query Paramater</h2>
+							<p id="result-paramaters">Paramaters to query DB</p>
+						</div>
+					</div>
+					</article>
+					
+					<article class="timeline-entry">
+					<div id="panel-result-final" class="timeline-entry-inner">
+						<div class="timeline-icon bg-success">
+							<i class="entypo-suitcase"></i>
+						</div>
+						<div class="timeline-label">
+							<h2>Result</h2>
+							<p id="result-final">Result</p>
+						</div>
+					</div>
+					</article>						
 
 					<article class="timeline-entry begin">
 					<div class="timeline-entry-inner">

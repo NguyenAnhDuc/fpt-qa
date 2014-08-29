@@ -8,15 +8,17 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 import org.springframework.data.mongodb.core.MongoOperations;
 
+import com.fpt.ruby.config.SpringMongoConfig;
 import com.fpt.ruby.model.MovieTicket;
 
 public class JsoupTest {
 	private static MongoOperations mongoOperation;
 	public static void init(){
-		ApplicationContext ctx = new GenericXmlApplicationContext("applicationContext.xml");
+		ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringMongoConfig.class);
 		mongoOperation = (MongoOperations) ctx.getBean("mongoTemplate");
 	}
 	
@@ -112,7 +114,7 @@ public class JsoupTest {
 	}
 	
 	public static void crawlHaNoi() throws Exception{
-		//mongoOperation.dropCollection(MovieTicket.class);
+		mongoOperation.dropCollection(MovieTicket.class);
 		String url = "http://phimchieurap.vn/lich-chieu/ha-noi";
 		Document doc = Jsoup.connect(url).timeout(100000).get();
 		Elements cinemas = doc.getElementById("ctl00_ContentPlaceHolder1_ddlrap").children();

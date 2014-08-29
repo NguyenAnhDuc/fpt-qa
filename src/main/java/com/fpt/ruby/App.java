@@ -3,9 +3,7 @@ package com.fpt.ruby;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -44,22 +42,43 @@ public class App {
 	public RubyAnswer getAnswer(String question){
 		String key = NlpHelper.normalizeQuestion(question);
 		RubyAnswer rubyAnswer = new RubyAnswer();
-		rubyAnswer.setInCache(this.questionStructureService.isInCache(key));
-		rubyAnswer.setQuestion(question);
+		//rubyAnswer.setInCache(this.questionStructureService.isInCache(key));
+		//rubyAnswer.setQuestion(question);
 		// Process question
-		QuestionStructure questionStructure = ProcessHelper.getQuestionStucture(question, questionStructureService );
+		//QuestionStructure questionStructure = ProcessHelper.getQuestionStucture(question, questionStructureService );
 		//QuestionStructure questionStructure = new QuestionStructure();
 		// Process answer
-		RubyAnswer answer =  ProcessHelper.getAnswer(question,questionStructure);
-		rubyAnswer.setAnswer(answer.getAnswer());
-		rubyAnswer.setQuestionStructure(answer.getQuestionStructure());
+		rubyAnswer =  ProcessHelper.getAnswer(question,movieFlyService,movieTicketService);
 		return rubyAnswer;
 	}
 	
 	public static void main(String[] args) throws UnsupportedEncodingException {
-		testGetTicket();
+		String question = "đạo diễn phim Lucy là ai";
+		App app = new App();
+		RubyAnswer answer = app.getAnswer(question);
+		System.out.println("Answer: " + answer.getAnswer());
+		//testGetTicket();
 		//testQueryStaticMovie();
 	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	private static void testQueryStaticMovie() throws UnsupportedEncodingException{
 		App app = new App();
