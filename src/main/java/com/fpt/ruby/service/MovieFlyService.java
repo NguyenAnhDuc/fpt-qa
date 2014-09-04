@@ -31,7 +31,7 @@ public class MovieFlyService {
 			}
 		}
 		catch (Exception ex){
-			
+			System.out.println("Exception: " + ex.getMessage());
 		}
 		return imdbIds;
 	}
