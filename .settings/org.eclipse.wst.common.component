@@ -3,9 +3,6 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <wb-resource deploy-path="/WEB-INF/classes/dicts" source-path="/data/dicts"/>
-        <wb-resource deploy-path="/WEB-INF/classes/qc" source-path="/data/qc"/>
-        <wb-resource deploy-path="/WEB-INF/classes/cj" source-path="/data/cj"/>
     <property name="context-root" value="rubyweb"/>
     <property name="java-output-path" value="/target/classes"/>
   </wb-module>

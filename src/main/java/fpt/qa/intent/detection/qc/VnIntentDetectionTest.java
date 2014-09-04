@@ -6,7 +6,7 @@ package fpt.qa.intent.detection.qc;
 
 import fpt.qa.intent.detection.FreqConjDict;
 import jmdn.struct.collection.SplitDataByTags;
-import jmdn.test.VnLcWordSegmenterTest;
+/*import jmdn.test.VnLcWordSegmenterTest;*/
 
 /**
  *
@@ -14,7 +14,7 @@ import jmdn.test.VnLcWordSegmenterTest;
  */
 public class VnIntentDetectionTest {
     static final int FOLDS = 5;
-    public static void main(String[] args){
+    /*public static void main(String[] args){
         System.out.println("Question classification for intent detection test now begin...");
         SplitDataByTags.splitFile("/home/ngan/Work/AHongPhuong/Intent_detection/data/qc/train.txt",
                 "/home/ngan/Work/AHongPhuong/Intent_detection/data/qc", FOLDS);
@@ -44,5 +44,5 @@ public class VnIntentDetectionTest {
 //            Trainer.doTrain(dir + i, true, false, false);
 //            Trainer.doTrain(dir + i, false, true, false);
         }
-    }
+    }*/
 }

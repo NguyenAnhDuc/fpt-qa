@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.List;
 import jmdn.struct.sequence.SeqCollection;
 import jmdn.struct.sequence.Sequence;
-import jmdn.test.VnLcWordSegmenterTest;
+/*import jmdn.test.VnLcWordSegmenterTest;*/
 import jmdn.util.string.StrUtil;
 
 /**
@@ -42,11 +42,11 @@ public class GenTrainingData {
         }
     }
     
-    public static void main(String [] args){
+    /*public static void main(String [] args){
         VnLcWordSegmenterTest.tokenizeFile("/home/ngan/Work/SuperApp/Sent_Categorization/models/wholeData.txt", 
                 "/home/ngan/Work/SuperApp/Sent_Categorization/models/train.toks");
         genTrainingData("/home/ngan/Work/SuperApp/Sent_Categorization/models/train.toks",
                 "/home/ngan/Work/SuperApp/Sent_Categorization/models/train.tagged");
         Trainer.doTrain("/home/ngan/Work/SuperApp/Sent_Categorization/models", true, false, false);
-    }
+    }*/
 }
