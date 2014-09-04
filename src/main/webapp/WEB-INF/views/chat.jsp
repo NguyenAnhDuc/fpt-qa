@@ -69,7 +69,7 @@
 				$('#result-intent').html(result.intent);
 				$('#result-question-type').html(result.questionType);
 				if (result.questionType == 'static'){
-					$('#result-paramaters').html('Mov_title: ' + result.questionType);	
+					$('#result-paramaters').html('Mov_title: ' + result.movieTitle);	
 				}
 				else{
 					var htmlParamater = '';
