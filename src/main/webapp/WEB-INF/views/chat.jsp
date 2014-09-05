@@ -133,7 +133,7 @@
                                      <span class="glyphicon glyphicon-time"></span>12 mins ago</small>  -->
                                 <!-- </div> -->
                                 <p>
-                                    Tối nay ngoài rạp có phim gì?
+                                    Tối nay ngoài rạp có phim gì không?
                                 </p>
                             </div>
                         </li>
