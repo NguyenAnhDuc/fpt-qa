@@ -117,7 +117,7 @@
     	<h2>Ruby Project - Milestone 1</h2>
     </header>
     <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-5 col-lg-5">
             <div class="panel panel-primary">
                 <div class="panel-heading">
                    
@@ -189,7 +189,9 @@
                 </div>
                 
             </div>
-            
+            <div class="text-center">
+					<%@ include file="questionType.jsp" %>
+			</div>
         	 <%-- <div class="box">
                 <h3 class="text-center">Cached Questions</h3>
                 <select class="questions_combo" id="ui_element">
@@ -200,7 +202,7 @@
                 </select>
             </div>  --%>
         </div>
-		<div class="col-md-6 col-md-offset-1 " id="panel-debug" >
+		<div class="col-md-6 col-md-offset-1 col-lg-6 col-lg-offset-1 " id="panel-debug" >
 				<div class="timeline-centered">
 					<!--
 					<article class="timeline-entry">
@@ -339,9 +341,7 @@
 
 			</div>
 	</div>
-	<div class="text-center">
-			<%@ include file="questionType.jsp" %>
-	</div>
+	
 </div>
 
  
