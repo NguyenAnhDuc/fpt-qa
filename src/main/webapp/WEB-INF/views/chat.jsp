@@ -346,10 +346,5 @@
 
  
  <%@ include file="footer.jsp" %>
-<script type="text/javascript">
 
-	/* $( ".cb_down" ).change(function() {
-	  alert( "Handler for .change() called." ); 
-	}); */ 
-</script>
 </body>
