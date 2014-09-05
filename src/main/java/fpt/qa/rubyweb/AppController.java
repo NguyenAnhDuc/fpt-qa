@@ -44,9 +44,9 @@ public class AppController {
 		return "chat";
 	}
 	
-	@RequestMapping(value="/testCombo", method = RequestMethod.GET)
+	@RequestMapping(value="/test", method = RequestMethod.GET)
 	public String testCombo(Model model){
-		return "testCombo";
+		return "questionType";
 	}
 	
 	/*@RequestMapping(value="/allCinema", method = RequestMethod.GET, produces = "application/json; charset=UTF-8")

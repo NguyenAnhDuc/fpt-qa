@@ -9,7 +9,6 @@
 	<link rel="stylesheet" type="text/css" href="resources/css/bootstrap/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="resources/css/combo_css/style.css" />
     <script src="resources/js/jquery-1.11.1.min.js"></script>  
-	<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
 	<script src="resources/js/bootstrap/bootstrap.min.js"></script>
 	<script src="resources/js/jquery.scrollablecombo.js"></script>
 	<script>
@@ -121,25 +120,7 @@
         <div class="col-md-5">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                   <!--  <span class="glyphicon glyphicon-comment"></span> --> Chat
-                    <!-- <div class="btn-group pull-right">
-                        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                            <span class="glyphicon glyphicon-chevron-down"></span>
-                        </button>
-                        <ul class="dropdown-menu slidedown">
-                            <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-refresh">
-                            </span>Refresh</a></li>
-                            <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-ok-sign">
-                            </span>Available</a></li>
-                            <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-remove">
-                            </span>Busy</a></li>
-                            <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-time"></span>
-                                Away</a></li>
-                            <li class="divider"></li>
-                            <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-off"></span>
-                                Sign Out</a></li>
-                        </ul>
-                    </div> -->
+                   
                 </div>
                 <div class="panel-body">
                     <ul class="chat">
@@ -208,6 +189,7 @@
                 </div>
                 
             </div>
+            
         	 <%-- <div class="box">
                 <h3 class="text-center">Cached Questions</h3>
                 <select class="questions_combo" id="ui_element">
@@ -344,24 +326,26 @@
 					</div>
 					</article>						
 
-					<article class="timeline-entry begin">
+				   <article class="timeline-entry begin">
 					<div class="timeline-entry-inner">
 						<div class="timeline-icon"
 							style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);">
 							<i class="entypo-flight"></i> +
 						</div>
 					</div>
-					</article>
+					</article> 
 
 				</div>
 
 			</div>
-		</div>
+	</div>
+	<div class="text-center">
+			<%@ include file="questionType.jsp" %>
+	</div>
 </div>
 
  
-
-<%@ include file="footer.jsp" %>
+ <%@ include file="footer.jsp" %>
 <script type="text/javascript">
 
 	/* $( ".cb_down" ).change(function() {
