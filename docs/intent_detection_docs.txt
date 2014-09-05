@@ -13,3 +13,33 @@ yesno, where, when, what, how, how long, how far, which, selection, map, how muc
 (rạp, map): chỉ cho tôi đường đi đến rạp đó
 (rạp, how far): rạp quốc gia cách đây bao xa
 (rạp, how much): vé xem phim 2D tại rạp đó bao nhiêu
+
+
+Sep 4th, 2014:
+	mov_titlemov_genre
+	mov_actor
+	mov_writer
+	mov_lang
+	mov_country
+	mov_award
+	mov_director
+	mov_runtime
+	mov_imdbrating
+	mov_plot
+	mov_year
+	mov_date
+	mov_type
+	mov_audience
+	mov_release
+
+	cin_name
+	cin_address
+	cin_servicetime
+	cin_date
+	cin_dis
+	cin_map
+	
+	ticket_status
+	ticket_price
+	
+	undefined
