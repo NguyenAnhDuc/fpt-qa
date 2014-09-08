@@ -1,6 +1,7 @@
 package com.fpt.ruby.helper;
 
 import java.net.URLEncoder;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -44,7 +45,15 @@ public class ProcessHelper {
 		if (questionType.equals(AnswerMapper.Static_Question)){
 			String movieTitle = NlpHelper.getMovieTitle(question);
 			System.out.println("Movie Title: " + movieTitle);
-			List<MovieFly> movieFlies = movieFlyService.searchOnImdb(movieTitle);
+			List<MovieFly> movieFlies = movieFlyService.findByTitle(movieTitle);
+			System.out.println("Size: " + movieFlies.size());
+			if (movieFlies.size() == 0){
+				movieFlies = new ArrayList<MovieFly>();
+				MovieFly movieFly = movieFlyService.searchOnImdbByTitle(movieTitle);
+				System.out.println("Movie Title new: " + movieFly.getTitle());
+				movieFlyService.save(movieFly);
+				movieFlies.add(movieFly);
+			}
 			rubyAnswer.setAnswer(AnswerMapper.getStaticAnswer(intent, movieFlies));
 			rubyAnswer.setQuestionType(AnswerMapper.Static_Question);
 			rubyAnswer.setMovieTitle(movieTitle);

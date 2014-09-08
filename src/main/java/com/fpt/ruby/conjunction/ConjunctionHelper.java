@@ -19,8 +19,16 @@ public class ConjunctionHelper {
 		 conjunctionWithType.loadConjunctionType( new File(dir + "/movies_infor.txt"));
 	}
 	
-	
 	public List<Pair<String, String>> getConjunction(String text){
 		return conjunctionWithType.getRelevantConjunctionsWithType(text); 
 	}
+	
+	/*public List<Pair<String, String>> getConjunction(String text){
+		return conjunctionWithType.getOriginRelevantConjunctionsWithType(text); 
+	}*/
+	
+	/*public List<Pair<ArrayList<String>, String>> getListConjunction(String text){
+		return conjunctionWithType.getListRelevantConjunctionsWithType(text); 
+	}*/
+
  }
