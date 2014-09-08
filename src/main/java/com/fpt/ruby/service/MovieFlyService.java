@@ -21,7 +21,6 @@ import com.fpt.ruby.config.SpringMongoConfig;
 import com.fpt.ruby.helper.HttpHelper;
 import com.fpt.ruby.model.Movie;
 import com.fpt.ruby.model.MovieFly;
-import com.sun.xml.internal.bind.v2.runtime.output.Encoded;
 
 public class MovieFlyService {
 	private static final String RT_apikey = "squrt6un22xe46uy5wmxej8e";
