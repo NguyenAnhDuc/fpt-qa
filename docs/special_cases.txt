@@ -1,12 +1,32 @@
 The following question will not be processed:
 
-SEL	lucy là phim hài hay phim hành động
-SEL	phim một triệu kiểu chết miền viễn tây là phim 2D hay 3D
-SEL	phim đó là phim 2D hay 3D
-POL	phim đó có 3D không
-SEL	phim này là phim 2D hay 3D
-POL	phim này có 3D không
-POL phim này có phụ đề tiếng việt không
-POL phim này có lồng tiếng việt không
+lucy là phim hài hay phim hành động
+phim một triệu kiểu chết miền viễn tây là phim 2D hay 3D
+phim đó là phim 2D hay 3D
+phim đó có 3D không
+phim này là phim 2D hay 3D
+phim này có 3D không
+phim này có phụ đề tiếng việt không
+phim này có lồng tiếng việt không
 
 
+rạp nào tốt nhất ở hà nội
+rạp nào mới nhất ở hà nội
+rạp tốt nhất ở hà nội là rạp nào
+rạp mới nhất ở hà nội là rạp nào
+rạp mới mở ở hà nội là rạp nào
+rạp sắp mở ở hà nội là rạp nào
+rạp rộng nhất ở hà nội là rạp nào
+rạp lâu đời nhất ở hà nội là rạp nào
+rạp có sức chứa lớn nhất ở hà nội là rạp nào
+rạp nào mới mở ở hà nội
+rạp nào sắp mở ở hà nội
+rạp nào rộng nhất ở hà nội
+rạp nào lâu đời nhất ở hà nội
+rạp nào có sức chứa lớn nhất ở hà nội
+diễn viên nữ chính trong phim này là ai
+
+
+
+ai thực hiện ca khúc trong phim sky fall
+trong phim sử dụng những ca khúc nào

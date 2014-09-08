@@ -77,6 +77,15 @@ public class MovieFlyService {
 		return movieFlies;
 	}
 	
+	public List<MovieFly> searchOnImdb(List<String> titles) throws UnsupportedEncodingException {
+		List<MovieFly> movieFlies = new ArrayList<MovieFly>();
+		
+		for (String t : titles){
+			movieFlies.addAll(searchOnImdb(t));
+		}
+		return movieFlies;
+	}
+	
 	public static void main(String[] args) throws Exception {
 		MovieFlyService movieFlyService = new MovieFlyService();
 		List<MovieFly> movieFlies = movieFlyService.searchOnImdb("Starred Up");

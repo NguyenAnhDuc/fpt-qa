@@ -139,10 +139,10 @@ public class MovieIntentDetection {
         }
         if (tunedSent.indexOf("NAM\t") == 0 && tunedSent.contains("nào")) {
             int idx = tunedSent.indexOf("nào");
-            int idx1 = idx - tunedSent.indexOf("phim");
-            int idx2 = idx - tunedSent.indexOf("rạp");
-            int idx3 = idx - tunedSent.indexOf("diễn viên");
-            int idx4 = idx - tunedSent.indexOf("sao");
+            int idx1 = Math.abs(idx - tunedSent.indexOf("phim"));
+            int idx2 = Math.abs(idx - tunedSent.indexOf("rạp"));
+            int idx3 = Math.abs(idx - tunedSent.indexOf("diễn viên"));
+            int idx4 = Math.abs(idx - tunedSent.indexOf("sao"));
 
             if (idx3 > idx4) {
                 idx3 = idx4;
@@ -224,7 +224,7 @@ public class MovieIntentDetection {
 
     public static void main(String[] args) {
         init("/home/ngan/Work/AHongPhuong/Intent_detection/data/qc/1", 
-                "/home/ngan/Work/AHongPhuong/Intent_detection/data/dicts");
+                "/home/ngan/Work/AHongPhuong/RubyWeb/rubyweb/src/main/resources/dicts");
         
         try {
             BufferedReader reader = new BufferedReader(new FileReader("/home/ngan/Work/AHongPhuong/Intent_detection/data/whole.txt"));
@@ -238,7 +238,7 @@ public class MovieIntentDetection {
                 writer.write(getIntent(line) + "\t" + classifier.classify(line.trim()) + "\t" + line + "\n");
             }
             
-            System.out.println(getTunedSent("phim lucy sử dụng tiếng gì"));
+            System.out.println(getTunedSent("lucy được bao nhiêu điểm"));
             writer.close();
             reader.close();
         } catch (IOException ex) {

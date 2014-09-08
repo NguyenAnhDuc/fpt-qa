@@ -19,8 +19,7 @@ import com.fpt.ruby.service.mongo.QuestionStructureService;
 import fpt.qa.intent.detection.MovieIntentDetection;
 
 public class ProcessHelper {
-	
-	
+
 	public static RubyAnswer getAnswer(String question,QuestionStructure questionStructure,
 										MovieFlyService movieFlyService, MovieTicketService movieTicketService)  {
 		RubyAnswer rubyAnswer = new RubyAnswer();
@@ -37,30 +36,42 @@ public class ProcessHelper {
 		System.out.println("Intent: " + intent);
 		rubyAnswer.setQuestion(question);
 		rubyAnswer.setIntent(intent);
-		String questionType = AnswerMapper.getTypeOfAnswer(intent);
+		String questionType = AnswerMapper.getTypeOfAnswer(intent, question);
 		rubyAnswer.setAnswer("Xin lỗi, tôi không trả lời câu hỏi này được");
+		System.out.println("Question Type: " + questionType);
 		// static question
 		try{
-		if (questionType.equals(AnswerMapper.Static_Question)){
-			String movieTitle = NlpHelper.getMovieTitle(question);
-			System.out.println("Movie Title: " + movieTitle);
-			List<MovieFly> movieFlies = movieFlyService.searchOnImdb(movieTitle);
-			rubyAnswer.setAnswer(AnswerMapper.getStaticAnswer(intent, movieFlies));
-			rubyAnswer.setQuestionType(AnswerMapper.Static_Question);
-			rubyAnswer.setMovieTitle(movieTitle);
+			if (questionType.equals(AnswerMapper.Static_Question)){
+				String movieTitle = NlpHelper.getMovieTitle(question);
+				System.out.println("Movie Title: " + movieTitle);
+				List<MovieFly> movieFlies = movieFlyService.searchOnImdb(movieTitle);
+				rubyAnswer.setAnswer(AnswerMapper.getStaticAnswer(intent, movieFlies));
+				rubyAnswer.setQuestionType(AnswerMapper.Static_Question);
+				rubyAnswer.setMovieTitle(movieTitle);
+			}
+			else if (questionType.equals(AnswerMapper.Dynamic_Question)){
+				MovieTicket matchMovieTicket = NlpHelper.getMovieTicket(question);
+				Date beforeDate = new Date();
+				beforeDate = null;
+				Date afterDate = new Date();
+				afterDate = null;
+				List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition(matchMovieTicket, beforeDate, afterDate);
+				System.out.println("Length: " + movieTickets.size());
+				rubyAnswer.setAnswer(AnswerMapper.getDynamicAnswer(intent, movieTickets));
+				rubyAnswer.setQuestionType(AnswerMapper.Dynamic_Question);
+				rubyAnswer.setMovieTicket(matchMovieTicket);
+			} 
+			else {
+				MovieTicket matchMovieTicket = new MovieTicket();
+				matchMovieTicket.setCinema("Lotte Cinema Landmark");
+				Date today = new Date();
+				// list movie tickets for the duration of one day
+				List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition(matchMovieTicket, new Date(today.getTime() + 86400000), today);
+				rubyAnswer.setAnswer(AnswerMapper.getFeaturedAnswer(question, movieTickets, movieFlyService));
+				rubyAnswer.setQuestionType(AnswerMapper.Featured_Question);
+				rubyAnswer.setMovieTicket(matchMovieTicket);
+			}
 		}
-		else {
-			MovieTicket matchMovieTicket = NlpHelper.getMovieTicket(question);
-			Date beforeDate = new Date();
-			beforeDate = null;
-			Date afterDate = new Date();
-			afterDate = null;
-			List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition(matchMovieTicket, beforeDate, afterDate);
-			System.out.println("Length: " + movieTickets.size());
-			rubyAnswer.setAnswer(AnswerMapper.getDynamicAnswer(intent, movieTickets));
-			rubyAnswer.setQuestionType(AnswerMapper.Dynamic_Question);
-			rubyAnswer.setMovieTicket(matchMovieTicket);
-		}}
 		catch (Exception ex){
 			System.out.println(ex.getMessage());
 		}

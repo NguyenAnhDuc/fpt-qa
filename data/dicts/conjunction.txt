@@ -3,7 +3,6 @@ NAME:ở đâu ổn
 NAME:ở đâu được
 NAME:ở đâu ok
 NAME:được+quan tâm
-NAME:diễn viên+nào
 NAME:được đánh giá+cao nhất
 NAME:được đánh giá+tốt nhất
 NAME:được xem+nhiều nhất
@@ -20,7 +19,11 @@ NAME:có+món+gì
 NAME:phục vụ+món+gì
 NAME:được+chiếu+rạp
 NAME:chiếu+phim+nào
-NAME:có+những ai
+NAME:rạp nào
+NAME:rạp gì
+NAME:phim nào
+NAME:phim gì
+NAME:có phim nào
 ADDR:địa chỉ
 ADDR:số+bao nhiêu
 ADDR:chỗ nào
@@ -70,6 +73,12 @@ DTIME:đến+lúc nào
 DTIME:đến+khi nào
 DTIME:mấy giờ
 DTIME:lúc nào
+DTIME:sản xuất năm nào
+DTIME:ngày nào
+DTIME:khi nào
+DTIME:thứ mấy
+DTIME:bao giờ
+DTIME:hôm nào
 CAL:khung giờ nào
 CAL:lịch chiếu
 CAL:khoảng+thời gian+nào
@@ -77,8 +86,28 @@ POL:có dành cho
 POL:vé+còn+không
 POL:còn+vé+không
 POL:còn+chỗ+không
+POL:có gần+không
 NUM:rating+bao nhiêu
+NUM:rating+cao không
+NUM:rating+thế nào
+NUM:phim+được đánh giá thế nào
 NUM:giảm giá+bao nhiêu
 NUM:khuyến mại+bao nhiêu
 NUM:khuyến mãi+bao nhiêu
+NUM:bao nhiêu điểm
+NUM:điểm+bao nhiêu
+NUM:điểm+cao không
+NUM:điểm+thế nào
 SEL:là+hay
+HUM:là ai
+HUM:ai là
+HUM:của đạo diễn nào
+HUM:có+những ai
+HUM:diễn viên+nào
+HUM:có ai
+HUM:có những ai
+HUM:có+sao nào
+HUM:có dành cho+không
+HUM:có cấm+không
+HUM:đối tượng nào
+HUM:tên+là gì
