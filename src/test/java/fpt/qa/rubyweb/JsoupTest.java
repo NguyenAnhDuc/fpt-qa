@@ -140,7 +140,7 @@ public class JsoupTest {
 		MovieTicket movieTicket = mongoOperation.findOne(searchMovieTicketQuery, MovieTicket.class);
 		System.out.println(movieTicket.getDate().getDate());*/
 		//crawlCinema("Ha Noi","lotte landmark","http://phimchieurap.vn/lich-chieu/ha-noi/rap/lotte-cinema-landmark", 0);
-		showMovieTickets();
-		//crawlHaNoi();
+		//showMovieTickets();
+		crawlHaNoi();
 	}
 }

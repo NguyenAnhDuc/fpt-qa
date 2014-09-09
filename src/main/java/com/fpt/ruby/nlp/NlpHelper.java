@@ -9,6 +9,7 @@ import com.fpt.ruby.conjunction.ConjunctionHelper;
 import com.fpt.ruby.helper.RedisHelper;
 import com.fpt.ruby.model.MovieTicket;
 import com.fpt.ruby.model.QuestionStructure;
+import com.fpt.ruby.model.TimeExtract;
 
 import fpt.qa.intent.detection.IntentConstants;
 import fpt.qa.intent.detection.MovieIntentDetection;
@@ -65,6 +66,10 @@ public class NlpHelper {
 			}
 		}
 		return question.toLowerCase().substring(0,j);
+	}
+	
+	public static TimeExtract getTimeCondition(String text){
+		return new TimeExtract();
 	}
 	
 	public static void main(String[] args) {

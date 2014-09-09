@@ -11,6 +11,7 @@ import com.fpt.ruby.model.MovieFly;
 import com.fpt.ruby.model.MovieTicket;
 import com.fpt.ruby.model.QuestionStructure;
 import com.fpt.ruby.model.RubyAnswer;
+import com.fpt.ruby.model.TimeExtract;
 import com.fpt.ruby.nlp.AnswerMapper;
 import com.fpt.ruby.nlp.NlpHelper;
 import com.fpt.ruby.service.MovieFlyService;
@@ -60,11 +61,9 @@ public class ProcessHelper {
 		}
 		else {
 			MovieTicket matchMovieTicket = NlpHelper.getMovieTicket(question);
-			Date beforeDate = new Date();
-			beforeDate = null;
-			Date afterDate = new Date();
-			afterDate = null;
-			List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition(matchMovieTicket, beforeDate, afterDate);
+			TimeExtract timeExtract = NlpHelper.getTimeCondition(question);
+			List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition(
+											matchMovieTicket, timeExtract.getBeforeDate(), timeExtract.getAfterDate());
 			System.out.println("Length: " + movieTickets.size());
 			rubyAnswer.setAnswer(AnswerMapper.getDynamicAnswer(intent, movieTickets));
 			rubyAnswer.setQuestionType(AnswerMapper.Dynamic_Question);
