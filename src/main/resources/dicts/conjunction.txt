@@ -94,6 +94,10 @@ NUM:phim+được đánh giá thế nào
 NUM:giảm giá+bao nhiêu
 NUM:khuyến mại+bao nhiêu
 NUM:khuyến mãi+bao nhiêu
+NUM:bao nhiêu điểm
+NUM:điểm+bao nhiêu
+NUM:điểm+cao không
+NUM:điểm+thế nào
 SEL:là+hay
 HUM:là ai
 HUM:ai là

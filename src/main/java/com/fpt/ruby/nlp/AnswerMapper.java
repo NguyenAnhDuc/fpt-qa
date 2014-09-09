@@ -1,23 +1,46 @@
 package com.fpt.ruby.nlp;
 
+import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
 import java.util.List;
 
+import mdnlib.struct.pair.Pair;
+
+import com.fpt.ruby.conjunction.ConjunctionHelper;
+import com.fpt.ruby.helper.FeaturedMovieHelper;
+import com.fpt.ruby.model.Movie;
 import com.fpt.ruby.model.MovieFly;
 import com.fpt.ruby.model.MovieTicket;
+import com.fpt.ruby.service.MovieFlyService;
 
 import fpt.qa.intent.detection.IntentConstants;
 
 public class AnswerMapper {
 	private static MovieAnswerMapper mam = new MovieAnswerMapperImpl();
 	private static TicketAnswerMapper tam = new TicketAnswerMapperImpl();
+	
 	public static String Static_Question = "static";
 	public static String Dynamic_Question = "dynamic";
+	public static String Featured_Question = "featured";
+	
+	public static String Default_Answer = "Xin lỗi, chúng tôi không tìm thấy câu trả lời cho câu hỏi cảu bạn";
 	
 	// detect question is static or dynamic
-	public static String getTypeOfAnswer(String intent){
+	public static String getTypeOfAnswer(String intent, String question){
 		if (intent.equals(IntentConstants.MOV_DATE)) return Dynamic_Question; 
 		if (intent.equals(IntentConstants.CIN_NAME)) return Dynamic_Question; 
-		if (intent.equals(IntentConstants.MOV_TITLE)) return Dynamic_Question; 
+		if (intent.equals(IntentConstants.MOV_TITLE)){
+			Modifiers mod = Modifiers.getModifiers(question);
+			if (question.contains("nhất") || question.contains("hay")){
+				return Featured_Question;
+			}
+			
+			if (mod.getTitle() == null && mod.atLeastOneOtherFeatureNotNull()){
+				return Featured_Question;
+			}
+				
+			return Dynamic_Question;
+		}
 		if (intent.equals(IntentConstants.MOV_TYPE)) return Dynamic_Question; 
 		return Static_Question;
 	}
@@ -97,4 +120,57 @@ public class AnswerMapper {
 		
 		return "Xin lỗi, chúng tôi chưa có câu trả lời cho câu hỏi của bạn";
 	}
+	
+	
+	public static String getFeaturedAnswer(String question, List<MovieTicket> ans, MovieFlyService movieFlyService) throws UnsupportedEncodingException{
+		List<String> titles = getDistinctMovieTitle(ans);
+		List<MovieFly> movieFlies = movieFlyService.searchOnImdb(titles);
+		
+		if (question.contains("nhất") || question.contains("hay")){
+			return FeaturedMovieHelper.filterByImdb(movieFlies);
+		}
+		
+		Modifiers mod = Modifiers.getModifiers(question);
+		if (mod.getActor() != null){
+			return FeaturedMovieHelper.filterByActor(mod.getActor(), movieFlies);
+		}
+		
+		if (mod.getDirector() != null) {
+			return FeaturedMovieHelper.filterByDirector(mod.getDirector(), movieFlies);
+		}
+		
+		if (mod.getAward() != null){
+			return FeaturedMovieHelper.filterByAward(mod.getAward(), movieFlies);
+		}
+		
+		if (mod.getGenre() != null){
+			return FeaturedMovieHelper.filterByGenre(mod.getGenre(), movieFlies);
+		}
+		
+		if (mod.getCountry() != null){
+			return FeaturedMovieHelper.filterByCountry(mod.getCountry(), movieFlies);
+		}
+		
+		if (mod.getLang() != null) {
+			return FeaturedMovieHelper.filterByLang(mod.getLang(), movieFlies);
+		}
+		
+		return Default_Answer;
+	}
+	
+	private static List<String> getDistinctMovieTitle(List<MovieTicket> ans){
+		List<String> titles = new ArrayList<String>();
+		
+		for (MovieTicket mt : ans){
+			String curTitle = mt.getMovie();
+			if (!titles.contains(curTitle)){
+				titles.add(curTitle);
+			}
+		}
+		
+		return titles;
+	}
+	
+	
+	
 }
