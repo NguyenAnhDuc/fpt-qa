@@ -5,11 +5,12 @@ import java.util.List;
 import mdnlib.struct.pair.Pair;
 
 import com.fpt.ruby.conjunction.ConjunctionHelper;
+import com.fpt.ruby.helper.RedisHelper;
 
 import fpt.qa.intent.detection.IntentConstants;
 
 public class Modifiers {
-	public static ConjunctionHelper conjunctionHelper = new ConjunctionHelper();
+	public static ConjunctionHelper conjunctionHelper = new ConjunctionHelper((new RedisHelper()).getClass().getClassLoader().getResource("").getPath());
 	
 	private String title;
 	private String genre;
