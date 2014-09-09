@@ -65,7 +65,9 @@ public class ProcessHelper {
 				beforeDate = null;
 				Date afterDate = new Date();
 				afterDate = null;
-				List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition(matchMovieTicket, beforeDate, afterDate);
+				TimeExtract timeExtract = NlpHelper.getTimeCondition(question);
+				List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition
+												(matchMovieTicket, timeExtract.getBeforeDate(), timeExtract.getAfterDate());
 				System.out.println("Length: " + movieTickets.size());
 				rubyAnswer.setAnswer(AnswerMapper.getDynamicAnswer(intent, movieTickets));
 				rubyAnswer.setQuestionType(AnswerMapper.Dynamic_Question);
@@ -82,19 +84,6 @@ public class ProcessHelper {
 				rubyAnswer.setMovieTicket(matchMovieTicket);
 			}
 		}
-<<<<<<< HEAD
-		else {
-			MovieTicket matchMovieTicket = NlpHelper.getMovieTicket(question);
-			TimeExtract timeExtract = NlpHelper.getTimeCondition(question);
-			List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition(
-											matchMovieTicket, timeExtract.getBeforeDate(), timeExtract.getAfterDate());
-			System.out.println("Length: " + movieTickets.size());
-			rubyAnswer.setAnswer(AnswerMapper.getDynamicAnswer(intent, movieTickets));
-			rubyAnswer.setQuestionType(AnswerMapper.Dynamic_Question);
-			rubyAnswer.setMovieTicket(matchMovieTicket);
-		}}
-=======
->>>>>>> ccc80e1c923b87ea32ea9635f58d21f2aa7a01f1
 		catch (Exception ex){
 			System.out.println(ex.getMessage());
 		}
