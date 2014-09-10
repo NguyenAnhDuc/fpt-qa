@@ -21,7 +21,7 @@ public class ConjunctionHelper{
 	}
 
 	public List< Pair< String, String >> getConjunction( String text ) {
-		return conjunctionWithType.getOriginRelevantConjunctionsWithType( text );
+		return conjunctionWithType.getRelevantConjunctionsWithType( text );
 	}
 
 	/*

@@ -24,7 +24,7 @@ public class ConjunctionTest{
 		// INPUT: A TEXT STRING
 		// OUTPUT: A LIST OF PAIR, WITH 1ST ELEMENT IS A CONJUNCTION, 2ND
 		// ELEMENT IS THE TYPE OF THE CONJUNCTION (TEN PHIM, TEN DIEN VIEN, ETC)
-		for( Pair< String, String > element : conjunctionWithType.getOriginRelevantConjunctionsWithType( TEXT3 ) ){
+		for( Pair< String, String > element : conjunctionWithType.getRelevantConjunctionsWithType( TEXT3 ) ){
 			System.out.println( element.first + " " + element.second );
 		}
 	}
