@@ -56,7 +56,8 @@ public class MovieIntentDetection {
             return IntentConstants.MOV_DIRECTOR;
         }
 
-        if (tunedSent.contains("sản xuất năm nào")) {
+        if (tunedSent.contains("sản xuất năm nào") || tunedSent.contains("sản xuất năm bao nhiêu") ||
+        		tunedSent.contains("sản xuất năm")) {
             return IntentConstants.MOV_YEAR;
         }
 
