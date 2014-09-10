@@ -11,16 +11,16 @@ import modifier.ConjunctionWithType;
 public class ConjunctionHelper {
 	private ConjunctionWithType conjunctionWithType;
 	public ConjunctionHelper(){
-		 conjunctionWithType = new ConjunctionWithType();
+		 conjunctionWithType = new ConjunctionWithType( "" );
 		 conjunctionWithType.loadConjunctionType( new File( "movies_infor.txt"));
 	}
 	public ConjunctionHelper(String dir){
-		 conjunctionWithType = new ConjunctionWithType();
-		 conjunctionWithType.loadConjunctionType( new File(dir + "/movies_infor.txt"));
+		 conjunctionWithType = new ConjunctionWithType( dir );
+		 conjunctionWithType.loadConjunctionType( new File(dir + "cj/movies_infor.txt"));
 	}
 	
 	public List<Pair<String, String>> getConjunction(String text){
-		return conjunctionWithType.getRelevantConjunctionsWithType(text); 
+		return conjunctionWithType.getOriginRelevantConjunctionsWithType(text); 
 	}
 	
 	/*public List<Pair<String, String>> getConjunction(String text){

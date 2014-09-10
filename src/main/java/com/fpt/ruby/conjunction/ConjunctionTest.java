@@ -15,7 +15,7 @@ public class ConjunctionTest{
     public static void main( String[] args ){
 
 	// INITIALIZE A CONJUNCTION CHECKER
-        ConjunctionWithType conjunctionWithType = new ConjunctionWithType();
+        ConjunctionWithType conjunctionWithType = new ConjunctionWithType( "" );
 
 	// LOAD CONJUNCTION FILE
         conjunctionWithType.loadConjunctionType( new File( "movies_infor.txt" ) );
@@ -23,7 +23,7 @@ public class ConjunctionTest{
 	// METHOD TO GET CONJUNCTION WITH TYPE
 	// INPUT: A TEXT STRING
 	// OUTPUT: A LIST OF PAIR, WITH 1ST ELEMENT IS A CONJUNCTION, 2ND ELEMENT IS THE TYPE OF THE CONJUNCTION (TEN PHIM, TEN DIEN VIEN, ETC)
-        for( Pair< String, String > element : conjunctionWithType.getRelevantConjunctionsWithType( TEXT3 ) ){
+        for( Pair< String, String > element : conjunctionWithType.getOriginRelevantConjunctionsWithType( TEXT3 ) ){
             System.out.println( element.first + " " + element.second );
         }
     }

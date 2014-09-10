@@ -19,7 +19,7 @@ public class NlpHelper {
 	static{
 		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
 		MovieIntentDetection.init(dir + "/qc", dir + "/dicts");
-		conjunctionHelper = new ConjunctionHelper(dir+"/cj");
+		conjunctionHelper = new ConjunctionHelper(dir);
 	}
 	
 	public static String getMovieTitle(String question){
