@@ -52,7 +52,7 @@ public class MovieAnswerMapperImpl implements MovieAnswerMapper {
 
 	public String getDirectorMovieAnswer(List<MovieFly> ans){
 		if (ans.size() == 0){
-			return "Xin lỗi, chúng tôi không tìm thấy dữ liệu cho câu trả lời";
+			return "Tôi không biết nhưng hẳn phải là 1 đạo diễn nổi tiếng đấy";
 		}
 		MovieFly mov = ans.get(0);
 		String res = "Phim " + mov.getTitle() + " của đạo diễn " + mov.getDirector();
@@ -60,10 +60,10 @@ public class MovieAnswerMapperImpl implements MovieAnswerMapper {
 	}
 
 	public String getLangMovieAnswer(List<MovieFly> ans){
-		if (ans.size() == 0){
-			return "Xin lỗi, chúng tôi không tìm thấy dữ liệu cho câu trả lời";
-		}
 		MovieFly mov = ans.get(0);
+		if (ans.size() == 0){
+			return "Tôi không biết nhưng theo tôi " + mov.getTitle() + " là một bộ phim tiếng Anh";
+		}
 		String res = "Phim " + mov.getTitle() + " sử dụng tiếng " + mov.getLanguage();
 		return res;
 	}
