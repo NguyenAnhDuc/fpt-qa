@@ -51,12 +51,15 @@ public class ProcessHelper {
 				if (movieFlies.size() == 0){
 					movieFlies = new ArrayList<MovieFly>();
 					MovieFly movieFly = movieFlyService.searchOnImdbByTitle(movieTitle);
-					System.out.println("Movie Title new: " + movieFly.getTitle());
-					movieFlyService.save(movieFly);
-					movieFlies.add(movieFly);
+					if (movieFly != null){					
+						movieFlyService.save(movieFly);
+						movieFlies.add(movieFly);
+					}
 				}
 				rubyAnswer.setAnswer(AnswerMapper.getStaticAnswer(intent, movieFlies));
 				rubyAnswer.setQuestionType(AnswerMapper.Static_Question);
+				
+				
 				rubyAnswer.setMovieTitle(movieTitle);
 			}
 			else if (questionType.equals(AnswerMapper.Dynamic_Question)){

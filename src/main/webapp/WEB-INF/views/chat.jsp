@@ -19,6 +19,10 @@
 	function onChat() {
 		//alert("searchtext");
 		var question = $('#btn-input').val();
+		$('#result-intent').html("");
+		$('#result-question-type').html("");
+		$('#result-paramaters').html("");
+		$('#result-final').html("");
 		$.ajax({
 			type : "POST",
 			url : "/rubyweb/getAnswer",

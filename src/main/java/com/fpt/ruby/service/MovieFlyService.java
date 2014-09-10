@@ -39,7 +39,7 @@ public class MovieFlyService {
 	}
 	
 	public List<MovieFly> findByTitle(String title){
-		Query query = new Query(Criteria.where("title").regex(title,"i"));
+		Query query = new Query(Criteria.where("title").regex("^" + title + "$","i"));
 		return mongoOperations.find(query, MovieFly.class);
 	}
 	
@@ -154,8 +154,20 @@ public class MovieFlyService {
 		return movieFlies;
 	}
 	
+	private List<MovieFly> getAllMovieFrom2013(){
+		Query query = new Query(Criteria.where("year").gt(2013));
+		return mongoOperations.find(query, MovieFly.class);
+	}
+	
 	public static void main(String[] args) throws Exception {
 		MovieFlyService movieFlyService = new MovieFlyService();
+		//List<MovieFly> movieFlies = movieFlyService.getAllMovieFrom2013();
+		List<MovieFly> movieFlies = movieFlyService.findByTitle("lucy");
+		for (MovieFly movieFly : movieFlies) {
+			System.out.println("Title: " + movieFly.getTitle() + " | " + movieFly.getYear());
+		}
+		
+		/*MovieFlyService movieFlyService = new MovieFlyService();
 		ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		MovieService movieService = (MovieService) context.getBean("movieService");
 		//movieFlyService.dropCollection();
@@ -172,7 +184,7 @@ public class MovieFlyService {
 				if (movieFly != null) movieFlyService.save(movieFly);
 			}
 			
-		}
+		}*/
 	}
 
 }
