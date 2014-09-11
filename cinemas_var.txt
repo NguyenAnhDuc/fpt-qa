@@ -1,0 +1,42 @@
+cin_name	CGV Vincom City Towers; CGV Vincom City Tower, CGV Vincom City, CGV Vincom Tower, CGV Vincom Towers, CGV Vincom, Megastar Vincom City Towers, Megastar Vincom City Tower, Megastar Vincom City, Megastar Vincom Tower, Megastar Vincom Towers, Megastar Vincom, Vincom City Tower, Vincom City Towers, Vincom Tower, Vincom Towers, Vincom City
+cin_name	CGV MIPEC Tower; CGV MIPEC, MIPEC Tower
+cin_name	Lotte Cinema Landmark; Lotte Cinema, Lotte Landmark, Cinema Landmark, Lotte, Landmark
+cin_name	Lotte Cinema Hà Đông; Lotte Hà Đông, Hà Đông
+cin_name	Platinum Vincom Royal City; Platinum Royal City, Platinum Vincom City, Platinum Vincom Royal, Platinum Royal, Platinum Vincom, Vincom Royal City, Royal City, Vincom City, Vincom Royal, Vincom, Royal
+cin_name	Platinum Cineplex Times City; Platinum Cineplex City, Platinum Times City, Platinum Cineplex Times, Platinum Cineplex, Platinum Times, Cineplex Times City, Cineplex City, Times City, Cineplex Times, Cineplex, Times
+cin_name	Platinum Vincom Long Biên; Platinum Long Biên, Vincom Long Biên
+cin_name	Platinum Garden Mall; Platinum Garden, Garden Mall, Garden, the Garden
+cin_name	Tháng 8 Cinema; Tháng 8, tháng tám, tháng tám cinema
+cin_name	TT Chiếu Phim Quốc Gia; trung tâm chiếu phim quốc gia, Chiếu Phim Quốc Gia, Quốc Gia
+cin_name	Kim Đồng Cinema; Kim Đồng, Dân Chủ Cinema, Dân Chủ, Ngọc Khánh Cinema, Ngọc Khánh
+cin_name	CGV Celadon Tân Phú; CGV Celadon, CGV Tân Phú, Megastar Celadon Tân Phú, Megastar Celadon, Megastar Tân Phú, Celadon Tân Phú, Tân Phú, Celadon
+cin_name	CGV Hùng Vương Plaza; CGV Hùng Vương, CGV Plaza, Megastar Hùng Vương Plaza, Megastar Hùng Vương, Megastar Plaza, Hùng Vương Plaza, Hùng Vương
+cin_name	CGV Pandora City; CGV Pandora, Megastar Pandora City, Megastar Pandora, Pandora City, Pandora
+cin_name	CGV Crescent Mall; CGV Crescent, CGV Mall, Megastar Crescent Mall, Megastar Crescent, Megastar Mall, Crescent Mall, Crescent
+cin_name	CGV C.T Plaza; CGV C.T, CGV Plaza, Megastar C.T Plaza, Megastar C.T, Megastar Plaza, C.T Plaza, C.T, CGV C.T, CGV Plaza, Megastar C.T, Megastar Plaza
+cin_name	CGV Parkson Paragon; CGV Parkson, CGV Paragon, Megastar Parkson Paragon, Megastar Parkson, Megastar Paragon, Parkson Paragon, Paragon, Parkson
+cin_name	Lotte Cinema Cộng Hòa; Lotte Cộng Hòa, Cinema Cộng Hòa, Cộng Hòa
+cin_name	Lotte Cinema Cantavil; Lotte Cantavil, Cinema Cantavil, Cantavil
+cin_name	Lotte Cinema Nam Sài Gòn; Lotte Nam Sài Gòn, Cinema Nam Sài Gòn, Nam Sài Gòn
+cin_name	Lotte Cinema Diamond; Lotte Diamond, Cinema Diamond, Diamond
+cin_name	Galaxy Nguyễn Du; Nguyễn Du
+cin_name	Galaxy Kinh Dương Vương; Kinh Dương Vương
+cin_name	Galaxy Nguyễn Trãi; Nguyễn Trãi, Galaxy Tân Bình, Tân Bình, BHD Star Cineplex 3/2, BHD Star Cineplex, BHD Star 3/2, BHD Cineplex 3/2, Star Cineplex 3/2, Cineplex 3/2, Star 3/2, 3/2, Cineplex, BHD 3/2
+cin_name	BHD Star Cineplex ICON 68; BHD Star Cineplex ICON, BHD Star ICON 68, BHD Star ICON, BHD Cineplex ICON 68, BHD Cineplex ICON, Star Cineplex ICON, Star Cineplex ICON 68, Cineplex ICON 68, Cineplex ICON, Star ICON 68, BHD Star Cineplex 68, BHD Star Cineplex, BHD Star 68, BHD Star, BHD Cineplex 68, BHD Cineplex, Star Cineplex, Star Cineplex 68, Cineplex 68, Cineplex, Star 68, Star, ICON 68
+cin_name	Cinebox Hòa Bình; Cinebox, Hòa Bình
+cin_name	Đống Đa Cinema; Đống Đa
+cin_name	Cinebox 212 Lý Chính Thắng; Cinebox Lý Chính Thắng, 212 Lý Chính Thắng, Lý Chính Thắng
+cin_name	Lotte Cinema Phú Thọ; Lotte Phú Thọ, Cinema Phú Thọ, Phú Thọ
+cin_name	CGV Kim Cúc Plaza Quy Nhơn; CGV Kim Cúc Quy Nhơn, CGV Kim Cúc Plaza, CGV Plaza Quy Nhơn, CGV Quy Nhơn, CGV Kim Cúc, CGV Plaza, Megastar Kim Cúc Plaza Quy Nhơn, Megastar Kim Cúc Quy Nhơn, Megastar Kim Cúc Plaza, Megastar Plaza Quy Nhơn, Megastar Quy Nhơn, Megastar Kim Cúc, Megastar Plaza, Kim Cúc Plaza Quy Nhơn, Kim Cúc Quy Nhơn, Kim Cúc Plaza, Plaza Quy Nhơn, Quy Nhơn, Kim Cúc
+cin_name	CGV Lam Sơn Square Vũng Tàu; CGV Lam Sơn Vũng Tàu, CGV Lam Sơn Square, CGV Square Vũng Tàu, CGV Lam Sơn, CGV Vũng Tàu, CGV Square, Megastar Lam Sơn Square Vũng Tàu, Megastar Lam Sơn Vũng Tàu, Megastar Lam Sơn Square, Megastar Square Vũng Tàu, Megastar Lam Sơn, Megastar Vũng Tàu, Megastar Square, Lam Sơn Square Vũng Tàu, Lam Sơn Vũng Tàu, Lam Sơn Square, Square Vũng Tàu, Lam Sơn, Vũng Tàu, Square
+cin_name	Lotte Cinema Bình Dương; Lotte Bình Dương, Cinema Bình Dương, Bình Dương
+cin_name	CGV Cần Thơ - Sense City; CGV Cần Thơ, CGV Cần Thơ Sense City, CGV Sense City, Megastar Cần Thơ - Sense City, Megastar Cần Thơ, Megastar Cần Thơ Sense City, Megastar Sense City, Cần Thơ Sense City, Sense City, Cần Thơ, Sense
+cin_name	CGV Marine Plaza Hạ Long; CGV Marine Hạ Long, CGV Plaza Hạ Long, CGV Marine Plaza, CGV Marine, CGV Plaza, CGV Hạ Long, Megastar Marine Plaza Hạ Long, Megastar Marine Hạ Long, Megastar Plaza Hạ Long, Megastar Marine Plaza, Megastar Marine, Megastar Plaza, Megastar Hạ Long, Marine Plaza Hạ Long, Marine Hạ Long, Plaza Hạ Long, Marine Plaza, Marine, Plaza, Hạ Long
+cin_name	Lotte Cinema Phan Thiết; Lotte Phan Thiết, Phan Thiết
+cin_name	Lotte Cinema Nha Trang; Lotte Nha Trang, Nha Trang
+cin_name	Platinum Nha Trang Center; Platinum Nha Trang, Platinum Center, Nha Trang
+cin_name	CGV Vĩnh Trung Plaza; CGV Vĩnh Trung, Megastar Vĩnh Trung Plaza, Megastar Vĩnh Trung, Vĩnh Trung Plaza, Vĩnh Trung
+cin_name	Lotte Cinema Đà Nẵng; Lotte Đà Nẵng, Đà Nẵng
+cin_name	CGV Co-Op Mart Biên Hòa; CGV Co-Op Mart, CGV Co-Op Biên Hòa, CGV Mart Biên Hòa, CGV Biên Hòa, Megastar Co-Op Mart Biên Hòa, Megastar Co-Op Mart, Megastar Co-Op Biên Hòa, Megastar Mart Biên Hòa, Megastar Biên Hòa, Co-Op Mart Biên Hòa, Co-Op Mart, Co-Op Biên Hòa, Mart Biên Hòa, Biên Hòa
+cin_name	Lotte Cinema Đồng Nai; Lotte Đồng Nai, Đồng Nai
+cin_name	PegaCine Biên Hòa; PegaCine

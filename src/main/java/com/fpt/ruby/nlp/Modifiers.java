@@ -10,7 +10,7 @@ import com.fpt.ruby.helper.RedisHelper;
 import fpt.qa.intent.detection.IntentConstants;
 
 public class Modifiers {
-	public static ConjunctionHelper conjunctionHelper = new ConjunctionHelper((new RedisHelper()).getClass().getClassLoader().getResource("").getPath()+"/cj");
+	public static ConjunctionHelper conjunctionHelper = new ConjunctionHelper((new RedisHelper()).getClass().getClassLoader().getResource("").getPath());
 	
 	private String title;
 	private String genre;

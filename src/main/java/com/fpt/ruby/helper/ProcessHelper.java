@@ -5,6 +5,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import modifier.AbsoluteTime;
+import modifier.AbsoluteTime.TimeResult;
+
 import org.json.JSONObject;
 
 import com.fpt.ruby.model.MovieFly;
@@ -64,14 +67,10 @@ public class ProcessHelper {
 			}
 			else if (questionType.equals(AnswerMapper.Dynamic_Question)){
 				MovieTicket matchMovieTicket = NlpHelper.getMovieTicket(question);
-				Date beforeDate = new Date();
-				beforeDate = null;
-				Date afterDate = new Date();
-				afterDate = null;
 				TimeExtract timeExtract = NlpHelper.getTimeCondition(question);
 				List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition
 												(matchMovieTicket, timeExtract.getBeforeDate(), timeExtract.getAfterDate());
-				System.out.println("Length: " + movieTickets.size());
+				rubyAnswer.setTimeExtract(timeExtract);
 				rubyAnswer.setAnswer(AnswerMapper.getDynamicAnswer(intent, movieTickets));
 				rubyAnswer.setQuestionType(AnswerMapper.Dynamic_Question);
 				rubyAnswer.setMovieTicket(matchMovieTicket);

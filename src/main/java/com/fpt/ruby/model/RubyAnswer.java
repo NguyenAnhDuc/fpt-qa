@@ -1,6 +1,7 @@
 package com.fpt.ruby.model;
 
 public class RubyAnswer {
+
 	private String question;
 	private String answer;
 	private boolean isInCache;
@@ -9,7 +10,13 @@ public class RubyAnswer {
 	private String movieTitle;
 	private MovieTicket movieTicket;
 	private QuestionStructure questionStructure;
-	
+	private TimeExtract timeExtract;
+	public TimeExtract getTimeExtract() {
+		return timeExtract;
+	}
+	public void setTimeExtract(TimeExtract timeExtract) {
+		this.timeExtract = timeExtract;
+	}
 	public String getIntent() {
 		return intent;
 	}

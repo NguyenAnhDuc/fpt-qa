@@ -43,21 +43,21 @@ public class MovieTicketService {
 		}
 		else if (beforeDate == null && afterDate != null){
 			for (MovieTicket movieTicket : matches){
-				if (movieTicket.getDate().after(afterDate))
+				if (movieTicket.getDate().before(afterDate))
 					results.add(movieTicket);
 			}
 			return results;
 		}
 		else if (beforeDate != null && afterDate == null ){
 			for (MovieTicket movieTicket : matches){
-				if (movieTicket.getDate().before(beforeDate))
+				if (movieTicket.getDate().after(beforeDate))
 					results.add(movieTicket);
 			}
 			return results;
 		}
 		else {
 			for (MovieTicket movieTicket : matches){
-				if (movieTicket.getDate().before(beforeDate) && movieTicket.getDate().after(afterDate))
+				if (movieTicket.getDate().before(afterDate) && movieTicket.getDate().after(beforeDate))
 					results.add(movieTicket);
 			}
 			return results;

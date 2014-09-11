@@ -1,9 +1,12 @@
 package com.fpt.ruby.nlp;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import mdnlib.struct.pair.Pair;
+import modifier.AbsoluteTime;
+import modifier.AbsoluteTime.TimeResult;
 
 import com.fpt.ruby.conjunction.ConjunctionHelper;
 import com.fpt.ruby.helper.RedisHelper;
@@ -19,7 +22,7 @@ public class NlpHelper {
 	static{
 		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
 		MovieIntentDetection.init(dir + "/qc", dir + "/dicts");
-		conjunctionHelper = new ConjunctionHelper(dir+"/cj");
+		conjunctionHelper = new ConjunctionHelper(dir);
 	}
 	
 	public static String getMovieTitle(String question){
@@ -69,6 +72,12 @@ public class NlpHelper {
 	}
 	
 	public static TimeExtract getTimeCondition(String text){
+		/*AbsoluteTime absoluteTime = new AbsoluteTime();
+		TimeResult timeResult = absoluteTime.getAbsoluteTime(text);
+		TimeExtract timeExtract = new TimeExtract();
+		timeExtract.setBeforeDate(timeResult.getBeginTime());
+		timeExtract.setAfterDate(timeResult.getEndTime());
+		return timeExtract;*/
 		return new TimeExtract();
 	}
 	

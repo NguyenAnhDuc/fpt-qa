@@ -75,9 +75,12 @@
 					$('#result-paramaters').html('Mov_title: ' + result.movieTitle);	
 				}
 				else{
-					var htmlParamater = '';
+					var htmlParamater = '',dateExtract = '';
 					if (result.movieTicket.cinema != null) htmlParamater += 'Cin_name: ' + result.movieTicket.cinema + "</br>";
 					if (result.movieTicket.movie != null) htmlParamater += 'Mov_Title: ' + result.movieTicket.movie + "</br>";
+					if (result.timeExtract != null) dateExtract += 'Begin Time: ' + result.timeExtract.beforeDate + "</br>";
+					if (result.timeExtract != null) dateExtract += 'End Time: ' + result.timeExtract.afterDate + "</br>";
+					$('#result-time').html(dateExtract);
 					$('#result-paramaters').html(htmlParamater);
 				} 				
 				$('#result-final').html(result.answer);
@@ -301,7 +304,7 @@
 							<i class="entypo-suitcase"></i>
 						</div>
 						<div class="timeline-label">
-							<h2>Get question type depend the intent</h2>
+							<h2>Depend on the intent, get question type! </h2>
 							<p id="result-question-type">The question is dynamic or static?</p>
 						</div>
 					</div>
@@ -316,6 +319,18 @@
 						<div class="timeline-label">
 							<h2>Query Paramater</h2>
 							<p id="result-paramaters">Paramaters to query DB</p>
+						</div>
+					</div>
+					</article>
+					
+					<article class="timeline-entry">
+					<div id="panel-result-final" class="timeline-entry-inner">
+						<div class="timeline-icon  bg-secondary">
+							<i class="entypo-suitcase"></i>
+						</div>
+						<div class="timeline-label">
+							<h2>Time Extractor</h2>
+							<p id="result-time">Time Conditions</p>
 						</div>
 					</div>
 					</article>
