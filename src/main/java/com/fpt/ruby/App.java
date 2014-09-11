@@ -39,6 +39,7 @@ public class App {
 		this.movieFlyService = new MovieFlyService();
 	}
 	
+
 	public RubyAnswer getAnswer(String question){
 		String key = NlpHelper.normalizeQuestion(question);
 		RubyAnswer rubyAnswer = new RubyAnswer();

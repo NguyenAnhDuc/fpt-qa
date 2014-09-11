@@ -22,6 +22,10 @@ public class MovieTicketService {
 		this.mongoOperations = (MongoOperations) ctx.getBean("mongoTemplate");
 	}
 	
+	public void save(MovieTicket movieTicket){
+		mongoOperations.save(movieTicket);
+	}
+	
 	public List<MovieTicket> findAll(){
 		return mongoOperations.findAll(MovieTicket.class);
 	}

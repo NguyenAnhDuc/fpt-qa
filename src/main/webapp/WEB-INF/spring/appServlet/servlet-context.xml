@@ -9,7 +9,6 @@
 	
 	<!-- Factory bean that creates the Mongo instance -->
 	
-	
 	<!-- Enables the Spring MVC @Controller programming model -->
 	<annotation-driven />
 	
