@@ -5,9 +5,6 @@ import java.util.List;
 
 import javax.annotation.PostConstruct;
 
-import modifier.AbsoluteTime;
-import modifier.AbsoluteTime.TimeResult;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.fpt.ruby.App;
-import com.fpt.ruby.crawler.CrawlPhimChieuRap;
 import com.fpt.ruby.model.MovieTicket;
 import com.fpt.ruby.model.RubyAnswer;
 import com.mongodb.BasicDBObject;
@@ -89,7 +85,6 @@ public class AppController {
 				date.setMinutes(Integer.parseInt(etime.trim().split(":")[1]));
 				date.setSeconds(0);
 				movieTicket.setDate(date);
-				movieTicketService.save(movieTicketService);
 			}
 		}
 		catch (Exception ex){
