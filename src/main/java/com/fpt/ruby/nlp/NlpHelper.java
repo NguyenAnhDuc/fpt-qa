@@ -72,13 +72,13 @@ public class NlpHelper {
 	}
 	
 	public static TimeExtract getTimeCondition(String text){
-		/*AbsoluteTime absoluteTime = new AbsoluteTime();
+		AbsoluteTime absoluteTime = new AbsoluteTime( NlpHelper.class.getClassLoader().getResource("").getPath() + "vnsutime/" );
 		TimeResult timeResult = absoluteTime.getAbsoluteTime(text);
 		TimeExtract timeExtract = new TimeExtract();
 		timeExtract.setBeforeDate(timeResult.getBeginTime());
 		timeExtract.setAfterDate(timeResult.getEndTime());
-		return timeExtract;*/
-		return new TimeExtract();
+		return timeExtract;
+		
 	}
 	
 	public static void main(String[] args) {
