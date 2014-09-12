@@ -47,6 +47,7 @@ public class MovieIntentDetection {
 
     public static String getIntent(String sent) {
         String tunedSent = getTunedSent(sent);
+        System.out.println("Tuned sent: " + tunedSent);
         if (tunedSent.contains("nước nào") && !tunedSent.contains("tiếng nước nào") || 
                 tunedSent.contains("quốc gia nào")) {
             return IntentConstants.MOV_COUNTRY;
@@ -85,7 +86,7 @@ public class MovieIntentDetection {
 //            return "(phim, when)";
             return IntentConstants.MOV_DATE;
         }
-        if (tunedSent.indexOf("DES\t") == 0 && (tunedSent.contains("nội dung ")
+        if (tunedSent.indexOf("DES\t") == 0 && (tunedSent.contains("nội dung")
                 || tunedSent.contains("về cái gì"))) {
             return IntentConstants.MOV_PLOT;
         }
