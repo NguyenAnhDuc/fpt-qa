@@ -1,12 +1,87 @@
 package com.fpt.ruby.nlp;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.fpt.ruby.App;
+import com.fpt.ruby.helper.RedisHelper;
 import com.fpt.ruby.model.MovieFly;
 
 public class MovieAnswerMapperImpl implements MovieAnswerMapper {
+	static Map<String, String> genreMap = new HashMap<String, String>();
+	static Map<String, String> langMap = new HashMap<String, String>();
+	static Map<String, String> countryMap = new HashMap<String, String>();
+	static {
+		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
+		initGenreMap(dir + "/dicts/genreMap.txt");
+		initLangMap(dir + "/dicts/languageMap.txt");
+		initCountryMap(dir + "/dicts/countryMap.txt");
+	}
+	
+	private static void initGenreMap(String map){
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(map));
+			String line;
+			while((line = reader.readLine()) != null){
+				int idx = line.indexOf("\t");
+				if (line.isEmpty() || idx < 0){
+					continue;
+				}
+				genreMap.put(line.substring(idx+1), line.substring(0, idx).trim());
+			}
+			
+			reader.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	private static void initCountryMap(String map){
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(map));
+			String line;
+			while((line = reader.readLine()) != null){
+				int idx = line.indexOf("\t");
+				if (line.isEmpty() || idx < 0){
+					continue;
+				}
+				countryMap.put(line.substring(idx+1).toLowerCase(), line.substring(0, idx).trim());
+			}
+			
+			reader.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	private static void initLangMap(String map){
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(map));
+			String line;
+			while((line = reader.readLine()) != null){
+				int idx = line.indexOf("\t");
+				if (line.isEmpty() || idx < 0){
+					continue;
+				}
+				langMap.put(line.substring(idx+1).toLowerCase(), line.substring(0, idx).trim());
+			}
+			
+			reader.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
 	public String getTitleMovieAnswer(List<MovieFly> ans) {
 		String res = "";
 		res = "Phim ";
@@ -37,8 +112,22 @@ public class MovieAnswerMapperImpl implements MovieAnswerMapper {
 			return "Xin lỗi, chúng tôi không tìm thấy dữ liệu cho câu trả lời";
 		}
 		MovieFly mov = ans.get(0);
-		String res = "Phim " + mov.getTitle() + " thuộc thể loại " + mov.getGenre();
+		String res = "Phim " + mov.getTitle() + " thuộc thể loại " + getVnMovieGenre(mov.getGenre());
 		return res;
+	}
+	
+	private String getVnMovieGenre(String enGenre){
+		String[] tokens = enGenre.split(",");
+		String res = "";
+		for (String token : tokens){
+			String key = token.toLowerCase().trim();
+			if (genreMap.containsKey(key)){
+				res += genreMap.get(key) + ", ";
+				continue;
+			}
+			res += key + ", ";
+		}
+		return res.substring(0, res.length() - 2);
 	}
 
 	public String getActorMovieAnswer(List<MovieFly> ans){
@@ -64,8 +153,16 @@ public class MovieAnswerMapperImpl implements MovieAnswerMapper {
 		if (ans.size() == 0){
 			return "Tôi không biết nhưng theo tôi " + mov.getTitle() + " là một bộ phim tiếng Anh";
 		}
-		String res = "Phim " + mov.getTitle() + " sử dụng tiếng " + mov.getLanguage();
+		String res = "Phim " + mov.getTitle() + " sử dụng tiếng " + getVnMovieLang(mov.getLanguage());
 		return res;
+	}
+	
+	private String getVnMovieLang(String enLang){
+		String lang = enLang.toLowerCase();
+		if (langMap.containsKey(lang)){
+			return langMap.get(lang);
+		}
+		return enLang;
 	}
 
 	public String getCountryMovieAnswer(List<MovieFly> ans){
@@ -73,8 +170,15 @@ public class MovieAnswerMapperImpl implements MovieAnswerMapper {
 			return "Xin lỗi, chúng tôi không tìm thấy dữ liệu cho câu trả lời";
 		}
 		MovieFly mov = ans.get(0);
-		String res = "Phim " + mov.getTitle() + " là phim " + mov.getCountry();
+		String res = "Phim " + mov.getTitle() + " là phim " + getVnMovieCountry(mov.getCountry());
 		return res;
+	}
+	private String getVnMovieCountry(String enCountry){
+		String c = enCountry.toLowerCase();
+		if (countryMap.containsKey(c)){
+			return countryMap.get(c);
+		}
+		return enCountry;
 	}
 
 	public String getAwardMovieAnswer(List<MovieFly> ans){
@@ -82,6 +186,9 @@ public class MovieAnswerMapperImpl implements MovieAnswerMapper {
 			return "Xin lỗi, chúng tôi không tìm thấy dữ liệu cho câu trả lời";
 		}
 		MovieFly mov = ans.get(0);
+		if (mov.getAwards().equals("N/A")){
+			return "Phim " + mov.getTitle() + " chưa nhận được giải thưởng nào";
+		}
 		String res = "Phim " + mov.getTitle() + " đã nhận được giải thưởng " + mov.getAwards();
 		return res;
 	}
@@ -143,7 +250,10 @@ public class MovieAnswerMapperImpl implements MovieAnswerMapper {
 	public static void main(String[] args) throws UnsupportedEncodingException {
 		App app = new App();
 		MovieAnswerMapper map = new MovieAnswerMapperImpl();
-		String title = "Guardians of the galaxy";
+		String title = "Lucy";
+		initGenreMap("/home/ngan/Work/AHongPhuong/RubyWeb/rubyweb/src/main/resources/dicts/genreMap.txt");
+		initLangMap("/home/ngan/Work/AHongPhuong/RubyWeb/rubyweb/src/main/resources/dicts/languageMap.txt");
+		initCountryMap("/home/ngan/Work/AHongPhuong/RubyWeb/rubyweb/src/main/resources/dicts/countryMap.txt");
 		List<MovieFly> mov = app.getMovieFlyService().searchOnImdb(title);
 		
 		System.out.println(map.getActorMovieAnswer(mov));
