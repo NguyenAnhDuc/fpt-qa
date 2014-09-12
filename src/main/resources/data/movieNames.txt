@@ -6215,8 +6215,8 @@ mov_title	Sư Phụ Minh Bạch Liễu
 mov_title	Lions For Lambs; Sư Tử Chiến
 mov_title	Mutual Affection; Sư Tử Hà Đông
 mov_title	The Lion Roars 2; Sư Tử Hà Đông 2
-mov_title	Bí Mật Thảm Đỏ; Scandal
-mov_title	Hào Quang Trở Lại; Scandal
+mov_title	Scandal; Bí Mật Thảm Đỏ
+mov_title	Scandal; 2 Hào Quang Trở Lại 
 mov_title	Scandal Season 3; Scandal 3
 mov_title	Scared Shrekless
 mov_title	Scarlet Innocence
@@ -6227,6 +6227,7 @@ mov_title	Se Duyên
 mov_title	Se Nhầm Nhân Duyên
 mov_title	Sea Fog
 mov_title	Secretly Greatly
+mov_title	Roaring Currents; Đại Thủy Chiến
 mov_title	Serena
 mov_title	Sex, Love and Therapy
 mov_title	Shot And Killed

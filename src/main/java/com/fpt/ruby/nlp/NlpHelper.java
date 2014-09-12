@@ -19,10 +19,12 @@ import fpt.qa.intent.detection.MovieIntentDetection;
 
 public class NlpHelper {
 	private static ConjunctionHelper conjunctionHelper;
+	private static AbsoluteTime absoluteTime;
 	static{
 		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
 		MovieIntentDetection.init(dir + "/qc", dir + "/dicts");
 		conjunctionHelper = new ConjunctionHelper(dir);
+		absoluteTime = new AbsoluteTime( NlpHelper.class.getClassLoader().getResource("").getPath() + "vnsutime/" );
 	}
 	
 	public static String getMovieTitle(String question){
@@ -72,7 +74,6 @@ public class NlpHelper {
 	}
 	
 	public static TimeExtract getTimeCondition(String text){
-		AbsoluteTime absoluteTime = new AbsoluteTime( NlpHelper.class.getClassLoader().getResource("").getPath() + "vnsutime/" );
 		TimeResult timeResult = absoluteTime.getAbsoluteTime(text);
 		TimeExtract timeExtract = new TimeExtract();
 		timeExtract.setBeforeDate(timeResult.getBeginTime());
