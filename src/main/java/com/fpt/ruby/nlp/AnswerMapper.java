@@ -30,14 +30,14 @@ public class AnswerMapper {
 		if (intent.equals(IntentConstants.MOV_DATE)) return Dynamic_Question; 
 		if (intent.equals(IntentConstants.CIN_NAME)) return Dynamic_Question; 
 		if (intent.equals(IntentConstants.MOV_TITLE)){
-			Modifiers mod = Modifiers.getModifiers(question);
+			/*Modifiers mod = Modifiers.getModifiers(question);
 			if (question.contains("nhất") || question.contains("hay")){
 				return Featured_Question;
 			}
 			
 			if (mod.getTitle() == null && mod.atLeastOneOtherFeatureNotNull()){
 				return Featured_Question;
-			}
+			}*/
 				
 			return Dynamic_Question;
 		}
