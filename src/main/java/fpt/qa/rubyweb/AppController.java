@@ -1,6 +1,5 @@
 package fpt.qa.rubyweb;
 
-import java.util.Date;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
@@ -13,9 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.fpt.ruby.App;
-import com.fpt.ruby.model.MovieTicket;
 import com.fpt.ruby.model.RubyAnswer;
-import com.mongodb.BasicDBObject;
 
 @Controller
 @RequestMapping("/")
@@ -47,6 +44,10 @@ public class AppController {
 		return "chat";
 	}
 	
+	@RequestMapping(value="/test", method = RequestMethod.GET)
+	public String test(Model model){
+		return "testCombo";
+	}
 	
 	
 	
@@ -67,30 +68,5 @@ public class AppController {
 		result.append("movies", movies );
 		return result;
 	}*/
-	@RequestMapping(value="/admin/crawlManual", method = RequestMethod.POST,  produces = "application/json; charset=UTF-8")
-	@ResponseBody
-	public BasicDBObject crawlPhimChieuRap(@RequestParam("cin_name") String cinName, @RequestParam("mov_title") String movieTitle,
-											@RequestParam("time") String time){
-		try{
-			
-			String[] times = time.split("\\s+");
-			for (String etime : times){
-				System.out.println(etime.trim().split(":")[0]);
-				System.out.println(etime.trim().split(":")[1]);
-				MovieTicket movieTicket = new MovieTicket();
-				movieTicket.setCinema(cinName.trim());
-				movieTicket.setMovie(movieTitle.trim());
-				Date date = new Date();
-				date.setHours(Integer.parseInt(etime.trim().split(":")[0]));
-				date.setMinutes(Integer.parseInt(etime.trim().split(":")[1]));
-				date.setSeconds(0);
-				movieTicket.setDate(date);
-			}
-		}
-		catch (Exception ex){
-			System.out.println(ex.getMessage());
-			return new BasicDBObject().append("status", "failed");
-		}
-		return new BasicDBObject().append("status", "success");
-	}
+	
 }

@@ -50,12 +50,11 @@ public class AdminCotroller {
 	}
 	
 	@RequestMapping(value="/crawlManual", method = RequestMethod.POST,  produces = "application/json; charset=UTF-8")
-	@ResponseBody
-	public BasicDBObject crawlPhimChieuRap(@RequestParam("cin_name") String cinName, @RequestParam("mov_title") String movieTitle,
-											@RequestParam("time") String time){
+	public String crawlPhimChieuRap(@RequestParam("cin_name") String cinName, @RequestParam("mov_title") String movieTitle,
+											@RequestParam("time") String time, Model model){
 		try{
 			
-			String[] times = time.split("\\s+");
+			String[] times = time.trim().split("\\s+");
 			for (String etime : times){
 				System.out.println(etime.trim().split(":")[0]);
 				System.out.println(etime.trim().split(":")[1]);
@@ -67,14 +66,21 @@ public class AdminCotroller {
 				date.setMinutes(Integer.parseInt(etime.trim().split(":")[1]));
 				date.setSeconds(0);
 				movieTicket.setDate(date);
-				movieTicketService.save(movieTicket);
+				System.out.println("mov_title: " + movieTicket.getMovie());
+				System.out.println("cin_name: " + movieTicket.getCinema());
+				if (!cinName.isEmpty() && !movieTitle.isEmpty())
+					movieTicketService.save(movieTicket);
 			}
 		}
 		catch (Exception ex){
 			System.out.println(ex.getMessage());
-			return new BasicDBObject().append("status", "failed");
+			model.addAttribute("status","failed");
+			return "crawl";
+			//return new BasicDBObject().append("status", "failed");
 		}
-		return new BasicDBObject().append("status", "success");
+		model.addAttribute("status","success");
+		return "crawl";
+		//return new BasicDBObject().append("status", "success");
 	}
 	
 	@RequestMapping(value="/crawl", method = RequestMethod.GET)

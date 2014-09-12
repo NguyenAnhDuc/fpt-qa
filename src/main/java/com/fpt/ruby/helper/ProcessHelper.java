@@ -70,7 +70,8 @@ public class ProcessHelper {
 				TimeExtract timeExtract = NlpHelper.getTimeCondition(question);
 				List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition
 												(matchMovieTicket, timeExtract.getBeforeDate(), timeExtract.getAfterDate());
-				rubyAnswer.setTimeExtract(timeExtract);
+				rubyAnswer.setBeginTime(timeExtract.getBeforeDate().toLocaleString());
+				rubyAnswer.setEndTime(timeExtract.getAfterDate().toLocaleString());
 				rubyAnswer.setAnswer(AnswerMapper.getDynamicAnswer(intent, movieTickets));
 				rubyAnswer.setQuestionType(AnswerMapper.Dynamic_Question);
 				rubyAnswer.setMovieTicket(matchMovieTicket);

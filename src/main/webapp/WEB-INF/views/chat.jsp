@@ -78,8 +78,8 @@
 					var htmlParamater = '',dateExtract = '';
 					if (result.movieTicket.cinema != null) htmlParamater += 'Cin_name: ' + result.movieTicket.cinema + "</br>";
 					if (result.movieTicket.movie != null) htmlParamater += 'Mov_Title: ' + result.movieTicket.movie + "</br>";
-					if (result.timeExtract != null) dateExtract += 'Begin Time: ' + result.timeExtract.beforeDate + "</br>";
-					if (result.timeExtract != null) dateExtract += 'End Time: ' + result.timeExtract.afterDate + "</br>";
+					if (result.beginTime != null) dateExtract += 'Begin Time: ' + result.beginTime + "</br>";
+					if (result.endTime != null) dateExtract += 'End Time: ' + result.endTime + "</br>";
 					$('#result-time').html(dateExtract);
 					$('#result-paramaters').html(htmlParamater);
 				} 				

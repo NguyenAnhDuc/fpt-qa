@@ -65,7 +65,7 @@ public class TicketAnswerMapperImpl implements TicketAnswerMapper {
 		for (String cinema : cinemas){
 			res += cinema + ", ";
 		}
-		return res.substring(0, res.length() - 3);
+		return res.substring(0, res.length() - 2);
 	}
 	
 	public String getDateTicketAnswer(List<MovieTicket> ans){

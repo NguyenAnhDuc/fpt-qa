@@ -10,12 +10,21 @@ public class RubyAnswer {
 	private String movieTitle;
 	private MovieTicket movieTicket;
 	private QuestionStructure questionStructure;
-	private TimeExtract timeExtract;
-	public TimeExtract getTimeExtract() {
-		return timeExtract;
+	private String beginTime;
+	private String endTime;
+	
+	
+	public String getBeginTime() {
+		return beginTime;
 	}
-	public void setTimeExtract(TimeExtract timeExtract) {
-		this.timeExtract = timeExtract;
+	public void setBeginTime(String beginTime) {
+		this.beginTime = beginTime;
+	}
+	public String getEndTime() {
+		return endTime;
+	}
+	public void setEndTime(String endTime) {
+		this.endTime = endTime;
 	}
 	public String getIntent() {
 		return intent;

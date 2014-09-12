@@ -36,6 +36,12 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/javax/json/javax.json-api/1.0/javax.json-api-1.0.jar" sourcepath="M2_REPO/javax/json/javax.json-api/1.0/javax.json-api-1.0-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/javax/json/javax.json-api/1.0/javax.json-api-1.0-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="var" path="M2_REPO/org/springframework/spring-context/3.1.1.RELEASE/spring-context-3.1.1.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-context/3.1.1.RELEASE/spring-context-3.1.1.RELEASE-sources.jar">
 		<attributes>
@@ -304,7 +310,7 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="var" path="M2_REPO/AdditionalInformation/AdditionalInformation/1.3.1/AdditionalInformation-1.3.1.jar">
+	<classpathentry kind="var" path="M2_REPO/AdditionalInformation/AdditionalInformation/1.3.2/AdditionalInformation-1.3.2.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
@@ -314,9 +320,9 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="var" path="M2_REPO/edu/stanford/nlp/stanford-corenlp/3.3.0/stanford-corenlp-3.3.0.jar" sourcepath="M2_REPO/edu/stanford/nlp/stanford-corenlp/3.3.0/stanford-corenlp-3.3.0-sources.jar">
+	<classpathentry kind="var" path="M2_REPO/edu/stanford/nlp/stanford-corenlp/3.4/stanford-corenlp-3.4.jar" sourcepath="M2_REPO/edu/stanford/nlp/stanford-corenlp/3.4/stanford-corenlp-3.4-sources.jar">
 		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/edu/stanford/nlp/stanford-corenlp/3.3.0/stanford-corenlp-3.3.0-javadoc.jar!/"/>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/edu/stanford/nlp/stanford-corenlp/3.4/stanford-corenlp-3.4-javadoc.jar!/"/>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
@@ -359,6 +365,11 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/edu/stanford/nlp/stanford-corenlp/3.4/stanford-corenlp-3.4-models.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/vn/hus/nlp/utils/1.0.0/utils-1.0.0.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
@@ -384,14 +395,14 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="var" path="M2_REPO/com/fpt/qa/platform/vntime/1.0/vntime-1.0.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/args4j/args4j/2.0.29/args4j-2.0.29.jar" sourcepath="M2_REPO/args4j/args4j/2.0.29/args4j-2.0.29-sources.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/args4j/args4j/2.0.29/args4j-2.0.29-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/com/fpt/qa/platform/vntime/1.2/vntime-1.2.jar">
+		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
