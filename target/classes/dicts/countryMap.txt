@@ -1,0 +1,22 @@
+mỹ	United States
+anh	United Kingdom 
+trung quốc	China
+trung	China
+lào	Laos
+thái	Thailand
+thái lan	Thailand
+hàn quốc	Korea
+hàn	Korea
+nhật	Japan
+nhật bản	Japan
+việt	Vietnam
+việt nam	Vietnam
+pháp	France
+đức	Germany
+ấn độ	India
+tây ban nha	Spain
+singapore	Singapore
+nga	Russia
+liên xô	Russia
+hồng kong	Hong Kong
+hong kong	Hong Kong
