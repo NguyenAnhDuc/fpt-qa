@@ -80,7 +80,17 @@
 					</textarea>
 				</div>
 			</div>
-			<button type="submit" class="btn btn-primary btn-lg btn-block " id="btnSubmit" >Thêm lịch chiếu</button>
+			<h5>Schedule for: </h5> 
+			<label class="radio-inline">
+			  <input type="radio" name="numdays" id="inlineRadio1" value="1" > 1 days
+			</label>
+			<label class="radio-inline">
+			  <input type="radio" name="numdays" id="inlineRadio2" value="2"> 2 days
+			</label>
+			<label class="radio-inline">
+			  <input type="radio" name="numdays" id="inlineRadio3" value="3" checked="checked"> 3 days
+			</label>
+			<button type="submit" class="btn btn-primary btn-lg btn-block " id="btnSubmit" style="margin-top: 10px">Thêm lịch chiếu</button>
 			
 		</form> 
 	</div>

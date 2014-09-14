@@ -47,7 +47,6 @@ public class ProcessHelper {
 				String movieTitle = NlpHelper.getMovieTitle(question);
 				System.out.println("Movie Title: " + movieTitle);
 				List<MovieFly> movieFlies = movieFlyService.findByTitle(movieTitle);
-				System.out.println("Size: " + movieFlies.size());
 				if (movieFlies.size() == 0){
 					movieFlies = new ArrayList<MovieFly>();
 					MovieFly movieFly = movieFlyService.searchOnImdbByTitle(movieTitle);
@@ -73,17 +72,18 @@ public class ProcessHelper {
 					System.out.println("Exception: " + ex.getMessage());
 				}
 				
-				System.out.println(timeExtract.getAfterDate() + "|" + timeExtract.getBeforeDate());
+				System.out.println(timeExtract.getAfterDate().toGMTString() + "|" + timeExtract.getBeforeDate().toGMTString());
 				List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition
 												(matchMovieTicket, timeExtract.getBeforeDate(), timeExtract.getAfterDate());
 				System.out.println("Size: " + movieTickets.size());
-				if (timeExtract.getBeforeDate() != null) rubyAnswer.setBeginTime(timeExtract.getBeforeDate().toLocaleString());
-				if (timeExtract.getAfterDate() != null) rubyAnswer.setEndTime(timeExtract.getAfterDate().toLocaleString());
+				if (timeExtract.getBeforeDate() != null) rubyAnswer.setBeginTime(timeExtract.getBeforeDate().toGMTString());
+				if (timeExtract.getAfterDate() != null) rubyAnswer.setEndTime(timeExtract.getAfterDate().toGMTString());
 				rubyAnswer.setAnswer(AnswerMapper.getDynamicAnswer(intent, movieTickets));
 				rubyAnswer.setQuestionType(AnswerMapper.Dynamic_Question);
 				rubyAnswer.setMovieTicket(matchMovieTicket);
 			} 
 			else {
+				System.out.println("Feature ..");
 				MovieTicket matchMovieTicket = new MovieTicket();
 				matchMovieTicket.setCinema("Lotte Cinema Landmark");
 				Date today = new Date();
