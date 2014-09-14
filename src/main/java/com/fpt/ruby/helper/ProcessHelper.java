@@ -5,9 +5,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import modifier.AbsoluteTime;
-import modifier.AbsoluteTime.TimeResult;
-
 import org.json.JSONObject;
 
 import com.fpt.ruby.model.MovieFly;
@@ -66,12 +63,22 @@ public class ProcessHelper {
 				rubyAnswer.setMovieTitle(movieTitle);
 			}
 			else if (questionType.equals(AnswerMapper.Dynamic_Question)){
+				System.out.println("Dynamic ....");
 				MovieTicket matchMovieTicket = NlpHelper.getMovieTicket(question);
-				TimeExtract timeExtract = NlpHelper.getTimeCondition(question);
+				TimeExtract timeExtract = new TimeExtract();
+				try{
+					timeExtract = NlpHelper.getTimeCondition(question);
+				}
+				catch (Exception ex){
+					System.out.println("Exception: " + ex.getMessage());
+				}
+				
+				System.out.println(timeExtract.getAfterDate() + "|" + timeExtract.getBeforeDate());
 				List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition
 												(matchMovieTicket, timeExtract.getBeforeDate(), timeExtract.getAfterDate());
-				rubyAnswer.setBeginTime(timeExtract.getBeforeDate().toLocaleString());
-				rubyAnswer.setEndTime(timeExtract.getAfterDate().toLocaleString());
+				System.out.println("Size: " + movieTickets.size());
+				if (timeExtract.getBeforeDate() != null) rubyAnswer.setBeginTime(timeExtract.getBeforeDate().toLocaleString());
+				if (timeExtract.getAfterDate() != null) rubyAnswer.setEndTime(timeExtract.getAfterDate().toLocaleString());
 				rubyAnswer.setAnswer(AnswerMapper.getDynamicAnswer(intent, movieTickets));
 				rubyAnswer.setQuestionType(AnswerMapper.Dynamic_Question);
 				rubyAnswer.setMovieTicket(matchMovieTicket);
@@ -88,6 +95,7 @@ public class ProcessHelper {
 			}
 		}
 		catch (Exception ex){
+			System.out.println("Exception!");
 			System.out.println(ex.getMessage());
 		}
 		return rubyAnswer;
