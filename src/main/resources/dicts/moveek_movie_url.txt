@@ -1,17 +1,3 @@
-hà nội	http://moveek.com/ajax/cinemasByRegion/ha-noi
-hồ chí minh	http://moveek.com/ajax/cinemasByRegion/ho-chi-minh
-biên hòa	http://moveek.com/ajax/cinemasByRegion/bien-hoa
-cần thơ	http://moveek.com/ajax/cinemasByRegion/can-tho
-vũng tàu	http://moveek.com/ajax/cinemasByRegion/vung-tau
-bình dương	http://moveek.com/ajax/cinemasByRegion/binh-duong
-phan thiết	http://moveek.com/ajax/cinemasByRegion/phan-thiet
-nha trang	http://moveek.com/ajax/cinemasByRegion/nha-trang
-quy nhơn	http://moveek.com/ajax/cinemasByRegion/quy-nhon
-đà nẵng	http://moveek.com/ajax/cinemasByRegion/da-nang
-hải phòng	http://moveek.com/ajax/cinemasByRegion/hai-phong
-hạ long	http://moveek.com/ajax/cinemasByRegion/ha-long
-
-
 BHD Star Cineplex 3/2	http://moveek.com/ajax/moviesByCinema/bhd-star-cinema?r=ho-chi-minh
 BHD Star Cineplex Icon 68	http://moveek.com/ajax/moviesByCinema/bhd-star-cineplex-icon-68?r=ho-chi-minh
 BHD Star Cineplex Satra Phạm Hùng	http://moveek.com/ajax/moviesByCinema/bhd-star-cineplex-satra-pham-hung?r=ho-chi-minh

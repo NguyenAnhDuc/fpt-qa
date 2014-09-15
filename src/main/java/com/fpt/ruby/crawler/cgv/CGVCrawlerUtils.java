@@ -91,7 +91,7 @@ public class CGVCrawlerUtils {
 				int mins = Integer.parseInt(time.substring(3, 5));
 				
 				long addTime = 60 * 60 * 1000 * hour + 60 * 1000 * mins;
-				Date sesTime = new Date(utilDate.getTime() + addTime);
+				Date sesTime = utilDate != null ? new Date(utilDate.getTime() + addTime) : null;
 				res.add(sesTime);
 				idx = response.indexOf("/visLtyTicketsLogin.aspx", eTime + 10);
 				
