@@ -1,10 +1,12 @@
-package com.fpt.ruby.crawler;
+package com.fpt.ruby.crawler.cgv;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+
+import com.fpt.ruby.crawler.CrawlerUtils;
 
 import jmdn.struct.pair.Pair;
 
@@ -99,12 +101,6 @@ public class CGVCrawlerUtils {
 		}
 		
 		return res;
-	}
-
-	
-	public static void main(String[] args) throws Exception {
-		// TODO Auto-generated method stub
-//		sendPost();
 	}
 
 }

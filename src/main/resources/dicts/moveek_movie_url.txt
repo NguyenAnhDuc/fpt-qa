@@ -36,7 +36,7 @@ Lotte Phú Thọ	http://moveek.com/ajax/moviesByCinema/lotte-phu-tho?r=ho-chi-mi
 Đống Đa	http://moveek.com/ajax/moviesByCinema/dong-da?r=ho-chi-minh
 
 
-CGV MIPEC Tower	GET http://moveek.com/ajax/moviesByCinema/megastar-mipec-tower?r=ha-noi
+CGV MIPEC Tower	http://moveek.com/ajax/moviesByCinema/megastar-mipec-tower?r=ha-noi
 CGV Vincom Center Bà Triệu	http://moveek.com/ajax/moviesByCinema/megastar-vincom-ba-trieu?r=ha-noi
 Lotte Hà Đông	http://moveek.com/ajax/moviesByCinema/lotte-melinh-plaza-ha-dong?r=ha-noi
 Lotte Landmark	http://moveek.com/ajax/moviesByCinema/lotte-landmark?r=ha-noi

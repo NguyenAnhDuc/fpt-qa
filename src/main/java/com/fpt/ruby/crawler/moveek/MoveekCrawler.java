@@ -1,4 +1,4 @@
-package com.fpt.ruby.crawler;
+package com.fpt.ruby.crawler.moveek;
 
 public class MoveekCrawler {
 

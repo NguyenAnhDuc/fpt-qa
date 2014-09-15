@@ -1,4 +1,4 @@
-package com.fpt.ruby.crawler;
+package com.fpt.ruby.crawler.cgv;
 
 import java.util.Date;
 import java.util.List;
