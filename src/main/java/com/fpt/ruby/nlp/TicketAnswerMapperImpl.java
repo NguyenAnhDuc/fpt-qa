@@ -1,6 +1,7 @@
 package com.fpt.ruby.nlp;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 
@@ -69,9 +70,18 @@ public class TicketAnswerMapperImpl implements TicketAnswerMapper {
 	}
 	
 	public String getDateTicketAnswer(List<MovieTicket> ans){
+		System.out.println("Date answer");
 		if (ans.size() == 0){
 			return "Xin lỗi, chúng tôi không tìm thấy dữ liệu cho câu trả lời";
 		}
-		return "";
+		HashSet<Date> dates = new HashSet<Date>();
+		for (MovieTicket movieTicket : ans){
+			dates.add(movieTicket.getDate());
+		}
+		String res = "Giờ chiếu: ";
+		for (Date date : dates){
+			res += date.toLocaleString() + ", ";
+		}
+		return res.substring(0, res.length() - 2);
 	}
 }

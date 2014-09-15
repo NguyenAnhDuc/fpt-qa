@@ -74,8 +74,8 @@ public class ProcessHelper {
 				List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition
 												(matchMovieTicket, timeExtract.getBeforeDate(), timeExtract.getAfterDate());
 				System.out.println("Size: " + movieTickets.size());
-				if (timeExtract.getBeforeDate() != null) rubyAnswer.setBeginTime(timeExtract.getBeforeDate().toGMTString());
-				if (timeExtract.getAfterDate() != null) rubyAnswer.setEndTime(timeExtract.getAfterDate().toGMTString());
+				if (timeExtract.getBeforeDate() != null) rubyAnswer.setBeginTime(timeExtract.getBeforeDate().toLocaleString());
+				if (timeExtract.getAfterDate() != null) rubyAnswer.setEndTime(timeExtract.getAfterDate().toLocaleString());
 				rubyAnswer.setAnswer(AnswerMapper.getDynamicAnswer(intent, movieTickets));
 				rubyAnswer.setQuestionType(AnswerMapper.Dynamic_Question);
 				rubyAnswer.setMovieTicket(matchMovieTicket);
