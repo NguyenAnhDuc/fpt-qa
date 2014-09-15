@@ -69,10 +69,8 @@ public class ProcessHelper {
 					timeExtract = NlpHelper.getTimeCondition(question);
 				}
 				catch (Exception ex){
-					System.out.println("Exception: " + ex.getMessage());
+					System.out.println("Time Exception: " + ex.getMessage());
 				}
-				
-				System.out.println(timeExtract.getAfterDate().toGMTString() + "|" + timeExtract.getBeforeDate().toGMTString());
 				List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition
 												(matchMovieTicket, timeExtract.getBeforeDate(), timeExtract.getAfterDate());
 				System.out.println("Size: " + movieTickets.size());
@@ -81,6 +79,7 @@ public class ProcessHelper {
 				rubyAnswer.setAnswer(AnswerMapper.getDynamicAnswer(intent, movieTickets));
 				rubyAnswer.setQuestionType(AnswerMapper.Dynamic_Question);
 				rubyAnswer.setMovieTicket(matchMovieTicket);
+				System.out.println("DONE Process");
 			} 
 			else {
 				System.out.println("Feature ..");
