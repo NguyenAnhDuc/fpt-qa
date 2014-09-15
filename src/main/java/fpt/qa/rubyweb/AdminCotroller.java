@@ -1,6 +1,8 @@
 package fpt.qa.rubyweb;
 
+import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 import javax.annotation.PostConstruct;
 
@@ -49,28 +51,38 @@ public class AdminCotroller {
 		return "admin";
 	}
 	
-	@RequestMapping(value="/crawlManual", method = RequestMethod.POST,  produces = "application/json; charset=UTF-8")
-	public String crawlPhimChieuRap(@RequestParam("cin_name") String cinName, @RequestParam("mov_title") String movieTitle,
-											@RequestParam("time") String time, Model model){
-		try{
-			
-			String[] times = time.trim().split("\\s+");
-			for (String etime : times){
-				System.out.println(etime.trim().split(":")[0]);
-				System.out.println(etime.trim().split(":")[1]);
-				MovieTicket movieTicket = new MovieTicket();
-				movieTicket.setCinema(cinName.trim());
-				movieTicket.setMovie(movieTitle.trim());
+	private void saveSchedule(String cinName, String movieTitle, String time, int numdays){
+		cinName = cinName.trim();movieTitle = movieTitle.trim(); time = time.trim();
+		String[] times = time.split("\\s+");
+		for (String etime : times){
+			System.out.println(etime.trim().split(":")[0]);
+			System.out.println(etime.trim().split(":")[1]);
+			MovieTicket movieTicket = new MovieTicket();
+			movieTicket.setCinema(cinName.trim());
+			movieTicket.setMovie(movieTitle.trim());
+			for (int i =0;i<numdays;i++){
 				Date date = new Date();
+				Calendar c = Calendar.getInstance(); 
+				c.setTime(date); 
+				c.add(Calendar.DATE, i);
+				date = c.getTime();
 				date.setHours(Integer.parseInt(etime.trim().split(":")[0]));
 				date.setMinutes(Integer.parseInt(etime.trim().split(":")[1]));
 				date.setSeconds(0);
 				movieTicket.setDate(date);
-				System.out.println("mov_title: " + movieTicket.getMovie());
-				System.out.println("cin_name: " + movieTicket.getCinema());
 				if (!cinName.isEmpty() && !movieTitle.isEmpty())
 					movieTicketService.save(movieTicket);
 			}
+			
+		}
+	}
+	
+	@RequestMapping(value="/crawlManual", method = RequestMethod.POST,  produces = "application/json; charset=UTF-8")
+	public String crawlPhimChieuRap(@RequestParam("cin_name") String cinName, @RequestParam("mov_title") String movieTitle,
+											@RequestParam("time") String time, @RequestParam("numdays") String numdays ,Model model){
+		try{
+			int numday = Integer.parseInt(numdays);
+			saveSchedule(cinName, movieTitle, time, numday);
 		}
 		catch (Exception ex){
 			System.out.println(ex.getMessage());
@@ -86,6 +98,19 @@ public class AdminCotroller {
 	@RequestMapping(value="/crawl", method = RequestMethod.GET)
 	public String crawlManual(Model model){
 		return "crawl";
+	}
+	
+	
+	@RequestMapping(value="/allTicket", method = RequestMethod.GET)
+	@ResponseBody
+	public String showTickets(){
+		StringBuilder allTicketString = new StringBuilder();
+		List<MovieTicket> movieTickets = movieTicketService.findAll();
+		for (MovieTicket movieTicket : movieTickets){
+			allTicketString.append(movieTicket.getDate().toGMTString() + " | " + movieTicket.getMovie() + " | " + movieTicket.getCinema());
+			allTicketString.append("</br>");
+		}
+		return allTicketString.toString();
 	}
 	
 	

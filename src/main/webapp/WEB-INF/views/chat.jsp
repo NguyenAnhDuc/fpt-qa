@@ -22,6 +22,7 @@
 		$('#result-intent').html("");
 		$('#result-question-type').html("");
 		$('#result-paramaters').html("");
+		$('#result-time').html("");
 		$('#result-final').html("");
 		$.ajax({
 			type : "POST",
