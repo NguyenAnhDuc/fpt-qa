@@ -310,11 +310,6 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="var" path="M2_REPO/AdditionalInformation/AdditionalInformation/1.3.2/AdditionalInformation-1.3.2.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/commons-cli/commons-cli/20040117.000000/commons-cli-20040117.000000.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
@@ -402,6 +397,11 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/com/fpt/qa/platform/vntime/1.2/vntime-1.2.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/quang/Desktop/AdditionalInformation-1.3.3.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>

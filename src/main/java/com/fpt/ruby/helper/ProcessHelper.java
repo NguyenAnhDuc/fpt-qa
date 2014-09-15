@@ -5,9 +5,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import modifier.AbsoluteTime;
-import modifier.AbsoluteTime.TimeResult;
-
 import org.json.JSONObject;
 
 import com.fpt.ruby.model.MovieFly;
@@ -50,7 +47,6 @@ public class ProcessHelper {
 				String movieTitle = NlpHelper.getMovieTitle(question);
 				System.out.println("Movie Title: " + movieTitle);
 				List<MovieFly> movieFlies = movieFlyService.findByTitle(movieTitle);
-				System.out.println("Size: " + movieFlies.size());
 				if (movieFlies.size() == 0){
 					movieFlies = new ArrayList<MovieFly>();
 					MovieFly movieFly = movieFlyService.searchOnImdbByTitle(movieTitle);
@@ -66,17 +62,27 @@ public class ProcessHelper {
 				rubyAnswer.setMovieTitle(movieTitle);
 			}
 			else if (questionType.equals(AnswerMapper.Dynamic_Question)){
+				System.out.println("Dynamic ....");
 				MovieTicket matchMovieTicket = NlpHelper.getMovieTicket(question);
-				TimeExtract timeExtract = NlpHelper.getTimeCondition(question);
+				TimeExtract timeExtract = new TimeExtract();
+				try{
+					timeExtract = NlpHelper.getTimeCondition(question);
+				}
+				catch (Exception ex){
+					System.out.println("Time Exception: " + ex.getMessage());
+				}
 				List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition
 												(matchMovieTicket, timeExtract.getBeforeDate(), timeExtract.getAfterDate());
-				rubyAnswer.setBeginTime(timeExtract.getBeforeDate().toLocaleString());
-				rubyAnswer.setEndTime(timeExtract.getAfterDate().toLocaleString());
+				System.out.println("Size: " + movieTickets.size());
+				if (timeExtract.getBeforeDate() != null) rubyAnswer.setBeginTime(timeExtract.getBeforeDate().toGMTString());
+				if (timeExtract.getAfterDate() != null) rubyAnswer.setEndTime(timeExtract.getAfterDate().toGMTString());
 				rubyAnswer.setAnswer(AnswerMapper.getDynamicAnswer(intent, movieTickets));
 				rubyAnswer.setQuestionType(AnswerMapper.Dynamic_Question);
 				rubyAnswer.setMovieTicket(matchMovieTicket);
+				System.out.println("DONE Process");
 			} 
 			else {
+				System.out.println("Feature ..");
 				MovieTicket matchMovieTicket = new MovieTicket();
 				matchMovieTicket.setCinema("Lotte Cinema Landmark");
 				Date today = new Date();
@@ -88,6 +94,7 @@ public class ProcessHelper {
 			}
 		}
 		catch (Exception ex){
+			System.out.println("Exception!");
 			System.out.println(ex.getMessage());
 		}
 		return rubyAnswer;
