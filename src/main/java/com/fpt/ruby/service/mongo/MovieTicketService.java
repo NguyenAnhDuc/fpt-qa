@@ -7,6 +7,8 @@ import java.util.List;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.data.mongodb.core.MongoOperations;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
 
 import com.fpt.ruby.config.SpringMongoConfig;
 import com.fpt.ruby.model.MovieTicket;
@@ -67,5 +69,20 @@ public class MovieTicketService {
 			return results;
 		}
 		
+	}
+	
+	public boolean existedInDb(MovieTicket movTicket){
+		Query query = new Query();
+		query.addCriteria(Criteria.where("cinema").is(movTicket.getCinema()).
+				and("movie").is(movTicket.getMovie()).
+				and("type").is(movTicket.getType()).
+				and("date").is(movTicket.getDate()).
+				and("city").is(movTicket.getCity()));
+		MovieTicket res = mongoOperations.findOne(query, MovieTicket.class);
+		
+		if (res == null){
+			return true;
+		}
+		return false;
 	}
 }
