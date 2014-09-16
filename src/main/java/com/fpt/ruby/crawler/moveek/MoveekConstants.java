@@ -1,4 +1,4 @@
-package com.fpt.ruby.crawler;
+package com.fpt.ruby.crawler.moveek;
 
 public class MoveekConstants {
 	public static final String HANOI_URL = "http://moveek.com/ajax/cinemasByRegion/ha-noi";

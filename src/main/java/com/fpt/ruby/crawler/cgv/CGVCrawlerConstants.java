@@ -1,4 +1,4 @@
-package com.fpt.ruby.crawler;
+package com.fpt.ruby.crawler.cgv;
 
 public class CGVCrawlerConstants {
 	public static final String REQUESTIME_TODAY = "Today";

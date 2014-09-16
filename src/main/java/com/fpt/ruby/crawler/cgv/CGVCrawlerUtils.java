@@ -1,10 +1,12 @@
-package com.fpt.ruby.crawler;
+package com.fpt.ruby.crawler.cgv;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+
+import com.fpt.ruby.crawler.CrawlerUtils;
 
 import jmdn.struct.pair.Pair;
 
@@ -89,7 +91,7 @@ public class CGVCrawlerUtils {
 				int mins = Integer.parseInt(time.substring(3, 5));
 				
 				long addTime = 60 * 60 * 1000 * hour + 60 * 1000 * mins;
-				Date sesTime = new Date(utilDate.getTime() + addTime);
+				Date sesTime = utilDate != null ? new Date(utilDate.getTime() + addTime) : null;
 				res.add(sesTime);
 				idx = response.indexOf("/visLtyTicketsLogin.aspx", eTime + 10);
 				
@@ -99,12 +101,6 @@ public class CGVCrawlerUtils {
 		}
 		
 		return res;
-	}
-
-	
-	public static void main(String[] args) throws Exception {
-		// TODO Auto-generated method stub
-//		sendPost();
 	}
 
 }

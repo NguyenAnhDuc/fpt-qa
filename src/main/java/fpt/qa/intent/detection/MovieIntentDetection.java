@@ -225,26 +225,48 @@ public class MovieIntentDetection {
     }
 
     public static void main(String[] args) {
-        init("/home/ngan/Work/AHongPhuong/Intent_detection/data/qc/1", 
+        init("/home/ngan/Work/AHongPhuong/RubyWeb/rubyweb/src/main/resources/qc",
+//        		"/home/ngan/Work/AHongPhuong/Intent_detection/data/qc/1", 
                 "/home/ngan/Work/AHongPhuong/RubyWeb/rubyweb/src/main/resources/dicts");
         
-        try {
-            BufferedReader reader = new BufferedReader(new FileReader("/home/ngan/Work/AHongPhuong/Intent_detection/data/whole.txt"));
-            BufferedWriter writer = new BufferedWriter(new FileWriter("/home/ngan/Work/AHongPhuong/Intent_detection/data/test.result"));
-            
-            String line;
-            while((line = reader.readLine()) != null){
-                if (line.isEmpty()){
-                    continue;
-                }
-                writer.write(getIntent(line) + "\t" + classifier.classify(line.trim()) + "\t" + line + "\n");
-            }
-            
-            System.out.println(getTunedSent("lucy được bao nhiêu điểm"));
-            writer.close();
-            reader.close();
-        } catch (IOException ex) {
-            Logger.getLogger(MovieIntentDetection.class.getName()).log(Level.SEVERE, null, ex);
-        }
+//        try {
+//            BufferedReader reader = new BufferedReader(new FileReader("/home/ngan/Work/AHongPhuong/Intent_detection/data/whole.txt"));
+//            BufferedWriter writer = new BufferedWriter(new FileWriter("/home/ngan/Work/AHongPhuong/Intent_detection/data/test.result"));
+//            
+//            String line;
+//            while((line = reader.readLine()) != null){
+//                if (line.isEmpty()){
+//                    continue;
+//                }
+//                writer.write(getIntent(line) + "\t" + classifier.classify(line.trim()) + "\t" + line + "\n");
+//            }
+//            
+//            System.out.println(getTunedSent("lucy được bao nhiêu điểm"));
+//            writer.close();
+//            reader.close();
+//        } catch (IOException ex) {
+//            Logger.getLogger(MovieIntentDetection.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+        
+        String sent1 = "rạp lotte chiếu phim the november man lúc mấy giờ";
+        String sent2 = "có phim gì hay không";
+        String sent3 = "có phim gì đang chiếu";
+        String sent4 = "hôm qua có phim gì không";
+        String sent5 = "hôm kia có phim gì không";
+        
+        System.out.println(getTunedSent(sent1));
+        System.out.println(getIntent(sent1));
+        
+        System.out.println(getTunedSent(sent2));
+        System.out.println(getIntent(sent2));
+        
+        System.out.println(getTunedSent(sent3));
+        System.out.println(getIntent(sent3));
+        
+        System.out.println(getTunedSent(sent4));
+        System.out.println(getIntent(sent4));
+        
+        System.out.println(getTunedSent(sent5));
+        System.out.println(getIntent(sent5));
     }
 }
