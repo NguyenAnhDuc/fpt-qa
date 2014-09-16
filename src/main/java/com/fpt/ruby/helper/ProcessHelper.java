@@ -64,13 +64,7 @@ public class ProcessHelper {
 			else if (questionType.equals(AnswerMapper.Dynamic_Question)){
 				System.out.println("Dynamic ....");
 				MovieTicket matchMovieTicket = NlpHelper.getMovieTicket(question);
-				TimeExtract timeExtract = new TimeExtract();
-				try{
-					timeExtract = NlpHelper.getTimeCondition(question);
-				}
-				catch (Exception ex){
-					System.out.println("Time Exception: " + ex.getMessage());
-				}
+				TimeExtract timeExtract = NlpHelper.getTimeCondition(question);
 				List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition
 												(matchMovieTicket, timeExtract.getBeforeDate(), timeExtract.getAfterDate());
 				System.out.println("Size: " + movieTickets.size());

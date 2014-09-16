@@ -14,7 +14,42 @@ import com.fpt.ruby.config.SpringMongoConfig;
 import com.fpt.ruby.model.MovieTicket;
 
 public class MovieTicketService {
+	private final String MT_MOVIE = "movie";
+	private final String MT_CINEMA = "cinema";
+	private final String MT_DATE = "date";
+	private final String MT_TYPE = "type";
+	private final String MT_CITY = "city";
 	private MongoOperations mongoOperations;
+	
+	private static boolean equalDate(Date date1, Date date2){
+		if (date1 == null && date2 == null) return true;
+		try{
+			if (Math.abs(date1.getTime() - date2.getTime()) < 1000)
+				return true;
+			else return false;
+		}
+		catch (Exception ex){
+			return false;
+		}
+		
+	}
+	
+	private List<MovieTicket> findMatch(MovieTicket movieTicket){
+		Query query = new Query();
+		query.addCriteria(Criteria.where(MT_MOVIE).regex("^" + movieTicket.getMovie() + "$","i"));
+		query.addCriteria(Criteria.where(MT_CINEMA).regex("^" + movieTicket.getCinema() + "$","i"));
+		query.addCriteria(Criteria.where(MT_TYPE).is(movieTicket.getType()));
+		query.addCriteria(Criteria.where(MT_CITY).is(movieTicket.getCity()));
+		List<MovieTicket> movieTickets = mongoOperations.find(query,MovieTicket.class);
+		System.out.println("Size1: " + movieTickets.size());
+		List<MovieTicket> results = new ArrayList<MovieTicket>();
+		for (MovieTicket moTicket : movieTickets){
+			if (equalDate(moTicket.getDate(), movieTicket.getDate()))
+				results.add(moTicket);
+		}
+		return results;
+	}
+	
 	public MovieTicketService(MongoOperations mongoOperations){
 		this.mongoOperations = mongoOperations;
 	}
@@ -26,6 +61,21 @@ public class MovieTicketService {
 	
 	public void save(MovieTicket movieTicket){
 		mongoOperations.save(movieTicket);
+	}
+	
+	/*public void update(MovieTicket movieTicket){
+		List<MovieTicket> movieTickets = findMatch(movieTicket);
+		for (MovieTicket moTicket : movieTickets){
+			mongoOperations.
+		}
+	}*/
+	
+	public void delete(MovieTicket movieTicket){
+		List<MovieTicket> movieTickets = findMatch(movieTicket);
+		System.out.println("size: " + movieTickets.size());
+		for (MovieTicket moTicket : movieTickets){
+			mongoOperations.remove(moTicket);
+		}
 	}
 	
 	public List<MovieTicket> findAll(){
@@ -63,8 +113,9 @@ public class MovieTicketService {
 		}
 		else {
 			for (MovieTicket movieTicket : matches){
-				if (movieTicket.getDate().before(afterDate) && movieTicket.getDate().after(beforeDate))
-					results.add(movieTicket);
+				if (movieTicket.getDate() != null)
+					if (movieTicket.getDate().before(afterDate) && movieTicket.getDate().after(beforeDate))
+						results.add(movieTicket);
 			}
 			return results;
 		}
@@ -72,17 +123,30 @@ public class MovieTicketService {
 	}
 	
 	public boolean existedInDb(MovieTicket movTicket){
-		Query query = new Query();
-		query.addCriteria(Criteria.where("cinema").is(movTicket.getCinema()).
-				and("movie").is(movTicket.getMovie()).
-				and("type").is(movTicket.getType()).
-				and("date").is(movTicket.getDate()).
-				and("city").is(movTicket.getCity()));
-		MovieTicket res = mongoOperations.findOne(query, MovieTicket.class);
-		
-		if (res == null){
-			return true;
+		List<MovieTicket> movieTickets = findMatch(movTicket);
+		if (movieTickets.size() == 0){
+			return false;
 		}
-		return false;
+		return true;
+	}
+	
+	public static void main(String[] args){
+Date date1 = new Date();
+		
+		date1.setHours(20);
+		
+		date1.setMinutes(0);
+		date1.setSeconds(0);
+		for (int i=1;i<10000000;i++){
+			
+		}
+		Date date2 = new Date();
+		
+		date2.setHours(20);
+		
+		date2.setMinutes(0);
+		date2.setSeconds(0);
+		System.out.println(date1.compareTo(date2));
+		System.out.println(equalDate(date1, date2));
 	}
 }

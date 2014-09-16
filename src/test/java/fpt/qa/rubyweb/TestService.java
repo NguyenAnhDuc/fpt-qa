@@ -1,19 +1,42 @@
 package fpt.qa.rubyweb;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
-import com.fpt.ruby.model.QuestionStructure;
-import com.fpt.ruby.service.mongo.QuestionStructureService;
+import com.fpt.ruby.model.MovieTicket;
+import com.fpt.ruby.service.mongo.MovieTicketService;
 
 public class TestService {
 	//@Autowired 
-	private static QuestionStructureService questionStructureService;
 	
 	public static void main(String[] args) {
-		QuestionStructure questionStructure = new QuestionStructure();
-		questionStructure.setHead("test");
-		questionStructureService = new QuestionStructureService();
-		questionStructureService.save(questionStructure);
-		System.out.println("DONE");
+		
+		MovieTicketService movieTicketService = new MovieTicketService();
+		MovieTicket movieTicket = new MovieTicket();
+		movieTicket.setCinema("Lotte Cinema Landmark");
+		movieTicket.setMovie("Lucy");
+		Date date1 = new Date();
+		
+		date1.setHours(20);
+		
+		date1.setMinutes(0);
+		date1.setSeconds(0);
+		movieTicket.setDate(date1);
+
+		movieTicket.setCity("Ha Noi");
+		
+		movieTicket.setType("2D");
+		movieTicketService.delete(movieTicket);
+		
+		
+		
+		
+		System.out.println(movieTicketService.existedInDb(movieTicket));
+		//movieTicketService.save(movieTicket);
+		System.out.println(movieTicketService.existedInDb(movieTicket));
+		
+		
+		
 	}
 }

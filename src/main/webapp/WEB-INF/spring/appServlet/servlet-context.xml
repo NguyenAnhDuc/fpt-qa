@@ -7,7 +7,6 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 	<!-- Factory bean that creates the Mongo instance -->
-	
 	<!-- Enables the Spring MVC @Controller programming model -->
 	<annotation-driven />
 	

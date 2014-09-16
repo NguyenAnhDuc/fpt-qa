@@ -132,7 +132,7 @@
   EVENING = {	      
       type: TIME_OF_DAY,
       label: "EV",
-      value: InexactTime( TimeRange ( IsoTime( 18, 0, NONE), IsoTime ( 20, 0, NONE) ) )
+      value: InexactTime( TimeRange ( IsoTime( 18, 0, NONE), IsoTime ( 23, 0, NONE) ) )
   }
   NIGHT = {	      
       type: TIME_OF_DAY,
@@ -187,9 +187,9 @@
   TWILIGHT = EVENING_TWILIGHT
 
   // Relative days
-  YESTERDAY = RelativeTime( Duration(DAY, -1) );
+  YESTERDAY = RelativeTime( THIS, Duration(DAY, -1) );
   BEFOREYESTERDAY = RelativeTime( Duration(DAY, -2) );
-  TOMORROW = RelativeTime( Duration(DAY, +1) );
+  TOMORROW = RelativeTime( THIS, Duration(DAY, +1) );
   AFTERTOMORROW = RelativeTime( Duration(DAY, +2) );
   TODAY = RelativeTime( THIS, DAY );
   TONIGHT = RelativeTime( THIS, NIGHT );  

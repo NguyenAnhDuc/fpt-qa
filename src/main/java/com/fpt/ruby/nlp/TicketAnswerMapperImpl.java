@@ -28,7 +28,7 @@ public class TicketAnswerMapperImpl implements TicketAnswerMapper {
 		}
 		HashSet<String> movies = new HashSet<String>();
 		for (MovieTicket movieTicket : ans){
-			movies.add(movieTicket.getMovie());
+			movies.add(movieTicket.getMovie().toUpperCase());
 		}
 		List<String> movieNames = new ArrayList<String>();
 		for (String movie : movies){
