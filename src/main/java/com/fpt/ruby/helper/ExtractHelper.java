@@ -13,7 +13,6 @@ import com.fpt.ruby.model.ProductionCompany;
 import com.fpt.ruby.model.ProductionCountry;
 import com.fpt.ruby.model.SpokenLanguage;
 import com.fpt.ruby.service.GenreService;
-import com.fpt.ruby.service.MovieService;
 import com.fpt.ruby.service.ProductionCompanyService;
 import com.fpt.ruby.service.ProductionCountryService;
 import com.fpt.ruby.service.SpokenLanguageService;

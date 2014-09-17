@@ -1,16 +1,11 @@
 package fpt.qa.rubyweb;
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
-import modifier.AbsoluteTime;
-import modifier.AbsoluteTime.TimeResult;
+import fpt.qa.additionalinformation.modifier.AbsoluteTime;
+import fpt.qa.additionalinformation.modifier.AbsoluteTime.TimeResult;
 
 public class CrawlXemPhimSo {
 	public static void writeFile(String filename, String content)

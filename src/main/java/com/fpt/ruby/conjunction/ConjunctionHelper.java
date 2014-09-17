@@ -3,8 +3,8 @@ package com.fpt.ruby.conjunction;
 import java.io.File;
 import java.util.List;
 
-import mdnlib.struct.pair.Pair;
-import modifier.ConjunctionWithType;
+import fpt.qa.additionalinformation.modifier.ConjunctionWithType;
+import fpt.qa.mdnlib.struct.pair.Pair;
 
 
 

@@ -8,8 +8,6 @@ import org.json.JSONObject;
 
 import com.fpt.ruby.model.QuestionStructure;
 
-import redis.clients.jedis.Jedis;
-
 public class RedisHelper {
 	private static final String HEAD_KEY = "head";
 	private static final String MODIFIERS_KEY = "modifiers";

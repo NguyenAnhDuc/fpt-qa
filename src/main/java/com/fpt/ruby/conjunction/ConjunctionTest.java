@@ -2,10 +2,10 @@ package com.fpt.ruby.conjunction;
 
 import java.io.File;
 
-import mdnlib.struct.pair.Pair;
+import fpt.qa.additionalinformation.modifier.ConjunctionWithType;
+import fpt.qa.mdnlib.struct.pair.Pair;
 
 // IMPORT CLASS
-import modifier.ConjunctionWithType;
 
 public class ConjunctionTest{
     private static final String TEXT = "rạp dân chủ và rạp quốc gia ở đâu?";

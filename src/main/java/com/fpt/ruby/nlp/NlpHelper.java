@@ -3,18 +3,17 @@ package com.fpt.ruby.nlp;
 import java.util.ArrayList;
 import java.util.List;
 
-import mdnlib.struct.pair.Pair;
-import modifier.AbsoluteTime;
-import modifier.AbsoluteTime.TimeResult;
-
 import com.fpt.ruby.conjunction.ConjunctionHelper;
 import com.fpt.ruby.helper.RedisHelper;
 import com.fpt.ruby.model.MovieTicket;
 import com.fpt.ruby.model.QuestionStructure;
 import com.fpt.ruby.model.TimeExtract;
 
+import fpt.qa.additionalinformation.modifier.AbsoluteTime;
+import fpt.qa.additionalinformation.modifier.AbsoluteTime.TimeResult;
 import fpt.qa.intent.detection.IntentConstants;
 import fpt.qa.intent.detection.MovieIntentDetection;
+import fpt.qa.mdnlib.struct.pair.Pair;
 
 public class NlpHelper {
 	private static ConjunctionHelper conjunctionHelper;
