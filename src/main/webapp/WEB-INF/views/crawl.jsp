@@ -1,6 +1,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
 <html>
 <head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
 <!-- Latest compiled and minified CSS -->
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -55,7 +57,7 @@
 	   		<div class="alert alert-success" role="alert">Schedule added!</div>
 	   </c:if>
 	   
-	   <form action="/rubyweb/admin/crawlManual" method="post"  role="form" data-toggle="validator" class="form-horizontal">
+	   <form action="/rubyweb/admin/crawlManual" method="post"  role="form" data-toggle="validator" class="form-horizontal" accept-charset="UTF-8">
 			<div class="row" style="margin-bottom: 10px">
 			<select class="form-control " id = "cin_name" name="cin_name">
 				<option>CGV Vincom City Towers</option>

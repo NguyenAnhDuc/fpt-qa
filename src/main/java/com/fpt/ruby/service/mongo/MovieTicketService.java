@@ -131,22 +131,17 @@ public class MovieTicketService {
 	}
 	
 	public static void main(String[] args){
-Date date1 = new Date();
-		
-		date1.setHours(20);
-		
-		date1.setMinutes(0);
-		date1.setSeconds(0);
-		for (int i=1;i<10000000;i++){
-			
+		ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringMongoConfig.class);
+		MongoOperations mongoOperations = (MongoOperations) ctx.getBean("mongoTemplate");
+		MovieTicket movieTicket = new MovieTicket();
+		movieTicket.setCinema("Lotte");
+		movieTicket.setCity("Ha Noi");
+		//mongoOperations.save(movieTicket);
+		List<MovieTicket> movieTickets = mongoOperations.findAll(MovieTicket.class);
+		for (MovieTicket movTicket : movieTickets){
+			movTicket.setMovie("Biệt đội đánh thuê");
+			mongoOperations.save(movTicket);
 		}
-		Date date2 = new Date();
-		
-		date2.setHours(20);
-		
-		date2.setMinutes(0);
-		date2.setSeconds(0);
-		System.out.println(date1.compareTo(date2));
-		System.out.println(equalDate(date1, date2));
+		System.out.println("DONE");
 	}
 }

@@ -55,8 +55,6 @@ public class AdminCotroller {
 		cinName = cinName.trim();movieTitle = movieTitle.trim(); time = time.trim();
 		String[] times = time.split("\\s+");
 		for (String etime : times){
-			System.out.println(etime.trim().split(":")[0]);
-			System.out.println(etime.trim().split(":")[1]);
 			MovieTicket movieTicket = new MovieTicket();
 			movieTicket.setCinema(cinName.trim());
 			movieTicket.setMovie(movieTitle.trim());
@@ -81,6 +79,7 @@ public class AdminCotroller {
 	public String crawlPhimChieuRap(@RequestParam("cin_name") String cinName, @RequestParam("mov_title") String movieTitle,
 											@RequestParam("time") String time, @RequestParam("numdays") String numdays ,Model model){
 		try{
+			System.out.println("cin name: " + cinName);
 			int numday = Integer.parseInt(numdays);
 			saveSchedule(cinName, movieTitle, time, numday);
 		}

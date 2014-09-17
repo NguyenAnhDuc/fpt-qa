@@ -6,7 +6,11 @@
 	<classpathentry excluding="**/*.java" kind="src" path="src/main/resources"/>
 	<classpathentry kind="var" path="M2_REPO/javax/inject/javax.inject/1/javax.inject-1.jar" sourcepath="M2_REPO/javax/inject/javax.inject/1/javax.inject-1-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/javax/inject/javax.inject/1/javax.inject-1-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/javax/inject/javax.inject/1/javax.inject-1-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
@@ -32,13 +36,21 @@
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/javax/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.jar" sourcepath="M2_REPO/javax/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/javax/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/javax/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/javax/json/javax.json-api/1.0/javax.json-api-1.0.jar" sourcepath="M2_REPO/javax/json/javax.json-api/1.0/javax.json-api-1.0-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/javax/json/javax.json-api/1.0/javax.json-api-1.0-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/javax/json/javax.json-api/1.0/javax.json-api-1.0-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
@@ -110,43 +122,71 @@
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/org/springframework/data/spring-data-mongodb/1.2.0.RELEASE/spring-data-mongodb-1.2.0.RELEASE.jar" sourcepath="M2_REPO/org/springframework/data/spring-data-mongodb/1.2.0.RELEASE/spring-data-mongodb-1.2.0.RELEASE-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/org/springframework/data/spring-data-mongodb/1.2.0.RELEASE/spring-data-mongodb-1.2.0.RELEASE-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/org/springframework/data/spring-data-mongodb/1.2.0.RELEASE/spring-data-mongodb-1.2.0.RELEASE-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/org/springframework/data/spring-data-commons/1.5.0.RELEASE/spring-data-commons-1.5.0.RELEASE.jar" sourcepath="M2_REPO/org/springframework/data/spring-data-commons/1.5.0.RELEASE/spring-data-commons-1.5.0.RELEASE-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/org/springframework/data/spring-data-commons/1.5.0.RELEASE/spring-data-commons-1.5.0.RELEASE-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/org/springframework/data/spring-data-commons/1.5.0.RELEASE/spring-data-commons-1.5.0.RELEASE-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6.jar" sourcepath="M2_REPO/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/org/slf4j/jcl-over-slf4j/1.6.6/jcl-over-slf4j-1.6.6.jar" sourcepath="M2_REPO/org/slf4j/jcl-over-slf4j/1.6.6/jcl-over-slf4j-1.6.6-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/org/slf4j/jcl-over-slf4j/1.6.6/jcl-over-slf4j-1.6.6-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/org/slf4j/jcl-over-slf4j/1.6.6/jcl-over-slf4j-1.6.6-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/org/mongodb/mongo-java-driver/2.11.0/mongo-java-driver-2.11.0.jar" sourcepath="M2_REPO/org/mongodb/mongo-java-driver/2.11.0/mongo-java-driver-2.11.0-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/org/mongodb/mongo-java-driver/2.11.0/mongo-java-driver-2.11.0-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/org/mongodb/mongo-java-driver/2.11.0/mongo-java-driver-2.11.0-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/org/aspectj/aspectjrt/1.6.10/aspectjrt-1.6.10.jar" sourcepath="M2_REPO/org/aspectj/aspectjrt/1.6.10/aspectjrt-1.6.10-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/org/aspectj/aspectjrt/1.6.10/aspectjrt-1.6.10-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/org/aspectj/aspectjrt/1.6.10/aspectjrt-1.6.10-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-log4j12/1.6.6/slf4j-log4j12-1.6.6.jar" sourcepath="M2_REPO/org/slf4j/slf4j-log4j12/1.6.6/slf4j-log4j12-1.6.6-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/org/slf4j/slf4j-log4j12/1.6.6/slf4j-log4j12-1.6.6-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/org/slf4j/slf4j-log4j12/1.6.6/slf4j-log4j12-1.6.6-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
@@ -160,12 +200,16 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry kind="var" path="M2_REPO/commons-dbcp/commons-dbcp/1.2.2/commons-dbcp-1.2.2.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/commons-pool/commons-pool/1.3/commons-pool-1.3.jar" sourcepath="M2_REPO/commons-pool/commons-pool/1.3/commons-pool-1.3-sources.jar">
+=======
+	<classpathentry kind="var" path="M2_REPO/commons-dbcp/commons-dbcp/1.2.2/commons-dbcp-1.2.2.jar" sourcepath="M2_REPO/commons-dbcp/commons-dbcp/1.2.2/commons-dbcp-1.2.2-sources.jar">
+>>>>>>> develop
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
@@ -207,7 +251,11 @@
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/org/hibernate/common/hibernate-commons-annotations/4.0.1.Final/hibernate-commons-annotations-4.0.1.Final.jar" sourcepath="M2_REPO/org/hibernate/common/hibernate-commons-annotations/4.0.1.Final/hibernate-commons-annotations-4.0.1.Final-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.1.Final/hibernate-commons-annotations-4.0.1.Final-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.1.Final/hibernate-commons-annotations-4.0.1.Final-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
@@ -218,55 +266,91 @@
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/org/apache/httpcomponents/httpclient/4.3.4/httpclient-4.3.4.jar" sourcepath="M2_REPO/org/apache/httpcomponents/httpclient/4.3.4/httpclient-4.3.4-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/org/apache/httpcomponents/httpclient/4.3.4/httpclient-4.3.4-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/org/apache/httpcomponents/httpclient/4.3.4/httpclient-4.3.4-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar" sourcepath="M2_REPO/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar" sourcepath="M2_REPO/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/commons-codec/commons-codec/1.6/commons-codec-1.6.jar" sourcepath="M2_REPO/commons-codec/commons-codec/1.6/commons-codec-1.6-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/commons-codec/commons-codec/1.6/commons-codec-1.6-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/commons-codec/commons-codec/1.6/commons-codec-1.6-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/org/json/json/20140107/json-20140107.jar" sourcepath="M2_REPO/org/json/json/20140107/json-20140107-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/org/json/json/20140107/json-20140107-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/org/json/json/20140107/json-20140107-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-pool2/2.0/commons-pool2-2.0.jar" sourcepath="M2_REPO/org/apache/commons/commons-pool2/2.0/commons-pool2-2.0-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/org/apache/commons/commons-pool2/2.0/commons-pool2-2.0-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/org/apache/commons/commons-pool2/2.0/commons-pool2-2.0-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/org/jsoup/jsoup/1.7.3/jsoup-1.7.3.jar" sourcepath="M2_REPO/org/jsoup/jsoup/1.7.3/jsoup-1.7.3-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/org/jsoup/jsoup/1.7.3/jsoup-1.7.3-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/org/jsoup/jsoup/1.7.3/jsoup-1.7.3-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/redis/clients/jedis/2.5.1/jedis-2.5.1.jar" sourcepath="M2_REPO/redis/clients/jedis/2.5.1/jedis-2.5.1-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/redis/clients/jedis/2.5.1/jedis-2.5.1-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/redis/clients/jedis/2.5.1/jedis-2.5.1-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/cglib/cglib/2.2.2/cglib-2.2.2.jar" sourcepath="M2_REPO/cglib/cglib/2.2.2/cglib-2.2.2-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/cglib/cglib/2.2.2/cglib-2.2.2-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/cglib/cglib/2.2.2/cglib-2.2.2-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
@@ -277,31 +361,51 @@
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/org/codehaus/jackson/jackson-mapper-asl/1.9.12/jackson-mapper-asl-1.9.12.jar" sourcepath="M2_REPO/org/codehaus/jackson/jackson-mapper-asl/1.9.12/jackson-mapper-asl-1.9.12-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.12/jackson-mapper-asl-1.9.12-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.12/jackson-mapper-asl-1.9.12-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/org/codehaus/jackson/jackson-core-asl/1.9.12/jackson-core-asl-1.9.12.jar" sourcepath="M2_REPO/org/codehaus/jackson/jackson-core-asl/1.9.12/jackson-core-asl-1.9.12-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.12/jackson-core-asl-1.9.12-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.12/jackson-core-asl-1.9.12-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.4.2/jackson-databind-2.4.2.jar" sourcepath="M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.4.2/jackson-databind-2.4.2-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.4.2/jackson-databind-2.4.2-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.4.2/jackson-databind-2.4.2-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-annotations/2.4.2/jackson-annotations-2.4.2.jar" sourcepath="M2_REPO/com/fasterxml/jackson/core/jackson-annotations/2.4.2/jackson-annotations-2.4.2-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.4.2/jackson-annotations-2.4.2-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.4.2/jackson-annotations-2.4.2-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-core/2.4.2/jackson-core-2.4.2.jar" sourcepath="M2_REPO/com/fasterxml/jackson/core/jackson-core/2.4.2/jackson-core-2.4.2-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.4.2/jackson-core-2.4.2-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.4.2/jackson-core-2.4.2-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
@@ -310,6 +414,14 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
+	<classpathentry kind="var" path="M2_REPO/AdditionalInformation/AdditionalInformation/1.3.3/AdditionalInformation-1.3.3.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+=======
+>>>>>>> develop
 	<classpathentry kind="var" path="M2_REPO/commons-cli/commons-cli/20040117.000000/commons-cli-20040117.000000.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
@@ -317,13 +429,21 @@
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/edu/stanford/nlp/stanford-corenlp/3.4/stanford-corenlp-3.4.jar" sourcepath="M2_REPO/edu/stanford/nlp/stanford-corenlp/3.4/stanford-corenlp-3.4-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/edu/stanford/nlp/stanford-corenlp/3.4/stanford-corenlp-3.4-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/edu/stanford/nlp/stanford-corenlp/3.4/stanford-corenlp-3.4-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/com/io7m/xom/xom/1.2.10/xom-1.2.10.jar" sourcepath="M2_REPO/com/io7m/xom/xom/1.2.10/xom-1.2.10-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/com/io7m/xom/xom/1.2.10/xom-1.2.10-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/com/io7m/xom/xom/1.2.10/xom-1.2.10-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
@@ -344,19 +464,31 @@
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/joda-time/joda-time/2.1/joda-time-2.1.jar" sourcepath="M2_REPO/joda-time/joda-time/2.1/joda-time-2.1-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/joda-time/joda-time/2.1/joda-time-2.1-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/joda-time/joda-time/2.1/joda-time-2.1-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/de/jollyday/jollyday/0.4.7/jollyday-0.4.7.jar" sourcepath="M2_REPO/de/jollyday/jollyday/0.4.7/jollyday-0.4.7-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/de/jollyday/jollyday/0.4.7/jollyday-0.4.7-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/de/jollyday/jollyday/0.4.7/jollyday-0.4.7-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/com/googlecode/efficient-java-matrix-library/ejml/0.23/ejml-0.23.jar" sourcepath="M2_REPO/com/googlecode/efficient-java-matrix-library/ejml/0.23/ejml-0.23-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/com/googlecode/efficient-java-matrix-library/ejml/0.23/ejml-0.23-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/com/googlecode/efficient-java-matrix-library/ejml/0.23/ejml-0.23-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
@@ -392,7 +524,11 @@
 	</classpathentry>
 	<classpathentry kind="var" path="M2_REPO/args4j/args4j/2.0.29/args4j-2.0.29.jar" sourcepath="M2_REPO/args4j/args4j/2.0.29/args4j-2.0.29-sources.jar">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/quang/.m2/repository/args4j/args4j/2.0.29/args4j-2.0.29-javadoc.jar!/"/>
+=======
+			<attribute name="javadoc_location" value="jar:file:/home/dungx/.m2/repository/args4j/args4j/2.0.29/args4j-2.0.29-javadoc.jar!/"/>
+>>>>>>> develop
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
