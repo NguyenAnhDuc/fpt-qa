@@ -39,8 +39,6 @@ public class AppController {
 	
 	@RequestMapping(value="/", method = RequestMethod.GET)
 	public String home(Model model){
-		List<String> questions = app.getListCachedQuestion();
-		model.addAttribute("questions", questions);
 		return "chat";
 	}
 	
