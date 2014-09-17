@@ -1,9 +1,6 @@
 package fpt.qa.rubyweb;
 
-import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
-
 import com.fpt.ruby.model.MovieTicket;
 import com.fpt.ruby.service.mongo.MovieTicketService;
 

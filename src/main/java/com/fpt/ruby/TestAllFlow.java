@@ -14,7 +14,7 @@ import com.fpt.ruby.service.mongo.MovieTicketService;
 
 import fpt.qa.intent.detection.IntentConstants;
 import fpt.qa.intent.detection.MovieIntentDetection;
-import mdnlib.struct.pair.Pair;
+import fpt.qa.mdnlib.struct.pair.Pair;
 
 public class TestAllFlow {
 	private static ConjunctionHelper conjunctionHelper;

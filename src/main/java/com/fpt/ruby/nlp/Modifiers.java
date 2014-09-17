@@ -2,12 +2,11 @@ package com.fpt.ruby.nlp;
 
 import java.util.List;
 
-import mdnlib.struct.pair.Pair;
-
 import com.fpt.ruby.conjunction.ConjunctionHelper;
 import com.fpt.ruby.helper.RedisHelper;
 
 import fpt.qa.intent.detection.IntentConstants;
+import fpt.qa.mdnlib.struct.pair.Pair;
 
 public class Modifiers {
 	public static ConjunctionHelper conjunctionHelper = new ConjunctionHelper((new RedisHelper()).getClass().getClassLoader().getResource("").getPath());

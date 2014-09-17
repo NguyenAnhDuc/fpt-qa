@@ -4,10 +4,6 @@
  */
 package fpt.qa.intent.detection.qc;
 
-import fpt.qa.intent.detection.FreqConjDict;
-import jmdn.struct.collection.SplitDataByTags;
-/*import jmdn.test.VnLcWordSegmenterTest;*/
-
 /**
  *
  * @author ngan

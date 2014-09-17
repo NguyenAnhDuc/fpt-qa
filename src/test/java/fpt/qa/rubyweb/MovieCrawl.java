@@ -1,16 +1,6 @@
 package fpt.qa.rubyweb;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-
-import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.hibernate.service.jta.platform.internal.JOnASJtaPlatform;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -19,8 +9,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.fpt.ruby.helper.*;
 import com.fpt.ruby.model.Genre;
 import com.fpt.ruby.model.Movie;
-import com.fpt.ruby.model.ProductionCompany;
-import com.fpt.ruby.model.SpokenLanguage;
 import com.fpt.ruby.service.GenreService;
 import com.fpt.ruby.service.MovieService;
 import com.fpt.ruby.service.ProductionCompanyService;

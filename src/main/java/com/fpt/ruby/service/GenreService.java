@@ -1,7 +1,5 @@
 package com.fpt.ruby.service;
 
-import java.util.List;
-
 import com.fpt.ruby.model.Genre;
 
 public interface GenreService {

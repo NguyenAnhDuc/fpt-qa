@@ -4,11 +4,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
-import mdnlib.struct.pair.Pair;
-
-import com.fpt.ruby.conjunction.ConjunctionHelper;
 import com.fpt.ruby.helper.FeaturedMovieHelper;
-import com.fpt.ruby.model.Movie;
 import com.fpt.ruby.model.MovieFly;
 import com.fpt.ruby.model.MovieTicket;
 import com.fpt.ruby.service.MovieFlyService;

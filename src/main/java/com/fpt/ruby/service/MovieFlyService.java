@@ -10,16 +10,13 @@ import java.util.List;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 
 import com.fpt.ruby.config.SpringMongoConfig;
 import com.fpt.ruby.helper.HttpHelper;
-import com.fpt.ruby.model.Movie;
 import com.fpt.ruby.model.MovieFly;
 
 public class MovieFlyService {
