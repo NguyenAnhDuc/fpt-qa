@@ -1,7 +1,9 @@
 package com.fpt.ruby.crawler.moveek;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Date;
 import java.util.HashMap;
@@ -20,13 +22,15 @@ public class MoveekCrawler {
 	private static HashMap<String, String> cin_cities = new HashMap<String, String>();
 	
 	static {
-		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
+		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath() + "/dicts";
 		loadMovieUrls(dir);
 		loadshowTimeUrls(dir);
 		loadCinCity(dir);
 	}
 	
 	public static void doCrawl(MovieTicketService mts){
+		try {
+		BufferedWriter writer = new BufferedWriter(new FileWriter("/home/ngan/Work/AHongPhuong/RubyWeb/database/MovieTicket.txt"));
 		Object[] keys = movie_urls.keySet().toArray();
 		for (Object key : keys){
 			String cinName = (String)key;
@@ -43,11 +47,17 @@ public class MoveekCrawler {
 					newTicket.setCinema(cinName);
 					newTicket.setCity(city);
 					newTicket.setMovie(movie.second);
-					if (!mts.existedInDb(newTicket)){
-						mts.save(newTicket);
-					}
+//					if (!mts.existedInDb(newTicket)){
+//						mts.save(newTicket);
+//					}
+					writer.write(cinName + "\t" + movie.second + "\t" + newTicket.getDate() + "\t" + slot.first + "\t" + city + "\n");
 				}
 			}
+		}
+		writer.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 	
