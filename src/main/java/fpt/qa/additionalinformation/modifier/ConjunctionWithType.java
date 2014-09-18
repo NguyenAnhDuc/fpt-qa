@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -20,13 +21,9 @@ public class ConjunctionWithType extends ConjunctionChecker{
 	private Map< String, String > conjunctionType;
 	private NamedEngineImp nameMapperEngine;
 
-	// private Map< String, String > originalConjunction;
-
 	public ConjunctionWithType( String resourcePath ) {
 		conjunctionType = new HashMap< String, String >();
-		//nameMapperEngine = new NamedEngineImp( ConjunctionWithType.class.getClassLoader().getResource( "" ).getPath() );
 		nameMapperEngine = new NamedEngineImp( resourcePath );
-		// originalConjunction = new HashMap< String, String >();
 
         loadConjunctionFromNameMapper( nameMapperEngine );
         
@@ -47,17 +44,11 @@ public class ConjunctionWithType extends ConjunctionChecker{
 
 				if( numberOfElements == 2 ){
 					String conjunction = elements[ 1 ];
-					// String original = conjunction;
 					addConjunctionWithType( conjunction, type );
-					// originalConjunction.put( conjunction.toLowerCase(),
-					// original );
 				}else{
-					// String original = elements[ 1 ];
 					for( int i = 1; i < numberOfElements; i++ ){
 						String conjunction = elements[ i ];
 						addConjunctionWithType( conjunction, type );
-						// originalConjunction.put( conjunction.toLowerCase(),
-						// original );
 					}
 				}
 			}
@@ -84,15 +75,6 @@ public class ConjunctionWithType extends ConjunctionChecker{
 	public String getConjunctionType( String conjunction ) {
 		return conjunctionType.get( conjunction.toLowerCase().substring( 1, conjunction.length() - 1 ) );
 	}
-
-	/* public void setOriginal( String conjunction, String origin ){ */
-	// originalConjunction.put( conjunction.toLowerCase(), origin );
-	// }
-
-	// public String getOrigin( String conjunction ){
-	// return originalConjunction.get( conjunction.toLowerCase().substring( 1,
-	// conjunction.length() -1 ) );
-	/* } */
 
 	public List< Pair< String, String > > getOriginRelevantConjunctionsWithType( String text ) {
 		List< Pair< String, String > > relConjunctions = new ArrayList< Pair< String, String > >();
@@ -129,5 +111,40 @@ public class ConjunctionWithType extends ConjunctionChecker{
 		return rawResult;
 	}
 	
+	public List< String > getLongerOverlappedResult( List< String > conjunctionList ){
+		List< String > newList = new ArrayList< String >();
+		newList.addAll( conjunctionList );
+		
+		for( int i = 0; i < newList.size() - 1; i++ ){
+			for( int j = i + 1; j < newList.size(); j++ ){
+				if( isSmallerSubsetOf( newList.get( j ) , newList.get( i ) ) ){
+					newList.remove( j );
+					j--;
+					continue;
+				}
+				if( isSmallerSubsetOf( newList.get( i ) , newList.get( j ) ) ){
+					String temp = newList.get( i );
+					newList.set( i, newList.get( j ) );
+					newList.set( j, temp );
+					j--;
+				}
+			}
+		}
+		
+		return newList;
+	}
 	
+	private boolean isSmallerSubsetOf( String lhs, String rhs ){
+		Set< String > lhsSet = new HashSet< String >( Arrays.asList( lhs.split( "[\\s\\{\\}]+" ) ) );
+		Set< String > rhsSet = new HashSet< String >( Arrays.asList( rhs.split( "[\\s\\{\\}]+" ) ) );
+		return rhsSet.containsAll( lhsSet ) && rhsSet.size() > lhsSet.size();
+	}
+	
+	public static void main( String[] args ){
+//		System.out.println( isSmallerSubsetOf( "{Va toi cung yeu em }", "{ Va   toi   cung   yeu   em   rat   nhieu  }") );
+//		List< String > testList = new ArrayList< String >();
+//		testList.add( "{ Va   toi   cung   yeu   em   rat   nhieu  }" );
+//		testList.add( "{Va toi cung yeu em }" );
+//		System.out.println( getLongerOverlappedResult( testList ) );
+	}
 }
