@@ -1,12 +1,12 @@
-mỹ	United States
+mỹ	USA
 anh	United Kingdom 
 trung quốc	China
-trung	China
 lào	Laos
 thái	Thailand
 thái lan	Thailand
-hàn quốc	Korea
-hàn	Korea
+hàn quốc	South Korea
+hàn	South Korea
+triều tiên	North Korea
 nhật	Japan
 nhật bản	Japan
 việt	Vietnam
@@ -19,4 +19,6 @@ singapore	Singapore
 nga	Russia
 liên xô	Russia
 hồng kong	Hong Kong
+hồng kông	Hong Kong
 hong kong	Hong Kong
+hongkong	Hong Kong
