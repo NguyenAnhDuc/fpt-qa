@@ -8209,7 +8209,9 @@ cin_name	Platinum Vincom Long Biên; Platinum Long Biên, Vincom Long Biên
 cin_name	Platinum Garden Mall; Platinum Garden, Garden Mall, Garden, the Garden
 cin_name	Tháng 8 Cinema; Tháng 8, tháng tám, tháng tám cinema
 cin_name	TT Chiếu Phim Quốc Gia; trung tâm chiếu phim quốc gia, Chiếu Phim Quốc Gia, Quốc Gia
-cin_name	Kim Đồng Cinema; Kim Đồng, Dân Chủ Cinema, Dân Chủ, Ngọc Khánh Cinema, Ngọc Khánh
+cin_name	Kim Đồng Cinema; Kim Đồng,
+cin_name	Dân Chủ Cinema, Dân Chủ
+cin_name	Ngọc Khánh Cinema, Ngọc Khánh
 cin_name	CGV Celadon Tân Phú; CGV Celadon, CGV Tân Phú, Megastar Celadon Tân Phú, Megastar Celadon, Megastar Tân Phú, Celadon Tân Phú, Tân Phú, Celadon
 cin_name	CGV Hùng Vương Plaza; CGV Hùng Vương, CGV Plaza, Megastar Hùng Vương Plaza, Megastar Hùng Vương, Megastar Plaza, Hùng Vương Plaza, Hùng Vương
 cin_name	CGV Pandora City; CGV Pandora, Megastar Pandora City, Megastar Pandora, Pandora City, Pandora

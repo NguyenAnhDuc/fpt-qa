@@ -34,6 +34,22 @@ public class MovieTicketService {
 		
 	}
 	
+	public MovieTicket findById(String ticketId){
+		return mongoOperations.findById(ticketId, MovieTicket.class);
+	}
+	
+	public List<MovieTicket> findTicketToShow(){
+		List<MovieTicket> movieTickets = mongoOperations.findAll(MovieTicket.class);
+		List<MovieTicket> tickets = new ArrayList<MovieTicket>();
+		Date date = new Date();
+		date.setHours(0);date.setMinutes(0);date.setSeconds(0);
+		for (MovieTicket movieTicket : movieTickets){
+			if (movieTicket.getDate() != null)
+				tickets.add(movieTicket);
+		}
+		return tickets;
+	}
+	
 	private List<MovieTicket> findMatch(MovieTicket movieTicket){
 		Query query = new Query();
 		query.addCriteria(Criteria.where(MT_MOVIE).regex("^" + movieTicket.getMovie() + "$","i"));
