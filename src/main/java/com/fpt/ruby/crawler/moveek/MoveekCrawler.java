@@ -29,8 +29,6 @@ public class MoveekCrawler {
 	}
 	
 	public static void doCrawl(MovieTicketService mts){
-		try {
-		BufferedWriter writer = new BufferedWriter(new FileWriter("/home/ngan/Work/AHongPhuong/RubyWeb/database/MovieTicket.txt"));
 		Object[] keys = movie_urls.keySet().toArray();
 		for (Object key : keys){
 			String cinName = (String)key;
@@ -47,17 +45,11 @@ public class MoveekCrawler {
 					newTicket.setCinema(cinName);
 					newTicket.setCity(city);
 					newTicket.setMovie(movie.second);
-//					if (!mts.existedInDb(newTicket)){
-//						mts.save(newTicket);
-//					}
-					writer.write(cinName + "\t" + movie.second + "\t" + newTicket.getDate() + "\t" + slot.first + "\t" + city + "\n");
+					if (!mts.existedInDb(newTicket)){
+						mts.save(newTicket);
+					}
 				}
 			}
-		}
-		writer.close();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}
 	}
 	
