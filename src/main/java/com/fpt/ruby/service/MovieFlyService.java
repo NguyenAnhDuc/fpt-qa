@@ -137,7 +137,9 @@ public class MovieFlyService {
 		List<String> imdbIds = searchOnRT(title);
 		for (String imdbId : imdbIds){
 			MovieFly movieFly = searchOnImdbById(imdbId);
-			movieFlies.add(movieFly);
+			if (movieFly.getTitle().contains(title)){
+				movieFlies.add(movieFly);
+			}
 		}
 		return movieFlies;
 	}

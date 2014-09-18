@@ -1,7 +1,9 @@
 package com.fpt.ruby.crawler.moveek;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Date;
 import java.util.HashMap;
@@ -20,7 +22,7 @@ public class MoveekCrawler {
 	private static HashMap<String, String> cin_cities = new HashMap<String, String>();
 	
 	static {
-		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
+		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath() + "/dicts";
 		loadMovieUrls(dir);
 		loadshowTimeUrls(dir);
 		loadCinCity(dir);

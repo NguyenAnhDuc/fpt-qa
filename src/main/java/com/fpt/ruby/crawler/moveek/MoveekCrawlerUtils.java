@@ -72,11 +72,19 @@ public class MoveekCrawlerUtils {
 			int eType = response.indexOf("</", bType);
 			String type = response.substring(bType, eType);
 			
-			idx = response.indexOf("<a onClick=\"ga('send'");
-			int bTime = response.indexOf("'time' : '", idx) + 10;
+			idx = response.indexOf("<a onClick=\"ga('send'", eType);
+			if (idx < 0){
+				break;
+			}
+			
+			int bTime = response.indexOf("'time' : '", eType) + 10;
 			int eTime = response.indexOf("'", bTime);
 			String time = response.substring(bTime, eTime);
 			
+			if (!Character.isDigit(time.charAt(0))){
+				idx = response.indexOf("<a href=\"#\" class=\"btn btn-primary btn-xs\">", eTime);
+				continue;
+			}
 			res.add(new Pair<String, Date>(type, parseDate(time)));
 			
 			idx = response.indexOf("<a href=\"#\" class=\"btn btn-primary btn-xs\">", eTime);

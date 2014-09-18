@@ -1,3 +1,7 @@
+human_name	Fidel;
+human_name	Fidel Castro;
+bike		Castrol Poster;
+
 
 mov_title	kungfu panda; kungfu gấu trúc, công phu gấu trúc, Kungfu Panda, Kungfu Gấu Trúc
 

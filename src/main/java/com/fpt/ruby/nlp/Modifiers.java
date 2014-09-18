@@ -1,18 +1,34 @@
 package com.fpt.ruby.nlp;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
-import com.fpt.ruby.conjunction.ConjunctionHelper;
 import com.fpt.ruby.helper.RedisHelper;
 
-import fpt.qa.intent.detection.IntentConstants;
-import fpt.qa.mdnlib.struct.pair.Pair;
-
 public class Modifiers {
-	public static ConjunctionHelper conjunctionHelper = new ConjunctionHelper((new RedisHelper()).getClass().getClassLoader().getResource("").getPath());
+	
+	public static Map<String, String> genreMap = new HashMap<String, String>();
+	public static Map<String, String> countryMap = new HashMap<String, String>();
+	public static Map<String, String> actorMap = new HashMap<String, String>();
+	public static Map<String, String> directorMap = new HashMap<String, String>();
+	public static Map<String, String> langMap = new HashMap<String, String>();
+	
+	static {
+		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath() + "/dicts/";
+		initGenreMap(dir);
+		initCountryMap(dir);
+		initActorsMap(dir);
+		initDirectorsMap(dir);
+		initLangMap(dir);
+	}
 	
 	private String title;
-	private String genre;
+	private List<String> genre;
 	private String actor;
 	private String director;
 	private String country;
@@ -26,10 +42,10 @@ public class Modifiers {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public String getGenre() {
+	public List<String> getGenre() {
 		return genre;
 	}
-	public void setGenre(String genre) {
+	public void setGenre(List<String> genre) {
 		this.genre = genre;
 	}
 	public String getActor() {
@@ -76,7 +92,7 @@ public class Modifiers {
 	}
 	
 	public boolean atLeastOneOtherFeatureNotNull(){
-		if (genre != null || actor != null || director != null || lang != null){
+		if (!genre.isEmpty() || actor != null || director != null || lang != null){
 			return true;
 		}
 		
@@ -89,59 +105,226 @@ public class Modifiers {
 	
 
 	public static Modifiers getModifiers(String question){
-		List<Pair<String, String>> conjunctions = conjunctionHelper.getConjunction(question);
 		Modifiers res = new Modifiers();
-		for (Pair<String, String> conjunction : conjunctions ){
-			String head = conjunction.second;
-			String val = conjunction.first.replace("{", "").replace("}", "");
-			
-			if (head.equals(IntentConstants.MOV_TITLE)){
-				res.setTitle(val);
-				continue;
-			}
-			
-			if (head.equals(IntentConstants.CIN_NAME)){
-				res.setCin_name(val);
-				continue;
-			}
-			
-			if (head.equals("loại_phim")){
-				res.setGenre(val);
-				continue;
-			}
-			
-			if (head.equals("diễn_viên")){
-				res.setActor(val);
-				continue;
-			}
-			
-			if (head.equals("đạo_diễn")){
-				res.setDirector(val);
-				continue;
-			}
-			
-			if (head.equals(IntentConstants.MOV_AUDIENCE)){
-				res.setAudience(val);
-				continue;
-			}
-			
-			if (head.equals(IntentConstants.MOV_AWARD)){
-				res.setAward(val);
-				continue;
-			}
-			
-			if (head.equals(IntentConstants.MOV_COUNTRY)){
-				res.setCountry(val);
-				continue;
-			}
-			
-			if (head.equals(IntentConstants.MOV_LANG)){
-				res.setLang(val);
-				continue;
-			}
-		}
+		
+		List<String> ngrams = getNGrams(question);
+		res.setActor(getActor(ngrams));
+		res.setDirector(getDirector(ngrams));
+		res.setCountry(getCountry(ngrams));
+		res.setGenre(getGenreList(ngrams));
 		
 		return res;
 	}
 	
+	
+	private static List<String> getGenreList(List<String> ngrams){
+		List<String> genList  = new ArrayList<String>();
+		
+		for (String ngram : ngrams){
+			String enGenre = genreMap.get(ngram);
+			if (enGenre != null){
+				genList.add(enGenre);
+			}
+		}
+		
+		return genList;
+	}
+	
+	private static String getCountry(List<String> ngrams){
+		for (String ngram : ngrams){
+			String enCountry = countryMap.get(ngram);
+			if (enCountry != null){
+				return enCountry;
+			}
+		}
+		return null;
+	}
+	
+	
+	private static String getActor(List<String> ngrams){
+		for (String ngram : ngrams){
+			String actor = actorMap.get(ngram);
+			if (actor != null){
+				return actor;
+			}
+		}
+		return null;
+	}
+	
+	private static String getDirector(List<String> ngrams){
+		for (String ngram : ngrams){
+			String director = directorMap.get(ngram);
+			if (director != null){
+				return director;
+			}
+		}
+		return null;
+	}
+
+	private static void initGenreMap(String dir){
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(dir + "genreMap.txt"));
+			String line;
+			while((line = reader.readLine()) != null){
+				int idx = line.indexOf("\t");
+				if (line.isEmpty() || idx < 0){
+					continue;
+				}
+				String key = line.substring(0, idx).toLowerCase();
+				String val = line.substring(idx + 1);
+				genreMap.put(key, val);
+			}
+			
+			reader.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	private static void initCountryMap(String dir){
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(dir + "countryMap.txt"));
+			String line;
+			while((line = reader.readLine()) != null){
+				int idx = line.indexOf("\t");
+				if (line.isEmpty() || idx < 0){
+					continue;
+				}
+				String key = line.substring(0, idx).toLowerCase();
+				String val = line.substring(idx + 1);
+				countryMap.put(key, val);
+			}
+			
+			reader.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	private static void initActorsMap(String dir){
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(dir + "actors.txt"));
+			String line;
+			while((line = reader.readLine()) != null){
+				if (line.isEmpty()){
+					continue;
+				}
+				actorMap.put(line.toLowerCase(), line);
+			}
+			
+			reader.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	private static void initDirectorsMap(String dir){
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(dir + "directors.txt"));
+			String line;
+			while((line = reader.readLine()) != null){
+				if (line.isEmpty()){
+					continue;
+				}
+				directorMap.put(line.toLowerCase(), line);
+			}
+			
+			reader.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	private static void initLangMap(String dir){
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(dir + "languageMap.txt"));
+			String line;
+			while((line = reader.readLine()) != null){
+				if (line.isEmpty()){
+					continue;
+				}
+				langMap.put(line.toLowerCase(), line);
+			}
+			
+			reader.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	// get 1-4grams from the input question
+	private static List<String> getNGrams(String question){
+		List<String> res = new ArrayList<String>();
+		String lowercaseQuestion = question.toLowerCase();
+		res.addAll(getUnigrams(lowercaseQuestion));
+		res.addAll(getBigrams(lowercaseQuestion));
+		res.addAll(getTrigrams(lowercaseQuestion));
+		res.addAll(get4Grams(lowercaseQuestion));
+		return res;
+	}
+	
+	private static List<String> getUnigrams(String question){
+		List<String> res = new ArrayList<String>();
+		String[] toks = question.split("\\s");
+		for (String tok : toks){
+			res.add(tok);
+		}
+		return res;
+	}
+	
+	private static List<String> getBigrams(String question){
+		List<String> res = new ArrayList<String>();
+		String[] toks = question.split("\\s");
+		if (toks.length < 2){
+			return res;
+		}
+		
+		for (int i = 0; i < toks.length - 1; i++){
+			for (int j = i+1; j < toks.length; j++){
+				res.add(toks[i] + " " + toks[j]);
+			}
+		}
+		return res;
+	}
+	
+	private static List<String> getTrigrams(String question){
+		List<String> res = new ArrayList<String>();
+		String[] toks = question.split("\\s");
+		if (toks.length < 3){
+			return res;
+		}
+		
+		for (int i = 0; i < toks.length - 2; i++){
+			for (int j = i+1; j < toks.length - 1; j++){
+				for (int k = j+1; k < toks.length; k++){
+					res.add(toks[i] + " " + toks[j] + " " + toks[k]);
+				}
+			}
+		}
+		return res;
+	}
+	
+	private static List<String> get4Grams(String question){
+		List<String> res = new ArrayList<String>();
+		String[] toks = question.split("\\s");
+		if (toks.length < 4){
+			return res;
+		}
+		
+		for (int i = 0; i < toks.length - 3; i++){
+			for (int j = i+1; j < toks.length - 2; j++){
+				for (int k = j+1; k < toks.length - 1; k++){
+					for (int l = k+1; l < toks.length; l++){
+						res.add(toks[i] + " " + toks[j] + " " + toks[k] + " " + toks[l]);
+					}
+				}
+			}
+		}
+		return res;
+	}
 }
