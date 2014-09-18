@@ -1,3 +1,7 @@
+human_name	Fidel;
+human_name	Fidel Castro;
+bike		Castrol Poster;
+
 
 mov_title	kungfu panda; kungfu gấu trúc, công phu gấu trúc, Kungfu Panda, Kungfu Gấu Trúc
 
@@ -5561,8 +5565,7 @@ mov_title	7th Grade Civil Servant; Nhân Viên Công Vụ Cấp 7
 mov_title	Super Rookie; Nhân Viên Siêu Hạng
 mov_title	Thiên Đường Nơi Đâu; Nhã Vọng Thiên Đường
 mov_title	Nhóc Maruko; Chibi Maruko-chan
-mov_title	Nhóc Nicolas
-mov_title	Nicolas On Holiday; Nhóc Nicolas 2
+mov_title	Les vacances du petit Nicolas; Nicolas On Holiday, Nhóc Nicolas 2, Nhóc Nicolas
 mov_title	Như Ý; Như Ý
 mov_title	The Luckiest Man; Như Ý Cát Tường
 mov_title	Như Giọt Sương Ngủ Muộn
@@ -5591,7 +5594,7 @@ mov_title	Nightcrawler
 mov_title	Ninja: Shadow of a Tear; Ninja Báo Thù
 mov_title	Ninja Apocalypse; Ninja Khải Huyền
 mov_title	Nintama Rantarou; Ninja Loạn Thị
-mov_title	Ninja Rùa
+mov_title	Teenage Mutant Ninja Turtles; Ninja Rùa
 mov_title	Teenage Mutant Ninja Turtles; Ninja Rùa 2014
 mov_title	Ninja Assassin; Ninja Sát Thủ
 mov_title	Ninjas Vs Vampires; Ninja Tiệu Diệt Ma Cà Rồng
@@ -5793,7 +5796,7 @@ mov_title	The Crow; Quạ Đen
 mov_title	9 Month Stretch; Quả Bầu 9 Tháng
 mov_title	Bad Karma; Quả Báo
 mov_title	Red Widow 1; Quả Phụ Áo Đỏ 1
-mov_title	Quả Tim Máu
+mov_title	Vengeful heart; Quả Tim Máu
 mov_title	The Butler; Quản Gia
 mov_title	Quản Gia Bí Ẩn
 mov_title	Jerry Maguire; Quản Lý Và Người Tình
@@ -6216,8 +6219,8 @@ mov_title	Sư Phụ Minh Bạch Liễu
 mov_title	Lions For Lambs; Sư Tử Chiến
 mov_title	Mutual Affection; Sư Tử Hà Đông
 mov_title	The Lion Roars 2; Sư Tử Hà Đông 2
-mov_title	Bí Mật Thảm Đỏ; Scandal
-mov_title	Hào Quang Trở Lại; Scandal
+mov_title	Scandal; Bí Mật Thảm Đỏ
+mov_title	Scandal; 2 Hào Quang Trở Lại 
 mov_title	Scandal Season 3; Scandal 3
 mov_title	Scared Shrekless
 mov_title	Scarlet Innocence
@@ -6228,6 +6231,7 @@ mov_title	Se Duyên
 mov_title	Se Nhầm Nhân Duyên
 mov_title	Sea Fog
 mov_title	Secretly Greatly
+mov_title	Roaring Currents; Đại Thủy Chiến
 mov_title	Serena
 mov_title	Sex, Love and Therapy
 mov_title	Shot And Killed
@@ -6446,7 +6450,7 @@ mov_title	Tội Phạm Tri Thức Phần 2
 mov_title	The Baytown Outlaws; Tội Phạm Vùng Vịnh
 mov_title	Seed Of Hope; Tục Thế Tình Thân
 mov_title	Pridyider; Tủ Lạnh Ăn Thịt Người
-mov_title	The Four 3; Tứ Đại Danh Bổ 3
+mov_title	The Four 3; Tứ Đại Danh Bổ 3, Tứ đại danh bổ
 mov_title	Tứ Đại Danh Bộ 2; Tứ Đại Danh Bộ 2
 mov_title	Tứ Đại Danh Bộ 2002; Tứ Đại Danh Bộ 2002
 mov_title	The Four; Tứ Đại Danh Bộ 2012
@@ -8203,7 +8207,7 @@ cin_name	CGV Vincom City Towers; CGV Vincom City Tower, CGV Vincom City, CGV Vin
 cin_name	CGV MIPEC Tower; CGV MIPEC, MIPEC Tower
 cin_name	Lotte Cinema Landmark; Lotte Cinema, Lotte Landmark, Cinema Landmark, Lotte, Landmark
 cin_name	Lotte Cinema Hà Đông; Lotte Hà Đông, Hà Đông
-cin_name	Platinum Vincom Royal City; Platinum Royal City, Platinum Vincom City, Platinum Vincom Royal, Platinum Royal, Platinum Vincom, Vincom Royal City, Royal City, Vincom City, Vincom Royal, Vincom, Royal
+cin_name	Platinum Vincom Royal City; Platinum Royal City, Platinum Vincom City, Platinum Vincom Royal, Platinum Royal, Platinum Vincom, Vincom Royal City, Royal City, Vincom City, Vincom Royal, Royal
 cin_name	Platinum Cineplex Times City; Platinum Cineplex City, Platinum Times City, Platinum Cineplex Times, Platinum Cineplex, Platinum Times, Cineplex Times City, Cineplex City, Times City, Cineplex Times, Cineplex, Times
 cin_name	Platinum Vincom Long Biên; Platinum Long Biên, Vincom Long Biên
 cin_name	Platinum Garden Mall; Platinum Garden, Garden Mall, Garden, the Garden

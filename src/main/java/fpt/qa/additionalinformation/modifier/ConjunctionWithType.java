@@ -18,12 +18,14 @@ import fpt.qa.mdnlib.struct.conjunction.ConjunctionChecker;
 import fpt.qa.mdnlib.struct.pair.Pair;
 
 public class ConjunctionWithType extends ConjunctionChecker{
-	private Map< String, String > conjunctionType;
+	private static Map< String, String > conjunctionType;
 	private NamedEngineImp nameMapperEngine;
+	private static SurroundingWords surroundingWords;
 
 	public ConjunctionWithType( String resourcePath ) {
 		conjunctionType = new HashMap< String, String >();
 		nameMapperEngine = new NamedEngineImp( resourcePath );
+		surroundingWords = new SurroundingWords( resourcePath );
 
         loadConjunctionFromNameMapper( nameMapperEngine );
         
@@ -72,7 +74,7 @@ public class ConjunctionWithType extends ConjunctionChecker{
 		conjunctionType.put( str.toLowerCase(), type );
 	}
 
-	public String getConjunctionType( String conjunction ) {
+	public static String getConjunctionType( String conjunction ) {
 		return conjunctionType.get( conjunction.toLowerCase().substring( 1, conjunction.length() - 1 ) );
 	}
 
@@ -80,8 +82,11 @@ public class ConjunctionWithType extends ConjunctionChecker{
 		List< Pair< String, String > > relConjunctions = new ArrayList< Pair< String, String > >();
 
 		Set< String > originSets = new HashSet< String >();
-
-		for( String conj : getRelevantConjunctions( VnTokenizer.tokenize( text ) , true ) ){
+		
+		List< String > rawConj = getRelevantConjunctions( VnTokenizer.tokenize( text ) , true );
+		System.err.println( "[ConjWithType] [RawConj] " + rawConj );
+					
+		for( String conj : getLongerOverlappedResult( getBetterSurroundingContext( rawConj, text ) ) ){
 			String origin = nameMapperEngine.getFinalName( getConjunctionType( conj ),
 					conj.substring( 1, conj.length() - 1 ) );
 			if( !originSets.contains( origin ) ){
@@ -106,12 +111,12 @@ public class ConjunctionWithType extends ConjunctionChecker{
 
 		return relConjunctions;
 	}
+//	
+//	public List< Pair< String, String > > pruneMultipleResults( List< Pair< String, String > > rawResult ){
+//		return rawResult;
+//	}
 	
-	public List< Pair< String, String > > pruneMultipleResults( List< Pair< String, String > > rawResult ){
-		return rawResult;
-	}
-	
-	public List< String > getLongerOverlappedResult( List< String > conjunctionList ){
+	public static List< String > getLongerOverlappedResult( List< String > conjunctionList ){
 		List< String > newList = new ArrayList< String >();
 		newList.addAll( conjunctionList );
 		
@@ -126,25 +131,62 @@ public class ConjunctionWithType extends ConjunctionChecker{
 					String temp = newList.get( i );
 					newList.set( i, newList.get( j ) );
 					newList.set( j, temp );
+					newList.remove( j );
 					j--;
 				}
 			}
 		}
 		
+		System.err.println( "[ConjWithType] [Longer Conj] " + newList );
 		return newList;
 	}
 	
-	private boolean isSmallerSubsetOf( String lhs, String rhs ){
+	public static List< String > getBetterSurroundingContext( List< String > conjunctionList, String sentence ){
+		List< String > newList = new ArrayList< String >();
+		newList.addAll( conjunctionList );
+		
+		for( int i = 0; i < newList.size() - 1; i++ ){
+			for( int j = i + 1; j < newList.size(); j++ ){
+				if( isIntersect( newList.get( i ) , newList.get( j )) ){
+					if( surroundingWords.countSurroundingWords( sentence, newList.get( i ), getConjunctionType( newList.get( i ) ) ) >  
+						surroundingWords.countSurroundingWords( sentence, newList.get( j ), getConjunctionType( newList.get( j ) ) ) ){
+						newList.remove( j );
+						j--;
+					}else if(   surroundingWords.countSurroundingWords( sentence, newList.get( i ), getConjunctionType( newList.get( i ) ) ) <  
+								surroundingWords.countSurroundingWords( sentence, newList.get( j ), getConjunctionType( newList.get( j ) ) ) ){
+						String temp = newList.get( i );
+						newList.set( i, newList.get( j ) );
+						newList.set( j, temp );
+						newList.remove( j );
+						j--;
+					}
+				}
+			}
+		}
+		
+		System.err.println( "[ConjWithType] [Better Surr Conj] " + newList );
+		
+		return newList;
+	}
+	
+	private static boolean isSmallerSubsetOf( String lhs, String rhs ){
 		Set< String > lhsSet = new HashSet< String >( Arrays.asList( lhs.split( "[\\s\\{\\}]+" ) ) );
 		Set< String > rhsSet = new HashSet< String >( Arrays.asList( rhs.split( "[\\s\\{\\}]+" ) ) );
+		lhsSet.removeAll( Arrays.asList(  new String[]{""} ) );
+		rhsSet.removeAll( Arrays.asList(  new String[]{""} ) );
 		return rhsSet.containsAll( lhsSet ) && rhsSet.size() > lhsSet.size();
 	}
 	
+	private static boolean isIntersect( String lhs, String rhs ){
+		Set< String > lhsSet = new HashSet< String >( Arrays.asList( lhs.split( "[\\s\\{\\}]+" ) ) );
+		Set< String > rhsSet = new HashSet< String >( Arrays.asList( rhs.split( "[\\s\\{\\}]+" ) ) );
+		rhsSet.removeAll( Arrays.asList(  new String[]{""} ) );
+		lhsSet.removeAll( Arrays.asList(  new String[]{""} ) );
+		lhsSet.retainAll( rhsSet );
+		return lhsSet.size() > 0;
+	}
+	
 	public static void main( String[] args ){
-//		System.out.println( isSmallerSubsetOf( "{Va toi cung yeu em }", "{ Va   toi   cung   yeu   em   rat   nhieu  }") );
-//		List< String > testList = new ArrayList< String >();
-//		testList.add( "{ Va   toi   cung   yeu   em   rat   nhieu  }" );
-//		testList.add( "{Va toi cung yeu em }" );
-//		System.out.println( getLongerOverlappedResult( testList ) );
+		System.out.println( isIntersect( "{Fidel Castro}", "{Castrol Poster}") );
 	}
 }
