@@ -1,5 +1,5 @@
 human_name	Fidel;
-human_name	Fidel Castro;
+human_name	Fidel Castrol;
 bike		Castrol Poster;
 
 

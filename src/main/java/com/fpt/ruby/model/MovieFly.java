@@ -2,9 +2,15 @@ package com.fpt.ruby.model;
 
 import java.util.Date;
 
+import javax.persistence.Id;
+
+import org.springframework.data.mongodb.core.mapping.Document;
 
 
+@Document
 public class MovieFly {
+	@Id 
+	private String id;
 	private String title;
 	private String genre;
 	private String actor;
@@ -19,7 +25,15 @@ public class MovieFly {
 	private String plot;
 	private int year;
 	private Date released;
+
 	
+	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
 	public String getDirector() {
 		return director;
 	}
@@ -106,5 +120,4 @@ public class MovieFly {
 	public void setYear(int year) {
 		this.year = year;
 	}
-	
 }

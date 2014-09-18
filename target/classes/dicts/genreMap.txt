@@ -1,5 +1,6 @@
-hài	comedy
+được giải thưởng awarded
 khoa học viễn tưởng	sci-fi
+về đồ chơi	toys
 kinh dị	horror
 viễn tây	western
 chiến tranh	war
@@ -11,31 +12,29 @@ chính kịch	drama
 câm	silent
 chính luận	drama
 cổ trang	biography
+giã sử	biography
 chính trị	politics
-về đồ chơi	toys
-được giải thưởng awarded
+đồ chơi	toys
 giáng sinh	Christmas
 giả tưởng	fiction
 hình sự	thriller
-ma	ghost
 nghệ thuật	art
 nhạc kịch	musical
 phiêu lưu	adventure
-giả tài liệu	documentary
+tài liệu	documentary
+tư liệu	documentary
 hàng không	aviation
 kỳ ảo	fantasy
-siêu anh hùng	superhero
+anh hùng	superhero
 sử thi	epic
-cho thiếu niên	teens
+thiếu niên	teens
 khiêu dâm	porn
 lịch sử	history
-dựa theo truyện cổ tích	mystery	
+cổ tích	mystery	
 tâm lý	romance
 thần thoại	mystery
 thể thao	sport
 tiểu sử	biography
-tâm lý kinh dị	thriller
-chiếu tết	tet
 thảm họa	disaster
 thiếu nhi	children
 tình báo	spy
@@ -48,3 +47,6 @@ gia đình	family
 ảo tưởng	fantasy
 đen trắng	film-noir
 âm nhạc	music
+hài	comedy
+tết	tet
+ma	ghost
