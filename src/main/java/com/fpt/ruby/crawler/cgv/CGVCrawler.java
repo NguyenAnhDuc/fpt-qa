@@ -3,10 +3,10 @@ package com.fpt.ruby.crawler.cgv;
 import java.util.Date;
 import java.util.List;
 
+import jmdn.struct.pair.Pair;
+
 import com.fpt.ruby.model.MovieTicket;
 import com.fpt.ruby.service.mongo.MovieTicketService;
-
-import jmdn.struct.pair.Pair;
 
 public class CGVCrawler {
 
@@ -28,6 +28,7 @@ public class CGVCrawler {
 
 	
 	public static void doCrawl(MovieTicketService mts){
+		
 		// Get all movie names
 		for (int i = 0; i < cin_ids.length; i++){
 			String cinId = cin_ids[i];
@@ -58,6 +59,7 @@ public class CGVCrawler {
 				}
 			}
 		}
+		
 		// end get all movie names
 		
 	}

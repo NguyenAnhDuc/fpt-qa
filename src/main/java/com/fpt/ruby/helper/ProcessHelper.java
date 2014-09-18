@@ -78,10 +78,13 @@ public class ProcessHelper {
 			else {
 				System.out.println("Feature ..");
 				MovieTicket matchMovieTicket = new MovieTicket();
-				matchMovieTicket.setCinema("Lotte Cinema Landmark");
+				matchMovieTicket.setCinema("BHD Star Cineplex Icon 68");
 				Date today = new Date();
+				System.out.println("afterdate: " + today);
+				
 				// list movie tickets for the duration of one day
-				List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition(matchMovieTicket, new Date(today.getTime() + 86400000), today);
+				List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition(matchMovieTicket, today, new Date(today.getTime() + 86400000));
+				System.out.println("No of returned tickets: " + movieTickets.size());
 				rubyAnswer.setAnswer(AnswerMapper.getFeaturedAnswer(question, movieTickets, movieFlyService));
 				rubyAnswer.setQuestionType(AnswerMapper.Featured_Question);
 				rubyAnswer.setMovieTicket(matchMovieTicket);
