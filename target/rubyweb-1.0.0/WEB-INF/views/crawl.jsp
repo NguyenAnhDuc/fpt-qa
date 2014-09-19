@@ -55,6 +55,7 @@
 			<img src="../resources/images/fpt_logo.png" class="logo" />
 			<h2>Ruby Project - Crawl data</h2>
 		</header>
+	   <a href="/rubyweb/admin">Go to admin</a>
 	   <c:if test="${status=='failed'}">
 	   		<div class="alert alert-danger" role="alert">Oh snap! Something went wrong!</div>
 	   </c:if>
