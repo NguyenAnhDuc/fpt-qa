@@ -34,6 +34,22 @@ public class MovieTicketService {
 		
 	}
 	
+	public MovieTicket findById(String ticketId){
+		return mongoOperations.findById(ticketId, MovieTicket.class);
+	}
+	
+	public List<MovieTicket> findTicketToShow(){
+		List<MovieTicket> movieTickets = mongoOperations.findAll(MovieTicket.class);
+		List<MovieTicket> tickets = new ArrayList<MovieTicket>();
+		Date date = new Date();
+		date.setHours(0);date.setMinutes(0);date.setSeconds(0);
+		for (MovieTicket movieTicket : movieTickets){
+			if (movieTicket.getDate() != null)
+				tickets.add(movieTicket);
+		}
+		return tickets;
+	}
+	
 	private List<MovieTicket> findMatch(MovieTicket movieTicket){
 		Query query = new Query();
 		query.addCriteria(Criteria.where(MT_MOVIE).regex("^" + movieTicket.getMovie() + "$","i"));
@@ -131,22 +147,17 @@ public class MovieTicketService {
 	}
 	
 	public static void main(String[] args){
-Date date1 = new Date();
-		
-		date1.setHours(20);
-		
-		date1.setMinutes(0);
-		date1.setSeconds(0);
-		for (int i=1;i<10000000;i++){
-			
+		ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringMongoConfig.class);
+		MongoOperations mongoOperations = (MongoOperations) ctx.getBean("mongoTemplate");
+		MovieTicket movieTicket = new MovieTicket();
+		movieTicket.setCinema("Lotte");
+		movieTicket.setCity("Ha Noi");
+		//mongoOperations.save(movieTicket);
+		List<MovieTicket> movieTickets = mongoOperations.findAll(MovieTicket.class);
+		for (MovieTicket movTicket : movieTickets){
+			movTicket.setMovie("Biệt đội đánh thuê");
+			mongoOperations.save(movTicket);
 		}
-		Date date2 = new Date();
-		
-		date2.setHours(20);
-		
-		date2.setMinutes(0);
-		date2.setSeconds(0);
-		System.out.println(date1.compareTo(date2));
-		System.out.println(equalDate(date1, date2));
+		System.out.println("DONE");
 	}
 }

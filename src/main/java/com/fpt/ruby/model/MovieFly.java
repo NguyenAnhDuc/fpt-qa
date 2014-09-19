@@ -14,10 +14,10 @@ public class MovieFly {
 	private String awards;
 	private String director;
 	private String runtime;
-	private float imdbRating;
+	private Float imdbRating;
 	private String imdbId;
 	private String plot;
-	private int year;
+	private Integer year;
 	private Date released;
 	
 	public String getDirector() {
@@ -77,9 +77,9 @@ public class MovieFly {
 		this.runtime = runtime;
 	}
 	public float getImdbRating() {
-		return imdbRating;
+		return imdbRating != null ? imdbRating.floatValue() : 0;
 	}
-	public void setImdbRating(float imdbRating) {
+	public void setImdbRating(Float imdbRating) {
 		this.imdbRating = imdbRating;
 	}
 	public String getImdbId() {
@@ -103,7 +103,7 @@ public class MovieFly {
 	public int getYear() {
 		return year;
 	}
-	public void setYear(int year) {
+	public void setYear(Integer year) {
 		this.year = year;
 	}
 	
