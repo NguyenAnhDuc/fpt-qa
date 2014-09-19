@@ -18,12 +18,12 @@ import fpt.qa.mdnlib.struct.conjunction.ConjunctionChecker;
 import fpt.qa.mdnlib.struct.pair.Pair;
 
 public class ConjunctionWithType extends ConjunctionChecker{
-	private static Map< String, String > conjunctionType;
+	private Map< String, HashSet< String > > conjunctionType;
 	private NamedEngineImp nameMapperEngine;
-	private static SurroundingWords surroundingWords;
+	private SurroundingWords surroundingWords;
 
 	public ConjunctionWithType( String resourcePath ) {
-		conjunctionType = new HashMap< String, String >();
+		conjunctionType = new HashMap< String, HashSet< String > >();
 		nameMapperEngine = new NamedEngineImp( resourcePath );
 		surroundingWords = new SurroundingWords( resourcePath );
 
@@ -71,10 +71,15 @@ public class ConjunctionWithType extends ConjunctionChecker{
 
 	public void addConjunctionWithType( String str, String type ) {
 		addConjunction( "{" + str + "}" );
-		conjunctionType.put( str.toLowerCase(), type );
+		String normalizedConjunction = str.toLowerCase();
+		if( conjunctionType.containsKey( normalizedConjunction ) ){
+			conjunctionType.get( normalizedConjunction ).add( type );
+		}else{
+			conjunctionType.put( normalizedConjunction, new HashSet< String >( Arrays.asList( new String[]{ type } ) ));
+		}
 	}
 
-	public static String getConjunctionType( String conjunction ) {
+	public HashSet< String > getConjunctionType( String conjunction ) {
 		return conjunctionType.get( conjunction.toLowerCase().substring( 1, conjunction.length() - 1 ) );
 	}
 
@@ -85,12 +90,19 @@ public class ConjunctionWithType extends ConjunctionChecker{
 		
 		List< String > rawConj = getRelevantConjunctions( VnTokenizer.tokenize( text ) , true );
 		System.err.println( "[ConjWithType] [RawConj] " + rawConj );
+		
+		List< Pair< String, String > > rawConjWithType = new ArrayList< Pair< String, String > >();
+		for( String conj : rawConj ){
+			for( String type : getConjunctionType( conj ) ){
+				rawConjWithType.add( new Pair< String, String >( conj, type ) );
+			}
+		}
 					
-		for( String conj : getLongerOverlappedResult( getBetterSurroundingContext( rawConj, text ) ) ){
-			String origin = nameMapperEngine.getFinalName( getConjunctionType( conj ),
-					conj.substring( 1, conj.length() - 1 ) );
+		for( Pair< String, String > conj : getLongerOverlappedResult( getBetterSurroundingContext( rawConjWithType, text ) ) ){
+			String origin = nameMapperEngine.getFinalName( conj.second,
+					conj.first.substring( 1, conj.first.length() - 1 ) );
 			if( !originSets.contains( origin ) ){
-				relConjunctions.add( new Pair< String, String >( origin, getConjunctionType( conj ) ) );
+				relConjunctions.add( new Pair< String, String >( origin, conj.second ) );
 				originSets.add( origin );
 			}
 		}
@@ -116,19 +128,19 @@ public class ConjunctionWithType extends ConjunctionChecker{
 //		return rawResult;
 //	}
 	
-	public static List< String > getLongerOverlappedResult( List< String > conjunctionList ){
-		List< String > newList = new ArrayList< String >();
+	public List< Pair< String, String > > getLongerOverlappedResult( List< Pair< String, String > > conjunctionList ){
+		List< Pair< String, String > > newList = new ArrayList< Pair< String, String > >();
 		newList.addAll( conjunctionList );
 		
 		for( int i = 0; i < newList.size() - 1; i++ ){
 			for( int j = i + 1; j < newList.size(); j++ ){
-				if( isSmallerSubsetOf( newList.get( j ) , newList.get( i ) ) ){
+				if( isSmallerSubsetOf( newList.get( j ).first , newList.get( i ).second ) ){
 					newList.remove( j );
 					j--;
 					continue;
 				}
-				if( isSmallerSubsetOf( newList.get( i ) , newList.get( j ) ) ){
-					String temp = newList.get( i );
+				if( isSmallerSubsetOf( newList.get( i ).first , newList.get( j ).second ) ){
+					Pair temp = newList.get( i );
 					newList.set( i, newList.get( j ) );
 					newList.set( j, temp );
 					newList.remove( j );
@@ -141,20 +153,20 @@ public class ConjunctionWithType extends ConjunctionChecker{
 		return newList;
 	}
 	
-	public static List< String > getBetterSurroundingContext( List< String > conjunctionList, String sentence ){
-		List< String > newList = new ArrayList< String >();
+	public List< Pair< String, String > > getBetterSurroundingContext( List< Pair< String, String > > conjunctionList, String sentence ){
+		List< Pair< String, String > > newList = new ArrayList< Pair< String, String > >();
 		newList.addAll( conjunctionList );
 		
 		for( int i = 0; i < newList.size() - 1; i++ ){
 			for( int j = i + 1; j < newList.size(); j++ ){
-				if( isIntersect( newList.get( i ) , newList.get( j )) ){
-					if( surroundingWords.countSurroundingWords( sentence, newList.get( i ), getConjunctionType( newList.get( i ) ) ) >  
-						surroundingWords.countSurroundingWords( sentence, newList.get( j ), getConjunctionType( newList.get( j ) ) ) ){
+				if( isIntersect( newList.get( i ).first , newList.get( j ).second ) ){
+					if( surroundingWords.countSurroundingWords( sentence, newList.get( i ).first, newList.get( i ).second ) >  
+						surroundingWords.countSurroundingWords( sentence, newList.get( j ).first, newList.get( j ).second ) ){
 						newList.remove( j );
 						j--;
-					}else if(   surroundingWords.countSurroundingWords( sentence, newList.get( i ), getConjunctionType( newList.get( i ) ) ) <  
-								surroundingWords.countSurroundingWords( sentence, newList.get( j ), getConjunctionType( newList.get( j ) ) ) ){
-						String temp = newList.get( i );
+					}else if(   surroundingWords.countSurroundingWords( sentence, newList.get( i ).first, newList.get( i ).second ) <  
+								surroundingWords.countSurroundingWords( sentence, newList.get( j ).first, newList.get( j ).second ) ){
+						Pair temp = newList.get( i );
 						newList.set( i, newList.get( j ) );
 						newList.set( j, temp );
 						newList.remove( j );
