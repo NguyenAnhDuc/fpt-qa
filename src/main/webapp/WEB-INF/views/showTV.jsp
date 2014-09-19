@@ -187,8 +187,8 @@
 						<thead>
 							<tr>
 								<th>#</th>
-								<th>Movie</th>
-								<th>Cinema</th>
+								<th>Title</th>
+								<th>Chanel</th>
 								<th>Type</th>
 								<th>Date</th>
 							</tr>
@@ -197,16 +197,16 @@
 							<%
 								int i = 0;
 							%>
-							<c:forEach var="ticket" items="${tickets}">
+							<c:forEach var="tvProgram" items="${tvPrograms}">
 								<%
 									i++;
 								%>
 								<tr>
 									<td><%=i%></td>
-									<td>${ticket.movie}</td>
-									<td>${ticket.cinema}</td>
-									<td>${ticket.type}</td>
-									<td>${ticket.date}</td>
+									<td>${tvProgram.title}</td>
+									<td>${tvProgram.chanel}</td>
+									<td>${tvProgram.type}</td>
+									<td>${tvProgram.date}</td>
 									<%--< td><a href="chat?botID=${ticket.}">Chat</a></td>
 									<td><a href="train?botID=${botinfo.id}">Train</a></td> 
 									<td>
@@ -222,7 +222,7 @@
 									<td>
 										<div class="pull-right action-buttons">
 											
-											<a  href="deleteTicket?ticketId=${ticket.id}" class="simpleConfirm trash"><span
+											<a  href="deleteTicket?ticketId=${tvProgram.id}" class="simpleConfirm trash"><span
 												class="glyphicon glyphicon-trash"></span></a> 
 										</div>
 									</td>

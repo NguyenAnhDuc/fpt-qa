@@ -17,6 +17,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.fpt.ruby.crawler.CrawlPhimChieuRap;
 import com.fpt.ruby.model.MovieTicket;
+import com.fpt.ruby.model.TVProgram;
+import com.fpt.ruby.service.TVProgramService;
 import com.fpt.ruby.service.mongo.MovieTicketService;
 import com.mongodb.BasicDBObject;
 
@@ -24,10 +26,12 @@ import com.mongodb.BasicDBObject;
 @RequestMapping("/admin")
 public class AdminCotroller {
 	private MovieTicketService movieTicketService;
+	private TVProgramService tvProgramService;
 	
 	@PostConstruct
 	public void init(){
 		this.movieTicketService = new MovieTicketService();
+		this.tvProgramService = new TVProgramService();
 	}
 	
 	@RequestMapping(value="/crawlPhimChieuRap", method = RequestMethod.POST,  produces = "application/json; charset=UTF-8")
@@ -114,11 +118,18 @@ public class AdminCotroller {
 	}
 	
 	
-	@RequestMapping(value="show", method = RequestMethod.GET)
+	@RequestMapping(value="showTicket", method = RequestMethod.GET)
 	public String showTickets(Model model){
 		List<MovieTicket> tickets = movieTicketService.findTicketToShow();
 		model.addAttribute("tickets",tickets);
 		return "showTicket";
+	}
+	
+	@RequestMapping(value="showTVProgram", method = RequestMethod.GET)
+	public String showTVPrograms(Model model){
+		List<TVProgram> tvPrograms = tvProgramService.findProgramToShow();
+		model.addAttribute("tvPrograms",tvPrograms);
+		return "showTV";
 	}
 	
 	@RequestMapping(value = "/deleteTicket", method = RequestMethod.GET)

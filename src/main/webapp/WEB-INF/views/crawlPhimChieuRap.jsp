@@ -29,6 +29,7 @@
 			<h2>Ruby Project - Crawl Phim Chieu Rap</h2>
 			
 		</header>
+		<a href="/rubyweb/admin">Go to admin </a>
 		<!-- <label class="radio-inline"> <input type="radio"
 				name="inlineRadioOptions" id="inlineRadio1" value="1" checked="checked">
 				1 days

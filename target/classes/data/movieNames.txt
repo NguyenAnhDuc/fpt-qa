@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-human_name	Fidel;
-human_name	Fidel Castrol;
-bike		Castrol Poster;
-
-
-=======
->>>>>>> ee5a9f077df61e784553b4b0b53680794f6f8977
 mov_title	kungfu panda; kungfu gấu trúc, công phu gấu trúc, Kungfu Panda, Kungfu Gấu Trúc
 
 cin_name	lotte; lotte cantavil, Lotte hà đông, lotte ha dong, lotte cộng hòa,lotte cong hoa, lotte nam sài gòn, lotte nam sai gon, lotte diamond, lotte cinema landmark, lotte hà đông, lotte ha dong, lotte nha trang, lotte da nang, lotte đà nẵng, lotte biên hòa, lotte bien hoa, lotte bình dương, lotte binh duong, lotte phan thiết, lotte phan thiet, lotte cantavil, lotte phú thọ, lotte phu tho

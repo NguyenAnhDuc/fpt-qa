@@ -16,8 +16,11 @@
 	  <form action="admin/crawl">
 	  	<input type="submit" class="btn btn-primary btn-lg btn-block" id="btnSubmit" value="Crawl Manually" />
 	  </form>
-	  <form action="admin/show">
+	  <form action="admin/showTicket">
 	  	<input type="submit" class="btn btn-primary btn-lg btn-block" id="btnSubmit" value="Show Tickets Today" />
+	  </form>
+	  <form action="admin/showTVProgram">
+	  	<input type="submit" class="btn btn-primary btn-lg btn-block" id="btnSubmit" value="Show TVPrograms Today" />
 	  </form>
 	</div>
 </body>

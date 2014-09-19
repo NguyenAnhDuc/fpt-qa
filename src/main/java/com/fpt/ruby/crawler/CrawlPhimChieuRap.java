@@ -61,16 +61,20 @@ public class CrawlPhimChieuRap {
 			
 			for (Element element2 : btnDigitalElenments) {
 				String time = element2.select("span").first().text().trim();
+				movieTicket = new MovieTicket();
 				movieTicket.setCity(city);
 				movieTicket.setType("2D");
 				movieTicket.setCinema(cinema);
-				movieTicket.setMovie(headElement.select("span").select("a").last().attr("title"));
+				String movieTitle = headElement.select("span").select("a").last().attr("title");
+				movieTitle =  movieTitle.replaceAll("\\((.*?)\\)", "").trim();
+				movieTicket.setMovie(movieTitle);
 				Date dateTicket = new Date();
 				dateTicket.setDate(dateTicket.getDate() + date);
 				dateTicket.setHours(Integer.parseInt(time.split(":")[0]));
 				dateTicket.setMinutes(Integer.parseInt(time.split(":")[1]));
 				dateTicket.setSeconds(0);
 				movieTicket.setDate(dateTicket);
+				System.out.println(movieTicket.getCinema() + " " + movieTicket.getMovie() + " " + movieTicket.getDate());
 				mongoOperation.save(movieTicket);
 				//showMovie(movieTicket);
 			}
@@ -86,20 +90,22 @@ public class CrawlPhimChieuRap {
 				movieTicket.setType("3D");
 				movieTicket.setCity(city);
 				movieTicket.setCinema(cinema);
-				movieTicket.setMovie(headElement.select("span").select("a").last().attr("title"));
+				String movieTitle = headElement.select("span").select("a").last().attr("title");
+				movieTitle =  movieTitle.replaceAll("\\((.*?)\\)", "").trim();
+				movieTicket.setMovie(movieTitle);
 				Date dateTicket = new Date();
 				dateTicket.setDate(dateTicket.getDate() + date);
 				dateTicket.setHours(Integer.parseInt(time.split(":")[0]));
 				dateTicket.setMinutes(Integer.parseInt(time.split(":")[1]));
 				dateTicket.setSeconds(0);
 				movieTicket.setDate(dateTicket);
+				System.out.println(movieTicket.getCinema() + " " + movieTicket.getMovie() + " " + movieTicket.getDate());
 				mongoOperation.save(movieTicket);
 				//showMovie(movieTicket);
 			}
 			
 		}
 	}
-	
 	
 	
 	public static void testMovieTicket(){
@@ -150,7 +156,10 @@ public class CrawlPhimChieuRap {
 		MovieTicket movieTicket = mongoOperation.findOne(searchMovieTicketQuery, MovieTicket.class);
 		System.out.println(movieTicket.getDate().getDate());*/
 		//crawlCinema("Ha Noi","lotte landmark","http://phimchieurap.vn/lich-chieu/ha-noi/rap/lotte-cinema-landmark", 0);
-		showMovieTickets();
+		//showMovieTickets();
 		//crawlHaNoi();
+		/*String st = "Hội Quái Hộp - The Boxtrolls (12.09.2014)";
+		st = st.replaceAll("\\((.*?)\\)", "").trim();
+		System.out.println(st);*/
 	}
 }
