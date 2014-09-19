@@ -15,4 +15,8 @@ public class Pair<F, S> {
         this.first = f;
         this.second = s;
     }
+    
+    public String toString(){
+    	return "[" + first + ", " + second + "]";
+    }
 }

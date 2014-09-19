@@ -91,8 +91,8 @@ public class ProcessHelper {
 			}
 		}
 		catch (Exception ex){
-			System.out.println("Exception!");
-			System.out.println(ex.getMessage());
+			System.out.println("Exception! " + ex.getMessage());
+			ex.printStackTrace();
 		}
 		return rubyAnswer;
 	}

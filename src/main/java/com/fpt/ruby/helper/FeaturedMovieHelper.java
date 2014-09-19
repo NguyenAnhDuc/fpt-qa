@@ -42,7 +42,7 @@ public class FeaturedMovieHelper {
 	
 	public static String filterByImdb(List<MovieFly> movieFlies){
 		System.out.println("Filter by ImDB");
-		float highest = 0;
+		float highest = -1;
 		String title = "";
 		for (MovieFly mf : movieFlies){
 			if (mf.getImdbRating() > highest){
@@ -70,7 +70,6 @@ public class FeaturedMovieHelper {
 		if (movTitles.isEmpty()){
 			return AnswerMapper.Default_Answer;
 		}
-		System.out.println(movTitles);
 		return "phim " + movTitles.substring(0, movTitles.length() - 2);
 	}
 	
@@ -112,6 +111,55 @@ public class FeaturedMovieHelper {
 		}
 		
 		return "phim " + movTitles.substring(0, movTitles.length() - 2);
+	}
+	
+	public static String filterByImdbAndGenre(List<String> genre, List<MovieFly> movieFlies){
+		System.out.println("Filter by Genre and Imdb: " + genre);
+		String movTitles = "";
+		float highestImdb = -1;
+		
+		for (MovieFly mf : movieFlies){
+			String movGen = mf.getGenre() != null ? mf.getGenre().toLowerCase() : null;
+			boolean satisfied = true;
+			for (String gen : genre){
+				if (movGen != null && !movGen.contains(gen)){
+					satisfied = false;
+					break;
+				}
+			}
+			if (satisfied){
+				if (mf.getImdbRating() > highestImdb){
+					highestImdb = mf.getImdbRating();
+					movTitles = mf.getTitle();
+				}
+			}
+		}
+		if (movTitles.isEmpty()){
+			return AnswerMapper.Default_Answer;
+		}
+		
+		return "phim " + movTitles;
+	}
+	
+	public static String filterByImdbAndCountry(String country, List<MovieFly> movieFlies){
+		System.out.println("Filter by Country and Imdb: " + country);
+		String movTitles = "";
+		float highestImdb = -1;
+		
+		for (MovieFly mf : movieFlies){
+			if (mf.getCountry() != null && mf.getCountry().equals(country)){
+				if (mf.getImdbRating() > highestImdb){
+					highestImdb = mf.getImdbRating();
+					movTitles = mf.getTitle();
+				}
+			}
+		}
+		
+		if (movTitles.isEmpty()){
+			return AnswerMapper.Default_Answer;
+		}
+		
+		return "phim " + movTitles;
 	}
 	
 	public static String filterByAward(String award, List<MovieFly> movieFlies){
