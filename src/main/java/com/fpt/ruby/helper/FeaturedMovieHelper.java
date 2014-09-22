@@ -1,85 +1,18 @@
 package com.fpt.ruby.helper;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import com.fpt.ruby.model.MovieFly;
 import com.fpt.ruby.nlp.AnswerMapper;
 
 public class FeaturedMovieHelper {
-	private static Map<String, String> genreMap = new HashMap<String, String>();
-	private static Map<String, String> countryMap = new HashMap<String, String>();
-	private static Map<String, String> langMap = new HashMap<String, String>();
 	
-	static {
-		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
-		loadGenreMap(dir + "/dicts/genreMap.txt");
-		loadCountryMap(dir + "/dicts/countryMap.txt");
-		loadLangMap(dir + "/dicts/languageMap.txt");
-	}
-	
-	private static void loadGenreMap(String fileIn){
-		try {
-			BufferedReader reader = new BufferedReader(new FileReader(fileIn));
-			String line;
-			
-			while((line = reader.readLine()) != null){
-				int idx = line.indexOf("\t");
-				if (line.isEmpty() || idx < 0){
-					continue;
-				}
-				genreMap.put(line.substring(0, idx), line.substring(idx+1));
-			}
-			reader.close();
-		} catch (IOException e){
-			
-		}
-	}
-	
-	private static void loadCountryMap(String fileIn){
-		try {
-			BufferedReader reader = new BufferedReader(new FileReader(fileIn));
-			String line;
-			
-			while((line = reader.readLine()) != null){
-				int idx = line.indexOf("\t");
-				if (line.isEmpty() || idx < 0){
-					continue;
-				}
-				countryMap.put(line.substring(0, idx), line.substring(idx+1));
-			}
-			reader.close();
-		} catch (IOException e){
-			
-		}
-	}
-	
-	private static void loadLangMap(String fileIn){
-		try {
-			BufferedReader reader = new BufferedReader(new FileReader(fileIn));
-			String line;
-			
-			while((line = reader.readLine()) != null){
-				int idx = line.indexOf("\t");
-				if (line.isEmpty() || idx < 0){
-					continue;
-				}
-				langMap.put(line.substring(0, idx), line.substring(idx+1));
-			}
-			reader.close();
-		} catch (IOException e){
-			
-		}
-	}
 	
 	public static String filterByDirector(String director, List<MovieFly> movieFlies){
+		System.out.println("Filter by Director: " + director);
 		String movTitles = "";
 		for (MovieFly mf : movieFlies){
-			if (mf.getDirector().contains(director)){
+			if (mf.getDirector() != null && mf.getDirector().contains(director)){
 				movTitles += mf.getTitle() + ", ";
 			}
 		}
@@ -92,6 +25,7 @@ public class FeaturedMovieHelper {
 	}
 	
 	public static String filterByActor(String actor, List<MovieFly> movieFlies){
+		System.out.println("Filter by Actor: " + actor);
 		String movTitles = "";
 		for (MovieFly mf : movieFlies){
 			if (mf.getActor().contains(actor)){
@@ -107,7 +41,8 @@ public class FeaturedMovieHelper {
 	}
 	
 	public static String filterByImdb(List<MovieFly> movieFlies){
-		float highest = 0;
+		System.out.println("Filter by ImDB");
+		float highest = -1;
 		String title = "";
 		for (MovieFly mf : movieFlies){
 			if (mf.getImdbRating() > highest){
@@ -124,13 +59,10 @@ public class FeaturedMovieHelper {
 	}
 	
 	public static String filterByCountry(String country, List<MovieFly> movieFlies){
+		System.out.println("Filter by Country: " + country);
 		String movTitles = "";
-		String lookupKey = country;
-		if (countryMap.containsKey(country)){
-			lookupKey = countryMap.get(country);
-		}
 		for (MovieFly mf : movieFlies){
-			if (mf.getCountry().equals(lookupKey)){
+			if (mf.getCountry() != null && mf.getCountry().equals(country)){
 				movTitles += mf.getTitle() + ", ";
 			}
 		}
@@ -138,18 +70,14 @@ public class FeaturedMovieHelper {
 		if (movTitles.isEmpty()){
 			return AnswerMapper.Default_Answer;
 		}
-		
 		return "phim " + movTitles.substring(0, movTitles.length() - 2);
 	}
 	
 	public static String filterByLang(String lang, List<MovieFly> movieFlies){
+		System.out.println("Filter by Lang: " + lang);
 		String movTitles = "";
-		String lookupKey = lang;
-		if (langMap.containsKey(lang)){
-			lookupKey = langMap.get(lang);
-		}
 		for (MovieFly mf : movieFlies){
-			if (mf.getLanguage().equals(lookupKey)){
+			if (mf.getLanguage() != null && mf.getLanguage().equals(lang)){
 				movTitles += mf.getTitle() + ", ";
 			}
 		}
@@ -161,14 +89,19 @@ public class FeaturedMovieHelper {
 		return "phim " + movTitles.substring(0, movTitles.length() - 2);
 	}
 	
-	public static String filterByGenre(String genre, List<MovieFly> movieFlies){
+	public static String filterByGenre(List<String> genre, List<MovieFly> movieFlies){
+		System.out.println("Filter by Genre: " + genre);
 		String movTitles = "";
-		String lookupKey = genre;
-		if (langMap.containsKey(genre)){
-			lookupKey = langMap.get(genre);
-		}
 		for (MovieFly mf : movieFlies){
-			if (mf.getGenre().equals(lookupKey)){
+			String movGen = mf.getGenre() != null ? mf.getGenre().toLowerCase() : null;
+			boolean satisfied = true;
+			for (String gen : genre){
+				if (movGen != null && !movGen.contains(gen)){
+					satisfied = false;
+					break;
+				}
+			}
+			if (satisfied){
 				movTitles += mf.getTitle() + ", ";
 			}
 		}
@@ -178,6 +111,55 @@ public class FeaturedMovieHelper {
 		}
 		
 		return "phim " + movTitles.substring(0, movTitles.length() - 2);
+	}
+	
+	public static String filterByImdbAndGenre(List<String> genre, List<MovieFly> movieFlies){
+		System.out.println("Filter by Genre and Imdb: " + genre);
+		String movTitles = "";
+		float highestImdb = -1;
+		
+		for (MovieFly mf : movieFlies){
+			String movGen = mf.getGenre() != null ? mf.getGenre().toLowerCase() : null;
+			boolean satisfied = true;
+			for (String gen : genre){
+				if (movGen != null && !movGen.contains(gen)){
+					satisfied = false;
+					break;
+				}
+			}
+			if (satisfied){
+				if (mf.getImdbRating() > highestImdb){
+					highestImdb = mf.getImdbRating();
+					movTitles = mf.getTitle();
+				}
+			}
+		}
+		if (movTitles.isEmpty()){
+			return AnswerMapper.Default_Answer;
+		}
+		
+		return "phim " + movTitles;
+	}
+	
+	public static String filterByImdbAndCountry(String country, List<MovieFly> movieFlies){
+		System.out.println("Filter by Country and Imdb: " + country);
+		String movTitles = "";
+		float highestImdb = -1;
+		
+		for (MovieFly mf : movieFlies){
+			if (mf.getCountry() != null && mf.getCountry().equals(country)){
+				if (mf.getImdbRating() > highestImdb){
+					highestImdb = mf.getImdbRating();
+					movTitles = mf.getTitle();
+				}
+			}
+		}
+		
+		if (movTitles.isEmpty()){
+			return AnswerMapper.Default_Answer;
+		}
+		
+		return "phim " + movTitles;
 	}
 	
 	public static String filterByAward(String award, List<MovieFly> movieFlies){

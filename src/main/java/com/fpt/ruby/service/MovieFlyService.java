@@ -58,6 +58,9 @@ public class MovieFlyService {
 			JSONArray movies = jsonRT.getJSONArray("movies");
 			for (int i=0;i<movies.length();i++){
 				JSONObject movieJson = movies.getJSONObject(i);
+				if (!movieJson.toString().contains("alternate_ids")){
+					continue;
+				}
 				imdbIds.add("tt"+movieJson.getJSONObject("alternate_ids").getString("imdb"));
 			}
 		}
@@ -76,10 +79,10 @@ public class MovieFlyService {
 			JSONObject jsonImdb = new JSONObject(jsonImdbString);
 			movieFly.setTitle(jsonImdb.getString("Title"));
 			movieFly.setGenre(jsonImdb.getString("Genre"));
-			movieFly.setYear(Integer.parseInt(jsonImdb.getString("Year")));
+			movieFly.setYear(!jsonImdb.getString("Year").equals("N/A") ? Integer.parseInt(jsonImdb.getString("Year")) : null);
 			movieFly.setActor(jsonImdb.getString("Actors"));
 			movieFly.setRuntime(jsonImdb.getString("Runtime"));
-			movieFly.setImdbRating(Float.parseFloat(jsonImdb.getString("imdbRating")));
+			movieFly.setImdbRating(!jsonImdb.getString("imdbRating").equals("N/A") ? Float.parseFloat(jsonImdb.getString("imdbRating")) : null);
 			movieFly.setImdbId(jsonImdb.getString("imdbID"));
 			movieFly.setWriter(jsonImdb.getString("Writer"));
 			movieFly.setAwards(jsonImdb.getString("Awards"));
@@ -89,8 +92,15 @@ public class MovieFlyService {
 			movieFly.setPlot(jsonImdb.getString("Plot"));
 			
 			SimpleDateFormat format = new SimpleDateFormat("dd MMM yyyy");
-			java.util.Date utilDate = format.parse(jsonImdb.getString("Released"));
-			movieFly.setReleased(new Date(utilDate.getTime()));
+			java.util.Date utilDate = null;
+			try{
+				utilDate = format.parse(jsonImdb.getString("Released"));
+			}catch (Exception e){
+				e.printStackTrace();
+			}
+			if (utilDate != null){
+				movieFly.setReleased(new Date(utilDate.getTime()));
+			}
 		}
 		catch (Exception ex){
 			System.out.println("Exception ex: " + ex.getMessage());
@@ -134,10 +144,19 @@ public class MovieFlyService {
 	
 	public List<MovieFly> searchOnImdb(String title) throws UnsupportedEncodingException {
 		List<MovieFly> movieFlies = new ArrayList<MovieFly>();
+		List<MovieFly> inDb = findByTitle(title);
+		if (!inDb.isEmpty()){
+			return inDb;
+		}
 		List<String> imdbIds = searchOnRT(title);
 		for (String imdbId : imdbIds){
 			MovieFly movieFly = searchOnImdbById(imdbId);
-			movieFlies.add(movieFly);
+			String imdbTitle = movieFly.getTitle().toLowerCase();
+			String searchTitle = title.toLowerCase();
+			if (imdbTitle.contains(searchTitle)){
+				movieFlies.add(movieFly);
+				save(movieFly);
+			}
 		}
 		return movieFlies;
 	}

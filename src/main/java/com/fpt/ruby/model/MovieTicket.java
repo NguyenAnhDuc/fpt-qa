@@ -2,10 +2,14 @@ package com.fpt.ruby.model;
 
 import java.util.Date;
 
+import javax.persistence.Id;
+
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
 public class MovieTicket {
+	@Id
+	String id;
 	private String cinema;
 	private String movie;
 	private String type;
@@ -18,6 +22,15 @@ public class MovieTicket {
 		date = null;
 		city = null;
 	}
+	
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
 	public String getCity() {
 		return city;
 	}
