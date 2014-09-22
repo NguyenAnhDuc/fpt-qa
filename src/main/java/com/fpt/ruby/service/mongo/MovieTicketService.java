@@ -9,10 +9,12 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.stereotype.Service;
 
 import com.fpt.ruby.config.SpringMongoConfig;
 import com.fpt.ruby.model.MovieTicket;
 
+@Service
 public class MovieTicketService {
 	private final String MT_MOVIE = "movie";
 	private final String MT_CINEMA = "cinema";
@@ -68,9 +70,9 @@ public class MovieTicketService {
 		return results;
 	}
 	
-	public MovieTicketService(MongoOperations mongoOperations){
+	/*public MovieTicketService(MongoOperations mongoOperations){
 		this.mongoOperations = mongoOperations;
-	}
+	}*/
 	
 	public MovieTicketService(){
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringMongoConfig.class);

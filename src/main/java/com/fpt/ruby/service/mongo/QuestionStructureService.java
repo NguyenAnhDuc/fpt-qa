@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.data.mongodb.core.MongoOperations;
+import org.springframework.stereotype.Service;
 
 import redis.clients.jedis.Jedis;
 
@@ -12,6 +13,7 @@ import com.fpt.ruby.config.SpringMongoConfig;
 import com.fpt.ruby.helper.RedisHelper;
 import com.fpt.ruby.model.QuestionStructure;
 
+@Service
 public class QuestionStructureService {
 	private final String REDIS_HOST = "10.3.9.236";
 	private MongoOperations mongoOperations;

@@ -14,21 +14,25 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.stereotype.Service;
 
 import com.fpt.ruby.config.SpringMongoConfig;
 import com.fpt.ruby.helper.HttpHelper;
 import com.fpt.ruby.model.MovieFly;
 
+@Service
 public class MovieFlyService {
 	private static final String RT_apikey = "squrt6un22xe46uy5wmxej8e";
 	private MongoOperations mongoOperations;
-	public MovieFlyService(MongoOperations mongoOperations){
+	public String test;
+	/*public MovieFlyService(MongoOperations mongoOperations){
 		this.mongoOperations = mongoOperations;
-	}
+	}*/
 	
 	public MovieFlyService(){
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringMongoConfig.class);
 		this.mongoOperations = (MongoOperations) ctx.getBean("mongoTemplate");
+		test = "hello";
 	}
 	
 	public List<MovieFly> findAll(){

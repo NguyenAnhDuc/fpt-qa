@@ -8,7 +8,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.fpt.ruby.App;
 import com.fpt.ruby.helper.RedisHelper;
 import com.fpt.ruby.model.MovieFly;
 
@@ -246,7 +245,7 @@ public class MovieAnswerMapperImpl implements MovieAnswerMapper {
 		return res;
 	}
 
-	public static void main(String[] args) throws UnsupportedEncodingException {
+	/*public static void main(String[] args) throws UnsupportedEncodingException {
 		App app = new App();
 		MovieAnswerMapper map = new MovieAnswerMapperImpl();
 		String title = "Lucy";
@@ -268,5 +267,5 @@ public class MovieAnswerMapperImpl implements MovieAnswerMapper {
 		System.out.println(map.getRuntimeMovieAnswer(mov));
 		System.out.println(map.getTitleMovieAnswer(mov));
 		System.out.println(map.getYearMovieAnswer(mov));
-	}
+	}*/
 }

@@ -1,4 +1,4 @@
-package fpt.qa.rubyweb;
+/*package fpt.qa.rubyweb;
 
 import java.util.List;
 import org.json.JSONArray;
@@ -149,3 +149,4 @@ public class MovieCrawl {
 		//testDiscover();
 	}
 }
+*/
