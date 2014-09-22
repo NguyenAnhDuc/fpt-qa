@@ -84,7 +84,7 @@ public class MovieIntentDetection {
         }
         if (tunedSent.indexOf("DTI\t") == 0) {
             if (tunedSent.contains("phim") || tunedSent.contains("suất chiếu") || 
-                    tunedSent.contains("xuất chiếu")) {
+                    tunedSent.contains("xuất chiếu") || (tunedSent.contains(" chiếu ") && tunedSent.contains("mấy giờ"))) {
                 return IntentConstants.MOV_DATE;
             }
             return IntentConstants.CIN_DATE;
@@ -200,6 +200,12 @@ public class MovieIntentDetection {
         }
 
         if (tunedSent.indexOf("POL\t") == 0) {
+        	// handle wrong question classification result such as in the sentence:
+        	// rạp vincom bà triệu tối nay chiếu the maze runner mấy giờ
+        	if (tunedSent.contains("mấy giờ")){
+        		return IntentConstants.MOV_DATE;
+        	}
+        	
             if (tunedSent.contains("đặt vé") || tunedSent.contains("còn")) {
                 return IntentConstants.TICKET_STATUS;
             }
@@ -241,10 +247,10 @@ public class MovieIntentDetection {
 //        }
         
         String sent1 = "rạp lotte chiếu phim the november man lúc mấy giờ";
-        String sent2 = "có phim gì hay không";
-        String sent3 = "có phim gì đang chiếu";
-        String sent4 = "hôm qua có phim gì không";
-        String sent5 = "hôm kia có phim gì không";
+        String sent2 = "phim tâm lý kinh dị nào đang chiếu rạp";
+        String sent3 = "phim tâm lý tình cảm nào đang chiếu rạp";
+        String sent4 = "rạp vincom bà triệu tối nay chiếu the maze runner lúc mấy giờ?";
+        String sent5 = "rạp vincom bà triệu tối nay chiếu the maze runner mấy giờ?";
         
         System.out.println(getTunedSent(sent1));
         System.out.println(getIntent(sent1));

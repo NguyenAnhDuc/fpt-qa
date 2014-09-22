@@ -12,19 +12,23 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import fpt.qa.additionalinformation.name_mapper.NamedEngineImp;
+import fpt.qa.additionalinformation.name_mapper.NameMapperEngine;
 import fpt.qa.mdnlib.nlp.vn.vntokenizer.VnTokenizer;
 import fpt.qa.mdnlib.struct.conjunction.ConjunctionChecker;
 import fpt.qa.mdnlib.struct.pair.Pair;
 
 public class ConjunctionWithType extends ConjunctionChecker{
 	private Map< String, HashSet< String > > conjunctionType;
-	private NamedEngineImp nameMapperEngine;
+	private NameMapperEngine nameMapperEngine;
 	private SurroundingWords surroundingWords;
 
 	public ConjunctionWithType( String resourcePath ) {
 		conjunctionType = new HashMap< String, HashSet< String > >();
-		nameMapperEngine = new NamedEngineImp( resourcePath );
+		
+		nameMapperEngine = new NameMapperEngine( resourcePath );
+		nameMapperEngine.loadDomainMapper( "movie", "movieNames.txt" );
+		nameMapperEngine.loadDomainMapper( "food", "foodNames.txt" );
+		
 		surroundingWords = new SurroundingWords( resourcePath );
 
         loadConjunctionFromNameMapper( nameMapperEngine );
@@ -61,7 +65,7 @@ public class ConjunctionWithType extends ConjunctionChecker{
 		}
 	}
 
-    private void loadConjunctionFromNameMapper(  NamedEngineImp nameMapperEngine ){
+    private void loadConjunctionFromNameMapper(  NameMapperEngine nameMapperEngine ){
         for( Pair <String, String> pair : nameMapperEngine.getAllNames() ){
             String name = pair.first;
             String type = pair.second;
