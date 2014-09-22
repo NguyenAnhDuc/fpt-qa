@@ -3,6 +3,7 @@ package fpt.qa.rubyweb;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
@@ -122,6 +123,8 @@ public class AdminCotroller {
 	public String showTickets(Model model){
 		List<MovieTicket> tickets = movieTicketService.findTicketToShow();
 		model.addAttribute("tickets",tickets);
+		HashSet<String> movies = new HashSet<String>();
+		HashSet<String> cinemas = new HashSet<String>();
 		return "showTicket";
 	}
 	
