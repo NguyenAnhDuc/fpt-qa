@@ -1,0 +1,581 @@
+# Domain : Television 
+# Title : tv_names
+# Author : Thien BUI-DUC
+# Date : 2014/9/20 21:52:13
+
+chanel_title	Star Movie
+program_title	Phim
+program_title	NEWS
+program_title	Game show
+program_title	Bóng đá
+program_title	Thể thao
+program_title	Khoa học
+program_title	Other
+program_title	Nhạc
+chanel_title	vtv1; vtv 1
+chanel_title	vtv2; vtv 2
+chanel_title	vtv3; vtv 3
+chanel_title	vtv4; vtv 4
+chanel_title	vtv5; vtv 5
+chanel_title	vtv6; vtv 6
+chanel_title	Hà Nội 1
+chanel_title	Hà Nội 2
+chanel_title	vtv9; vtv 9
+chanel_title	vtv3 hd; vtv 3 hd
+chanel_title	vtv6 hd; vtv 6 hd
+chanel_title	vtv cần thơ 1
+chanel_title	vtv cần thơ 2
+chanel_title	vtv phú yên
+chanel_title	vtv đà nẵng
+chanel_title	vov; vovtv, vov tv, vov giao thông
+chanel_title	ttxvn; truyền hình thông tấn xã việt nam, ttxvn thông tấn xã việt nam, thong tan xa viet nam
+chanel_title	antv; an ninh tv
+chanel_title	vtc1; vtc 1
+chanel_title	vtc2; vtc2
+chanel_title	vtc3; vtc3
+chanel_title	vtc4; vtc4
+chanel_title	vtc5; vtc5
+chanel_title	vtc6; vtc6
+chanel_title	vtc7; vtc7, vtc7 hd today, giải trí tổng hợp, giai tri tong hop
+chanel_title	vtc8; vtc8
+chanel_title	vtc9; vtc9, let's việt; lets việt, let's viet
+chanel_title	vtc10; vtc 10
+chanel_title	vtc11; vtc 11, kids & family tv, kids and family tv, kids & family, kids and family, truyền hình thiếu nhi, thiếu nhi, thieu nhi, truyen hình thieu nhi
+chanel_title	vtc12; vtc12
+chanel_title	vtc14; vtc14, kênh phòng chống thiên tai, kenh phong chong thien tai
+chanel_title	vtc16; vtc16
+chanel_title	htv1; htv 1, đài truyền hình thành phố hồ chí minh, truyền hình thành phố hồ chí minh, truyền hình tp hcm
+chanel_title	htv2; htv 2, đài truyền hình thành phố hồ chí minh, truyền hình thành phố hồ chí minh, truyền hình tp hcm
+chanel_title	htv3; htv 3, đài truyền hình thành phố hồ chí minh, truyền hình thành phố hồ chí minh, truyền hình tp hcm
+chanel_title	htv4; htv 4, đài truyền hình thành phố hồ chí minh, truyền hình thành phố hồ chí minh, truyền hình tp hcm
+chanel_title	htv7; htv 7, đài truyền hình thành phố hồ chí minh, truyền hình thành phố hồ chí minh, truyền hình tp hcm
+chanel_title	htv9; htv 9, đài truyền hình thành phố hồ chí minh, truyền hình thành phố hồ chí minh, truyền hình tp hcm
+chanel_title	thvl1; thvl 1, truyền hình vĩnh long, truyen hinh vinh long
+chanel_title	thvl2; thvl 2, truyền hình vĩnh long, truyen hinh vinh long
+chanel_title	ndtv1; dntv 1, truyền hình đồng nai, truyen hinh dong nai
+chanel_title	ndtv2; dntv 2, truyền hình đồng nai, truyen hinh dong nai
+chanel_title	qtv1; qtv 1, truyền hình quảng ninh, truyen hinh quang ninh
+chanel_title	qtv2; qtv 2, truyền hình quảng ninh, truyen hinh quang ninh
+
+program_title	vì bạn xứng đáng
+program_title	thông tin 260
+program_title	cuộc gọi lúc không giờ
+program_title	ký ức việt nam
+program_title	phụ nữ là số 1
+program_title	văn phòng mai mối
+program_title	vui sống mỗi ngày
+program_title	thể thao
+program_title	ca nhạc
+program_title	ai là triệu phú
+program_title	cẩm nang vàng cho sức khỏe
+program_title	360 độ thể thao
+program_title	sống đẹp
+program_title	kiệt tác bất hủ
+program_title	thời sự
+program_title	trò chơi âm nhạc
+program_title	sắc màu phái đẹp
+program_title	lời thì thầm từ quá khứ
+program_title	quà tặng cuộc sống
+program_title	tôi hạnh phúc
+program_title	chuyện đêm muộn
+program_title	son môi hồng
+program_title	ký sự biển đảo
+program_title	tình yêu không hẹn trước
+program_title	chiếc nón kỳ diệu
+program_title	nhịp đập 360 thể thao
+program_title	hai trái tim vàng
+program_title	vì một tương lai xanh
+program_title	một bước để chiến thắng
+program_title	5s online
+program_title	những bài hát còn xanh
+program_title	sống khác
+program_title	người làm nhạc
+program_title	mảnh ghép tiếng anh
+program_title	phim trẻ
+program_title	thư giãn cuối tuần
+program_title	đùa chút thôi
+program_title	các môn thi đấuthế vận hội olympic trẻ 2014
+program_title	bữa trưa vui vẻ
+program_title	vitamin tình yêu
+program_title	các môn thi đấu thế vận hội olympic trẻ 2014
+program_title	dám làm không
+program_title	lăng kính v6
+program_title	sinh ra từ làng
+program_title	terra nova
+program_title	chinh phục ngôn ngữ
+program_title	ghế không tựa
+program_title	khám phá thế giới
+program_title	bếp việt
+program_title	phía đông mặt trời mọc
+program_title	tuổi 20 hát
+program_title	qua ngày giông bão
+program_title	hành trình khám phá
+program_title	xưởng thời trang nguyễn thị thủy
+program_title	con đường phía trước
+program_title	vtv kết nối
+program_title	việt nam đất nước con người
+program_title	về quê
+program_title	điện ảnh
+program_title	dân số và phát triển
+program_title	hát cùng siêu chíp
+program_title	bạn của nhà nông
+program_title	mười vạn câu hỏi vì sao
+program_title	trái tim giản đơn
+program_title	7 ngày công nghệ
+program_title	sống khỏe mỗi ngày
+program_title	nhà sáng chế
+program_title	nhà nông cần biết
+program_title	những mảnh ghép của cuộc sống
+program_title	dạy ngoại ngữ
+program_title	khúc ca cho tình nhân
+program_title	cầu truyền hình sức khỏe
+program_title	phim tài liệu
+program_title	thông báo
+program_title	lần đầu làm mẹ
+program_title	những bông hoa nhỏ
+program_title	phim hoạt hình
+program_title	thông điệp cuộc sống
+program_title	ranbir và rano
+program_title	nữ hoàng
+program_title	cái lý
+program_title	ước mơ việt nam
+program_title	chúc bé ngủ ngon
+program_title	câu chuyện khoa học
+program_title	biển đảo quê hương
+program_title	bản tin 22h
+program_title	sắc màu các dân tộc
+program_title	đồng hành cùng 23h
+program_title	y học bốn phương
+program_title	tạp chí giáo dục
+program_title	thể dục theo mùa
+program_title	vietnam discovery
+program_title	việt nam xanh
+program_title	vì cuộc sống
+program_title	tài chính kinh doanh
+program_title	việt bắc gió ngàn
+program_title	tin tức
+program_title	thế giới góc nhìn
+program_title	trở về từ ký ức
+program_title	bánh đúc có xương
+program_title	chào cờ
+program_title	vì sự tiến bộ phụ nữ
+program_title	chào buổi sáng
+program_title	s việt nam
+program_title	những con mắt của biển
+program_title	khám phá việt nam
+program_title	lục lạc vàng
+program_title	cổng làng tự truyện
+program_title	câu chuyện văn hóa
+program_title	bất cập trong đào tạo đại học và sau đại học
+program_title	môi trường
+program_title	đại đoàn kết
+program_title	điểm hẹn văn hóa
+program_title	thời tiết nông vụ
+program_title	việt bắc thủ đô gió ngàn
+program_title	talk vietnam
+program_title	không gian văn hóa nghệ thuật
+program_title	lao động và công đoàn
+program_title	đảo mai an tiêm xưa và nay
+program_title	bức tranh quê hương
+program_title	văn học nghệ thuật
+program_title	đảng trong cuộc sống hôm nay
+program_title	vì cộng đồng
+program_title	24 giờ
+program_title	diễn đàn văn học nghệ thuật
+program_title	lũy thép lũy hoa một thời và mãi mãi
+program_title	vấn đề doanh nghiệp doanh nhân
+program_title	thanh niên
+program_title	tạp chí dân tộc và phát triển
+program_title	tin quốc tế
+program_title	khuyến công
+program_title	tài chính tiêu dùng
+program_title	cuộc sống thường ngày
+program_title	khoảnh khắc thường ngày
+program_title	trên đỉnh a mú sung
+program_title	danh ngôn và cuộc sống
+program_title	thế giới trong ngày
+program_title	bất cập trong đào tạo đại học và sau đh
+program_title	đối thoại chính sách
+program_title	bản tin
+program_title	5 phút thể thao
+program_title	mỗi ngày 1 cuốn sách
+program_title	nhà hát truyền hình
+program_title	vì trẻ em
+program_title	bí mật của cô bé toheba
+program_title	vì an ninh tổ quốc
+program_title	bão qua làng
+program_title	cửa sổ văn học
+program_title	nghĩa tình nơi cửa biển
+program_title	tôi yêu việt nam
+program_title	công nghệ đời sống
+program_title	vì người nghèo
+program_title	cà phê sáng
+program_title	bảng xếp hạng bài hát yêu thích
+program_title	sao mai điểm hẹn
+program_title	trẻ em luôn đúng
+program_title	cuộc sống tươi đẹp
+program_title	sắc màu không gian
+program_title	kiến thức cộng đồng
+program_title	không gian xanh
+program_title	điều ước thứ 7
+program_title	cuộc đua kỳ thú
+program_title	giọng hát việt nhí
+program_title	đừng để tiền rơi
+program_title	một ngày của diva
+program_title	người kế tiếp
+program_title	lễ bế mạc olympic trẻ 2014
+program_title	phong tục việt
+program_title	y học bốn phương :
+program_title	kiến thức sử địa
+program_title	nghĩ khác
+program_title	chất lượng cuộc sống
+program_title	phát triển bền vững
+program_title	cuộc sống vẫn tươi đẹp
+program_title	giai điệu cuộc sống
+program_title	kiều hối việt
+program_title	bí mật tam giác vàng
+program_title	người việt bốn phương
+program_title	nơi huyền thoại bắt đầu
+program_title	trò đời
+program_title	bản tin tài chính đầu tư
+program_title	bản tin tiếng anh
+program_title	sáng tạo việt
+program_title	bản tin tiếng trung
+program_title	thời tiết du lịch 1
+program_title	expat living
+program_title	daily biz
+program_title	bản tin tiếng nga
+program_title	quả chuông nhỏ
+program_title	tinh hoa võ thuật
+program_title	bản tin tiếng pháp
+program_title	chân dung cuộc sống
+program_title	mv của tôi
+program_title	thông điệp từ quá khứ
+program_title	tiến sỹ của nông dân
+program_title	trò chuyện cùng bé
+program_title	tạp chí tiếng nga
+program_title	du lịch và ẩm thực
+program_title	thời tiết du lịch
+program_title	fine cuisine
+program_title	bước nhảy hoàn vũ nhí
+program_title	đường lên đỉnh olympia
+program_title	kỹ năng sống
+program_title	vui khoẻ có ích
+program_title	văn hoá sự kiện nhân vật
+program_title	cầu thủ tí hon
+program_title	việt nam trong tim tôi
+program_title	suối nguồn yêu thương
+program_title	thời trang cuộc sống
+program_title	tin rubic 8
+program_title	phim rubic 8
+program_title	thử thách đường phố
+program_title	quý hơn vàng
+program_title	dạy nghề
+program_title	y học phương đông
+program_title	an ninh cuộc sống
+program_title	tạp chí du lịch
+program_title	thông báo ghi ơn
+program_title	bạn trẻ bốn phương
+program_title	hãy cùng khám phá lũ lụt
+program_title	cái lý cái tình
+program_title	sống xanh ai là chuyên gia
+program_title	hãy chia sẻ cùng chúng tôi
+program_title	sổ tay du lịch
+program_title	23 giờ
+program_title	họ đang làm gì
+program_title	câu chuyện pháp luật
+program_title	kỹ năng thoát hiểm
+program_title	an sinh xã hội
+program_title	sức khỏe và cuộc sống
+program_title	phổ biến kiến thức
+program_title	sống xanh
+program_title	câu chuyện giáo dục
+program_title	tư vấn mùa thi và ôn thi đại học
+program_title	làm bạn với con
+program_title	nhắn tìm đồng đội
+program_title	nhịp cầu khuyến nông
+program_title	pháp luật và cuộc sống
+program_title	kỹ năng tham gia giao thông
+program_title	tâm hồn việt
+program_title	giọng hát việt
+program_title	nhân tố bí ẩn
+program_title	siêu sao giải ngoại hạng
+program_title	chúng tôi là chiến sĩ
+program_title	bàn tay đen
+program_title	gương sáng trong cuộc sống
+program_title	vì chất lượng dân số
+program_title	vững chắc nơi hậu phương
+program_title	chuyện đương thời
+program_title	hồ chí minh trong trái tim bạn bè
+program_title	trang địa phương
+program_title	tạp chí kinh tế cuối tuần
+program_title	sự kiện và bình luận
+program_title	nông thôn mới
+program_title	tác phẩm mới
+program_title	dân ca nhạc cổ
+program_title	văn hoá công an nhân dân
+program_title	nỗi sự trước nguy cơ khủng bố
+program_title	cây cao bóng cả
+program_title	mv ca nhạc
+program_title	con đường thuốc việt
+program_title	giai điệu tự hào
+program_title	tạp chí âm nhạc
+program_title	hòa nhạc thính phòng
+program_title	khám phá thế
+program_title	thông tin tiêu dùng
+program_title	phép màu tái sinh phim hàn quốc
+program_title	tình yêu và thù hận
+program_title	tôi đẹp
+program_title	tình yêu định mệnh
+program_title	không gian tôi yêu
+program_title	tâm điểm hà nộitv
+program_title	hương tình
+program_title	bản tin tài chính và thị trường
+program_title	bản tin cuối ngày
+program_title	chăm sóc răng miệng đúng cách
+program_title	american beauty
+program_title	paranormal activity 4
+program_title	the haunting 1999
+program_title	the holiday
+program_title	tyler perrys temptations
+program_title	true bloods 709 :
+program_title	jack reacher
+program_title	girl interrupted
+program_title	fun size
+program_title	curious george
+program_title	the adventures of shark boy and lava girl
+program_title	pirates of the caribbean
+program_title	the great gatsby
+program_title	the perks of being a wallflower
+program_title	silicon valley s107
+program_title	silicon valley s108
+program_title	the package
+program_title	the godfather
+program_title	chasing mavericks
+program_title	đồ rê mí
+program_title	bí mật của tạo hóa
+program_title	gặp gỡ khán giả vtv4
+program_title	đấu trường 100
+program_title	vườn cổ tích
+program_title	thời trang và cuộc sống
+program_title	culture mosaic
+program_title	sân khấu
+program_title	núi sông bờ cõi
+program_title	bản tin thời sự tiếng việt
+program_title	phim cuối tuần
+program_title	việt nam 7 ngày
+program_title	bizline
+program_title	week in review
+program_title	ngược chiều
+program_title	xưởng thời trang
+program_title	bông mướp vàng
+program_title	tôi hát
+program_title	v6 du ký
+program_title	bài hát việt
+program_title	ai thông minh hơn học sinh lớp 5
+program_title	đậu xanh rau má
+program_title	thám tử đại tài
+program_title	tuổi 20 hát 2014
+program_title	biển trời quê hương
+program_title	thể dục buổi sáng
+program_title	bản tin thời tiết du lịch
+program_title	hà nội hôm nay
+program_title	ngày này năm xưa
+program_title	bản tin văn hóa giao thông
+program_title	tiết kiệm năng lượng
+program_title	kết nối việt nam
+program_title	điểm báo
+program_title	hà nội của chúng ta
+program_title	con đường sáng phim vn
+program_title	bản tin tài chính thị trường
+program_title	bản tin thế giới
+program_title	chuyện tuổi già
+program_title	festival piano ceg 2014
+program_title	pháp luật và đời sống
+program_title	câu chuyện văn nghệ
+program_title	mối tình của mẹ
+program_title	góc thư giãn
+program_title	chuyện hẹn hò
+program_title	xây dựng thủ đô và đất nước
+program_title	kinh tế ngoại thành
+program_title	cẩm nang gia đình
+program_title	nhìn ra thủ đô và đô thị các nước
+program_title	trên đường hội nhập
+program_title	chương trình biểu diễn của nghệ sỹ tây ban nha jorge orozco
+program_title	tinh hoa thăng long hà nội
+program_title	ava riko và teo
+program_title	vua đầu bếp
+program_title	vui khỏe có ích
+program_title	cà phê sáng cuối tuần
+program_title	chúng ta là một gia đình
+program_title	vào bếp là chuyện nhỏ
+program_title	hãy chọn giá đúng
+program_title	trái tim cho em
+program_title	gương mặt thân quen
+program_title	insight into vietnam
+program_title	the leftovers s108
+program_title	zodiac
+program_title	fun with dick and jane
+program_title	superman iv the quest for peace
+program_title	despicable me 2
+program_title	ripd
+program_title	world war z
+program_title	the awakening 2011
+program_title	premium rush
+program_title	matchstick men
+program_title	chicken little
+program_title	kermits swamp years
+program_title	miami vice
+program_title	the avengers 2012
+program_title	the smurfs 2
+program_title	real steel
+program_title	man of steel
+program_title	tin tức
+program_title	khám phá
+program_title	chìa khoá thành công
+program_title	ca nhạc
+program_title	khám phá thế giới
+program_title	chào cờ
+program_title	cải cách hành chính
+program_title	chào buổi sáng
+program_title	không mũ
+program_title	s việt nam
+program_title	phim tài liệu
+program_title	vtv kết nối
+program_title	điểm hẹn văn hóa
+program_title	thời tiết nông vụ
+program_title	thời sự 12h
+program_title	phim truyện
+program_title	tin tức 14h
+program_title	văn hoá quân đội nhân dân
+program_title	truyền hình công thương
+program_title	chính sách kinh tế và cuộc sống
+program_title	tin quốc tế
+program_title	khuyến công
+program_title	cuộc sống thường ngày
+program_title	khoảnh khắc thường ngày
+program_title	thời sự
+program_title	đảng trong cuộc sống hôm nay - 45 năm thực hiện di chúc của chủ tịch hồ chí minh
+program_title	danh ngôn và cuộc sống
+program_title	bản tin
+program_title	5 phút thể thao
+program_title	mỗi ngày 1 cuốn sách
+program_title	tài chính kinh doanh
+program_title	phóng sự
+program_title	phim truyện
+program_title	bác hồ trong trái tim dân tộc
+program_title	con cháu hùng binh
+program_title	quảng cáo
+program_title	lời ru từ lòng đất
+program_title	để nghiên cứu khoa học thực sự đi vào cuộc sống
+program_title	cho muôn đời sau
+program_title	điện ảnh kết nối đam mê
+program_title	cô bé mimi
+program_title	thông điệp cuộc sống cướp chồng
+program_title	đảo ngọt
+program_title	65 năm học viện chính trị quốc gia hồ chí minh
+program_title	hãy cùng khám phá
+program_title	đầu giờ
+program_title	nhịp đập 360 độ thể thao
+program_title	cuộc gọi lúc 0 giờ
+program_title	cô ấy thật tuyệt
+program_title	đồng hành vua đầu bếp
+program_title	đồng hành bước nhảy hoàn vũ nhí
+program_title	đồng hành đồ rê mí
+program_title	bản tin thời sự
+program_title	45 năm di chúc chủ tịch hồ chí minh
+program_title	gái già xì tin
+program_title	những nốt nhạc xinh
+program_title	văn hóa hội nhập
+program_title	quà tặng cuộc sống chiếc giày đánh rơi của một thương gia
+program_title	danh nhân đất việt
+program_title	người viết sử võ việt
+program_title	vừng ơi mở cửa ra
+program_title	về bản
+program_title	ba đám cưới một đời chồng
+program_title	theo dấu chân người
+program_title	chinh phục
+program_title	chiếc hộp pandora
+program_title	ngược chiều quá giới hạn
+program_title	chinh phục đất nước việt nam
+program_title	hành trình hám phá
+program_title	truyền hình trực tiếp giải bóng đá u19 đông nam á
+program_title	the leftovers
+program_title	rock of ages
+program_title	the brady bunch movie
+program_title	snow dogs
+program_title	zathura a space adventure
+program_title	the guys
+program_title	hbo central sep 2014
+program_title	veep
+program_title	collateral
+program_title	smashed
+program_title	the prince of egypt
+program_title	erin brockovich
+program_title	true bloods 710
+program_title	kill for me
+program_title	the purge
+program_title	the hand that rocks the cradle
+program_title	the fighting temptations
+program_title	lost in translation
+program_title	balto
+program_title	george of the jungle
+program_title	here comes the boom
+program_title	rush hour
+program_title	left to die
+program_title	jerry maguire
+program_title	eye for an eye
+program_title	six bullets
+program_title	mortal kombat annihilation
+program_title	mirrormask
+program_title	fastfurious 6
+program_title	red lights
+program_title	this is 40
+program_title	người việt nam ưu tiên dùng hàng việt nam
+program_title	thế giới phụ nữ
+program_title	trang văn học nghệ thuật
+program_title	con đường sáng
+program_title	tri thức con người xưa và nay
+program_title	tổ quốc ta
+program_title	hà nội với cả nước cả nước với hà nội
+program_title	vấn đề dư luận
+program_title	chính sách và cuộc sống
+program_title	tạp chí đẹp
+program_title	bé yêu học ăn
+program_title	địa chỉ từ thiện
+program_title	bí quyết khỏe đẹp
+program_title	những ngôi sao ca nhạc đồng quê
+program_title	thời trang và phong cách
+program_title	khủng long biến hình
+program_title	phép màu tái sinh
+program_title	bản tin kinh tế
+program_title	duyên phận trớ trêu
+program_title	hận thù không lối thoát
+program_title	lắng nghe cơ thể bạn
+program_title	Sắc màu VHCDT
+program_title	Gala trao giải cầu thủ xuất sắc và Lễ bốc thăm chia bảng UEFA Champions League mùa bóng 2014 2015
+program_title	chiếc nón kì diệu
+program_title	Vì bạn xứng đáng
+program_title	Không gian xanh
+program_title	VTV kết nối
+program_title	vòng quay bóng đá
+program_title	cuộc đua kì thú
+program_title	Thông tin 260
+program_title	Cuộc gọi lúc 0 giờ
+program_title	Ký ức Việt Nam
+program_title	Phụ nữ là số 1
+program_title	Cô ấy thật tuyệt
+program_title	Vui sống mỗi ngày
+program_title	Đồng hành cùng Vua đầu bếp
+program_title	Đồng hành Giọng hát Việt nhí
+program_title	Bán kết World cup 2014 Đức Brazil
+program_title	Giai điệu tự hào
+program_title	Đồng hành Đồ Rê Mí
+program_title	Múa trong đời sống người Khơ me
+program_title	kĩ năng sống
+program_title	MV của tôi
+program_title	Siêu sao giải ngoại hạng
+program_title	giải thưởng ấn tượng VTV
+program_title	thử thách đường phó
+program_title	ký ức Việt Nam
+program_title	giải thưởng ấn tượng vtv
