@@ -125,6 +125,12 @@ public class AdminCotroller {
 		model.addAttribute("tickets",tickets);
 		HashSet<String> movies = new HashSet<String>();
 		HashSet<String> cinemas = new HashSet<String>();
+		for (MovieTicket movieTicket : tickets){
+			movies.add(movieTicket.getMovie());
+			cinemas.add(movieTicket.getCinema());
+		}
+		model.addAttribute("numMovie",movies.size());
+		model.addAttribute("numCinema",cinemas.size());
 		return "showTicket";
 	}
 	
