@@ -23,7 +23,7 @@ import com.fpt.ruby.service.mongo.MovieTicketService;
 import com.mongodb.BasicDBObject;
 
 @Controller
-@RequestMapping("/admin")
+@RequestMapping("")
 public class AdminCotroller {
 	private MovieTicketService movieTicketService;
 	private TVProgramService tvProgramService;
@@ -102,30 +102,30 @@ public class AdminCotroller {
 		//return new BasicDBObject().append("status", "success");
 	}
 	
-	@RequestMapping(value="", method = RequestMethod.GET)
+	@RequestMapping(value="admin", method = RequestMethod.GET)
 	public String admin(Model model){
 		return "admin";
 	}
 	
-	@RequestMapping(value="/crawl", method = RequestMethod.GET)
+	@RequestMapping(value="/admin-crawl-manual", method = RequestMethod.GET)
 	public String crawlManual(Model model){
 		return "crawl";
 	}
 	
-	@RequestMapping(value="/crawlPhimChieuRap", method = RequestMethod.GET)
+	@RequestMapping(value="admin-crawl-phim-chieu-rap", method = RequestMethod.GET)
 	public String crawlPhimChieuRap(Model model){
 		return "crawlPhimChieuRap";
 	}
 	
 	
-	@RequestMapping(value="showTicket", method = RequestMethod.GET)
+	@RequestMapping(value="admin-show-tickets", method = RequestMethod.GET)
 	public String showTickets(Model model){
 		List<MovieTicket> tickets = movieTicketService.findTicketToShow();
 		model.addAttribute("tickets",tickets);
 		return "showTicket";
 	}
 	
-	@RequestMapping(value="showTVProgram", method = RequestMethod.GET)
+	@RequestMapping(value="admin-show-tvprograms", method = RequestMethod.GET)
 	public String showTVPrograms(Model model){
 		List<TVProgram> tvPrograms = tvProgramService.findProgramToShow();
 		model.addAttribute("tvPrograms",tvPrograms);

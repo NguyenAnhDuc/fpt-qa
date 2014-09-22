@@ -598,7 +598,6 @@ mov_title	Alligator Alley; Đầm Cá Sấu
 mov_title	Vtv4 2011; Đầm Lầy Bạc
 mov_title	Đầu Bếp Bí Ẩn
 mov_title	Comme Un Chef; Đầu Bếp Trứ Danh
-mov_title	The Chef, The Actor, The Scoundrel; Đầu Bếp, Diễn Viên, Tên Vô Lại
 mov_title	The Warlords; Đầu Danh Trạng
 mov_title	Đầu Gấu Và Mắt Kính
 mov_title	Đầu Sóng Ngọn Gió
