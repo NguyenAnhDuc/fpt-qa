@@ -1,27 +1,24 @@
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="resources/css/bootstrap/bootstrap.min.css" />
-	
-</head>
-<body>
-	<div class="container">
-		<header class="text-center" style="margin-bottom: 20px">
-			<img src="resources/images/fpt_logo.png" class="logo" />
-			<h2>Ruby Project - Admin</h2>
-			
-		</header>
-	  <form action="admin/crawlPhimChieuRap">
-	  	<input type="submit" class="btn btn-primary btn-lg btn-block" id="btnSubmit" value="Crawl schedule from phimchieurap.com" />
-	  </form>	
-	  <form action="admin/crawl">
-	  	<input type="submit" class="btn btn-primary btn-lg btn-block" id="btnSubmit" value="Crawl Manually" />
-	  </form>
-	  <form action="admin/showTicket">
-	  	<input type="submit" class="btn btn-primary btn-lg btn-block" id="btnSubmit" value="Show Tickets Today" />
-	  </form>
-	  <form action="admin/showTVProgram">
-	  	<input type="submit" class="btn btn-primary btn-lg btn-block" id="btnSubmit" value="Show TVPrograms Today" />
-	  </form>
-	</div>
-</body>
-</html>
+<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<tiles:insertDefinition name="defaultTemplate">
+	<tiles:putAttribute name="body">
+		<form action="admin-crawl-phim-chieu-rap">
+			<input type="submit" class="btn btn-primary btn-lg btn-block"
+				id="btnSubmit" value="Crawl schedule from phimchieurap.com" />
+		</form>
+		<form action="admin-crawl-manual">
+			<input type="submit" class="btn btn-primary btn-lg btn-block"
+				id="btnSubmit" value="Crawl Manually" />
+		</form>
+		<form action="admin-show-tickets">
+			<input type="submit" class="btn btn-primary btn-lg btn-block"
+				id="btnSubmit" value="Show Tickets Today" />
+		</form>
+		<form action="admin-show-tvprograms">
+			<input type="submit" class="btn btn-primary btn-lg btn-block"
+				id="btnSubmit" value="Show TVPrograms Today" />
+		</form>
+	</tiles:putAttribute>
+</tiles:insertDefinition>
+
