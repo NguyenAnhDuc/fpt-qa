@@ -78,41 +78,42 @@
   // solstice/equinox days depend on the year)
   SPRING_EQUINOX = {
     type: DAY_OF_YEAR,
-	value: InexactTime( TimeRange( IsoDate(ANY, 3, 20), IsoDate(ANY, 3, 21) ) )
+	value: InexactTime( TimeRange( IsoDate(ANY, 1, 1), IsoDate(ANY, 3, 30) ) )
   }
   SUMMER_SOLSTICE = {
     type: DAY_OF_YEAR,
-	value: InexactTime( TimeRange( IsoDate(ANY, 6, 20), IsoDate(ANY, 6, 21) ) )
+	value: InexactTime( TimeRange( IsoDate(ANY, 4, 1), IsoDate(ANY, 6, 30) ) )
   }
   FALL_EQUINOX = {
     type: DAY_OF_YEAR,
-	value: InexactTime( TimeRange( IsoDate(ANY, 9, 22), IsoDate(ANY, 9, 23) ) )
+	value: InexactTime( TimeRange( IsoDate(ANY, 7, 1), IsoDate(ANY, 9, 30) ) )
   }
   WINTER_SOLSTICE = {
     type: DAY_OF_YEAR,
-	value: InexactTime( TimeRange( IsoDate(ANY, 12, 21), IsoDate(ANY, 12, 22) ) )
+	value: InexactTime( TimeRange( IsoDate(ANY, 10, 1), IsoDate(ANY, 12, 30) ) )
   }
 
   // Dates for seasons are rough with respect to northern hemisphere
   SPRING = {
       type: SEASON_OF_YEAR,
       label: "SP",
-      value: InexactTime( SPRING_EQUINOX, QUARTER, TimeRange( MARCH, JUNE, QUARTER ) ) }
+      value: InexactTime( SPRING_EQUINOX, QUARTER, TimeRange( JANUARY, MARCH, QUARTER ) ) }
   SUMMER = {
       type: SEASON_OF_YEAR,
       label: "SU",
-      value: InexactTime( SUMMER_SOLSTICE, QUARTER, TimeRange( JUNE, SEPTEMBER, QUARTER ) )
+      value: InexactTime( SUMMER_SOLSTICE, QUARTER, TimeRange( APRIL, MAY, QUARTER ) )
   }
   FALL = {
       type: SEASON_OF_YEAR,
       label: "FA",
-      value: InexactTime( FALL_EQUINOX, QUARTER, TimeRange( SEPTEMBER, DECEMBER, QUARTER ) )
+      value: InexactTime( FALL_EQUINOX, QUARTER, TimeRange( JULY, SEPTEMBER, QUARTER ) )
   }
   WINTER = {
       type: SEASON_OF_YEAR,
       label: "WI",
-      value: InexactTime( WINTER_SOLSTICE, QUARTER, TimeRange( DECEMBER, MARCH, QUARTER ) )
+      value: InexactTime( WINTER_SOLSTICE, QUARTER, TimeRange( NOVEMBER, DECEMBER, QUARTER ) )
   }
+  
   
   // Time of day
   NOON = IsoTime( 12, 0, NONE )
@@ -137,7 +138,7 @@
   NIGHT = {	      
       type: TIME_OF_DAY,
       label: "NI",
-      value: InexactTime( TimeRange ( IsoTime( 19, 0, NONE), IsoTime ( 5, 0, NONE) ) )
+      value: InexactTime( TimeRange ( IsoTime( 23, 0, NONE), IsoTime ( 23, 59, NONE) ) )
   }
 
   SUNRISE = {
@@ -187,10 +188,10 @@
   TWILIGHT = EVENING_TWILIGHT
 
   // Relative days
-  YESTERDAY = RelativeTime( THIS, Duration(DAY, -1) );
-  BEFOREYESTERDAY = RelativeTime( Duration(DAY, -2) );
-  TOMORROW = RelativeTime( THIS, Duration(DAY, +1) );
-  AFTERTOMORROW = RelativeTime( Duration(DAY, +2) );
+  YESTERDAY = RelativeTime(THIS, Duration(DAY, -1) );
+  BEFOREYESTERDAY = RelativeTime(Duration(DAY, -2) );
+  TOMORROW = RelativeTime(THIS, Duration(DAY, +1) );
+  AFTERTOMORROW = RelativeTime(Duration(DAY, +2) );
   TODAY = RelativeTime( THIS, DAY );
   TONIGHT = RelativeTime( THIS, NIGHT );  
   
