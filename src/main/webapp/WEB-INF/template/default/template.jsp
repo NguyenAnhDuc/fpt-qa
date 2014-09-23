@@ -23,7 +23,7 @@
 	<link rel="stylesheet" type="text/css" href="resources/css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="resources/css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="resources/fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" type="text/css" href="resources/css/menu_bubble.css" />
+		<link rel="stylesheet" type="text/css" href="resources/css/menu_bubble.css" /> 
 		<script src="resources/js/snap.svg-min.js"></script>
 		<!--[if IE]>
   		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
