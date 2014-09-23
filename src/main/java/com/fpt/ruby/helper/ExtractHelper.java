@@ -12,13 +12,13 @@ import com.fpt.ruby.model.Genre;
 import com.fpt.ruby.model.ProductionCompany;
 import com.fpt.ruby.model.ProductionCountry;
 import com.fpt.ruby.model.SpokenLanguage;
-import com.fpt.ruby.service.GenreService;
+/*import com.fpt.ruby.service.GenreService;
 import com.fpt.ruby.service.ProductionCompanyService;
 import com.fpt.ruby.service.ProductionCountryService;
-import com.fpt.ruby.service.SpokenLanguageService;
+import com.fpt.ruby.service.SpokenLanguageService;*/
 
 public class ExtractHelper {
-	public Set<Genre> extractGenre(JSONArray jsonArray, GenreService genreService){
+	/*public Set<Genre> extractGenre(JSONArray jsonArray, GenreService genreService){
 		Set<Genre> genres = new HashSet<Genre>();
 		for (int i=0;i<jsonArray.length();i++){
 			int id = jsonArray.getJSONObject(i).getInt("id");
@@ -76,7 +76,7 @@ public class ExtractHelper {
 			spokenLanguages.add(spokenLanguage);
 		}
 		return spokenLanguages;
-	}
+	}*/
 	
 	public Date extractDate(String jsonString) throws ParseException{
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");

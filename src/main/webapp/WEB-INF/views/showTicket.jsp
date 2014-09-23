@@ -141,6 +141,13 @@
 			<div class="row">
 				<div class="col-md-6">
 					<h4>
+						${tickets.size()} tickest. ${numMovie} movies. ${numCinema} cinemas. 
+					</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h4>
 						Click the filter icon <small>(<i
 							class="glyphicon glyphicon-filter"></i>)
 						</small> to filter

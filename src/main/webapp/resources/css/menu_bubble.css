@@ -1,7 +1,6 @@
 html, 
 body, 
 .main, 
-#global_footer,
 .content-wrap {
 	overflow: hidden;
 	width: 100%;
@@ -32,7 +31,7 @@ text-decoration:none;
 
 .content {
 	position: relative;
-	background: #b4bad2; 
+	background: #ebebeb; 
 }
 
 .content::before {
