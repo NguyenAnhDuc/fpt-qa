@@ -15,8 +15,8 @@
   { (/halloween/ ) => IsoDate(NIL, 10, 31) }
   { (/ngày/? /x-?mas|christmas/ ) => IsoDate(NIL, 12, 25) }
   { (/ngày/? /quốc/ /khánh/ /nước/? /CHXHCN/? /Việt/? /Nam/? ) => IsoDate(NIL, 9, 2) }
-  { (/ngày/? /quốc/? /tế/? /lao/ /động/ ) => IsoDate(NIL, 5, 1) }
-  { (/ngày/? /thành/ /lập/ /Đảng/ /cộng/? /sản/? /Việt/? /Nam/?) => JH_MARTIN_LUTHER_KING }
+  { (/ngày/ /quốc/? /tế/? /lao/ /động/ ) => IsoDate(NIL, 5, 1) }
+  { (/ngày/ /thành/ /lập/ /đảng/ /cộng/? /sản/? /việt/? /nam/?) => IsoDate(NIL, 2, 3) }
   { (/memorial/ /day/) => JH_MEMORIAL }
   { (/mother/ $POSS /day/) => JH_MOTHERS_DAY }
   { (/father/ $POSS /day/) => JH_FATHERS_DAY }
