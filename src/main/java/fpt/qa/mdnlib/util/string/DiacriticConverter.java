@@ -1,5 +1,10 @@
 package fpt.qa.mdnlib.util.string;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -87,6 +92,8 @@ public class DiacriticConverter {
         vnCharMap.put('ỹ', 'y');
         vnCharMap.put('ý', 'y');
         vnCharMap.put('ỵ', 'y');
+        vnCharMap.put('ð', 'd');
+        vnCharMap.put('û', 'u');
     }
     
     public static boolean hasDiacriticAccents(String str) {
@@ -105,6 +112,11 @@ public class DiacriticConverter {
         for (int i = 0; i < str.length(); i++) {
             Character sourceChar = str.charAt(i);
             Character destinationChar = vnCharMap.get(sourceChar);
+            if (Character.isUpperCase(sourceChar)){
+            	if (vnCharMap.get(Character.toLowerCase(sourceChar)) != null){
+            		destinationChar = Character.toUpperCase(vnCharMap.get(Character.toLowerCase(sourceChar)));
+            	}
+            }
             if (destinationChar != null) {
                 result += destinationChar;
             } else {
@@ -113,5 +125,48 @@ public class DiacriticConverter {
         }
         
         return result;
+    }
+    
+    public static void removeDiacritics(String fileIn, String fileOut){
+    	try {
+			BufferedWriter writer = new BufferedWriter(new FileWriter(fileOut));
+			BufferedReader reader = new BufferedReader(new FileReader(fileIn));
+			
+			String line;
+			while((line = reader.readLine()) != null){
+				if (hasDiacriticAccents(line)){
+					writer.write(removeDiacritics(line) + "\n");
+				}
+			}
+			
+			reader.close();
+			writer.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    }
+    
+    public static void main(String[] args){
+//    	removeDiacritics("/home/ngan/Work/AHongPhuong/Intent_detection/data/qc/train.txt",
+//    			"/home/ngan/Work/AHongPhuong/Intent_detection/data/qc/non-diacritic-train.txt");
+    	String resourceDir = "/home/ngan/Work/AHongPhuong/RubyWeb/rubyweb/src/main/resources/dicts/";
+    	String nonDiacriticDir = "/home/ngan/Work/AHongPhuong/RubyWeb/rubyweb/src/main/resources/dicts/non-diacritic/";
+//    	removeDiacritics(resourceDir + "actors.txt",
+//    			nonDiacriticDir + "actors.txt");
+//    	removeDiacritics(resourceDir + "directors.txt",
+//    			nonDiacriticDir + "directors.txt");
+//    	removeDiacritics(resourceDir + "genreMap.txt",
+//    			nonDiacriticDir + "genreMap.txt");
+//    	removeDiacritics(resourceDir + "languageMap.txt",
+//    			nonDiacriticDir + "languageMap.txt");
+//    	removeDiacritics(resourceDir + "countryMap.txt",
+//    			nonDiacriticDir + "countryMap.txt");
+//    	removeDiacritics(resourceDir + "stopwords.txt",
+//    			nonDiacriticDir + "stopwords.txt");
+//    	removeDiacritics(resourceDir + "conjunction.txt",
+//    			nonDiacriticDir + "conjunction.txt");
+//    	removeDiacritics("/home/ngan/Work/AHongPhuong/Intent_detection/data/tmp/movies.txt",
+//    			"/home/ngan/Work/AHongPhuong/Intent_detection/data/tmp/non-diacritic-movies.txt");
     }
 }

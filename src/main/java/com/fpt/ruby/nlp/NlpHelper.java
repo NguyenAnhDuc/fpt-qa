@@ -13,6 +13,7 @@ import fpt.qa.additionalinformation.modifier.AbsoluteTime;
 import fpt.qa.additionalinformation.modifier.AbsoluteTime.TimeResult;
 import fpt.qa.intent.detection.IntentConstants;
 import fpt.qa.intent.detection.MovieIntentDetection;
+import fpt.qa.intent.detection.NonDiacriticMovieIntentDetection;
 import fpt.qa.mdnlib.struct.pair.Pair;
 
 public class NlpHelper {
@@ -21,6 +22,7 @@ public class NlpHelper {
 	static{
 		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
 		MovieIntentDetection.init(dir + "/qc", dir + "/dicts");
+		NonDiacriticMovieIntentDetection.init(dir + "/qc/non-diacritic", dir + "/dicts/non-diacritic");
 		conjunctionHelper = new ConjunctionHelper(dir);
 		absoluteTime = new AbsoluteTime( NlpHelper.class.getClassLoader().getResource("").getPath() + "vnsutime/" );
 	}

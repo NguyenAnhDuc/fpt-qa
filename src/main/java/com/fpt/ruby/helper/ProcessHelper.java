@@ -19,6 +19,8 @@ import com.fpt.ruby.service.mongo.MovieTicketService;
 import com.fpt.ruby.service.mongo.QuestionStructureService;
 
 import fpt.qa.intent.detection.MovieIntentDetection;
+import fpt.qa.intent.detection.NonDiacriticMovieIntentDetection;
+import fpt.qa.mdnlib.util.string.DiacriticConverter;
 
 public class ProcessHelper {
 
@@ -35,6 +37,11 @@ public class ProcessHelper {
 	public static RubyAnswer getAnswer(String question, MovieFlyService movieFlyService, MovieTicketService movieTicketService) {
 		RubyAnswer rubyAnswer = new RubyAnswer();
 		String intent = MovieIntentDetection.getIntent(question);
+		String intent2 = NonDiacriticMovieIntentDetection.getIntent(question);
+		System.out.println("Intent 2: " + intent2);
+		if (!DiacriticConverter.hasDiacriticAccents(question)){
+			intent = intent2;
+		}
 		System.out.println("Intent: " + intent);
 		rubyAnswer.setQuestion(question);
 		rubyAnswer.setIntent(intent);
