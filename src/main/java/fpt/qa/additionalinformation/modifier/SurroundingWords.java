@@ -71,8 +71,8 @@ public class SurroundingWords {
 	}
 	
 	public static void main(String[] args) {
-		SurroundingWords testSW = new SurroundingWords( "" );
-		System.out.println( testSW.countSurroundingWords(  "toi la nguoi tho lo, sinh ra tren dat mo", "dat mo", "test" ) );
+		SurroundingWords testSW = new SurroundingWords( "src/main/resources" );
+		System.out.println( testSW.countSurroundingWords(  "Rạp lotte chiếu phim gì?", "cin_name", "cin_name" ) );
 	}
 
 }

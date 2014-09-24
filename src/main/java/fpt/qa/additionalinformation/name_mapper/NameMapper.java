@@ -86,7 +86,7 @@ public class NameMapper {
 	}
 	
 	/**
-	 * Display data in map
+	 * Display datas in map
 	 * 
 	 * @param 
 	 * @return 

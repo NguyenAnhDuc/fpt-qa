@@ -8,8 +8,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-import com.fpt.qa.platform.vntime.TimeRange;
-import com.fpt.qa.platform.vntime.VnTimeParser;
+import fpt.qa.vnTime.vntime.TimeRange;
+import fpt.qa.vnTime.vntime.VnTimeParser;
 
 public class AbsoluteTime{
 	private Date currentDate;
@@ -50,28 +50,15 @@ public class AbsoluteTime{
 		TimeResult timeResult = new TimeResult();
 
 		DateFormat dateFormatHour = new SimpleDateFormat( "yyyy-MM-dd HH:mm" );
-		DateFormat dateFormatDay = new SimpleDateFormat( "yyyy-MM-dd" );
-		DateFormat dateFormatMonth = new SimpleDateFormat( "yyyy-MM" );
 
-		List< TimeRange > results = getTimeParser().parser3( text, dateFormatHour.format( getCurrentDate() ) );
-		System.out.println( results.get( 0 ) );
-
-		try{
-			timeResult.setBeginTime( dateFormatHour.parse( results.get( 0 ).getfDate() ) );
-			timeResult.setEndTime( dateFormatHour.parse( results.get( 0 ).getsDate() ) );
-		}catch ( ParseException e ){
-			try{
-				timeResult.setBeginTime( dateFormatDay.parse( results.get( 0 ).getfDate() ) );
-				timeResult.setEndTime( addDays( dateFormatDay.parse( results.get( 0 ).getsDate() ), 1 ) );
-			}catch ( ParseException e1 ){
-				try{
-					timeResult.setBeginTime( dateFormatMonth.parse( results.get( 0 ).getfDate() ) );
-					timeResult.setEndTime( addMonths( dateFormatMonth.parse( results.get( 0 ).getsDate() ), 1 ) );
-				}catch ( ParseException e2 ){
-					e2.printStackTrace();
-				}
-				e1.printStackTrace();
-			}
+		List<TimeRange> results;
+		try {
+			results = getTimeParser().parser3( text, dateFormatHour.format( getCurrentDate() ) );
+			timeResult.setBeginTime(results.get(0).getfDate());
+			timeResult.setEndTime(results.get(0).getsDate());
+			System.out.println( results.get( 0 ) );
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return timeResult;

@@ -1,4 +1,4 @@
-##############################
+ ##############################
  #   Author : Thien Bui-Duc   #
  ##############################
  ENV.defaults["stage.limitIters"] = 50
@@ -395,12 +395,12 @@
 	  { text: /[Ss]ắp\stới/ => TOMORROW }
 	  { text: /[Hh]ôm\skia/ => BEFOREYESTERDAY}
 	  { text: /[Nn]gày\shôm\skia/ => BEFOREYESTERDAY }
-	  { text: /[Hh]ôm\snay/ => TODAY }
-	  { text: /[Nn]gày\smai/ => TOMORROW }
+	 # { text: /[Hh]ôm\snay/ => TODAY }
+	 #{ text: /[Nn]gày\smai/ => TOMORROW }
 	  { text: /[Hh]ôm\ssau/ => TOMORROW }
 	  { text: /[Đđ]êm\snay/ => TONIGHT } 
 	  { text: /[Nn]gày\skia/ => AFTERTOMORROW }
-	  #{ text: /mai/ => TOMORROW }
+	 #{ text: /mai/ => TOMORROW }
 	  
 	  { text:/[Tt]háng\sgiêng|[Tt]háng\smột/ => JANUARY }
 	  { text:/[Tt]hángshai|[Tt]háng\s2/ => FEBRUARY }
@@ -591,3 +591,6 @@
     pattern: ( ( [ $hasTemporal & !{ temporal::IS_TIMEX_SET } ] ) ( $EARLY_LATE_MOD ) ),
 	result: TemporalCompose( ADD_MODIFIER, $1[0].temporal.value, GetTag($2[0], "Modifier") )
   }
+  
+  
+ 
