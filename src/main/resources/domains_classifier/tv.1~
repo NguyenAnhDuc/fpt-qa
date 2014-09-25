@@ -1,0 +1,11 @@
+1/lịch/N 2/chiếu_phim/V 3/tại/E 4/rạp/N 5/quốc_gia/N 6/tối/N 7/nay/P 8/thế_nào/P
+1 2
+4 5
+ 
+1/lịch/N 2/chiếu_phim/V 3/tại/E 4/rạp/N 5/quốc_gia/N 6/thế_nào/P 7/tối/N 8/nay/P 
+1 2
+4 5
+
+1/cho/E 2/tôi/P 3/biết/V 4/lịch/N 5/chiếu_phim/N 6/tối/N 7/nay/P 8/tại/E 9/rạp/N 10/quốc_gia/N 
+4 5
+9 10
