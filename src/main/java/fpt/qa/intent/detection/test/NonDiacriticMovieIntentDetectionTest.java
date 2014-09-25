@@ -32,7 +32,7 @@ public class NonDiacriticMovieIntentDetectionTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		NonDiacriticMovieIntentDetection.init("/home/ngan/Work/AHongPhuong/RubyWeb/rubyweb/src/main/resources/qc/non-diacritic",
+		NonDiacriticMovieIntentDetection.init("/home/ngan/Work/AHongPhuong/RubyWeb/rubyweb/src/main/resources/qc/movie/non-diacritic",
 //        		"/home/ngan/Work/AHongPhuong/Intent_detection/data/qc/1", 
                 "/home/ngan/Work/AHongPhuong/RubyWeb/rubyweb/src/main/resources/dicts/non-diacritic");
 		test("/home/ngan/Work/AHongPhuong/Intent_detection/data/tmp/non-diacritic-movies.txt",

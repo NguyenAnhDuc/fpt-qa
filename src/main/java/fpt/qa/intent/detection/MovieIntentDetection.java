@@ -237,7 +237,7 @@ public class MovieIntentDetection {
     }
 
     public static void main(String[] args) {
-        init("/home/ngan/Work/AHongPhuong/RubyWeb/rubyweb/src/main/resources/qc",
+        init("/home/ngan/Work/AHongPhuong/RubyWeb/rubyweb/src/main/resources/qc/movie",
 //        		"/home/ngan/Work/AHongPhuong/Intent_detection/data/qc/1", 
                 "/home/ngan/Work/AHongPhuong/RubyWeb/rubyweb/src/main/resources/dicts");
         

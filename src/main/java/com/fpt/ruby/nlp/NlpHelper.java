@@ -21,8 +21,8 @@ public class NlpHelper {
 	private static AbsoluteTime absoluteTime;
 	static{
 		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
-		MovieIntentDetection.init(dir + "/qc", dir + "/dicts");
-		NonDiacriticMovieIntentDetection.init(dir + "/qc/non-diacritic", dir + "/dicts/non-diacritic");
+		MovieIntentDetection.init(dir + "/qc/movie", dir + "/dicts");
+		NonDiacriticMovieIntentDetection.init(dir + "/qc/movie/non-diacritic", dir + "/dicts/non-diacritic");
 		conjunctionHelper = new ConjunctionHelper(dir);
 		absoluteTime = new AbsoluteTime( NlpHelper.class.getClassLoader().getResource("").getPath() + "vnsutime/" );
 	}
