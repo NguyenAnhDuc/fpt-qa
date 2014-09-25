@@ -3,6 +3,7 @@ package fpt.qa.rubyweb;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
@@ -17,17 +18,21 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.fpt.ruby.crawler.CrawlPhimChieuRap;
 import com.fpt.ruby.model.MovieTicket;
+import com.fpt.ruby.model.TVProgram;
+import com.fpt.ruby.service.TVProgramService;
 import com.fpt.ruby.service.mongo.MovieTicketService;
 import com.mongodb.BasicDBObject;
 
 @Controller
-@RequestMapping("/admin")
+@RequestMapping("")
 public class AdminCotroller {
 	private MovieTicketService movieTicketService;
+	private TVProgramService tvProgramService;
 	
 	@PostConstruct
 	public void init(){
 		this.movieTicketService = new MovieTicketService();
+		this.tvProgramService = new TVProgramService();
 	}
 	
 	@RequestMapping(value="/crawlPhimChieuRap", method = RequestMethod.POST,  produces = "application/json; charset=UTF-8")
@@ -98,27 +103,36 @@ public class AdminCotroller {
 		//return new BasicDBObject().append("status", "success");
 	}
 	
-	@RequestMapping(value="", method = RequestMethod.GET)
+	@RequestMapping(value="admin", method = RequestMethod.GET)
 	public String admin(Model model){
 		return "admin";
 	}
 	
-	@RequestMapping(value="/crawl", method = RequestMethod.GET)
+	@RequestMapping(value="/admin-crawl-manual", method = RequestMethod.GET)
 	public String crawlManual(Model model){
 		return "crawl";
 	}
 	
-	@RequestMapping(value="/crawlPhimChieuRap", method = RequestMethod.GET)
+	@RequestMapping(value="admin-crawl-phim-chieu-rap", method = RequestMethod.GET)
 	public String crawlPhimChieuRap(Model model){
 		return "crawlPhimChieuRap";
 	}
 	
 	
-	@RequestMapping(value="show", method = RequestMethod.GET)
+	@RequestMapping(value="admin-show-tickets", method = RequestMethod.GET)
 	public String showTickets(Model model){
 		List<MovieTicket> tickets = movieTicketService.findTicketToShow();
 		model.addAttribute("tickets",tickets);
+		HashSet<String> movies = new HashSet<String>();
+		HashSet<String> cinemas = new HashSet<String>();
 		return "showTicket";
+	}
+	
+	@RequestMapping(value="admin-show-tvprograms", method = RequestMethod.GET)
+	public String showTVPrograms(Model model){
+		List<TVProgram> tvPrograms = tvProgramService.findProgramToShow();
+		model.addAttribute("tvPrograms",tvPrograms);
+		return "showTV";
 	}
 	
 	@RequestMapping(value = "/deleteTicket", method = RequestMethod.GET)

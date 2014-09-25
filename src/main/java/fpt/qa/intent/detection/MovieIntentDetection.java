@@ -45,7 +45,7 @@ public class MovieIntentDetection {
             return IntentConstants.MOV_COUNTRY;
         }
 
-        if (tunedSent.contains("của đạo diễn nào")) {
+        if (tunedSent.contains("của đạo diễn nào") || tunedSent.contains("cua dao dien nao")) {
             return IntentConstants.MOV_DIRECTOR;
         }
 
@@ -84,7 +84,7 @@ public class MovieIntentDetection {
         }
         if (tunedSent.indexOf("DTI\t") == 0) {
             if (tunedSent.contains("phim") || tunedSent.contains("suất chiếu") || 
-                    tunedSent.contains("xuất chiếu")) {
+                    tunedSent.contains("xuất chiếu") || (tunedSent.contains(" chiếu ") && tunedSent.contains("mấy giờ"))) {
                 return IntentConstants.MOV_DATE;
             }
             return IntentConstants.CIN_DATE;
@@ -110,32 +110,36 @@ public class MovieIntentDetection {
         }
         
         if (tunedSent.indexOf("HUM\t") == 0){
-            if (tunedSent.contains("đạo diễn")){
+            if (tunedSent.contains("đạo diễn") || tunedSent.contains("dao dien")){
                 return IntentConstants.MOV_DIRECTOR;
             }
-            if (tunedSent.contains("diễn viên") || tunedSent.contains("sao nào") || tunedSent.contains("dàn sao")){
+            if (tunedSent.contains("diễn viên") || tunedSent.contains("sao nào") || tunedSent.contains("dàn sao") ||
+            		tunedSent.contains("dien vien") || tunedSent.contains("sao nao") || tunedSent.contains("dan sao")){
                 return IntentConstants.MOV_ACTOR;
             }
             return IntentConstants.MOV_AUDIENCE;
         }
 
-        if (tunedSent.indexOf("NAM\t") == 0 && tunedSent.contains("thuộc thể loại")) {
+        if (tunedSent.indexOf("NAM\t") == 0 && (tunedSent.contains("thuộc thể loại") || tunedSent.contains("thuoc the loai"))) {
             return IntentConstants.MOV_GENRE;
         }
-        if (tunedSent.indexOf("NAM\t") == 0 && (tunedSent.contains("phim gì") || tunedSent.contains("phim nào"))) {
+        if (tunedSent.indexOf("NAM\t") == 0 && (tunedSent.contains("phim gì") || tunedSent.contains("phim nào") ||
+        		tunedSent.contains("phim gi") || tunedSent.contains("phim nao"))) {
             return IntentConstants.MOV_TITLE;
         }
-        if (tunedSent.indexOf("NAM\t") == 0 && (tunedSent.contains("rạp nào") || tunedSent.contains("rạp gì"))) {
+        if (tunedSent.indexOf("NAM\t") == 0 && (tunedSent.contains("rạp nào") || tunedSent.contains("rạp gì") ||
+        		tunedSent.contains("rap nao") || tunedSent.contains("rap gi"))) {
             return IntentConstants.CIN_NAME;
         }
-        if (tunedSent.indexOf("NAM\t") == 0 && tunedSent.contains("diễn viên nào")) {
+        if (tunedSent.indexOf("NAM\t") == 0 && (tunedSent.contains("diễn viên nào") || tunedSent.contains("dien vien nao")
+        		|| tunedSent.contains("dien vien nào"))) {
             return IntentConstants.MOV_ACTOR;
         }
-        if (tunedSent.indexOf("NAM\t") == 0 && tunedSent.contains("nào")) {
+        if (tunedSent.indexOf("NAM\t") == 0 && (tunedSent.contains("nào") || tunedSent.contains("nao"))) {
             int idx = tunedSent.indexOf("nào");
             int idx1 = Math.abs(idx - tunedSent.indexOf("phim"));
-            int idx2 = Math.abs(idx - tunedSent.indexOf("rạp"));
-            int idx3 = Math.abs(idx - tunedSent.indexOf("diễn viên"));
+            int idx2 = Math.abs(idx - tunedSent.indexOf("rạp") > 0 ? tunedSent.indexOf("rạp") : tunedSent.indexOf("rap"));
+            int idx3 = Math.abs(idx - tunedSent.indexOf("diễn viên") > 0 ? tunedSent.indexOf("diễn viên") : tunedSent.indexOf("dien vien"));
             int idx4 = Math.abs(idx - tunedSent.indexOf("sao"));
 
             if (idx3 > idx4) {
@@ -153,6 +157,9 @@ public class MovieIntentDetection {
         if (tunedSent.indexOf("NAM\t") == 0) {
             int idx1 = tunedSent.indexOf("phim");
             int idx2 = tunedSent.indexOf("rạp");
+            if (idx2 < 0){
+            	idx2 = tunedSent.indexOf("rap");
+            }
             if (idx2 > 0 && idx1 < 0) {
                 return IntentConstants.CIN_NAME;
             }
@@ -160,13 +167,17 @@ public class MovieIntentDetection {
             if (idx3 < 0) {
                 idx3 = tunedSent.indexOf("sao");
             }
-            if (tunedSent.indexOf("diễn viên nào") > 0 || idx3 > 0 && idx3 < idx1) {
+            if (idx3 < 0) {
+                idx3 = tunedSent.indexOf("dien vien");
+            }
+            if (tunedSent.indexOf("diễn viên nào") > 0 || tunedSent.indexOf("dien vien nao") > 0 || idx3 > 0 && idx3 < idx1) {
                 return IntentConstants.MOV_ACTOR;
             }
             idx3 = tunedSent.indexOf("đạo diễn");
 
-            if (tunedSent.indexOf("đạo diễn nào") > 0 || idx3 > 0 && (idx3 < idx1
-                    || tunedSent.contains("ai là") || tunedSent.contains("là ai"))) {
+            if (tunedSent.indexOf("đạo diễn nào") > 0 || tunedSent.indexOf("dao dien nao") > 0 || idx3 > 0 && (idx3 < idx1
+                    || tunedSent.contains("ai là") || tunedSent.contains("là ai") ||
+                    tunedSent.contains("ai la") || tunedSent.contains("la ai"))) {
                 return IntentConstants.MOV_DIRECTOR;
             }
             if (idx2 > 0 && idx2 < idx1) {
@@ -176,7 +187,8 @@ public class MovieIntentDetection {
         }
 
         if (tunedSent.indexOf("DES\t") == 0) {
-            if (tunedSent.indexOf("đường đến") == 4 || tunedSent.indexOf("chỉ đường") == 4) {
+            if (tunedSent.indexOf("đường đến") == 4 || tunedSent.indexOf("chỉ đường") == 4 ||
+            		tunedSent.indexOf("duong den") == 4 || tunedSent.indexOf("chi duong") == 4) {
                 return IntentConstants.CIN_MAP;
             }
             return IntentConstants.MOV_IMDBRATING;
@@ -200,11 +212,19 @@ public class MovieIntentDetection {
         }
 
         if (tunedSent.indexOf("POL\t") == 0) {
-            if (tunedSent.contains("đặt vé") || tunedSent.contains("còn")) {
+        	// handle wrong question classification result such as in the sentence:
+        	// rạp vincom bà triệu tối nay chiếu the maze runner mấy giờ
+        	if (tunedSent.contains("mấy giờ") || tunedSent.contains("may gio")){
+        		return IntentConstants.MOV_DATE;
+        	}
+        	
+            if (tunedSent.contains("đặt vé") || tunedSent.contains("còn") ||
+            		tunedSent.contains("dat ve")  || tunedSent.contains("đặt ve")|| tunedSent.contains("con")
+            		|| tunedSent.contains("đat vé") || tunedSent.contains("dat vé")) {
                 return IntentConstants.TICKET_STATUS;
             }
 
-            if (tunedSent.contains("ghế")) {
+            if (tunedSent.contains("ghế") || tunedSent.contains("ghe")) {
                 return IntentConstants.UNDEF;
             }
             if (tunedSent.contains("phim") && (tunedSent.contains(" 2D") || tunedSent.contains(" 3D"))) {
@@ -241,10 +261,10 @@ public class MovieIntentDetection {
 //        }
         
         String sent1 = "rạp lotte chiếu phim the november man lúc mấy giờ";
-        String sent2 = "có phim gì hay không";
-        String sent3 = "có phim gì đang chiếu";
-        String sent4 = "hôm qua có phim gì không";
-        String sent5 = "hôm kia có phim gì không";
+        String sent2 = "phim tâm lý kinh dị nào đang chiếu rạp";
+        String sent3 = "phim tâm lý tình cảm nào đang chiếu rạp";
+        String sent4 = "rạp vincom bà triệu tối nay chiếu the maze runner lúc mấy giờ?";
+        String sent5 = "rạp vincom bà triệu tối nay chiếu the maze runner mấy giờ?";
         
         System.out.println(getTunedSent(sent1));
         System.out.println(getIntent(sent1));

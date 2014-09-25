@@ -61,6 +61,7 @@
   # Durations
   TIMEUNIT_MAP = {
     "năm": YEAR,
+    "nam": YEAR,
     "tháng": MONTH,
     "ngày": DAY,
 	"hôm":DAY,
@@ -83,6 +84,7 @@
   
   BASIC_NUMBER_MAP = {
     "nhất":1,
+    "không":0,
 	"mốt": 1,
     "một": 1,
     "hai": 2,
@@ -223,6 +225,7 @@
   ENV.defaults["ruleType"] = "tokens"
   
   { (/năm/) => YEAR }
+  { (/nam/) => YEAR }
   { (/tháng/) => MONTH }
   { (/ngày/) => DAY }
   { (/hôm/) => DAY }
@@ -263,20 +266,13 @@
   
   
   # Day of Week
-  { (/thứ_hai|thứ_2/) => MONDAY }
-  { (/thứ_ba/) => TUESDAY }
-  { (/thứ_tư/) => WEDNESDAY }
-  { (/thứ_năm/) => THURSDAY }
-  { (/thứ_sáu/) => FRIDAY }
-  { (/thứ_bảy/) => SATURDAY }
-  { (/chủ_nhật/) => SUNDAY }
-#  { (/mons?/) => MONDAY }
-#  { (/tues?/) => TUESDAY }
-#  { (/weds?/) => WEDNESDAY }
-#  { (/thurs?/) => THURSDAY }
-#  { (/fris?/) => FRIDAY }
-#  { (/sats?/) => SATURDAY }
-#  { (/suns?/) => SUNDAY }
+  { (/[Tt]hứ/ /2/) => MONDAY }
+  { (/[Tt]hứ/ /3/) => TUESDAY }
+  { (/[Tt]hứ/ /4/) => WEDNESDAY }
+  { (/[Tt]hứ/ /5/) => THURSDAY }
+  { (/[Tt]hứ/ /6/) => FRIDAY }
+  { (/[Tt]hứ/ /7/) => SATURDAY }
+  { (/[C]n/) => SUNDAY }
 
 #  { (/weekends?/) => WEEKEND }
 #  { (/weekdays?/) => WEEKDAY }
@@ -285,21 +281,30 @@
    { (/tháng_giêng|tháng_một/) => JANUARY }
 #  { (/januarys?/) => JANUARY }
 #  { (/februarys?/) => FEBRUARY }
-   { (/tháng_hai/) => FEBRUARY }
+   { (/tháng/ /hai/) => FEBRUARY }
 #  { (/marchs?/) => MARCH }
-   { (/tháng_ba/) => MARCH }
+   { (/tháng/ /ba/) => MARCH }
 #  { (/aprils?/) => APRIL }
-   { (/tháng_tư/) => APRIL }
+   { (/tháng/ /tư/) => APRIL }
 #  { (/mays?/) => MAY }
-  { (/tháng_năm/) => MAY }
-#  { (/junes?/) => JUNE }
-#  { (/julys?/) => JULY }
-#  { (/augusts?/) => AUGUST }
-#  { (/septembers?/) => SEPTEMBER }
-#  { (/octobers?/) => OCTOBER }
-#  { (/novembers?/) => NOVEMBER }
-#  { (/decembers?/) => DECEMBER }
+  { (/tháng/ /năm/) => MAY }
+  { (/tháng/ /sáu/) => JUNE }
 
+#  { (/julys?/) => JULY }
+   { (/tháng/ /bảy/) => JULY }
+#  { (/augusts?/) => AUGUST }
+   { (/tháng/ /tám/) => AUGUST }
+#  { (/septembers?/) => SEPTEMBER }
+   { (/tháng/ /chín/) => SEPTEMBER }
+#  { (/octobers?/) => OCTOBER }
+   { (/tháng//mười/) => OCTOBER }
+#  { (/novembers?/) => NOVEMBER }
+   #{ (/tháng/ /mười/ /một/) => OCTOBER }
+#  { (/decembers?/) => DECEMBER }
+ #  { (/tháng/ /mười/ /hai/) => OCTOBER }
+
+	
+  { (/chiều_muộn/) => InexactTime (TimeRange ( IsoTime( 16, 0, 0), IsoTime( 19, 0, 0) ) )  }
   { (/tháng_sáu/) => JUNE }
   { (/tháng_bảy/) => JULY }
   { (/tháng_tám/) => AUGUST }
@@ -355,7 +360,7 @@
   { text:/[Ll]úc\ssáng/ => MORNING }
   { text:/[Ll]úc\schiều/ => AFTERNOON }
   { text:/[Ll]úc\stối/ => EVENING }
-  
+  { text:/[Bb]ây\sgiờ/ => InexactTime( TimeRange(IsoTime(8, 0, 0), IsoTime(23, 0, 0))) }
   { text:/[Bb]an\ssáng/ => MORNING }
   { text:/[Bb]an\schiều/ => AFTERNOON }
   { text:/[Bb]an\stối/ => EVENING }
@@ -365,9 +370,10 @@
   { text:/[Ll]úc\sxẩm\stối/ => DUSK }
   { text:/[Ll]úc\schập\stối/ => DUSK }
   { text:/[Ll]úc\schiều\stối/ => DUSK }
-
+  
+  { text:/[Cc]hiều\smuộn/ => InexactTime( TimeRange(IsoTime(16, 0, 0), IsoTime(19, 0, 0))) }
   { text:/[Ll]úc\s[Cc]hạng\svạng/ => TWILIGHT }
-  { text:/[Ll]úc\s[Cc]hiều \smuộn/ => TWILIGHT }
+  #{ text:/[Ll]úc\s[Cc]hiều\smuộn/ => TWILIGHT }
   { text:/[Ll]úc\s[Bb]ình\sminh/ => DAWN }
   { text:/[Ll]úc\s[Rr]ạng\sđông/ => SUNRISE }
   { text:/[Ll]úc\s[Rr]ạng\ssáng/ => SUNRISE }
@@ -388,16 +394,19 @@
   
   
   # Hôm nay, hôm nay, ngày mai, đêm nay , ngày kia, hôm kia(ngày hôm kia)
-	  { text: /[Hh]ôm\squa/ => YESTERDAY }
-	  { text: /[Hh]ôm\skia/ => BEFOREYESTERDAY }
+	  #{ text: /[Hh]ôm\squa/ => YESTERDAY }
+	  { text: /[Ss]ắp/=> TOMORROW }
+	  { text: /[Ss]ắp\stới/ => TOMORROW }
+	  { text: /[Hh]ôm\skia/ => BEFOREYESTERDAY}
 	  { text: /[Nn]gày\shôm\skia/ => BEFOREYESTERDAY }
 	  { text: /[Hh]ôm\snay/ => TODAY }
 	  { text: /[Nn]gày\smai/ => TOMORROW }
 	  { text: /[Hh]ôm\ssau/ => TOMORROW }
 	  { text: /[Đđ]êm\snay/ => TONIGHT } 
 	  { text: /[Nn]gày\skia/ => AFTERTOMORROW }
+	  { text: /0\sgiờ/ => IsoTime(0,0,0) }
 	  
-	  { text:/[Tt]háng\sgiêng|[Tt]háng\smột|[Tt]háng\s1/ => JANUARY }
+	  { text:/[Tt]háng\sgiêng|[Tt]háng\smột/ => JANUARY }
 	  { text:/[Tt]hángshai|[Tt]háng\s2/ => FEBRUARY }
 	  { text:/[Tt]háng\sba|[Tt]háng\s3/ => MARCH }
 	  { text:/[Tt]háng\stư|[Tt]háng\sbốn|[Tt]háng\s4/ => APRIL }
@@ -435,21 +444,22 @@
 	  { text: /(\d\d?)(:?(\d\d))(:\d\d)?\s*(chiều|tối)/ => TemporalCompose(INTERSECT, IsoTime($1,$3,$4), PM) }
 	  { text: /(\d\d?)(h|\sgiờ\s)\s*sáng/ => TemporalCompose(INTERSECT, IsoTime($1,"0",NIL), AM) }
 	  { text: /(\d\d?)(h|\sgiờ\s)\s*(chiều|tối)/ => TemporalCompose(INTERSECT, IsoTime($1,"0",NIL), PM) }
-  
-  
+  	  { text: /(\d\d?)(h|giờ)(\d\d?)/ => IsoTime($1,$2,NIL) }
+  	  
+  	  
   
   #Bắt ngày tháng năm tiếng Việt
   
-	  { text: /[Nn]gày\s(mùng\s|mồng\s)?(\d+)[-|\/](\d+)[-|\/](\d+)/ => IsoDate($4, $3, $2) }   
-	  { text: /([Mm]ùng\s|[Mm]ồng\s)(\d+)[-|\/](\d+)[-|\/](\d+)/ => IsoDate($4, $3, $2) } 
-	  { text: /[Nn]gày\s(mùng\s|mồng\s)?(\d+)[-|\/](\d+)/ => IsoDate(NIL, $3, $2) }
+	  { text: /([Nn]gày\s|[Mm]ùng\s|[Mm]ồng\s)?(\d+)[-|\/](\d+)[-|\/](\d+)/ => IsoDate($4, $3, $2) }   
+	  #{ text: /([Nn]gày\s|[Mm]ùng\s|[Mm]ồng\s)?(\d+)[-|\/](\d+)[-|\/](\d+)/ => IsoDate($4, $3, $2) } 
+	  { text: /([Nn]gày\s|[Mm]ùng\s|[Mm]ồng\s)?(\d+)[-|\/](\d+)/ => IsoDate(NIL, $3, $2) }
 	  { text: /[Nn]ăm\s(\d+)/ => IsoDate($1, NIL, NIL) }
 	  { text: /[Nn]ăm\s(\d+)/ => IsoDate(Concat("XX",$1), NIL, NIL) }
-	  { text: /[Nn]gày\s(\d+)\stháng\s(\d+)\snăm\s(\d+)/ => IsoDate($3, $2, $1) }
+	  { text: /[Nn]gày\s(\d+)(\stháng\s|)?(\d+)(\snăm\s|)?(\d+)/ => IsoDate($3, $2, $1) }
 	  { text: /[Nn]gày\s(\d+)\stháng\s(\d+)/ => IsoDate(NIL, $2, $1) }
-	  { text: /([Nn]gày\s)?([Mm]ùng\s|[Mm]ồng\s)(\d+)/ => IsoDate(NIL, NIL, $3) }
+	  { text: /([Nn]gày\s|[Mm]ùng\s|[Mm]ồng\s)?(\d+)/ => IsoDate(NIL, NIL, $2) }
 	  { text: /[Nn]gày\s(\d+)/ => IsoDate(NIL, NIL, $1) }
-
+	  { text: / (\d+)[-|\/](\d+)[-|\/](\d+)/ => IsoDate($3, $2, $1) }
    
   #Bắt thập niên
 	  { text: /[Nn]hững\snăm\s($Decades)/ => IsoDate( Concat("XX", DECADES_MAP[Lowercase($1)]) , NIL, NIL) }
@@ -457,10 +467,7 @@
 	  { text: /[Tt]hế\skỉ\s(\d+)(\ssau\scông\snguyên)?/ => IsoDate(Concat($1, "XX"),NIL, NIL) }
 	  { text: /[Tt]hế\skỉ\s(\d+)(\strước\scông\snguyên)/ => IsoDate(Concat(Concat("-",$1),"XX"),NIL, NIL) }
   
-  
-  
-  
-  	 
+
   # Durations: ba tháng (tuổi)?
 	  { text: /(\d+)[-\s]($TEUnits)([-\s]tuổi)?/ => Duration( TIMEUNIT_MAP[Lowercase($2)], $1 )	}
 	  { text: /\s($BasicNumTerm)[-\s]($TEUnits)([-\s]tuổi)?/ =>
@@ -502,12 +509,7 @@
 	  ENV.defaults["stage"] = 3
 	  ENV.defaults["ruleType"] = "composite"
 
-  #từ hôm nay tới ngày mai
-	 { 	
-		 name: "temporal-composite-8:ranges",
-		 pattern: ( /từ/ ([ { temporal::IS_TIMEX_TIME } | { temporal::IS_TIMEX_DATE }]) /tới|đến|-/ ([ { temporal::IS_TIMEX_TIME } | { temporal::IS_TIMEX_DATE }])),
-		 result: TimeRange( $1[0].temporal.value, $2[0].temporal.value ) 
-	 }
+ 
   
   # Sang năm , sang tháng, sang ngày
   
@@ -517,10 +519,11 @@
 		 result: RelativeTime( NEXT, $1[0].temporal.value ) 
 	 }
 	 
-	 
-  { name: "temporal-composite-6b",
+	# thứ 2 tuần tới, tháng 3 năm sau, mùa hè sang năm
+  { 
+    name: "temporal-composite-6b",
     priority: 20,
-    pattern: (  ( [ $hasTemporal & !{ temporal::IS_TIMEX_SET } ] ) ( $REL_MOD )),
+    pattern: (  ( [ $hasTemporal & !{ temporal::IS_TIMEX_SET } ] ) /|tuần|tháng|năm/? ( $REL_MOD )),
 	result: RelativeTime( GetTag($2[0], "TemporalOp"), $1[0].temporal.value )
   }
 	
@@ -536,10 +539,10 @@
     pattern: (
 	 (
 	  ( [ $hasTemporal ] ) ( [ { temporal::IS_TIMEX_DATE } | { temporal::IS_TIMEX_TIME } ] ) | 
-      ( [ { temporal::IS_TIMEX_DATE } ] ) /|trong|của|vào|lúc/ ( [ { temporal::IS_TIMEX_TIME } ] ) |
-      ( [ { temporal::IS_TIMEX_TIME } | { temporal::IS_TIMEX_DURATION } ] ) /trong|của|vào/?  ( [ { temporal::IS_TIMEX_DATE } ] | [ { temporal::IS_TIMEX_SET } ]) |
-      ( [ { temporal::IS_TIMEX_DATE } | { temporal::IS_TIMEX_TIME } ] ) /trong|của|vào|/? ( [ $hasTemporal ] )) ),
-	result: TemporalCompose(INTERSECT, $1[0].temporal, $1[-1].temporal)
+      ( [ { temporal::IS_TIMEX_DATE } ] ) /|trong|của|vào|lúc/? ( [ { temporal::IS_TIMEX_TIME } ] ) |
+      ( [ { temporal::IS_TIMEX_TIME } | { temporal::IS_TIMEX_DURATION } ] ) /|trong|của|vào|lúc/?  ( [ { temporal::IS_TIMEX_DATE } ] | [ { temporal::IS_TIMEX_SET } ]) |
+      ( [ { temporal::IS_TIMEX_DATE } | { temporal::IS_TIMEX_TIME } ] ) /|trong|của|vào|lúc/? ( [ $hasTemporal ] )) ),
+	result: TemporalCompose(INTERSECT, $1[0].temporal.value, $1[-1].temporal.value)
   }
   
   #ngày trước một ngày nào đó ie: ngày trước ngày thứ hai
@@ -562,6 +565,7 @@
 			  $2[0].temporal,
 			  DAY)
   }
+  
   #đầu ngày, cuối ngày, giữa ngày
   { name: "temporal-composite-6a",
     pattern: ( /the/? ( $EARLY_LATE_MOD ) ( [ $hasTemporal & !{ temporal::IS_TIMEX_SET } ] ) ),
@@ -586,20 +590,12 @@
     pattern: ( ( $EARLY_LATE_MOD ) ( [ $hasTemporal & !{ temporal::IS_TIMEX_SET } ] ) ),
 	result: TemporalCompose( ADD_MODIFIER, $2[0].temporal.value, GetTag($1[0], "Modifier") )
   }
-  #chiều muộn
-  { name: "temporal-composite-6a",
-    pattern: ( ( [ $hasTemporal & !{ temporal::IS_TIMEX_SET } ] ) ( $EARLY_LATE_MOD ) ),
-	result: TemporalCompose( ADD_MODIFIER, $1[0].temporal.value, GetTag($2[0], "Modifier") )
-  }
   
-   # expand: timex later|earlier|late => one timex
-  { name: "temporal-composite-4",
-    pattern: ( ( [ { temporal::IS_TIMEX_DURATION } ] )  ($REL_MOD) ),
-	result: TemporalCompose(OFFSET, TIME_REF,
-	         TemporalCompose( MULTIPLY, $0[0].temporal,
-			 :case {
-			   $2 =~ (/trước/) => -1,
-			   :else => 1
-             }))
-  }
+  #chiều muộn
+  #{ name: "temporal-composite-6a",
+   # pattern: ( ( [ $hasTemporal & !{ temporal::IS_TIMEX_SET } ] ) ( $EARLY_LATE_MOD ) ),
+	#result: TemporalCompose( ADD_MODIFIER, $1[0].temporal.value, GetTag($2[0], "Modifier") )
+  #}
+  
+  
  

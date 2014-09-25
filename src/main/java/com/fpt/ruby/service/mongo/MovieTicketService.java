@@ -44,8 +44,10 @@ public class MovieTicketService {
 		Date date = new Date();
 		date.setHours(0);date.setMinutes(0);date.setSeconds(0);
 		for (MovieTicket movieTicket : movieTickets){
-			if (movieTicket.getDate() != null)
-				tickets.add(movieTicket);
+			if (movieTicket.getDate() != null && 
+				(movieTicket.getDate().getDate() == date.getDate() && movieTicket.getDate().getMonth() == date.getMonth() 
+				 && movieTicket.getDate().getYear() == date.getYear()))
+				 tickets.add(movieTicket);
 		}
 		return tickets;
 	}
