@@ -14,16 +14,16 @@ public class ConjunctionWithTypeTest{
 
     public static void main( String[] args ){
 
-        ConjunctionWithType conjunctionWithType = new ConjunctionWithType( "resources/" );
+        ConjunctionWithType conjunctionWithType = new ConjunctionWithType( "SRC/MAIN/resources/" );
         //conjunctionWithType.loadConjunctionType( new File( "resources/conjunction/movies_infor.txt" ) );
 
         System.out.println( TEXT5 );
-        for( Pair< String, String > element : conjunctionWithType.getOriginRelevantConjunctionsWithType( TEXT5 ) ){
+        for( Pair< String, String > element : conjunctionWithType.getOriginRelevantConjunctionsWithType( TEXT3 ) ){
             System.out.println( element.first + " " + element.second );
         }
 
-        for( Pair< ArrayList< String >, String > element : conjunctionWithType.getListRelevantConjunctionsWithType( TEXT5 ) ){
-            System.out.println( element.first + " " + element.second );
-        }
+//        for( Pair< ArrayList< String >, String > element : conjunctionWithType.getListRelevantConjunctionsWithType( TEXT5 ) ){
+//            System.out.println( element.first + " " + element.second );
+//        }
     }
 }

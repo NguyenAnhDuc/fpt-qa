@@ -15,7 +15,7 @@ public class ConjunctionTest{
     public static void main( String[] args ){
 
 	// INITIALIZE A CONJUNCTION CHECKER
-        ConjunctionWithType conjunctionWithType = new ConjunctionWithType( "" );
+        ConjunctionWithType conjunctionWithType = new ConjunctionWithType( "src/main/resources" );
 
 	// LOAD CONJUNCTION FILE
         conjunctionWithType.loadConjunctionType( new File( "movies_infor.txt" ) );

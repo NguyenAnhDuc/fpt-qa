@@ -13,6 +13,7 @@ import fpt.qa.additionalinformation.modifier.AbsoluteTime;
 import fpt.qa.additionalinformation.modifier.AbsoluteTime.TimeResult;
 import fpt.qa.intent.detection.IntentConstants;
 import fpt.qa.intent.detection.MovieIntentDetection;
+import fpt.qa.intent.detection.NonDiacriticMovieIntentDetection;
 import fpt.qa.mdnlib.struct.pair.Pair;
 
 public class NlpHelper {
@@ -20,7 +21,8 @@ public class NlpHelper {
 	private static AbsoluteTime absoluteTime;
 	static{
 		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
-		MovieIntentDetection.init(dir + "/qc", dir + "/dicts");
+		MovieIntentDetection.init(dir + "/qc/movie", dir + "/dicts");
+		NonDiacriticMovieIntentDetection.init(dir + "/qc/movie/non-diacritic", dir + "/dicts/non-diacritic");
 		conjunctionHelper = new ConjunctionHelper(dir);
 		absoluteTime = new AbsoluteTime( NlpHelper.class.getClassLoader().getResource("").getPath() + "vnsutime/" );
 	}
@@ -69,7 +71,7 @@ public class NlpHelper {
 				break;
 			}
 		}
-		return question.toLowerCase().substring(0,j);
+		return question.toLowerCase().substring(0,j).replaceAll("(\\d+)(h)", "$1 giờ");
 	}
 	
 	public static TimeExtract getTimeCondition(String text){
