@@ -70,7 +70,7 @@ public class NlpHelper {
 				break;
 			}
 		}
-		return question.toLowerCase().substring(0,j);
+		return question.toLowerCase().substring(0,j).replaceAll("(\\d+)(h)", "$1 giờ");
 	}
 	
 	public static TimeExtract getTimeCondition(String text){
