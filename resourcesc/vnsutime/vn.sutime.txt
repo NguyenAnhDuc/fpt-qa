@@ -61,6 +61,7 @@
   # Durations
   TIMEUNIT_MAP = {
     "năm": YEAR,
+    "nam": YEAR,
     "tháng": MONTH,
     "ngày": DAY,
 	"hôm":DAY,
@@ -83,6 +84,7 @@
   
   BASIC_NUMBER_MAP = {
     "nhất":1,
+    "không":0,
 	"mốt": 1,
     "một": 1,
     "hai": 2,
@@ -223,6 +225,7 @@
   ENV.defaults["ruleType"] = "tokens"
   
   { (/năm/) => YEAR }
+  { (/nam/) => YEAR }
   { (/tháng/) => MONTH }
   { (/ngày/) => DAY }
   { (/hôm/) => DAY }
@@ -285,7 +288,7 @@
    { (/tháng/ /tư/) => APRIL }
 #  { (/mays?/) => MAY }
   { (/tháng/ /năm/) => MAY }
-#  { (/tháng/ /sáu/) => JUNE }
+  { (/tháng/ /sáu/) => JUNE }
 
 #  { (/julys?/) => JULY }
    { (/tháng/ /bảy/) => JULY }
@@ -301,7 +304,7 @@
  #  { (/tháng/ /mười/ /hai/) => OCTOBER }
 
 	
-	
+  { (/chiều_muộn/) => InexactTime (TimeRange ( IsoTime( 16, 0, 0), IsoTime( 19, 0, 0) ) )  }
   { (/tháng_sáu/) => JUNE }
   { (/tháng_bảy/) => JULY }
   { (/tháng_tám/) => AUGUST }
@@ -367,9 +370,10 @@
   { text:/[Ll]úc\sxẩm\stối/ => DUSK }
   { text:/[Ll]úc\schập\stối/ => DUSK }
   { text:/[Ll]úc\schiều\stối/ => DUSK }
-
+  
+  { text:/[Cc]hiều\smuộn/ => InexactTime( TimeRange(IsoTime(16, 0, 0), IsoTime(19, 0, 0))) }
   { text:/[Ll]úc\s[Cc]hạng\svạng/ => TWILIGHT }
-  { text:/[Ll]úc\s[Cc]hiều \smuộn/ => TWILIGHT }
+  #{ text:/[Ll]úc\s[Cc]hiều\smuộn/ => TWILIGHT }
   { text:/[Ll]úc\s[Bb]ình\sminh/ => DAWN }
   { text:/[Ll]úc\s[Rr]ạng\sđông/ => SUNRISE }
   { text:/[Ll]úc\s[Rr]ạng\ssáng/ => SUNRISE }
@@ -400,7 +404,7 @@
 	  { text: /[Hh]ôm\ssau/ => TOMORROW }
 	  { text: /[Đđ]êm\snay/ => TONIGHT } 
 	  { text: /[Nn]gày\skia/ => AFTERTOMORROW }
-	  { text: /mai/ => TOMORROW }
+	  { text: /0\sgiờ/ => IsoTime(0,0,0) }
 	  
 	  { text:/[Tt]háng\sgiêng|[Tt]háng\smột/ => JANUARY }
 	  { text:/[Tt]hángshai|[Tt]háng\s2/ => FEBRUARY }
@@ -440,8 +444,9 @@
 	  { text: /(\d\d?)(:?(\d\d))(:\d\d)?\s*(chiều|tối)/ => TemporalCompose(INTERSECT, IsoTime($1,$3,$4), PM) }
 	  { text: /(\d\d?)(h|\sgiờ\s)\s*sáng/ => TemporalCompose(INTERSECT, IsoTime($1,"0",NIL), AM) }
 	  { text: /(\d\d?)(h|\sgiờ\s)\s*(chiều|tối)/ => TemporalCompose(INTERSECT, IsoTime($1,"0",NIL), PM) }
-  
-  
+  	  { text: /(\d\d?)(h|giờ)(\d\d?)/ => IsoTime($1,$2,NIL) }
+  	  
+  	  
   
   #Bắt ngày tháng năm tiếng Việt
   
@@ -587,10 +592,10 @@
   }
   
   #chiều muộn
-  { name: "temporal-composite-6a",
-    pattern: ( ( [ $hasTemporal & !{ temporal::IS_TIMEX_SET } ] ) ( $EARLY_LATE_MOD ) ),
-	result: TemporalCompose( ADD_MODIFIER, $1[0].temporal.value, GetTag($2[0], "Modifier") )
-  }
+  #{ name: "temporal-composite-6a",
+   # pattern: ( ( [ $hasTemporal & !{ temporal::IS_TIMEX_SET } ] ) ( $EARLY_LATE_MOD ) ),
+	#result: TemporalCompose( ADD_MODIFIER, $1[0].temporal.value, GetTag($2[0], "Modifier") )
+  #}
   
   
  
