@@ -16,7 +16,7 @@ public class MovieIntentDetection {
     static VnIntentDetection classifier;
 
     public static void init(String qcDir, String dictDir) {
-        FreqConjDict.loadConjList(dictDir + "/conjunction.txt");
+        FreqConjDict.loadConjList(dictDir + "/movie_conjunction.txt");
         classifier = new VnIntentDetection(qcDir);
         classifier.init();
 
