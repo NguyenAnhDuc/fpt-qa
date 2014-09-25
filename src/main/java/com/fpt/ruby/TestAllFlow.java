@@ -108,7 +108,7 @@ public class TestAllFlow {
 		question = "phim nào hay  nhất";
 		System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++");
 		System.out.println("Ruby answer: ");
-		System.out.println(ProcessHelper.getAnswer(question, movieFlyService, movieTicketService).getAnswer());
+		//System.out.println(ProcessHelper.getAnswer(question, movieFlyService, movieTicketService).getAnswer());
 	}
 }
 

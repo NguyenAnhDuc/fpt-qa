@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.fpt.ruby.helper.ProcessHelper;
 import com.fpt.ruby.model.RubyAnswer;
 import com.fpt.ruby.nlp.NlpHelper;
+import com.fpt.ruby.service.LogService;
 import com.fpt.ruby.service.MovieFlyService;
 import com.fpt.ruby.service.PersonService;
 import com.fpt.ruby.service.mongo.MovieTicketService;
@@ -25,7 +26,8 @@ public class AppController {
 	MovieTicketService movieTicketService;
 	@Autowired
 	MovieFlyService movieFlyService;
-	
+	@Autowired
+	LogService logService;
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	
@@ -49,7 +51,7 @@ public class AppController {
 		//QuestionStructure questionStructure = new QuestionStructure();
 		// Process answer
 		System.out.println(movieFlyService.test);
-		rubyAnswer =  ProcessHelper.getAnswer(question,movieFlyService,movieTicketService);
+		rubyAnswer =  ProcessHelper.getAnswer(question,movieFlyService,movieTicketService,logService);
 		return rubyAnswer;
 		//return app.getAnswer(question);
 	}

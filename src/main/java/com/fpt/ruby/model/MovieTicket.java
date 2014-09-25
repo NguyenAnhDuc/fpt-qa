@@ -62,4 +62,11 @@ public class MovieTicket {
 		this.date = date;
 	}
 	
+	public String toShow(){
+		StringBuilder result = new StringBuilder().append("{");
+		if (cinema != null) result.append("Cinema: " + cinema + ",");
+		if (movie != null) result.append("Movie: " + movie + ",");
+		result.append("}");
+		return result.toString();
+	}
 }

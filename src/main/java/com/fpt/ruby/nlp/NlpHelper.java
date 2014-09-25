@@ -48,6 +48,7 @@ public class NlpHelper {
 		return movieTicket;
 	}
 	
+	
 	public static QuestionStructure processQuestionStructure(String question){
 		QuestionStructure questionStructure = new QuestionStructure();
 		questionStructure.setKey(normalizeQuestion(question));

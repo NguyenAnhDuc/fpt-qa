@@ -1,4 +1,4 @@
-package fpt.qa.additionalinformation.parsing;
+/*package fpt.qa.additionalinformation.parsing;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -104,3 +104,4 @@ public class ApplyPOSTag {
 	}
 
 }
+*/

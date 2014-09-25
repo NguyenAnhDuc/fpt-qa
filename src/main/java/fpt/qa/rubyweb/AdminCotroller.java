@@ -8,6 +8,7 @@ import java.util.List;
 
 import javax.annotation.PostConstruct;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -16,9 +17,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import sun.util.logging.resources.logging;
+
 import com.fpt.ruby.crawler.CrawlPhimChieuRap;
+import com.fpt.ruby.model.Log;
 import com.fpt.ruby.model.MovieTicket;
 import com.fpt.ruby.model.TVProgram;
+import com.fpt.ruby.service.LogService;
 import com.fpt.ruby.service.TVProgramService;
 import com.fpt.ruby.service.mongo.MovieTicketService;
 import com.mongodb.BasicDBObject;
@@ -26,14 +31,12 @@ import com.mongodb.BasicDBObject;
 @Controller
 @RequestMapping("")
 public class AdminCotroller {
+	@Autowired
 	private MovieTicketService movieTicketService;
+	@Autowired
 	private TVProgramService tvProgramService;
-	
-	@PostConstruct
-	public void init(){
-		this.movieTicketService = new MovieTicketService();
-		this.tvProgramService = new TVProgramService();
-	}
+	@Autowired
+	private LogService logService;
 	
 	@RequestMapping(value="/crawlPhimChieuRap", method = RequestMethod.POST,  produces = "application/json; charset=UTF-8")
 	@ResponseBody
@@ -139,6 +142,27 @@ public class AdminCotroller {
 		List<TVProgram> tvPrograms = tvProgramService.findProgramToShow();
 		model.addAttribute("tvPrograms",tvPrograms);
 		return "showTV";
+	}
+	
+	@RequestMapping(value="admin-show-logs", method = RequestMethod.GET)
+	public String showLogs(Model model, @RequestParam("num") String numString){
+		List<Log> logs = logService.findLogToShow();
+		List<Log> results = new ArrayList<Log>();
+		int numLog = 0;
+		try {
+			numLog = Integer.parseInt(numString);
+		}
+		catch (Exception ex){
+			numLog=0;
+		}
+		if (numLog==0){
+			model.addAttribute("logs",logs);
+			return "showLog";
+		}
+		for (int  i=0;i<numLog;i++){
+			results.add(logs.get(i));
+		}
+		return "showLog";
 	}
 	
 	@RequestMapping(value = "/deleteTicket", method = RequestMethod.GET)

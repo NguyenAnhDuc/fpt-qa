@@ -1,7 +1,7 @@
 package com.fpt.ruby.service;
 
-import java.util.Date;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.context.ApplicationContext;
@@ -9,11 +9,12 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.stereotype.Service;
 
 import com.fpt.ruby.config.SpringMongoConfig;
-import com.fpt.ruby.model.MovieTicket;
 import com.fpt.ruby.model.TVProgram;
 
+@Service
 public class TVProgramService {
 	private MongoOperations mongoOperations;
 	public TVProgramService(MongoOperations mongoOperations){
