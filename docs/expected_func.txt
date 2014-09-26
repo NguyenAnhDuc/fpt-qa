@@ -26,3 +26,37 @@ Movie:
  + khung giờ chiếu
  + địa chỉ, khoảng cách so với 1 địa điểm, đường đi đến 1 rạp chiếu phim
  + không gian, chất lượng phục vụ
+ 
+ 
+ TV:
+ - Chương trình X phát sóng vào khung giờ nào
+ - Tối nay có chương trình nào
+ - chương trình X được phát trên kênh nào
+ - chương trình x được phát trên kênh y vào khung giờ nào
+ - kênh Y đang chiếu chương trình gì
+ - kênh Y sắp chiếu chương trình gì
+ - kênh Y chiếu chương trình gì
+ - kênh Y chiếu chương trình gì trong khoảng thời gian từ D1 đến D2
+ - đang có chương trình gì
+ - chương trình X hết lúc mấy giờ
+ - lịch chiếu tất cả chương trình trên kênh Y hôm nay
+ - mấy giờ có chương trình X trên kênh Y
+
+ 
+ 
+ 
+ - đang có chương trình THỂ THAO nào
+ - kênh nào đang có THỜI SỰ
+ - kênh Y đang chiếu PHIM gì
+ - PHIM 4 giờ đến 6 giờ trên kênh Y
+ - hôm nay/9 giờ tối kênh Y có chiếu chương trình X không
+ - hôm nay có chương trình X không
+ - hôm nay chương trình X chiếu lúc mấy giờ
+ - chương trình x có trên kênh Y không
+ - tối nay kênh Y chiếu PHIM gì
+ - PHIM gì chiếu trên kênh Y lúc 9 giờ tối nay
+ - chủ nhật tuần này chương trình X chiếu lúc mấy giờ
+ - 9 giờ tối nay có PHIM gì
+ - chiều nay kênh Y có gì
+ - có PHIM gì từ 4 giờ đến 6 giờ
+ 
