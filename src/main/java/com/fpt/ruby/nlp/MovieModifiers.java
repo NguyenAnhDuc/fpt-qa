@@ -10,7 +10,7 @@ import java.util.Map;
 
 import com.fpt.ruby.helper.RedisHelper;
 
-public class Modifiers {
+public class MovieModifiers {
 	
 	public static Map<String, String> genreMap = new HashMap<String, String>();
 	public static Map<String, String> countryMap = new HashMap<String, String>();
@@ -104,8 +104,8 @@ public class Modifiers {
 	}
 	
 
-	public static Modifiers getModifiers(String question){
-		Modifiers res = new Modifiers();
+	public static MovieModifiers getModifiers(String question){
+		MovieModifiers res = new MovieModifiers();
 		
 		List<String> ngrams = getNGrams(question);
 		res.setActor(getActor(ngrams));
