@@ -26,8 +26,7 @@ import com.fpt.ruby.service.TVProgramService;
 
 @Component
 public class CrawlerMyTV {
-	@Autowired
-	private TVProgramService tvProgramService;
+
 	public static String sendGet(String url) throws Exception{
 		HttpClient client = HttpClientBuilder.create().build();
 		HttpGet request = new HttpGet(url);
@@ -50,7 +49,7 @@ public class CrawlerMyTV {
 	}
 	
 	
-	public static List<Channel> getChanel() throws Exception{
+	public List<Channel> getChanel() throws Exception{
 		List< Channel > channels = new ArrayList< Channel >();
 		Document doc = Jsoup.parse(sendGet("http://www.mytv.com.vn/lich-phat-song"));
 		Element chanel = doc.getElementById("channelId");
@@ -65,22 +64,25 @@ public class CrawlerMyTV {
 		return channels;
 	}
 	
-	public void crawlMyTV(){
+	public void crawlMyTV(TVProgramService tvProgramService) throws Exception{
+		System.out.println("Crawling from MYTV");
 		DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
 		String date = df.format(new Date(System.currentTimeMillis()));
-		List< Channel > channels = new ArrayList< Channel >();
+		List< Channel > channels = getChanel();
 		for (Channel channel : channels){
 			try{
-				crawlChannel( channel, date );
+				System.out.println("Crawling from " + channel.getName());
+				crawlChannel( channel, date ,tvProgramService);
 			}
 			catch (Exception ex){
+				ex.printStackTrace();
 				continue;
 			}
 		}
 	}
 	
 	
-	public  void crawlChannel(Channel channel, String date) throws Exception{
+	public  void crawlChannel(Channel channel, String date, TVProgramService tvProgramService) throws Exception{
 		
 		String url="http://www.mytv.com.vn/module/ajax/ajax_get_schedule.php?channelId=" + channel.getId() 
 					+ "&dateSchedule=" + date;

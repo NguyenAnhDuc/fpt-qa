@@ -59,7 +59,7 @@ public class AdminCotroller {
 	public BasicDBObject crawlMyTV(){
 		CrawlerMyTV crawlerMyTV = new CrawlerMyTV();
 		try{
-			crawlerMyTV.crawlMyTV();
+			crawlerMyTV.crawlMyTV(tvProgramService);
 		}
 		catch (Exception ex){
 			System.out.println("Done");

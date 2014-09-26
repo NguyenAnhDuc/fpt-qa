@@ -29,7 +29,7 @@
 			
 			<button type="button" class="btn btn-primary btn-lg btn-block"
 				id="btnSubmit" onclick="crawl()">Crawl schedule from
-				phimchieurap.com</button>
+				mytv.com.vn</button>
 		</div>
 	</tiles:putAttribute>
 </tiles:insertDefinition>

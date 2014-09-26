@@ -40,12 +40,19 @@ public class TVProgramService {
 		List<TVProgram> results = new ArrayList<TVProgram>();
 		Date date = new Date();
 		date.setHours(0);date.setMinutes(0);date.setSeconds(0);
+<<<<<<< HEAD
+		/*for (TVProgram tvProgram : tvPrograms){
+			if (tvProgram.getDate() != null && 
+				(tvProgram.getDate().getDate() == date.getDate() && tvProgram.getDate().getMonth() == date.getMonth() 
+				 && tvProgram.getDate().getYear() == date.getYear()))
+=======
 		for (TVProgram tvProgram : tvPrograms){
 			if (tvProgram.getStart_date() != null && 
 				(tvProgram.getStart_date().getDate() == date.getDate() && tvProgram.getStart_date().getMonth() == date.getMonth() 
 				 && tvProgram.getStart_date().getYear() == date.getYear()))
+>>>>>>> f9a0830623c303a4b2c79a5c4e271435f852d84a
 				 results.add(tvProgram);
-		}
+		}*/
 		return results;
 	}
 	
