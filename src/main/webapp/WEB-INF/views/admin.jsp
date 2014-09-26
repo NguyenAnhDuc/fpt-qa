@@ -7,6 +7,11 @@
 			<input type="submit" class="btn btn-primary btn-lg btn-block"
 				id="btnSubmit" value="Crawl schedule from phimchieurap.com" />
 		</form>
+		<form action="admin-crawl-mytv">
+			<input type="submit" class="btn btn-primary btn-lg btn-block"
+				id="btnSubmit" value="Crawl schedule from mytv.com.vn" />
+		</form>
+		
 		<form action="admin-crawl-manual">
 			<input type="submit" class="btn btn-primary btn-lg btn-block"
 				id="btnSubmit" value="Crawl Manually" />

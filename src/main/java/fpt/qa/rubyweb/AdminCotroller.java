@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import sun.util.logging.resources.logging;
 
 import com.fpt.ruby.crawler.CrawlPhimChieuRap;
+import com.fpt.ruby.crawler.CrawlerMyTV;
 import com.fpt.ruby.model.Log;
 import com.fpt.ruby.model.MovieTicket;
 import com.fpt.ruby.model.TVProgram;
@@ -52,6 +53,21 @@ public class AdminCotroller {
 		}
 		return new BasicDBObject().append("status", "success");
 	}
+	
+	@RequestMapping(value="/crawl-mytv", method = RequestMethod.POST,  produces = "application/json; charset=UTF-8")
+	@ResponseBody
+	public BasicDBObject crawlMyTV(){
+		CrawlerMyTV crawlerMyTV = new CrawlerMyTV();
+		try{
+			crawlerMyTV.crawlMyTV();
+		}
+		catch (Exception ex){
+			System.out.println("Done");
+			return new BasicDBObject().append("status", "failed");
+		}
+		return new BasicDBObject().append("status", "success");
+	}
+	
 	@RequestMapping(value="/old", method = RequestMethod.GET)
 	public String testCombo(Model model){
 		/*AbsoluteTime absoluteTime = new AbsoluteTime();
@@ -121,6 +137,10 @@ public class AdminCotroller {
 		return "crawlPhimChieuRap";
 	}
 	
+	@RequestMapping(value="admin-crawl-mytv", method = RequestMethod.GET)
+	public String crawlMyTV(Model model){
+		return "crawl-mytv";
+	}
 	
 	@RequestMapping(value="admin-show-tickets", method = RequestMethod.GET)
 	public String showTickets(Model model){

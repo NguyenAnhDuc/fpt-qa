@@ -55,8 +55,8 @@ public class CrawlTV {
 				Date date = new Date();
 				date.setHours(Integer.parseInt(times[0]));
 				date.setMinutes(Integer.parseInt(times[1]));
-				tvProgram.setChanel(chanel);
-				tvProgram.setDate(date);
+				tvProgram.setChannel(chanel);
+				//tvProgram.setDate(date);
 				tvProgram.setTitle(programTitle);
 				tvProgram.setType(programType);
 				tvPrograms.add(tvProgram);
@@ -70,12 +70,12 @@ public class CrawlTV {
 	}
 	
 	public static void main(String[] args) throws Exception {
-		List<TVProgram> tvPrograms = crawlChanel("vtv1", "http://vtv.vn/truyen-hinh-truc-tuyen/vtv1.htm");
+	/*	List<TVProgram> tvPrograms = crawlChanel("vtv1", "http://vtv.vn/truyen-hinh-truc-tuyen/vtv1.htm");
 		TVProgramService tvProgramService = new TVProgramService();
 		for (TVProgram tvProgram : tvPrograms){
 			tvProgramService.save(tvProgram);
 			System.out.println(tvProgram.getTitle() + " | " + tvProgram.getType() + " | " + tvProgram.getDate().toLocaleString());
 		}
-				
+				*/
 	}
 }

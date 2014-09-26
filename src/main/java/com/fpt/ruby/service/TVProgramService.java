@@ -40,12 +40,12 @@ public class TVProgramService {
 		List<TVProgram> results = new ArrayList<TVProgram>();
 		Date date = new Date();
 		date.setHours(0);date.setMinutes(0);date.setSeconds(0);
-		for (TVProgram tvProgram : tvPrograms){
+		/*for (TVProgram tvProgram : tvPrograms){
 			if (tvProgram.getDate() != null && 
 				(tvProgram.getDate().getDate() == date.getDate() && tvProgram.getDate().getMonth() == date.getMonth() 
 				 && tvProgram.getDate().getYear() == date.getYear()))
 				 results.add(tvProgram);
-		}
+		}*/
 		return results;
 	}
 	

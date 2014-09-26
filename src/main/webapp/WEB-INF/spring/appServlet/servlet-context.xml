@@ -27,6 +27,7 @@
 	<context:component-scan base-package="fpt.qa.rubyweb" />
 	<context:component-scan base-package="com.fpt.ruby.service" />
 	<context:component-scan base-package="com.fpt.ruby.service.mongo" />
+	<context:component-scan base-package="com.fpt.ruby.crawler" />
 	<!-- Tiles configuration -->
 
 	<bean id="tilesConfigurer"

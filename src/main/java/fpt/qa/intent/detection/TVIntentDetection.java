@@ -11,7 +11,7 @@ import fpt.qa.intent.detection.qc.VnIntentDetection;
  *
  * @author ngan
  */
-public class MovieIntentDetection {
+public class TVIntentDetection {
 
     static VnIntentDetection classifier;
 
