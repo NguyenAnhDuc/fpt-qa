@@ -21,7 +21,6 @@ public class DomainClassifier{
 	private Map< String, ConjunctionChecker > domainDataType1;
 	private Map< String, ConjunctionChecker > domainDataType2;
 	private double importantRatio;
-	private VnTokenizer vnTokenizer;
 	private boolean printDebug;
 
 	public double getImportantRatio() {
@@ -35,8 +34,6 @@ public class DomainClassifier{
 	public DomainClassifier() {
 		domainDataType1 = new HashMap< String, ConjunctionChecker >();
 		domainDataType2 = new HashMap< String, ConjunctionChecker >();
-		
-		vnTokenizer = new VnTokenizer();
 		
 		importantRatio = 2.0;
 		
@@ -54,6 +51,8 @@ public class DomainClassifier{
 	public DomainClassifier( String resourcePath ) {
 		this();
 		loadDomainData( resourcePath + "/domains_classifier" );
+        VnTokenizer.loadSpecialChars( resourcePath + "/dicts/specialchars/special-chars.xml" );
+		VnTokenizer.loadRegexXMLFile( resourcePath + "/regexes/regular-expressions.xml" );
 	}
 
 	private void loadDomainConjunction( String domainName, String type, File file ) {
@@ -107,6 +106,10 @@ public class DomainClassifier{
 
 	public String getDomain( String text ) {
 		if( isPrintDebug() ) System.err.print( "[Domain Classifier] " + text + " " );
+		
+		//Tokenize text
+		text = VnTokenizer.tokenize( text );
+		
 		Map< String, Double > type1Score = computeScore( text, "1" );
 		Map< String, Double > type2Score = computeScore( text, "2" );
 		Map< String, Double > finalScore = computeFinalScore( type1Score, type2Score );
