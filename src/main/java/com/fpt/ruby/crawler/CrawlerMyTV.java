@@ -70,18 +70,18 @@ public class CrawlerMyTV {
 		String date = df.format(new Date(System.currentTimeMillis()));
 		List< Channel > channels = getChanel();
 		for (Channel channel : channels){
-			try{
-				System.out.println("Crawling from " + channel.getName());
-				List< TVProgram > tvPrograms =  crawlChannel( channel, date);
-				tvPrograms = calculateEndTime( tvPrograms );
-				for (TVProgram tvProgram : tvPrograms){
-					tvProgramService.save( tvProgram );
+				try{
+					System.out.println("Crawling from " + channel.getName());
+					List< TVProgram > tvPrograms =  crawlChannel( channel, date);
+					tvPrograms = calculateEndTime( tvPrograms );
+					for (TVProgram tvProgram : tvPrograms){
+						tvProgramService.save( tvProgram );
+					}
 				}
-			}
-			catch (Exception ex){
-				ex.printStackTrace();
-				continue;
-			}
+				catch (Exception ex){
+					ex.printStackTrace();
+					continue;
+				}
 		}
 	}
 	
@@ -157,7 +157,20 @@ public class CrawlerMyTV {
 		}*/
 		//getChanel();
 		//crawlChannel("1","26/09/2014");
+		List< Channel > channels = new ArrayList< Channel >();
+		Document doc = Jsoup.parse(sendGet("http://www.mytv.com.vn/lich-phat-song"));
+		Element chanel = doc.getElementById("channelId");
 		
+		Elements chanElements = chanel.select("option");
+		for (Element element : chanElements){
+			Channel channel = new Channel();
+			channel.setId(element.val());
+			channel.setName(element.text());
+			channels.add(channel);
+			if (channel.getId() == "161"){
+
+			}
+		}
 				
 	}
 }
