@@ -56,7 +56,7 @@ public class CrawlTV {
 				date.setHours(Integer.parseInt(times[0]));
 				date.setMinutes(Integer.parseInt(times[1]));
 				tvProgram.setChanel(chanel);
-				tvProgram.setDate(date);
+				tvProgram.setStart_date(date);
 				tvProgram.setTitle(programTitle);
 				tvProgram.setType(programType);
 				tvPrograms.add(tvProgram);
@@ -74,7 +74,7 @@ public class CrawlTV {
 		TVProgramService tvProgramService = new TVProgramService();
 		for (TVProgram tvProgram : tvPrograms){
 			tvProgramService.save(tvProgram);
-			System.out.println(tvProgram.getTitle() + " | " + tvProgram.getType() + " | " + tvProgram.getDate().toLocaleString());
+			System.out.println(tvProgram.getTitle() + " | " + tvProgram.getType() + " | " + tvProgram.getStart_date().toLocaleString());
 		}
 				
 	}

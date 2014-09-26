@@ -40,9 +40,9 @@ public class TVProgramService {
 		Date date = new Date();
 		date.setHours(0);date.setMinutes(0);date.setSeconds(0);
 		for (TVProgram tvProgram : tvPrograms){
-			if (tvProgram.getDate() != null && 
-				(tvProgram.getDate().getDate() == date.getDate() && tvProgram.getDate().getMonth() == date.getMonth() 
-				 && tvProgram.getDate().getYear() == date.getYear()))
+			if (tvProgram.getStart_date() != null && 
+				(tvProgram.getStart_date().getDate() == date.getDate() && tvProgram.getStart_date().getMonth() == date.getMonth() 
+				 && tvProgram.getStart_date().getYear() == date.getYear()))
 				 results.add(tvProgram);
 		}
 		return results;
