@@ -16,6 +16,7 @@ import com.fpt.ruby.model.TVProgram;
 
 @Service
 public class TVProgramService {
+	private static long ONE_WEEK = 7 * 24 * 60 * 60 * 1000;
 	private MongoOperations mongoOperations;
 	public TVProgramService(MongoOperations mongoOperations){
 		this.mongoOperations = mongoOperations;
@@ -31,9 +32,99 @@ public class TVProgramService {
 	}
 	
 	public List<TVProgram> findByTitle(String title){
-		Query query = new Query(Criteria.where("title").regex("^" + title + "$","i"));
+		Date today = new Date();
+		Date oneWeekLater = new Date(today.getTime() + ONE_WEEK);
+		
+		return findByTitleInPeriod( title, today, oneWeekLater );
+	}
+	
+	public List< TVProgram > findByChanel(String chanel){
+		Date today = new Date();
+		Date oneWeekLater = new Date(today.getTime() + ONE_WEEK);
+		
+		return findInPeriodAtChanel( today, oneWeekLater, chanel );
+	}
+	
+	public List< TVProgram > findByTitleAndChannel(String title, String chanel){
+		Date today = new Date();
+		Date oneWeekLater = new Date(today.getTime() + ONE_WEEK);
+		
+		return findByTitleInPeriodAtChannel( title, today, oneWeekLater, chanel );
+	}
+	
+	public List< TVProgram > findInPeriod(Date start, Date end){
+		Query query = new Query(Criteria.where("start_date").gt( start ).and( "start_date" ).lt( end ));
 		return mongoOperations.find(query, TVProgram.class);
 	}
+	
+	public List< TVProgram > findByTitleInPeriod(String title, Date start, Date end){
+		Query query = new Query(Criteria.where("title").regex("^" + title + "$","i").and( "start_date" ).
+				gt( start ).and( "end_date" ).lt( end ));
+		return mongoOperations.find(query, TVProgram.class);
+	}
+	
+	public List< TVProgram > findInPeriodAtChanel(Date start, Date end, String chanel){
+		Query query = new Query(Criteria.where("chanel").regex("^" + chanel + "$","i").and( "start_date" ).
+				gt( start ).and( "end_date" ).lt( end ));
+		return mongoOperations.find(query, TVProgram.class);
+	}
+	
+	public List< TVProgram > findByTitleInPeriodAtChannel(String title, Date start, Date end, String chanel){
+		Query query = new Query(Criteria.where("chanel").regex("^" + chanel + "$","i").
+				and( "title" ).regex("^" + title + "$","i").and( "start_date" ).
+				and( "start_date" ).gt( start ).and( "end_date" ).lt( end ));
+		return mongoOperations.find(query, TVProgram.class);
+	}
+	
+	public List< TVProgram > findAtTime(Date startDate){
+		Query query = new Query(Criteria.where("start_date").lt( startDate ).and( "end_date" ).gt( startDate ));
+		return mongoOperations.find(query, TVProgram.class);
+	}
+	
+	public List< TVProgram > findByTitleAtTime(String title, Date date){
+		Query query = new Query(Criteria.where("title").regex("^" + title + "$","i").
+				and("start_date").lt( date ).and( "end_date" ).gt( date ));
+		return mongoOperations.find(query, TVProgram.class);
+	}
+	
+	public List< TVProgram > findAtTimeAtChannel(Date date, String chanel){
+		Query query = new Query(Criteria.where("chanel").regex("^" + chanel + "$","i").
+				and("start_date").lt( date ).and( "end_date" ).gt( date ));
+		return mongoOperations.find(query, TVProgram.class);
+	}
+	
+	public List< TVProgram > findByTitleAtTimeAtChannel(String title, Date date, String chanel){
+		Query query = new Query(Criteria.where("chanel").regex("^" + chanel + "$","i").
+				and( "title" ).regex("^" + title + "$","i").and( "start_date" ).
+				and("start_date").lt( date ).and( "end_date" ).gt( date ));
+		return mongoOperations.find(query, TVProgram.class);
+	}
+	
+	
+	public List< TVProgram > findAfter(Date date){
+		Query query = new Query(Criteria.where("start_date").gt( date ));
+		return mongoOperations.find(query, TVProgram.class);
+	}
+	
+	public List< TVProgram > findAfterByTitle(String title, Date date){
+		Query query = new Query(Criteria.where("title").regex("^" + title + "$","i").
+				and("start_date").gt( date ));
+		return mongoOperations.find(query, TVProgram.class);
+	}
+	
+	public List< TVProgram > findAfterAtChannel(Date date, String chanel){
+		Query query = new Query(Criteria.where("chanel").regex("^" + chanel + "$","i").
+				and("start_date").gt( date ));
+		return mongoOperations.find(query, TVProgram.class);
+	}
+	
+	public List< TVProgram > findAfterByTitleAtChannel(String title, Date date, String chanel){
+		Query query = new Query(Criteria.where("chanel").regex("^" + chanel + "$","i").
+				and( "title" ).regex("^" + title + "$","i").and( "start_date" ).
+				and("start_date").gt( date ));
+		return mongoOperations.find(query, TVProgram.class);
+	}
+	
 	
 	public List<TVProgram> findProgramToShow(){
 		List<TVProgram> tvPrograms = mongoOperations.findAll(TVProgram.class);
