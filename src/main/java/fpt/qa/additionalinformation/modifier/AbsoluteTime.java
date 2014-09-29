@@ -52,6 +52,9 @@ public class AbsoluteTime{
 		DateFormat dateFormatHour = new SimpleDateFormat( "yyyy-MM-dd HH:mm" );
 
 		List<TimeRange> results;
+		
+		setCurrentDate( updateCurrentDate() );
+		
 		try {
 			results = getTimeParser().parser3( text, dateFormatHour.format( getCurrentDate() ) );
 			timeResult.setBeginTime(results.get(0).getfDate());
