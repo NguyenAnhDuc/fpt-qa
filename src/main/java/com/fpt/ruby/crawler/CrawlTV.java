@@ -41,7 +41,7 @@ public class CrawlTV {
 		return result.toString();
 	}
 	
-	public static List<TVProgram> crawlChanel(String chanel, String url){
+	/*public static List<TVProgram> crawlChanel(String chanel, String url){
 		List<TVProgram> tvPrograms = new ArrayList<TVProgram>();
 		try{
 			Document doc = Jsoup.parse(sendGet(url));
@@ -55,8 +55,10 @@ public class CrawlTV {
 				Date date = new Date();
 				date.setHours(Integer.parseInt(times[0]));
 				date.setMinutes(Integer.parseInt(times[1]));
-				tvProgram.setChanel(chanel);
-				tvProgram.setDate(date);
+				tvProgram.setChannel(chanel);
+				//tvProgram.setDate(date);
+				tvProgram.setChannel(chanel);
+				tvProgram.setStart_date(date);
 				tvProgram.setTitle(programTitle);
 				tvProgram.setType(programType);
 				tvPrograms.add(tvProgram);
@@ -67,15 +69,15 @@ public class CrawlTV {
 			return tvPrograms;
 		}
 		return tvPrograms;
-	}
+	}*/
 	
 	public static void main(String[] args) throws Exception {
-		List<TVProgram> tvPrograms = crawlChanel("vtv1", "http://vtv.vn/truyen-hinh-truc-tuyen/vtv1.htm");
+	/*	List<TVProgram> tvPrograms = crawlChanel("vtv1", "http://vtv.vn/truyen-hinh-truc-tuyen/vtv1.htm");
 		TVProgramService tvProgramService = new TVProgramService();
 		for (TVProgram tvProgram : tvPrograms){
 			tvProgramService.save(tvProgram);
-			System.out.println(tvProgram.getTitle() + " | " + tvProgram.getType() + " | " + tvProgram.getDate().toLocaleString());
+			System.out.println(tvProgram.getTitle() + " | " + tvProgram.getType() + " | " + tvProgram.getStart_date().toLocaleString());
 		}
-				
+				*/
 	}
 }

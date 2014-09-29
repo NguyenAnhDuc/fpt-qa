@@ -1,5 +1,7 @@
 package com.fpt.ruby.model;
 
+import java.util.Date;
+
 public class RubyAnswer {
 
 	private String question;
@@ -10,20 +12,20 @@ public class RubyAnswer {
 	private String movieTitle;
 	private MovieTicket movieTicket;
 	private QuestionStructure questionStructure;
-	private String beginTime;
-	private String endTime;
+	private Date beginTime;
+	private Date  endTime;
 	
 	
-	public String getBeginTime() {
+	public Date getBeginTime() {
 		return beginTime;
 	}
-	public void setBeginTime(String beginTime) {
+	public void setBeginTime(Date beginTime) {
 		this.beginTime = beginTime;
 	}
-	public String getEndTime() {
+	public Date getEndTime() {
 		return endTime;
 	}
-	public void setEndTime(String endTime) {
+	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
 	public String getIntent() {

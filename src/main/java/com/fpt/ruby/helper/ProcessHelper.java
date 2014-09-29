@@ -7,18 +7,23 @@ import java.util.List;
 
 import org.json.JSONObject;
 
+import com.fpt.ruby.model.Log;
 import com.fpt.ruby.model.MovieFly;
 import com.fpt.ruby.model.MovieTicket;
+import com.fpt.ruby.model.QueryParamater;
 import com.fpt.ruby.model.QuestionStructure;
 import com.fpt.ruby.model.RubyAnswer;
 import com.fpt.ruby.model.TimeExtract;
 import com.fpt.ruby.nlp.AnswerMapper;
 import com.fpt.ruby.nlp.NlpHelper;
+import com.fpt.ruby.service.LogService;
 import com.fpt.ruby.service.MovieFlyService;
 import com.fpt.ruby.service.mongo.MovieTicketService;
 import com.fpt.ruby.service.mongo.QuestionStructureService;
 
 import fpt.qa.intent.detection.MovieIntentDetection;
+import fpt.qa.intent.detection.NonDiacriticMovieIntentDetection;
+import fpt.qa.mdnlib.util.string.DiacriticConverter;
 
 public class ProcessHelper {
 
@@ -32,9 +37,15 @@ public class ProcessHelper {
 		return rubyAnswer;
 	}
 	
-	public static RubyAnswer getAnswer(String question, MovieFlyService movieFlyService, MovieTicketService movieTicketService) {
+	public static RubyAnswer getAnswer(String question, MovieFlyService movieFlyService, MovieTicketService movieTicketService, LogService logService) {
 		RubyAnswer rubyAnswer = new RubyAnswer();
 		String intent = MovieIntentDetection.getIntent(question);
+		System.out.println("Movie Intent: " + intent);
+		String intent2 = NonDiacriticMovieIntentDetection.getIntent(question);
+		System.out.println("Intent 2: " + intent2);
+		if (!DiacriticConverter.hasDiacriticAccents(question)){
+			intent = intent2;
+		}
 		System.out.println("Intent: " + intent);
 		rubyAnswer.setQuestion(question);
 		rubyAnswer.setIntent(intent);
@@ -68,8 +79,8 @@ public class ProcessHelper {
 				List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition
 												(matchMovieTicket, timeExtract.getBeforeDate(), timeExtract.getAfterDate());
 				System.out.println("Size: " + movieTickets.size());
-				if (timeExtract.getBeforeDate() != null) rubyAnswer.setBeginTime(timeExtract.getBeforeDate().toLocaleString());
-				if (timeExtract.getAfterDate() != null) rubyAnswer.setEndTime(timeExtract.getAfterDate().toLocaleString());
+				if (timeExtract.getBeforeDate() != null) rubyAnswer.setBeginTime(timeExtract.getBeforeDate());
+				if (timeExtract.getAfterDate() != null) rubyAnswer.setEndTime(timeExtract.getAfterDate());
 				rubyAnswer.setAnswer(AnswerMapper.getDynamicAnswer(intent, movieTickets));
 				rubyAnswer.setQuestionType(AnswerMapper.Dynamic_Question);
 				rubyAnswer.setMovieTicket(matchMovieTicket);
@@ -94,6 +105,19 @@ public class ProcessHelper {
 			System.out.println("Exception! " + ex.getMessage());
 			ex.printStackTrace();
 		}
+		// Log
+				Log log = new Log();
+				log.setQuestion(question);
+				log.setIntent(rubyAnswer.getIntent());
+				log.setAnswer(rubyAnswer.getAnswer());
+				log.setDate(new Date());
+				QueryParamater queryParamater = new QueryParamater();
+				queryParamater.setBeginTime(rubyAnswer.getBeginTime());
+				queryParamater.setEndTime(rubyAnswer.getEndTime());
+				queryParamater.setMovieTitle(rubyAnswer.getMovieTitle());
+				queryParamater.setMovieTicket(rubyAnswer.getMovieTicket());
+				log.setQueryParamater(queryParamater);
+				logService.save(log);
 		return rubyAnswer;
 	}
 	

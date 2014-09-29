@@ -95,9 +95,9 @@
 										+ result.movieTicket.movie + "</br>";
 							if (result.beginTime != null)
 								dateExtract += 'Begin Time: '
-										+ result.beginTime + "</br>";
+										+ new Date(result.beginTime) + "</br>";
 							if (result.endTime != null)
-								dateExtract += 'End Time: ' + result.endTime
+								dateExtract += 'End Time: ' + new Date( result.endTime);
 										+ "</br>";
 							$('#result-time').html(dateExtract);
 							$('#result-paramaters').html(htmlParamater);

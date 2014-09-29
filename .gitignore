@@ -79,3 +79,9 @@ local.properties
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+<<<<<<< HEAD
+target/*
+=======
+
+*~
+>>>>>>> 010c618beee5401806cce2bbacf55bd6868a70eb

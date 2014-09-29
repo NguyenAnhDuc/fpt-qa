@@ -1,10 +1,6 @@
 mov_title	kungfu panda; kungfu gấu trúc, công phu gấu trúc, Kungfu Panda, Kungfu Gấu Trúc
 
-cin_name	lotte; lotte cantavil, Lotte hà đông, lotte ha dong, lotte cộng hòa,lotte cong hoa, lotte nam sài gòn, lotte nam sai gon, lotte diamond, lotte cinema landmark, lotte hà đông, lotte ha dong, lotte nha trang, lotte da nang, lotte đà nẵng, lotte biên hòa, lotte bien hoa, lotte bình dương, lotte binh duong, lotte phan thiết, lotte phan thiet, lotte cantavil, lotte phú thọ, lotte phu tho
-
 mov_title	home alone; ở nhà một mình
-
-tên_rạp	rạp quốc gia; rạp chiếu phim quốc gia,trung tâm chiếu phim quốc gia, rap quoc gia, rap chieu phim quoc gia, trung tam chieu phim quoc gia
 
 mov_title	frankenstein ; quái vật frankenstein, monster frankenstein
 loại_phim	khoa học viễn tưởng; viễn tưởng, khoa hoc vien tuong, vien tuong
@@ -598,7 +594,6 @@ mov_title	Alligator Alley; Đầm Cá Sấu
 mov_title	Vtv4 2011; Đầm Lầy Bạc
 mov_title	Đầu Bếp Bí Ẩn
 mov_title	Comme Un Chef; Đầu Bếp Trứ Danh
-mov_title	The Chef, The Actor, The Scoundrel; Đầu Bếp, Diễn Viên, Tên Vô Lại
 mov_title	The Warlords; Đầu Danh Trạng
 mov_title	Đầu Gấu Và Mắt Kính
 mov_title	Đầu Sóng Ngọn Gió
@@ -8198,7 +8193,7 @@ mov_title	Donot Cry; Park Bom
 
 
 
-cin_name	CGV Vincom City Towers; CGV Vincom City Tower, CGV Vincom City, CGV Vincom Tower, CGV Vincom Towers, CGV Vincom, Megastar Vincom City Towers, Megastar Vincom City Tower, Megastar Vincom City, Megastar Vincom Tower, Megastar Vincom Towers, Megastar Vincom, Vincom City Tower, Vincom City Towers, Vincom Tower, Vincom Towers, Vincom City
+cin_name	CGV Vincom City Towers; CGV Vincom City Tower, CGV Vincom City, CGV Vincom Tower, CGV Vincom Towers, CGV Vincom, Megastar Vincom City Towers, Megastar Vincom City Tower, Megastar Vincom City, Megastar Vincom Tower, Megastar Vincom Towers, Megastar Vincom, Vincom City Tower, Vincom City Towers, Vincom Tower, Vincom Towers, Vincom City, vincom bà triệu
 cin_name	CGV MIPEC Tower; CGV MIPEC, MIPEC Tower
 cin_name	Lotte Cinema Landmark; Lotte Cinema, Lotte Landmark, Cinema Landmark, Lotte, Landmark
 cin_name	Lotte Cinema Hà Đông; Lotte Hà Đông, Hà Đông
@@ -8208,7 +8203,9 @@ cin_name	Platinum Vincom Long Biên; Platinum Long Biên, Vincom Long Biên
 cin_name	Platinum Garden Mall; Platinum Garden, Garden Mall, Garden, the Garden
 cin_name	Tháng 8 Cinema; Tháng 8, tháng tám, tháng tám cinema
 cin_name	TT Chiếu Phim Quốc Gia; trung tâm chiếu phim quốc gia, Chiếu Phim Quốc Gia, Quốc Gia
-cin_name	Kim Đồng Cinema; Kim Đồng, Dân Chủ Cinema, Dân Chủ, Ngọc Khánh Cinema, Ngọc Khánh
+cin_name	Kim Đồng Cinema; Kim Đồng,
+cin_name	Dân Chủ Cinema, Dân Chủ
+cin_name	Ngọc Khánh Cinema, Ngọc Khánh
 cin_name	CGV Celadon Tân Phú; CGV Celadon, CGV Tân Phú, Megastar Celadon Tân Phú, Megastar Celadon, Megastar Tân Phú, Celadon Tân Phú, Tân Phú, Celadon
 cin_name	CGV Hùng Vương Plaza; CGV Hùng Vương, CGV Plaza, Megastar Hùng Vương Plaza, Megastar Hùng Vương, Megastar Plaza, Hùng Vương Plaza, Hùng Vương
 cin_name	CGV Pandora City; CGV Pandora, Megastar Pandora City, Megastar Pandora, Pandora City, Pandora

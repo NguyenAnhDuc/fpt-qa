@@ -11,8 +11,9 @@ public class TVProgram {
 	private String id;
 	private String title;
 	private String type;
-	private Date date;
-	private String chanel;
+	private Date start_date;
+	private Date end_date;
+	private String channel;
 	public String getId() {
 		return id;
 	}
@@ -31,17 +32,23 @@ public class TVProgram {
 	public void setType(String type) {
 		this.type = type;
 	}
-	public Date getDate() {
-		return date;
+	public String getChannel() {
+		return channel;
 	}
-	public void setDate(Date date) {
-		this.date = date;
+	public void setChannel(String channel) {
+		this.channel = channel;
 	}
-	public String getChanel() {
-		return chanel;
+	public Date getStart_date() {
+		return start_date;
 	}
-	public void setChanel(String chanel) {
-		this.chanel = chanel;
+	public void setStart_date(Date start_date) {
+		this.start_date = start_date;
+	}
+	public Date getEnd_date() {
+		return end_date;
+	}
+	public void setEnd_date(Date end_date) {
+		this.end_date = end_date;
 	}
 	
 }

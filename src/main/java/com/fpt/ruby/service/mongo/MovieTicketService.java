@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.data.mongodb.core.MongoOperations;
@@ -14,8 +16,11 @@ import org.springframework.stereotype.Service;
 import com.fpt.ruby.config.SpringMongoConfig;
 import com.fpt.ruby.model.MovieTicket;
 
+import fpt.qa.rubyweb.HomeController;
+
 @Service
 public class MovieTicketService {
+	private static final Logger logger = LoggerFactory.getLogger(MovieTicketService.class);
 	private final String MT_MOVIE = "movie";
 	private final String MT_CINEMA = "cinema";
 	private final String MT_DATE = "date";
@@ -61,7 +66,6 @@ public class MovieTicketService {
 		query.addCriteria(Criteria.where(MT_TYPE).is(movieTicket.getType()));
 		query.addCriteria(Criteria.where(MT_CITY).is(movieTicket.getCity()));
 		List<MovieTicket> movieTickets = mongoOperations.find(query,MovieTicket.class);
-		System.out.println("Size1: " + movieTickets.size());
 		List<MovieTicket> results = new ArrayList<MovieTicket>();
 		for (MovieTicket moTicket : movieTickets){
 			if (equalDate(moTicket.getDate(), movieTicket.getDate()))
@@ -103,6 +107,7 @@ public class MovieTicketService {
 	}
 	
 	public List<MovieTicket> findMoviesMatchCondition(MovieTicket matchMovieTicket,Date beforeDate, Date afterDate){
+		logger.info( "Find Movie Ticket match condition: " + beforeDate.toLocaleString() + " | " + afterDate.toLocaleString() );
 		List<MovieTicket> movieTickets = mongoOperations.findAll(MovieTicket.class);
 		List<MovieTicket> results = new ArrayList<MovieTicket>();
 		List<MovieTicket> matches = new ArrayList<MovieTicket>();
@@ -134,8 +139,12 @@ public class MovieTicketService {
 		else {
 			for (MovieTicket movieTicket : matches){
 				if (movieTicket.getDate() != null)
+				{
+					logger.debug(movieTicket.getDate().toLocaleString() + " | " + beforeDate.toLocaleString()
+							+ " | " + afterDate.toLocaleString() + " | " + (movieTicket.getDate().before(afterDate) && movieTicket.getDate().after(beforeDate)) );
 					if (movieTicket.getDate().before(afterDate) && movieTicket.getDate().after(beforeDate))
 						results.add(movieTicket);
+				}
 			}
 			return results;
 		}

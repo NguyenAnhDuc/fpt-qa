@@ -171,7 +171,8 @@
 									<th>Movie</th>
 									<th>Cinema</th>
 									<th>Type</th>
-									<th>Date</th>
+									<th>Begin Time</th>
+									<th>End Time</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -184,9 +185,10 @@
 									%> --%>
 									<tr>
 									<td>${tvProgram.title}</td>
-									<td>${tvProgram.chanel}</td>
+									<td>${tvProgram.channel}</td>
 									<td>${tvProgram.type}</td>
-									<td>${tvProgram.date.toLocaleString()}</td>
+									<td>${tvProgram.start_date.toLocaleString()}</td>
+									<td>${tvProgram.end_date.toLocaleString()}</td>
 										<td>
 											<div class="pull-right action-buttons">
 

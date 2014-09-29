@@ -19,6 +19,13 @@ query static db:
  + một phim có phiên bản 3D không
  
  
+ 
+ Sep 24th, 2014: Them xu ly khong dau vao cho intent detection, featured question handling
+ - Them question classification cho cau khong dau
+ - Sua featured question detection (first if) trong file AnswerMapper
+ - Append du lieu khong dau vao file dicts/actors.txt, dicts/directors.txt, dicts/genreMap.txt, dicts/languageMap.txt, dicts/countryMap.txt
+ 
+ 
  NOT ADDRESS YET:
  + Các câu hỏi về vé xem phim, giá vé, đặt vé, vé status
  + Các câu hỏi về đạo diễn, diễn viên trong phim

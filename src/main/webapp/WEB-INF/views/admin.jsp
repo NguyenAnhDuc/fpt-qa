@@ -3,10 +3,19 @@
 	pageEncoding="UTF-8"%>
 <tiles:insertDefinition name="defaultTemplate">
 	<tiles:putAttribute name="body">
+		<form action="admin-crawl-moveek">
+			<input type="submit" class="btn btn-primary btn-lg btn-block"
+				id="btnSubmit" value="Crawl schedule from moveek.com" />
+		</form>
 		<form action="admin-crawl-phim-chieu-rap">
 			<input type="submit" class="btn btn-primary btn-lg btn-block"
 				id="btnSubmit" value="Crawl schedule from phimchieurap.com" />
 		</form>
+		<form action="admin-crawl-mytv">
+			<input type="submit" class="btn btn-primary btn-lg btn-block"
+				id="btnSubmit" value="Crawl schedule from mytv.com.vn" />
+		</form>
+		
 		<form action="admin-crawl-manual">
 			<input type="submit" class="btn btn-primary btn-lg btn-block"
 				id="btnSubmit" value="Crawl Manually" />
