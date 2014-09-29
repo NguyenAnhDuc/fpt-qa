@@ -8,10 +8,7 @@ import java.util.Set;
 
 import org.json.JSONArray;
 
-import com.fpt.ruby.model.Genre;
-import com.fpt.ruby.model.ProductionCompany;
-import com.fpt.ruby.model.ProductionCountry;
-import com.fpt.ruby.model.SpokenLanguage;
+
 /*import com.fpt.ruby.service.GenreService;
 import com.fpt.ruby.service.ProductionCompanyService;
 import com.fpt.ruby.service.ProductionCountryService;
