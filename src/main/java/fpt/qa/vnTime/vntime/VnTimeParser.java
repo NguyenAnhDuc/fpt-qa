@@ -7,6 +7,8 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreLabel;
@@ -16,6 +18,7 @@ import edu.stanford.nlp.time.TimeAnnotations;
 import edu.stanford.nlp.time.TimeExpression;
 import edu.stanford.nlp.util.ArrayCoreMap;
 import edu.stanford.nlp.util.CoreMap;
+import fpt.qa.vnTime.utils.IConstants;
 import fpt.qa.vnTime.utils.RangeParser;
 
 public class VnTimeParser {
@@ -28,7 +31,7 @@ public class VnTimeParser {
 				"edu.stanford.nlp.time.TimeAnnotator");
 		props.setProperty(
 				"sutime.rules",
-				"resources/vnsutime/defs.sutime.txt, resources/vnsutime/vn.sutime.txt, resources/vnsutime/vietnamese.holidays.sutime.txt");
+				"resources/vnsutime/defs.sutime.txt,resources/vnsutime/vn.sutime.removeAccent.txt, resources/vnsutime/vn.sutime.txt, resources/vnsutime/vietnamese.holidays.sutime.txt");
 		this.coreNLP = new StanfordCoreNLP(props);
 	}
 
@@ -46,7 +49,8 @@ public class VnTimeParser {
 				"edu.stanford.nlp.time.TimeAnnotator");
 		String tmp = modelDir + "//defs.sutime.txt," + modelDir
 				+ "//vn.sutime.txt," + modelDir
-				+ "//vietnamese.holidays.sutime.txt";
+				+ "//vietnamese.holidays.sutime.txt," + modelDir
+				+ "//vn.sutime.removeAccent.txt";
 		props.setProperty("sutime.rules", tmp);
 		this.coreNLP = new StanfordCoreNLP(props);
 	}
@@ -84,7 +88,7 @@ public class VnTimeParser {
 				String range = ((TimeExpression) cm
 						.get(TimeExpression.Annotation.class)).getTemporal()
 						.getRange().toString();
-				System.out.println(range);
+				//System.out.println(range);
 			} catch (Exception exception) {
 				//
 			}
@@ -118,6 +122,14 @@ public class VnTimeParser {
 							.getTemporal().toString();
 					// exception.printStackTrace();
 				}
+			} else {
+				// String rangeTmp = range.substring(range.indexOf("IN"));
+				// Pattern pattern = Pattern.compile(IConstants.TIME_REGEX);
+				// Matcher matcher = pattern.matcher(rangeTmp);
+				// List<String> times = new
+				// while(matcher.find()) {
+				//
+				// }
 			}
 
 			rangeList.add(range);
