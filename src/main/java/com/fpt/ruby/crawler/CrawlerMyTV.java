@@ -70,20 +70,34 @@ public class CrawlerMyTV {
 		String date = df.format(new Date(System.currentTimeMillis()));
 		List< Channel > channels = getChanel();
 		for (Channel channel : channels){
-			try{
-				System.out.println("Crawling from " + channel.getName());
-				crawlChannel( channel, date ,tvProgramService);
-			}
-			catch (Exception ex){
-				ex.printStackTrace();
-				continue;
-			}
+				try{
+					System.out.println("Crawling from " + channel.getName());
+					List< TVProgram > tvPrograms =  crawlChannel( channel, date);
+					tvPrograms = calculateEndTime( tvPrograms );
+					for (TVProgram tvProgram : tvPrograms){
+						tvProgramService.save( tvProgram );
+					}
+				}
+				catch (Exception ex){
+					ex.printStackTrace();
+					continue;
+				}
 		}
 	}
 	
+	public List<TVProgram> calculateEndTime(List<TVProgram> tvPrograms){
+		List< TVProgram > results = new ArrayList< TVProgram >();
+		for (int i=0;i<tvPrograms.size()-1;i++){
+			TVProgram tvProgram = new TVProgram();
+			tvProgram = tvPrograms.get( i );
+			tvProgram.setEnd_date( tvPrograms.get( i+1 ).getStart_date() );
+			results.add( tvProgram );
+		}
+		return results;
+	}
 	
-	public  void crawlChannel(Channel channel, String date, TVProgramService tvProgramService) throws Exception{
-		
+	public  List<TVProgram> crawlChannel(Channel channel, String date) throws Exception{
+		List< TVProgram > tvPrograms = new ArrayList< TVProgram >();
 		String url="http://www.mytv.com.vn/module/ajax/ajax_get_schedule.php?channelId=" + channel.getId() 
 					+ "&dateSchedule=" + date;
 		System.out.println(url);
@@ -93,17 +107,18 @@ public class CrawlerMyTV {
 			String tmp = element.text().replace("<\\/strong>", "").replace("<\\/p>", "");
 			String time = tmp.substring(0, 5);
 			String programName = tmp.substring(5,tmp.length());
-			System.out.println("Time: " + time + " | " + "Program Name: " + StringEscapeUtils.unescapeJava(programName));
+			//System.out.println("Time: " + time + " | " + "Program Name: " + StringEscapeUtils.unescapeJava(programName));
 			String[] times = time.split(":");
 			Date channelDate = new Date();
 			channelDate.setHours(Integer.parseInt(times[0]));
 			channelDate.setMinutes(Integer.parseInt(times[1]));
 			TVProgram tvProgram = new TVProgram();
 			tvProgram.setChannel( channel.getName() );
-			tvProgram.setTitle( programName );
+			tvProgram.setTitle( StringEscapeUtils.unescapeJava(programName) );
 			tvProgram.setStart_date( channelDate );
-			tvProgramService.save( tvProgram );
+			tvPrograms.add( tvProgram );
 		}
+		return tvPrograms;
 	}
 	
 	
@@ -142,7 +157,20 @@ public class CrawlerMyTV {
 		}*/
 		//getChanel();
 		//crawlChannel("1","26/09/2014");
+		List< Channel > channels = new ArrayList< Channel >();
+		Document doc = Jsoup.parse(sendGet("http://www.mytv.com.vn/lich-phat-song"));
+		Element chanel = doc.getElementById("channelId");
 		
+		Elements chanElements = chanel.select("option");
+		for (Element element : chanElements){
+			Channel channel = new Channel();
+			channel.setId(element.val());
+			channel.setName(element.text());
+			channels.add(channel);
+			if (channel.getId() == "161"){
+
+			}
+		}
 				
 	}
 }

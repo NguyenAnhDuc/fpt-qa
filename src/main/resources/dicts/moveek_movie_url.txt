@@ -1,27 +1,3 @@
-BHD Star Cineplex 3/2	http://moveek.com/ajax/moviesByCinema/bhd-star-cinema?r=ho-chi-minh
-BHD Star Cineplex Icon 68	http://moveek.com/ajax/moviesByCinema/bhd-star-cineplex-icon-68?r=ho-chi-minh
-BHD Star Cineplex Satra Phạm Hùng	http://moveek.com/ajax/moviesByCinema/bhd-star-cineplex-satra-pham-hung?r=ho-chi-minh
-CGV Celadon Tân Phú	http://moveek.com/ajax/moviesByCinema/cgv-celadon?r=ho-chi-minh
-CGV Crescent Mall	http://moveek.com/ajax/moviesByCinema/megastar-crescent-mall?r=ho-chi-minh
-CGV CT Plaza	http://moveek.com/ajax/moviesByCinema/megastar-ct?r=ho-chi-minh
-CGV Hùng Vương Plaza	http://moveek.com/ajax/moviesByCinema/megastar-ct?r=ho-chi-minh
-CGV Pandora City	http://moveek.com/ajax/moviesByCinema/megastar-pandora-city?r=ho-chi-minh
-CGV Parkson Paragon	http://moveek.com/ajax/moviesByCinema/megastar-pandora-city?r=ho-chi-minh
-Cinebox 212	http://moveek.com/ajax/moviesByCinema/cinebox-212?r=ho-chi-minh
-Cinebox Hoà Bình	http://moveek.com/ajax/moviesByCinema/cinebox-hoa-binh?r=ho-chi-minh
-Galaxy Kinh Dương Vương	http://moveek.com/ajax/moviesByCinema/galaxy-kinh-duong-vuong?r=ho-chi-minh
-Galaxy Nguyễn Du	http://moveek.com/ajax/moviesByCinema/galaxy-nguyen-du?r=ho-chi-minh
-Galaxy Nguyễn Trãi	http://moveek.com/ajax/moviesByCinema/galaxy-nguyen-trai?r=ho-chi-minh
-Galaxy Quang Trung	http://moveek.com/ajax/moviesByCinema/galaxy-quang-trung?r=ho-chi-minh
-Galaxy Tân Bình	http://moveek.com/ajax/moviesByCinema/galaxy-tan-binh?r=ho-chi-minh
-Lotte Cantavil	http://moveek.com/ajax/moviesByCinema/lotte-cinema-cantavil?r=ho-chi-minh
-Lotte Cộng Hoà	http://moveek.com/ajax/moviesByCinema/lotte-cinema-cong-hoa?r=ho-chi-minh
-Lotte Diamond	http://moveek.com/ajax/moviesByCinema/lotte-diamond?r=ho-chi-minh
-Lotte Nam Sài Gòn	http://moveek.com/ajax/moviesByCinema/lotte-q7?r=ho-chi-minh
-Lotte Phú Thọ	http://moveek.com/ajax/moviesByCinema/lotte-phu-tho?r=ho-chi-minh
-Đống Đa	http://moveek.com/ajax/moviesByCinema/dong-da?r=ho-chi-minh
-
-
 CGV MIPEC Tower	http://moveek.com/ajax/moviesByCinema/megastar-mipec-tower?r=ha-noi
 CGV Vincom Center Bà Triệu	http://moveek.com/ajax/moviesByCinema/megastar-vincom-ba-trieu?r=ha-noi
 Lotte Hà Đông	http://moveek.com/ajax/moviesByCinema/lotte-melinh-plaza-ha-dong?r=ha-noi
@@ -32,29 +8,3 @@ Platinum Vincom Long Biên	http://moveek.com/ajax/moviesByCinema/platinum-vincom
 Platinum Vincom Royal City	http://moveek.com/ajax/moviesByCinema/platinum-vincom-royal-city?r=ha-noi
 Rạp Tháng 8	http://moveek.com/ajax/moviesByCinema/rap-thang-8?r=ha-noi
 Trung Tâm Chiếu Phim Quốc Gia	http://moveek.com/ajax/moviesByCinema/trung-tam-chieu-phim-quoc-gia?r=ha-noi
-
-CGV Biên Hòa	http://moveek.com/ajax/moviesByCinema/megastar-coop-mart-bien-hoa?r=bien-hoa
-Lotte Biên Hoà	http://moveek.com/ajax/moviesByCinema/lotte-bien-hoa?r=bien-hoa
-PegaCine Biên Hoà	http://moveek.com/ajax/moviesByCinema/pegacine-bien-hoa?r=bien-hoa
-
-CGV Sense City	http://moveek.com/ajax/moviesByCinema/cgv-sense-city?r=can-tho
-
-CGV Lam Sơn Square	http://moveek.com/ajax/moviesByCinema/cgv-lam-son-square?r=vung-tau
-
-CGV Bình Dương Square	http://moveek.com/ajax/moviesByCinema/cgv-binh-duong-square?r=binh-duong
-Empire Cineplex	http://moveek.com/ajax/moviesByCinema/empire-cineplex?r=binh-duong
-Lotte Bình Dương	http://moveek.com/ajax/moviesByCinema/lotte-binh-duong?r=binh-duong
-
-Lotte Phan Thiết	http://moveek.com/ajax/moviesByCinema/lotte-phan-thiet?r=phan-thiet
-
-Lotte Nha Trang	http://moveek.com/ajax/moviesByCinema/lotte-nha-trang?r=nha-trang
-Platinum Nha Trang Center	http://moveek.com/ajax/moviesByCinema/platinum-nha-trang-center?r=nha-trang
-
-CGV Kim Cúc Plaza	http://moveek.com/ajax/moviesByCinema/cgv-kim-cuc-plaza?r=quy-nhon
-
-CGV Vĩnh Trung Plaza	http://moveek.com/ajax/moviesByCinema/megastar-vinh-trung-plaza?r=da-nang
-Lotte Đà Nẵng	http://moveek.com/ajax/moviesByCinema/lotte-da-nang?r=da-nang
-
-CGV Thuỳ Dương Plaza	http://moveek.com/ajax/moviesByCinema/megastar-thuy-duong-plaza?r=hai-phong
-
-CGV Marine Plaza	http://moveek.com/ajax/moviesByCinema/cgv-marine-plaza?r=ha-long

@@ -56,11 +56,15 @@ public class AbsoluteTime{
 		setCurrentDate( updateCurrentDate() );
 		
 		try {
+<<<<<<< HEAD
 			results = getTimeParser().parser3( text, dateFormatHour.format( new Date() ) );
+=======
+			results = getTimeParser().parser3( text, dateFormatHour.format( getCurrentDate() ) );
 			//System.out.println(results);
 			if(results.isEmpty()) {
 				results.add(new TimeRange());
 			}
+>>>>>>> 51881b104fcff249b62113b9a1d9db3d5c545774
 			timeResult.setBeginTime(results.get(0).getfDate());
 			timeResult.setEndTime(results.get(0).getsDate());
 			System.out.println( timeResult.toString() );

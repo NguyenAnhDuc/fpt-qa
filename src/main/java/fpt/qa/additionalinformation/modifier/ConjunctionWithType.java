@@ -111,6 +111,8 @@ public class ConjunctionWithType extends ConjunctionChecker{
 				originSets.add( origin );
 			}
 		}
+		
+		System.err.println( "[ConjWithType] [Final Conj] " + relConjunctions );
 
 		return relConjunctions;
 	}
@@ -139,12 +141,12 @@ public class ConjunctionWithType extends ConjunctionChecker{
 		
 		for( int i = 0; i < newList.size() - 1; i++ ){
 			for( int j = i + 1; j < newList.size(); j++ ){
-				if( isSmallerSubsetOf( newList.get( j ).first , newList.get( i ).second ) ){
+				if( isSmallerSubsetOf( newList.get( j ).first , newList.get( i ).first ) ){
 					newList.remove( j );
 					j--;
 					continue;
 				}
-				if( isSmallerSubsetOf( newList.get( i ).first , newList.get( j ).second ) ){
+				if( isSmallerSubsetOf( newList.get( i ).first , newList.get( j ).first ) ){
 					Pair temp = newList.get( i );
 					newList.set( i, newList.get( j ) );
 					newList.set( j, temp );
@@ -187,8 +189,8 @@ public class ConjunctionWithType extends ConjunctionChecker{
 	}
 	
 	private static boolean isSmallerSubsetOf( String lhs, String rhs ){
-		Set< String > lhsSet = new HashSet< String >( Arrays.asList( lhs.split( "[\\s\\{\\}]+" ) ) );
-		Set< String > rhsSet = new HashSet< String >( Arrays.asList( rhs.split( "[\\s\\{\\}]+" ) ) );
+		Set< String > lhsSet = new HashSet< String >( Arrays.asList( lhs.toLowerCase().split( "[\\s\\{\\}]+" ) ) );
+		Set< String > rhsSet = new HashSet< String >( Arrays.asList( rhs.toLowerCase().split( "[\\s\\{\\}]+" ) ) );
 		lhsSet.removeAll( Arrays.asList(  new String[]{""} ) );
 		rhsSet.removeAll( Arrays.asList(  new String[]{""} ) );
 		return rhsSet.containsAll( lhsSet ) && rhsSet.size() > lhsSet.size();
