@@ -26,7 +26,7 @@ public class AnswerMapper {
 		if (intent.equals(IntentConstants.MOV_DATE)) return Dynamic_Question; 
 		if (intent.equals(IntentConstants.CIN_NAME)) return Dynamic_Question; 
 		if (intent.equals(IntentConstants.MOV_TITLE)){
-			Modifiers mod = Modifiers.getModifiers(question);
+			MovieModifiers mod = MovieModifiers.getModifiers(question);
 			if (question.contains("nhất") || question.contains("hay") || question.contains("nhat")){
 				return Featured_Question;
 			}
@@ -126,7 +126,7 @@ public class AnswerMapper {
 			return FeaturedMovieHelper.filterByImdb(movieFlies);
 		}
 		
-		Modifiers mod = Modifiers.getModifiers(question);
+		MovieModifiers mod = MovieModifiers.getModifiers(question);
 		if (mod.getActor() != null){
 			return FeaturedMovieHelper.filterByActor(mod.getActor(), movieFlies);
 		}

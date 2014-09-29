@@ -28,6 +28,7 @@ public class ConjunctionWithType extends ConjunctionChecker{
 		nameMapperEngine = new NameMapperEngine( resourcePath );
 		nameMapperEngine.loadDomainMapper( "movie", "movieNames.txt" );
 		nameMapperEngine.loadDomainMapper( "food", "foodNames.txt" );
+		nameMapperEngine.loadDomainMapper( "tv", "tv_domain.txt" );
 		
 		surroundingWords = new SurroundingWords( resourcePath );
 

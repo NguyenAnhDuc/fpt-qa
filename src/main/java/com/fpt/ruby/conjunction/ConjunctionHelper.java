@@ -17,6 +17,7 @@ public class ConjunctionHelper {
 	public ConjunctionHelper(String dir){
 		 conjunctionWithType = new ConjunctionWithType( dir );
 		 conjunctionWithType.loadConjunctionType( new File(dir + "data/movieNames.txt"));
+		 conjunctionWithType.loadConjunctionType( new File(dir + "data/tv_domain.txt"));
 	}
 	
 	public List<Pair<String, String>> getConjunction(String text){
