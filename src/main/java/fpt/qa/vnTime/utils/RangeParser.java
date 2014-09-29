@@ -10,6 +10,9 @@ import fpt.qa.vnTime.vntime.TimeRange;
 
 public class RangeParser {
 
+	@SuppressWarnings("unused")
+	//private static final String DTIME_REGEX = "\\d{4}-\\d{1,2}-\\d{1,2}(T\\d{1,2}:\\d{2})*";
+
 	public RangeParser() {
 		// /
 	}
@@ -39,4 +42,5 @@ public class RangeParser {
 		return timeRange; 
 	}
 
+	
 }

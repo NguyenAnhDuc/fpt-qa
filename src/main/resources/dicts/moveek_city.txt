@@ -1,27 +1,3 @@
-BHD Star Cineplex 3/2	Hồ Chí Minh
-BHD Star Cineplex Icon 68	Hồ Chí Minh
-BHD Star Cineplex Satra Phạm Hùng	Hồ Chí Minh
-CGV Celadon Tân Phú	Hồ Chí Minh
-CGV Crescent Mall	Hồ Chí Minh
-CGV CT Plaza	Hồ Chí Minh
-CGV Hùng Vương Plaza	Hồ Chí Minh
-CGV Pandora City	Hồ Chí Minh
-CGV Parkson Paragon	Hồ Chí Minh
-Cinebox 212	Hồ Chí Minh
-Cinebox Hoà Bình	Hồ Chí Minh
-Galaxy Kinh Dương Vương	Hồ Chí Minh
-Galaxy Nguyễn Du	Hồ Chí Minh
-Galaxy Nguyễn Trãi	Hồ Chí Minh
-Galaxy Quang Trung	Hồ Chí Minh
-Galaxy Tân Bình	Hồ Chí Minh
-Lotte Cantavil	Hồ Chí Minh
-Lotte Cộng Hoà	Hồ Chí Minh
-Lotte Diamond	Hồ Chí Minh
-Lotte Nam Sài Gòn	Hồ Chí Minh
-Lotte Phú Thọ	Hồ Chí Minh
-Đống Đa	Hồ Chí Minh
-
-
 CGV MIPEC Tower	Hà Nội
 CGV Vincom Center Bà Triệu	Hà Nội
 Lotte Hà Đông	Hà Nội
@@ -32,29 +8,3 @@ Platinum Vincom Long Biên	Hà Nội
 Platinum Vincom Royal City	Hà Nội
 Rạp Tháng 8	Hà Nội
 Trung Tâm Chiếu Phim Quốc Gia	Hà Nội
-
-CGV Biên Hòa	Biên Hòa
-Lotte Biên Hoà	Biên Hòa
-PegaCine Biên Hoà	Biên Hòa
-
-CGV Sense City	Cần Thơ
-
-CGV Lam Sơn Square	Vũng Tàu
-
-CGV Bình Dương Square	Bình Dương
-Empire Cineplex	Bình Dương
-Lotte Bình Dương	Bình Dương
-
-Lotte Phan Thiết	Phan Thiết
-
-Lotte Nha Trang	Nha Trang
-Platinum Nha Trang Center	Nha Trang
-
-CGV Kim Cúc Plaza	Quy Nhơn
-
-CGV Vĩnh Trung Plaza	Đà Nẵng
-Lotte Đà Nẵng	Đà Nẵng
-
-CGV Thuỳ Dương Plaza	Hải Phòng
-
-CGV Marine Plaza	Hạ Long
