@@ -427,8 +427,8 @@
 	  { text: /(\d\d?)(:?(\d\d))(:\d\d)?\s*sáng/ => TemporalCompose(INTERSECT, IsoTime($1,$3,$4), AM) }
 	  { text: /(\d\d?)(:?(\d\d))(:\d\d)?\s*(chiều|tối)/ => TemporalCompose(INTERSECT, IsoTime($1,$3,$4), PM) }
 	  { text: /(\d\d?)(h|\sgiờ\s)\s*sáng/ => TemporalCompose(INTERSECT, IsoTime($1,"0",NIL), AM) }
-	  { text: /(\d\d?)(h|\sgiờ\s)\s*(chiều|tối)/ => TemporalCompose(INTERSECT, IsoTime($1,"0",NIL), PM) }
-  
+	  { text: /(\d\d?)(h|\sgiờ\s)\s*(chiều|tối|đêm)/ => TemporalCompose(INTERSECT, IsoTime($1,"0",NIL), PM) }
+  	  { text: /([Ll]úc\s|[Vv]ào\s)?(\d+)(h|\sgiờ)/ => IsoTime($2, NIL, NIL) }
   
   
   #Bắt ngày tháng năm tiếng Việt
