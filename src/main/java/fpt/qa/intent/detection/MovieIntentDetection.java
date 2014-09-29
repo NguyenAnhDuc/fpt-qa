@@ -138,8 +138,8 @@ public class MovieIntentDetection {
         if (tunedSent.indexOf("NAM\t") == 0 && (tunedSent.contains("nào") || tunedSent.contains("nao"))) {
             int idx = tunedSent.indexOf("nào");
             int idx1 = Math.abs(idx - tunedSent.indexOf("phim"));
-            int idx2 = Math.abs(idx - tunedSent.indexOf("rạp") > 0 ? tunedSent.indexOf("rạp") : tunedSent.indexOf("rap"));
-            int idx3 = Math.abs(idx - tunedSent.indexOf("diễn viên") > 0 ? tunedSent.indexOf("diễn viên") : tunedSent.indexOf("dien vien"));
+            int idx2 = Math.abs(idx - (tunedSent.indexOf("rạp") > 0 ? tunedSent.indexOf("rạp") : tunedSent.indexOf("rap")));
+            int idx3 = Math.abs(idx - (tunedSent.indexOf("diễn viên") > 0 ? tunedSent.indexOf("diễn viên") : tunedSent.indexOf("dien vien")));
             int idx4 = Math.abs(idx - tunedSent.indexOf("sao"));
 
             if (idx3 > idx4) {
@@ -161,6 +161,8 @@ public class MovieIntentDetection {
             	idx2 = tunedSent.indexOf("rap");
             }
             if (idx2 > 0 && idx1 < 0) {
+            	if (tunedSent.contains( "rạp có gì" ))
+            		return IntentConstants.MOV_TITLE;
                 return IntentConstants.CIN_NAME;
             }
             int idx3 = tunedSent.indexOf("diễn viên");
@@ -280,5 +282,8 @@ public class MovieIntentDetection {
         
         System.out.println(getTunedSent(sent5));
         System.out.println(getIntent(sent5));
+        
+        System.out.println(getTunedSent( "có phim hài nào hay" ));
+        System.out.println(getIntent( "có phim hài nào hay" ));
     }
 }
