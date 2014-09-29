@@ -8197,7 +8197,7 @@ mov_title	Donot Cry; Park Bom
 
 
 
-cin_name	CGV Vincom City Towers; CGV Vincom City Tower, CGV Vincom City, CGV Vincom Tower, CGV Vincom Towers, CGV Vincom, Megastar Vincom City Towers, Megastar Vincom City Tower, Megastar Vincom City, Megastar Vincom Tower, Megastar Vincom Towers, Megastar Vincom, Vincom City Tower, Vincom City Towers, Vincom Tower, Vincom Towers, Vincom City, vincom bà triệu, cgv
+cin_name	CGV Vincom City Towers; CGV Vincom City Tower, CGV Vincom City, CGV Vincom Tower, CGV Vincom Towers, CGV Vincom, Megastar Vincom City Towers, Megastar Vincom City Tower, Megastar Vincom City, Megastar Vincom Tower, Megastar Vincom Towers, Megastar Vincom, Vincom City Tower, Vincom City Towers, Vincom Tower, Vincom Towers, Vincom City, vincom bà triệu
 cin_name	CGV MIPEC Tower; CGV MIPEC, MIPEC Tower
 cin_name	Lotte Cinema Landmark; Lotte Cinema, Lotte Landmark, Cinema Landmark, Lotte, Landmark
 cin_name	Lotte Cinema Hà Đông; Lotte Hà Đông, Hà Đông
