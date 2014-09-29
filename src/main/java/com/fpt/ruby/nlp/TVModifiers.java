@@ -83,4 +83,8 @@ public class TVModifiers{
 		return mod;
 	}
 	
+	public String toString(){
+		return channel + " : " + prog_title + " : " + start + " : " + end;
+	}
+	
 }
