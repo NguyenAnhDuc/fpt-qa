@@ -54,9 +54,13 @@ public class AbsoluteTime{
 		List<TimeRange> results;
 		try {
 			results = getTimeParser().parser3( text, dateFormatHour.format( getCurrentDate() ) );
+			//System.out.println(results);
+			if(results.isEmpty()) {
+				results.add(new TimeRange());
+			}
 			timeResult.setBeginTime(results.get(0).getfDate());
 			timeResult.setEndTime(results.get(0).getsDate());
-			System.out.println( results.get( 0 ) );
+			System.out.println( timeResult.toString() );
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -97,6 +101,11 @@ public class AbsoluteTime{
 
 		public void setEndTime( Date endTime ) {
 			this.endTime = endTime;
+		}
+		
+		@Override
+		public String toString() {
+			return "<<"+ this.beginTime + " , " + this.endTime+">>";
 		}
 	}
 }

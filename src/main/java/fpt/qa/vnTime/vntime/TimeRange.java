@@ -21,13 +21,7 @@ public class TimeRange {
 	public TimeRange() {
 		// TODO Auto-generated constructor stub
 	}
-	
-	/**
-	 * 
-	 * @param dateString
-	 * @return
-	 * @throws ParseException
-	 */
+
 	@SuppressWarnings("deprecation")
 	private Date parsefDate(String dateString) throws ParseException {
 		// TODO Auto-generated method stub
@@ -38,7 +32,7 @@ public class TimeRange {
 		} catch (ParseException e) {
 			utilDate = new SimpleDateFormat("yyyy-MM-dd").parse(dateString);
 			utilDate = new Date(utilDate.getTime());
-			System.out.println("!!!!!"+utilDate);
+			//System.out.println("!!!!!"+utilDate);
 			try {
 				utilDate = new SimpleDateFormat("yyyy-MM-dd").parse(dateString);
 				utilDate = new Date(utilDate.getTime()); 
@@ -47,22 +41,16 @@ public class TimeRange {
 				utilDate.setDate(30);
 				dateString = new SimpleDateFormat("yyyy-MM-dd").format(utilDate);
 				utilDate = parsefDate(dateString);
-				System.out.println("~~~~"+dateString);
+				//System.out.println("~~~~"+dateString);
 				//utilDate = new Date(utilDate.getTime()+ 30 * (60 * 60 * 1000 * 23 + 60 * 1000 * 59 + 59 * 1000)); 
 			}
 		}
 		return utilDate;
 	}
-	
-	/**
-	 * 
-	 * @param dateString
-	 * @return
-	 * @throws ParseException
-	 */
+
 	@SuppressWarnings("deprecation")
 	private Date parsesDate ( String dateString) throws ParseException {
-		System.out.println(dateString);
+		//System.out.println(dateString);
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 		Date utilDate = null;
 		try {
@@ -109,7 +97,7 @@ public class TimeRange {
 	public Date getsDate() {
 		return sDate;
 	}
-
+	
 	public void setsDate(String sDate) throws ParseException {
 		this.sDate = parsesDate(sDate);
 	}
@@ -119,5 +107,4 @@ public class TimeRange {
 		return "Chuỗi thời gian :" + expression + "\n Cận trên : " + this.fDate
 				+ "\n Cận dưới :" + sDate;
 	}
-
 }
