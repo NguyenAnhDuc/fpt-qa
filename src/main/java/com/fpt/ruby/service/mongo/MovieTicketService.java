@@ -61,7 +61,6 @@ public class MovieTicketService {
 		query.addCriteria(Criteria.where(MT_TYPE).is(movieTicket.getType()));
 		query.addCriteria(Criteria.where(MT_CITY).is(movieTicket.getCity()));
 		List<MovieTicket> movieTickets = mongoOperations.find(query,MovieTicket.class);
-		System.out.println("Size1: " + movieTickets.size());
 		List<MovieTicket> results = new ArrayList<MovieTicket>();
 		for (MovieTicket moTicket : movieTickets){
 			if (equalDate(moTicket.getDate(), movieTicket.getDate()))

@@ -53,7 +53,7 @@ public class AbsoluteTime{
 
 		List<TimeRange> results;
 		try {
-			results = getTimeParser().parser3( text, dateFormatHour.format( getCurrentDate() ) );
+			results = getTimeParser().parser3( text, dateFormatHour.format( new Date() ) );
 			timeResult.setBeginTime(results.get(0).getfDate());
 			timeResult.setEndTime(results.get(0).getsDate());
 			System.out.println( results.get( 0 ) );

@@ -1,27 +1,3 @@
-BHD Star Cineplex 3/2	http://moveek.com/ajax/showtimesCinema/ho-chi-minh?t=bhd-star-cinema
-BHD Star Cineplex Icon 68	http://moveek.com/ajax/showtimesCinema/ho-chi-minh?t=bhd-star-cineplex-icon-68
-BHD Star Cineplex Satra Phạm Hùng	http://moveek.com/ajax/showtimesCinema/ho-chi-minh?t=bhd-star-cineplex-satra-pham-hung
-CGV Celadon Tân Phú	http://moveek.com/ajax/showtimesCinema/ho-chi-minh?t=cgv-celadon
-CGV Crescent Mall	http://moveek.com/ajax/showtimesCinema/ho-chi-minh?t=megastar-crescent-mall
-CGV CT Plaza	http://moveek.com/ajax/showtimesCinema/ho-chi-minh?t=megastar-ct
-CGV Hùng Vương Plaza	http://moveek.com/ajax/showtimesCinema/ho-chi-minh?t=megastar-hung-vuong
-CGV Pandora City	http://moveek.com/ajax/showtimesCinema/ho-chi-minh?t=megastar-pandora-city
-CGV Parkson Paragon	http://moveek.com/ajax/showtimesCinema/ho-chi-minh?t=megastar-paragon
-Cinebox 212	http://moveek.com/ajax/showtimesCinema/ho-chi-minh?t=cinebox-212
-Cinebox Hoà Bình	http://moveek.com/ajax/showtimesCinema/ho-chi-minh?t=cinebox-hoa-binh
-Galaxy Kinh Dương Vương	http://moveek.com/ajax/showtimesCinema/ho-chi-minh?t=galaxy-kinh-duong-vuong
-Galaxy Nguyễn Du	http://moveek.com/ajax/showtimesCinema/ho-chi-minh?t=galaxy-nguyen-du
-Galaxy Nguyễn Trãi	http://moveek.com/ajax/showtimesCinema/ho-chi-minh?t=galaxy-nguyen-trai
-Galaxy Quang Trung	http://moveek.com/ajax/showtimesCinema/ho-chi-minh?t=galaxy-quang-trung
-Galaxy Tân Bình	http://moveek.com/ajax/showtimesCinema/ho-chi-minh?t=galaxy-tan-binh
-Lotte Cantavil	http://moveek.com/ajax/showtimesCinema/ho-chi-minh?t=lotte-cinema-cantavil
-Lotte Cộng Hoà	http://moveek.com/ajax/showtimesCinema/ho-chi-minh?t=lotte-cinema-cong-hoa
-Lotte Diamond	http://moveek.com/ajax/showtimesCinema/ho-chi-minh?t=lotte-diamond
-Lotte Nam Sài Gòn	http://moveek.com/ajax/showtimesCinema/ho-chi-minh?t=lotte-q7
-Lotte Phú Thọ	http://moveek.com/ajax/showtimesCinema/ho-chi-minh?t=lotte-phu-tho
-Đống Đa	http://moveek.com/ajax/showtimesCinema/ho-chi-minh?t=dong-da
-
-
 CGV MIPEC Tower	http://moveek.com/ajax/showtimesCinema/ha-noi?t=megastar-mipec-tower
 CGV Vincom Center Bà Triệu	http://moveek.com/ajax/showtimesCinema/ha-noi?t=megastar-vincom-ba-trieu
 Lotte Hà Đông	http://moveek.com/ajax/showtimesCinema/ha-noi?t=lotte-melinh-plaza-ha-dong
@@ -32,29 +8,3 @@ Platinum Vincom Long Biên	http://moveek.com/ajax/showtimesCinema/ha-noi?t=plati
 Platinum Vincom Royal City	http://moveek.com/ajax/showtimesCinema/ha-noi?t=platinum-vincom-royal-city
 Rạp Tháng 8	http://moveek.com/ajax/showtimesCinema/ha-noi?t=rap-thang-8
 Trung Tâm Chiếu Phim Quốc Gia	http://moveek.com/ajax/showtimesCinema/ha-noi?t=trung-tam-chieu-phim-quoc-gia
-
-CGV Biên Hòa	http://moveek.com/ajax/showtimesCinema/bien-hoa?t=megastar-coop-mart-bien-hoa
-Lotte Biên Hoà	http://moveek.com/ajax/showtimesCinema/bien-hoa?t=lotte-bien-hoa
-PegaCine Biên Hoà	http://moveek.com/ajax/showtimesCinema/bien-hoa?t=pegacine-bien-hoa
-
-CGV Sense City	http://moveek.com/ajax/showtimesCinema/can-tho?t=cgv-sense-city
-
-CGV Lam Sơn Square	http://moveek.com/ajax/showtimesCinema/vung-tau?t=cgv-lam-son-square
-
-CGV Bình Dương Square	http://moveek.com/ajax/showtimesCinema/binh-duong?t=cgv-binh-duong-square
-Empire Cineplex	http://moveek.com/ajax/showtimesCinema/binh-duong?t=empire-cineplex
-Lotte Bình Dương	http://moveek.com/ajax/showtimesCinema/binh-duong?t=lotte-binh-duong
-
-Lotte Phan Thiết	http://moveek.com/ajax/showtimesCinema/phan-thiet?t=lotte-phan-thiet
-
-Lotte Nha Trang	http://moveek.com/ajax/showtimesCinema/nha-trang?t=lotte-nha-trang
-Platinum Nha Trang Center	http://moveek.com/ajax/showtimesCinema/nha-trang?t=platinum-nha-trang-center
-
-CGV Kim Cúc Plaza	http://moveek.com/ajax/showtimesCinema/quy-nhon?t=cgv-kim-cuc-plaza
-
-CGV Vĩnh Trung Plaza	http://moveek.com/ajax/showtimesCinema/da-nang?t=megastar-vinh-trung-plaza
-Lotte Đà Nẵng	http://moveek.com/ajax/showtimesCinema/da-nang?t=lotte-da-nang
-
-CGV Thuỳ Dương Plaza	http://moveek.com/ajax/showtimesCinema/hai-phong?t=megastar-thuy-duong-plaza
-
-CGV Marine Plaza	http://moveek.com/ajax/showtimesCinema/ha-long?t=cgv-marine-plaza

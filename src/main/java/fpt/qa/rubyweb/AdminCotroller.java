@@ -21,6 +21,7 @@ import sun.util.logging.resources.logging;
 
 import com.fpt.ruby.crawler.CrawlPhimChieuRap;
 import com.fpt.ruby.crawler.CrawlerMyTV;
+import com.fpt.ruby.crawler.moveek.MoveekCrawler;
 import com.fpt.ruby.model.Log;
 import com.fpt.ruby.model.MovieTicket;
 import com.fpt.ruby.model.TVProgram;
@@ -60,6 +61,19 @@ public class AdminCotroller {
 		CrawlerMyTV crawlerMyTV = new CrawlerMyTV();
 		try{
 			crawlerMyTV.crawlMyTV(tvProgramService);
+		}
+		catch (Exception ex){
+			System.out.println("Done");
+			return new BasicDBObject().append("status", "failed");
+		}
+		return new BasicDBObject().append("status", "success");
+	}
+	
+	@RequestMapping(value="/crawl-moveek", method = RequestMethod.POST,  produces = "application/json; charset=UTF-8")
+	@ResponseBody
+	public BasicDBObject crawlMoveek(){
+		try{
+			MoveekCrawler.doCrawl( movieTicketService );
 		}
 		catch (Exception ex){
 			System.out.println("Done");
@@ -135,6 +149,11 @@ public class AdminCotroller {
 	@RequestMapping(value="admin-crawl-phim-chieu-rap", method = RequestMethod.GET)
 	public String crawlPhimChieuRap(Model model){
 		return "crawlPhimChieuRap";
+	}
+	
+	@RequestMapping(value="admin-crawl-moveek", method = RequestMethod.GET)
+	public String crawlMoveek(Model model){
+		return "crawlMoveek";
 	}
 	
 	@RequestMapping(value="admin-crawl-mytv", method = RequestMethod.GET)
