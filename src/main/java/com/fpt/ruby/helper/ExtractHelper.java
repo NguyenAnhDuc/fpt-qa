@@ -3,16 +3,7 @@ package com.fpt.ruby.helper;
 import java.sql.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.HashSet;
-import java.util.Set;
 
-import org.json.JSONArray;
-
-
-/*import com.fpt.ruby.service.GenreService;
-import com.fpt.ruby.service.ProductionCompanyService;
-import com.fpt.ruby.service.ProductionCountryService;
-import com.fpt.ruby.service.SpokenLanguageService;*/
 
 public class ExtractHelper {
 	/*public Set<Genre> extractGenre(JSONArray jsonArray, GenreService genreService){
