@@ -12,6 +12,8 @@ program_title	Thể thao
 program_title	Khoa học
 program_title	Other
 program_title	Nhạc
+
+
 chanel_title	vtv1; vtv 1
 chanel_title	vtv2; vtv 2
 chanel_title	vtv3; vtv 3
@@ -56,6 +58,13 @@ chanel_title	ndtv1; dntv 1, truyền hình đồng nai, truyen hinh dong nai
 chanel_title	ndtv2; dntv 2, truyền hình đồng nai, truyen hinh dong nai
 chanel_title	qtv1; qtv 1, truyền hình quảng ninh, truyen hinh quang ninh
 chanel_title	qtv2; qtv 2, truyền hình quảng ninh, truyen hinh quang ninh
+
+chanel_title	cinemax
+chanel_title	hbo
+chanel_title	star movies; starmovies
+chanel_title	espn
+chanel_title	star sports; starsports, star sport, starsport
+
 
 program_title	vì bạn xứng đáng
 program_title	thông tin 260
@@ -475,7 +484,6 @@ program_title	thông điệp cuộc sống cướp chồng
 program_title	đảo ngọt
 program_title	65 năm học viện chính trị quốc gia hồ chí minh
 program_title	hãy cùng khám phá
-program_title	đầu giờ
 program_title	nhịp đập 360 độ thể thao
 program_title	cuộc gọi lúc 0 giờ
 program_title	cô ấy thật tuyệt
@@ -579,3 +587,8 @@ program_title	giải thưởng ấn tượng VTV
 program_title	thử thách đường phó
 program_title	ký ức Việt Nam
 program_title	giải thưởng ấn tượng vtv
+program_title	dự báo thời tiết
+program_title	bước nháy hoàn vũ
+program_title	bài hát yêu thích
+program_title	discovery
+program_title	the voice kid; the voice nhí
