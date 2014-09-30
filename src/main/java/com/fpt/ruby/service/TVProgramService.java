@@ -6,6 +6,8 @@ import java.util.List;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.Sort.Direction;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
@@ -103,26 +105,26 @@ public class TVProgramService {
 	
 	
 	public List< TVProgram > findAfter(Date date){
-		Query query = new Query(Criteria.where("start_date").gt( date ));
+		Query query = new Query(Criteria.where("start_date").gt( date )).with( new Sort( Direction.ASC, "start_date" ) );
 		return mongoOperations.find(query, TVProgram.class);
 	}
 	
 	public List< TVProgram > findAfterByTitle(String title, Date date){
 		Query query = new Query(Criteria.where("title").regex("^.*" + title + ".*","i").
-				and("start_date").gt( date ));
+				and("start_date").gt( date )).with( new Sort( Direction.ASC, "start_date" ) );
 		return mongoOperations.find(query, TVProgram.class);
 	}
 	
 	public List< TVProgram > findAfterAtChannel(Date date, String channel){
 		Query query = new Query(Criteria.where("channel").regex("^" + channel + "$","i").
-				and("start_date").gt( date ));
+				and("start_date").gt( date )).with( new Sort( Direction.ASC, "start_date" ) );
 		return mongoOperations.find(query, TVProgram.class);
 	}
 	
 	public List< TVProgram > findAfterByTitleAtChannel(String title, Date date, String channel){
 		Query query = new Query(Criteria.where("channel").regex("^" + channel + "$","i").
 				and( "title" ).regex("^.*" + title + ".*","i").
-				and("start_date").gt( date ));
+				and("start_date").gt( date )).with( new Sort( Direction.ASC, "start_date" ) );
 		return mongoOperations.find(query, TVProgram.class);
 	}
 	
