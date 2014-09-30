@@ -577,7 +577,7 @@ program_title	Vui sống mỗi ngày
 program_title	Đồng hành cùng Vua đầu bếp
 program_title	Đồng hành Giọng hát Việt nhí
 program_title	Bán kết World cup 2014 Đức Brazil
-program_title	Giai điệu tự hào
+program_title	/Giai điệu tự hào
 program_title	Đồng hành Đồ Rê Mí
 program_title	Múa trong đời sống người Khơ me
 program_title	kĩ năng sống
@@ -592,3 +592,6 @@ program_title	bước nháy hoàn vũ
 program_title	bài hát yêu thích
 program_title	discovery
 program_title	the voice kid; the voice nhí
+program_title	ngoại hạng anh
+program_title	quà tặng cuộc sống
+program_title	ai là triệu phú

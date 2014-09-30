@@ -34,6 +34,10 @@ public class ConjunctionWithType extends ConjunctionChecker{
 
         loadConjunctionFromNameMapper( nameMapperEngine );
         
+//        for( Pair e : nameMapperEngine.getAllNames() ){
+//        	System.out.println( e );
+//        }
+        
         VnTokenizer.loadSpecialChars( resourcePath + "/dicts/specialchars/special-chars.xml" );
 		VnTokenizer.loadRegexXMLFile( resourcePath + "/regexes/regular-expressions.xml" );
 	}
