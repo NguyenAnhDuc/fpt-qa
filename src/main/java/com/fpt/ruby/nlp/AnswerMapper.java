@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.fpt.ruby.helper.FeaturedMovieHelper;
+import com.fpt.ruby.model.Cinema;
 import com.fpt.ruby.model.MovieFly;
 import com.fpt.ruby.model.MovieTicket;
 import com.fpt.ruby.service.MovieFlyService;
@@ -92,6 +93,15 @@ public class AnswerMapper {
 		
 		if (intent.equals(IntentConstants.MOV_YEAR)){
 			return mam.getYearMovieAnswer(ans);
+		}
+		
+		return "Xin lỗi, chúng tôi chưa có câu trả lời cho câu hỏi của bạn";
+	}
+	
+	public static String getCinemaStaticAnswer(String intent, List<Cinema> ans){
+		
+		if (intent.equals(IntentConstants.CIN_ADD)){
+			return mam.getCinemaAddressAnswer(ans);
 		}
 		
 		return "Xin lỗi, chúng tôi chưa có câu trả lời cho câu hỏi của bạn";

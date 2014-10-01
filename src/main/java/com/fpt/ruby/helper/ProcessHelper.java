@@ -9,6 +9,7 @@ import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.fpt.ruby.model.Cinema;
 import com.fpt.ruby.model.Log;
 import com.fpt.ruby.model.MovieFly;
 import com.fpt.ruby.model.MovieTicket;
@@ -19,11 +20,13 @@ import com.fpt.ruby.model.TimeExtract;
 import com.fpt.ruby.nlp.AnswerMapper;
 import com.fpt.ruby.nlp.NlpHelper;
 import com.fpt.ruby.nlp.NonDiacriticNlpHelper;
+import com.fpt.ruby.service.CinemaService;
 import com.fpt.ruby.service.LogService;
 import com.fpt.ruby.service.MovieFlyService;
 import com.fpt.ruby.service.mongo.MovieTicketService;
 import com.fpt.ruby.service.mongo.QuestionStructureService;
 
+import fpt.qa.intent.detection.IntentConstants;
 import fpt.qa.intent.detection.MovieIntentDetection;
 import fpt.qa.intent.detection.NonDiacriticMovieIntentDetection;
 import fpt.qa.mdnlib.util.string.DiacriticConverter;
@@ -42,8 +45,9 @@ public class ProcessHelper{
 	}
 
 	public static RubyAnswer getAnswer( String question, MovieFlyService movieFlyService,
-			MovieTicketService movieTicketService, LogService logService ) {
-		RubyAnswer withDiacritic = getAnswerWithDiacritic( question, movieFlyService, movieTicketService, logService );
+			MovieTicketService movieTicketService, CinemaService cinemaService, LogService logService ) {
+		RubyAnswer withDiacritic = getAnswerWithDiacritic( question, movieFlyService, movieTicketService,cinemaService, logService );
+		// Can bo sung phan Cinema Info nhu tren
 		RubyAnswer removeDiacritic = getAnswerRemoveDiacritic( question, movieFlyService, movieTicketService, logService );		
 		if( removeDiacritic.isSuccessful() ){
 			return removeDiacritic;
@@ -140,7 +144,8 @@ public class ProcessHelper{
 	}
 
 	private static RubyAnswer getAnswerWithDiacritic( String question, MovieFlyService movieFlyService,
-			MovieTicketService movieTicketService, LogService logService ) {
+			MovieTicketService movieTicketService, CinemaService cinemaService, LogService logService ) {
+		System.out.println("Get answer with diacritic");
 		logger.info("Get answer with diacritic");
 		RubyAnswer rubyAnswer = new RubyAnswer();
 		String intent = MovieIntentDetection.getIntent( question );
@@ -154,21 +159,31 @@ public class ProcessHelper{
 		// static question
 		try{
 			if( questionType.equals( AnswerMapper.Static_Question ) ){
-				String movieTitle = NlpHelper.getMovieTitle( question );
-				System.out.println( "Movie Title: " + movieTitle );
-				List< MovieFly > movieFlies = movieFlyService.findByTitle( movieTitle );
-				if( movieFlies.size() == 0 ){
-					movieFlies = new ArrayList< MovieFly >();
-					MovieFly movieFly = movieFlyService.searchOnImdbByTitle( movieTitle );
-					if( movieFly != null ){
-						movieFlyService.save( movieFly );
-						movieFlies.add( movieFly );
-					}
+				if (intent.equals(IntentConstants.CIN_ADD)){
+					String cinName = NlpHelper.getCinemaName(question);
+					logger.info("Cin name: " + cinName);
+					List<Cinema> cinemas = cinemaService.findByName(cinName);
+					rubyAnswer.setAnswer( AnswerMapper.getCinemaStaticAnswer( intent, cinemas ) );
 				}
-				rubyAnswer.setAnswer( AnswerMapper.getStaticAnswer( intent, movieFlies ) );
+				else{
+					String movieTitle = NlpHelper.getMovieTitle( question );
+					logger.info( "Movie Title: " + movieTitle );
+					List< MovieFly > movieFlies = movieFlyService.findByTitle( movieTitle );
+					if( movieFlies.size() == 0 ){
+						movieFlies = new ArrayList< MovieFly >();
+						MovieFly movieFly = movieFlyService.searchOnImdbByTitle( movieTitle );
+						if( movieFly != null ){
+							movieFlyService.save( movieFly );
+							movieFlies.add( movieFly );
+						}
+					}
+					rubyAnswer.setMovieTitle( movieTitle );
+					rubyAnswer.setAnswer( AnswerMapper.getStaticAnswer( intent, movieFlies ) );
+				}
+				
+				
 				rubyAnswer.setQuestionType( AnswerMapper.Static_Question );
-
-				rubyAnswer.setMovieTitle( movieTitle );
+				
 			}else if( questionType.equals( AnswerMapper.Dynamic_Question ) ){
 				System.out.println( "Dynamic ...." );
 				MovieTicket matchMovieTicket = NlpHelper.getMovieTicket( question );

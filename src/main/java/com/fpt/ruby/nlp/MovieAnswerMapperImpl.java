@@ -3,12 +3,12 @@ package com.fpt.ruby.nlp;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import com.fpt.ruby.helper.RedisHelper;
+import com.fpt.ruby.model.Cinema;
 import com.fpt.ruby.model.MovieFly;
 
 public class MovieAnswerMapperImpl implements MovieAnswerMapper {
@@ -242,6 +242,16 @@ public class MovieAnswerMapperImpl implements MovieAnswerMapper {
 		}
 		MovieFly mov = ans.get(0);
 		String res = "Phim " + mov.getTitle() + " có imdb rating khoảng " + mov.getImdbRating();
+		return res;
+	}
+
+	public String getCinemaAddressAnswer(List<Cinema> ans) {
+		// TODO Auto-generated method stub
+		if (ans.size() == 0){
+			return "Xin lỗi, chúng tôi không tìm thấy dữ liệu cho câu trả lời";
+		}
+		Cinema cin = ans.get(0);
+		String res = "Phim " + cin.getName() + " ở địa chỉ: " + cin.getAddress();
 		return res;
 	}
 

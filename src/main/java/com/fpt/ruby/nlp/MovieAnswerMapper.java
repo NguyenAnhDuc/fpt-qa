@@ -2,6 +2,7 @@ package com.fpt.ruby.nlp;
 
 import java.util.List;
 
+import com.fpt.ruby.model.Cinema;
 import com.fpt.ruby.model.MovieFly;
 
 public interface MovieAnswerMapper{
@@ -18,4 +19,5 @@ public interface MovieAnswerMapper{
 	String getAudienceMovieAnswer(List<MovieFly> ans);
 	String getReleaseMovieAnswer(List<MovieFly> ans);
 	String getImdbRatingMovieAnswer(List<MovieFly> ans);
+	String getCinemaAddressAnswer(List<Cinema> ans);
 }

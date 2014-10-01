@@ -37,6 +37,16 @@ public class NlpHelper {
 		return null;
 	}
 	
+	public static String getCinemaName(String question){
+		List<Pair<String, String>> conjunctions = conjunctionHelper.getConjunction(question);
+		for (Pair<String, String> conjunction : conjunctions ){
+			System.out.println(conjunction.first + " | " + conjunction.second);
+			if (conjunction.second.equals(IntentConstants.CIN_NAME))
+				return conjunction.first.replace("{", "").replace("}", "");
+		}
+		return null;
+	}
+	
 	public static MovieTicket getMovieTicket(String question){
 		List<Pair<String, String>> conjunctions = conjunctionHelper.getConjunction(question);
 		MovieTicket movieTicket = new MovieTicket();

@@ -16,6 +16,7 @@ import com.fpt.ruby.model.RubyAnswer;
 import com.fpt.ruby.nlp.NlpHelper;
 import com.fpt.ruby.nlp.TVAnswerMapper;
 import com.fpt.ruby.nlp.TVAnswerMapperImpl;
+import com.fpt.ruby.service.CinemaService;
 import com.fpt.ruby.service.LogService;
 import com.fpt.ruby.service.MovieFlyService;
 import com.fpt.ruby.service.PersonService;
@@ -31,6 +32,8 @@ public class AppController {
 	MovieTicketService movieTicketService;
 	@Autowired
 	MovieFlyService movieFlyService;
+	@Autowired
+	CinemaService cinemaService;
 	@Autowired
 	LogService logService;
 	static TVAnswerMapper tam = new TVAnswerMapperImpl();
@@ -71,7 +74,7 @@ public class AppController {
 		}
 		else{
 			System.err.println( "[AppController] Domain Movie" );
-			rubyAnswer =  ProcessHelper.getAnswer(question,movieFlyService,movieTicketService,logService);
+			rubyAnswer =  ProcessHelper.getAnswer(question,movieFlyService,movieTicketService,cinemaService,logService);
 		}
 		return rubyAnswer;
 		//return app.getAnswer(question);
