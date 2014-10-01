@@ -1,4 +1,3 @@
-
 package com.fpt.ruby.helper;
 
 import java.net.URLEncoder;
@@ -7,7 +6,6 @@ import java.util.Date;
 import java.util.List;
 
 import org.json.JSONObject;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import com.fpt.ruby.model.Log;
 import com.fpt.ruby.model.MovieFly;
@@ -28,16 +26,10 @@ import fpt.qa.intent.detection.MovieIntentDetection;
 import fpt.qa.intent.detection.NonDiacriticMovieIntentDetection;
 import fpt.qa.mdnlib.util.string.DiacriticConverter;
 
-<<<<<<< HEAD
-public class ProcessHelper {
-	public static RubyAnswer getAnswer(String question,QuestionStructure questionStructure,
-										MovieFlyService movieFlyService, MovieTicketService movieTicketService)  {
-=======
 public class ProcessHelper{
 
 	public static RubyAnswer getAnswer( String question, QuestionStructure questionStructure,
 			MovieFlyService movieFlyService, MovieTicketService movieTicketService ) {
->>>>>>> 3813fa42bbe6e52db1bf9eaa3590dcb63ae80cac
 		RubyAnswer rubyAnswer = new RubyAnswer();
 		rubyAnswer.setAnswer( "this is answer of ruby" );
 		// rubyAnswer.setAnswer(getAnswer(question, movieFlyService,
@@ -74,40 +66,6 @@ public class ProcessHelper{
 		System.out.println( "Question Type: " + questionType );
 		// static question
 		try{
-<<<<<<< HEAD
-			if (questionType.equals(AnswerMapper.Static_Question)){
-				String movieTitle = NlpHelper.getMovieTitle(question);
-				List<MovieFly> movieFlies = movieFlyService.findByTitle(movieTitle);
-				if (movieFlies.size() == 0){
-					movieFlies = new ArrayList<MovieFly>();
-					MovieFly movieFly = movieFlyService.searchOnImdbByTitle(movieTitle);
-					if (movieFly != null
-							){					
-						movieFlyService.save(movieFly);
-						movieFlies.add(movieFly);
-					}
-				}
-				rubyAnswer.setAnswer(AnswerMapper.getStaticAnswer(intent, movieFlies));
-				rubyAnswer.setQuestionType(AnswerMapper.Static_Question);
-				
-				
-				rubyAnswer.setMovieTitle(movieTitle);
-			}
-			else if (questionType.equals(AnswerMapper.Dynamic_Question)){
-				MovieTicket matchMovieTicket = NlpHelper.getMovieTicket(question);
-				TimeExtract timeExtract = NlpHelper.getTimeCondition(question);
-				List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition
-												(matchMovieTicket, timeExtract.getBeforeDate(), timeExtract.getAfterDate());
-				if (timeExtract.getBeforeDate() != null) rubyAnswer.setBeginTime(timeExtract.getBeforeDate());
-				if (timeExtract.getAfterDate() != null) rubyAnswer.setEndTime(timeExtract.getAfterDate());
-				rubyAnswer.setAnswer(AnswerMapper.getDynamicAnswer(intent, movieTickets));
-				rubyAnswer.setQuestionType(AnswerMapper.Dynamic_Question);
-				rubyAnswer.setMovieTicket(matchMovieTicket);
-				System.out.println("DONE Process");
-			} 
-			else {
-				System.out.println("Feature ..");
-=======
 			if( questionType.equals( AnswerMapper.Static_Question ) ){
 				String movieTitle = NonDiacriticNlpHelper.getMovieTitle( question );
 				System.out.println( "Movie Title: " + movieTitle );
@@ -141,7 +99,6 @@ public class ProcessHelper{
 				System.out.println( "DONE Process" );
 			}else{
 				System.out.println( "Feature .." );
->>>>>>> 3813fa42bbe6e52db1bf9eaa3590dcb63ae80cac
 				MovieTicket matchMovieTicket = new MovieTicket();
 				matchMovieTicket.setCinema( "BHD Star Cineplex Icon 68" );
 				Date today = new Date();
