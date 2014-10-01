@@ -44,7 +44,7 @@ public class ProcessHelper{
 			MovieTicketService movieTicketService, LogService logService ) {
 		RubyAnswer withDiacritic = getAnswerWithDiacritic( question, movieFlyService, movieTicketService, logService );
 		RubyAnswer removeDiacritic = getAnswerRemoveDiacritic( question, movieFlyService, movieTicketService, logService );		
-		if( !removeDiacritic.isSuccessful() ){
+		if( removeDiacritic.isSuccessful() ){
 			return removeDiacritic;
 		}
 		return withDiacritic;

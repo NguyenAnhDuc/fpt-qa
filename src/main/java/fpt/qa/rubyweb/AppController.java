@@ -64,10 +64,13 @@ public class AppController {
 		//QuestionStructure questionStructure = new QuestionStructure();
 		// Process answer
 		System.out.println(movieFlyService.test);
-		if (domain.equals( "tv" )){
+		//if (domain.equals( "tv" )){
+		if ( question.startsWith( "tv" ) ){
+			System.err.println( "[AppController] Domain TV" );
 			rubyAnswer = tam.getAnswer( question );
 		}
 		else{
+			System.err.println( "[AppController] Domain Movie" );
 			rubyAnswer =  ProcessHelper.getAnswer(question,movieFlyService,movieTicketService,logService);
 		}
 		return rubyAnswer;
