@@ -14,8 +14,15 @@ public class RubyAnswer {
 	private QuestionStructure questionStructure;
 	private Date beginTime;
 	private Date  endTime;
+	private boolean successful = false;
 	
 	
+	public boolean isSuccessful() {
+		return successful;
+	}
+	public void setSuccessful( boolean successful ) {
+		this.successful = successful;
+	}
 	public Date getBeginTime() {
 		return beginTime;
 	}

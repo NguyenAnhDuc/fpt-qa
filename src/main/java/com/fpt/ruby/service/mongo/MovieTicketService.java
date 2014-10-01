@@ -107,7 +107,8 @@ public class MovieTicketService {
 	}
 	
 	public List<MovieTicket> findMoviesMatchCondition(MovieTicket matchMovieTicket,Date beforeDate, Date afterDate){
-		logger.info( "Find Movie Ticket match condition: " + beforeDate.toLocaleString() + " | " + afterDate.toLocaleString() );
+		if( beforeDate != null && afterDate != null )
+			logger.info( "Find Movie Ticket match condition: " + beforeDate.toLocaleString() + " | " + afterDate.toLocaleString() );
 		List<MovieTicket> movieTickets = mongoOperations.findAll(MovieTicket.class);
 		List<MovieTicket> results = new ArrayList<MovieTicket>();
 		List<MovieTicket> matches = new ArrayList<MovieTicket>();

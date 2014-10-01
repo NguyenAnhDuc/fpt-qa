@@ -28,7 +28,7 @@ public class NameMapperEngine{
 	}
 	
 	public void loadDomainMapper( String domainName, String dataFileName ){
-		NameMapper mapper = new NameMapper( resourcePath + "/data/" + dataFileName );
+		NameMapper mapper = new NameMapper( resourcePath + "/data-name-mapper/" + dataFileName );
 		mappers.put( domainName, mapper );
 	}
 

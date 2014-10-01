@@ -1,3 +1,4 @@
+
 package com.fpt.ruby.helper;
 
 import java.net.URLEncoder;
@@ -17,6 +18,7 @@ import com.fpt.ruby.model.RubyAnswer;
 import com.fpt.ruby.model.TimeExtract;
 import com.fpt.ruby.nlp.AnswerMapper;
 import com.fpt.ruby.nlp.NlpHelper;
+import com.fpt.ruby.nlp.NonDiacriticNlpHelper;
 import com.fpt.ruby.service.LogService;
 import com.fpt.ruby.service.MovieFlyService;
 import com.fpt.ruby.service.mongo.MovieTicketService;
@@ -26,34 +28,53 @@ import fpt.qa.intent.detection.MovieIntentDetection;
 import fpt.qa.intent.detection.NonDiacriticMovieIntentDetection;
 import fpt.qa.mdnlib.util.string.DiacriticConverter;
 
+<<<<<<< HEAD
 public class ProcessHelper {
 	public static RubyAnswer getAnswer(String question,QuestionStructure questionStructure,
 										MovieFlyService movieFlyService, MovieTicketService movieTicketService)  {
+=======
+public class ProcessHelper{
+
+	public static RubyAnswer getAnswer( String question, QuestionStructure questionStructure,
+			MovieFlyService movieFlyService, MovieTicketService movieTicketService ) {
+>>>>>>> 3813fa42bbe6e52db1bf9eaa3590dcb63ae80cac
 		RubyAnswer rubyAnswer = new RubyAnswer();
-		rubyAnswer.setAnswer("this is answer of ruby");
-		//rubyAnswer.setAnswer(getAnswer(question, movieFlyService, movieTicketService));
-		//rubyAnswer.setAnswer(getSimsimiResponse(question));
-		rubyAnswer.setQuestionStructure(questionStructure);
+		rubyAnswer.setAnswer( "this is answer of ruby" );
+		// rubyAnswer.setAnswer(getAnswer(question, movieFlyService,
+		// movieTicketService));
+		// rubyAnswer.setAnswer(getSimsimiResponse(question));
+		rubyAnswer.setQuestionStructure( questionStructure );
 		return rubyAnswer;
 	}
-	
-	public static RubyAnswer getAnswer(String question, MovieFlyService movieFlyService, MovieTicketService movieTicketService, LogService logService) {
-		RubyAnswer rubyAnswer = new RubyAnswer();
-		String intent = MovieIntentDetection.getIntent(question);
-		System.out.println("Movie Intent: " + intent);
-		String intent2 = NonDiacriticMovieIntentDetection.getIntent(question);
-		System.out.println("Intent 2: " + intent2);
-		if (!DiacriticConverter.hasDiacriticAccents(question)){
-			intent = intent2;
+
+	public static RubyAnswer getAnswer( String question, MovieFlyService movieFlyService,
+			MovieTicketService movieTicketService, LogService logService ) {
+		RubyAnswer withDiacritic = getAnswerWithDiacritic( question, movieFlyService, movieTicketService, logService );
+		RubyAnswer removeDiacritic = getAnswerRemoveDiacritic( question, movieFlyService, movieTicketService, logService );		
+		if( !removeDiacritic.isSuccessful() ){
+			return removeDiacritic;
 		}
-		System.out.println("Intent: " + intent);
-		rubyAnswer.setQuestion(question);
-		rubyAnswer.setIntent(intent);
-		String questionType = AnswerMapper.getTypeOfAnswer(intent, question);
-		rubyAnswer.setAnswer("Xin lỗi, tôi không trả lời câu hỏi này được");
-		System.out.println("Question Type: " + questionType);
+		return withDiacritic;
+	}
+
+	private static RubyAnswer getAnswerRemoveDiacritic( String question, MovieFlyService movieFlyService,
+			MovieTicketService movieTicketService, LogService logService ) {
+		RubyAnswer rubyAnswer = new RubyAnswer();
+		
+		System.out.println( DiacriticConverter.removeDiacritics( question ) );
+
+		String intent = NonDiacriticMovieIntentDetection.getIntent( DiacriticConverter.removeDiacritics( question ) );
+		System.out.println( "Intent: " + intent );
+
+		rubyAnswer.setQuestion( question );
+		rubyAnswer.setIntent( intent );
+
+		String questionType = AnswerMapper.getTypeOfAnswer( intent, question );
+		rubyAnswer.setAnswer( "Xin lỗi, tôi không trả lời câu hỏi này được" );
+		System.out.println( "Question Type: " + questionType );
 		// static question
 		try{
+<<<<<<< HEAD
 			if (questionType.equals(AnswerMapper.Static_Question)){
 				String movieTitle = NlpHelper.getMovieTitle(question);
 				List<MovieFly> movieFlies = movieFlyService.findByTitle(movieTitle);
@@ -86,79 +107,202 @@ public class ProcessHelper {
 			} 
 			else {
 				System.out.println("Feature ..");
+=======
+			if( questionType.equals( AnswerMapper.Static_Question ) ){
+				String movieTitle = NonDiacriticNlpHelper.getMovieTitle( question );
+				System.out.println( "Movie Title: " + movieTitle );
+				List< MovieFly > movieFlies = movieFlyService.findByTitle( movieTitle );
+				if( movieFlies.size() == 0 ){
+					movieFlies = new ArrayList< MovieFly >();
+					MovieFly movieFly = movieFlyService.searchOnImdbByTitle( movieTitle );
+					if( movieFly != null ){
+						movieFlyService.save( movieFly );
+						movieFlies.add( movieFly );
+					}
+				}
+
+				rubyAnswer.setAnswer( AnswerMapper.getStaticAnswer( intent, movieFlies ) );
+				rubyAnswer.setQuestionType( AnswerMapper.Static_Question );
+				rubyAnswer.setMovieTitle( movieTitle );
+			}else if( questionType.equals( AnswerMapper.Dynamic_Question ) ){
+				System.out.println( "Dynamic ...." );
+				MovieTicket matchMovieTicket = NonDiacriticNlpHelper.getMovieTicket( question );
+				TimeExtract timeExtract = NonDiacriticNlpHelper.getTimeCondition( question );
+				List< MovieTicket > movieTickets = movieTicketService.findMoviesMatchCondition( matchMovieTicket,
+						timeExtract.getBeforeDate(), timeExtract.getAfterDate() );
+				System.out.println( "Size: " + movieTickets.size() );
+				if( timeExtract.getBeforeDate() != null )
+					rubyAnswer.setBeginTime( timeExtract.getBeforeDate() );
+				if( timeExtract.getAfterDate() != null )
+					rubyAnswer.setEndTime( timeExtract.getAfterDate() );
+				rubyAnswer.setAnswer( AnswerMapper.getDynamicAnswer( intent, movieTickets ) );
+				rubyAnswer.setQuestionType( AnswerMapper.Dynamic_Question );
+				rubyAnswer.setMovieTicket( matchMovieTicket );
+				System.out.println( "DONE Process" );
+			}else{
+				System.out.println( "Feature .." );
+>>>>>>> 3813fa42bbe6e52db1bf9eaa3590dcb63ae80cac
 				MovieTicket matchMovieTicket = new MovieTicket();
-				matchMovieTicket.setCinema("BHD Star Cineplex Icon 68");
+				matchMovieTicket.setCinema( "BHD Star Cineplex Icon 68" );
 				Date today = new Date();
-				System.out.println("afterdate: " + today);
-				
+				System.out.println( "afterdate: " + today );
+
 				// list movie tickets for the duration of one day
-				List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition(matchMovieTicket, today, new Date(today.getTime() + 86400000));
-				System.out.println("No of returned tickets: " + movieTickets.size());
-				rubyAnswer.setAnswer(AnswerMapper.getFeaturedAnswer(question, movieTickets, movieFlyService));
-				rubyAnswer.setQuestionType(AnswerMapper.Featured_Question);
-				rubyAnswer.setMovieTicket(matchMovieTicket);
+				List< MovieTicket > movieTickets = movieTicketService.findMoviesMatchCondition( matchMovieTicket,
+						today, new Date( today.getTime() + 86400000 ) );
+				System.out.println( "No of returned tickets: " + movieTickets.size() );
+				rubyAnswer.setAnswer( AnswerMapper.getFeaturedAnswer( question, movieTickets, movieFlyService ) );
+				rubyAnswer.setQuestionType( AnswerMapper.Featured_Question );
+				rubyAnswer.setMovieTicket( matchMovieTicket );
 			}
-		}
-		catch (Exception ex){
-			System.out.println("Exception! " + ex.getMessage());
+		}catch ( Exception ex ){
+			System.out.println( "Exception! " + ex.getMessage() );
 			ex.printStackTrace();
 		}
 		// Log
-				Log log = new Log();
-				log.setQuestion(question);
-				log.setIntent(rubyAnswer.getIntent());
-				log.setAnswer(rubyAnswer.getAnswer());
-				log.setDate(new Date());
-				QueryParamater queryParamater = new QueryParamater();
-				queryParamater.setBeginTime(rubyAnswer.getBeginTime());
-				queryParamater.setEndTime(rubyAnswer.getEndTime());
-				queryParamater.setMovieTitle(rubyAnswer.getMovieTitle());
-				queryParamater.setMovieTicket(rubyAnswer.getMovieTicket());
-				log.setQueryParamater(queryParamater);
-				logService.save(log);
+		Log log = new Log();
+		log.setQuestion( question );
+		log.setIntent( rubyAnswer.getIntent() );
+		log.setAnswer( rubyAnswer.getAnswer() );
+		log.setDate( new Date() );
+		QueryParamater queryParamater = new QueryParamater();
+		queryParamater.setBeginTime( rubyAnswer.getBeginTime() );
+		queryParamater.setEndTime( rubyAnswer.getEndTime() );
+		queryParamater.setMovieTitle( rubyAnswer.getMovieTitle() );
+		queryParamater.setMovieTicket( rubyAnswer.getMovieTicket() );
+		log.setQueryParamater( queryParamater );
+		logService.save( log );
+		
+		if( rubyAnswer.getAnswer().contains( "Xin lỗi," ) ){
+			rubyAnswer.setSuccessful( true );
+		}
+		
 		return rubyAnswer;
 	}
-	
-	public static String getSimsimiResponse(String question){
-		System.out.println("Simsimi get answer ....");
-		System.out.println("question: " + question);
+
+	private static RubyAnswer getAnswerWithDiacritic( String question, MovieFlyService movieFlyService,
+			MovieTicketService movieTicketService, LogService logService ) {
+		RubyAnswer rubyAnswer = new RubyAnswer();
+
+		String intent = MovieIntentDetection.getIntent( question );
+		System.out.println( "Movie Intent: " + intent );
+
+		rubyAnswer.setQuestion( question );
+		rubyAnswer.setIntent( intent );
+		String questionType = AnswerMapper.getTypeOfAnswer( intent, question );
+		rubyAnswer.setAnswer( "Xin lỗi, tôi không trả lời câu hỏi này được" );
+		System.out.println( "Question Type: " + questionType );
+		// static question
 		try{
-			String url = "http://sandbox.api.simsimi.com/request.p?key=9cac0c6c-1810-447b-ad5c-c1c76b2aadeb&lc=vn&text=" 
-					+  URLEncoder.encode(question,"UTF-8");
-			String jsonString = HttpHelper.sendGet(url);
-			System.out.println("response: " + jsonString);
-			JSONObject json = new JSONObject(jsonString);
-			String answer = json.getString("response");
-			return  answer;
+			if( questionType.equals( AnswerMapper.Static_Question ) ){
+				String movieTitle = NlpHelper.getMovieTitle( question );
+				System.out.println( "Movie Title: " + movieTitle );
+				List< MovieFly > movieFlies = movieFlyService.findByTitle( movieTitle );
+				if( movieFlies.size() == 0 ){
+					movieFlies = new ArrayList< MovieFly >();
+					MovieFly movieFly = movieFlyService.searchOnImdbByTitle( movieTitle );
+					if( movieFly != null ){
+						movieFlyService.save( movieFly );
+						movieFlies.add( movieFly );
+					}
+				}
+				rubyAnswer.setAnswer( AnswerMapper.getStaticAnswer( intent, movieFlies ) );
+				rubyAnswer.setQuestionType( AnswerMapper.Static_Question );
+
+				rubyAnswer.setMovieTitle( movieTitle );
+			}else if( questionType.equals( AnswerMapper.Dynamic_Question ) ){
+				System.out.println( "Dynamic ...." );
+				MovieTicket matchMovieTicket = NlpHelper.getMovieTicket( question );
+				TimeExtract timeExtract = NlpHelper.getTimeCondition( question );
+				List< MovieTicket > movieTickets = movieTicketService.findMoviesMatchCondition( matchMovieTicket,
+						timeExtract.getBeforeDate(), timeExtract.getAfterDate() );
+				System.out.println( "Size: " + movieTickets.size() );
+				if( timeExtract.getBeforeDate() != null )
+					rubyAnswer.setBeginTime( timeExtract.getBeforeDate() );
+				if( timeExtract.getAfterDate() != null )
+					rubyAnswer.setEndTime( timeExtract.getAfterDate() );
+				rubyAnswer.setAnswer( AnswerMapper.getDynamicAnswer( intent, movieTickets ) );
+				rubyAnswer.setQuestionType( AnswerMapper.Dynamic_Question );
+				rubyAnswer.setMovieTicket( matchMovieTicket );
+				System.out.println( "DONE Process" );
+			}else{
+				System.out.println( "Feature .." );
+				MovieTicket matchMovieTicket = new MovieTicket();
+				matchMovieTicket.setCinema( "BHD Star Cineplex Icon 68" );
+				Date today = new Date();
+				System.out.println( "afterdate: " + today );
+
+				// list movie tickets for the duration of one day
+				List< MovieTicket > movieTickets = movieTicketService.findMoviesMatchCondition( matchMovieTicket,
+						today, new Date( today.getTime() + 86400000 ) );
+				System.out.println( "No of returned tickets: " + movieTickets.size() );
+				rubyAnswer.setAnswer( AnswerMapper.getFeaturedAnswer( question, movieTickets, movieFlyService ) );
+				rubyAnswer.setQuestionType( AnswerMapper.Featured_Question );
+				rubyAnswer.setMovieTicket( matchMovieTicket );
+			}
+		}catch ( Exception ex ){
+			System.out.println( "Exception! " + ex.getMessage() );
+			ex.printStackTrace();
 		}
-		catch (Exception ex){
+		// Log
+		Log log = new Log();
+		log.setQuestion( question );
+		log.setIntent( rubyAnswer.getIntent() );
+		log.setAnswer( rubyAnswer.getAnswer() );
+		log.setDate( new Date() );
+		QueryParamater queryParamater = new QueryParamater();
+		queryParamater.setBeginTime( rubyAnswer.getBeginTime() );
+		queryParamater.setEndTime( rubyAnswer.getEndTime() );
+		queryParamater.setMovieTitle( rubyAnswer.getMovieTitle() );
+		queryParamater.setMovieTicket( rubyAnswer.getMovieTicket() );
+		log.setQueryParamater( queryParamater );
+		logService.save( log );
+		
+		if( rubyAnswer.getAnswer().contains( "Xin lỗi," ) ){
+			rubyAnswer.setSuccessful( true );
+		}
+		
+		return rubyAnswer;
+	}
+
+	public static String getSimsimiResponse( String question ) {
+		System.out.println( "Simsimi get answer ...." );
+		System.out.println( "question: " + question );
+		try{
+			String url = "http://sandbox.api.simsimi.com/request.p?key=9cac0c6c-1810-447b-ad5c-c1c76b2aadeb&lc=vn&text="
+					+ URLEncoder.encode( question, "UTF-8" );
+			String jsonString = HttpHelper.sendGet( url );
+			System.out.println( "response: " + jsonString );
+			JSONObject json = new JSONObject( jsonString );
+			String answer = json.getString( "response" );
+			return answer;
+		}catch ( Exception ex ){
 			return "Em mệt rồi, không chơi nữa, đi ngủ đây!";
 		}
-		
-		
+
 	}
-	
-	public static RubyAnswer getAnswerFromSimsimi(String question, QuestionStructure questionStructure) {
+
+	public static RubyAnswer getAnswerFromSimsimi( String question, QuestionStructure questionStructure ) {
 		RubyAnswer rubyAnswer = new RubyAnswer();
-		rubyAnswer.setQuestionStructure(questionStructure);
+		rubyAnswer.setQuestionStructure( questionStructure );
 		return rubyAnswer;
 	}
-	
-	public static QuestionStructure getQuestionStucture(String question,
-			QuestionStructureService questionStructureService) {
+
+	public static QuestionStructure getQuestionStucture( String question,
+			QuestionStructureService questionStructureService ) {
 		QuestionStructure questionStructure = new QuestionStructure();
-		String key = NlpHelper.normalizeQuestion(question);
+		String key = NlpHelper.normalizeQuestion( question );
 		// If in cache
-		if (questionStructureService.isInCache(key)) {
-			questionStructure = questionStructureService.getInCache(key);
+		if( questionStructureService.isInCache( key ) ){
+			questionStructure = questionStructureService.getInCache( key );
 			return questionStructure;
 		}
 		// If not in cache
-		questionStructure = NlpHelper.processQuestionStructure(question);
+		questionStructure = NlpHelper.processQuestionStructure( question );
 		// Cache new question
-		questionStructureService.cached(questionStructure);
+		questionStructureService.cached( questionStructure );
 		// Save to mongodb
-		questionStructureService.save(questionStructure);
+		questionStructureService.save( questionStructure );
 		return questionStructure;
 	}
 }
