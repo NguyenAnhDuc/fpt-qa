@@ -1,4 +1,3 @@
-
 package com.fpt.ruby.helper;
 
 import java.net.URLEncoder;

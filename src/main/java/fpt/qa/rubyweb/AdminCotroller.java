@@ -22,9 +22,11 @@ import sun.util.logging.resources.logging;
 import com.fpt.ruby.crawler.CrawlPhimChieuRap;
 import com.fpt.ruby.crawler.CrawlerMyTV;
 import com.fpt.ruby.crawler.moveek.MoveekCrawler;
+import com.fpt.ruby.model.Cinema;
 import com.fpt.ruby.model.Log;
 import com.fpt.ruby.model.MovieTicket;
 import com.fpt.ruby.model.TVProgram;
+import com.fpt.ruby.service.CinemaService;
 import com.fpt.ruby.service.LogService;
 import com.fpt.ruby.service.TVProgramService;
 import com.fpt.ruby.service.mongo.MovieTicketService;
@@ -39,6 +41,8 @@ public class AdminCotroller {
 	private TVProgramService tvProgramService;
 	@Autowired
 	private LogService logService;
+	@Autowired
+	private CinemaService cinemaService;
 	
 	@RequestMapping(value="/crawlPhimChieuRap", method = RequestMethod.POST,  produces = "application/json; charset=UTF-8")
 	@ResponseBody
@@ -127,13 +131,32 @@ public class AdminCotroller {
 			ex.printStackTrace();
 			model.addAttribute("status","failed");
 			return "crawl";
-			//return new BasicDBObject().append("status", "failed");
 		}
 		model.addAttribute("status","success");
 		List<MovieTicket> tickets = movieTicketService.findTicketToShow();
 		model.addAttribute("tickets",tickets);
 		return "showTicket";
-		//return new BasicDBObject().append("status", "success");
+	}
+	
+	@RequestMapping(value="/addCinema", method = RequestMethod.POST,  produces = "application/json; charset=UTF-8")
+	public String addCinema(@RequestParam("cin_name") String cinName, @RequestParam("cin_address") String cin_address,
+											@RequestParam("mobile") String mobile,Model model){
+		try{
+			Cinema cinema = new Cinema();
+			cinema.setName( cinName.trim() );
+			cinema.setAddress( cin_address.trim() );
+			cinema.setMobile( mobile.trim() );
+			cinemaService.save( cinema );
+		}
+		catch (Exception ex){
+			ex.printStackTrace();
+			model.addAttribute("status","failed");
+			return "";
+		}
+		model.addAttribute("status","success");
+		List<Cinema> cinemas = cinemaService.findAll();
+		model.addAttribute("cinemas",cinemas);
+		return "showCinema";
 	}
 	
 	@RequestMapping(value="admin", method = RequestMethod.GET)
@@ -161,6 +184,11 @@ public class AdminCotroller {
 		return "crawl-mytv";
 	}
 	
+	@RequestMapping(value="admin-add-cinema", method = RequestMethod.GET)
+	public String addCinema(Model model){
+		return "addCinema";
+	}
+	
 	@RequestMapping(value="admin-show-tickets", method = RequestMethod.GET)
 	public String showTickets(Model model){
 		List<MovieTicket> tickets = movieTicketService.findTicketToShow();
@@ -181,6 +209,13 @@ public class AdminCotroller {
 		List<TVProgram> tvPrograms = tvProgramService.findProgramToShow();
 		model.addAttribute("tvPrograms",tvPrograms);
 		return "showTV";
+	}
+	
+	@RequestMapping(value="admin-show-cinemas", method = RequestMethod.GET)
+	public String showCinemas(Model model){
+		List<Cinema> cinemas = cinemaService.findAll();
+		model.addAttribute("cinemas",cinemas);
+		return "showCinema";
 	}
 	
 	@RequestMapping(value="admin-show-logs", method = RequestMethod.GET)
