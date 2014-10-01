@@ -28,6 +28,10 @@
 			<input type="submit" class="btn btn-primary btn-lg btn-block"
 				id="btnSubmit" value="Show TVPrograms Today" />
 		</form>
+		<form action="admin-add-cinema">
+			<input type="submit" class="btn btn-primary btn-lg btn-block"
+				id="btnSubmit" value="Add Cinema Information" />
+		</form>
 	</tiles:putAttribute>
 </tiles:insertDefinition>
 

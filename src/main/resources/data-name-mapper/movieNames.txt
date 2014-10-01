@@ -118,8 +118,8 @@ diễn_viên	sam lerner; sam, lerner, s.lerner
 #time	03/10/2014;
 mov_title	One Litre Of Tears; 1 Lít Nước Mắt
 mov_title	10 Rules For Sleeping Around; 10 Điều Qua Đêm
-mov_title	Vtv1; 10 Điều Tôi Ghét Bạn
-mov_title	Vtc9; 100 Ngày Hoán Đổi Thân Xác
+mov_title	10 Điều Tôi Ghét Bạn
+mov_title	100 Ngày Hoán Đổi Thân Xác
 mov_title	100 Bloody Acres; 100 Xác Chết
 mov_title	100 Years Bride
 mov_title	101 Dalmatians; 101 Con Chó Đốm
@@ -175,7 +175,7 @@ mov_title	3 Quý Ông; 3 Golden Men - Sarm Noon Nuer Tong
 mov_title	30 Nights Of Paranormal Activity With The Devil Inside The Girl With The Dragon Tattoo; 30 Đêm
 mov_title	30 Days Of Night: Dark Days; 30 Ngày Đen Tối
 mov_title	Split Second; 30 Ngày Điều Tra
-mov_title	Vctv2; 30 Ngày Làm Cha
+mov_title	30 Ngày Làm Cha
 mov_title	30 Minutes Or Less; 30 Phút Hoặc Ít Hơn
 mov_title	Zero Dark Thirty; 30 Phút Sau Nửa Đêm
 mov_title	300: Rise Of An Empire; 300 Đế Chế Trỗi Dậy
@@ -183,15 +183,14 @@ mov_title	300; 300 Chiến Binh
 mov_title	300; 300 Chiến Binh Sparta
 mov_title	360; 360
 mov_title	Trọn Bộ; 365 Ngày Yêu
-mov_title	Vtvc2; 39 Độ Yêu
+mov_title	39 Độ Yêu
 mov_title	40 Days And Nights; 40 Ngày Và Đêm
 mov_title	The 40 Year Old Virgin; 40 Tuổi Vẫn Còn Zin
 mov_title	42 Độ Đạm
 mov_title	Movie 43; 43 Ngày Kỳ Quặc
 mov_title	44 Inch Chest; 44 Inch Chest
 mov_title	47 Ronin
-mov_title	Trọn Bộ; 49
-mov_title	49 Ngày; Vctv7 - 49 Days
+mov_title	49 Ngày; 49 Days
 mov_title	Phobia 2; 5 Câu Chuyện Kinh Dị
 mov_title	5 Năm Đính Hôn; The Five-year Engagement
 mov_title	5 Days Of War; 5 Ngày Của Tháng 8
@@ -246,11 +245,11 @@ mov_title	Safety Not Guaranteed; An Toàn Không Được Bảo Đảm
 mov_title	Angel Warriors
 mov_title	Avenging Angelo; Angelo Báo Thù
 mov_title	Anger Management; Anger Management
-mov_title	Anh Ấy Không Đơn Độc; Vtv1 - Kyle Xy
+mov_title	Anh Ấy Không Đơn Độc; Kyle Xy
 mov_title	Mary Stayed Out All Night; Anh Ấy Là Chồng Tôi
 mov_title	Anh Có Thích Nước Mỹ Không
 mov_title	Manny; Anh Chàng Bảo Mẫu
-mov_title	Sctv14; Anh Chàng Bốn Mắt
+mov_title	Anh Chàng Bốn Mắt
 mov_title	If You Care; Anh Chàng Bê Bối
 mov_title	Billa 2; Anh Chàng Billa 2
 mov_title	Honesty; Anh Chàng Dể Thương
@@ -261,13 +260,13 @@ mov_title	Struck By Lightning; Anh Chàng Sét Đánh
 mov_title	Mr. Deeds; Anh Chàng Thật Thà
 mov_title	Anh Dã 3+1; Anh Dã 3+1
 mov_title	Anh Em Nhà Bác Sĩ
-mov_title	Thvl1; Anh Em Nhà Bác Sĩ (việt Nam)
+mov_title	Anh Em Nhà Bác Sĩ (việt Nam)
 mov_title	The Brothers Bloom; Anh Em Nhà Bloom
 mov_title	Anh Em Nhà Reyes; Anh Em Nhà Reyes
 mov_title	Twins; Anh Em Song Sinh
 mov_title	Hero; Anh Hùng
-mov_title	Tập 20/20; Anh Hùng Đao Thủ
-mov_title	72 Heroes; Anh Hùng Điệp Huyết
+mov_title	Anh Hùng Đao Thủ
+mov_title	Anh Hùng Điệp Huyết
 mov_title	A Better Tomorrow; Anh Hùng Bản Sắc
 mov_title	A Better Tomorrow 2; Anh Hùng Bản Sắc 2
 mov_title	A Better Tomorrow 3; Anh Hùng Bản Sắc 3
@@ -279,7 +278,7 @@ mov_title	Tragic Hero; Anh Hùng Hảo Hán
 mov_title	Anh Hùng Hong Gil Dong
 mov_title	Anh Hùng Làng Nà Mạ
 mov_title	Lôi Phong Tháp Anh Hùng Truyền; Anh Hùng Lôi Phong Tháp
-mov_title	Vctv5; Anh Hùng Liêm Chính
+mov_title	Anh Hùng Liêm Chính
 mov_title	Lidice; Anh Hùng Lidice
 mov_title	To Where He Belong; Anh Hùng Mongkok
 mov_title	Anh Hùng Quý Tính; Anh Hùng Nặng Vai
@@ -292,7 +291,7 @@ mov_title	Anh Hùng Thủy Hử
 mov_title	What A Hero; Anh Hùng Thứ Thiệt
 mov_title	Burning Flame 3; Anh Hùng Trong Biển Lửa
 mov_title	Sword And Flower; Anh Hùng Và Mỹ Nhân
-mov_title	22/22; Anh Hùng Xạ Điêu
+mov_title	Anh Hùng Xạ Điêu
 mov_title	Anh Hùng Xạ Điêu 1982
 mov_title	Anh Hùng Xạ Điêu 2002
 mov_title	Tân Anh Hùng Xạ Điêu; Anh Hùng Xạ Điêu 2008
@@ -328,14 +327,14 @@ mov_title	Imaginaerum; Ảo Giác
 mov_title	Corner With Love; Ảo Giác Gặp Tình Yêu
 mov_title	A Fantastic Fear Of Everything; Ảo Giác Ma Quái
 mov_title	Ảo Mộng
-mov_title	Sctv; Ảo Tình
+mov_title	Ảo Tình
 mov_title	The Prestige; Ảo Thuật Gia Đấu Trí
 mov_title	The Incredible Burt Wonderstone; Ảo Thuật Gia Đấu Trí 2013
-mov_title	20/20; Ảo Thuật Kỳ Duyên
+mov_title	Ảo Thuật Kỳ Duyên
 mov_title	Ảo Vọng
 mov_title	Larva; Ấu Trùng Tinh Nghịch
 mov_title	Larva Season 2; Ấu Trùng Tinh Nghịch Phần 2
-mov_title	Htv9; Ầu Ơ Ví Dầu
+mov_title	Ầu Ơ Ví Dầu
 mov_title	The Stew Of Life; Ẩm Thực Cuộc Sống
 mov_title	Shelter; Ẩn Trốn
 mov_title	Oscars Oasis; Ốc Đảo Của Oscar
@@ -349,10 +348,10 @@ mov_title	Home Alone 5: The Holiday Heist; Ở Nhà Một Mình 5
 mov_title	Ở Rể; Ở Rể
 mov_title	Proxy; Ủy Quyền
 mov_title	App; Ứng Dụng Chết Người
-mov_title	Vtv2; Ỷ Thiên Đồ Long Ký
+mov_title	Ỷ Thiên Đồ Long Ký
 mov_title	Ỷ Thiên Đồ Long Ký; Ỷ Thiên Đồ Long Ký
 mov_title	Ỷ Thiên Đồ Long Ký 2000
-mov_title	Ỷ Thiên Đồ Long Ký 2003; Sctv6 - Sntv
+mov_title	Ỷ Thiên Đồ Long Ký 2003;
 mov_title	Heavenly sword; Ỷ Thiên Kiếm
 mov_title	Á Châu Cảnh Sát; Á Châu Cảnh Sát
 mov_title	Mauvaise Foi; Ác Ý
@@ -369,7 +368,7 @@ mov_title	Legion; Ác Thần
 mov_title	Dominion 1; Ác Thần 1
 mov_title	Eternal Beloved; Ái Hữu Lai Sinh
 mov_title	Vũ Điệu Mộng Tình; Ái Quân Như Mộng
-mov_title	Htv9; Ám Ảnh
+mov_title	Ám Ảnh
 mov_title	Stay; Ám Ảnh
 mov_title	The Invoking; Ám Ảnh
 mov_title	A Haunting At Silver Falls; Ám Ảnh Ở Thác Bạc
@@ -388,7 +387,7 @@ mov_title	2000 Ad; Án Tử Hình
 mov_title	Án Tình Tà Giáo; Án Tình Tà Giáo
 mov_title	Trọn Bộ; Án Tình Tuổi 17
 mov_title	A Song To Remember; Ánh Đèn Về Đêm
-mov_title	Vctv2; Ánh Ban Mai
+mov_title	Ánh Ban Mai
 mov_title	Rising Sun; Ánh Dương Tình Yêu
 mov_title	Ánh Sáng Ban Mai; Ánh Mặt Trời
 mov_title	Ánh Sao Trong Tim
@@ -398,7 +397,7 @@ mov_title	The Cold Light Of Day; Ánh Sáng Cuối Con Đường
 mov_title	Ánh Sáng Thiên Đường
 mov_title	Ánh Sáng Và Bóng Tối
 mov_title	Moonstruck; Ánh Trăng Độc Ác
-mov_title	Sctv Tổng Hợp; Ánh Trăng Buồn
+mov_title	Ánh Trăng Buồn
 mov_title	Blue Ruin; Ánh Xanh Tiều Tụy
 mov_title	Wedding Dress; Áo Cưới
 mov_title	Perfect Wedding; Áo Cưới Hoàn Mỹ
@@ -449,7 +448,7 @@ mov_title	Thats My Boy; Ông Con Quý Tử
 mov_title	Hotel King; Ông Hoàng Khách Sạn
 mov_title	Fashion King; Ông Hoàng Thời Trang
 mov_title	Ông Tơ Bà Nguyệt
-mov_title	Vtv1; Ông Tơ Hai Phẩy
+mov_title	Ông Tơ Hai Phẩy
 mov_title	The Street King; Ông Trùm
 mov_title	Scarface; Ông Trùm Mặt Sẹo
 mov_title	Power 1; Ông Trùm New York 1
@@ -475,7 +474,7 @@ mov_title	Sword Art Online; Đao Kiếm Thần Vực
 mov_title	The Butcher,the Chef And The Swordsman; Đao Kiên Tiếu
 mov_title	Seytanın Oteli 3; Đao Phủ 3
 mov_title	Swordsman 3; Đao Xoáy
-mov_title	Vtv1; Đại A Hoàn
+mov_title	Đại A Hoàn
 mov_title	The Great Magician; Đại Ảo Thuật Gia
 mov_title	King Geunchogo; Đại Đế Chiến Quốc
 mov_title	Đại Đế Tần Thủy Hoàng
@@ -490,7 +489,7 @@ mov_title	My Boss My Hero; Đại Ca Tôi Đi Học
 mov_title	Don Quixote; Đại Ca Và Chàng Ngốc
 mov_title	Big Feet Queen Sang Yang; Đại Cước Mã Hoàng Hậu Sang Yang
 mov_title	Đại Chiến Bến Thượng Hải
-mov_title	Vctv7; Đại Chiến Cổ Kim
+mov_title	Đại Chiến Cổ Kim
 mov_title	Mega Shark vs Mecha Shark; Đại Chiến Cá Mập
 mov_title	Đại Chiến Cô Dâu
 mov_title	Girls Against Boys; Đại Chiến Giới Tính
@@ -513,10 +512,10 @@ mov_title	Noah; Đại Hồng Thủy
 mov_title	The Muppets; Đại Hội Nhạc Rối
 mov_title	The Wedding Game; Đại Hỷ Sự
 mov_title	Đại Hán Hiền Hậu Vệ Tử Phu
-mov_title	Vtc7; Đại Hòe Thụ
+mov_title	Đại Hòe Thụ
 mov_title	Cat And Mouse; Đại Hiệp Triển Chiêu
 mov_title	London Boulevard; Đại Lộ London
-mov_title	Thvl1; Đại Lão Gia Sau Bức Màn
+mov_title	Đại Lão Gia Sau Bức Màn
 mov_title	Đại Luật Sư Tranh Tài
 mov_title	The Great Magician; Đại Ma Thuật Sư
 mov_title	Đại Mạc Kiêu Hùng; Đại Mạc Kiêu Hùng
@@ -561,17 +560,17 @@ mov_title	Đảo Hải Tặc; One Piece - Vua Hải Tặc
 mov_title	Black Rock; Đảo Hoang
 mov_title	Shutter Island; Đảo Kinh Hoàng
 mov_title	Island Of Fire; Đảo Lửa
-mov_title	Tập 21 22 23 Hvt9; Đảo Ngọc Huyền Bí
+mov_title	Đảo Ngọc Huyền Bí
 mov_title	Đảo Ngọt
 mov_title	Passion Island; Đảo Tình Yêu
 mov_title	Go Goa Gone; Đảo Thây Ma
 mov_title	The Island; Đảo Vô Hình
-mov_title	Htv9; Đảo Xanh
+mov_title	Đảo Xanh
 mov_title	Land Of The Dead; Đảo Xác Chết
-mov_title	Đất Mặn; Tập 48-49 Htv9
+mov_title	Đất Mặn;
 mov_title	Homeland 3; Đất Mẹ 3
 mov_title	Đất Mơ Xanh
-mov_title	Tập 10/10; Đất Phương Nam
+mov_title	Đất Phương Nam
 mov_title	Đất Trắng; Đất Trắng
 mov_title	Trọn Bộ; Đất Và Người
 mov_title	Forced to Fight; Đấu Hoặc Chết
@@ -582,16 +581,16 @@ mov_title	The Philly Kid; Đấu Sĩ Lồng Sắt
 mov_title	Gladiators Of Rome; Đấu Sĩ Thành Rome
 mov_title	Duel Love; Đấu Tình
 mov_title	Saheb Biwi Aur Gangster Returns; Đấu Tranh Gia Tộc
-mov_title	20/20; Đấu Trí
+mov_title	Đấu Trí
 mov_title	Battle Of The Year 3d; Đấu Trường Breakdance
 mov_title	The Starving Games; Đấu Trường Chết Đói
 mov_title	The Big Brawl; Đấu Trường Sát Thủ
 mov_title	The Hunger Games; Đấu Trường Sinh Tử
 mov_title	The Hunger Games: Mockingjay Part 2; Đấu Trường Sinh Tử: Húng Nhại 2
-mov_title	Htvc Gia Đình; Đấu Trường Yoyo
+mov_title	Đấu Trường Yoyo
 mov_title	Shark Night; Đầm Cá Mập
 mov_title	Alligator Alley; Đầm Cá Sấu
-mov_title	Vtv4 2011; Đầm Lầy Bạc
+mov_title	Đầm Lầy Bạc
 mov_title	Đầu Bếp Bí Ẩn
 mov_title	Comme Un Chef; Đầu Bếp Trứ Danh
 mov_title	The Warlords; Đầu Danh Trạng
@@ -601,7 +600,7 @@ mov_title	Generals Goblet; Đẩm Máu Hà Nam
 mov_title	Blood Out; Đẫm Máu
 mov_title	Đập Cánh Giữa Không Trung
 mov_title	Gods Of Honour; Đắc Kỷ Trụ Vương
-mov_title	Sctv14; Đằng Sau Một Số Phận
+mov_title	Đằng Sau Một Số Phận
 mov_title	Đẳng Cấp Quý Cô
 mov_title	The Queen Of Sop 2; Đẳng Cấp Quý Cô 2
 mov_title	Đẳng Cấp Quý Cô 3
@@ -626,7 +625,7 @@ mov_title	Oosaravelli; Đặc Vụ Phi Pháp
 mov_title	Black Dynamite; Đặc Vụ Trả Thù
 mov_title	The Ugly Ghost; Đẹp Như Ma
 mov_title	Đẹp Từng Centimet
-mov_title	Todaytv; Đế Cẩm
+mov_title	Đế Cẩm
 mov_title	Boardwalk Empire Season 2; Đế Chế Ngầm 2
 mov_title	Boardwalk Empire Season 3; Đế Chế Ngầm 3
 mov_title	Boardwalk Empire 4; Đế Chế Ngầm 4
@@ -667,7 +666,7 @@ mov_title	Grave Encounters 2; Đối Đầu Quỷ Dữ 2
 mov_title	True Justic: Brotherhood; Đối Đầu Với Mafia
 mov_title	Grave Encounters; Đối Đầu Với Quỷ Dữ
 mov_title	Venture Against Time; Đối Đầu Với Thời Gian
-mov_title	Thvl1; Đối Diện Tử Thần
+mov_title	Đối Diện Tử Thần
 mov_title	Đối Mặt; Đối Mặt
 mov_title	Đối Mặt
 mov_title	Sudden Impact; Đối Mặt 1983
@@ -694,7 +693,7 @@ mov_title	Đồng Tiền Đen
 mov_title	Blood Money; Đồng Tiền Máu
 mov_title	Đồng Tiền Muôn Mặt
 mov_title	Midas; Đồng Tiền Vô Cảm
-mov_title	Vctv2; Đồng Tiền Xương Máu
+mov_title	Đồng Tiền Xương Máu
 mov_title	Blood Shed; Đổ Máu
 mov_title	Wrecked; Đổ Nát
 mov_title	Cracks; Đổ Vỡ
@@ -719,7 +718,7 @@ mov_title	Swat Firefight; Đội Đặc Nhiệm
 mov_title	Gaganam; Đội Đặc Nhiệm Gaganam
 mov_title	Homicide Investigation Team; Đội Đặc Nhiệm H.i.t
 mov_title	Poseidon; Đội Đặc Nhiệm Hải Thần
-mov_title	Htv7; Đội Đặc Nhiệm Hoa Mộc Lan
+mov_title	Đội Đặc Nhiệm Hoa Mộc Lan
 mov_title	Seal Patrol; Đội Đặc Nhiệm Seal
 mov_title	Spec Shou; Đội Đặc Nhiệm Spec
 mov_title	Ten; Đội Đặc Nhiệm Ten
@@ -765,7 +764,7 @@ mov_title	Drumline; Đội Trống Cổ Động
 mov_title	Brothers Under The Skin; Độn Giáp Kỳ Binh
 mov_title	The Miracle Fighters; Độn Giáp Kỳ Môn
 mov_title	The Raid Redemption; Đột Kích
-mov_title	Đột Kích; Trung Quốc - Vtv9
+mov_title	Đột Kích;
 mov_title	The Raid 2: Berandal; Đột Kích 2: Kẻ Sát Nhân
 mov_title	Batman: Assault On Arkham; Đột Kích Arkham
 mov_title	Seoul Raiders; Đột Kích Seoul
@@ -774,12 +773,12 @@ mov_title	The Last Breakthrough; Đột Phá Cuối Cùng
 mov_title	Đời; Đời
 mov_title	Tutor Queen; Đời Ảnh Hậu
 mov_title	It's Complicated; Đời Đúng Là Rắc Rối
-mov_title	Vtc2; Đời Cát
+mov_title	Đời Cát
 mov_title	Flowers; Đời Hoa
 mov_title	Life As We Know It; Đời Không Như Là Mơ
 mov_title	Đời Như Ý
-mov_title	Htv7; Đời Như Tiệc
-mov_title	Thvl1; Đời Sống Chợ Đêm
+mov_title	Đời Như Tiệc
+mov_title	Đời Sống Chợ Đêm
 mov_title	The Great Beauty; Đời Sống Thượng Lưu
 mov_title	Waiting Alone; Đợi Chờ Cô Đơn
 mov_title	Hope For Dating; Đợi Chờ Tình Yêu
@@ -797,7 +796,7 @@ mov_title	The Son Of No One; Đứa Trẻ Bị Bỏ Rơi
 mov_title	Children Of Men; Đứa Trẻ Thời Chiến
 mov_title	Child 44; Đứa Trẻ Thứ 44
 mov_title	October Baby; Đứa Trẻ Tháng Mười
-mov_title	Đứng Giữa Trời Nắng; Thvl1 - A State In Mind
+mov_title	Đứng Giữa Trời Nắng; A State In Mind
 mov_title	Justin Bieber Never Say Never; Đừng Bao Giờ Nói Không Bao Giờ
 mov_title	Don't Worry Because I'm A Ghost; Đừng Lo Lắng Tôi Là Ma Nữ
 mov_title	Đừng Quên Em
@@ -806,8 +805,8 @@ mov_title	Take Me Home Tonight; Đừng Xa Em Đêm Nay
 mov_title	Think Like A Man; Đàn Ông Đích Thực
 mov_title	Đàn Ông Là Nhất 2
 mov_title	Everymans War; Đàn Ông Thời Chiến
-mov_title	Vtv3; Đàn Trời
-mov_title	Vtvc7; Đào Hoa Tiểu Muội
+mov_title	Đàn Trời
+mov_title	Đào Hoa Tiểu Muội
 mov_title	Desires Of The Heart; Đào Hoa Vận
 mov_title	Escapee; Đào Tẩu
 mov_title	A Simple Life; Đào Thư
@@ -826,7 +825,7 @@ mov_title	The Thorn Birds; Đánh Mất Cuộc Tình
 mov_title	Đánh Thức Ước Mơ
 mov_title	Patrick; Đánh Thức Tội Ác
 mov_title	Love Waking Up; Đánh Thức Tình Yêu
-mov_title	Htv9; Đánh Thức Trái Tim
+mov_title	Đánh Thức Trái Tim
 mov_title	Mere Brother Ki Dulhan; Đánh Tráo Nàng Dâu
 mov_title	Love And Obsession; Đánh Tráo Số Phận
 mov_title	Đáy Ao Oan Hồn
@@ -837,7 +836,7 @@ mov_title	Night At The Museum: Battle Of The Smithsonian; Đêm Ở Viện Bảo
 mov_title	Night At The Museum 3; Đêm Ở Viện Bảo Tàng 3
 mov_title	Night At The Magic Museum; Đêm Ở Viện Bảo Tàng Ma Thuật
 mov_title	Boogie Nights; Đêm Ăn Chơi
-mov_title	Todaytv; Đêm Định Mệnh
+mov_title	Đêm Định Mệnh
 mov_title	Night Of The Living Dead; Đêm Của Những Xác Chết
 mov_title	Strawberry Night Sp; Đêm Dâu
 mov_title	Đêm Dâu Tây; Tập 8-9 Strawberry Night
@@ -855,7 +854,7 @@ mov_title	The Longest Night In Shanghai; Đêm Thượng Hải
 mov_title	Nights In Rodanthe; Đêm Thiên Đường
 mov_title	Into The White Night; Đêm Trắng
 mov_title	One Night Surprise; Đêm Vui Bất Ngờ
-mov_title	Htv9; Đò Dọc
+mov_title	Đò Dọc
 mov_title	Inside Out; Đòn Chí Mạng
 mov_title	Rampage: Capital Punishment; Đòn Trừng Phạt
 mov_title	This Is It; Đó Là Anh
@@ -864,10 +863,10 @@ mov_title	Frozen; Đóng Băng
 mov_title	Admiral; Đô Đốc Hải Quân
 mov_title	City Of Glass; Đô Thị Thủy Tinh
 mov_title	Đôi Đũa Lệch
-mov_title	Vtc6; Đôi Cánh Thiên Thần
+mov_title	Đôi Cánh Thiên Thần
 mov_title	Đôi Hài Lọ Lem
 mov_title	Đôi Mắt Ân Tình; Đôi Mắt Ân Tình
-mov_title	Todaytv; Đôi Mắt Của Trái Tim
+mov_title	Đôi Mắt Của Trái Tim
 mov_title	Angel Eyes; Đôi Mắt Thiên Thần
 mov_title	I Hear Your Voice; Đôi Tai Ngoại Cảm
 mov_title	Time Slip Dr.jin; Đôi Tay Thiên Tài
@@ -920,7 +919,7 @@ mov_title	Aftershocks; Đường Sơn Đại Địa Chấn
 mov_title	The Big Boss; Đường Sơn Đại Huynh
 mov_title	Đường Tình Đôi Ngả
 mov_title	The Way Back; Đường Trở Về
-mov_title	Vtc9; Đường Về Nhà
+mov_title	Đường Về Nhà
 mov_title	The Way Home; Đường Về Nhà 2002
 mov_title	Được Làm Hoàng Tử
 mov_title	The Accidental Couple; Được Sống Cùng Thần Tượng
@@ -930,12 +929,12 @@ mov_title	Die Hard: With A Vengeance; Đương Đầu Với Thử Thách 3: Báo
 mov_title	Die Hard 4 : Live Free Or Die Hard; Đương Đầu Với Thử Thách 4
 mov_title	Die Hard 5: A Good Day To Die Hard; Đương Dầu Với Thử Thách 5
 mov_title	Due Date; Đen Đủ Đường
-mov_title	Vtvcab1; Đen Trắng
+mov_title	Đen Trắng
 mov_title	Black And White; Đen Và Trắng
 mov_title	Regression; Đi Ngược
 mov_title	Đi Qua Bóng Tối
-mov_title	Vtv3; Đi Qua Dĩ Vãng
-mov_title	Vtv6; Đi Qua Mùa Nắng
+mov_title	Đi Qua Dĩ Vãng
+mov_title	Đi Qua Mùa Nắng
 mov_title	Đi Qua Ngày Biển Động; Đi Qua Ngày Biển Động
 mov_title	Đi Qua Ngày Giông Bão; Đi Qua Ngày Giông Bão
 mov_title	Seeking Justice; Đi Tìm Công Lý
@@ -1032,11 +1031,11 @@ mov_title	Xxx; Điệp Viên Xxx
 mov_title	Xxx: State Of The Union; Điệp Viên Xxx 2
 mov_title	Stomp The Yard 2: Homecoming; Điệu Nhảy Sôi Động
 mov_title	Love Sick Love; Điên Tình
-mov_title	Vtv2; Đinh Tiên Hoàng Đế
+mov_title	Đinh Tiên Hoàng Đế
 mov_title	Carpooling Shock; Đoạn Đường Kinh Hoàng
 mov_title	To Grow With Love; Đoạn Cuối Tình Yêu
 mov_title	Đoạn Soái Sở Lưu Hương
-mov_title	Thvl1; Đoạn Thế Điêu Hùng
+mov_title	Đoạn Thế Điêu Hùng
 mov_title	Valley Of No Hartre; Đoạn Thù Cốc
 mov_title	Đoạt Hồn
 mov_title	The Samaritan; Đoạt Lại Công Lý
@@ -1049,16 +1048,16 @@ mov_title	The Human Race; Đua Hoặc Chết
 mov_title	Đua Nhau Làm Giàu
 mov_title	Freerunner; Đua Với Thời Gian
 mov_title	Barbie; Ước Mơ Barbie
-mov_title	Vtv3; Ước Mơ Lấp Lánh
-mov_title	Tập 20/20; Ước Mơ Thành Hiện Thực
-mov_title	Ước Mơ Vươn Tới Một Ngôi Sao; Vtc1 - Star In My Heart
+mov_title	Ước Mơ Lấp Lánh
+mov_title	Ước Mơ Thành Hiện Thực
+mov_title	Ước Mơ Vươn Tới Một Ngôi Sao; Star In My Heart
 mov_title	Wish Upon A Star; Ước Nguyện Cùng Vì Sao
 mov_title	Three Brothers; Ba Anh Em
 mov_title	Ba Âm Nhân
 mov_title	Thrice Married Woman; Ba Đời Chồng
-mov_title	Vtv3; Ba Đám Cưới Một Đời Chồng
+mov_title	Ba Đám Cưới Một Đời Chồng
 mov_title	Ba Đóa Hoa; Ba Đóa Hoa
-mov_title	Vtv6; Ba Bông Hồng Của Eva
+mov_title	Ba Bông Hồng Của Eva
 mov_title	The Woman Who Wants To Marry; Ba Cô Nàng Khả Ái
 mov_title	Three Sisters; Ba Chị Em
 mov_title	Galilei Donna; Ba Chị Em Gái Galilei Donna
@@ -1069,7 +1068,7 @@ mov_title	The Allure Of Tears; Ba Giọt Nước Mắt
 mov_title	Ba Họ Một Nhà
 mov_title	Three Days; Ba Ngày
 mov_title	Kai Po Che; Ba Người Anh Em
-mov_title	Vtv2; Ba Người Đàn Bà
+mov_title	Ba Người Đàn Bà
 mov_title	Fantasia; Ba Nguyện Vọng
 mov_title	Mighty Baby; Baby Tuyệt Hảo
 mov_title	Bad Boys
@@ -1080,7 +1079,7 @@ mov_title	Bangkok Revenge; Bangkok Báo Thù
 mov_title	Bao Đại Nhân Và Thất Hiệp Ngũ Nghĩa
 mov_title	Bao Công Và Đồng Bọn
 mov_title	Sayonara Itsuka; Bao Giờ Chia Tay
-mov_title	Sctv14; Bao La Tình Mẹ
+mov_title	Bao La Tình Mẹ
 mov_title	Bao La Vùng Trời 2
 mov_title	Crystal Fortunbe Run; Bao Phong Nhãn
 mov_title	Justice Pao; Bao Thanh Thiên
@@ -1104,7 +1103,7 @@ mov_title	Deep Rising; Bạch Tuộc Khổng Lồ
 mov_title	Bermuda Tentacles; Bạch Tuột Khổng Lồ
 mov_title	Snow White And The Huntsman; Bạch Tuyết Và Gã Thợ Săn
 mov_title	Bạch Xà Chính Truyện
-mov_title	Tập 30/30; Bạch Xà Truyện
+mov_title	Bạch Xà Truyện
 mov_title	Bạn Đời; Bạn Đời
 mov_title	My Old Classmate; Bạn Cùng Lớp
 mov_title	Girlfriend Boyfriend; Bạn Gái Bạn Trai
@@ -1127,7 +1126,7 @@ mov_title	The Commitment; Bản Cam Kết
 mov_title	Bản Chúc Thư
 mov_title	The Blacklist 1; Bản Danh Sách Đen
 mov_title	Sorority Row; Bản Danh Sách Nữ Sinh
-mov_title	Vtv3; Bản Di Chúc Bí Ẩn
+mov_title	Bản Di Chúc Bí Ẩn
 mov_title	Bản Giao Ước Định Mệnh
 mov_title	Destiny's Concerto; Bản Giao Hưởng Định Mệnh
 mov_title	Bản Giao Hưởng Tình Yêu
@@ -1139,7 +1138,7 @@ mov_title	Bản Lĩnh Công Tử
 mov_title	Bản Lĩnh Kỷ Hiểu Lam; Bản Lĩnh Kỷ Hiểu Lam
 mov_title	Bản Lĩnh Kỷ Hiểu Lam 4; Bản Lĩnh Kỷ Hiểu Lam 4
 mov_title	Instinct; Bản Năng
-mov_title	Tập 8 9 10 Vtc6; Bản Năng Đàn Bà
+mov_title	Bản Năng Đàn Bà
 mov_title	The Grey; Bản Năng Sinh Tồn
 mov_title	Born To Raise Hell; Bản Năng Trả Thù
 mov_title	Hate Story; Bản Năng Trả Thù 2012
@@ -1152,7 +1151,7 @@ mov_title	Bản Sắc Hào Môn
 mov_title	Hotarubi no mori e; Bản Tình Ca
 mov_title	Sad Love Story; Bản Tình Ca Buồn
 mov_title	A Love Song For Bobby Long; Bản Tình Ca Cho Bobby Long
-mov_title	Vtv2; Bản Tình Ca Mùa Đông
+mov_title	Bản Tình Ca Mùa Đông
 mov_title	The Alphabet Killer; Bảng Chữ Cái Chết Chóc
 mov_title	Bảng Phong Thần
 mov_title	Love Guaranteed; Bảo Hiểm Tình Yêu
@@ -1169,7 +1168,7 @@ mov_title	Protect The Boss; Bảo Vệ Ông Chủ
 mov_title	Sky Force; Bảo Vệ Bầu Trời
 mov_title	Jai Ho; Bảo Vệ Công Lý
 mov_title	The Contractor; Bảo Vệ Gia Đình
-mov_title	Htv2; Bảo Vệ Nhân Chứng
+mov_title	Bảo Vệ Nhân Chứng
 mov_title	Seven Sisters; Bảy Chị Em
 mov_title	From Heaven To Heart; Bảy Sắc Nhân Gian
 mov_title	Se7en; Bảy Tội Lỗi Chết Người
@@ -1191,14 +1190,14 @@ mov_title	Bait; Bẫy Cá Mập
 mov_title	Shark Week; Bẫy Cá Mập 2
 mov_title	Việt Nam; Bẫy Rồng
 mov_title	Dino Death Trap; Bẫy Tử Thần Của Khủng Long
-mov_title	Tập 29 30 31 Htv9; Bẫy Tình
+mov_title	Bẫy Tình
 mov_title	Bẫy Tình 2
 mov_title	The Master; Bậc Thầy
 mov_title	Kungfu Master; Bậc Thầy Kungfu
 mov_title	Masters Of Sex; Bậc Thầy Tình Dục
 mov_title	Masters Of Sex 2; Bậc Thầy Tình Dục 2
 mov_title	Recoil; Bật Lại
-mov_title	Sctv9; Bắc Đẩu Song Hùng
+mov_title	Bắc Đẩu Song Hùng
 mov_title	Silverado; Bắn Chậm Thì Chết
 mov_title	Salmon Fishing In The Yemen; Bắt Cá Hai Tay
 mov_title	Along Came A Spider; Bắt Cóc
@@ -1211,20 +1210,20 @@ mov_title	Catch Me If You Can; Bắt Tôi Nếu Có Thể
 mov_title	The Scarlet Letter; Bằng Chứng Ngoại Tình
 mov_title	Proof Of Life; Bằng Chứng Sự Sống
 mov_title	Evidence; Bằng Chứng Tội Ác
-mov_title	Vtv6; Bằng Chứng Tội Phạm
+mov_title	Bằng Chứng Tội Phạm
 mov_title	Bằng Chứng Thép 1
 mov_title	Bằng Chứng Thép 2
-mov_title	Htv2; Bằng Chứng Thép 3
+mov_title	Bằng Chứng Thép 3
 mov_title	Role Models; Bẻ Sừng Làm Gương
 mov_title	Bến Đỗ Bình Yên
-mov_title	Htv7; Bến Đò Xưa Lặng Lẽ
+mov_title	Bến Đò Xưa Lặng Lẽ
 mov_title	Bến Mãi Đợi Đò
 mov_title	The Mooring; Bến Tử Thần
 mov_title	Bến Tình Yêu; Bến Tình Yêu
 mov_title	Shanghai Grand; Bến Thượng Hải
-mov_title	Bến Vắng; Tập 39-40 Htv7
-mov_title	K+; Bếp Của Mẹ
-mov_title	Vtv3; Bếp Hát
+mov_title	Bến Vắng;
+mov_title	Bếp Của Mẹ
+mov_title	Bếp Hát
 mov_title	The Crazies; Bệnh Điên
 mov_title	The English Patient; Bệnh Nhân Người Anh
 mov_title	Hauted Changi; Bệnh Viện Ma Changi
@@ -1260,7 +1259,7 @@ mov_title	Bốn Nàng Tiểu Thư
 mov_title	Bốn Người Đàn Ông Đời Tôi
 mov_title	Four Assassins; Bốn Sát Thủ
 mov_title	Bốn Thiếu Gia Ở Kinh Thành
-mov_title	Vctv1; Bốn Tuần Trước Ngày Cưới
+mov_title	Bốn Tuần Trước Ngày Cưới
 mov_title	Bồ Tùng Linh
 mov_title	Bỗng Dưng Muốn Khóc; Bỗng Dưng Muốn Khóc
 mov_title	Bộ Đồ Mới Của Nữ Thần
@@ -1268,7 +1267,7 @@ mov_title	Double Team; Bộ Đôi
 mov_title	Ride Along; Bộ Đôi Cảnh Sát
 mov_title	Triangle; Bộ Ba
 mov_title	My Best Gay Friends; Bộ Ba Đĩ Thõa
-mov_title	Htv2; Bộ Bộ Kinh Tâm
+mov_title	Bộ Bộ Kinh Tâm
 mov_title	Bộ Bộ Kinh Tình
 mov_title	Brain; Bộ Não
 mov_title	The Brain Man; Bộ Não Con Người
@@ -1282,9 +1281,9 @@ mov_title	Fantastic Four 2: Rise Of The Silver Surfer; Bộ Tứ Siêu Đẳng 2
 mov_title	The Fantastic Four; Bộ Tứ Siêu Đẳng 2015
 mov_title	Poker King; Bộc Khắc Vương
 mov_title	Bội Tình
-mov_title	Vtv9; Bờ Bến Lạ
+mov_title	Bờ Bến Lạ
 mov_title	Bởi Vì Tình Yêu Đẹp Biết Bao
-mov_title	Todaytv; Bụi Đời
+mov_title	Bụi Đời
 mov_title	Bụi Đời Chợ Lớn
 mov_title	The Lucky One; Bức Ảnh Định Mệnh
 mov_title	Dorian Gray; Bức Chân Dung Của Quỷ Dữ
@@ -1307,7 +1306,7 @@ mov_title	The Lion Roars; Bà Vợ Sư Tử
 mov_title	The Lion Roars; Bà Vợ Sư Tử Hà Đông
 mov_title	Bà Xã Đảm Đang
 mov_title	Bà Xã Tôi Đâu; Please Come Back, Soon-ae
-mov_title	Vtv1; Bài Ca Sơ Đông
+mov_title	Bài Ca Sơ Đông
 mov_title	An Ethics Lesson; Bài Học Đạo Đức
 mov_title	Lesson Of The Evil; Bài Học Của Ác Quỷ
 mov_title	Hajimari No Uta; Bài Hát Đầu
@@ -1330,7 +1329,7 @@ mov_title	Crows Zero 2; Bá Vương Học Đường 2
 mov_title	Bull Doctor; Bác Sỹ Cứng Đầu
 mov_title	Obstetrics And Gynecology Doctors; Bác Sỹ Khoa Phụ Sản
 mov_title	Bác Sĩ Bong Dal Hee
-mov_title	Vtv3; Bác Sĩ Jin
+mov_title	Bác Sĩ Jin
 mov_title	Bác Sĩ Jin 2
 mov_title	Dr Mack; Bác Sĩ Lưu Manh
 mov_title	Good Doctor; Bác Sĩ Nhân Ái
@@ -1347,7 +1346,7 @@ mov_title	Bánh Đúc Có Xương
 mov_title	Brick; Bánh Heroin
 mov_title	American Pie: Reunion; Bánh Mỹ: Sum Họp
 mov_title	Code Red; Báo Động Đỏ
-mov_title	Thvl1; Báo Cáo Sư Phụ
+mov_title	Báo Cáo Sư Phụ
 mov_title	African Cats; Báo Châu Phi
 mov_title	Báo Oán
 mov_title	Ghajini; Báo Thù
@@ -1373,7 +1372,7 @@ mov_title	Firestorm; Bão Lửa
 mov_title	Bão Mùa Hè
 mov_title	Bão Qua Làng
 mov_title	Quantum Apocalypse; Bão Từ Apocalypse
-mov_title	Vtc1; Bão Trong Im Lặng
+mov_title	Bão Trong Im Lặng
 mov_title	100 Degrees Below Zero; Bão Tuyết
 mov_title	Hoa Trong Bão; Bão Vũ Lệ Hoa
 mov_title	Bên Dòng Nước
@@ -1386,13 +1385,13 @@ mov_title	Together; Bên Nhau
 mov_title	Bên Nhau Nơi Chân Trời
 mov_title	Bên Nhau Trọn Đời
 mov_title	Việt Nam; Bên Nhau Trọn Đời
-mov_title	Thvl1; Bìm Bịp Kêu Chiều
+mov_title	Bìm Bịp Kêu Chiều
 mov_title	Dawn Of The Dead; Bình Minh Chết
 mov_title	Bình Minh Châu Thổ
 mov_title	Bình Minh Trên Ngọn Lửa
-mov_title	Htv9; Bình Tây Đại Nguyên Soái
-mov_title	Htv7; Bình Tung Hiệp Ảnh
-mov_title	Tập 26/26; Bình Tung Hiệp Ảnh 1985
+mov_title	Bình Tây Đại Nguyên Soái
+mov_title	Bình Tung Hiệp Ảnh
+mov_title	Bình Tung Hiệp Ảnh 1985
 mov_title	The Haunting In Connecticut 2; Bí Ẩn Ở Georgia 2
 mov_title	Hashima Project; Bí Ẩn Đảo Hashima
 mov_title	Vanishing On 7th Street; Bí Ẩn Bóng Tối
@@ -1422,17 +1421,17 @@ mov_title	Bí Mật Đảo Coocoo
 mov_title	Bí Mật Đàn Ông
 mov_title	Agnosia; Bí Mật Đen Tối
 mov_title	Bí Mật Ba Người Đàn Bà
-mov_title	20/20; Bí Mật Bảo Tàng
+mov_title	Bí Mật Bảo Tàng
 mov_title	Bí Mật Bút Ký Người Đi Săn; Bí Mật Bút Ký Người Đi Săn
-mov_title	Tập 31 32 33 Vtv1; Bí Mật Bướm Xanh
+mov_title	Bí Mật Bướm Xanh
 mov_title	Austin Powers: International Man Of Mystery; Bí Mật Của Đàn Ông
 mov_title	The Secret Of Kells; Bí Mật Của Kells
-mov_title	Yantv; Bí Mật Của Ngày Mai
+mov_title	Bí Mật Của Ngày Mai
 mov_title	Bí Mật Của Người Vợ
 mov_title	Secret Of The Superstar; Bí Mật Của Siêu Sao
 mov_title	The Wedding Party; Bí Mật Của Steve
 mov_title	Bí Mật Của Tình Yêu
-mov_title	Sctv9; Bí Mật Của Trái Tim
+mov_title	Bí Mật Của Trái Tim
 mov_title	The Secret Life Of Walter Mitty; Bí Mật Của Walter Mitty
 mov_title	Pandorum; Bí Mật Chết Chóc
 mov_title	Crawlspace; Bí Mật Chết Chóc
@@ -1450,30 +1449,30 @@ mov_title	The Empire Symbol; Bí Mật Minh Triều
 mov_title	The King And I; Bí Mật Nội Phủ
 mov_title	Sennentuntschi: Curse Of The Alps; Bí Mật Núi Tuyết
 mov_title	Lara Croft Tomb Raider; Bí Mật Ngôi Mộ Cổ
-mov_title	Bí Mật Rồng Nam Vu Lý; Lưu Bá Ôn Phần 9 - Thvl1
+mov_title	Bí Mật Rồng Nam Vu Lý; Lưu Bá Ôn Phần 9
 mov_title	Bí Mật Seoul
 mov_title	Bí Mật Tam Giác Bermuda
-mov_title	Vtv3; Bí Mật Tam Giác Vàng
+mov_title	Bí Mật Tam Giác Vàng
 mov_title	A Secret Affair; Bí Mật Tình Yêu
 mov_title	Behind The White Tower; Bí Mật Tòa Tháp Trắng
 mov_title	Oblivion; Bí Mật Trái Đất Diệt Vong
-mov_title	Vtv3; Bí Mật Trái Tim
+mov_title	Bí Mật Trái Tim
 mov_title	Unriddle; Bí Mật Vô Hình
 mov_title	Reign 1; Bí Mật Vương Triều 1
 mov_title	Beauty And The Breast; Bí Quyết Chỉnh Hình
 mov_title	Bí Thư Tỉnh Ủy; Bí Thư Tỉnh Ủy
-mov_title	Htv7; Bích Ba Tiên Tử
+mov_title	Bích Ba Tiên Tử
 mov_title	Bích Huyết Kiếm
 mov_title	The Sword Stained With Royal Blood; Bích Huyết Kiếm 1986
 mov_title	The Black Sheep Affair; Bích Huyết Lam Thiên
 mov_title	Bích Huyết Thanh Thiên Dương Gia Tướng
-mov_title	Vtv9; Bích Huyết Thanh Thiên Trân Châu Kỳ
+mov_title	Bích Huyết Thanh Thiên Trân Châu Kỳ
 mov_title	Raging Bull; Bò Đực Nổi Điên
-mov_title	Vctv1; Bò Cạp Tím
+mov_title	Bò Cạp Tím
 mov_title	Fright Night; Bóng Đêm Kinh Hoàng
 mov_title	Fright Night 2; Bóng Đêm Kinh Hoàng 2
-mov_title	Vtc9; Bóng Đêm Tội Ác
-mov_title	Vtc9; Bóng Ma
+mov_title	Bóng Đêm Tội Ác
+mov_title	Bóng Ma
 mov_title	Ghost In The Shell Arise 3; Bóng Ma Đau Khổ 3
 mov_title	Bóng Ma Gia Tộc
 mov_title	Goyas Ghosts; Bóng Ma Goya
@@ -1485,14 +1484,14 @@ mov_title	The Theatre Bizarre; Bóng Ma Trong Ngôi Nhà 2011
 mov_title	Ghost In The Factory; Bóng Ma Trong Nhà Máy
 mov_title	Basketball; Bóng Rổ
 mov_title	Dead Shadows; Bóng Tối Chết Chóc
-mov_title	Htv2; Bóng Tối Hận Thù
+mov_title	Bóng Tối Hận Thù
 mov_title	Dilarang Masuk; Bóng Tối Ngãi Ma
-mov_title	Vtv9; Bóng Tối Rực Rỡ
-mov_title	Htvc Phim; Bóng Tối Tội Lỗi
+mov_title	Bóng Tối Rực Rỡ
+mov_title	Bóng Tối Tội Lỗi
 mov_title	Bóng Vua; Bóng Vua
 mov_title	Last Vegas; Bô Lão Xì Tin
 mov_title	Bông Dừa Cạn
-mov_title	Thvl1; Bông Hồng Cho Tướng Cướp
+mov_title	Bông Hồng Cho Tướng Cướp
 mov_title	Bông Hồng Tình Yêu
 mov_title	Green Rose; Bông Hồng Xanh
 mov_title	Scarecrow; Bù Nhìn
@@ -1531,8 +1530,8 @@ mov_title	Streetdance 2; Bước Nhảy Đường Phố 2
 mov_title	Bước Nhảy Hoàn Vũ
 mov_title	Bước Nhảy Hoàn Vũ 2012; Bước Nhảy Hoàn Vũ 2012
 mov_title	Footloose; Bước Nhảy Vui Nhộn
-mov_title	Vtv6; Bước Nhảy Xì Tin
-mov_title	Htv7; Bước Qua Bóng Tối
+mov_title	Bước Nhảy Xì Tin
+mov_title	Bước Qua Bóng Tối
 mov_title	Vicky Donor; Bước Qua Lời Nguyền
 mov_title	Ups And Downs; Bước Thăng Trầm
 mov_title	Step Into The Dark; Bước Vào Nửa Đêm
@@ -1542,7 +1541,7 @@ mov_title	Ben Hur
 mov_title	Berserk: The Golden Age Arc 3: The Advent
 mov_title	Better Man
 mov_title	Bhoot Returns
-mov_title	Vctv1; Bi Kịch Gia Đình
+mov_title	Bi Kịch Gia Đình
 mov_title	Cold Steel; Biến Địa Lang Yến
 mov_title	Vanishing On 7th Street; Biến Mất Trên Đường Số 7
 mov_title	Gone In Sixty Seconds; Biến Mất Trong 60 Giây
@@ -1597,7 +1596,7 @@ mov_title	Frozen Silence; Binh Đoàn Thép
 mov_title	A Battle Of Wits; Binh Pháp Mặc Công
 mov_title	Bioshock
 mov_title	Black Panther
-mov_title	Vtv3; Blog Nàng Dâu
+mov_title	Blog Nàng Dâu
 mov_title	Blouse Trắng
 mov_title	Bond 24
 mov_title	Summer Desire; Bong Bóng Mùa Hè
@@ -1617,10 +1616,10 @@ mov_title	Mr. & Mrs. Bean; Cafe Hữu Tình
 mov_title	Camera Công Sở
 mov_title	Camp X Ray
 mov_title	Can I Do It Till I Need Glasses
-mov_title	Canh Bạc Cuộc Đời; Thvl - Nhất Đen Nhì Đỏ 7
+mov_title	Canh Bạc Cuộc Đời; Nhất Đen Nhì Đỏ 7
 mov_title	Độc Bá Thiên Hạ; Canh Bạc Cuộc Đời Phần 3
 mov_title	War Of Flowers; Canh Bạc Nghiệt Ngã
-mov_title	43/43; Canh Tý Phong Vân
+mov_title	Canh Tý Phong Vân
 mov_title	Tawan Deard; Cao Bồi Bangkok
 mov_title	Gunless; Cao Bồi Mất Súng
 mov_title	Cowboys And Alien; Cao Bồi Và Người Ngoài Hành Tinh
@@ -1628,12 +1627,12 @@ mov_title	Open Range; Cao Bồi Viễn Tây
 mov_title	Cowboys vs Zombies; Cao Bồi vs Zombie
 mov_title	Cao Lương Đỏ
 mov_title	Cao Thủ Giả Danh; Cao Thủ Giả Danh
-mov_title	Cao Thủ Học Đường; Vtc9- God Of Study
+mov_title	Cao Thủ Học Đường; God Of Study
 mov_title	Unbeatable; Cao Thủ Như Lâm
 mov_title	Captain America: Winter Soldier; Captain America: Chiến Binh Mùa Đông
 mov_title	Caught In The Web
-mov_title	Sctv13; Cay Đắng Mùi Đời
-mov_title	Vtv3; Cạm Bẫy
+mov_title	Cay Đắng Mùi Đời
+mov_title	Cạm Bẫy
 mov_title	Deadfall; Cạm Bẫy
 mov_title	Cạm Bẫy Cuộc Đời
 mov_title	Atm; Cạm Bẫy Lúc Nữa Đêm
@@ -1642,7 +1641,7 @@ mov_title	Borisut Bumbut Kaen; Cạm Bẫy Tình Yêu
 mov_title	Cạm Bẫy Tình Yêu; 2008 - Dostana
 mov_title	Cạm Bẫy Thị Thành
 mov_title	The Woman Knight Of Mirror Lake; Cạnh Hùng Nữ Hiệp Thu Cẩn
-mov_title	Vtv3; Cảm Ơn Cuộc Đời
+mov_title	Cảm Ơn Cuộc Đời
 mov_title	Dos Mas Dos; Cảm Giác Lạ
 mov_title	Cảm Hứng Hoàn Hảo
 mov_title	The Academy; Cảnh Sát
@@ -1663,11 +1662,11 @@ mov_title	Freelancers; Cảnh Sát Trả Thù
 mov_title	Miền Đất Hứa; Cảnh Sát Vùng Biên
 mov_title	He Is My Enemy; Cảnh Viên Và Chú Rể
 mov_title	The Hero; Cấm Vệ Quân
-mov_title	42; Cầu Thủ Bóng Chày
+mov_title	Cầu Thủ Bóng Chày
 mov_title	Cầu Vồng Đơn Sắc
 mov_title	Golden Rainbow; Cầu Vồng Hoàng Kim
 mov_title	Echoes Of The Rainbow; Cầu Vồng Khuyết
-mov_title	Htv7; Cầu Vồng Sau Mưa
+mov_title	Cầu Vồng Sau Mưa
 mov_title	Cầu Vồng Tình Yêu
 mov_title	Cầu Vồng Trong Đêm
 mov_title	Cầu Vồng Trong Đêm
@@ -1697,7 +1696,7 @@ mov_title	Kill For Me; Cặp Đôi Sát Thủ
 mov_title	Conspirators; Cặp Đôi Trinh Thám
 mov_title	Tiger On The Beat; Cọp Hổ Lòng
 mov_title	Cỏ Đuôi Gà
-mov_title	Sctv13; Cỏ Dại
+mov_title	Cỏ Dại
 mov_title	The Foliage; Cỏ Mỹ Nhân
 mov_title	White Collar 2; Cổ Cồn Trắng 2
 mov_title	White Collar 3; Cổ Cồn Trắng 3
@@ -1719,7 +1718,7 @@ mov_title	Laid To Rest; Cỗ Máy Giết Người
 mov_title	The Hunted; Cỗ Máy Giết Người
 mov_title	Ghost Machine; Cỗ Máy Ma Quái
 mov_title	The Time Machine; Cỗ Máy Thời Gian
-mov_title	Cỗ Xe Tình Yêu; Vtv9 - Green Carriage
+mov_title	Cỗ Xe Tình Yêu; Green Carriage
 mov_title	National Security; Cộng Sự Bất Đắc Dĩ
 mov_title	Cột Mốc 23
 mov_title	22 Jump Street; Cớm Đại Học
@@ -1747,19 +1746,19 @@ mov_title	Big Wheel; Cự Luân
 mov_title	Tales From Beyond; Cực Độ Không Linh
 mov_title	The Suspect; Cực Độ Tội Phạm
 mov_title	Cà Phê Đắng
-mov_title	Htv9; Cà Phê Hí Mắt
+mov_title	Cà Phê Hí Mắt
 mov_title	War And Remembrance; Càn Long Đại Đế
 mov_title	The Voyage Of Emperor Qian Long To Jiang Nan; Càn Long Du Giang Nam
-mov_title	Sctv13; Càn Long Hương Phi
+mov_title	Càn Long Hương Phi
 mov_title	Càn Long Yến Tiệc
 mov_title	As Above So Below; Càng Lên Cao Càng Xuống Thấp
 mov_title	Càng Ngắm Càng Yêu
-mov_title	Htv7; Cá Cược Cuộc Đời
+mov_title	Cá Cược Cuộc Đời
 mov_title	Piranha; Cá Hổ
 mov_title	Piranha; Cá Hổ Ăn Thịt Người
 mov_title	Mega Piranha; Cá Hổ Khổng Lồ
 mov_title	Big Fish; Cá Lớn
-mov_title	Htv7; Cá Lên Bờ
+mov_title	Cá Lên Bờ
 mov_title	2 Headed Shark Attack; Cá Mập 2 Đầu
 mov_title	Blackfish; Cá Mập Đen
 mov_title	Sand Sharks; Cá Mập Cát
@@ -1771,10 +1770,10 @@ mov_title	Rogue; Cá Sấu Ăn Thịt Người
 mov_title	Robo Croc; Cá Sấu Máy
 mov_title	Million Dollar Crocodile; Cá Sấu Triệu Đô
 mov_title	Golden Fish; Cá Vàng
-mov_title	Cách Cách Lấy Chồng; Sctv - Quý Vi Cách Cách
+mov_title	Cách Cách Lấy Chồng; Quý Vi Cách Cách
 mov_title	Xá Mệnh Báo Quốc 1911; Cách Mạng Tân Hợi
 mov_title	Plump Revolution; Cách Mạng Tăng Cân
-mov_title	Htv7; Cái Bóng Bên Chồng
+mov_title	Cái Bóng Bên Chồng
 mov_title	Raeng Ngao; Cái Bóng Của Chị Em
 mov_title	Scream Of The Banshee; Cái Chết Được Báo Trước
 mov_title	Dead Before Dawn; Cái Chết Được Báo Trước
@@ -1784,7 +1783,7 @@ mov_title	Over The Edge; Cái Chết Bí Ẩn
 mov_title	Revenge: A Love Story; Cái Chết Kẻ Phục Thù
 mov_title	Cái Chết Võ Sĩ Đạo; Hara-kiri: Death Of A Samurai
 mov_title	The Dead; Cái Chêt
-mov_title	Sctv9; Cái Giá Của Danh Vọng
+mov_title	Cái Giá Của Danh Vọng
 mov_title	The Final Combat; Cái Thế Hào Hiệp
 mov_title	Thank You; Cám Ơn Em
 mov_title	Inspiring Generation; Cám Ơn Thời Đại
@@ -1814,7 +1813,7 @@ mov_title	The Awakening Story; Câu Chuyện Của Ngày Xưa
 mov_title	All About My Romance; Câu Chuyện Của Tôi
 mov_title	Dolphin Tale; Câu Chuyện Cá Heo
 mov_title	The Unborn Child; Câu Chuyện Chưa Kể
-mov_title	Htvc Phụ Nữ; Câu Chuyện Cuối Mùa Thu
+mov_title	Câu Chuyện Cuối Mùa Thu
 mov_title	A Very Harold & Kumar Christmas; Câu Chuyện Giáng Sinh Của Harold Và Kumar
 mov_title	Jungle Fish 2; Câu Chuyện Học Đường 2
 mov_title	Rowdy Rathore; Câu Chuyện Kẻ Lừa Đảo
@@ -1853,11 +1852,11 @@ mov_title	She's The Man; Cô Ấy Là Đàn Ông
 mov_title	She Is Wow; Cô Ấy Là Wow
 mov_title	Mysterious Island; Cô Đảo Kinh Hoàng
 mov_title	Mysterious Island 2; Cô Đảo Kinh Hoàng 2
-mov_title	Vtc1; Cô Đầu Bếp Tọc Mạch
-mov_title	Tập 24 26 27 Vtv9; Cô Đầu Bếp Tinh Nghịch
+mov_title	Cô Đầu Bếp Tọc Mạch
+mov_title	Cô Đầu Bếp Tinh Nghịch
 mov_title	Cô Đơn
 mov_title	Present Perfect Continuous Tense; Cô Ơi ! Anh Yêu Em
-mov_title	3d; Cô Bé Bán Diêm
+mov_title	Cô Bé Bán Diêm
 mov_title	Chie the Brat; Cô Bé Hạt Tiêu
 mov_title	Cinderella; Cô Bé Lọ Lem
 mov_title	Wadjda; Cô Bé Mạnh Mẽ
@@ -1865,14 +1864,14 @@ mov_title	Hoodwinked Too! Hood Vs Evil; Cô Bé Quàng Khăn Đỏ
 mov_title	Karigurashi No Arietti; Cô Bé Tí Hon
 mov_title	Call Of The Country; Cô Cảnh Sát Đào Hoa
 mov_title	Sweet Spy; Cô Cảnh Sát Đáng Yêu
-mov_title	Sctv16; Cô Chủ Nhỏ
+mov_title	Cô Chủ Nhỏ
 mov_title	My Belle Boss; Cô Chủ Xinh Đẹp Của Tôi
 mov_title	The New Daughter; Cô Con Gái Mới
 mov_title	Cô Dâu Đại Chiến; Cô Dâu Đại Chiến
 mov_title	Cô Dâu Đại Chiến 2
 mov_title	Kill Bill 3; Cô Dâu Báo Thù 3
 mov_title	The Bride Business; Cô Dâu Bên Lề
-mov_title	Vtc7; Cô Dâu Chạy Trốn
+mov_title	Cô Dâu Chạy Trốn
 mov_title	Jao Sao Salatan; Cô Dâu Hoàn Hảo
 mov_title	Corpse Bride; Cô Dâu Ma
 mov_title	Cô Dâu Ma; Thái Lan - 9 9 81
@@ -1888,7 +1887,7 @@ mov_title	Leafie, A Hen Into The Wild; Cô Gà Mái Thích Phiêu Lưu
 mov_title	Ocean Girl Season 1; Cô Gái Đại Dương Phần 1
 mov_title	Ocean Girl Season 2; Cô Gái Đại Dương Phần 2
 mov_title	Ocean Girl Season 3; Cô Gái Đại Dương Phần 3
-mov_title	Vtv9; Cô Gái Đến Từ Bangkok
+mov_title	Cô Gái Đến Từ Bangkok
 mov_title	Cô Gái Đồ Long
 mov_title	The Girl Who Played With Fire; Cô Gái Đùa Với Lửa
 mov_title	Leap Year; Cô Gái Đi Tìm Tình Yêu
@@ -1908,7 +1907,7 @@ mov_title	Bionic Woman; Cô Gái Rô Bốt
 mov_title	The Machine Girl; Cô Gái Robot
 mov_title	Cô Gái Tham Vọng
 mov_title	Ruby Sparks; Cô Gái Trong Mơ
-mov_title	Tập 1 2 3; Cô Gái Trong Tranh
+mov_title	Cô Gái Trong Tranh
 mov_title	Girl Vs Monster; Cô Gái Và Phù Thủy
 mov_title	Cô Gái Xấu Xí
 mov_title	Cô Gái Xấu Xí Trung Quốc
@@ -1917,9 +1916,9 @@ mov_title	Onegai Teacher; Cô Giáo Onegai
 mov_title	Gokusen; Cô Giáo Yankưmi
 mov_title	Devious Maids Season 2; Cô Hầu Gái Kiểu Mỹ 2
 mov_title	Miss Change; Cô Hàng Xóm
-mov_title	Vtv6; Cô Hàng Xóm Rắc Rối
+mov_title	Cô Hàng Xóm Rắc Rối
 mov_title	Needing You; Cô Nam Quả Nữ
-mov_title	Vtv9; Cô Nàng Ốc Vít Lấy Chồng
+mov_title	Cô Nàng Ốc Vít Lấy Chồng
 mov_title	Miss Conspirator; Cô Nàng Âm Mưu
 mov_title	Delightful Girl Chun Hyang; Cô Nàng Đanh Đá
 mov_title	You Are Beautiful; Cô Nàng Đẹp Trai
@@ -1931,11 +1930,11 @@ mov_title	Cô Nàng Bất Đắc Dĩ
 mov_title	This Girl Is Badass; Cô Nàng Bá Đạo
 mov_title	Cô Nàng Bướng Bỉnh; Cô Nàng Bướng Bỉnh
 mov_title	Hàn Quốc; Cô Nàng Bướng Bỉnh
-mov_title	Vtv6 Office Girls; Cô Nàng Công Sở
+mov_title	Office Girls; Cô Nàng Công Sở
 mov_title	You Are So Pretty; Cô Nàng Dễ Thương
 mov_title	Switch Girl; Cô Nàng Hai Mặt
 mov_title	Miss Rose; Cô Nàng Hoa Hồng
-mov_title	Thvl; Cô Nàng Nặng Cân
+mov_title	Cô Nàng Nặng Cân
 mov_title	My Sassy Girl; Cô Nàng Ngổ Ngáo
 mov_title	My Sassy Girl 2; Cô Nàng Ngổ Ngáo 2
 mov_title	About Cherry; Cô Nàng Ngây Thơ
@@ -1951,10 +1950,10 @@ mov_title	Nang Nak; Cô Vợ Ma
 mov_title	Cô Vợ Phù Thủy
 mov_title	Minuscule; Côn Trùng Siêu Quậy
 mov_title	Anna Princess; Công Chúa A Na
-mov_title	Vtv3; Công Chúa Atsu
+mov_title	Công Chúa Atsu
 mov_title	Princess Aurora; Công Chúa Aurora
 mov_title	Dali Princess; Công Chúa Đại Lý
-mov_title	Công Chúa Bướng Bỉnh; My Bratty Princess - Sctv13
+mov_title	Công Chúa Bướng Bỉnh; My Bratty Princess
 mov_title	The Last Princess; Công Chúa Cuối Cùng
 mov_title	Công Chúa Giá Đáo
 mov_title	Princess Ja Myung Go; Công Chúa Ja Myung Go
@@ -1975,7 +1974,7 @@ mov_title	Law Abiding Citizen; Công Lý Báo Thù
 mov_title	Lethal Justice : True Justice; Công Lý Tối Cao
 mov_title	Silent Witness; Công Lý Thép
 mov_title	Scale Of Providence; Công Lý Và Định Mệnh
-mov_title	Vtvcab1; Công Lý Và Danh Lợi
+mov_title	Công Lý Và Danh Lợi
 mov_title	Công Nương Diana
 mov_title	Gattaca; Công Nghệ Gien
 mov_title	Thats Cunning; Công Nghệ Quay Cóp
@@ -1989,7 +1988,7 @@ mov_title	The Greatest Lover; Công Tử Đa Tình
 mov_title	My Sister Of Eternal Flower; Công Tử Lêu Lổng Và Nàng Khờ
 mov_title	Đứa Con Phá Sản; Công Tử Trinh Thám
 mov_title	Love Recipe; Công Thức Tình Yêu
-mov_title	Vtv6; Công Ty Gia Đình
+mov_title	Công Ty Gia Đình
 mov_title	Sunshine Cleaning; Công Ty Lau Chùi
 mov_title	Not Safe For Work; Công Việc Nguy Hiểm
 mov_title	Jurassic World; Công Viên Kỉ Jura 4
@@ -1997,7 +1996,7 @@ mov_title	Jurassic Park 3d; Công Viên Kỷ Jura
 mov_title	Jurassic Park 2; Công Viên Khủng Long 2
 mov_title	Parkland; Công Viên Quốc Gia
 mov_title	Cõi Mộng
-mov_title	Today Tv; Cù Lao Lúa
+mov_title	Cù Lao Lúa
 mov_title	Cù Lao Mây Ngày Ấy
 mov_title	Meteor Shower 2; Cùng Ngắm Mưa Sao Băng 2
 mov_title	Story Of Ricky; Cú Đấm Máu
@@ -2010,7 +2009,7 @@ mov_title	Dallas Buyers Club; Căn Bệnh Thế Kỷ
 mov_title	Căn Biệt Thự Số 13
 mov_title	The Mask Of Love; Căn Hộ Ma Ám
 mov_title	Căn Hộ Số 69
-mov_title	Căn Hộ Trong Mơ; Htv2 - L'escargot
+mov_title	Căn Hộ Trong Mơ; L'escargot
 mov_title	Wither; Căn Nhà Chết Chóc
 mov_title	House At The End Of The Street; Căn Nhà Cuối Đường
 mov_title	The Cabin In The Woods; Căn Nhà Gỗ Trong Rừng
@@ -2021,7 +2020,7 @@ mov_title	2046; Căn Phòng 2046
 mov_title	Darkroom; Căn Phòng Tối
 mov_title	Courageous; Cơ Đốc
 mov_title	Destined; Cơ Duyên
-mov_title	Sctv9; Cơ Hội Mong Manh
+mov_title	Cơ Hội Mong Manh
 mov_title	Kungfu Cyborg Metallic Attraction; Cơ Khí Hiệp
 mov_title	Cơm Tấm Tình Yêu
 mov_title	The Perfect Storm; Cơn Bão Kinh Hoàng
@@ -2036,14 +2035,14 @@ mov_title	Carrie; Cơn Thịnh Nộ Của Carrie
 mov_title	King’s Wrath; Cơn Thịnh Nộ Của Nhà Vua
 mov_title	Cư Gia Binh Đoàn; Đoàn Binh Gia Đình - Home Troopers
 mov_title	Cưới Chạy
-mov_title	Htv2; Cưới Chạy Kịp Xuân
+mov_title	Cưới Chạy Kịp Xuân
 mov_title	Love Puzzle; Cưới Ngay Kẻo Lỡ
 mov_title	Cưới Ngay Kẻo Tết
 mov_title	Marrying The Mafia 1; Cưới Nhầm Mafia 1
 mov_title	Marrying The Mafia 2; Cưới Nhầm Mafia 2
 mov_title	Marrying The Mafia 4: Family Ordeal; Cưới Nhầm Mafia 4
 mov_title	Marrying The Mafia 5; Cưới Nhầm Mafia 5
-mov_title	Vtv9; Cưới Trước Yêu Sau
+mov_title	Cưới Trước Yêu Sau
 mov_title	Horseplay; Cướp Báu Vật
 mov_title	Kapringen; Cướp Biển
 mov_title	Crossbones 1; Cướp Biển Huyền Thoại
@@ -2066,7 +2065,7 @@ mov_title	Chạm Trán Cương Thi; Cương Thi Vật Cương Thi
 mov_title	Celebrity
 mov_title	Cha Đẻ Tàu Thần Châu; Hsue-shen Tsien
 mov_title	Cha Dượng
-mov_title	20/20; Cha Nuôi Bất Đắc Dĩ
+mov_title	Cha Nuôi Bất Đắc Dĩ
 mov_title	Cha Rơi
 mov_title	Instructions Not Included; Cha Tôi Là Dân Chơi
 mov_title	Cha Và Con
@@ -2076,10 +2075,10 @@ mov_title	Trọn Bộ; Chạm Tay Vào Nỗi Nhớ
 mov_title	Chạm Tới Hoàng Hôn; Chạm Tới Hoàng Hôn
 mov_title	Interview With A Hitman; Chạm Trán Sát Thủ
 mov_title	Dark Touch; Chạm Vào Bóng Tối
-mov_title	Sctv14; Chạm Vào Quá Khứ
+mov_title	Chạm Vào Quá Khứ
 mov_title	Twilight; Chạng Vạng
 mov_title	The Twilight Saga: New Moon; Chạng Vạng 2: Trăng Non
-mov_title	Vtv9; Chạy Án
+mov_title	Chạy Án
 mov_title	Chạy Án 2
 mov_title	You Are All Surrounded; Chạy Đâu Cho Thoát
 mov_title	Chạy Cùng Em
@@ -2100,7 +2099,7 @@ mov_title	Chỉ Có Thể Là Yêu
 mov_title	It’s Okay That’s Love; Chỉ Có Thể Là Yêu
 mov_title	Only God Forgives; Chỉ Có Thiên Chúa Tha Thứ
 mov_title	Chỉ Là Ảo Vọng
-mov_title	Sctv6; Chỉ Một Mình Em
+mov_title	Chỉ Một Mình Em
 mov_title	Chỉ Một Tình Yêu
 mov_title	Only You; Chỉ Riêng Mình Em
 mov_title	A Few Good Men; Chỉ Vài Người Tốt
@@ -2114,7 +2113,7 @@ mov_title	Noona Over Flowers; Chị Gái Đẹp Hơn Hoa
 mov_title	Tỷ Tỷ Xông Pha; Chị Gái Tiến Lên
 mov_title	Cinderellas Sister; Chị Kế Của Lọ Lem
 mov_title	Safe House; Chốn An Toàn
-mov_title	Vtv3; Chốn Hậu Cung
+mov_title	Chốn Hậu Cung
 mov_title	Antiviral; Chống Chọi Với Virus
 mov_title	The Rite; Chống Lại Quỷ Dữ
 mov_title	The Last Stand; Chốt Chặn Cuối Cùng
@@ -2131,7 +2130,7 @@ mov_title	Every Dog Has His Date; Chủ Nhân Và Người Tình
 mov_title	Chủ Tịch Chính Hiệp
 mov_title	Chủ Tịch Tỉnh; Chủ Tịch Tỉnh
 mov_title	Sign; Chứng Tích Pháp Y
-mov_title	Sctv14; Chữ Hiếu Thời @
+mov_title	Chữ Hiếu Thời @
 mov_title	Chữ T Danh Vọng
 mov_title	Chuck 1; Chàng Điệp Viên Tay Mơ
 mov_title	Chuck 3; Chàng Điệp Viên Tay Mơ 3
@@ -2141,7 +2140,7 @@ mov_title	Bruno; Chàng Bruno
 mov_title	Bunraku; Chàng Cao Bồi Và Samurai
 mov_title	Singham; Chàng Cảnh Sát Dũng Cảm
 mov_title	Rich Man Poor Woman; Chàng Giàu Nàng Nghèo
-mov_title	Sctv14; Chàng Mập Nghĩa Tình
+mov_title	Chàng Mập Nghĩa Tình
 mov_title	Chàng Miêu Phiêu Bạt
 mov_title	Chàng Ngố
 mov_title	Hayate The Combat Butler; Chàng Quản Gia
@@ -2171,30 +2170,30 @@ mov_title	Morning Glory; Chào Buổi Sáng
 mov_title	Chào Buổi Sáng Em Yêu
 mov_title	Good Morning President; Chào Buổi Sáng Tổng Thống
 mov_title	Chào Cô Thúy
-mov_title	Htv2; Chào Tình Yêu
+mov_title	Chào Tình Yêu
 mov_title	Shut Up: Flower Boy Band; Cháy Bỏng Đam Mê
 mov_title	Beauty On Duty 2010; Chân Dài Hành Động
 mov_title	Trust; Chân Dung Kẻ Thủ Ác
 mov_title	Wanida; Chân Dung Một Lời Hứa
-mov_title	Sctv14; Chân Dung Tình Yêu
+mov_title	Chân Dung Tình Yêu
 mov_title	Gameboy Kids; Chân Giả Uy Long
 mov_title	Chân Hán Tử
-mov_title	Sctv9; Chân Mạng Thiên Sư
+mov_title	Chân Mạng Thiên Sư
 mov_title	In the Name of the King 3; Chân Mạng Thiên Tử 3
 mov_title	In The Name Of The King 2: Two Worlds; Chân Mệnh Thiên Tử 2
 mov_title	Chân Tình; Chân Tình
 mov_title	The Other Truth; Chân Tướng
 mov_title	Chân Trời Ước Mơ 2
-mov_title	Hvt9; Chân Trời Cỏ Biếc
+mov_title	Chân Trời Cỏ Biếc
 mov_title	Chân Trời Có Em
 mov_title	Lost And Found; Chân Trời Góc Biển
 mov_title	Chân Trời Nơi Ấy
-mov_title	Vtv3; Chân Trời Trắng
-mov_title	Today Tv; Châu Sa
+mov_title	Chân Trời Trắng
+mov_title	Châu Sa
 mov_title	Silent Hill : Revelations; Chìa Khóa Của Quỷ
 mov_title	The Skeleton Key; Chìa Khóa Xương Người
 mov_title	Star Trek Into The Darkness; Chìm Trong Bóng Tối
-mov_title	Todaytv; Chính Nghĩa Võ Quán
+mov_title	Chính Nghĩa Võ Quán
 mov_title	Five Minutes Of Heaven; Chính Trường
 mov_title	Chít và Pi
 mov_title	Cupid Stupid; Chòm Sao Định Mệnh
@@ -2237,7 +2236,7 @@ mov_title	The Lords Of Salem; Chúa Tể Salem
 mov_title	We Got Married; Chúng Ta Đã Kết Hôn
 mov_title	Chúng Ta Hãy Kết Hôn
 mov_title	Chúng Ta Kết Hôn Đi
-mov_title	Chúng Ta Là Anh Em; Tập 31-32 Vtv1
+mov_title	Chúng Ta Là Anh Em;
 mov_title	Swades: We, The People; Chúng Ta Nhân Dân Ấn Độ
 mov_title	Chúng Ta Phát Tài Rồi
 mov_title	Art Of The Devil; Chơi Ngãi
@@ -2262,7 +2261,7 @@ mov_title	Chiếc Giày Lọ Lem
 mov_title	Chiếc Giường Chia Đôi
 mov_title	Chiếc Hộp Tình Yêu
 mov_title	The Golden Compass; Chiếc La Bàn Vàng
-mov_title	Tập 30/30; Chiếc Ly Thần
+mov_title	Chiếc Ly Thần
 mov_title	Rubys Ring; Chiếc Nhẫn Vàng
 mov_title	Hatchet; Chiếc Rìu
 mov_title	Hatchet 2; Chiếc Rìu 2
@@ -2300,7 +2299,7 @@ mov_title	Badrinath; Chiến Binh Vùng Đất Thánh
 mov_title	Universal Soldier; Chiến Binh Vũ Trụ
 mov_title	Universal Soldier: The Return; Chiến Binh Vũ Trụ: Sự Trở Lại
 mov_title	Green Lantern; Chiến Binh Xanh
-mov_title	Sctv3; Chiến Cơ Siêu Hạng
+mov_title	Chiến Cơ Siêu Hạng
 mov_title	The Campaign; Chiến Dịch Bầu Cử
 mov_title	Operation Endgame; Chiến Dịch Chống Khủng Bố
 mov_title	Black Hawk Down; Chiến Dịch Diều Hâu
@@ -2309,7 +2308,7 @@ mov_title	Chiến Dịch Trái Tim Bên Phải; Chiến Dịch Trái Tim Bên Ph
 mov_title	Battleship; Chiến Hạm
 mov_title	Space Battleship Yamato; Chiến Hạm Không Gian
 mov_title	American Warships; Chiến Hạm Mỹ
-mov_title	Chiến Hạm Nổ Tung; Tập 29-30 Htv9
+mov_title	Chiến Hạm Nổ Tung;
 mov_title	Uss Seaviper; Chiến Hạm Ngầm
 mov_title	Chiến Lang Truyền Thuyết; Chiến Lang Truyền Thuyết
 mov_title	War Horse; Chiến Mã
@@ -2335,7 +2334,7 @@ mov_title	Chiến Trường Sa
 mov_title	Outpost 37; Chiến Tuyến 37
 mov_title	Wang Zhao Jun; Chiêu Quân Cống Hồ
 mov_title	Chico And Rita; Chico Và Rita
-mov_title	Vtv3; Chim Khổng Tước
+mov_title	Chim Khổng Tước
 mov_title	The Fire Bird; Chim Lửa
 mov_title	Hummingbird; Chim Ruồi
 mov_title	Stealing Las Vegas; Chinh Phục Las Vegas
@@ -2352,12 +2351,12 @@ mov_title	Glittering Days; Chuỗi Ngày Huy Hoàng
 mov_title	Ko One; Chung Cực Nhất Bang
 mov_title	Chung Cực Tam Quốc
 mov_title	Small Apartments; Chung Cư Kỳ Quái
-mov_title	20/20; Chung Cư Tình Yêu
+mov_title	Chung Cư Tình Yêu
 mov_title	Chung Cư Tình Yêu 2
 mov_title	Chung Cư Tình Yêu 3
 mov_title	Chung Cư Vàng
 mov_title	Trọn Bộ; Chung Một Dòng Máu
-mov_title	Htvc Thuần Việt; Chung Một Mái Nhà
+mov_title	Chung Một Mái Nhà
 mov_title	Temporary Family; Chung Sống Tạm Thời
 mov_title	Wu Yen; Chung Vô Diệm
 mov_title	Runaway Vacation; Chuyến Đi Thú Vị
@@ -2386,7 +2385,7 @@ mov_title	We Are Dating Now; Chuyện Hẹn Hò
 mov_title	Gia Hữu Hỷ Sự; Chuyện Hỷ Trong Nhà
 mov_title	Chuyện Hỷ Trong Nhà 2
 mov_title	Bedtime Stories; Chuyện Kể Lúc Nửa Đêm
-mov_title	Htv7; Chuyện Làng Bè
+mov_title	Chuyện Làng Bè
 mov_title	Belle; Chuyện Nàng Belle
 mov_title	Chuyện Nàng Dâu
 mov_title	Lola Versus; Chuyện Nàng Loa
@@ -2400,10 +2399,10 @@ mov_title	Sungkyunkwan Scandal; Chuyện Tình Ở Song Kun Quan
 mov_title	Chuyện Tình Đảo Cát
 mov_title	Chuyện Tình Đảo Ngọc; Chuyện Tình Đảo Ngọc
 mov_title	Tamra The Island; Chuyện Tình Đảo Tamra
-mov_title	Vtv1; Chuyện Tình Bắc Kinh
+mov_title	Chuyện Tình Bắc Kinh
 mov_title	Chuyện Tình Bắc Kinh 2014
 mov_title	At The Dolphin Bay; Chuyện Tình Biển Xanh
-mov_title	Tập 15/15; Chuyện Tình Bolsa
+mov_title	Chuyện Tình Bolsa
 mov_title	Bad Love; Chuyện Tình Buồn
 mov_title	There Something About Mary; Chuyện Tình Của Mary
 mov_title	Chuyện Tình Của Mary
@@ -2420,16 +2419,16 @@ mov_title	Hong Kong Ghost Stories; Chuyện Tình Ma Quỷ
 mov_title	Steel Cold Winter; Chuyện Tình Máu Và Tuyết
 mov_title	Winter's Tale; Chuyện Tình Mùa Đông
 mov_title	The Fall Of Love; Chuyện Tình Mùa Thu
-mov_title	Vtv3; Chuyện Tình Nữ Vệ Sĩ
+mov_title	Chuyện Tình Nữ Vệ Sĩ
 mov_title	Lady Maid Maid; Chuyện Tình Nàng Hầu
 mov_title	Chuyện Tình Nàng Kĩ Nữ
 mov_title	Dysebel; Chuyện Tình Nàng Tiên Cá
 mov_title	Chuyện Tình Nơi Mắt Bão
 mov_title	Chuyện Tình Những Bà Nội Trợ
-mov_title	Chuyện Tình Osin; Vtc9 - Romance Town
+mov_title	Chuyện Tình Osin; Romance Town
 mov_title	Lovers In Paris; Chuyện Tình Paris
 mov_title	Knight And Day; Chuyện Tình Sát Thủ
-mov_title	Todaytv; Chuyện Tình Thảo Nguyên
+mov_title	Chuyện Tình Thảo Nguyên
 mov_title	Chloe; Chuyện Tình Thầm Kín
 mov_title	Chuyện Tình Thời Thất Nghiệp
 mov_title	The Prime Minister And I; Chuyện Tình Thủ Tướng
@@ -2439,9 +2438,9 @@ mov_title	Network Love Story; Chuyện Tình Trên Mạng
 mov_title	Make Your Move; Chuyện Tình Trên Sàn Nhảy
 mov_title	Tri Star; Chuyện Tình Vị Linh Mục
 mov_title	Love Of Thousands Years; Chuyện Tình Vượt Thời Gian
-mov_title	Vtc9; Chuyện Tình Ven Sông
-mov_title	32/32; Chuyện Về Chàng Vượng
-mov_title	Sctv14; Chuyện Xứ Dừa
+mov_title	Chuyện Tình Ven Sông
+mov_title	Chuyện Về Chàng Vượng
+mov_title	Chuyện Xứ Dừa
 mov_title	Chuyện Học Đường
 mov_title	Air Force One; Chuyên Cơ Không Lực
 mov_title	Take My Word For It; Chuyên Gia Đàm Phán
@@ -2469,10 +2468,10 @@ mov_title	Revelation Road 2: The Sea Of Glass And Fire; Con Đường Cách Mạ
 mov_title	Joy Ride 3; Con Đường Chết 3
 mov_title	The Warriors Way; Con Đường Chiến Binh
 mov_title	Road To Perdition; Con Đường Diệt Vong
-mov_title	Vtv6; Con Đường Hạnh Phúc
+mov_title	Con Đường Hạnh Phúc
 mov_title	The Golden Path; Con Đường Hoàng Kim
-mov_title	Htv2; Con Đường Mưu Sinh
-mov_title	Tập 19/19; Con Đường Phía Trước
+mov_title	Con Đường Mưu Sinh
+mov_title	Con Đường Phía Trước
 mov_title	Agneepath; Con Đường Rực Lửa
 mov_title	Road Number One; Con Đường Số 1
 mov_title	Con Đường Sáng; Con Đường Sáng
@@ -2480,7 +2479,7 @@ mov_title	The Way Way Back; Con Đường Trở Về
 mov_title	Child Of God; Con Của Chúa
 mov_title	Pawn; Con Chốt
 mov_title	My Daughter Seo Young; Con Gái Của Bố
-mov_title	Sctv4; Con Gái Của Chồng Tôi
+mov_title	Con Gái Của Chồng Tôi
 mov_title	The Suns Daughter; Con Gái Của Mặt Trời
 mov_title	Con Gái Mafia
 mov_title	Con Gái Vị Thẩm Phán
@@ -2491,7 +2490,7 @@ mov_title	Con Mắt Bão
 mov_title	The Stool Pigeon; Con Mồi
 mov_title	The Prey; Con Mồi
 mov_title	Cold Prey 3; Con Mồi Máu Lạnh 3
-mov_title	Https://www.youtube.com/watch?v=sxh_i6opy7a; Con Mèo Dưới Mái Nhà
+mov_title	Con Mèo Dưới Mái Nhà
 mov_title	The Chrysalis; Con Nhộng
 mov_title	Hana Yori Dango Season 2; Con Nhà Giàu 2
 mov_title	Hana Yori Dango Season 1; Con Nhà Giàu Phần 1
@@ -2509,7 +2508,7 @@ mov_title	Con Thuyền Số Phận
 mov_title	Cubic; Con Tim Tội Tình
 mov_title	Hostage; Con Tin
 mov_title	Son Of Sardaar; Con Trai Của Sardaar
-mov_title	Htv7; Con Trai Con Gái
+mov_title	Con Trai Con Gái
 mov_title	Son Of Batman; Con Trai Người Dơi
 mov_title	Con Trai Viên Thái Giám
 mov_title	Detective Conan: Conan At London; Conan: Môn Đồ Của Holmes
@@ -2535,12 +2534,12 @@ mov_title	Forrest Gump; Cuộc Đời Của Forrest Gump
 mov_title	The Life Of David Gale; Cuộc Đời Của Gale
 mov_title	Life Of Pi; Cuộc Đời Của Pi
 mov_title	This Boys Life; Cuộc Đời Chú Nhóc
-mov_title	20/20; Cuộc Đời Diễn Viên
+mov_title	Cuộc Đời Diễn Viên
 mov_title	Bruce Lee My Brother; Cuộc Đời Huyền Thoại Lý Tiểu Long
 mov_title	Cuộc Đời Lớn
 mov_title	A Bittersweet Life; Cuộc Đời Ngọt Đắng
 mov_title	Cuộc Đời Phiêu Bạt
-mov_title	Vtv2; Cuộc Đời Tô Tam
+mov_title	Cuộc Đời Tô Tam
 mov_title	Cuộc Đời Tôi
 mov_title	Reaching Out; Cuộc Đời Tươi Đẹp
 mov_title	Escape; Cuộc Đào Thoát
@@ -2560,7 +2559,7 @@ mov_title	Charlie Wilsons War; Cuộc Chiến Của Charlie Wilson
 mov_title	Battle Of Britain; Cuộc Chiến Của Nước Anh
 mov_title	Smokin’ Aces; Cuộc Chiến Của Những Băng Đảng
 mov_title	Dragon Wars; Cuộc Chiến Của Rồng
-mov_title	Vtv9; Cuộc Chiến Các Bà Vợ
+mov_title	Cuộc Chiến Các Bà Vợ
 mov_title	State Of Play; Cuộc Chiến Cân Não
 mov_title	Thâm Cung Nội Chiến; Cuộc Chiến Chốn Thâm Cung
 mov_title	Thâm Cung Nội Chiến 2; Cuộc Chiến Chốn Thâm Cung 2
@@ -2578,11 +2577,11 @@ mov_title	Cuộc Chiến Hôn Nhân
 mov_title	Cuộc Chiến Hoa Hồng
 mov_title	Cuộc Chiến Hoa Hồng Phần 2
 mov_title	Cuộc Chiến Hoàng Cung
-mov_title	Sctv9; Cuộc Chiến Khốc Liệt
-mov_title	Vtc1; Cuộc Chiến Không Khoan Nhượng
+mov_title	Cuộc Chiến Khốc Liệt
+mov_title	Cuộc Chiến Không Khoan Nhượng
 mov_title	Gravity; Cuộc Chiến Không Trọng Lực
 mov_title	Le Grand Chef 2; Cuộc Chiến Kim Chi 2
-mov_title	Htvc; Cuộc Chiến Kim Tiền
+mov_title	Cuộc Chiến Kim Tiền
 mov_title	Edge Of Tomorrow; Cuộc Chiến Luân Hồi
 mov_title	The Thompsons; Cuộc Chiến Ma Cà Rồng
 mov_title	G.i. Joe: The Rise Of Cobra; Cuộc Chiến Mãng Xà
@@ -2593,7 +2592,7 @@ mov_title	Game Of Thrones Season 2; Cuộc Chiến Ngai Vàng 2
 mov_title	Game Of Thrones Season 3; Cuộc Chiến Ngai Vàng Phần 3
 mov_title	Ultramarines: A Warhammer 40,000; Cuộc Chiến Người Máy
 mov_title	Margin Call; Cuộc Chiến Phố Wall
-mov_title	Vtv9; Cuộc Chiến Quý Ông
+mov_title	Cuộc Chiến Quý Ông
 mov_title	Dracano; Cuộc Chiến Rồng Bay
 mov_title	Dead Season; Cuộc Chiến Sinh Tồn
 mov_title	War Of The Dead; Cuộc Chiến Sinh Tử
@@ -2601,7 +2600,7 @@ mov_title	Starship: Rising; Cuộc Chiến Tàu Vũ Trũ
 mov_title	This Means War; Cuộc Chiến Tình Yêu
 mov_title	Cuộc Chiến Tình Yêu
 mov_title	Appleseed Saga Ex Machina; Cuộc Chiến Tương Lai
-mov_title	Thvl1; Cuộc Chiến Thế Kỷ
+mov_title	Cuộc Chiến Thế Kỷ
 mov_title	True Justice 7: Urban Warfare; Cuộc Chiến Thành Phố
 mov_title	Troy; Cuộc Chiến Thành Troy
 mov_title	Branded; Cuộc Chiến Thương Hiệu
@@ -2618,7 +2617,7 @@ mov_title	On Call 36h 2; Cuộc Gọi 36 Giờ 2
 mov_title	The Call 911; Cuộc Gọi 911
 mov_title	The Caller; Cuộc Gọi Bí Ẩn 2
 mov_title	Fatal Call; Cuộc Gọi Lâm Nạn
-mov_title	Sctv7; Cuộc Gọi Lúc 0 Giờ
+mov_title	Cuộc Gọi Lúc 0 Giờ
 mov_title	When A Stranger Calls; Cuộc Gọi Lúc Nửa Đêm
 mov_title	3g A Killer Connection; Cuộc Gọi Ma
 mov_title	Saving Mr Banks; Cuộc Giải Cứu Thần Kỳ
@@ -2665,7 +2664,7 @@ mov_title	Down Memory Lane; Cuộc Tình Vạn Dặm
 mov_title	The Experiment; Cuộc Thử Nghiệm
 mov_title	Hairspray; Cuộc Thi Hoa Hậu Tóc
 mov_title	Escape From Planet Earth; Cuộc Trốn Thoát Khỏi Trái Đất
-mov_title	Vctv7; Cuộc Truy Đuổi Ngoạn Mục
+mov_title	Cuộc Truy Đuổi Ngoạn Mục
 mov_title	10,000 Bc; Cuộc Truy Đuổi Tàn Khốc
 mov_title	Cuộc Vượt Ngục Thần Kỳ
 mov_title	Fun The Luck And The Tycoon; Cuộc Vui Và Chuyện Tình
@@ -2680,7 +2679,7 @@ mov_title	Cung Tâm Kế
 mov_title	Cung Thủ Siêu Phàm; Arrow-the Ultimate Weapon
 mov_title	Cung Toả Liên Thành
 mov_title	Honour 2014; Danh Dự
-mov_title	Htv7; Danh Gia Vọng Tộc
+mov_title	Danh Gia Vọng Tộc
 mov_title	Danh Gia Vọng Tộc 2
 mov_title	Wish List; Danh Sách Điều Ước
 mov_title	Kill List; Danh Sách Tử Thần
@@ -2692,7 +2691,7 @@ mov_title	Little Black Dress; Dạ Phục Đen
 mov_title	Girls Gone Dead; Dạ Tiệc Chết Người
 mov_title	Feast Of Love; Dạ Tiệc Tình Yêu
 mov_title	The Banquet; Dạ Yến
-mov_title	Tập 40/40; Dấn Thân Vào Nước Mắt
+mov_title	Dấn Thân Vào Nước Mắt
 mov_title	Crime Squad; Dấu Ấn Đoạt Mệnh
 mov_title	Dragon Quest; Dấu Ấn Rồng Thiêng
 mov_title	Dấu Cộng Trái Tim
@@ -2715,11 +2714,11 @@ mov_title	Dịch Vụ Gỡ Rối Từ A Đến Z
 mov_title	Gentle; Dịu Dàng
 mov_title	Dọc Đường Đen Trắng
 mov_title	Walk The Line; Dọc Đường Gió Bụi
-mov_title	Tập 33 34 35 Vtvcab2; Dốc Sương Mù
+mov_title	Dốc Sương Mù
 mov_title	Dốc Sinh Tồn
-mov_title	Sctv13; Dốc Tình
+mov_title	Dốc Tình
 mov_title	Dối Trá Ngọt Ngào; Beautiful Lies - De Vrais Mensonges
-mov_title	Thvl1; Dời Non Lấp Bể
+mov_title	Dời Non Lấp Bể
 mov_title	Dụ Thái Và Tôi
 mov_title	Dục Hoả Phượng Hoàng
 mov_title	The Deadgirl; Dục Xác
@@ -2727,8 +2726,8 @@ mov_title	Dừng Bước Giang Hồ
 mov_title	Dành Cho Tháng Sáu; Dành Cho Tháng 6
 mov_title	Lulla Man; Dân Chơi Gặp Nạn
 mov_title	A Few Best Men; Dân Chơi Kiểu Úc
-mov_title	Vtc1; Dâu Bể Đời Người
-mov_title	Todaytv; Dây Leo Hạnh Phúc
+mov_title	Dâu Bể Đời Người
+mov_title	Dây Leo Hạnh Phúc
 mov_title	Born Wild; Dã Chiến Giang Hồ
 mov_title	Queen Of Ambition; Dã Vương
 mov_title	Dòng Đời Lưu Lạc
@@ -2745,11 +2744,11 @@ mov_title	Dòng Sông Định Mệnh
 mov_title	A River Runs Through It; Dòng Sông Chứng Nhân Cuộc Đời
 mov_title	Dòng Sông Không Trở Lại
 mov_title	Dòng Sông Ly Biệt; Dòng Sông Ly Biệt
-mov_title	Htv7; Dòng Sông Phẳng Lặng
+mov_title	 Dòng Sông Phẳng Lặng
 mov_title	Mystic River; Dòng Sông Tội Ác
 mov_title	Dòng Sông Thơ Ấu; Dòng Sông Thơ Ấu
 mov_title	Dòng Sông Thương Nhớ
-mov_title	Tập 1 2 3 Htv7; Dòng Suối Không Cầu
+mov_title	Dòng Suối Không Cầu
 mov_title	Everywhen; Dòng Thời Gian
 mov_title	Dù Gió Có Thổi
 mov_title	City War; Dũng Khí Môi Hồng
@@ -2765,7 +2764,7 @@ mov_title	Piano; Dương Cầm
 mov_title	Việt Nam; Dương Cầm
 mov_title	Dương Cầm Xanh
 mov_title	Dương Gia Tướng
-mov_title	Sctv13; Dương Môn Hổ Tướng
+mov_title	Dương Môn Hổ Tướng
 mov_title	Dương Môn Nữ Tướng
 mov_title	Dương Môn Nữ Tướng 2011
 mov_title	Legend Of Lady Yang; Dương Quý Phi
@@ -2807,30 +2806,30 @@ mov_title	Down To You; Down To You
 mov_title	Dragon Ball Kai
 mov_title	Star Trek: First Contact; Du Hành Giữa Các Vì Sao 8
 mov_title	Welcome To Yesterday; Du Hành Về Quá Khứ
-mov_title	Thvl1; Du Hiệp Trương Tam Phong
+mov_title	Du Hiệp Trương Tam Phong
 mov_title	The Tourist; Du Khách Bí Ẩn
 mov_title	Vagabond Vigilante; Du Kiếm Giang Hồ
 mov_title	Wanderlust; Du Ngoạn
 mov_title	Love You You; Duyên Kì Ngộ
 mov_title	A Reborn Love; Duyên Kiếp Lai Sinh
-mov_title	Sctv9; Duyên Nợ
-mov_title	Vtv Cần Thơ 1, Vtc10; Duyên Nợ Miền Tây
+mov_title	Duyên Nợ
+mov_title	Duyên Nợ Miền Tây
 mov_title	Invincible Lee Pyeong Kang; Duyên Nợ Oan Gia
-mov_title	Vtv3; Duyên Nghiệp
+mov_title	Duyên Nghiệp
 mov_title	Duyên Phận Kiếp Này
 mov_title	The Winter Melon Tale; Duyên Phàm Tình Chưa Dứt
 mov_title	Serendipity; Duyên Số
-mov_title	Vtv2; Duyên Tình
-mov_title	Thvl2; Duyên Tình Chưa Nguôi
+mov_title	Duyên Tình
+mov_title	Duyên Tình Chưa Nguôi
 mov_title	Whatever You Want; Duyên Tình Kỳ Lạ
 mov_title	Whatever Will Be, Will Be; Duyên Tình Phiêu Lưu
 mov_title	Duyên Tình Tq
 mov_title	The Green Grass Of Home; Duyên Tình Trên Mảnh Vườn Xanh
-mov_title	Htv; Duyên Trầu Cau
+mov_title	Duyên Trầu Cau
 mov_title	Đông Phong Vũ; East Wind Rain
 mov_title	Easy A
 mov_title	Elisa
-mov_title	Htv7; Em Đẹp Em Có Quyền
+mov_title	Em Đẹp Em Có Quyền
 mov_title	Queen Of The Night; Em Đẹp Nhất Đêm Nay
 mov_title	I Do; Em Đồng Ý
 mov_title	Hijacked; Em Đã Bị Bắt
@@ -2839,7 +2838,7 @@ mov_title	Who Are You; Em Là Ai
 mov_title	You Are My Destiny; Em Là Định Mệnh Đời Anh
 mov_title	Me Too Flower; Em Là Con Gái
 mov_title	You Are My Dream; Em Là Giấc Mơ Của Anh
-mov_title	Vtc9; Em Là Phụ Nữ
+mov_title	Em Là Phụ Nữ
 mov_title	Em Là Tình Yêu Của Anh
 mov_title	I Am Still Loving You; Em Mãi Yêu Anh
 mov_title	Em Sẽ Là Cô Dâu Của Anh
@@ -2851,7 +2850,7 @@ mov_title	Enchanted 2
 mov_title	Enemies Closer
 mov_title	The Blue Lagoon; Eo Biển Xanh
 mov_title	Escape To Victory
-mov_title	Vtv6; Eva Luna
+mov_title	Eva Luna
 mov_title	Exodus: Gods And Kings
 mov_title	Fantastic Beasts And Where To Find Them
 mov_title	Fate/stay Night; Fate/zero
@@ -2861,7 +2860,7 @@ mov_title	For the Emperor
 mov_title	Frankenstein
 mov_title	Trọn Bộ; Friend 2
 mov_title	Fury
-mov_title	Htv7; Gai Hồng
+mov_title	Gai Hồng
 mov_title	Free To Play; Game Thủ Dota 2
 mov_title	Na Igre 2; Game Thủ Sát Thủ 2
 mov_title	Nameless Gangster : Rules Of Time; Gangster Vô Danh
@@ -2872,11 +2871,11 @@ mov_title	Whats Under The Bed; Gầm Giường Có Ma
 mov_title	Livid; Gắt Gỏng
 mov_title	Little Fockers; Gặp Gỡ Thông Gia
 mov_title	Remembering Lichuan; Gặp Gỡ Vương Lịch Xuyên
-mov_title	Sctv Tổng Hợp; Gặp Lại Bạch Nương Tử
+mov_title	Gặp Lại Bạch Nương Tử
 mov_title	Hook; Gặp Lại Dưới Biển
 mov_title	Rust And Bone; Gỉ Và Xương
 mov_title	Gọi Giấc Mơ Về
-mov_title	Tập 30/30; Gọi Nắng
+mov_title	Gọi Nắng
 mov_title	Gọi Tên Tình Yêu
 mov_title	Gọi Yêu Thương
 mov_title	Head In The Clouds; Gối Đầu Trên Mây
@@ -2890,7 +2889,7 @@ mov_title	Gác Kiếm
 mov_title	Gái Ế Kén Chồng
 mov_title	Call Girl; Gái Gọi
 mov_title	Gái Già Xì Tin
-mov_title	Vtv9; Gái Già Xuất Giá
+mov_title	Gái Già Xuất Giá
 mov_title	Breaking The Girl; Gái Hư
 mov_title	Gái Ngoan Truyền Kỳ
 mov_title	Cirque Du Soleil Worlds Away; Gánh Xiếc Mặt Trời
@@ -2911,7 +2910,7 @@ mov_title	Mirrors; Gương Quỷ
 mov_title	Mirrors 2; Gương Quỷ 2
 mov_title	Mirror Mirror; Gương Thần
 mov_title	Gương Trời
-mov_title	Vtc1; Ghen
+mov_title	Ghen
 mov_title	Scorned; Ghen Tuông
 mov_title	Goal, The Dream Begins; Ghi Bàn, Giấc Mơ Bắt Đầu
 mov_title	Ghosts Of The Pacific
@@ -2934,19 +2933,19 @@ mov_title	Gia Đình Phép Thuật
 mov_title	The Banquet; Gia Đình Phú Quý
 mov_title	Hàn Quốc; Gia Đình Rắc Rối
 mov_title	Welcome To The Rileys; Gia Đình Riley
-mov_title	Tập 40/40; Gia Đình Số Đỏ
-mov_title	35 Tập; Gia Đình Sóng Gió
+mov_title	Gia Đình Số Đỏ
+mov_title	Gia Đình Sóng Gió
 mov_title	The Incredibles; Gia Đình Siêu Nhân
 mov_title	House Of Fury; Gia Đình Tinh Võ
 mov_title	The Kick; Gia Đình Võ Thuật
-mov_title	22/22; Gia Đình Vui Vẻ
+mov_title	Gia Đình Vui Vẻ
 mov_title	All My Love; Gia Đình Yêu Thương
 mov_title	The Legendary Prime Minister Zhuge Liang; Gia Cát Lượng
 mov_title	Gia Hữu Hỉ Phụ
 mov_title	Gia Khánh Quân Du Đài Loan; Gia Khánh Quân Du Đài Loan
 mov_title	Gia Sư Nữ Quái; Gia Sư Nữ Quái
 mov_title	Gia Tộc Giàu Sang; Gia Tộc Giàu Sang
-mov_title	Sctv; Gia Tộc Họ Choi
+mov_title	Gia Tộc Họ Choi
 mov_title	Gia Tộc Hào Môn
 mov_title	Beautiful Creatures; Gia Tộc Huyền Bí
 mov_title	Kim Phấn Thế Gia; Gia Tộc Kim Phấn
@@ -2989,7 +2988,7 @@ mov_title	An Empress And The Warriors; Giang Sơn Mỹ Nhân
 mov_title	Giang Sơn Phong Vũ Tình
 mov_title	An Empress And The Warriors; Giang Sơn Và Mỹ Nhân
 mov_title	Inferno; Giao Lộ Định Mệnh
-mov_title	Vtvc2; Giao Thời
+mov_title	Giao Thời
 mov_title	Saving Santa; Giải Cứu Ông Già Noel
 mov_title	Saving Private Ryan; Giải Cứu Binh Nhì Ryan
 mov_title	Big Miracle; Giải Cứu Cá Heo
@@ -3022,7 +3021,7 @@ mov_title	Vigilante In The Mask; Giấc Mộng Hiệp Sĩ
 mov_title	Giấc Mộng Li Giang
 mov_title	Giấc Mộng Tình Yêu
 mov_title	Giấc Mơ Biển; Giấc Mơ Biển
-mov_title	Vtv3; Giấc Mơ Cỏ May
+mov_title	Giấc Mơ Cỏ May
 mov_title	Giấc Mơ Cổ Tích
 mov_title	Giấc Mơ Hạnh Phúc
 mov_title	The King’s Dream; Giấc Mơ Hoàng Đế
@@ -3035,11 +3034,11 @@ mov_title	Kill Your Darlings; Giết Người Yêu
 mov_title	Giọt Lệ Bên Sông
 mov_title	Giọt Máu Bên Sông
 mov_title	Giọt Máu Tình Yêu
-mov_title	Giọt Nước Mắt Kim Cương; Vctv1 - Tear Of Diamond
-mov_title	Vtv3; Giọt Nước Rơi
+mov_title	Giọt Nước Mắt Kim Cương; Tear Of Diamond
+mov_title	Giọt Nước Rơi
 mov_title	Kami No Shizuku; Giọt Rượu Thần Thánh
 mov_title	Giới Hạn
-mov_title	Giới Hạn Cuối Cùng; Tập 2-3 Vtv3
+mov_title	Giới Hạn Cuối Cùng;
 mov_title	Tomboy; Giới Tính Thứ Ba
 mov_title	Man Wanted 3; Giới Tuyến Cuối Cùng
 mov_title	Giới Văn Phòng Hoa Lệ
@@ -3074,12 +3073,12 @@ mov_title	Ironclad 2 : Battle For Blood; Giáp Sắt 2
 mov_title	Happy Hour; Giây Phút Hoang Mang
 mov_title	Giây Phút Truy Án
 mov_title	Goodbye My Love; Giã Biệt Tình Tôi
-mov_title	Vctv2; Giã Từ Dĩ Vãng
+mov_title	Giã Từ Dĩ Vãng
 mov_title	Gió Làng Kình
 mov_title	That Winter, The Wind Blows; Gió Mùa Đông Năm Ấy
 mov_title	The Wind Rises; Gió Nổi
-mov_title	Sctv14; Gió Nghịch Mùa
-mov_title	Htv7; Gió Về Cù Lao
+mov_title	Gió Nghịch Mùa
+mov_title	Gió Về Cù Lao
 mov_title	Giông Bão Tình Thù
 mov_title	Gieo Gió
 mov_title	Park Dong Hoon; Girl By Girl 2007
@@ -3097,7 +3096,7 @@ mov_title	Gone With The Bullets
 mov_title	Gotham
 mov_title	Guni Guni
 mov_title	Two Rabbits; Hai Con Thỏ
-mov_title	Htvc Thuần Việt; Hai Gia Đình
+mov_title	Hai Gia Đình
 mov_title	Phương Mỹ Chi; Hai Lúa
 mov_title	I Love You, Dont Cry; Hai Nửa Tình Yêu
 mov_title	Hai Người Cha
@@ -3136,27 +3135,27 @@ mov_title	Harry Potter And The Prisoner Of Azkaban; Harry Potter Và Tên Tù Nh
 mov_title	Hay Không Bằng Hên
 mov_title	Killing Bono; Hạ Gục Bono
 mov_title	Deadline; Hạn Chót
-mov_title	Todaytv; Hạnh Phúc Ảo
+mov_title	Hạnh Phúc Ảo
 mov_title	Her; Hạnh Phúc Ảo
-mov_title	Vtv6; Hạnh Phúc Ở Phía Trước
+mov_title	Hạnh Phúc Ở Phía Trước
 mov_title	Hạnh Phúc Ở Trạm Kế Tiếp
-mov_title	Sctv9; Hạnh Phúc Đâu Tự Có
+mov_title	Hạnh Phúc Đâu Tự Có
 mov_title	1 Percent Of Anything; Hạnh Phúc Bất Ngờ
 mov_title	Happy Together; Hạnh Phúc Bên Nhau
 mov_title	Happiness Of An Angel; Hạnh Phúc Của Thiên Thần
-mov_title	30 Tập; Hạnh Phúc Có Thật
+mov_title	Hạnh Phúc Có Thật
 mov_title	Wonderful Days; Hạnh Phúc Có Thật
 mov_title	Happy Ending; Hạnh Phúc Cuối
 mov_title	Hạnh Phúc Mỉm Cười
-mov_title	Thvl2; Hạnh Phúc Mong Chờ
+mov_title	Hạnh Phúc Mong Chờ
 mov_title	Hạnh Phúc Mong Manh
 mov_title	Hàn Quốc; Hạnh Phúc Mong Manh
-mov_title	Vtv9; Hạnh Phúc Muộn Màng
-mov_title	25/25; Hạnh Phúc Ngày Nắng
+mov_title	Hạnh Phúc Muộn Màng
+mov_title	Hạnh Phúc Ngày Nắng
 mov_title	Happiness As Flower; Hạnh Phúc Như Hoa
 mov_title	Hạnh Phúc Quanh Đây; Hạnh Phúc Quanh Đây
-mov_title	Htv9; Hạnh Phúc Trong Tầm Tay
-mov_title	Vtc1; Hạnh Phúc, Nhọc Nhằn
+mov_title	Hạnh Phúc Trong Tầm Tay
+mov_title	Hạnh Phúc, Nhọc Nhằn
 mov_title	Glittering Days; Hạt Ngọc Phương Đông
 mov_title	Hải Âu Phi Xứ; Hải Âu Phi Xứ
 mov_title	Sea Wolfves; Hải Lang
@@ -3164,9 +3163,9 @@ mov_title	Hải Trình Kon Tiki; Kon-tiki
 mov_title	Seafood; Hải Vụ Bất Khả Thi
 mov_title	Goodfellas; Hảo Bằng Hữu
 mov_title	Vendetta; Hận Thù
-mov_title	Thvl1; Hận Thù Đường Đời
+mov_title	Hận Thù Đường Đời
 mov_title	Tangled Ever After; Hậu Công Chúa Tóc Dài
-mov_title	Hậu Cung; Nhật Bản - Htvc Phim
+mov_title	Hậu Cung;
 mov_title	Hậu Cung Chân Hoàn Truyện
 mov_title	Royal Concubine; Hậu Cung: Thiếp Của Nhà Vua
 mov_title	Aftermath; Hậu Họa
@@ -3184,7 +3183,7 @@ mov_title	Meet Joe Black; Hẹn Gặp Tử Thần
 mov_title	Vamps; Hẹn Hò Là Cắn
 mov_title	Hẻm Cụt
 mov_title	Painted Skin; Họa Bì
-mov_title	Htv7; Họa Bì
+mov_title	Họa Bì
 mov_title	Họa Bì 1; Painted Skin 2 - No Regrets For Real
 mov_title	Painted Skin 2; Họa Bì 2
 mov_title	Mural; Họa Bích
@@ -3216,10 +3215,10 @@ mov_title	Linger; Hồ Điệp Phi
 mov_title	On The Water Front; Hồ Hải Song Hiệp
 mov_title	The Extreme Fox; Hồ Ly Tinh
 mov_title	Neverlake; Hồ Quỷ
-mov_title	Sctv14; Hồ Sơ Đen
+mov_title	Hồ Sơ Đen
 mov_title	The Bourne Identity; Hồ Sơ Điệp Viên Bourne
 mov_title	The Berlin File; Hồ Sơ Berlin
-mov_title	Thvl1; Hồ Sơ Cảnh Sát
+mov_title	Hồ Sơ Cảnh Sát
 mov_title	Hồ Sơ Cảnh Sát 3
 mov_title	File Of Justice 5; Hồ Sơ Công Lý 5
 mov_title	Hồ Sơ Pháp Y 2
@@ -3249,15 +3248,15 @@ mov_title	Red River; Hồng Hà
 mov_title	Hồng Hy Quan; Hồng Hy Quan
 mov_title	The New Legend Of Shaolin; Hồng Hy Quan
 mov_title	Hồng Kông Kỳ Án
-mov_title	Sctv Tổng Hợp; Hồng Lâu Mộng
+mov_title	Hồng Lâu Mộng
 mov_title	White Vengeance; Hồng Môn Yến
 mov_title	Hồng Nhan Bạc Phận
 mov_title	Hồng Nhan Chí Tôn
 mov_title	Romance Of The Red Dust; Hồng Phất Nữ
 mov_title	Dragon From Russia; Hồng Trường Phi Long
-mov_title	Thvl; Hổ Đổng Tiên
+mov_title	Hổ Đổng Tiên
 mov_title	Hổ Mang 11
-mov_title	Vtv2; Hổ Sơn Hành
+mov_title	Hổ Sơn Hành
 mov_title	Chaos; Hỗn Loạn
 mov_title	Knowing; Hỗn Số Tử Thần
 mov_title	A Guardians Love Story; Hộ Hoa Kỳ Duyên
@@ -3314,13 +3313,13 @@ mov_title	Hành Trình Bí Ẩn
 mov_title	Extremely Loud And Incredibly Close; Hành Trình Của Oskar
 mov_title	Django Unchained; Hành Trình Django
 mov_title	Growing Through Life; Hành Trình Hái Sao
-mov_title	Htv7; Hành Trình Hôn Nhân
+mov_title	Hành Trình Hôn Nhân
 mov_title	Seven Pounds; Hành Trình Sám Hối
 mov_title	The Librarian 1: Quest For The Spear; Hành Trình Tìm Kho Báu 1: Bí Ẩn Những Lưỡi Mác
 mov_title	The Librarian 2: Return To King Solomons Mines; Hành Trình Tìm Kho Báu 2: Trở Về Kho Tàng Vua Solomon
 mov_title	Journey of Chasing Love; Hành Trình Theo Đuổi Tình Yêu
 mov_title	Way Back Home; Hành Trình Về Nhà
-mov_title	Sctv13; Hào Môn
+mov_title	 Hào Môn
 mov_title	Hào Môn Dạ Yến
 mov_title	Hào Tình 2
 mov_title	Theft Under The Sun; Hào Tình Cái Thiên
@@ -3328,21 +3327,21 @@ mov_title	Stars Falling From The Sky; Hái Sao Cho Em
 mov_title	The Conquerors Story; Hán Sở Bá Vương
 mov_title	Hán Sở Truyền Kỳ
 mov_title	Hát Ca Bềnh Bồng; Hát Ca Bềnh Bồng
-mov_title	Vtv3; Hãy Cùng Khiêu Vũ
+mov_title	Hãy Cùng Khiêu Vũ
 mov_title	Hãy Cưới Anh Lần Nữa
 mov_title	Kimchi Cheese Smile; Hãy Cười Lên Nào
 mov_title	Beware The Batman; Hãy Coi Chừng Người Dơi
 mov_title	Good For Nothing Hero; Hãy Gọi Tôi Là Anh Hùng
-mov_title	32 Tập; Hãy Nói Anh Yêu Em
+mov_title	Hãy Nói Anh Yêu Em
 mov_title	Hãy Nhắm Mắt Khi Anh Đến
 mov_title	Remember Me; Hãy Nhớ Đến Anh
 mov_title	Hãy Sống Bên Anh
 mov_title	Dont Hesitate; Hãy Yêu Đừng E Ngại
 mov_title	Hãy Yêu Vợ Cũ Của Tôi; Hãy Yêu Vợ Cũ Của Tôi
-mov_title	Htv7; Hè Không Phai
-mov_title	50/50; Hên Xui
+mov_title	Hè Không Phai
+mov_title	Hên Xui
 mov_title	Gun Metal Grey; Hình Cảnh
-mov_title	Thvl1; Hình Cảnh Quốc Tế
+mov_title	Hình Cảnh Quốc Tế
 mov_title	Angel On Fire; Hình Cảnh Quốc Tế 1995
 mov_title	Hình Danh Sư Gia; Hình Danh Sư Gia
 mov_title	The Wicker Man; Hình Nhân Liễu Gai
@@ -3367,15 +3366,15 @@ mov_title	Hư Trúc Truyền Kỳ
 mov_title	Hướng Bom Đạn Mà Tiến Lên
 mov_title	A New Leaf; Hướng Mới Cuộc Đời
 mov_title	Into The Sun; Hướng Tới Mặt Trời
-mov_title	Tập 42/42; Hướng Về Tình Yêu
+mov_title	Hướng Về Tình Yêu
 mov_title	Better And Better; Hương Đồng Cỏ Nội
 mov_title	Country Spirit; Hương Đồng Gió Nội
 mov_title	Scent Of A Woman; Hương Đàn Bà
 mov_title	Hương Đêm
 mov_title	Hương Đêm Philippines
-mov_title	Thvl1; Hương Bưởi
+mov_title	Hương Bưởi
 mov_title	Hương Cảng Tử
-mov_title	Sctv14; Hương Cỏ Dại
+mov_title	Hương Cỏ Dại
 mov_title	Brown Sugar Macchiato; Hương Cà Phê Macchiato
 mov_title	Sharila; Hương Cách Lý Lạp
 mov_title	Hương Ga
@@ -3383,10 +3382,10 @@ mov_title	Hương Hoa Lan; Hương Hoa Lan
 mov_title	Hương Lửa Vạn Gia
 mov_title	Magnolia; Hương Mộc Lan
 mov_title	Summer Scent; Hương Mùa Hè
-mov_title	Vtv3; Hương Ngọc Lan
 mov_title	Hương Ngọc Lan
-mov_title	Vtc10; Hương Phù Sa
-mov_title	Sctv14; Hương Sầu Riêng
+mov_title	Hương Ngọc Lan
+mov_title	Hương Phù Sa
+mov_title	Hương Sầu Riêng
 mov_title	Colourful Life; Hương Sắc Cuộc Đời
 mov_title	Helter Skelter; Hương Sắc Tàn Phai
 mov_title	Hương Soái Truyền Kỳ
@@ -3398,7 +3397,7 @@ mov_title	Scent Of Love; Hương Vị Tình Yêu
 mov_title	Ex Chin Do; Hương Vị Trái Cấm
 mov_title	Her Lovely Heels; Heels Đáng Yêu Của Tôi
 mov_title	Hello Cô Ba; Hello Cô Ba
-mov_title	Vtv3; Heo May Qua Phố
+mov_title	Heo May Qua Phố
 mov_title	Hercules
 mov_title	Clear And Present Danger; Hiểm Họa Hiện Hữu
 mov_title	Apocalypse Pompeii; Hiểm Họa Núi Lửa
@@ -3409,7 +3408,7 @@ mov_title	Paranormal Activity 3; Hiện Tượng Siêu Nhiên 3
 mov_title	Paranormal Activity 2: Tokyo Night; Hiện Tượng Siêu Nhiên Ở Tokyo
 mov_title	Hiệp Ảnh Lưu Hương
 mov_title	Hiệp Án Ký
-mov_title	Vctv10; Hiệp Cốt Đan Tâm
+mov_title	Hiệp Cốt Đan Tâm
 mov_title	Healing Hearts; Hiệp Cốt Nhân Tâm
 mov_title	Hiệp Khách Hành; Hiệp Khách Hành
 mov_title	Hiệp Khách Hành; Lương Triều Vỹ - Hiệp Khách Hành (1989)
@@ -3417,7 +3416,7 @@ mov_title	Hiệp Khách Hành 2014
 mov_title	Monk At Thirty; Hiệp Khách Hòa Thượng
 mov_title	Hiệp Nữ Phá Thiên Quan; Hiệp Nữ Phá Thiên Quan
 mov_title	Hiệp Nghĩa Kiến Thanh Thiên
-mov_title	Tập 32/32; Hiệp Sĩ Đường Phố
+mov_title	Hiệp Sĩ Đường Phố
 mov_title	Black Knight; Hiệp Sĩ Đen
 mov_title	Knight Of The Dead; Hiệp Sĩ Của Người Chết
 mov_title	The Tale Of Despereaux; Hiệp Sĩ Chuột
@@ -3439,17 +3438,17 @@ mov_title	Hit Hoàng Tử Và Lọ Lem
 mov_title	Hitchcock
 mov_title	Hoa Đồng Nội
 mov_title	Twins Effect 2; Hoa Đô Đại Chiến
-mov_title	Htv9; Hoa Bay
+mov_title	Hoa Bay
 mov_title	Hoa cỏ may
 mov_title	Hoa Cỏ May 2
-mov_title	Sctv13; Hoa Cô Tử
-mov_title	Htv7; Hoa Cúc Xanh
+mov_title	Hoa Cô Tử
+mov_title	Hoa Cúc Xanh
 mov_title	Hoa Dại
 mov_title	Ripples of Desire; Hoa Dạng
 mov_title	Hoa Dã Quỳ
 mov_title	Miss Congeniality; Hoa Hậu Fbi
 mov_title	Hoa Hậu Hàn Quốc
-mov_title	Todaytv; Hoa Hồng Của Quỷ
+mov_title	Hoa Hồng Của Quỷ
 mov_title	Thorn Flower; Hoa Hồng Có Gai
 mov_title	Hoa Hồng Giấu Hương
 mov_title	Christmas Rose; Hoa Hồng Giáng Sinh
@@ -3464,23 +3463,23 @@ mov_title	Hoa Lửa Cuộc Đời
 mov_title	Hoa Mặt Trời; Hoa Mặt Trời
 mov_title	Hoa Mặt Trời
 mov_title	Hoa Mộc Lan
-mov_title	Vtv3; Hoa Mộc Lan
+mov_title	Hoa Mộc Lan
 mov_title	Mulan 2009; Hoa Mộc Lan 2009
 mov_title	A Well Grown Daughter, Hana; Hoa Mộc Lan Thời Đại
 mov_title	Hoa Mộc Lan Truyền Kỳ
 mov_title	Hoa Mộc Miên
 mov_title	Hoa Nắng; Hoa Nắng
 mov_title	Blow; Hoa Nở
-mov_title	Vtv3; Hoa Nở Trái Mùa
+mov_title	Hoa Nở Trái Mùa
 mov_title	The Brave Squad; Hoa Nữ Thần Thám
-mov_title	Htvc Gia Đình; Hoa Ngũ Sắc
+mov_title	Hoa Ngũ Sắc
 mov_title	Blue Jasmine; Hoa Nhài Màu Xanh
-mov_title	Vtv9; Hoa Phù Dung
+mov_title	Hoa Phù Dung
 mov_title	Hoa Phượng Trắng
 mov_title	Hoa Sơn Thánh Mẫu
 mov_title	Hoa Sương
 mov_title	Tuyệt Ái Chi Thành; Hoa Tư Dẫn
-mov_title	Tập 31/31; Hoa Thiên Điểu
+mov_title	Hoa Thiên Điểu
 mov_title	Hoa Thiên Cốt
 mov_title	Hoa Trong Bão; Hoa Trong Bão
 mov_title	Hoa Vàng Nơi Ấy; Hoa Vàng Nơi Ấy
@@ -3507,13 +3506,13 @@ mov_title	Lord Of East China Sea I; Hoàng Đế Thượng Hải
 mov_title	Hoàng Cung; Goong - Được Làm Hoàng Hậu
 mov_title	Goong 2; Hoàng Cung 2
 mov_title	Dong Yi; Hoàng Cung Dậy Sóng
-mov_title	Hoàng Cung Nữ Thám Tử; Htvc Phim - Damo
-mov_title	Hoàng Gia; Vtv6 - Royal Family
+mov_title	Hoàng Cung Nữ Thám Tử;
+mov_title	Hoàng Gia; Royal Family
 mov_title	Hoàng Gia Trù Tướng
 mov_title	Hwatoo; Hoàng Hậu Gi
 mov_title	Empress Ki; Hoàng Hậu Ki
 mov_title	The Grand Canal; Hoàng Hà Đại Phong Vân
-mov_title	Vctv2; Hoàng Hôn Ấm Áp
+mov_title	Hoàng Hôn Ấm Áp
 mov_title	Curse Of The Golden Flower; Hoàng Kim Giáp
 mov_title	Once Upon A Time In China 1; Hoàng Phi Hồng 1
 mov_title	Hoàng Phi Hồng 1; Triệu Văn Trác - Vô Đầu Tướng Quân
@@ -3540,9 +3539,9 @@ mov_title	Prince Charming; Hoàng Tử Hắc Mã
 mov_title	Hoàng Tử Ma Cà Rồng
 mov_title	Your Highness; Hoàng Tử Trong Mơ
 mov_title	Hoàng Tử William
-mov_title	32/32; Hoàng Thổ Tình Thù
-mov_title	Thvl2; Hoàng Thành Tranh Bá
-mov_title	Vtv2; Hoàng Thượng Nhị Đại Gia
+mov_title	Hoàng Thổ Tình Thù
+mov_title	Hoàng Thành Tranh Bá
+mov_title	Hoàng Thượng Nhị Đại Gia
 mov_title	Orphan Black 2; Hoán Đổi 2
 mov_title	The Switch; Hoán Đổi Định Mệnh
 mov_title	Anna; Hoán Đổi Ký Ức
@@ -3573,7 +3572,7 @@ mov_title	Bloody Sunset; Huyết Sắc Tàn Dương
 mov_title	The Last Supper; Huyết Yến
 mov_title	Huyền Sử Thiên Đô
 mov_title	The Legend Of 1900; Huyền Thoại 1900
-mov_title	Htv9; Huyền Thoại 1c
+mov_title	Huyền Thoại 1c
 mov_title	Huyền Thoại Amaya
 mov_title	Atlantis 1; Huyền Thoại Atlantis 1
 mov_title	Huyền Thoại Bắt Đầu
@@ -3602,14 +3601,14 @@ mov_title	A Viking Saga: The Darkest Day; Huyền Thoại Vikings: Ngày Đen T�
 mov_title	Legends Of Oz Dorothys Return; Huyền Thoại Xứ Oz: Sự Trở Về Của Dorothy
 mov_title	The Legend Of Zorro; Huyền Thoại Zorro
 mov_title	Brothers; Huynh Đệ
-mov_title	Huynh Đệ Song Hành; Sctv9 - Old Time Buddy
+mov_title	Huynh Đệ Song Hành; Old Time Buddy
 mov_title	Reunion; Huynh Đệ Tình Thâm
 mov_title	Hy Vọng
 mov_title	Hope; Hy Vọng 2013
 mov_title	Hope Springs; Hy Vọng Tuổi Xuân
 mov_title	I Am A Man
 mov_title	I Frankenstein
-mov_title	Id Tinh Anh; Sctv9 - The Threshold Of A Persona
+mov_title	Id Tinh Anh; The Threshold Of A Persona
 mov_title	Idol Eye
 mov_title	If You Love
 mov_title	In My End Is My Beginning
@@ -3674,10 +3673,10 @@ mov_title	Snitch; Kẻ Chỉ Điểm
 mov_title	Stand Up Guys; Kẻ Chống Đối
 mov_title	The Conspirator; Kẻ Chủ Mưu
 mov_title	The Vanquisher; Kẻ Chiến Thắng
-mov_title	Vtv9; Kẻ Dối Trá Chân Tình
+mov_title	Kẻ Dối Trá Chân Tình
 mov_title	Kẻ Di Trú
 mov_title	Kẻ Gây Hấn
-mov_title	Sctv9; Kẻ Gian Xảo
+mov_title	Kẻ Gian Xảo
 mov_title	The Duo; Kẻ Giấu Mặt
 mov_title	Burning Bright; Kẻ Giết Cọp
 mov_title	Icarus : The Killing Machine; Kẻ Hai Mặt
@@ -3713,7 +3712,7 @@ mov_title	Prom Night; Kẻ Săn Đêm
 mov_title	The Raven; Kẻ Săn Mồi
 mov_title	The Bounty Hunter; Kẻ Săn Tiền Thưởng
 mov_title	Absolute Deception; Kẻ Tấn Công Lạ Mặt
-mov_title	Kẻ Tội Đồ Thánh Thiện; Sctv6 - Sinner Or Saint
+mov_title	Kẻ Tội Đồ Thánh Thiện; Sinner Or Saint
 mov_title	Person Of Interest 1; Kẻ Tình Nghi 1
 mov_title	Person Of Interest Season 2; Kẻ Tình Nghi 2
 mov_title	Person Of Interest 3; Kẻ Tình Nghi 3
@@ -3769,10 +3768,10 @@ mov_title	Harsh Times; Kết Thúc Thời Gian
 mov_title	Journey To The End Of The Night; Kết Thúc Trong Đêm
 mov_title	Adaptation; Kịch Bản Chuyển Thể
 mov_title	City Hunter; Kỳ Ảo Mạo Hiểm Vương
-mov_title	Thvl; Kỳ Án Nhà Thanh 2
+mov_title	Kỳ Án Nhà Thanh 2
 mov_title	Killer Toon; Kỳ Án Truyện Tranh
 mov_title	Mr. Beans Holiday; Kỳ Nghỉ Của Mr Bean
-mov_title	Sctv; Kỳ Nghỉ Của Quý Bà
+mov_title	Kỳ Nghỉ Của Quý Bà
 mov_title	Blended; Kỳ Nghỉ Chết Cười
 mov_title	Killer Holiday; Kỳ Nghỉ Chết Chóc
 mov_title	Tucker And Dale Vs Evil; Kỳ Nghỉ Kinh Hoàng
@@ -3799,7 +3798,7 @@ mov_title	Transformers 4; Kỷ Nguyên Hủy Diệt
 mov_title	Rock Of Ages; Kỷ Nguyên Rock
 mov_title	What Happened In Bali; Kỷ Niệm Bali
 mov_title	The Dark Knight Ries 2012; Kỹ Sĩ Bóng Đêm Trỗi Dậy
-mov_title	Vtv1; K‎ý Ức Việt Nam
+mov_title	K‎ý Ức Việt Nam
 mov_title	Marry A Rich Man; Kén Chồng
 mov_title	Kén Rể
 mov_title	Mr. Bean Is Holiday; Kì Nghỉ Của Mr. Bean
@@ -3813,10 +3812,10 @@ mov_title	Ký Ức Tuổi Thơ
 mov_title	The Thaw; Ký Sinh Dưới Da
 mov_title	Yeongasi; Ký Sinh Trùng
 mov_title	Infestation; Ký Sinh Trùng
-mov_title	Vctv2; Ký Túc Xá
+mov_title	Ký Túc Xá
 mov_title	Magic To Win; Khai Tâm Ma Pháp
 mov_title	Khang Hy Đế Quốc
-mov_title	Sctv; Khang Hy Vi Hành
+mov_title	Khang Hy Vi Hành
 mov_title	Defeated Queen; Khẩn Cấp Tìm Chồng
 mov_title	The Words; Khẩu Ngữ
 mov_title	Van Helsing; Khắc Tinh Của Ma Cà Rồng
@@ -3858,10 +3857,10 @@ mov_title	Khát Vọng Giàu Sang
 mov_title	Khát Vọng Nghệ Thuật
 mov_title	Khát Vọng Thượng Lưu
 mov_title	Auqua Heroes; Khát Vọng Tuổi Trẻ
-mov_title	Vtc1; Khí Phách Anh Hùng
+mov_title	Khí Phách Anh Hùng
 mov_title	Breathless; Khó Thở
 mov_title	Khóa Tình
-mov_title	Htvc Thuần Việt; Khóc Thầm
+mov_title	Khóc Thầm
 mov_title	Love In A Puff; Khói Thuốc Tình Yêu
 mov_title	Whatever It Takes; Khôi Phục Giang Sơn
 mov_title	Inescapable; Không Để Trốn Thoát
@@ -3872,7 +3871,7 @@ mov_title	Shameless Season 3; Không Biết Xấu Hổ Phần 3
 mov_title	Beyond Border; Không Biên Giới
 mov_title	Không Cảm Giác; Insensibles - Painless
 mov_title	Không Có Eva
-mov_title	Thvl1; Không Chốn Dung Thân
+mov_title	Không Chốn Dung Thân
 mov_title	No One Lives; Không Chừa Một Ai
 mov_title	Never Back Down 2: The Beatdown; Không Chùn Bước 2
 mov_title	Green Street 3: Never Back Down; Không Chùn Bước 3
@@ -3899,7 +3898,7 @@ mov_title	Không Phải Tiếng Sét Ái Tình
 mov_title	Not Suitable For Children; Không Phù Hợp Với Trẻ Em
 mov_title	Con Air; Không Tặc
 mov_title	Unforgiven; Không Tha Thứ
-mov_title	Vtv1; Không Thể Gục Ngã
+mov_title	Không Thể Gục Ngã
 mov_title	Lofty Waters Verdant Bow; Không Thể Khuất Phục
 mov_title	Evangelion: 3.0 You Can (Not) Redo; Không Thể Làm Lại
 mov_title	Can't Lose; Không Thể Mất Em
@@ -3907,28 +3906,28 @@ mov_title	The Untouchables; Không Thể Mua Chuộc
 mov_title	Unthinkable; Không Thể Tưởng Tượng
 mov_title	Made of Honor; Không Thể Xa Em
 mov_title	Blitz; Không Thỏa Hiệp
-mov_title	32/32; Khúc Ca Cho Tình Nhân
+mov_title	Khúc Ca Cho Tình Nhân
 mov_title	Initial D; Khúc Cua Quyết Định
 mov_title	Khúc Giao Hưởng Định Mệnh
 mov_title	Khúc Hòa Tấu
 mov_title	Singing When You Are Sad; Khúc Nhạc Buồn
-mov_title	Tập 20/20; Khúc Nhạc Tình Yêu
+mov_title	Khúc Nhạc Tình Yêu
 mov_title	Man In Love; Khi Đàn Ông Yêu
 mov_title	Khi Đàn Chim Trở Về 3
 mov_title	Walking Tall; Khi Cựu Binh Trở Về
-mov_title	Sctv9; Khi Chàng Trai Yêu
+mov_title	Khi Chàng Trai Yêu
 mov_title	Parental Guidance; Khi Cháu Là Siêu Quậy
 mov_title	Khi Chó Yêu Mèo
 mov_title	Khi Người Đàn Ông Góa Vợ Bật Khóc
 mov_title	Khi Người Đàn Ông Trở Lại
 mov_title	When A Man Is In Love; Khi Người Đàn Ông Yêu
 mov_title	Khi Người Ta Yêu; Khi Người Ta Yêu
-mov_title	Sctv13; Khi Những Bà Nội Trợ Hành Động
+mov_title	Khi Những Bà Nội Trợ Hành Động
 mov_title	Khi Ta Nói Dối
 mov_title	When Love Walked In; Khi Tình Yêu Đến
 mov_title	Khi Tình Yêu Lên Tiếng
-mov_title	Vtv3; Khi Yêu Đừng Hỏi Tại Sao
-mov_title	Khi Yêu Đừng Nói Lời Chia Tay; Tập 21-22 Vtv9
+mov_title	Khi Yêu Đừng Hỏi Tại Sao
+mov_title	Khi Yêu Đừng Nói Lời Chia Tay;
 mov_title	Dances With Wolves; Khiêu Vũ Với Bầy Sói
 mov_title	Stealing Legend; Kho Báu Đẫm Máu
 mov_title	The Monuments Men; Kho Báu Bị Đánh Cắp
@@ -3937,10 +3936,10 @@ mov_title	National Treasure; Kho Báu Quốc Gia
 mov_title	National Treasure 2; Kho Báu Quốc Gia 2
 mov_title	Priceless Treasure; Kho Báu Vô Giá
 mov_title	Harvest Villa; Kho Vàng Bí Ẩn
-mov_title	Vtc7; Khoanh Khắc Ngọt Ngào
+mov_title	Khoanh Khắc Ngọt Ngào
 mov_title	Barely Legal; Khoả Thân Hợp Pháp
 mov_title	Khoảng Đời Bão Táp
-mov_title	Vtv9; Khoảnh Khắc Tình Cờ
+mov_title	Khoảnh Khắc Tình Cờ
 mov_title	Moments Of Endearment; Khoảnh Khắc Tuyệt Vời
 mov_title	Its In The Blood; Khu Đầm Máu
 mov_title	Dead Mine; Khu Mộ Tử Thần
@@ -3966,16 +3965,16 @@ mov_title	Faces In The Crowd; Khuôn Mặt Kẻ Sát Nhân
 mov_title	Khun Chai Taratorn
 mov_title	Vanilla Sky; Khung Trời Ảo Mộng
 mov_title	Khung Trời Yêu Thương
-mov_title	193/193; Khuyển Dạ Xoa
+mov_title	Khuyển Dạ Xoa
 mov_title	Khuynh Thế Hoàng Phi
 mov_title	Thanh Cung Tuyệt Luyến Chi Mỹ Ly Cách Cách; Khuynh Thành Tuyệt Luyến
 mov_title	The Tiger Blade; Kiếm Hổ
 mov_title	Kiếm Hiệp Tình Duyên
 mov_title	Swordsmen; Kiếm Khách
 mov_title	The Sword Identity; Kiếm Khách Bí Ẩn
-mov_title	Vctv7; Kiếm Khách Vượt Thời Gian
+mov_title	Kiếm Khách Vượt Thời Gian
 mov_title	Trọn Bộ; Kiếm Ngạo Giai Nhân
-mov_title	35/35; Kiếm Ngấn Lệ Sầu
+mov_title	Kiếm Ngấn Lệ Sầu
 mov_title	The Lengend Of Swordman; Kiếm Thủ Võ Lâm
 mov_title	The Blade And Petal; Kiếm Và Hoa
 mov_title	Reign Of Assassins; Kiếm Vũ Giang Hồ
@@ -3991,7 +3990,7 @@ mov_title	The Right Kind Of Wrong; Kiểu Không Hợp Có Lý
 mov_title	Kiệt Tác Bất Hủ
 mov_title	Red Palanquin; Kiệu Hoa
 mov_title	Rest On Your Shoulder; Kiên Thượng Điệp
-mov_title	Htv2; Kim Đại Ban
+mov_title	Kim Đại Ban
 mov_title	Kim Đồng Ngọc Nữ
 mov_title	Kim Cương Cô Đơn
 mov_title	Blood Diamond; Kim Cương Máu
@@ -4015,7 +4014,7 @@ mov_title	Kinh Hoa Duyên Truyền Kỳ
 mov_title	Kinh Hoa Xuân Mộng; Kinh Hoa Xuân Mộng
 mov_title	Moment In Peking; Kinh Hoa Yên Vân
 mov_title	Dream House; Kinh Hoàng Nhà Cổ
-mov_title	Htvc Phim; Kinh Kha Truyền Kỳ
+mov_title	Kinh Kha Truyền Kỳ
 mov_title	A Mysterious Murder; Kinh Tâm Động Hồn
 mov_title	Kinh Thành Dậy Sóng; Kinh Thành Dậy Sóng
 mov_title	Secret Amazing Cases; Kinh Thành Kỳ Án
@@ -4031,7 +4030,7 @@ mov_title	Chandni Chowk To China; Kungfu Mỹ Quốc
 mov_title	Real Kungfu; Kungfu Phật Sơn
 mov_title	Legend Of A Rabbit; Kungfu Thỏ Ngố
 mov_title	Kungfu Fighter; Kungfu Vô Địch
-mov_title	60/60; La Hán Tái Thế
+mov_title	La Hán Tái Thế
 mov_title	Rome Season 2; La Mã Phần 2
 mov_title	The Wesleys Mysterious File; Lam Huyết Nhân
 mov_title	Lan Lăng Vương
@@ -4041,7 +4040,7 @@ mov_title	Lan Kwai Fong 2; Lan Quế Phường 2
 mov_title	Lan Kwai Fong 3; Lan Quế Phường 3
 mov_title	Hardcore Comedy; Lan Quế Phường Ngoại Truyện
 mov_title	Lang Nha Bảng
-mov_title	21/21; Lang Quân Như Ý
+mov_title	Lang Quân Như Ý
 mov_title	Last Action Hero
 mov_title	Last Cinderella
 mov_title	Last Kind Words
@@ -4054,7 +4053,7 @@ mov_title	Lost Girl 3; Lạc Lối 3
 mov_title	Lost In Beijing; Lạc Lối Ở Bắc Kinh
 mov_title	Lost In Thailand; Lạc Lối Ở Thái Lan
 mov_title	Lạc Loài
-mov_title	Vtv1; Lạc Mất Linh Hồn
+mov_title	Lạc Mất Linh Hồn
 mov_title	Lost In Love; Lạc Mất Tình Yêu
 mov_title	Beauty Of Han's Dynasty; Lạc Nhạn Mỹ Nhân
 mov_title	Where The Legend Begins; Lạc Thần
@@ -4066,8 +4065,8 @@ mov_title	Journey To The Center Of The Earth; Lạc Vào Thời Tiền Sử
 mov_title	Oz The Great And Powerful; Lạc Vào Xứ Oz Vĩ Đại Và Quyền Năng
 mov_title	Lấp Lánh Ước Mơ
 mov_title	Equilibrium; Lấy Độc Trị Độc
-mov_title	Vtv3; Lấy Chồng Giàu Sang
-mov_title	Sctv14; Lấy Chồng Hàn
+mov_title	Lấy Chồng Giàu Sang
+mov_title	Lấy Chồng Hàn
 mov_title	Lấy Chồng Người Ta
 mov_title	Marrying A Milionaire; Lấy Chồng Triệu Phú
 mov_title	In Gold We Trust; Lấy Máu Đổi Vàng
@@ -4085,14 +4084,14 @@ mov_title	The Thin Red Line; Lằn Ranh Đỏ Mỏng Manh
 mov_title	The Aggression Scale; Lằn Ranh Phạm Tội
 mov_title	Lẵng Hoa Tình Yêu
 mov_title	Lặng Lẽ Yêu Em
-mov_title	Htvc Thuần Việt; Lều Chõng
+mov_title	Lều Chõng
 mov_title	Requiem For A Dream; Lễ Cầu Hồn Cho Một Giấc Mơ
 mov_title	Halloween 4: The Return Of Michael Myers; Lễ Hội Kinh Hoàng 4
 mov_title	Bangkok Sweety; Lễ Tình Nhân Ngọt Ngào
 mov_title	The Last Exorcism Part Ii; Lễ Trừ Tà Cuối Cùng 2
 mov_title	Lệ Phí Tình Yêu; Lệ Phí Tình Yêu
 mov_title	As Tears Go By; Lệ Tình Lãng Tử
-mov_title	Vtc9; Lệch Pha
+mov_title	Lệch Pha
 mov_title	Lệnh Cơ Truyền Kỳ
 mov_title	The Siege; Lệnh Phong Tỏa
 mov_title	Lệnh Sinh Tử
@@ -4104,8 +4103,8 @@ mov_title	Lọ Lem Sài Gòn
 mov_title	Lọ Lem Thời @
 mov_title	Lốc Xoáy Tình Đời
 mov_title	Lốc Xoáy Tình Yêu
-mov_title	Sctv Tổng Hợp; Lối Đi Cửa Tây
-mov_title	Vctv2; Lối Rẽ
+mov_title	Lối Đi Cửa Tây
+mov_title	Lối Rẽ
 mov_title	Lối Sống Sai Lầm; Lối Sống Sai Lầm
 mov_title	Terms Of Endearment; Lối Sống Sai Lầm
 mov_title	The Ledge; Lối Thoát
@@ -4114,24 +4113,24 @@ mov_title	Lồng Son
 mov_title	Errors Of The Human Body; Lỗi Của Cơ Thể
 mov_title	The Fault In Our Stars; Lỗi Lầm Không Của Riêng Ai
 mov_title	Khang Hi Và Vi Tiểu Bảo; Lộc Đỉnh Ký
-mov_title	Htv2; Lộc Đỉnh Ký 1998
+mov_title	Lộc Đỉnh Ký 1998
 mov_title	Lộng Hành Thiên Hạ; Lộng Hành Thiên Hạ
 mov_title	Architecture 101; Lớp Học 101
 mov_title	Jyoou No Kyoushitsu; Lớp Học Của Nữ Hoàng
 mov_title	Lớp Học Tình Yêu
 mov_title	The Proposal; Lời Cầu Hôn
 mov_title	Operation Proposal; Lời Cầu Hôn Ngọt Ngào
-mov_title	Vtv2; Lời Cầu Hôn Thứ Hai
+mov_title	Lời Cầu Hôn Thứ Hai
 mov_title	Lời Của Trái Tim
 mov_title	Reply 1994; Lời Hồi Đáp
 mov_title	Easy Fortune Happy Life; Lời Hứa Dưới Cây Ngô Đồng
 mov_title	Eastern Promises; Lời Hứa Gangster
 mov_title	A Thousand Days Promise; Lời Hứa Ngàn Ngày
-mov_title	Sctv 16; Lời Hứa Từ Trái Tim
+mov_title	Lời Hứa Từ Trái Tim
 mov_title	Til Love Do Us Lie; Lời Hứa Vội Vàng
 mov_title	Lời Hôn Ước Lãng Quên; White Robe Of Love - Tình Yêu Blouse Trắng
 mov_title	Warm Words; Lời Nói Ấm Áp
-mov_title	Thvl; Lời Nói Dối Định Mệnh
+mov_title	Lời Nói Dối Định Mệnh
 mov_title	True Lies; Lời Nói Dối Chân Thật
 mov_title	Speech Of Slience; Lời Nói Ngọt Ngào
 mov_title	Bad Words; Lời Nói Tệ Bạc
@@ -4153,7 +4152,7 @@ mov_title	Rh108; Lời Nguyền Huyết Ngãi
 mov_title	Dial D For Demons; Lời Nguyền Linh Thiêng
 mov_title	Jug Face; Lời Nguyền Mặt Sứ
 mov_title	Sadako 2; Lời Nguyền Quỷ Ám 2
-mov_title	Todaytv; Lời Nguyền Sapphire
+mov_title	Lời Nguyền Sapphire
 mov_title	Lời Nguyền Sắc Đẹp
 mov_title	Plus Nine Boys; Lời Nguyền Số 9
 mov_title	Chilling Romance; Lời Nguyền Tình Yêu
@@ -4166,28 +4165,28 @@ mov_title	Lời Thề Sắt Son
 mov_title	Broken Vow; Lời Thề Tội Lỗi
 mov_title	Lời Thì Thầm Của Những Bóng Ma
 mov_title	Lời Thì Thầm Từ Quá Khứ
-mov_title	Vtv9; Lời Thú Nhận Của Eva
+mov_title	Lời Thú Nhận Của Eva
 mov_title	Confessions; Lời Thú Tội
 mov_title	Doomsday Prophecy; Lời Tiên Tri Về Ngày Tận Thế
 mov_title	Chob Kod Like Chai Kod Love; Lỡ Thích Nhấn Like Trót Yêu Ai Nhấn Love
 mov_title	Lợi Tiên Sinh Gặp Phải Tình Yêu
 mov_title	Six Fingers; Lục Chỉ Cầm Ma
-mov_title	Sctv3; Lục Lạc Huyền Bí 2011
+mov_title	Lục Lạc Huyền Bí 2011
 mov_title	Lục Nữ Giang Hồ
 mov_title	Lục Thê Tử
 mov_title	Lục Tiểu Phụng Truyền Kỳ
 mov_title	Lục Tiểu Phụng Và Hoa Mãn Lâu
-mov_title	Vctv2; Lục Vân Tiên
+mov_title	Lục Vân Tiên
 mov_title	Lừa Tình; Rapture-palooza
 mov_title	Hot Shot; Lửa Bóng Rổ
 mov_title	Lửa Hận Tình Thù
 mov_title	Lửa Phật
-mov_title	Vtc9; Lửa Tình
+mov_title	Lửa Tình
 mov_title	Fire Loves A Vengeful Flame; Lửa Tình Thiêu Thù Hận
 mov_title	Lửa Trên Băng
 mov_title	Lữ Đoàn Sói; Jin-roh: The Wolf Brigade
-mov_title	Sctv; Lữ Bố Và Điêu Thuyền
-mov_title	Lực Lượng Đặc Biệt; Thvl1 - Anti-crime Squad
+mov_title	Lữ Bố Và Điêu Thuyền
+mov_title	Lực Lượng Đặc Biệt; Anti-crime Squad
 mov_title	Special Forces; Lực Lượng Đặc Nhiệm
 mov_title	Battle Force; Lực Lượng Đặc Nhiệm
 mov_title	Force Of Execution; Lực Lượng Đặc Nhiệm
@@ -4209,7 +4208,7 @@ mov_title	Friends With Kids; Làm Bạn Với Lũ Trẻ
 mov_title	Làm Bố Thật Tuyệt; Làm Bố Thật Tuyệt
 mov_title	Larry Crown; Làm Lại Cuộc Đời
 mov_title	How Do You Know; Làm Sao Em Biết
-mov_title	Vtv6; Làn Môi Trong Mưa
+mov_title	Làn Môi Trong Mưa
 mov_title	Làng Ế Vợ
 mov_title	Trọn Bộ; Làng Ma 10 Năm Sau
 mov_title	Ghost Sweepers; Làng Quỷ Ám
@@ -4220,24 +4219,24 @@ mov_title	Straw Shield; Lá Chắn Rơm
 mov_title	Woman, Man; Lá Ngọc Cành Vàng
 mov_title	My Father Is Hero; Lá Thư Cho Phụ Thân
 mov_title	Driving Miss Daisy; Lái Xe Cho Cô Daisy
-mov_title	Tập 20/20; Lâm Thế Vinh
+mov_title	Lâm Thế Vinh
 mov_title	Lâu Đài Tình Ái
 mov_title	City Of Glass; Lâu Đài Thủy Tinh
-mov_title	Sctv; Lã Bất Vi
+mov_title	Lã Bất Vi
 mov_title	Rurouni Kenshin; Lãng Khách Rurouni Kenshin
 mov_title	Somebody Up There Likes Me; Lãng Mạn Phong Bạo
 mov_title	True Romance; Lãng Mạn Và Tội Ác
 mov_title	Forgotten; Lãng Quên
 mov_title	Forgive And Forget; Lãng Quên Kỷ Niệm
 mov_title	Lãng Tử Yến Thanh
-mov_title	Vtv9; Lãnh Địa Đen
+mov_title	Lãnh Địa Đen
 mov_title	The Covenant; Lãnh Địa Tối Cao
 mov_title	Primeval Season 2; Lãnh Địa Tử Thần 2
 mov_title	Cold War; Lãnh Chiến
 mov_title	Lão Biểu Nhĩ Hảo 2
 mov_title	Jackass Presents Bad Grandpa; Lão Già Siêu Quậy
 mov_title	Old Master Q And Little Ocean Tiger; Lão Phu Tử Và Tiểu Thủy Hổ
-mov_title	20/20; Lên Nhầm Kiệu Hoa Được Chồng Như Ý
+mov_title	Lên Nhầm Kiệu Hoa Được Chồng Như Ý
 mov_title	Lênh Đênh Phận Bạc
 mov_title	Commando; Lính Đặc Công
 mov_title	Mercenaries; Lính Đánh Thuê
@@ -4257,7 +4256,7 @@ mov_title	Friendly Fire; Lý Trí Và Pháp Luật
 mov_title	Li Wei S Resignation; Lý Vệ Từ Quan
 mov_title	The Kids Are All Right; Lũ Trẻ Đều Ổn
 mov_title	Web Of Love; Lưới Tình
-mov_title	Vtc7; Lưới Tình Catwalk
+mov_title	Lưới Tình Catwalk
 mov_title	Saw 1; Lưỡi Cưa 1
 mov_title	Saw 2; Lưỡi Cưa 2
 mov_title	Saw 3; Lưỡi Cưa 3
@@ -4279,9 +4278,9 @@ mov_title	Lưu Tinh Hồ Điệp Kiếm
 mov_title	Least Among Saints
 mov_title	Liệt Hỏa Truyền Thuyết
 mov_title	Justice League: War; Liên Minh Công Lý : Chiến Tranh
-mov_title	20/20; Liên Thành Quyết
 mov_title	Liên Thành Quyết
-mov_title	36/36; Liêu Trai Lục Ký
+mov_title	Liên Thành Quyết
+mov_title	Liêu Trai Lục Ký
 mov_title	Liêu Trai Tứ Đại Kỳ Nữ
 mov_title	Lincoln; Lincoln
 mov_title	Julias Eyes; Linh Cảm Chết Chóc
@@ -4346,7 +4345,7 @@ mov_title	The Lawyers; Luật Sư
 mov_title	Jolly Llb; Luật Sư Jolly
 mov_title	Legally Blonde; Luật Sư Không Bằng Cấp
 mov_title	Legally Blonde 2: Red, White & Blonde; Luật Sư Không Bằng Cấp 2
-mov_title	Thvl1; Luật Sư Lưu Manh
+mov_title	Luật Sư Lưu Manh
 mov_title	Suits 3; Luật Sư Tay Chơi 3
 mov_title	The Road Less Traveled; Luôn Có Anh Bên Đời
 mov_title	Lucky Luke
@@ -4398,7 +4397,7 @@ mov_title	Magic Mike XXL
 mov_title	Mai Hoa Kiếm
 mov_title	Forever Enthralled; Mai Lan Phương
 mov_title	Mai Này Vẫn Yêu Em
-mov_title	Vtc6; Mai Quế Giang Hồ
+mov_title	Mai Quế Giang Hồ
 mov_title	Mai Quế Hào Tình
 mov_title	Man Pliaw Mak
 mov_title	Maoyu Maou Yuusha
@@ -4447,8 +4446,8 @@ mov_title	Gabbar Singh; Mật Vụ
 mov_title	Zulu; Mật Vụ 2014
 mov_title	Stranded; Mắc Kẹt
 mov_title	Eagle Eye; Mắt Đại Bàng
-mov_title	Sctv; Mắt Bão
-mov_title	Htv9; Mắt Bướm
+mov_title	Mắt Bão
+mov_title	Mắt Bướm
 mov_title	The Cat; Mắt Mèo
 mov_title	Snake Eyes; Mắt Rắn
 mov_title	Dragon Eyes; Mắt Rồng
@@ -4456,7 +4455,7 @@ mov_title	My Left Eye Sees Ghosts; Mắt Trái Thấy Ma
 mov_title	The Mask; Mặt Nạ
 mov_title	Mặt Nạ Anh Hùng
 mov_title	Black Mask; Mặt Nạ Đen
-mov_title	Vtv3; Mặt Nạ Da Người
+mov_title	Mặt Nạ Da Người
 mov_title	Mirrormask; Mặt Nạ Gương
 mov_title	Mặt Nạ Hoa Hồng
 mov_title	Mặt Nạ Hoàn Hảo
@@ -4476,9 +4475,6 @@ mov_title	Tears In Heaven; Mẹ Ơi Hãy Yêu Con Lần Nữa
 mov_title	Mẹ Chồng Của Tôi; Mẹ Chồng Của Tôi
 mov_title	War Of In Law; Mẹ Chồng Khó Tính
 mov_title	Mẹ Chồng Nàng Dâu
-mov_title	Vtv3; Mẹ Chồng Nàng Dâu
-mov_title	Mẹ Chồng Nàng Dâu
-mov_title	Todaytv; Mẹ Chồng Nàng Dâu
 mov_title	Mẹ Hổ Cha Mèo
 mov_title	Mama; Mẹ Ma
 mov_title	Mother; Mẹ Tôi
@@ -4488,7 +4484,7 @@ mov_title	Mama, Nothing To Fear; Mẹ, Không Có Gì Để Sợ
 mov_title	Mệnh Lệnh Liên Hoàn
 mov_title	Mị Nguyệt Truyện
 mov_title	Kean Saneha; Mối Hận Cơ Duyên
-mov_title	Sctv9; Mối Hận Kim Bình
+mov_title	Mối Hận Kim Bình
 mov_title	The Sessions; Mối Quan Hệ Hấp Dẫn
 mov_title	Leaving Las Vegas; Mối Tình Ở Las Vegas
 mov_title	Jai Rao; Mối Tình Đau Khổ
@@ -4503,7 +4499,7 @@ mov_title	Paper Marriage; Mối Tình Di Dân
 mov_title	Summer Holiday; Mối Tình Mùa Hè
 mov_title	Trọn Bộ; Mối Tình Mùa Nước Lũ
 mov_title	Naayak; Mối Tình Naayak
-mov_title	Htvc Phụ Nữ; Mối Tình Nồng Thắm
+mov_title	Mối Tình Nồng Thắm
 mov_title	Love In Shadow; Mối Tình Ngang Trái
 mov_title	The Oranges; Mối Tình Rắc Rối
 mov_title	Miao Miao; Mối Tình Trung Học
@@ -4517,7 +4513,7 @@ mov_title	Mộ Gió
 mov_title	Legendary: Tomb Of The Dragon; Mộ Rồng
 mov_title	Mộc Phủ Phong Vân
 mov_title	Đại Phá Thiên Môn Trận; Mộc Quế Anh
-mov_title	Vtv2; Mộc Quế Anh
+mov_title	Mộc Quế Anh
 mov_title	Thập Nhị Quả Phụ Chinh Tây; Mộc Quế Anh 2
 mov_title	Mộng Ước Vẫn Còn Đây
 mov_title	Sleepwalker; Mộng Du
@@ -4539,7 +4535,7 @@ mov_title	Một Nửa Đồng Thoại
 mov_title	Một Nửa Bóng Tối
 mov_title	Một Nửa Duyên Phận; Một Nửa Duyên Phận
 mov_title	Một Nửa Hoàn Hảo
-mov_title	Thvl1; Một Nửa Yêu Thương
+mov_title	Một Nửa Yêu Thương
 mov_title	A Thousand Kisses; Một Ngàn Nụ Hôn
 mov_title	One Day; Một Ngày
 mov_title	Một Ngày Bất Hạnh; Một Ngày Bất Hạnh
@@ -4566,14 +4562,14 @@ mov_title	Mỹ Nam Khác Biệt
 mov_title	My Flower Boy Neighbor; Mỹ Nam Nhà Bên
 mov_title	The Lady Iron Chef; Mỹ Nữ Đầu Bếp
 mov_title	A Beautiful Life; Mỹ Nữ Lừa Tình
-mov_title	36/36; Mỹ Nữ Như Mây
+mov_title	Mỹ Nữ Như Mây
 mov_title	Sophies Revenge; Mỹ Nhân Đại Chiến
 mov_title	Mỹ Nhân Kế
 mov_title	Surplus Princess; Mỹ Nhân Ngư
 mov_title	Mỹ Nhân Như Họa
 mov_title	Hi Fidelity; Mỹ Nhân Phóng Đãng
 mov_title	Mỹ Nhân Sài Thành
-mov_title	40/40; Mỹ Nhân Tâm Kế
+mov_title	Mỹ Nhân Tâm Kế
 mov_title	Mỹ Nhân Tư Phòng Thái
 mov_title	Đường Cung Mỹ Nhân Thiên Hạ; Mỹ Nhân Thiên Hạ
 mov_title	Mỹ Nhân Và Nô Lệ
@@ -4583,8 +4579,8 @@ mov_title	Perfect Blue; Màu Của Ảo Giác
 mov_title	Color Of Night; Màu Của Màn Đêm
 mov_title	Màu Của Tình Yêu; Màu Của Tình Yêu
 mov_title	Upstream Color; Màu Sắc Tình Yêu
-mov_title	Hvt9; Màu Xanh Đôi Mắt
-mov_title	Vtc2; Mày Râu Làm Vợ
+mov_title	Màu Xanh Đôi Mắt
+mov_title	Mày Râu Làm Vợ
 mov_title	Ma Mi; Má Mì Hot Girl
 mov_title	Mái Ấm Gia Đình
 mov_title	Hair Show; Mái Tóc Thời Trang
@@ -4593,13 +4589,13 @@ mov_title	Blood Of Redemption; Máu Của Kẻ Thù
 mov_title	Cold Fish; Máu Lạnh
 mov_title	Cold Blooded; Máu Lạnh 2012
 mov_title	The Bund; Máu Nhuộm Bến Thượng Hải
-mov_title	Thvl2; Máu Nhuộm Tử Cấm Thành
+mov_title	Máu Nhuộm Tử Cấm Thành
 mov_title	Blood And Bone; Máu Và Xương
 mov_title	Mã Hỷ Tiểu Tử; Mã Hỷ Tiểu Tử
 mov_title	Racing Peak; Mã Trường Phong Vân
-mov_title	Thvl1; Mã Vĩnh Trinh
+mov_title	Mã Vĩnh Trinh
 mov_title	Waiting For Foreve; Mãi Chờ Mãi Đợi
-mov_title	Vtv9; Mãi Mãi Bên Nhau
+mov_title	Mãi Mãi Bên Nhau
 mov_title	Mãi Theo Bóng Em
 mov_title	Mãi Yêu
 mov_title	Always; Mãi Yêu Em
@@ -4612,7 +4608,7 @@ mov_title	The Way Of The Dragon; Mãnh Long Quá Giang
 mov_title	Men Suddenly In Love; Mãnh Nam Cổn Tử Đội
 mov_title	Puss In Boots; Mèo Đi Hia
 mov_title	My Dear Cat; Mèo Con Yêu Quý
-mov_title	Sctv; Mèo Mập 1
+mov_title	Mèo Mập 1
 mov_title	Doraemon US 1; Mèo Máy Đến Từ Tương Lai
 mov_title	Mèo Máy Kuro
 mov_title	Mèo Nào Cắn Mửu Nào
@@ -4621,8 +4617,8 @@ mov_title	Pan’s Labyrinth; Mê Cung Của Pan
 mov_title	Trance; Mê Cung Ký Ức
 mov_title	Mê Hoặc
 mov_title	In Fear; Mê Lộ
-mov_title	Htv2; Mì Gia Đại Chiến
-mov_title	Vtv3; Mình Cưới Thật Em Nhé
+mov_title	Mì Gia Đại Chiến
+mov_title	Mình Cưới Thật Em Nhé
 mov_title	Devil Due; Món Nợ Của Quỷ
 mov_title	The Girl From The Naked Eye; Món Nợ Của Rồng
 mov_title	Món Nợ Miền Đông; Món Nợ Miền Đông
@@ -4633,7 +4629,7 @@ mov_title	Protege; Môn Đồ
 mov_title	The Winter Of The Year Was Warm; Mùa Đông Ấm Áp Năm Đó
 mov_title	Winter In Wartime; Mùa Đông Thời Chinh Chiến
 mov_title	Mùa Chim Én Xôn Xao
-mov_title	Vtv3; Mùa Hạ Của Khiên Ngưu
+mov_title	Mùa Hạ Của Khiên Ngưu
 mov_title	Mùa Hạ Yêu Dấu
 mov_title	Indian Summer; Mùa Hè Ấn Độ
 mov_title	The Kings Of Summer; Mùa Hè Bá Đạo
@@ -4652,7 +4648,7 @@ mov_title	Mùa Tình Yêu; Season Of Love - Luyến Ái Quý Tiết
 mov_title	Mùa Thu Đi Một Nửa; Mùa Thu Đi Một Nửa
 mov_title	Mùa Tinh Khôi
 mov_title	Mùa Xuân Của Cây Gòn
-mov_title	Vtv3; Mùa Xuân Của Cha
+mov_title	Mùa Xuân Của Cha
 mov_title	Mùa Xuân Của Những Người Khó Đỡ
 mov_title	Back Of The Past Spring; Mùa Xuân Cuối Cùng
 mov_title	2012; Mùa Xuân Quanh Ta
@@ -4665,7 +4661,7 @@ mov_title	Broken Arrow; Mũi Tên Gãy
 mov_title	Arrow Season 1; Mũi Tên Xanh
 mov_title	Arrow 2; Mũi Tên Xanh 2
 mov_title	Arrow 3; Mũi Tên Xanh 3
-mov_title	Thvl1; Mơ Hoang
+mov_title	Mơ Hoang
 mov_title	Salon Beauty; Mơ Mộng Viện Thẩm Mỹ
 mov_title	April Rain; Mưa Đạn
 mov_title	Mưa Đầu Mùa
@@ -4694,7 +4690,7 @@ mov_title	Catwoman; Miêu Nữ
 mov_title	Lady Flower Fist; Miêu Thúy Hoa
 mov_title	Midnight Train
 mov_title	Mimi
-mov_title	Thvl; Minh Nguyệt Đao
+mov_title	Minh Nguyệt Đao
 mov_title	Minions
 mov_title	Misaki Number One; Misaki Là Số 1
 mov_title	Moebius
@@ -4744,11 +4740,11 @@ mov_title	Holding Love; Nắm Giữ Tình Yêu
 mov_title	Nắm Lấy Tay Anh
 mov_title	Sunny Happiness; Nắng Ấm Hạnh Phúc
 mov_title	Tabloid Truth; Nặc Danh
-mov_title	Vtv4; Nếp Nhà
+mov_title	Nếp Nhà
 mov_title	If I Were You; Nếu Anh Là Em
 mov_title	If I Stay; Nếu Ở Lại
 mov_title	Nếu Còn Có Ngày Mai; Đn1 - When Tomorrow Comes
-mov_title	Vtv9; Nếu Chỉ Là Giấc Mơ
+mov_title	Nếu Chỉ Là Giấc Mơ
 mov_title	If You Are The One; Nếu Em Là Người Tình
 mov_title	Shark; Nếu Không Có Hận Thù
 mov_title	Nếu Không Có Hận Thù
@@ -4758,27 +4754,27 @@ mov_title	Nếu Như Yêu
 mov_title	Venom; Nọc Độc
 mov_title	Love And Again; Nối Lại Tình Xưa
 mov_title	Safe Guards; Nối Nghiệp
-mov_title	Vtv3; Nốt Nhạc Con Gái
+mov_title	Nốt Nhạc Con Gái
 mov_title	The Angels Share; Nổi Loạn
 mov_title	Tammy; Nổi Loạn Nào
 mov_title	Faking It 1; Nổi Tiếng Nhanh 1
 mov_title	The Haunting Of Helena; Nỗi Ám Ảnh Của Helena
 mov_title	The Possession Of Michael King; Nỗi Ám Ảnh Của Michael King
-mov_title	Vctv2; Nỗi Đau Của Hạnh Phúc
+mov_title	Nỗi Đau Của Hạnh Phúc
 mov_title	Nỗi Đau Người Phụ Nữ
 mov_title	Bereavement; Nỗi Đau Tột Cùng
-mov_title	Sctv9; Nỗi Khổ Đàn Ông
+mov_title	Nỗi Khổ Đàn Ông
 mov_title	Nỗi Lòng Của Cha
 mov_title	City Kids; Nỗi Niềm Trẻ Mồ Côi
 mov_title	The Insider; Nội Gián
 mov_title	Ruse Of Engagement; Nội Gián
 mov_title	The Truth; Nội Tình Và Pháp Luật
 mov_title	Nợ Đa Tình
-mov_title	Sctv13; Nợ Đời
+mov_title	Nợ Đời
 mov_title	Rich And Famous; Nợ Giang Hồ
 mov_title	Debts Of A Life Time; Nợ Tình Chưa Phai
 mov_title	Smile Again; Nụ Cười Trọn Vẹn
-mov_title	Htvc Phụ Nữ; Nụ Hồng Và Bóng Đêm
+mov_title	Nụ Hồng Và Bóng Đêm
 mov_title	Nụ Hôn Đầu Xuân
 mov_title	Love In Tokyo; Nụ Hôn Định Mệnh
 mov_title	Nụ Hôn Bị Đánh Mất
@@ -4798,9 +4794,9 @@ mov_title	Agent X; Nữ Đặc Công X
 mov_title	So Undercover; Nữ Đặc Vụ Xinh Đẹp
 mov_title	Female Detective Knives; Nữ Bổ Khoái
 mov_title	Cop Shop Babes; Nữ Cảnh Kiều Hoa
-mov_title	Vtc9; Nữ Cảnh Sát Hậu Đậu
+mov_title	Nữ Cảnh Sát Hậu Đậu
 mov_title	Nữ Cảnh Sát Hành Động
-mov_title	Nữ Cảnh Sát Siêu Phàm; Tập 20-21 Thvl1
+mov_title	Nữ Cảnh Sát Siêu Phàm;
 mov_title	Policewomen's Love Battlefield; Nữ Cảnh Tác Chiến
 mov_title	The Top Bet; Nữ Cờ Bạc Bịp
 mov_title	Prosecutor Princess; Nữ Công Tố Sành Điệu
@@ -4815,14 +4811,14 @@ mov_title	The Woman Knight Of Mirror Lake; Nữ Hiệp Thu Cấn
 mov_title	Jotei; Nữ Hoàng Bóng Đêm
 mov_title	Frozen; Nữ Hoàng Băng Giá
 mov_title	Mệnh Giá Tình Yêu; Nữ Hoàng Cổ Phiếu
-mov_title	Htvc Thuần Việt; Nữ Hoàng Cà Phê
+mov_title	Nữ Hoàng Cà Phê
 mov_title	The Queen Of Office; Nữ Hoàng Công Sở
 mov_title	Queen Insoo; Nữ Hoàng Insoo
 mov_title	Dancing Queen; Nữ Hoàng Khiêu Vũ
 mov_title	The Queen's Classroom; Nữ Hoàng Lớp Học
 mov_title	Queen Of Reversals; Nữ Hoàng Rắc Rối
 mov_title	Nữ Hoàng Sắc Đẹp
-mov_title	Htv2; Nữ Hoàng Seon Deok
+mov_title	Nữ Hoàng Seon Deok
 mov_title	May Queen; Nữ Hoàng Tháng 5
 mov_title	The Snow Queen; Nữ Hoàng Tuyết
 mov_title	Nữ Hoàng Vật Chất
@@ -4843,9 +4839,9 @@ mov_title	My Mighty Princess; Nữ Sinh Võ Lâm
 mov_title	Female Agents; Nữ Tình Báo
 mov_title	Nữ Tình Báo; 2013 - The East
 mov_title	Nữ Tướng
-mov_title	Thvl1; Nữ Tướng Phàn Lê Huê
+mov_title	Nữ Tướng Phàn Lê Huê
 mov_title	Goddess; Nữ Thần
-mov_title	Htvc Phim; Nữ Thần Bộ
+mov_title	Nữ Thần Bộ
 mov_title	Nữ Thần Chết Xinh Đẹp
 mov_title	Goddess Of Marriage; Nữ Thần Hôn Nhân
 mov_title	The Goddess Of Fire Jung Yi; Nữ Thần Lửa Jung Yi
@@ -4854,7 +4850,7 @@ mov_title	Nữ Thừa Kế Triệu Phú
 mov_title	Veronica Mars; Nữ Thám Tử
 mov_title	Boss; Nữ Thám Tử Gợi Cảm
 mov_title	My Girlfriend Is An Agent; Nữ Thám Tử Xinh Đẹp
-mov_title	20/20; Nữ Trạng Tài Danh
+mov_title	Nữ Trạng Tài Danh
 mov_title	Nữ Trinh Sát
 mov_title	Nữ Tuần Án
 mov_title	Nữ Tuần Bộ
@@ -4863,20 +4859,20 @@ mov_title	I Love Maria; Nữ Vô Địch Maria
 mov_title	Nữ Y Minh Phi Truyền
 mov_title	Cheongdamdong Alice; Nàng Alice Phố Cheongdamdong
 mov_title	Snow White And The Seven Dwarfs; Nàng Bạch Tuyết Và Bảy Chú Lùn
-mov_title	Htv3; Nàng Công Chúa Bí Ẩn
+mov_title	Nàng Công Chúa Bí Ẩn
 mov_title	My Princess; Nàng Công Chúa Của Tôi
 mov_title	Dae Jang Geum 2; Nàng Dae Jang Geum 2
 mov_title	Dae Jang Geum; Nàng Dae Jang Kum
 mov_title	Nàng Dâu Điểm 10; Nàng Dâu Điểm Mười
-mov_title	Nàng Dâu Câm; Vctv1 - The Mute Bride
+mov_title	Nàng Dâu Câm; The Mute Bride
 mov_title	Nàng Dâu Hạ Môn
-mov_title	Todaytv; Nàng Dâu Hiếu Thảo
+mov_title	Nàng Dâu Hiếu Thảo
 mov_title	Nàng Dâu Nổi Loạn; Nàng Dâu Nổi Loạn
 mov_title	Nàng Dâu Thời Hiện Đại
 mov_title	Nàng Hương
 mov_title	Nàng Hwang Chi Ni
 mov_title	Nàng Juliet Đông Phương
-mov_title	Vtv9; Nàng Là Vệ Sĩ
+mov_title	Nàng Là Vệ Sĩ
 mov_title	Nàng Men Chàng Bóng
 mov_title	Personal Taste; Nàng Ngốc Và Quân Sư
 mov_title	Barbie The Pearl Princess; Nàng Tiên Cá Barbie
@@ -4895,10 +4891,10 @@ mov_title	Năm Tháng Vội Vã
 mov_title	Infinite Power; Năng Lượng Vô Tận
 mov_title	Nơi Chốn Ta Quay Về
 mov_title	Somewhere; Nơi Nào Đó
-mov_title	Sctv14; Nơi Tình Yêu Ở Lại
+mov_title	Nơi Tình Yêu Ở Lại
 mov_title	The Holiday; Nơi Tình Yêu Bắt Đầu
 mov_title	Nơi Tình Yêu Bắt Đầu
-mov_title	Hvt9; Nơi Trái Tim Ở Lại
+mov_title	Nơi Trái Tim Ở Lại
 mov_title	Last Resort; Nơi Trú Ẩn Cuối Cùng
 mov_title	Nước 2030
 mov_title	The Divine Move; Nước Cờ Sinh Tử
@@ -4918,12 +4914,12 @@ mov_title	Crouching Tiger Hidden Dragon; Ngọa Hổ Tàng Long
 mov_title	Trọn Bộ; Ngọa Hổ Tàng Long 2
 mov_title	Operation Undercover; Ngọa Hổ Trầm Luân
 mov_title	Ngọc Bội Uyên Ương
-mov_title	Thvl1; Ngọc Bích Tình Yêu
+mov_title	Ngọc Bích Tình Yêu
 mov_title	Emerald On The Roof; Ngọc Bích Trong Ánh Bình Minh
 mov_title	Ngọc Viễn Đông; Ngọc Viễn Đông
 mov_title	Hills Have Eyes; Ngọn Đồi Có Mắt
 mov_title	Storms of Flames; Ngọn Đèn Trong Bão
-mov_title	Htv9; Ngọn Cỏ Gió Đùa
+mov_title	Ngọn Cỏ Gió Đùa
 mov_title	Ngọn Cỏ Ven Sông
 mov_title	Plerng Toranong; Ngọn Lửa Kêu Ngạo
 mov_title	Ngọn Lửa Tham Vọng
@@ -4969,7 +4965,7 @@ mov_title	Proong Nee Gor Ruk Ter; Ngày Mai Anh Vẫn Yêu Em
 mov_title	Ngày Mai Hãy Nhớ Yêu
 mov_title	Spring Days Of My Life; Ngày Mùa Xuân
 mov_title	Holiday; Ngày Nghỉ
-mov_title	Htv7; Ngày Ta Yêu Nhau
+mov_title	Ngày Ta Yêu Nhau
 mov_title	Armageddon; Ngày Tận Diệt
 mov_title	Armageddon; Ngày Tận Thế
 mov_title	War Games At The End Of The Day; Ngày Tử Chiến
@@ -4977,7 +4973,7 @@ mov_title	The Day; Ngày Tàn
 mov_title	World Of The Dead; Ngày Tàn Của Nhân Loại
 mov_title	Downstream; Ngày Tàn Nhân Loại
 mov_title	Memorial Day; Ngày Tưởng Niệm
-mov_title	Sctv4; Ngày Tươi Đẹp
+mov_title	Ngày Tươi Đẹp
 mov_title	Ngày Thứ 2 Đáng Sợ
 mov_title	The 6th Day; Ngày Thứ 6
 mov_title	Ngày Tháng Tuổi Trẻ; Tập 5-6 Orange Days
@@ -4993,7 +4989,7 @@ mov_title	One Fine Spring Day; Ngày Xuân Tươi Đẹp
 mov_title	Silver Tycoon; Ngân Hồ Về Đêm
 mov_title	Battlestar Galactica: Blood & Chrome; Ngân Hà Đại Chiến
 mov_title	Innocent Thing; Ngây Thơ
-mov_title	Tập 20/20; Ngã 3 Đường Tình
+mov_title	Ngã 3 Đường Tình
 mov_title	Wrong Turn 2: Dead End; Ngã Rẽ Tử Thần 2
 mov_title	Wrong Turn 3: Left For Dead; Ngã Rẽ Tử Thần 3
 mov_title	Wrong Turn 4; Ngã Rẽ Tử Thần 4
@@ -5004,7 +5000,7 @@ mov_title	Justice League The Flashpoint Paradox; Ngòi Nổ Nghịch Lý
 mov_title	Vampires Suck; Ngón Nghề Hút Máu Của Ma Cà Rồng
 mov_title	Saranae Heen Pee; Ngôi Đền Bị Nguyền Rủa
 mov_title	Ngôi Đền Cổ Tích; Ngôi Đền Cổ Tích
-mov_title	Vtv9; Ngôi Biệt Thự Màu Tro Lạnh
+mov_title	Ngôi Biệt Thự Màu Tro Lạnh
 mov_title	Ngôi Làng Dưới Chân Cầu Arakawa; Tập 8-9
 mov_title	Closed Door Village; Ngôi Làng Tử Khí
 mov_title	Shallow Grave; Ngôi Mộ Hờ
@@ -5016,7 +5012,7 @@ mov_title	Dark House; Ngôi Nhà Bí Ẩn 2014
 mov_title	Coffee House; Ngôi Nhà Cafe
 mov_title	The House Of The End Times; Ngôi Nhà Của Cái Chết
 mov_title	Dream Home; Ngôi Nhà Chết Chóc
-mov_title	Vtv3; Ngôi Nhà Hạnh Phúc
+mov_title	Ngôi Nhà Hạnh Phúc
 mov_title	Full House; Ngôi Nhà Hạnh Phúc
 mov_title	Ngôi Nhà Hạnh Phúc
 mov_title	Full House 2; Ngôi Nhà Hạnh Phúc 2
@@ -5045,13 +5041,13 @@ mov_title	Water For Elephants; Ngôi Sao Gánh Xiếc
 mov_title	Potato Star; Ngôi Sao Khoai Tây
 mov_title	My Lucky Stars; Ngôi Sao May Mắn
 mov_title	Rockstar; Ngôi Sao Nhạc Rock
-mov_title	Htv9; Ngôi Sao Thứ 31
+mov_title	Ngôi Sao Thứ 31
 mov_title	Elektra Luxx; Ngôi Sao Thoát Y
 mov_title	Flashbacks Of A Fool; Ngôi Sao Trụy Lạc
 mov_title	6/5; Ngôi Trường Ma
 mov_title	The Deadly Sting; Ngõ Cụt
 mov_title	The Shortcut; Ngõ Tắt
-mov_title	Vtc9; Ngõ Vắng
+mov_title	Ngõ Vắng
 mov_title	The Locker 2; Ngăn Để Đồ 2
 mov_title	The Jacket; Ngăn Cản Thần Chết
 mov_title	The Air I Breathe; Ngăn Chặn Tội Ác
@@ -5060,12 +5056,12 @@ mov_title	Kepong Gangster; Ngũ Hổ Xã Hội Đen
 mov_title	Ghost Punting; Ngũ Phúc Tinh Gặp Ma
 mov_title	Ngũ Quái Sài Gòn
 mov_title	Ngũ Thử Đại Náo Đông Kinh
-mov_title	Ngũ Vị Nhân Sinh; Sctv9 - The Season Of Fate
+mov_title	Ngũ Vị Nhân Sinh; The Season Of Fate
 mov_title	7 Lives; Người 7 Mạng
 mov_title	Gagarin: First in Space; Người Đầu Tiên Vào Vũ Trụ
 mov_title	Haywire; Người Đẹp Báo Thù
 mov_title	Sleeping Beauty; Người Đẹp Ngủ Trong Rừng
-mov_title	Todaytv; Người Đẹp Online
+mov_title	Người Đẹp Online
 mov_title	Người Đẹp Tây Đô; Người Đẹp Tây Đô
 mov_title	Beauty And The Beast; Người Đẹp Và Quái Thú
 mov_title	Beauty And The Beast; Người Đẹp Và Quái Vật
@@ -5080,7 +5076,7 @@ mov_title	A Single Man; Người Đàn Ông Độc Thân
 mov_title	Người Đàn Ông Bắt Được Cầu Vồng
 mov_title	The Family Man; Người Đàn Ông Có Gia Đình
 mov_title	The Man With The Iron Fists; Người Đàn Ông Có Tay Đấm Sắt
-mov_title	Sctv9; Người Đàn Ông Gan Dạ
+mov_title	Người Đàn Ông Gan Dạ
 mov_title	Who's The One; Người Đàn Ông Hoàn Hảo
 mov_title	Người Đàn Ông Không Thể Kết Hôn
 mov_title	Kekkon Dekinai Otoko; Người Đàn Ông Không Thể Lấy Vợ
@@ -5092,13 +5088,13 @@ mov_title	Big Man; Người Đàn Ông Vĩ Đại
 mov_title	The Woman In Black; Người Đàn Bà Áo Đen
 mov_title	Pretty Woman; Người Đàn Bà Đẹp
 mov_title	The Milkwoman; Người Đàn Bà Giao Sữa
-mov_title	SCTV9; Người Đàn Bà Quá Yêu
+mov_title	Người Đàn Bà Quá Yêu
 mov_title	Femme Fatales Season 2; Người Đàn Bà Quyến Rũ 2
 mov_title	Femme Fatale; Người Đàn Bà Tội Lỗi
 mov_title	Người Đàn Bà Thứ 2
 mov_title	Queen Not Getting Off Work; Người Đàn Bà Thép
 mov_title	Cunning Single Lady; Người Đàn Bà Xảo Quyệt
-mov_title	Htv7; Người Đàn Bà Yếu Đuối
+mov_title	Người Đàn Bà Yếu Đuối
 mov_title	The Postman; Người Đưa Thư
 mov_title	The Courier; Người Đưa Tin
 mov_title	Constantine; Người Đi Dưới Địa Ngục
@@ -5110,13 +5106,13 @@ mov_title	The Protector 2; Người Bảo Vệ 2
 mov_title	Treasure Guards; Người Bảo Vệ Kho Báu
 mov_title	Bulletproof Monk; Người Bảo Vệ Kinh Thánh
 mov_title	Iceman; Người Băng
-mov_title	Vtv1; Người Cộng Sự
+mov_title	Người Cộng Sự
 mov_title	Dyesebel; Người Cá Dyesebel
 mov_title	The Spy Dad; Người Cha Điệp Viên
 mov_title	Papa; Người Cha Bất Đắc Dĩ
 mov_title	The Spy Dad; Người Cha Gián Điệp
 mov_title	World's Greatest Dad; Người Cha Hoàn Hảo
-mov_title	Sctv Tổng Hợp; Người Cha Phú Quý
+mov_title	Người Cha Phú Quý
 mov_title	Being Flynn; Người Cha Thất Lạc
 mov_title	Người Cha Thần Tượng; Papadol - My Daddy Is An Idol
 mov_title	Everybodys Fine; Người Cha Tuyệt Vời
@@ -5179,9 +5175,9 @@ mov_title	Model; Người Mẫu
 mov_title	Người Mẫu (việt Nam)
 mov_title	Mother; Người Mẹ
 mov_title	Người Mẹ Điên
-mov_title	Vtv9; Người Mẹ Hạnh Phúc
+mov_title	Người Mẹ Hạnh Phúc
 mov_title	Trọn Bộ; Người Mẹ Ngốc Nghếch
-mov_title	Htvc Gia Đình; Người Mẹ Nhí
+mov_title	Người Mẹ Nhí
 mov_title	Supermom; Người Mẹ Tuyệt Vời
 mov_title	Totally Innocent; Người Mẹ Vô Tội
 mov_title	The Last Blossom; Người Mẹ Vĩ Đại
@@ -5227,7 +5223,7 @@ mov_title	Người Sói Vô Hình
 mov_title	Edward Scissorhands; Người Tay Kéo
 mov_title	The Good, The Bad And The Ugly; Người Tốt, Kẻ Xấu Và Tên Vô Lại
 mov_title	The Other Boleyn Girl; Người Tình Đại Đế
-mov_title	Sctv14; Người Tình Bí Ẩn
+mov_title	Người Tình Bí Ẩn
 mov_title	A Perfect Man; Người Tình Bí Ẩn
 mov_title	Người Tình Bí Ẩn – Philippines
 mov_title	Perfect Partner; Người Tình Bí Mật
@@ -5272,7 +5268,7 @@ mov_title	Người Vợ Bất Đắc Dĩ; Người Vợ Bất Đắc Dĩ
 mov_title	Người Vợ Ghen
 mov_title	Người Vợ Mạo Danh
 mov_title	Người Vợ Mê Muội
-mov_title	Sctv Tổng Hợp; Người Vợ Tào Khang
+mov_title	Người Vợ Tào Khang
 mov_title	Bà Nhà Tôi; Người Vợ Thẩm Phán 1
 mov_title	Just Love 2; Người Vợ Thẩm Phán 2
 mov_title	My Wife Is A Superwoman; Người Vợ Tuyệt Vời
@@ -5280,9 +5276,9 @@ mov_title	The Disappearance; Người Vô Hình
 mov_title	The Elephant Man; Người Voi
 mov_title	The Patriot; Người Yêu Nước
 mov_title	Touch of The Light; Ngược Chiều Ánh Sáng
-mov_title	Htv7; Ngược Dòng Ký Ức
+mov_title	Ngược Dòng Ký Ức
 mov_title	The Comeback Clan; Ngược Dòng Nghịch Cảnh
-mov_title	Vtv1; Ngược Sóng
+mov_title	Ngược Sóng
 mov_title	The Legend Of Love; Ngưu Lang Chức Nữ 2003
 mov_title	Ngưu Lang Chúc Nữ
 mov_title	Nghề Báo; Nghề Báo
@@ -5295,17 +5291,17 @@ mov_title	Nghịch Thủy Hàn Kiếm
 mov_title	Nghĩa Đảm Hùng Cảnh; Tập 8-9
 mov_title	Nghĩa Đảm Hùng Cảnh 2
 mov_title	Nghĩa Bất Dung Tình
-mov_title	Thvl1; Nghĩa Hải Hào Tình
+mov_title	Nghĩa Hải Hào Tình
 mov_title	Golden Snake Sword; Nghĩa Khí Anh Hùng
 mov_title	Next Heroes; Nghĩa Khí Anh Hùng 2011
-mov_title	Vtv3; Nghĩa Vợ Tình Chồng
+mov_title	Nghĩa Vợ Tình Chồng
 mov_title	Nghe Thấy Tiếng Mưa Rơi
 mov_title	Nghe Tiếng Mưa Rơi
 mov_title	Nghe Trà
 mov_title	Suspect; Nghi Phạm
 mov_title	The Usual Suspects; Nghi Phạm Vô Hình
 mov_title	Nghiệt Duyên
-mov_title	Htv7; Nghiệt Oan
+mov_title	Nghiệt Oan
 mov_title	Ngoan Cái Gì Cũng Có
 mov_title	The Second Sight; Ngoại Cảm
 mov_title	Miss Granny; Ngoại Già Tuổi Đôi Mươi
@@ -5330,7 +5326,7 @@ mov_title	The Quick And The Dead; Nhanh Hay Là Chết
 mov_title	The Musical; Nhạc Kịch
 mov_title	Nhạc Phi Truyền Kỳ
 mov_title	Honey 2; Nhảy Lên Nào
-mov_title	Tập 54/54; Nhất Đại Hoàng Hậu
+mov_title	Nhất Đại Hoàng Hậu
 mov_title	The Grandmaster; Nhất Đại Tông Sư
 mov_title	You Drive Me Crazy; Nhất Định Anh Sẽ Đến
 mov_title	Who Is The Winner; Nhất Đen Nhì Đỏ
@@ -5343,7 +5339,7 @@ mov_title	Nhất Dạ Kinh Hỷ
 mov_title	Yuyu Hakusho; Nhất Dương Chỉ
 mov_title	No Risk No Gain; Nhất Kế Nhì Tài
 mov_title	Nhất Kiếm Chấn Giang Hồ
-mov_title	Vtv1; Nhất Nhất Tiến Lên
+mov_title	Nhất Nhất Tiến Lên
 mov_title	One Stone And Two Birds; Nhất Tiễn Song Điêu
 mov_title	Nhẫm Huyết Đao
 mov_title	The Immigrant; Nhập Cư
@@ -5388,18 +5384,18 @@ mov_title	Grief Over The Yellow River; Những Ân Tình Trên Sông Hoàng Hà
 mov_title	Dads Season 1; Những Ông Bố
 mov_title	Những Ông Bố Độc Thân
 mov_title	For A Few Dollars More; Những Đồng Đô La Sinh Tử
-mov_title	Thvl1; Những Đứa Con Biệt Động Sài Gòn
+mov_title	Những Đứa Con Biệt Động Sài Gòn
 mov_title	Những Đứa Con Biệt Động Sài Gòn 2
 mov_title	The Wolf Children Ame And Yuki; Những Đứa Con Của Sói Ame Và Yuki
 mov_title	Những Đứa Con Khác Họ
-mov_title	Sctv13; Những Đứa Con Thành Phố
+mov_title	Những Đứa Con Thành Phố
 mov_title	Children of the Corn: Genesis; Những Đứa Trẻ Của Corn
 mov_title	Family Weekend; Những Đứa Trẻ Nổi Loạn
 mov_title	Grown Ups; Những Đứa Trẻ To Xác
 mov_title	Grown Ups 2; Những Đứa Trẻ To Xác 2
-mov_title	Todaytv; Những Đóa Hồng Gai
+mov_title	Những Đóa Hồng Gai
 mov_title	Những Đóa Hoa Tình Yêu; Những Đóa Hoa Tình Yêu
-mov_title	Vtv9; Những Đóa Ngọc Lan
+mov_title	Những Đóa Ngọc Lan
 mov_title	Letters From Iwo Jima; Những Bức Thư Từ Iwo Jima
 mov_title	Những Bà Nội Trợ Hiện Đại
 mov_title	Desperate Housewives 4; Những Bà Nội Trợ Kiểu Mỹ 4
@@ -5409,7 +5405,7 @@ mov_title	Petals On The Wind; Những Bông Hoa Trước Gió
 mov_title	My Blueberry Nights; Những Buổi Tối
 mov_title	New Kids Turbo; Những Cảnh Sát Kỳ Lạ
 mov_title	The Woman Who Still Wants To Marry; Những Cặp Đôi Tuổi Dần
-mov_title	Sctv14; Những Cánh Hoa Bay
+mov_title	Những Cánh Hoa Bay
 mov_title	Horror Stories 2; Những Câu Chuyện Kinh Dị 2
 mov_title	Shreks Thrilling Tales; Những Câu Chuyện Rùng Rợn
 mov_title	Mythquest; Những Câu Chuyện Thần Thoại
@@ -5422,7 +5418,7 @@ mov_title	Pitch Perfect; Những Cô Nàng Cá Tính
 mov_title	Bad Girls; Những Cô Nàng Hư Hỏng
 mov_title	Mean Girls; Những Cô Nàng Lắm Chiêu
 mov_title	Mistresses 1; Những Cô Nhân Tình
-mov_title	Vtv1; Những Công Dân Tập Thể
+mov_title	Những Công Dân Tập Thể
 mov_title	Những Cơn Mưa Tình Yêu; Những Cơn Mưa Tình Yêu
 mov_title	Love Rain; Những Cơn Mưa Tình Yêu
 mov_title	Waterboys; Những Chàng Trai Nước
@@ -5458,12 +5454,12 @@ mov_title	The Crazy Ones 1; Những Kẻ Quậy Phá 1
 mov_title	Great Expectations; Những Kỳ Vọng Lớn Lao
 mov_title	Những Khoảng Trời Riêng
 mov_title	Raak Boon 2; Những Linh Hồn Báo Oán 2
-mov_title	Htv9; Những Mảnh Đời Giông Bão
+mov_title	Những Mảnh Đời Giông Bão
 mov_title	Những Nụ Hôn Rực Rỡ
 mov_title	Những Nàng Công Chúa Nổi Tiếng; Những Nàng Công Chúa Nổi Tiếng
 mov_title	Famous Princesses; Những Nàng Công Chúa Nổi Tiếng Hàn Quốc
 mov_title	Những Nàng Dâu Sắt
-mov_title	Sctv16; Những Năm Tháng Hạnh Phúc
+mov_title	Những Năm Tháng Hạnh Phúc
 mov_title	Những Ngọn Nến Lung Linh
 mov_title	Beautiful Days; Những Ngày Đẹp Trời
 mov_title	Day With You; Những Ngày Bên Em
@@ -5510,7 +5506,7 @@ mov_title	Signs; Những Vòng Tròn Bí Ẩn
 mov_title	The Illusionis; Nhà Ảo Thuật
 mov_title	Nhà Có 5 Nàng Tiên
 mov_title	Cheaper By The Dozen 2; Nhà Có Một Tá Con
-mov_title	Vtv2; Nhà Có Nhiều Cửa Số
+mov_title	Nhà Có Nhiều Cửa Số
 mov_title	Nhà Có Phòng Trọ
 mov_title	Nhà Có Trai Có Gái
 mov_title	Fruitvale Station; Nhà Ga Fruitvale
@@ -5545,7 +5541,7 @@ mov_title	The Lincoln Lawyer; Nhân Danh Công Lý
 mov_title	Visible Secret 2; Nhân Gian U Hồn
 mov_title	Kung Fu Master Wong Fei Hung; Nhân Giả Hoàng Phi Hồng
 mov_title	Eiga Doraemon: Nobita No Ningyo Daikaisen; Nhân Ngư Đại Chiến
-mov_title	Todaytv; Nhân Sinh Ảo Mộng
+mov_title	Nhân Sinh Ảo Mộng
 mov_title	Besouro; Nhân Vật Lịch Sử
 mov_title	The Danger Encounter; Nhân Vật Nguy Hiểm
 mov_title	The Great Merchant; Nhân Vật Truyền Kỳ
@@ -5571,7 +5567,7 @@ mov_title	Mission Impossible 2; Nhiệm Vụ Bất Khả Thi 2
 mov_title	Mission Impossible 3; Nhiệm Vụ Bất Khả Thi 3
 mov_title	Mission Impossible 4: Ghost Protocol; Nhiệm Vụ Bất Khả Thi 4
 mov_title	Mission Impossible 5; Nhiệm Vụ Bất Khả Thi 5
-mov_title	Thvl1; Nhiệm Vụ Cát Tường
+mov_title	Nhiệm Vụ Cát Tường
 mov_title	Sabotage; Nhiệm Vụ Cuối Cùng
 mov_title	Hot Blood; Nhiệt Huyết Thương Trường
 mov_title	Throw Down; Nhu Đạo Long Hổ Bang
@@ -5604,7 +5600,7 @@ mov_title	23:59; Oan Hồn Nửa Đêm
 mov_title	Undeparted Body; Oan Hồn Trả Thù
 mov_title	Curse Of The Deserted; Oan Hồn Trong Căn Nhà Hoang
 mov_title	Sick Nurses; Oan Hồn Y Tá
-mov_title	Htv7; Oan Nghiệt
+mov_title	Oan Nghiệt
 mov_title	Time Before Time; Oan Nghiệt Tình Thù
 mov_title	Oan Trái Tình Nồng
 mov_title	Oanh Liệt Thiên Thu
@@ -5615,7 +5611,7 @@ mov_title	One Piece Film Z; One Piece Movie Z
 mov_title	Bee Movie; Ong Vàng Phiêu Lưu Ký
 mov_title	Open Grave
 mov_title	Osen
-mov_title	Htv3; Oshin
+mov_title	Oshin
 mov_title	Otomen Live Action; Otomen
 mov_title	Over The Top; Over The Top
 mov_title	P.s Man
@@ -5636,7 +5632,7 @@ mov_title	Attack Force; Phản Ứng Nhanh
 mov_title	The Company You Keep; Phản Đối Chiến Tranh
 mov_title	Phấn Điệp
 mov_title	A Gentlemans Dignity; Phẩm Giá Quý Ông
-mov_title	Vctv1; Phận Hồng Nhan
+mov_title	Phận Hồng Nhan
 mov_title	Entangling Love In Shanghai; Phận Má Hồng
 mov_title	Women On The Run; Phận Nữ Long Đong
 mov_title	Phật Hoàng Trần Nhân Tông
@@ -5652,10 +5648,10 @@ mov_title	Ambushed; Phục Kích
 mov_title	Compliance; Phục Tùng
 mov_title	Maidens Vow; Phụng Hoàng Lầu
 mov_title	Phoenix Parlor; Phụng Hoàng Xuất Thế
-mov_title	Sctv; Phá Án
+mov_title	Phá Án
 mov_title	The Prodigal Son; Phá Gia Chi Tử
 mov_title	Breakout; Phá Vòng Bí Ẩn
-mov_title	Vtv1; Phá Vòng Vây
+mov_title	Phá Vòng Vây
 mov_title	Pháo Đài Chiến Tranh; Brestskaya Krepost - Fortress Of War
 mov_title	Pháp Võng Truy Kích
 mov_title	The Button of Doom; Phát Minh Rắc Rối
@@ -5664,7 +5660,7 @@ mov_title	The Weather Man; Phát Thanh Viên Thời Tiết
 mov_title	Holy Motors; Phân Thân
 mov_title	Miracle At St. Anna; Phép Lạ
 mov_title	Suddenly Its Magic; Phép Màu Bất Thình Lình
-mov_title	Phép Màu Tái Sinh; Htv2 - Padam Padam
+mov_title	Phép Màu Tái Sinh; Padam Padam
 mov_title	Maundy Thursday; Phép Màu Tình Yêu
 mov_title	Fly With Me; Phép Nhiệm Mầu
 mov_title	Charmed 1; Phép Thuật 1
@@ -5676,7 +5672,7 @@ mov_title	Charmed 6; Phép Thuật 6
 mov_title	Charmed 7; Phép Thuật 7
 mov_title	Charmed 8; Phép Thuật 8
 mov_title	East Of Eden; Phía Đông Vườn Địa Đàng
-mov_title	Vtv3; Phía Cuối Cầu Vồng
+mov_title	Phía Cuối Cầu Vồng
 mov_title	South Bound; Phía Nam Biên Giới
 mov_title	Phía Sau Ánh Bình Minh; Phía Sau Ánh Bình Minh
 mov_title	Phía Sau Hào Quang; Phía Sau Hào Quang
@@ -5708,7 +5704,7 @@ mov_title	Raging Phoenix; Phượng Hoàng Nổi Giận
 mov_title	Phoenix The Myth; Phượng Hoàng Thần Nữ
 mov_title	Phương Án B; The Back-up Plan
 mov_title	Phương Đức Và Miêu Thúy Hoa
-mov_title	Vtv2; Phương Thế Ngọc
+mov_title	Phương Thế Ngọc
 mov_title	Phương Thế Ngọc; Phương Thế Ngọc
 mov_title	Phương Thế Ngọc 2; Phương Thế Ngọc 2
 mov_title	Phương Thế Ngọc Và Vua Càn Long
@@ -5741,7 +5737,7 @@ mov_title	Now You See Me 2; Phi Vụ Thế Kỷ 2
 mov_title	Phiên Chợ Số; Phiên Chợ Số
 mov_title	Phiêu Bạt Giữa Cuộc Đời
 mov_title	Phiêu Lưu Cùng Bầy Kiến; Phiêu Lưu Cùng Bầy Kiến
-mov_title	Vtvcab2; Phiêu Lưu Mùa Hè
+mov_title	Phiêu Lưu Mùa Hè
 mov_title	Welcome To The Space Show 2010; Phiêu Lưu Ngoài Không Gian
 mov_title	Phineas And Ferb The Movie: Across The 2nd Dimension
 mov_title	Feminine Masculinity; Phong Cách Đàn Ông
@@ -5749,7 +5745,7 @@ mov_title	Yên Hỏa Lan San; Phong Hỏa Giai Nhân
 mov_title	Tiny Times 3; Phong Ngân Thời Đại
 mov_title	Temptress Moon; Phong Nguyệt
 mov_title	Sound Of The Wind; Phong Thanh
-mov_title	Vtv2; Phong Thần
+mov_title	Phong Thần
 mov_title	Phong Thần Anh Hùng Bảng
 mov_title	Phong Thần Bảng
 mov_title	Phong Thủy Thế Gia
@@ -5770,7 +5766,7 @@ mov_title	Transit; Quá Giang
 mov_title	Quan Âm Bán Cá
 mov_title	Buddha Mountain; Quan Âm Sơn
 mov_title	Quan Công
-mov_title	Sctv Tổng Hợp; Quan Chi Ma Thất Phẩm
+mov_title	Quan Chi Ma Thất Phẩm
 mov_title	I Like It Hot 2008; Quan Hệ Nóng Bỏng (16+)
 mov_title	Dangerous Liaisons; Quan Hệ Nguy Hiểm
 mov_title	Quan Hệ Nguy Hiểm
@@ -5849,9 +5845,9 @@ mov_title	Treasure Inn; Quán Trọ Thần Tài
 mov_title	Enlisted 1; Quân Đội 1
 mov_title	Legionnaire; Quân Đoàn
 mov_title	Forgetting Sarah Marshall; Quên Đi Tình Cũ
-mov_title	42 Tập; Quý Ông Thời Đại
+mov_title	Quý Ông Thời Đại
 mov_title	Quý Bà Go Bong Shil
-mov_title	Sctv14; Quý Bà Lắm Chiêu
+mov_title	Quý Bà Lắm Chiêu
 mov_title	Madam Dun; Quý Bà Lăng Xê
 mov_title	Quý Cô Của Lòng Tôi
 mov_title	My Love Madame Butterfly; Quý Cô Thất Thường
@@ -5872,7 +5868,7 @@ mov_title	Quyết Chiến Hoàng Thành
 mov_title	The Foundation; Quyết Chiến Huyền Võ Môn
 mov_title	Alien Showdown: The Day The Old West Stood Still; Quyết Chiến Người Ngoài Hành Tinh
 mov_title	Quyết Chiến Sát Mã Trấn
-mov_title	Vtv9; Quyết Không Từ Bỏ
+mov_title	Quyết Không Từ Bỏ
 mov_title	Boot Tracks; Quyết Tâm Rửa Hận
 mov_title	License To Wed; Quyền Được Cưới
 mov_title	Licence To Kill; Quyền Được Giết
@@ -5882,7 +5878,7 @@ mov_title	We Own The Night; Quyền Lực Của Bóng Tối
 mov_title	The Bourne Supremacy; Quyền Lực Của Bourne
 mov_title	The Fifth Estate; Quyền Lực Thứ Năm
 mov_title	J. Edgar; Quyền Lực Tuyệt Đối
-mov_title	44/44; Quyền Lực Vương Phi
+mov_title	Quyền Lực Vương Phi
 mov_title	Evan Almighty; Quyền Năng Của Evan
 mov_title	Tekken; Quyền Thuật Bá Vương
 mov_title	Gloves Comes Off; Quyền Vương
@@ -5890,7 +5886,7 @@ mov_title	Death Note 2: The Last Name; Quyển Sổ Thiên Mệnh 2: The Last Na
 mov_title	Death Note 3: L Change The World; Quyển Sổ Thiên Mệnh 3: L Thay Đổi Thế Giới
 mov_title	Book Of Eli; Quyển Sách Cứu Thế
 mov_title	Come Out And Play; Ra Đây Chơi Nào
-mov_title	Thvl1; Ra Giêng Ai Cưới Em
+mov_title	Ra Giêng Ai Cưới Em
 mov_title	Ra Giêng Anh Cưới Em
 mov_title	Raak Boon
 mov_title	Radio Tình Yêu; Love On-air
@@ -5900,14 +5896,14 @@ mov_title	Rambo 3; Rambo 3
 mov_title	Rambo Iv; Rambo 4
 mov_title	Ranbir Rano; Ranbir Và Rano
 mov_title	Rango; Rango
-mov_title	Htv9; Ranh Giới Mong Manh
+mov_title	Ranh Giới Mong Manh
 mov_title	Ranh Giới Nguy Hiểm
 mov_title	Red Line; Ranh Giới Sống Còn
 mov_title	Ranh Giới Sinh Tử
 mov_title	The Graves; Ranh Giới Sinh Tử
 mov_title	Trung Quốc; Ranh Giới Sinh Tử
-mov_title	Vtc9; Ranh Giới Tình
-mov_title	Htv2; Ranh Giới Thiện Ác
+mov_title	Ranh Giới Tình
+mov_title	Ranh Giới Thiện Ác
 mov_title	Wreck It Ralph; Rapphờ Đập Phá
 mov_title	Rau Muống Tháng Chín; Rau Muống Tháng 9
 mov_title	Raw Deal
@@ -5920,7 +5916,7 @@ mov_title	Cobra; Rắn Hổ Mang
 mov_title	Copperhead; Rắn Hổ Mang 2013
 mov_title	Breaking Bad Season 4; Rẽ Trái Phần 4
 mov_title	Breaking Bad Season 5; Rẽ Trái Phần 5
-mov_title	Rẽ Trái Rẽ Phải; Sctv16 - Turn Left Turn Right
+mov_title	Rẽ Trái Rẽ Phải; Turn Left Turn Right
 mov_title	Red Dragon; Rồng Đỏ
 mov_title	Dragons Forever; Rồng Bất Tử
 mov_title	Reign Of Fire; Rồng Lửa
@@ -5930,9 +5926,9 @@ mov_title	Phi Long Đại Ca; Rồng Tại Biên Duyên
 mov_title	Rồng Thánh Chiến 2011
 mov_title	Dragon From Shaolin; Rồng Thiếu Lâm
 mov_title	China Dragon; Rồng Trung Hoa
-mov_title	Vtv1; Rừng Chắn Cát
+mov_title	Rừng Chắn Cát
 mov_title	Norwegian Wood; Rừng Na Uy
-mov_title	Vtc1; Rừng Xanh Chuyển Mình
+mov_title	Rừng Xanh Chuyển Mình
 mov_title	Lost Tour; Rừng Xác Sống
 mov_title	Pay Back; Rửa Hận
 mov_title	Barricade; Rào Chắn
@@ -5967,7 +5963,7 @@ mov_title	The School Of Rock; Rock Học Đường
 mov_title	Suck Seed; Rock Học Sinh
 mov_title	power Ninden; Rock Lee No Seishun Full
 mov_title	Romeo And Juliet 2013
-mov_title	Sctv14; Romeo Và Juliet
+mov_title	Romeo Và Juliet
 mov_title	Romeo And Juliet; Romeo Và Juliet 1996
 mov_title	ChatRoom; Room Chat Tử Thần
 mov_title	Rosy Lovers
@@ -5982,17 +5978,17 @@ mov_title	Sam Saeng
 mov_title	Sam Sam Đến Rồi
 mov_title	San Bằng Thiếu Lâm Tự
 mov_title	Sao Đổi Ngôi
-mov_title	Htv7; Sao Đổi Ngôi
+mov_title	Sao Đổi Ngôi
 mov_title	Meteor Garden 1; Sao Băng 1
 mov_title	Ryusei No Kizuna; Sao Băng Định Mệnh
-mov_title	Htvc Phim; Sao Chỉ Có Minh Em
+mov_title	Sao Chỉ Có Minh Em
 mov_title	Mars Needs Moms; Sao Hỏa Tìm Mẹ
 mov_title	Why Dont You Play In Hell; Sao Không Xuống Địa Ngục Chơi
 mov_title	Dao Kiang Duen; Sao Trăng Sánh Đôi
 mov_title	Diva; Sau Ánh Hào Quang
-mov_title	Tập 92/92; Sau Ánh Hào Quang
+mov_title	Sau Ánh Hào Quang
 mov_title	Sau Ánh Hoàng Hôn
-mov_title	Vtv Cần Thơ; Sau Bức Tường Lửa
+mov_title	Sau Bức Tường Lửa
 mov_title	After The Earthquake; Sau Cơn Địa Chấn
 mov_title	Saving Mother Robot
 mov_title	Wanton And Lueulions Living; Say Mê Trái Phiếu Vàng
@@ -6006,7 +6002,7 @@ mov_title	Việt Nam; Sắc Màu Phái Đẹp
 mov_title	Hard Boiled; Sắt Đá Thần Thám
 mov_title	Ready 2 Die; Sẵn Sàng Chết 2
 mov_title	Stone; Sỏi Đá
-mov_title	Sctv14; Sỏi Đá Cũng Biết Yêu
+mov_title	Sỏi Đá Cũng Biết Yêu
 mov_title	The Number 23; Số 23 Bí Ẩn
 mov_title	The Order; Số Mệnh
 mov_title	Final Destination 1; Số Phận An Bài 1
@@ -6015,13 +6011,13 @@ mov_title	Final Destination 3; Số Phận An Bài 3
 mov_title	Final Destination 4; Số Phận An Bài 4
 mov_title	Số Phận Bị Đánh Cắp; Số Phận Bị Đánh Cắp
 mov_title	Smile, Mom; Số Phận Cuộc Đời
-mov_title	Vtv6; Số Phận Trớ Trêu
+mov_title	Số Phận Trớ Trêu
 mov_title	Live And Let Die; Sống Chết Tùy Tâm
 mov_title	Zindagi Na Milegi Dobara; Sống Chỉ Một Lần
 mov_title	Sống Chung Với Sói
 mov_title	This Is The End; Sống Nốt Ngày Cuối
 mov_title	Lone Survivor; Sống Sót
-mov_title	Todaytv; Sở Lưu Hương
+mov_title	Sở Lưu Hương
 mov_title	My Lucky Star; Sợi Dây Chuyền Định Mệnh
 mov_title	Line Walker; Sứ Đồ Hành Giả
 mov_title	Drive Angry; Sứ Giả Địa Ngục
@@ -6059,13 +6055,13 @@ mov_title	Rise Of The Planet Of The Apes; Sự Nổi Dậy Của Loài Khỉ
 mov_title	Whats Up; Sự Nghiệp Âm Nhạc
 mov_title	Nữ Tổng Thống; Sự Nghiệp Vĩ Đại
 mov_title	Wrath Of The Titans; Sự Phẫn Nộ Của Các Vị Thần
-mov_title	Htvc Gia Đình; Sự Phẫn Nộ Của Người Mẹ
+mov_title	Sự Phẫn Nộ Của Người Mẹ
 mov_title	Sự Phẫn Nộ Của Nhà Vua
 mov_title	Sự Quyến Rũ Của Người Vợ
 mov_title	Anna Karenina; Sự Quyến Rũ Vĩnh Cửu
 mov_title	The Fall Season 1; Sự Sa Ngã Phần 1
 mov_title	The Equation Of Love And Death; Sự Suy Đoán Của Lý Mễ
-mov_title	Vctv1; Sự Tích Đào Hoa Nguyên
+mov_title	Sự Tích Đào Hoa Nguyên
 mov_title	The Purge; Sự Thanh Trừng
 mov_title	A Dark Truth; Sự Thật Đen Tối
 mov_title	Sự Thật Của Bóng Tối; Sự Thật Của Bóng Tối
@@ -6152,7 +6148,7 @@ mov_title	Full Time Killer; Sát Thủ Toàn Năng
 mov_title	Violet And Daisy; Sát Thủ Tuổi Teen
 mov_title	The Man With The Golden Gun; Sát Thủ Với Khẩu Súng Vàng
 mov_title	Looper; Sát Thủ Vượt Thời Gian
-mov_title	Vctv2; Sáu Mặt Rubik
+mov_title	Sáu Mặt Rubik
 mov_title	Đấu Trâu Có Muốn Không; Sân Bóng Tình Yêu
 mov_title	Sân Ga Dành Cho Hai Người
 mov_title	Sân Khấu Muôn Màu
@@ -6164,18 +6160,18 @@ mov_title	Sóc Siêu Quậy 3; Alvin And The Chipmunks: Chip-wrecked 3
 mov_title	A Werewolf Boy; Sói
 mov_title	The Shadow Fox; Sói Đêm
 mov_title	The Wolf Of Wall Street; Sói Già Phố Wall
-mov_title	Tập 10/10; Sóng Ở Đáy Sông
+mov_title	Sóng Ở Đáy Sông
 mov_title	Sóng Gió Bạch Gia
 mov_title	House Of Cards; Sóng Gió Chính Trường
 mov_title	Sóng Gió Cuộc Đời; Sóng Gió Cuộc Đời
-mov_title	Vtv9; Sóng Gió Cuộc Tình
+mov_title	Sóng Gió Cuộc Tình
 mov_title	Sóng Gió Gia Tộc
 mov_title	On Air; Sóng Gió Hậu Trường
 mov_title	Sóng Gió Làng Nghề
 mov_title	Revolving Door Of Vengeance; Sóng Gió Ma Cao
-mov_title	Thvl2; Sóng Gió Nguyên Triều
+mov_title	Sóng Gió Nguyên Triều
 mov_title	Screen Play; Sóng Gió Phim Trường
-mov_title	Todaytv; Sóng Gió Thánh Đường
+mov_title	Sóng Gió Thánh Đường
 mov_title	Sóng Ngầm
 mov_title	Sóng Tình
 mov_title	Haeundae Lovers; Sóng Tình Haeundae
@@ -6202,7 +6198,7 @@ mov_title	American Hustle; Săn Tiền Kiểu Mỹ
 mov_title	The Huntresses; Săn Tiền Thưởng
 mov_title	The Bounty; Săn Tiền Thưởng
 mov_title	Săn Vàng
-mov_title	Htv9; Sơn Ca Không Hát
+mov_title	Sơn Ca Không Hát
 mov_title	Look Out,officer; Sư Huynh Chàng Quỷ
 mov_title	Sư Phụ Hoàng Phi Hùng; Wong Fei Hung-master Of Kung Fu
 mov_title	Sư Phụ Minh Bạch Liễu
@@ -6306,7 +6302,7 @@ mov_title	A Frozen Flower; Song Hoa Điếm
 mov_title	Twin Of Brothers; Song Long Đại Đường
 mov_title	Song Long Truyền Kỳ
 mov_title	The Return Of Pom Pom; Song Long Xuất Hải
-mov_title	Vtv9; Song Yến Kiêu Hùng
+mov_title	Song Yến Kiêu Hùng
 mov_title	Sonic The Hedgehog
 mov_title	Sood Sai Paan
 mov_title	Soon Jin Cô Bé Lọ Lem
@@ -6349,7 +6345,7 @@ mov_title	Counterpunch; Tay Đấm Siêu Hạng
 mov_title	Turbo 3d; Tay Đua Siêu Tốc
 mov_title	Sniper Reloaded; Tay Bắn Tỉa Điêu Luyện
 mov_title	Revolver; Tay Cờ Bạc
-mov_title	Sctv14; Tay Chơi Miệt Vườn
+mov_title	Tay Chơi Miệt Vườn
 mov_title	Revanche; Tay Chơi Về Vườn
 mov_title	Wanted; Tay Sai Máu Lạnh
 mov_title	A Single Shot; Tay Súng Đơn Độc
@@ -6364,9 +6360,9 @@ mov_title	Shoot 'em Up; Tay Súng Thiện Xạ
 mov_title	Tay Súng Truy Kích
 mov_title	Blackthorn; Tay Súng Viễn Tây
 mov_title	The Thomas Crown Affair; Tay Trộm Hoàn Hảo
-mov_title	Thvl1; Tay Trong Tay
+mov_title	Tay Trong Tay
 mov_title	Tazza 2
-mov_title	Tập 19/19; Tại Tôi
+mov_title	Tại Tôi
 mov_title	Taipei Exchanges; Tạm Biệt Đài Bắc
 mov_title	Goodbye Dear Wife; Tạm Biệt Vợ Yêu
 mov_title	Tạo Hóa Ra Quỷ; Box Of Shadows - The Ghostmaker
@@ -6403,7 +6399,7 @@ mov_title	Tết Để Yêu Thương
 mov_title	Tết Ơi Xuân À
 mov_title	Tết Lo Phết
 mov_title	Tết Siêu Tiết Kiệm; Tết Siêu Tiết Kiệm
-mov_title	Htv7; Tết Yêu Thương
+mov_title	Tết Yêu Thương
 mov_title	Monkey King; Tề Thiên Đại Thánh
 mov_title	Prime Minister Liu Luo Guo; Tể Tướng Lưu Gù
 mov_title	The Awakening; Tỉnh Giấc
@@ -6466,14 +6462,14 @@ mov_title	Wake Of Death; Tử Thần Thức Giấc
 mov_title	The Texas Chainsaw Massacre; Tử Thần Vùng Texas
 mov_title	The Texas Chainsaw Massacre: The Beginning; Tử Thần Vùng Texas: Khởi Đầu Sự Chết Chóc
 mov_title	Tửu Quyền Tô Khất Nhi
-mov_title	Sctv; Tự Cổ Anh Hùng Xuất Thiếu Niên
+mov_title	Tự Cổ Anh Hùng Xuất Thiếu Niên
 mov_title	Liberte; Tự Do
 mov_title	Tự Thú
 mov_title	Sisters Of Pearl; Tỳ Vết Của Ngọc
 mov_title	Modus Anomali; Tà Thuật Nam Dương
 mov_title	Đường Bá Hổ; Tài Tử Phong Lưu Đường Bá Hổ
 mov_title	Tài Tử Tô Đông Pha
-mov_title	Htv2; Tài Tiếu Tuyệt
+mov_title	Tài Tiếu Tuyệt
 mov_title	An End To Killing; Tàn Chiến
 mov_title	Dread; Tàn Khốc
 mov_title	Kill Em All; Tàn Sát
@@ -6483,9 +6479,9 @@ mov_title	Rear Mirror; Tái Đắc Hữu Tình Nhân
 mov_title	Tái Chiến Minh Thiên
 mov_title	Playback; Tái Hiện
 mov_title	Second Time Around; Tái Phục Hồi
-mov_title	Vtv3; Táo Quân 2014
+mov_title	Táo Quân 2014
 mov_title	Tâm Điểm
-mov_title	30/30; Tâm Chiến
+mov_title	Tâm Chiến
 mov_title	Tâm Hồn Mẹ; Tâm Hồn Mẹ
 mov_title	Tâm Kế Người Mẹ
 mov_title	Extracted; Tâm Ngục
@@ -6498,8 +6494,8 @@ mov_title	In The Mood For Love; Tâm Trạng Khi Yêu
 mov_title	Dragon Ball Gt; Tân 7 Viên Ngọc Rồng
 mov_title	Flirting Scholar 2; Tân Đường Bá Hổ
 mov_title	Tân Đường Sơn Đại Huynh; Tân Đường Sơn Đại Huynh
-mov_title	Tân Bao Thanh Thiên; Tập 65-66 Thvl1
-mov_title	40/40; Tân Bao Thanh Thiên 2011
+mov_title	Tân Bao Thanh Thiên;
+mov_title	Tân Bao Thanh Thiên 2011
 mov_title	Tân Bạch Phát Ma Nữ
 mov_title	Shanghai Bund; Tân Bến Thượng Hải
 mov_title	Tân Bà Mẹ Chồng Khó Tính
@@ -6511,7 +6507,7 @@ mov_title	Tân Dòng Sông Ly Biệt
 mov_title	Dreams Link; Tân Giấc Mộng Sau Rèm
 mov_title	Tân Hồng Lâu Mộng
 mov_title	Tân Hiệp Khách Hành
-mov_title	Trọn Bộ Htv7; Tân Hoàng Châu Công Chúa
+mov_title	Tân Hoàng Châu Công Chúa
 mov_title	Tân Kinh Hoa Yên Vân
 mov_title	Tân Lạc Thần Truyền Kỳ
 mov_title	Tân Lộc Đỉnh Ký
@@ -6524,7 +6520,7 @@ mov_title	Tân Lưu Tinh Hồ Điệp Kiếm; Tân Lưu Tinh Hồ Điệp Kiếm
 mov_title	Tân Long Môn Khách Sạn; Tân Long Môn Khách Sạn
 mov_title	Tân Nương Rơi Lệ
 mov_title	Tân Người Trong Giang Hồ
-mov_title	Vtvcab1; Tân Nghĩa Bất Dung Tình
+mov_title	Tân Nghĩa Bất Dung Tình
 mov_title	Tân Nhất Tiễn Mai
 mov_title	Tân Phong Nữ Sĩ
 mov_title	Sở Lưu Hương Truyền Kỳ; Tân Sở Lưu Hương
@@ -6536,20 +6532,20 @@ mov_title	Tân Tống Thế Kiệt
 mov_title	Journey To The West; Tân Tây Du Ký
 mov_title	Tân Tây Du Ký 1; Tân Tây Du Ký 1
 mov_title	Tân Tây Du Ký 2; Tân Tây Du Ký 2
-mov_title	Todaytv; Tân Túy Đả Kim Chi
+mov_title	Tân Túy Đả Kim Chi
 mov_title	Tân Thần Điêu Đại Hiệp
 mov_title	The New World; Tân Thế Giới
 mov_title	Qinsmoon; Tân Thời Minh Nguyệt 3: Chư Tử Bách Gia
-mov_title	86/86; Tân Thủy Hử
+mov_title	Tân Thủy Hử
 mov_title	Tân Thư Kiếm Ân Cừu Lục
 mov_title	Shaolin; Tân Thiếu Lâm Tự
 mov_title	Tân Thiên Long Bát Bộ
 mov_title	Tân Thiên Tằm Biến; Tân Thiên Tằm Biến
 mov_title	Tân Tiết Đinh San
-mov_title	Sctv16; Tân Tiếu Ngạo Giang Hồ
+mov_title	Tân Tiếu Ngạo Giang Hồ
 mov_title	Fist Of Furry; Tân Tinh Võ Môn
 mov_title	Fist Of Fury 2; Tân Tinh Võ Môn 2
-mov_title	Vtv2; Tân Tuyết Sơn Phi Hồ
+mov_title	Tân Tuyết Sơn Phi Hồ
 mov_title	Tân Tuyệt Đại Song Kiều
 mov_title	Wing Chun; Tân Vịnh Xuân Quyền
 mov_title	Tân Vi Tiểu Bảo; Tân Vi Tiểu Bảo
@@ -6572,7 +6568,7 @@ mov_title	Alpha Dog; Tên Tội Phạm Trẻ Tuổi
 mov_title	My Lovely Sam Soon; Tên Tôi Là Kim Sam Soon
 mov_title	Villian And Widow; Tên Trộm Và Bà Góa
 mov_title	Tìm Cha
-mov_title	Sctv14; Tìm Chồng Cho Vợ Tôi
+mov_title	Tìm Chồng Cho Vợ Tôi
 mov_title	The Collection; Tìm Kẻ Giấu Mặt
 mov_title	Finding Carter 1; Tìm Kiếm Carter 1
 mov_title	(chung Kết); Tìm Kiếm Tài Năng Việt Nam
@@ -6586,10 +6582,10 @@ mov_title	Love In Time; Tìm Lại Tình Yêu
 mov_title	Tìm Lại Yêu Thương
 mov_title	Looking 1; Tìm Phần 1
 mov_title	Hunt To Kill; Tìm Và Diệt
-mov_title	Tình Anh Em; Vtv3 - Có Tình Có Nghĩa
+mov_title	Tình Anh Em; Có Tình Có Nghĩa
 mov_title	Brothers; Tình Anh Em
 mov_title	Faithfully Yours; Tình Anh Thợ Cạo
-mov_title	Htvc Thuần Việt; Tình Án
+mov_title	Tình Án
 mov_title	My Family; Tình Ông Cháu
 mov_title	Tình Đầu
 mov_title	Again,mylove; Tình Đầu Của Vợ Tôi
@@ -6597,7 +6593,7 @@ mov_title	Goodbye First Love; Tình Đầu Dang Dở
 mov_title	Tình Đầu Khó Phai
 mov_title	Tình Địch Là Siêu Nhân
 mov_title	The Partner; Tình Đồng Nghiệp
-mov_title	Vtc9; Tình Đời Siêu Sao
+mov_title	Tình Đời Siêu Sao
 mov_title	Anna Magdalena; Tình Đợi Mong
 mov_title	The Stamp Of Love; Tình Đã Vội Bay
 mov_title	Ernest And Celestine; Tình Bạn Gấu Và Chuột
@@ -6612,7 +6608,7 @@ mov_title	Smile Pasta; Tình Cờ
 mov_title	Tình Cô Láng Giềng
 mov_title	Love Deposit; Tình Công Sở
 mov_title	Tình Cũ Vẫn Vương
-mov_title	Vtv3; Tình Cha
+mov_title	Tình Cha
 mov_title	Punch Drunk Love; Tình Cuồng Say
 mov_title	Me Too, Flower; Tình Cuồng Si
 mov_title	Tình Em Trong Anh
@@ -6628,7 +6624,7 @@ mov_title	Tình Khúc Mùa Thu
 mov_title	Tình Ly Biệt
 mov_title	Why Me, Sweetie; Tình Mất Tình Còn
 mov_title	Mother and Child; Tình Mẫu Tử
-mov_title	Tập 36 37 38 Htv7; Tình Mẹ Lớn Lao
+mov_title	Tình Mẹ Lớn Lao
 mov_title	I Do I Do; Tình Một Đêm
 mov_title	The Second Woman; Tình Mê
 mov_title	Summer Breeze Of Love; Tình Mùa Hè
@@ -6643,7 +6639,7 @@ mov_title	Tình Nghịch Tam Thế Duyên
 mov_title	Moonlight In Tokyo; Tình Nghĩa Anh Em
 mov_title	A Time To Love; Tình Nhân Kết
 mov_title	Tình Như Đám Mây Xa
-mov_title	Todaytv; Tình Như Chiếc Bóng
+mov_title	Tình Như Chiếc Bóng
 mov_title	Tình Như Tia Nắng
 mov_title	Tình Quê
 mov_title	Jang Ok Jung Lives In Love; Tình Sử Jang Ok Jung
@@ -6696,7 +6692,7 @@ mov_title	Tình Yêu Không Hẹn Trước
 mov_title	Tình Yêu Mật Ngọt
 mov_title	Rak Sud Teen; Tình Yêu Mới Lớn
 mov_title	Tình Yêu Mùa Hạ
-mov_title	Tập 21/21; Tình Yêu Muôn Màu
+mov_title	Tình Yêu Muôn Màu
 mov_title	Suspects In Love; Tình Yêu Ngờ Vực
 mov_title	Jao Ying Lum Sing; Tình Yêu Người Ca Sỹ
 mov_title	Trot Lovers; Tình Yêu Nhạc Trot
@@ -6708,7 +6704,7 @@ mov_title	A Little Thing Called Love; Tình Yêu Sét Đánh
 mov_title	What Happens In Vegas; Tình Yêu Sét Đánh
 mov_title	Love For Beginners; Tình Yêu Tập Sự
 mov_title	To Rome With Love; Tình Yêu Từ Rome
-mov_title	34 Tập; Tình Yêu Tìm Lại
+mov_title	Tình Yêu Tìm Lại
 mov_title	Silver Linings Playbook; Tình Yêu Tìm Lại
 mov_title	Tình Yêu Tìm Thấy
 mov_title	Secret Love; Tình Yêu Thầm Kín
@@ -6730,13 +6726,13 @@ mov_title	Amour & Turbulences; Tình Yêu Và Giông Bão
 mov_title	The Princesss Man; Tình Yêu Và Sự Cách Trở
 mov_title	Tình Yêu Và Thử Thách
 mov_title	Love Exchange; Tình Yêu Và Thù Hận
-mov_title	Htv7; Tình Yêu Vô Tận
+mov_title	Tình Yêu Vô Tận
 mov_title	Tình Yêu Vĩ Đại
 mov_title	Beyond Time Space Want Love; Tình Yêu Vượt Không Gian
 mov_title	Warm Bodies; Tình Yêu Zombie
 mov_title	Love, Wedding, Marriage; Tình Yêu, Đám Cưới, Hôn Nhân
 mov_title	Tía Ơi
-mov_title	252: Signal Of Life; Tín Hiệu Của Sự Sống
+mov_title	Signal Of Life; Tín Hiệu Của Sự Sống
 mov_title	The Signal; Tín Hiệu Kích Động
 mov_title	Cellular; Tín Hiệu Sống
 mov_title	Tòa Án Lương Tâm
@@ -6754,7 +6750,7 @@ mov_title	I Am Soldier; Tôi Là Chiến Binh
 mov_title	I Am Legend; Tôi Là Huyền Thoại
 mov_title	Tôi Là Nữ Vương
 mov_title	Tôi Là Ngôi Sao
-mov_title	Htv9; Tôi Là Quản Gia Mita
+mov_title	Tôi Là Quản Gia Mita
 mov_title	I Am Sam; Tôi Là Sam
 mov_title	I, Robot; Tôi Người Máy
 mov_title	The Skin I Live In; Tôi Sống Trong Tôi
@@ -6772,7 +6768,7 @@ mov_title	Hunger; Tù Khổ Sai
 mov_title	Captive; Tù Nhân
 mov_title	Celda 211; Tù Nhân 211
 mov_title	Starred Up; Tù Nhân Thiếu Niên
-mov_title	Sctv; Tùy Đường Anh Hùng
+mov_title	Tùy Đường Anh Hùng
 mov_title	Tùy Đường Anh Hùng 3
 mov_title	Tùy Đường Diễn Nghĩa
 mov_title	Brotherhood Of Blades; Tú Xuân Đao
@@ -6792,7 +6788,7 @@ mov_title	Ten Thousands
 mov_title	Terminator: Genesis
 mov_title	Tha Thứ Cho Anh
 mov_title	Tham Vọng
-mov_title	Vtc4; Tham Vọng Giàu Sang
+mov_title	Tham Vọng Giàu Sang
 mov_title	Thanh Đao Huyền Bí
 mov_title	The Sword In The Stone; Thanh Gươm Trong Đá
 mov_title	Thanh Kiếm Của Tam Thiếu Gia
@@ -6866,10 +6862,10 @@ mov_title	Fall In Love; Thần Tình Yêu
 mov_title	Jinx; Thần Tình Yêu
 mov_title	Thần Tượng
 mov_title	Monstar; Thần Tượng Âm Nhạc
-mov_title	Sctv14; Thần Tượng Lắm Chiêu
+mov_title	Thần Tượng Lắm Chiêu
 mov_title	The Old Miao Myth; Thần Tượng Ma Ảnh
 mov_title	Thần Thám Địch Nhân Kiệt 2
-mov_title	Vtv3; Thần Thám Địch Nhân Kiệt 3
+mov_title	Thần Thám Địch Nhân Kiệt 3
 mov_title	Thần Thám Cao Luân Bố
 mov_title	Thần Thám Lý Kỳ
 mov_title	Super Snoops; Thần Thám Phúc Lộc Thọ
@@ -6877,13 +6873,13 @@ mov_title	Badges Of Fury; Thần Thám Xuất Thần
 mov_title	The Myth; Thần Thoại
 mov_title	Thần Thoại 2010
 mov_title	Magadheera; Thần Thoại Ấn Độ
-mov_title	Sctv Tổng Hợp; Thần Y
+mov_title	Thần Y
 mov_title	Thần Y; Tín Nghĩa - Faith
 mov_title	Thần Y Đa Tình
 mov_title	Thần Y Đại Đạo Công
 mov_title	The Herbalist Manual; Thần Y Dược Thảo
 mov_title	Miracle Healers; Thần Y Hiệp Lữ
-mov_title	20/20; Thần Y Hoa Đà
+mov_title	Thần Y Hoa Đà
 mov_title	Huh Joon; Thần Y Huh Joon
 mov_title	Thầy Đổi Nghề
 mov_title	Gto: Great Teacher Onizuka; Thầy Giáo Vĩ Đại
@@ -6924,13 +6920,13 @@ mov_title	Underworld Season 2 : Evolution; Thế Giới Ngầm 2 : Tiến Hóa
 mov_title	Underworld: Rise Of The Lycans; Thế Giới Ngầm 3: Người Sói Trỗi Dậy
 mov_title	Underworld Awakening; Thế Giới Ngầm Trỗi Dậy
 mov_title	Adult World; Thế Giới Người Lớn
-mov_title	Tập 35 36 37 Vtv9; Thế Giới Người Mẫu
+mov_title	Thế Giới Người Mẫu
 mov_title	Upside Down; Thế Giới Ngược
 mov_title	Thế Giới Song Song
 mov_title	Red Lights; Thế Giới Tâm Linh
 mov_title	The Class Of 92; Thế Hệ Vàng 92
 mov_title	In The Shadow; Thế Lực Ngầm
-mov_title	Thế Lực Ngầm; Việt Nam - Thvl1
+mov_title	Thế Lực Ngầm; 
 mov_title	The Fourth State; Thế Lực Thứ Tư
 mov_title	A Lot Like Love; Thế Mới Là Yêu
 mov_title	Trọn Bộ; Thế Võ Lập Nghiệp
@@ -6970,8 +6966,8 @@ mov_title	The Great Time; Thời Đại Mới
 mov_title	Modern Times; Thời Đại Tân Kỳ
 mov_title	Age Of Feeling; Thời Đại Thanh Niên
 mov_title	Thời Gian Đẹp Nhất
-mov_title	Htv7; Thời Gian Để Yêu
-mov_title	Htv9; Thời Gian Không Chờ Đợi
+mov_title	Thời Gian Để Yêu
+mov_title	Thời Gian Không Chờ Đợi
 mov_title	Thời Gian Vàng
 mov_title	The Hours; Thời Khắc
 mov_title	Thời Khắc Của Cuộc Đời
@@ -6993,7 +6989,7 @@ mov_title	Awfully Lawful; Thục Nam Hữu Hoặc
 mov_title	The Legend Of Zu; Thục Sơn Kỳ Hiệp
 mov_title	The God And The Dmons Of Zu Mountains; Thục Sơn Kỳ Hiệp 1
 mov_title	The Zu Mountain Saga; Thục Sơn Kỳ Hiệp 2
-mov_title	Sctv14; Thụy Khúc
+mov_title	Thụy Khúc
 mov_title	Boys Are Easy; Thủ Đoạn Cua Trai
 mov_title	The Last Tycoon; Thủ Lĩnh Cuối Cùng
 mov_title	Spartacus; Thủ Lĩnh Nô Lệ
@@ -7017,7 +7013,7 @@ mov_title	Awakenings; Thức Tỉnh
 mov_title	Thức Tỉnh Phải Lúc
 mov_title	High Risk; Thử Đảm Uy Long
 mov_title	Liar Game : The Final Stage; Thử Thách Cuối Cùng
-mov_title	Thử Thách Cuối Cùng; Hàn Quốc - Vtv3
+mov_title	Thử Thách Cuối Cùng;
 mov_title	The Family Link; Thử Thách Hôn Nhân
 mov_title	At The Threshold Of An Era; Thử Thách Nghiệt Ngã
 mov_title	Thực Phẩm Thiên Nhiên
@@ -7025,7 +7021,7 @@ mov_title	The Internship; Thực Tập Sinh
 mov_title	Lets Eat; Thực Thần
 mov_title	The Five; Thực Thi Công Lý
 mov_title	The Enforcer; Thực Thi Mệnh Lệnh
-mov_title	22/22; Thực Thi Pháp Luật
+mov_title	Thực Thi Pháp Luật
 mov_title	Genghis: The Legend Of The Ten; Thành Cát Tư Hãn
 mov_title	Thành Cát Tư Hãn
 mov_title	Citadel; Thành Lũy
@@ -7050,7 +7046,7 @@ mov_title	King Naresuan 3; Thành Trì Bất Diệt 3
 mov_title	Aberration; Thác Loạn
 mov_title	Kudo Shinichi E No Chousenjou; Thách Thức Dành Cho Kudo Shinichi
 mov_title	Skip Beat; Thách Thức Tuyệt Vời
-mov_title	Btv4; Thái Bình Công Chúa Bí Sử
+mov_title	Thái Bình Công Chúa Bí Sử
 mov_title	Twilight Of A Nation; Thái Bình Thiên Quốc
 mov_title	Taichi 2; Thái Cực Quyền 2
 mov_title	The Tai Chi Master; Thái Cực Quyền 2003
@@ -7058,7 +7054,7 @@ mov_title	Thái Cấp; Thái Cực Quyền 2012
 mov_title	Tai Chi Hero; Thái Cực Quyền 2: Anh Hùng Bá Đạo
 mov_title	Thái Cực Tôn Sư
 mov_title	The Tai Chi Master; Thái Cực Trương Tam Phong
-mov_title	Vctv7; Thái Cực Truyền Kỳ
+mov_title	Thái Cực Truyền Kỳ
 mov_title	Ohisama; Thái Dương
 mov_title	Thái Giám Ngũ Hổ
 mov_title	Empress Cheon Chu; Thái Hậu Cheon Chu
@@ -7067,7 +7063,7 @@ mov_title	In The Chamber Of Bliss; Thái Ngạc Và Tiểu Phụng Tiên
 mov_title	Bangkok Knockout; Thái Quyền Hạ Thủ
 mov_title	Thái Sư Trần Thủ Độ
 mov_title	The Legend; Thái Vương Tứ Thần Ký
-mov_title	Thvl1; Thái Y Nghịch Ngợm
+mov_title	Thái Y Nghịch Ngợm
 mov_title	The Dinosaur Project; Thám Hiểm Vùng Đất Lạ
 mov_title	Chosun Police; Thám Quan Kỳ Án
 mov_title	The Mentalist 6; Thám Tử Đại Tài 6
@@ -7108,7 +7104,7 @@ mov_title	The Treasure Hunter; Thích Lăng
 mov_title	The Silent War; Thính Phong Giả
 mov_title	The Swallowed Sun; Thôn Tính Thái Dương
 mov_title	Love Announcement; Thông Cáo Tình Yêu
-mov_title	Htvc Phụ Nữ; Thông Gia
+mov_title	Thông Gia
 mov_title	Thông Gia Đại Chiến; Meet The-in-laws
 mov_title	Tokarev; Thù Con Phải Trả
 mov_title	Thùng Vàng Đầu Tiên
@@ -7132,8 +7128,8 @@ mov_title	Thượng Đế Se Lầm Duyên
 mov_title	Shanghai; Thượng Hải
 mov_title	Thượng Hải Những Ngày Cũ
 mov_title	Thương Gia
-mov_title	Vtv1; Thương Gia Kim Man Deok
-mov_title	Sctv; Thương Lắm Đò Ơi
+mov_title	Thương Gia Kim Man Deok
+mov_title	Thương Lắm Đò Ơi
 mov_title	Confession Of Pain; Thương Thành
 mov_title	Triple Tap; Thương Vương Chi Vương
 mov_title	The 100
@@ -7198,7 +7194,7 @@ mov_title	Tekken: Kazuyas Revenge; Thiết Quyền 2
 mov_title	Tekken: Blood Vengeance; Thiết Quyền: Bất Phân Thắng Bại
 mov_title	Iron Triangle; Thiết Tam Giác
 mov_title	Thiết Tính Phong Vân 3
-mov_title	Vtv2; Thiết Tướng Quân
+mov_title	Thiết Tướng Quân
 mov_title	Overheard; Thiết Thính Phong Vân
 mov_title	Overheard 2; Thiết Thính Phong Vân 2
 mov_title	Overheard 3; Thiết Thính Phong Vân 3
@@ -7265,13 +7261,13 @@ mov_title	Losing Heaven; Thiên Đường Lạc Lối
 mov_title	Heaven Is For Real; Thiên Đường Là Có Thật
 mov_title	Thiên Đường Rực Lửa
 mov_title	Thiên Đường Tình Yêu; Love In Heaven - Dear Heaven
-mov_title	Vct1; Thiên Đường Thêu
-mov_title	Todaytv; Thiên Đường Vắng Em
+mov_title	Thiên Đường Thêu
+mov_title	Thiên Đường Vắng Em
 mov_title	Thiên Đường Xa Lạ
 mov_title	A Stranger In Paradise; Thiên Đường Xa Lạ
 mov_title	The Twins Effect; Thiên Cơ Biến
-mov_title	Thiên Hạ; Vtv2 - Ming Dynasty
-mov_title	Htvc Phim; Thiên Hạ Đệ Nhất Kiếm
+mov_title	Thiên Hạ; Ming Dynasty
+mov_title	Thiên Hạ Đệ Nhất Kiếm
 mov_title	Thiên Hạ Đệ Nhất Vị
 mov_title	The Change Of Time; Thiên Hạ Của Long
 mov_title	A World Without Thieves; Thiên Hạ Vô Tặc
@@ -7401,7 +7397,7 @@ mov_title	Wild Child; Tiểu Thư Giang Hồ
 mov_title	Tieu Thu Lo Lem; Tiểu Thư Lọ Lem
 mov_title	Lady And The Tramp; Tiểu Thư Và Gã Lang Thang
 mov_title	Lady And The Tramp 2; Tiểu Thư Và Gã Lang Thang 2
-mov_title	Đn1; Tiểu Thư Vào Bếp
+mov_title	Tiểu Thư Vào Bếp
 mov_title	Twixt; Tiểu Thuyết Ma Cà Rồng
 mov_title	Love Fiction; Tiểu Thuyết Tình Yêu
 mov_title	21 And Over; Tiệc Mừng Tuổi 21
@@ -7491,16 +7487,16 @@ mov_title	Strike Back Season 2; Trả Đũa 2
 mov_title	Strike Back Season 3; Trả Đũa 3
 mov_title	Strike Back 4; Trả Đũa 4
 mov_title	Trả Giá
-mov_title	Thvl1; Trả Lại Đời Tôi
+mov_title	Trả Lại Đời Tôi
 mov_title	The Liability; Trả Thù
 mov_title	Redemption; Trả Thù
 mov_title	Sushi Girl; Trả Thù Cho Chồng
-mov_title	Htv7; Trận Đấu Định Mệnh
+mov_title	Trận Đấu Định Mệnh
 mov_title	Grudge Match; Trận Đấu Không Mong Muốn
 mov_title	Ultimate Fight; Trận Đấu Sau Cùng
 mov_title	Stalingrad; Trận đánh Stalingrad
 mov_title	The Perfect Game; Trận Bóng Tuyệt Vời
-mov_title	Sctv6; Trận Chiến Của Những Thiên Thần
+mov_title	Trận Chiến Của Những Thiên Thần
 mov_title	Trận Chiến Công Lý
 mov_title	The Perfect Match; Trận Chiến Cuối Cùng
 mov_title	War; Trận Chiến Khốc Liệt
@@ -7545,7 +7541,7 @@ mov_title	Jack And The Cuckoo Clock Heart; Trái Tim Không Được Yêu
 mov_title	Trái Tim Kiêu Hãnh
 mov_title	Trái Tim Lỡ Nhịp; Trái Tim Lỡ Nhịp
 mov_title	Jodha Akbar; Trái Tim Mỹ Nhân
-mov_title	Sctv14; Trái Tim Màu Xanh
+mov_title	Trái Tim Màu Xanh
 mov_title	Trái Tim Mùa Thu (hàn Quốc)
 mov_title	Trái Tim Mùa Thu; Thái Lan - Autumn In My Heart
 mov_title	New Heart; Trái Tim Nhân Ái
@@ -7556,7 +7552,7 @@ mov_title	Trái Tim Tuổi 19
 mov_title	Trái Tim Vay Mượn
 mov_title	Tráng Sĩ Xuất Quân; Tráng Sĩ Xuất Quân
 mov_title	Switched At Birth Season 1; Tráo Đổi
-mov_title	Sctv13; Trâm Hoa Mai
+mov_title	Trâm Hoa Mai
 mov_title	Trân Châu
 mov_title	Pearl Harbor; Trân Châu Cảng
 mov_title	On The Road; Trên Đường
@@ -7565,8 +7561,8 @@ mov_title	Limitless; Trí Lực Siêu Phàm
 mov_title	Artificial Intelligence; Trí Tuệ Nhân Tạo
 mov_title	Intelligence 1; Trí Tuệ Nhân Tạo 1
 mov_title	Transcendence; Trí Tuệ Siêu Việt
-mov_title	Vtv1; Trò Đời
-mov_title	Trò Đùa Của Số Phận; Mara Clara - Today Tv
+mov_title	Trò Đời
+mov_title	Trò Đùa Của Số Phận; Mara Clara
 mov_title	Porn Prom Onlaweng; Trò Đùa Của Thượng Đế
 mov_title	Trò Đùa Số Phận
 mov_title	Trò Đùa Số Phận 2013
@@ -7612,7 +7608,7 @@ mov_title	Trăng Khuyết
 mov_title	Trăng Mùa Mưa; Trăng Mùa Mưa
 mov_title	Trăng Sao Dành Tặng Em
 mov_title	Chàng Trư Si Tình; Trư Bát Giới Phúc Tinh Chiếu Rọi
-mov_title	Thvl2; Trư Cửu Muội
+mov_title	Trư Cửu Muội
 mov_title	Shanghai Noon; Trưa Thượng Hải
 mov_title	From Dusk Till Dawn 1; Trước Lúc Bình Minh 1
 mov_title	Before Midnight; Trước Lúc Nửa Đêm
@@ -7627,7 +7623,7 @@ mov_title	Detention Of The Dead; Trường Học Xác Sống
 mov_title	Sword Of The Outlaw; Trường Kiếm Tương Tư
 mov_title	Trường Nội Trú; Trường Nội Trú
 mov_title	Trường Tương Y
-mov_title	Sctv13; Trương Anh Tại Thủ
+mov_title	Trương Anh Tại Thủ
 mov_title	Seeking A Friend For The End Of The World; Tri Kỷ Ngày Tận Thế
 mov_title	Tri Tâm; Tri Tâm
 mov_title	Triều Đại Chosun; Yi Sa - King Jeong Jo
@@ -7640,7 +7636,7 @@ mov_title	The Detective 2; Trinh Thám B+
 mov_title	Loving Insurance Of Dream Detective; Trinh Thám Bảo Hiểm
 mov_title	The Detective; Trinh Thám C +
 mov_title	Blind Detective; Trinh Thám Mù
-mov_title	Htv9; Trinh Thám Nghiệp Dư
+mov_title	Trinh Thám Nghiệp Dư
 mov_title	Tron : Uprising; Tron : Cuộc Nổi Dậy
 mov_title	The Matrimony; Trong Lòng Có Ma
 mov_title	Trong Vòng Khói Lửa
@@ -7658,7 +7654,7 @@ mov_title	Dating Agency: Cyrano; Trung Tâm Mai Mối Cyrano
 mov_title	Truth Or Dare
 mov_title	Tracing Shadow; Truy Ảnh
 mov_title	Vehicle 19; Truy Đuổi
-mov_title	Htv7; Truy Đuổi Ái Tình
+mov_title	Truy Đuổi Ái Tình
 mov_title	Donnie Brasco; Truy Bắt Trùm Mafia
 mov_title	Fairy Tale Killer; Truy Hung
 mov_title	Abduction; Truy Kích
@@ -7682,7 +7678,7 @@ mov_title	Missing You; Truy Tìm Hạnh Phúc
 mov_title	Bbuddah Hoga Terra Baap; Truy Tìm Hung Thủ
 mov_title	Total Recall 2012; Truy Tìm Ký Ức
 mov_title	Truy Tìm Kho Báu
-mov_title	Tập 22 23 24 Vtvcab7; Truy Tìm Manh Mối
+mov_title	Truy Tìm Manh Mối
 mov_title	Truy Tìm Manh Mối 2
 mov_title	Who Is Undercover; Truy Tìm Nội Gián
 mov_title	Finding Mr. Right; Truy Tìm Người Hoàn Hảo
@@ -7694,7 +7690,7 @@ mov_title	Ong Bak 2; Truy Tìm Tượng Phật 2
 mov_title	Ongbak 3; Truy Tìm Tượng Phật 3
 mov_title	The Dragon Pearl; Truy Tìm Viên Ngọc Rồng
 mov_title	Truyền Kỳ Bao Tam Cô
-mov_title	Vtv3; Truyền Kỳ Hoàng Đế Chu Nguyên Chương
+mov_title	Truyền Kỳ Hoàng Đế Chu Nguyên Chương
 mov_title	Legend Of The Demigods; Truyền Tích Thần Kỳ
 mov_title	The Sorcerer And The White Snake; Truyền Thuyết Bạch Xà
 mov_title	Truyền Thuyết Bảo Liên Đăng
@@ -7715,7 +7711,7 @@ mov_title	The Chronicles Of Riddick; Truyền Thuyết Về Riddick
 mov_title	The Wolfman; Truyền Thuyết Về Sói
 mov_title	Bedtime Stories; Truyện Kể Lúc Nửa Đêm
 mov_title	Tales From The Dark 1; Truyện Ma 1
-mov_title	Thvl2; Truyện Tìm Thần
+mov_title	Truyện Tìm Thần
 mov_title	The Postman Fight Back; Tuần Thành Mã
 mov_title	Echoes Of The Rainbow; Tuế Nguyệt Thần Thâu
 mov_title	Twenty Years Old; Tuổi 20
@@ -7731,16 +7727,16 @@ mov_title	Young & Hungry; Tuổi Trẻ Và Khao Khát 1
 mov_title	Life Begins At 40; Tuổi Trung Niên
 mov_title	Tuổi Yêu
 mov_title	Tuý Quyền Trương Tam
-mov_title	Thvl1; Tung Hoành Bốn Bể
+mov_title	Tung Hoành Bốn Bể
 mov_title	Rhythm Of Destiny; Tung Hoành Ngang Dọc
 mov_title	Once A Thief; Tung Hoành Tứ Hải
 mov_title	Tung Hoành Thiên Địa
 mov_title	Will It Snow For Christmas; Tuyết Có Rơi Đêm Giáng Sinh
-mov_title	Snow Flower And The Secret Fan; Tuyết Hoa Bí Phiến
+mov_title	Snow Flower And The Secret Fan; Tuyết Hoa Bí Phiến`
 mov_title	Snow Flower; Tuyết Hoa Nữ Thần Long
 mov_title	Tuyết Hoa Thần Kiếm
-mov_title	Sctv13; Tuyết Kha
-mov_title	Htvc Thuần Việt; Tuyết Nhiệt Đới
+mov_title	Tuyết Kha
+mov_title	Tuyết Nhiệt Đới
 mov_title	The Flying Fox Of The Snowy Mountain; Tuyết Sơn Phi Hồ
 mov_title	Will It Snow For Christmas; Tuyết Vẫn Rơi
 mov_title	Tuyết Vực Mê Thành; Tuyết Vực Mê Thành
@@ -7760,15 +7756,15 @@ mov_title	Uncharted
 mov_title	Urban Games
 mov_title	Uyển Quân
 mov_title	The Great Wall Of China; Vạn Lý Trường Thành
-mov_title	Vạn Phụng Chi Vương Htv2; Vạn Phụng Chi Vương Htv2
+mov_title	Vạn Phụng Chi Vương; Vạn Phụng Chi Vương
 mov_title	Bountiful Blessings; Vạn Phước Lầu
 mov_title	Mud; Vấy Bùn
-mov_title	Vẫn Hoài Ước Mơ; Tập 18-19 Htv9
+mov_title	Vẫn Hoài Ước Mơ;
 mov_title	Good People; Vận Đen
-mov_title	Vtv6; Vận May Bất Ngờ
+mov_title	Vận May Bất Ngờ
 mov_title	Life For Life; Vận Mệnh
 mov_title	Make Up; Vận Mệnh Hóa Trang Sư
-mov_title	Sctv9; Vận Mệnh Thanh Triều
+mov_title	Vận Mệnh Thanh Triều
 mov_title	Vận Mệnh Trong Tay
 mov_title	The Host; Vật Chủ
 mov_title	Vật Chứng Mong Manh; Vật Chứng Mong Manh
@@ -7780,14 +7776,14 @@ mov_title	Baby Faced Beauty; Vẻ Đẹp Trẻ Thơ
 mov_title	The Cut; Vết Cắt
 mov_title	Vết Dầu Loang
 mov_title	Plae Kao; Vết Sẹo Cũ
-mov_title	Thvl1; Vết Thù Năm Tháng
+mov_title	Vết Thù Năm Tháng
 mov_title	Exit Wounds; Vết Thương
 mov_title	A Certain Justice; Vết Thương Khó Lành
 mov_title	Vết Xăm Định Mệnh
 mov_title	40 Tập; Về Đất Thăng Long
 mov_title	Be With You; Về Bên Anh
 mov_title	Wife Returns; Về Lại Bên Anh
-mov_title	Htv9; Về Quê
+mov_title	Về Quê
 mov_title	Về Quê Cưới Vợ
 mov_title	A Smiling Ghost Story; Về Với Nhân Gian
 mov_title	Into The Wild; Về Với Thiên Nhiên
@@ -7808,14 +7804,14 @@ mov_title	Vị Yêu
 mov_title	Tpb Afk: The Pirate Bay Away From Keyboard; Vịnh Hải Tặc Từ Bàn Phím
 mov_title	Vịnh Xuân Quyền; 1994 - Wing Chun
 mov_title	The Legend Of Wing Chun; Vịnh Xuân Truyền Kỳ
-mov_title	Sctv13; Vịt Kêu Đồng
+mov_title	Vịt Kêu Đồng
 mov_title	Vọng Kim Lang
 mov_title	The Voice From Hell; Vọng Nói Âm Dương
 mov_title	Cleanskin; Vỏ Bọc Hoàn Hảo
 mov_title	Curry And Pepper; Vỏ Quýt Dày Móng Tay Nhọn
 mov_title	Stage Fright; Vở Kịch Kinh Hoàng
 mov_title	The Plan Man; Vỡ Kế Hoạch
-mov_title	Htv9; Vợ Của Chồng Tôi
+mov_title	Vợ Của Chồng Tôi
 mov_title	Mr & Mrs Player; Vợ Chồng Dân Chơi
 mov_title	Vợ Giả Hoàn Hảo
 mov_title	Vợ Khôn Dạy Chồng Dại
@@ -7835,15 +7831,15 @@ mov_title	Takers; Vụ Cướp Thế Kỷ 2010
 mov_title	The Big Bang Theory 5; Vụ Nổ Lớn 5
 mov_title	The Big Bang Theory Season 6; Vụ Nổ Lớn 6
 mov_title	The Big Bang Theory Season 7; Vụ Nổ Lớn 7
-mov_title	Vtv3; Vừa Đi Vừa Khóc
+mov_title	Vừa Đi Vừa Khóc
 mov_title	Vực Thẩm Vô Hình
 mov_title	Vực Thẳm Tình Yêu
 mov_title	Và Anh Sẽ Trở Lại
 mov_title	I Love You, Man; Và Em Cũng Yêu Anh
-mov_title	Htv7; Vàng
+mov_title	Vàng
 mov_title	Black Gold; Vàng Đen
 mov_title	Vàng Trắng
-mov_title	Tập 32/32; Vàng Trong Cát
+mov_title	Vàng Trong Cát
 mov_title	Killer Mountain; Vách Núi Tử Thần
 mov_title	All In; Ván Bài Định Mệnh
 mov_title	God’s Pocket; Ván Bài Của Chúa
@@ -7851,7 +7847,7 @@ mov_title	Casino Jack; Ván Bài Của Jack
 mov_title	The Rippling Blossom; Ván Bài Gia Nghiệp
 mov_title	Trọn Bộ; Ván Bài Tình Yêu
 mov_title	Ván Cờ Tình Yêu; Ván Cờ Tình Yêu
-mov_title	Vtv3; Váy Hồng Tầng 24
+mov_title	Váy Hồng Tầng 24
 mov_title	My Black Mini Dress; Váy Ngắn Đen
 mov_title	Cloud Atlas; Vân Đồ
 mov_title	Lofty Waters Verdant Bow; Vân Hải Ngọc Cung Duyên
@@ -7875,13 +7871,13 @@ mov_title	Siege Of The Dead; Vòng Vây Tử Thần
 mov_title	We Have You Surrounded; Vòng Vây Tuyệt Đối
 mov_title	Vòng Xoay Công Lý
 mov_title	The Drive Of Life; Vòng Xoay Cuộc Đời
-mov_title	Vtv9; Vòng Xoáy Bạc
+mov_title	Vòng Xoáy Bạc
 mov_title	Dn1; Vòng Xoáy Kim Tiền
 mov_title	No Saints For Sinners; Vòng Xoáy Tội Lỗi
 mov_title	Free Ride; Vòng Xoáy Tội Lỗi
 mov_title	Bão Táp Tây Phong; Vó Ngựa Tây Phong
-mov_title	Vtv2; Vó Ngựa Thảo Nguyên
-mov_title	Htv7; Vó Ngựa Trời Nam
+mov_title	Vó Ngựa Thảo Nguyên
+mov_title	Vó Ngựa Trời Nam
 mov_title	Vô Ảnh Kim Đao
 mov_title	When Fortune Smiles; Vô Địch Hạnh Vận Tinh
 mov_title	No Limit; Vô Cực Hạn
@@ -7889,7 +7885,7 @@ mov_title	Infernal Affairs 2; Vô Gian Đạo 2
 mov_title	Infernal Affairs 3; Vô Gian Đạo 3
 mov_title	Infernal Affairs; Vô Gian Đạo Phần 1
 mov_title	Vô Song Phổ
-mov_title	30/30; Võ Đang 1
+mov_title	Võ Đang 1
 mov_title	Võ Đang 2; Võ Đang 2
 mov_title	Wu Dang; Võ Đang Thất Bảo
 mov_title	Rise Of Taiji Master; Võ Đang Trương Tam Phong
@@ -7899,7 +7895,7 @@ mov_title	Bloodsport; Võ Đài Đẫm Máu 1988
 mov_title	Barrio Brawler; Võ Đài Ngầm
 mov_title	Brawler; Võ Đài Thù Hận
 mov_title	Tapped Out; Võ Đài Thù Hận 2014
-mov_title	Vtv6; Võ Đường Trúc Lâm
+mov_title	Võ Đường Trúc Lâm
 mov_title	Wuxia; Võ Hiệp
 mov_title	Princess Chang Ping; Võ Hiệp Đế Nữ Hoa
 mov_title	Holy Weapon; Võ Hiệp Thất Công Chúa
@@ -7913,13 +7909,13 @@ mov_title	Knockout; Võ Sĩ Quyền Anh
 mov_title	Kickboxer; Võ Sĩ Quyền Anh 1989
 mov_title	Rocky Balboa; Võ Sĩ Rocky
 mov_title	Võ Tắc Thiên
-mov_title	Vtvcab1; Võ Tắc Thiên Bí Sử
+mov_title	Võ Tắc Thiên Bí Sử
 mov_title	Võ Tòng
 mov_title	Võ Tòng Anh Hùng Lương Sơn Bạc
 mov_title	Võ Thần
 mov_title	Love At First Fight; Võ Thập Nương
 mov_title	Wushu; Võ Thuật Chi Thiếu Niên
-mov_title	1995; Võ Trạng Nguyên
+mov_title	Võ Trạng Nguyên
 mov_title	Vùng Đất Chết
 mov_title	Resident Evil 5: Retribution; Vùng Đất Dữ : Báo Thù
 mov_title	Terra Nova Season 1; Vùng Đất Hứa Phần 1
@@ -7950,7 +7946,7 @@ mov_title	Step Up 2: The Streets; Vũ Điệu Đường Phố 2
 mov_title	Step Up 3; Vũ Điệu Đường Phố 3
 mov_title	Step Up 4 Revolution; Vũ Điệu Đường Phố 4
 mov_title	Step Up All In; Vũ Điệu Đường Phố 5
-mov_title	Htv7; Vũ Điệu Cha Cha Cha
+mov_title	Vũ Điệu Cha Cha Cha
 mov_title	Happy Feet; Vũ Điệu Chim Cánh Cụt
 mov_title	Happy Feet 2; Vũ Điệu Chim Cánh Cụt 2
 mov_title	Dances With The Dragon; Vũ Điệu Cuồng Long
@@ -7970,18 +7966,18 @@ mov_title	Pubescence 3; Vũ Khí Siêu Hạng 3
 mov_title	The Invasion; Vũ Khí Sinh Học
 mov_title	Yakuza Weapon; Vũ Khí Tối Thượng
 mov_title	Lethal Weapon 4; Vũ Khí Tối Thượng 4
-mov_title	Sctv14; Vũ Khúc Trong Đêm
+mov_title	Vũ Khúc Trong Đêm
 mov_title	Vũ Lạc Truyền Kỳ
 mov_title	Burlesque; Vũ Nữ
 mov_title	Lay The Favorite; Vũ Nữ Thoát Y
-mov_title	Vũ Vương; Vtc6 - Top On The Forbidden City
-mov_title	30/30; Vườn Đời
+mov_title	Vũ Vương; Top On The Forbidden City
+mov_title	Vườn Đời
 mov_title	Mother Garden; Vườn Của Mẹ
 mov_title	Anko Kon Ruk Strawberry; Vườn Dâu Tình Yêu
 mov_title	Boys Over Flowers; Vườn Sao Băng
-mov_title	Vườn Sao Băng; Nhật Bản - Vtv3
+mov_title	Vườn Sao Băng;
 mov_title	Zookeeper; Vườn Thú Tình Yêu
-mov_title	Htv9; Vườn Yêu
+mov_title	Vườn Yêu
 mov_title	Across the Universe; Vượt Dải Ngân Hà
 mov_title	Extraordinary Measures; Vượt Giới Hạn
 mov_title	Đoạn Cuối Tình Yêu; Vượt Lên Chính Mình
@@ -7997,7 +7993,7 @@ mov_title	King Of Thorns; Vượt Qua Chông Gai
 mov_title	At Point Blank; Vượt Rào Hôn Nhân
 mov_title	Vượt Thời Gian Đi Tìm Tình Yêu
 mov_title	Trọn Bộ; Vương Đích Nữ Nhân
-mov_title	Vtv3; Vương Chiêu Quân
+mov_title	Vương Chiêu Quân
 mov_title	Vương Gia Áo Vải
 mov_title	Vương Hy Chi
 mov_title	A Bride For A Ride; Vương Lão Hổ Cướp Vợ
@@ -8013,7 +8009,7 @@ mov_title	Kingdom Of Heaven; Vương Quốc Thiên Đường
 mov_title	Moonrise Kingdom; Vương Quốc Trăng
 mov_title	Cars 2; Vương Quốc Xe Hơi 2
 mov_title	Vương Trùng Dương
-mov_title	Trọn Bộ Vtv3; Vương Triều Đại Tần
+mov_title	Vương Triều Đại Tần
 mov_title	Kim Soo Ro; Vương Triều Đoạt Ngôi
 mov_title	Very Good Girls
 mov_title	Vi Sư Sắc Sảo
@@ -8052,7 +8048,7 @@ mov_title	Wise Guys Never Die; Vua Lừa Bịp
 mov_title	Vua Mạo Hiểm
 mov_title	Big Fat Liar; Vua Nói Dối
 mov_title	Người Hùng Của Tôi; Vua Phá Hoại
-mov_title	64/64; Vua Pháp Thuật
+mov_title	Vua Pháp Thuật
 mov_title	Vua Phim Trường
 mov_title	Beelzebub; Vua Quỷ
 mov_title	Vua Sân Cỏ 2
@@ -8107,17 +8103,17 @@ mov_title	The Smurf; Xì Trum
 mov_title	Smurfs 2; Xì Trum 2
 mov_title	Closer; Xích Lại Gần Nhau
 mov_title	Xóm Gà; Xóm Gà
-mov_title	30/30; Xóm Trọ
+mov_title	Xóm Trọ
 mov_title	Xóm Vắng
-mov_title	Htvc Thuần Việt; Xúc Xắc Mùa Thu
+mov_title	Xúc Xắc Mùa Thu
 mov_title	The Devils Backbone; Xương Quỷ
-mov_title	Htv7; Xương Rồng Trên Cát
+mov_title	Xương Rồng Trên Cát
 mov_title	Rhapsody In Blue; Xương Rồng Xanh
 mov_title	Armored; Xe Bọc Thép
 mov_title	Von Ryans Express; Xe Lửa Tốc Hành Von Ryan
 mov_title	Super Hybrid; Xe Ma
 mov_title	Chained; Xiềng Xích
-mov_title	Vtv9; Xin Anh Hãy Nhấn Chuông Lần Nữa
+mov_title	Xin Anh Hãy Nhấn Chuông Lần Nữa
 mov_title	Connected; Xin Đừng Gác Máy
 mov_title	Trọn Bộ; Xin Còn Mãi Yêu Em
 mov_title	Hello Babies; Xin Chào Baby
@@ -8125,14 +8121,14 @@ mov_title	Hello Stranger; Xin Chào Người Lạ
 mov_title	Xin Chào Tiểu Thư
 mov_title	Good Morning, Vietnam; Xin Chào, Việt Nam
 mov_title	Xin Lỗi Anh Yêu Em; Trung Quốc - Im Sorry, But I Love You
-mov_title	Vtv3; Xin Lỗi Tình Yêu
+mov_title	Xin Lỗi Tình Yêu
 mov_title	Sorry,i Love You; Xin Lỗi, Anh Yêu Em
 mov_title	Xin Thề Anh Nói Thật
 mov_title	The Fantastic Water Babes; Xuất Thủy Phù Dung
 mov_title	Xuân Hỷ Tương Phùng
 mov_title	Love In The Buff; Xuân Kiều Và Chí Minh
 mov_title	Xuân Tình; Xuân Tình
-mov_title	Htv7; Xuân Thu Yêm Thành
+mov_title	Xuân Thu Yêm Thành
 mov_title	Xui Mà Hên
 mov_title	Xxxholic
 mov_title	American Mary; Y Nữ Bóng Đêm
@@ -8154,18 +8150,18 @@ mov_title	Yêu Em 24 Giờ
 mov_title	Yêu Em Có Thời Hạn
 mov_title	Yêu Em Sau Cơn Say
 mov_title	Yêu Em Từ Cái Nhìn Đầu Tiên
-mov_title	Sctv4; Yêu Em Trước Hoàng Hôn
+mov_title	Yêu Em Trước Hoàng Hôn
 mov_title	Yêu Giữa Mùa Xuân
 mov_title	Asoke Tree; Yêu Giùm Cô Chủ
 mov_title	Playing For Keeps; Yêu Hết Mình
-mov_title	Vtv2; Yêu Khờ Dại
+mov_title	Yêu Khờ Dại
 mov_title	Pain; Yêu Không Đau
 mov_title	Yêu Không Dễ
 mov_title	No Strings Attached; Yêu Không Ràng Buộc
 mov_title	The Vow; Yêu Lại Từ Đầu
 mov_title	Friends With Benefits; Yêu Lầm Bạn Thân
 mov_title	Something Borrowed; Yêu Lầm Chồng Bạn
-mov_title	Vctv7; Yêu Lần Nữa
+mov_title	Yêu Lần Nữa
 mov_title	Just Married; Yêu Là Cưới
 mov_title	Lovesick; Yêu Là Yêu
 mov_title	Adore; Yêu Mẹ Bạn Thân
@@ -8190,6 +8186,7 @@ mov_title	Yukikaze
 mov_title	Zebraman 2 Attack On Zebra City; Zebraman 2: Tấn Công Thành Phố Zebra
 mov_title	Zombieland The Series
 mov_title	Donot Cry; Park Bom
+mov_title	một triệu kiểu chết miền viễn tây
 
 
 

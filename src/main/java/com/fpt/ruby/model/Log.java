@@ -1,12 +1,9 @@
 package com.fpt.ruby.model;
 
 import java.util.Date;
-import java.util.List;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
-import fpt.qa.mdnlib.struct.pair.Pair;
 
 
 @Document

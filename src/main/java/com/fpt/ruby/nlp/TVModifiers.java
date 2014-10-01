@@ -13,7 +13,9 @@ import fpt.qa.mdnlib.struct.pair.Pair;
 public class TVModifiers{
 	private static final String CHANNEL = "chanel_title";
 	private static final String PROGRAM = "program_title";
+	private static long ONE_HOUR = 60 * 60 * 1000;
 	private static long ONE_WEEK = 7 * 24 * 60 * 60 * 1000;
+	
 	
 	static ConjunctionHelper conjunctionHelper;
 	static AbsoluteTime timeParser;
@@ -72,7 +74,7 @@ public class TVModifiers{
 		if (question.contains( "đang" ) && !question.contains( "đang làm gì" ) ||
 				question.contains( "bây giờ" ) || question.contains( "hiện tại" )){
 			mod.setStart( new Date() );
-			mod.setEnd( new Date(mod.getStart().getTime() + ONE_WEEK) );
+			mod.setEnd( mod.getStart() );
 			return mod;
 		}
 		

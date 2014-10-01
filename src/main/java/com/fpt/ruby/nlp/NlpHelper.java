@@ -22,7 +22,7 @@ public class NlpHelper {
 	static{
 		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
 		MovieIntentDetection.init(dir + "/qc/movie", dir + "/dicts");
-		NonDiacriticMovieIntentDetection.init(dir + "/qc/movie/non-diacritic", dir + "/dicts/non-diacritic");
+		NonDiacriticMovieIntentDetection.init( dir + "/qc/movie/non-diacritic", dir + "/dicts/non-diacritic" );
 		conjunctionHelper = new ConjunctionHelper(dir);
 		absoluteTime = new AbsoluteTime( NlpHelper.class.getClassLoader().getResource("").getPath() + "vnsutime/" );
 	}
@@ -71,7 +71,7 @@ public class NlpHelper {
 				break;
 			}
 		}
-		return question.toLowerCase().substring(0,j).replaceAll("(\\d+)(h)", "$1 giờ");
+		return question.toLowerCase().substring(0,j+1).replaceAll("(\\d+)(h)", "$1 giờ");
 	}
 	
 	public static TimeExtract getTimeCondition(String text){

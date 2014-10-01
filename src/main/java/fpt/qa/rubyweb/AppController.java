@@ -11,12 +11,17 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.fpt.ruby.helper.ProcessHelper;
+import com.fpt.ruby.helper.RedisHelper;
 import com.fpt.ruby.model.RubyAnswer;
 import com.fpt.ruby.nlp.NlpHelper;
+import com.fpt.ruby.nlp.TVAnswerMapper;
+import com.fpt.ruby.nlp.TVAnswerMapperImpl;
 import com.fpt.ruby.service.LogService;
 import com.fpt.ruby.service.MovieFlyService;
 import com.fpt.ruby.service.PersonService;
 import com.fpt.ruby.service.mongo.MovieTicketService;
+
+import fpt.qa.domainclassifier.DomainClassifier;
 
 @Controller
 @RequestMapping("/")
@@ -28,8 +33,15 @@ public class AppController {
 	MovieFlyService movieFlyService;
 	@Autowired
 	LogService logService;
+	static TVAnswerMapper tam = new TVAnswerMapperImpl();
+	static DomainClassifier classifier;
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
+	static {
+		tam.init();
+		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
+		classifier = new DomainClassifier( dir );
+	}
 	
 	/*
 	@RequestMapping(value="/listCachedQuestion", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
@@ -44,6 +56,7 @@ public class AppController {
 	public RubyAnswer prototypeGetAnswer(@RequestParam("question") String question){
 		String key = NlpHelper.normalizeQuestion(question);
 		RubyAnswer rubyAnswer = new RubyAnswer();
+		String domain = classifier.getDomain( key );
 		//rubyAnswer.setInCache(this.questionStructureService.isInCache(key));
 		//rubyAnswer.setQuestion(question);
 		// Process question
@@ -51,7 +64,15 @@ public class AppController {
 		//QuestionStructure questionStructure = new QuestionStructure();
 		// Process answer
 		System.out.println(movieFlyService.test);
-		rubyAnswer =  ProcessHelper.getAnswer(question,movieFlyService,movieTicketService,logService);
+		//if (domain.equals( "tv" )){
+		if ( question.startsWith( "tv" ) ){
+			System.err.println( "[AppController] Domain TV" );
+			rubyAnswer = tam.getAnswer( question );
+		}
+		else{
+			System.err.println( "[AppController] Domain Movie" );
+			rubyAnswer =  ProcessHelper.getAnswer(question,movieFlyService,movieTicketService,logService);
+		}
 		return rubyAnswer;
 		//return app.getAnswer(question);
 	}
