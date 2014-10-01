@@ -6,6 +6,8 @@ import java.util.List;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.Sort.Direction;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
@@ -13,6 +15,7 @@ import org.springframework.stereotype.Service;
 
 import com.fpt.ruby.config.SpringMongoConfig;
 import com.fpt.ruby.model.TVProgram;
+import com.fpt.ruby.nlp.TVModifiers;
 
 @Service
 public class TVProgramService {
@@ -25,6 +28,64 @@ public class TVProgramService {
 	public TVProgramService(){
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringMongoConfig.class);
 		this.mongoOperations = (MongoOperations) ctx.getBean("mongoTemplate");
+	}
+	
+	public List< TVProgram > getList(TVModifiers mod, String question){
+		String channel = mod.getChannel();
+		String title = mod.getProg_title();
+		Date start = mod.getStart();
+		Date end = mod.getEnd();
+		
+		if (mod.getStart() == null && mod.getEnd() == null){
+			if (question.contains( "hết" ) || question.contains( "kết thúc" ) || 
+				(question.contains( "đến" ) && (question.contains( "mấy giờ" ) ||
+						question.contains( "khi nào" ) || question.contains( "lúc nào" ) ||
+						question.contains( "bao giờ" )))){
+				return new ArrayList< TVProgram >();
+			}
+		}
+		
+		if (channel != null && title != null && start != null && end != null){
+			if (start.equals( end )){
+				return findByTitleAtTimeAtChannel(title, start, channel );
+			} else {
+				return findByTitleInPeriodAtChannel( title, start, end, channel );
+			}
+		}
+		
+		if (channel == null){
+			if (title == null){
+				if (start == null){
+					System.out.println(question);
+					return new ArrayList< TVProgram >();
+				}
+				if (start.equals( end )){
+					return findAtTime( start );
+				}
+				return findInPeriod( start, end );
+			}
+			if (start == null && end == null){
+				return findByTitle( title );
+			}
+			if (start.equals( end )){
+				return findByTitleAtTime( title, start );
+			}
+			return findByTitleInPeriod( title, start, end );
+		}
+		if (title == null){
+			if (start == null && end == null){
+				return findByChannel( channel );
+			}
+			if (start.equals( end )){
+				return findAtTimeAtChannel( start, channel );
+			}
+			return findInPeriodAtChannel( start, end, channel );
+		}
+		if (start == null && end == null){
+			return findByTitleAndChannel( title, channel );
+		}
+		
+		return new ArrayList< TVProgram >();
 	}
 	
 	public List<TVProgram> findAll(){
@@ -103,26 +164,26 @@ public class TVProgramService {
 	
 	
 	public List< TVProgram > findAfter(Date date){
-		Query query = new Query(Criteria.where("start_date").gt( date ));
+		Query query = new Query(Criteria.where("start_date").gt( date )).with( new Sort( Direction.ASC, "start_date" ) );
 		return mongoOperations.find(query, TVProgram.class);
 	}
 	
 	public List< TVProgram > findAfterByTitle(String title, Date date){
 		Query query = new Query(Criteria.where("title").regex("^.*" + title + ".*","i").
-				and("start_date").gt( date ));
+				and("start_date").gt( date )).with( new Sort( Direction.ASC, "start_date" ) );
 		return mongoOperations.find(query, TVProgram.class);
 	}
 	
 	public List< TVProgram > findAfterAtChannel(Date date, String channel){
 		Query query = new Query(Criteria.where("channel").regex("^" + channel + "$","i").
-				and("start_date").gt( date ));
+				and("start_date").gt( date )).with( new Sort( Direction.ASC, "start_date" ) );
 		return mongoOperations.find(query, TVProgram.class);
 	}
 	
 	public List< TVProgram > findAfterByTitleAtChannel(String title, Date date, String channel){
 		Query query = new Query(Criteria.where("channel").regex("^" + channel + "$","i").
 				and( "title" ).regex("^.*" + title + ".*","i").
-				and("start_date").gt( date ));
+				and("start_date").gt( date )).with( new Sort( Direction.ASC, "start_date" ) );
 		return mongoOperations.find(query, TVProgram.class);
 	}
 	

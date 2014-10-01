@@ -13,15 +13,15 @@ import fpt.qa.intent.detection.qc.VnIntentDetection;
  */
 public class TVIntentDetection {
 
-    static VnIntentDetection classifier;
+    private VnIntentDetection classifier;
 
-    public static void init(String qcDir, String dictDir) {
+    public void init(String qcDir, String dictDir) {
         FreqConjDict.loadConjList(dictDir + "/tv_conjunctions.txt");
         classifier = new VnIntentDetection(qcDir);
         classifier.init();
     }
 
-    public static String getIntent(String sent) {
+    public String getIntent(String sent) {
     	return classifier.classify(sent);
     }
 }
