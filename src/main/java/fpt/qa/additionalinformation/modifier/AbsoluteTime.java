@@ -57,9 +57,11 @@ public class AbsoluteTime{
 		
 		try {
 			results = getTimeParser().parser3( text, dateFormatHour.format( new Date() ) );
-			//System.out.println(results);
+			
+			System.out.println("curentdate :"+dateFormatHour.format( new Date() ));
 			if(results.isEmpty()) {
 				results.add(new TimeRange());
+				return timeResult;
 			}
 			timeResult.setBeginTime(results.get(0).getfDate());
 			timeResult.setEndTime(results.get(0).getsDate());

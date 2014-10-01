@@ -12,27 +12,31 @@ import java.util.List;
 import java.util.Scanner;
 
 import fpt.qa.vnTime.utils.RangeParser;
+import fpt.qa.vnTime.vntime.TimeRange;
 import fpt.qa.vnTime.vntime.VnTimeParser;
 
 public class VnSutimeTest {
 	public static void main(String[] args) throws FileNotFoundException, IOException, ParseException {
 
-		VnTimeParser vnSutime = new VnTimeParser("D://WorkSpaceFTI//com.fpt.qa.platform.vnTimer//resources//vnsutime");
+		VnTimeParser vnSutime = new VnTimeParser("src/main/resources/vnsutime");
 		// get current date time with Date()
 		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		Date date = new Date();
 		String curDate = dateFormat.format(date);
 		dateFormat = new SimpleDateFormat("HH:mm:ss");
 		curDate += " " + dateFormat.format(date);
-		System.out.println("Ngày giờ hệ thống : " + curDate);
-		List<String> questionList = fileReader("resources/samples/inputs/question.txt");
+		//System.out.println("Ngày giờ hệ thống : " + curDate);
+		List<String> questionList = fileReader( "questions_tv" );
 		for(String question : questionList) {
-			System.out.println("=========================================================");
-			System.out.println("Question : "+question);
-			System.out.println(vnSutime.parser(question, curDate));
-			List<String> rangeList = vnSutime.parser2(question, curDate);
-			for(String str : rangeList) {
-				System.out.println(RangeParser.parser(str).toString());
+			//System.out.println("=========================================================");
+			System.out.print(question+"\t");
+			//System.out.println(vnSutime.parser(question, curDate));
+			List<TimeRange> rangeList = vnSutime.parser3(question, curDate);
+			if(rangeList.isEmpty()) {
+				System.out.println("null,null");
+			}
+			for(TimeRange str : rangeList) {
+				System.out.println(str.getfDate()+","+str.getsDate());
 			}
 		}
 	}

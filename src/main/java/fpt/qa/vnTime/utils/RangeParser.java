@@ -20,25 +20,18 @@ public class RangeParser{
 
 	public static TimeRange parser( String timeString ) throws ParseException {
 		TimeRange timeRange = new TimeRange();
-		System.out.println( timeString );
+		//System.out.println( timeString );
 		try{
 			List< String > list = new ArrayList< String >();
 			Pattern pattern = Pattern.compile( IConstants.DTIME_REGEX );
 			Matcher matcher = pattern.matcher( timeString );
 			while( matcher.find() ){
 				list.add( matcher.group().replace( "T", " " ) );
+				//System.out.println("~~~~~~~~"+ matcher.group().replace( "T", " " ) );
 			}
-			System.out.println( "!!!!!!" + list.get( 0 ) );
-			System.out.println( "~~~~~~" + list.get( 1 ) );
 			if( list.size() >= 2 ){
-
 				timeRange.setfDate( list.get( 0 ) );
-				if( list.get( 0 ).equalsIgnoreCase( list.get( 1 ) ) )  {
-					timeRange.setsDate( list.get( 1 ).substring( 0, list.get( 1 ).indexOf( " " ) ));
-					System.out.println("!!@!@!@!@"+list.get( 1 ).substring( 0, list.get( 1 ).indexOf( " " ) ));
-				} else {
-					timeRange.setsDate( list.get( 1 ) );
-				}
+				timeRange.setsDate( list.get( 1 ) );
 			} else if( list.size() == 1 ){
 				timeRange.setfDate( list.get( 0 ) );
 				timeRange.setsDate( list.get( 0 ) );
@@ -47,7 +40,8 @@ public class RangeParser{
 			}
 
 		}catch ( Exception e ){
-			System.err.println( e.toString() );
+			//System.err.println( e.toString() );
+			e.printStackTrace();
 		}
 		return timeRange;
 	}
