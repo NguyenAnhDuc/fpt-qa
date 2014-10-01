@@ -6,6 +6,7 @@ import java.util.Date;
 import java.util.List;
 
 import org.json.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.fpt.ruby.model.Log;
 import com.fpt.ruby.model.MovieFly;
@@ -26,7 +27,6 @@ import fpt.qa.intent.detection.NonDiacriticMovieIntentDetection;
 import fpt.qa.mdnlib.util.string.DiacriticConverter;
 
 public class ProcessHelper {
-
 	public static RubyAnswer getAnswer(String question,QuestionStructure questionStructure,
 										MovieFlyService movieFlyService, MovieTicketService movieTicketService)  {
 		RubyAnswer rubyAnswer = new RubyAnswer();
@@ -56,12 +56,12 @@ public class ProcessHelper {
 		try{
 			if (questionType.equals(AnswerMapper.Static_Question)){
 				String movieTitle = NlpHelper.getMovieTitle(question);
-				System.out.println("Movie Title: " + movieTitle);
 				List<MovieFly> movieFlies = movieFlyService.findByTitle(movieTitle);
 				if (movieFlies.size() == 0){
 					movieFlies = new ArrayList<MovieFly>();
 					MovieFly movieFly = movieFlyService.searchOnImdbByTitle(movieTitle);
-					if (movieFly != null){					
+					if (movieFly != null
+							){					
 						movieFlyService.save(movieFly);
 						movieFlies.add(movieFly);
 					}
@@ -73,12 +73,10 @@ public class ProcessHelper {
 				rubyAnswer.setMovieTitle(movieTitle);
 			}
 			else if (questionType.equals(AnswerMapper.Dynamic_Question)){
-				System.out.println("Dynamic ....");
 				MovieTicket matchMovieTicket = NlpHelper.getMovieTicket(question);
 				TimeExtract timeExtract = NlpHelper.getTimeCondition(question);
 				List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition
 												(matchMovieTicket, timeExtract.getBeforeDate(), timeExtract.getAfterDate());
-				System.out.println("Size: " + movieTickets.size());
 				if (timeExtract.getBeforeDate() != null) rubyAnswer.setBeginTime(timeExtract.getBeforeDate());
 				if (timeExtract.getAfterDate() != null) rubyAnswer.setEndTime(timeExtract.getAfterDate());
 				rubyAnswer.setAnswer(AnswerMapper.getDynamicAnswer(intent, movieTickets));

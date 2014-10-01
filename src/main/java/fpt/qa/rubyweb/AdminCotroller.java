@@ -184,6 +184,11 @@ public class AdminCotroller {
 		return "crawl-mytv";
 	}
 	
+	@RequestMapping(value="admin-add-cinema", method = RequestMethod.GET)
+	public String addCinema(Model model){
+		return "addCinema";
+	}
+	
 	@RequestMapping(value="admin-show-tickets", method = RequestMethod.GET)
 	public String showTickets(Model model){
 		List<MovieTicket> tickets = movieTicketService.findTicketToShow();
@@ -206,7 +211,7 @@ public class AdminCotroller {
 		return "showTV";
 	}
 	
-	@RequestMapping(value="cinemas", method = RequestMethod.GET)
+	@RequestMapping(value="admin-show-cinemas", method = RequestMethod.GET)
 	public String showCinemas(Model model){
 		List<Cinema> cinemas = cinemaService.findAll();
 		model.addAttribute("cinemas",cinemas);

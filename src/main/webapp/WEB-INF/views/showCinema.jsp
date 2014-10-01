@@ -177,14 +177,14 @@
 							   <%--  <%
 									int i = 0;
 								%> --%>
-								<c:forEach var="tvProgram" items="${tvPrograms}">
+								<c:forEach var="cinema" items="${cinemas}">
 									<%-- <%
 										i++;
 									%> --%>
 									<tr>
-									<td>${tvProgram.name}</td>
-									<td>${tvProgram.address}</td>
-									<td>${tvProgram.mobile}</td>
+									<td>${cinema.name}</td>
+									<td>${cinema.address}</td>
+									<td>${cinema.mobile}</td>
 										<td>
 											<div class="pull-right action-buttons">
 

@@ -11,12 +11,12 @@
 </c:if>
 
 <c:if test="${status=='success'}">
-	<div class="alert alert-success" role="alert">Schedule added!</div>
+	<div class="alert alert-success" role="alert">Cinema info added!</div>
 </c:if>
-<form action="/rubyweb/crawlManual" method="post" role="form"
+<form action="/rubyweb/addCinema" method="post" role="form"
 	data-toggle="validator" class="form-horizontal" accept-charset="UTF-8">
 	<fieldset>
-      <legend>Add Movie</legend>
+      <legend>Add Cinema Information</legend>
 	<div class="form-group" style="margin-bottom: 10px">
 	<label class="col-sm-2 control-label" for="expiry-month">Rạp</label>
 		<div class="row">
@@ -42,23 +42,22 @@
 	<div class="form-group ">
 		<label class="col-sm-2 control-label"> Địa chỉ</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control " id="mov_title"
-				name="mov_title" placeholder="Địa chỉ" required>
+			<input type="text" class="form-control " id="cin_address"
+				name="cin_address" placeholder="Địa chỉ" required>
 		</div>
 	</div>
 	<div class="form-group ">
 		<label for="inputPassword" class="col-sm-2 control-label">Điện thoại</label>
 		<div class="col-sm-10">
-			<textarea rows="3" class="form-control" id="schedule" name="time"
-				placeholder="Điện thoại" required>
-					</textarea>
+			<input type="text" class="form-control " id="mobile"
+				name="mobile" placeholder="Điện thoại liên lạc" required>
 		</div>
 	</div>
 	
 	
 
 	<button type="submit" class="btn btn-primary btn-lg btn-block "
-		id="btnSubmit" style="margin-top: 10px">Thêm lịch chiếu</button>
+		id="btnSubmit" style="margin-top: 10px">Thêm thông tin rạp</button>
 	</fieldset>
 </form>
 
