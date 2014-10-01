@@ -7,6 +7,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
+import com.fpt.ruby.helper.RedisHelper;
 import com.fpt.ruby.model.RubyAnswer;
 import com.fpt.ruby.model.TVProgram;
 import com.fpt.ruby.service.TVProgramService;
@@ -21,8 +22,8 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 	private TVProgramService tps = new TVProgramService();
 	
 	public void init() {
-//		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
-		String dir = "/home/ngan/Work/AHongPhuong/RubyWeb/rubyweb/src/main/resources";
+		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
+//		String dir = "/home/ngan/Work/AHongPhuong/RubyWeb/rubyweb/src/main/resources";
 		intentDetector.init( dir + "/qc/tv", dir + "/dicts");
 		nonDiacritic.init( dir + "/qc/tv/non-diacritic", dir + "/dicts/non-diacritic");
 	}
