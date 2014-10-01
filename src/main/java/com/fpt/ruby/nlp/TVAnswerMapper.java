@@ -2,10 +2,12 @@ package com.fpt.ruby.nlp;
 
 import java.util.List;
 
+import com.fpt.ruby.model.RubyAnswer;
 import com.fpt.ruby.model.TVProgram;
 
 public interface TVAnswerMapper{
-	String getAnswer ( String question );
+	void init();
+	RubyAnswer getAnswer ( String question );
 	
 	String getTime ( List< TVProgram > progs );
 	String getTitle ( List< TVProgram > progs );

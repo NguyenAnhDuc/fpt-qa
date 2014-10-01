@@ -7,7 +7,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
-import com.fpt.ruby.helper.RedisHelper;
+import com.fpt.ruby.model.RubyAnswer;
 import com.fpt.ruby.model.TVProgram;
 import com.fpt.ruby.service.TVProgramService;
 
@@ -27,78 +27,106 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		nonDiacritic.init( dir + "/qc/tv/non-diacritic", dir + "/dicts/non-diacritic");
 	}
 	
-	public String getAnswer ( String question ) {
+	public RubyAnswer getAnswer ( String question ) {
+		RubyAnswer rubyAnswer = new RubyAnswer();
 		String tmp = "\t" + question + "\n";
 		
-		String intent = intentDetector.getIntent( question );
+		String intent = intentDetector.getIntent( NlpHelper.normalizeQuestion(question) );
 		System.out.println("TV Intent: " + intent);
 		tmp += "\t" + "TV Intent: " + intent + "\n";
 		
-		String intent2 = nonDiacritic.getIntent( question );
+		String intent2 = nonDiacritic.getIntent( NlpHelper.normalizeQuestion(question) );
 		System.out.println("Non-diacritic TV Intent: " + intent2);
 		tmp += "\t" + "Non-diacritic TV Intent: " + intent2 + "\n";
 		
 		if (!DiacriticConverter.hasDiacriticAccents(question)){
 			intent = intent2;
 		}
+		
+		rubyAnswer.setQuestion(question);
+		rubyAnswer.setIntent(intent);
+		rubyAnswer.setAnswer(tmp + DEF_ANS + "\n\n\n");
+		
 		if (intent.equals( "UDF")){
-			return tmp + DEF_ANS + "\n\n\n";
+			return rubyAnswer;
 		}
 		
 		TVModifiers mod = TVModifiers.getModifiers( question.replaceAll("(\\d+)(h)", "$1 giờ ").replaceAll( "\\s+", " " ) );
 		tmp += "\t" + question.replaceAll("(\\d+)(h)", "$1 giờ ").replaceAll( "\\s+", " " ) + "\n";
 		tmp += "\t" + mod + "\n";
 		
+		rubyAnswer.setQuestionType(mod.getChannel());
+		rubyAnswer.setMovieTitle(mod.getProg_title() + "\n" + mod.getStart() + "\n" + mod.getEnd());
+		System.out.println("TV channel: " + mod.getChannel());
+		System.out.println("TV prog title: " + mod.getProg_title());
+		System.out.println("TV query start time: " + mod.getStart());
+		System.out.println("TV query end time: " + mod.getEnd());
+		
 		List< TVProgram > progs = tps.getList( mod, question );
 
 		if (mod.getChannel() == null && mod.getProg_title() == null){
 			if (mod.getStart() == null){
-				return tmp + DEF_ANS + "\n\n\n";
+				rubyAnswer.setAnswer( DEF_ANS + "\n\n\n" );
+				return rubyAnswer;
 			}
 			if (mod.getStart().equals( mod.getEnd() )){
-				return tmp + getChannelAndProgram( progs ) + "\n\n\n";
+				rubyAnswer.setAnswer( getChannelAndProgram( progs ) + "\n\n\n" );
+				return rubyAnswer;
 			}
-			return tmp + getChannelProgAndTime( progs ) + "\n\n\n";
+			rubyAnswer.setAnswer( getChannelProgAndTime( progs ) + "\n\n\n" );
+			return rubyAnswer;
 		}
 		
 		if (mod.getChannel() == null){
 			if (intent.equals( "DAT" ) || intent.equals( "POL" ) && progs.isEmpty()){
-				return tmp + "Không đúng!" + "\n\n\n";
+				rubyAnswer.setAnswer( "Không đúng!" + "\n\n\n" );
+				return rubyAnswer;
 			}
 			if (mod.getStart() == null){
-				return tmp + DEF_ANS + "\n\n\n";
+				rubyAnswer.setAnswer( DEF_ANS + "\n\n\n" );
+				return rubyAnswer;
 			}
 			if (mod.getStart().equals( mod.getEnd() )){
 				if (intent.equals( "CHN" )){
-					return tmp + getChannel( progs ) + "\n\n\n";
+					rubyAnswer.setAnswer( getChannel( progs ) + "\n\n\n" );
+					return rubyAnswer;
 				}
-				return tmp + getChannelAndProgram( progs ) + "\n\n\n";
+				rubyAnswer.setAnswer( getChannelAndProgram( progs ) + "\n\n\n" );
+				return rubyAnswer;
 			}
-			return tmp + getChannelProgAndTime( progs ) + "\n\n\n";
+			rubyAnswer.setAnswer( getChannelProgAndTime( progs ) + "\n\n\n" );
+			return rubyAnswer;
 		}
 		
 		if (mod.getProg_title() == null){
 			if (mod.getStart() == null){
-				return tmp + DEF_ANS + "\n\n\n";
+				rubyAnswer.setAnswer( DEF_ANS + "\n\n\n" );
+				return rubyAnswer;
 			}
 			if (mod.getStart().equals( mod.getEnd() )){
-				return tmp + getTitle( progs ) + "\n\n\n";
+				rubyAnswer.setAnswer( getTitle( progs ) + "\n\n\n" );
+				return rubyAnswer;
 			}
-			return tmp + getTitleAndTime( progs ) + "\n\n\n";
+			rubyAnswer.setAnswer( getTitleAndTime( progs ) + "\n\n\n" );
+			return rubyAnswer;
 		}
 		
 		if (mod.getStart() == null){
-			return tmp + DEF_ANS + "\n\n\n";
+			rubyAnswer.setAnswer( DEF_ANS + "\n\n\n" );
+			return rubyAnswer;
 		}
 		
 		if (mod.getStart().equals( mod.getEnd() )){
 			if (progs.isEmpty()){
-				return tmp + "Không có " + mod.getProg_title() + " nào trên kênh " + mod.getChannel() + " vào lúc đó!\n\n\n";
+				rubyAnswer.setAnswer( "Không có " + mod.getProg_title() + " nào trên kênh " + mod.getChannel() + " vào lúc đó!\n\n\n" );
+				return rubyAnswer;
 			}
-			return tmp + getTitle( progs ) + "\n\n\n";
+			rubyAnswer.setAnswer( getTitle( progs ) + "\n\n\n" );
+			return rubyAnswer;
 		}
 		
-		return tmp + getTitleAndTime( progs ) + "\n\n\n";
+		rubyAnswer.setAnswer( getTitleAndTime( progs ) + "\n\n\n" );
+		return rubyAnswer;
 		
 //		return DEF_ANS;
 	}
