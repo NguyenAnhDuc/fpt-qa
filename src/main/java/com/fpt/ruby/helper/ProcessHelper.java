@@ -6,6 +6,8 @@ import java.util.Date;
 import java.util.List;
 
 import org.json.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.fpt.ruby.model.Log;
 import com.fpt.ruby.model.MovieFly;
@@ -27,7 +29,7 @@ import fpt.qa.intent.detection.NonDiacriticMovieIntentDetection;
 import fpt.qa.mdnlib.util.string.DiacriticConverter;
 
 public class ProcessHelper{
-
+	private static final Logger logger = LoggerFactory.getLogger(ProcessHelper.class);
 	public static RubyAnswer getAnswer( String question, QuestionStructure questionStructure,
 			MovieFlyService movieFlyService, MovieTicketService movieTicketService ) {
 		RubyAnswer rubyAnswer = new RubyAnswer();
@@ -52,18 +54,18 @@ public class ProcessHelper{
 	private static RubyAnswer getAnswerRemoveDiacritic( String question, MovieFlyService movieFlyService,
 			MovieTicketService movieTicketService, LogService logService ) {
 		RubyAnswer rubyAnswer = new RubyAnswer();
-		
+		logger.info("Get answer remove diacritic");
 		System.out.println( DiacriticConverter.removeDiacritics( question ) );
 
 		String intent = NonDiacriticMovieIntentDetection.getIntent( DiacriticConverter.removeDiacritics( question ) );
-		System.out.println( "Intent: " + intent );
+		logger.info( "Intent: " + intent );
 
 		rubyAnswer.setQuestion( question );
 		rubyAnswer.setIntent( intent );
 
 		String questionType = AnswerMapper.getTypeOfAnswer( intent, question );
 		rubyAnswer.setAnswer( "Xin lỗi, tôi không trả lời câu hỏi này được" );
-		System.out.println( "Question Type: " + questionType );
+		logger.info( "Question Type: " + questionType );
 		// static question
 		try{
 			if( questionType.equals( AnswerMapper.Static_Question ) ){
@@ -139,16 +141,16 @@ public class ProcessHelper{
 
 	private static RubyAnswer getAnswerWithDiacritic( String question, MovieFlyService movieFlyService,
 			MovieTicketService movieTicketService, LogService logService ) {
+		logger.info("Get answer with diacritic");
 		RubyAnswer rubyAnswer = new RubyAnswer();
-
 		String intent = MovieIntentDetection.getIntent( question );
-		System.out.println( "Movie Intent: " + intent );
+		logger.info( "Movie Intent: " + intent );
 
 		rubyAnswer.setQuestion( question );
 		rubyAnswer.setIntent( intent );
 		String questionType = AnswerMapper.getTypeOfAnswer( intent, question );
 		rubyAnswer.setAnswer( "Xin lỗi, tôi không trả lời câu hỏi này được" );
-		System.out.println( "Question Type: " + questionType );
+		logger.info( "Question Type: " + questionType );
 		// static question
 		try{
 			if( questionType.equals( AnswerMapper.Static_Question ) ){

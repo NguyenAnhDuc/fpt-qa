@@ -16,7 +16,6 @@ import org.springframework.stereotype.Service;
 import com.fpt.ruby.config.SpringMongoConfig;
 import com.fpt.ruby.model.MovieTicket;
 
-import fpt.qa.rubyweb.HomeController;
 
 @Service
 public class MovieTicketService {
