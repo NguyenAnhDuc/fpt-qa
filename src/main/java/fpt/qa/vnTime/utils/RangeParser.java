@@ -20,15 +20,26 @@ public class RangeParser{
 
 	public static TimeRange parser( String timeString ) throws ParseException {
 		TimeRange timeRange = new TimeRange();
+		System.out.println( "timeString: " + timeString );
 		//System.out.println( timeString );
 		try{
 			List< String > list = new ArrayList< String >();
 			Pattern pattern = Pattern.compile( IConstants.DTIME_REGEX );
 			Matcher matcher = pattern.matcher( timeString );
 			while( matcher.find() ){
-				list.add( matcher.group().replace( "T", " " ) );
-				//System.out.println("~~~~~~~~"+ matcher.group().replace( "T", " " ) );
+				String timeStr = matcher.group();
+				if (timeStr.indexOf( "T" ) > 0 && timeStr.indexOf( ":" ) < 0){
+					timeStr += ":00";
+				}
+				
+				list.add( timeStr.replace( "T", " " ).replace( "pm:00", ":00pm" ) );
 			}
+			if (list.isEmpty()){
+				return timeRange;
+			}
+			System.out.println("list size: " + list.size());
+			System.out.println( "!!!!!!" + list.get( 0 ) );
+//			System.out.println( "~~~~~~" + list.get( 1 ) );
 			if( list.size() >= 2 ){
 				timeRange.setfDate( list.get( 0 ) );
 				timeRange.setsDate( list.get( 1 ) );

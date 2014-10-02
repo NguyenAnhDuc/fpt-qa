@@ -8,6 +8,8 @@ import java.util.Date;
 
 public class TimeRange implements Serializable{
 
+	static final long HAFL_DAY = 12 * 60 * 60 * 1000;
+	
 	private String expression;
 	private Date fDate;
 	private Date sDate;
@@ -23,22 +25,29 @@ public class TimeRange implements Serializable{
 		// TODO Auto-generated constructor stub
 	}
 
-	@SuppressWarnings( "deprecation" )
-	private Date parsefDate( String dateString ) throws ParseException {
+	@SuppressWarnings("deprecation")
+	private Date parsefDate(String date) throws ParseException {
 		// TODO Auto-generated method stub
-		SimpleDateFormat format = new SimpleDateFormat( "yyyy-MM-dd HH:mm" );
+		long bonusTime = 0;
+		String dateString = date;
+		if (dateString.endsWith( "pm" )){
+			bonusTime = HAFL_DAY;
+			dateString = date.substring( 0, date.length() - 2 );
+			System.out.println("dateString: " + dateString);
+		}
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+		
 		Date utilDate = null;
+		
 		try{
-			utilDate = new SimpleDateFormat( "yyyy-MM-dd HH" ).parse( dateString );
-			utilDate = new Date( utilDate.getTime());
+			utilDate = format.parse( dateString );
 		}catch ( Exception ex1 ){
 			try{
-				utilDate = format.parse( dateString );
+				utilDate = new SimpleDateFormat( "yyyy-MM-dd HH" ).parse( dateString );
 			}catch ( ParseException e ){
 				// e.printStackTrace();
 				utilDate = new SimpleDateFormat( "yyyy-MM-dd" ).parse( dateString );
 				utilDate = new Date( utilDate.getTime() );
-				// System.out.println("!!!!!"+utilDate);
 				try{
 					utilDate = new SimpleDateFormat( "yyyy-MM-dd" ).parse( dateString );
 					utilDate = new Date( utilDate.getTime() );
@@ -55,13 +64,23 @@ public class TimeRange implements Serializable{
 				}
 			}
 		}
+		if (bonusTime > 0){
+			return new Date(utilDate.getTime() + bonusTime);
+		}
 		return utilDate;
 	}
 
-	@SuppressWarnings( "deprecation" )
-	private Date parsesDate( String dateString ) throws ParseException {
-		// System.out.println(dateString);
-		SimpleDateFormat format = new SimpleDateFormat( "yyyy-MM-dd HH:mm" );
+	@SuppressWarnings("deprecation")
+	private Date parsesDate ( String date) throws ParseException {
+		long bonusTime = 0;
+		String dateString = date;
+		if (dateString.endsWith( "pm" )){
+			bonusTime = HAFL_DAY;
+			dateString = date.substring( 0, date.length() - 2 );
+			System.out.println("dateString: " + dateString);
+		}
+		//System.out.println(dateString);
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 		Date utilDate = null;
 		try{
 			utilDate = format.parse( dateString );
@@ -84,6 +103,9 @@ public class TimeRange implements Serializable{
 					//e.printStackTrace();
 				}
 			}
+		}
+		if (bonusTime > 0){
+			return new Date(utilDate.getTime() + bonusTime);
 		}
 		return utilDate;
 	}
