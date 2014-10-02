@@ -20,34 +20,46 @@ public class RangeParser{
 
 	public static TimeRange parser( String timeString ) throws ParseException {
 		TimeRange timeRange = new TimeRange();
-		System.out.println( timeString );
+		boolean plusOneDay = false;
+		
+		// Handle case like 9 giờ ngày mai, 9 giờ tối mai
+		if (timeString.contains("NEXT") && timeString.contains("INTERSECT")){
+			plusOneDay = true;
+		}
+		
+		System.out.println( "timeString: " + timeString );
+		//System.out.println( timeString );
 		try{
 			List< String > list = new ArrayList< String >();
 			Pattern pattern = Pattern.compile( IConstants.DTIME_REGEX );
 			Matcher matcher = pattern.matcher( timeString );
 			while( matcher.find() ){
-				list.add( matcher.group().replace( "T", " " ) );
-			}
-			System.out.println( "!!!!!!" + list.get( 0 ) );
-			System.out.println( "~~~~~~" + list.get( 1 ) );
-			if( list.size() >= 2 ){
-
-				timeRange.setfDate( list.get( 0 ) );
-				if( list.get( 0 ).equalsIgnoreCase( list.get( 1 ) ) )  {
-					timeRange.setsDate( list.get( 1 ).substring( 0, list.get( 1 ).indexOf( " " ) ));
-					System.out.println("!!@!@!@!@"+list.get( 1 ).substring( 0, list.get( 1 ).indexOf( " " ) ));
-				} else {
-					timeRange.setsDate( list.get( 1 ) );
+				String timeStr = matcher.group();
+				if (timeStr.indexOf( "T" ) > 0 && timeStr.indexOf( ":" ) < 0){
+					timeStr += ":00";
 				}
+				
+				list.add( timeStr.replace( "T", " " ).replace( "pm:00", ":00pm" ) );
+			}
+			if (list.isEmpty()){
+				return timeRange;
+			}
+			System.out.println("list size: " + list.size());
+			System.out.println( "!!!!!!" + list.get( 0 ) );
+//			System.out.println( "~~~~~~" + list.get( 1 ) );
+			if( list.size() >= 2 ){
+				timeRange.setfDate( list.get( 0 ), plusOneDay );
+				timeRange.setsDate( list.get( 1 ), plusOneDay );
 			} else if( list.size() == 1 ){
-				timeRange.setfDate( list.get( 0 ) );
-				timeRange.setsDate( list.get( 0 ) );
+				timeRange.setfDate( list.get( 0 ), plusOneDay );
+				timeRange.setsDate( list.get( 0 ), plusOneDay );
 			}else{
 
 			}
-
+			
 		}catch ( Exception e ){
-			System.err.println( e.toString() );
+			//System.err.println( e.toString() );
+			e.printStackTrace();
 		}
 		return timeRange;
 	}

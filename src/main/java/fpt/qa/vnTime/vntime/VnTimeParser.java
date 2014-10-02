@@ -139,9 +139,12 @@ public class VnTimeParser {
 
 	public List<TimeRange> parser3(String textInput, String referenceDate)
 			throws ParseException {
+		System.out.println("\n\nbegin parser3");
+		
 		Annotation annotation = new Annotation(textInput);
 		annotation.set(CoreAnnotations.DocDateAnnotation.class, referenceDate);
 		this.coreNLP.annotate(annotation);
+		
 		List<TimeRange> rangeList = new ArrayList<TimeRange>();
 		List<CoreMap> timexAnnsAll = (List<CoreMap>) annotation
 				.get(TimeAnnotations.TimexAnnotations.class);
@@ -150,13 +153,47 @@ public class VnTimeParser {
 			Integer tmp98_96 = id;
 			String range = "";
 			id = Integer.valueOf(tmp98_96.intValue() + 1);
+			String cmString = cm.toString();
+			System.out.println("cm.toString: " + cmString);
+			
+			if (cmString.equals( "giờ" ) || cmString.equals( "chiều" )){
+				continue;
+			}
+			if (cmString.endsWith( "giờ" ) || cmString.endsWith( "phút" ) || 
+					cmString.endsWith( "trưa" ) || cmString.endsWith( "chiều" ) || cmString.endsWith( "tối" )){
+				return parser3( textInput.replace( cmString, cmString + " hôm nay" ), referenceDate );
+			}
+			
+			if (cmString.contains( "giờ" ) && cmString.contains( "trưa" )){
+				return parser3( textInput.replace( "trưa", "chiều" ), referenceDate );
+			}
 			range = ((TimeExpression) cm.get(TimeExpression.Annotation.class))
 					.getTemporal().toString();
-			if (!range.contains("IN")) {
+			
+			// xử lý các trường hợp: 9 giờ tối, 9 giờ 30 phút tối nay, 1 giờ chiều nay, 2 giờ trưa nay
+			int itmp = range.lastIndexOf( "T" );
+			if (itmp > 0){
+				try{
+					System.out.println("range: " + range);
+					System.out.println(range.substring( itmp + 1,  itmp + 3 < range.length() ? itmp + 3 : range.length()));
+					int hour = Integer.parseInt( range.substring( range.lastIndexOf( "T" ) + 1,  itmp + 3));
+					System.out.println("hour: " + hour);
+					if ((cmString.contains( "tối" ) || cmString.contains( "chiều" ) || cmString.contains( "trưa" )) && hour < 12){
+						range += "pm";
+					}
+					
+					System.out.println("range after change: " + range);
+				}
+				catch(Exception ex){
+					
+				}
+			}
+			if (itmp > 0 && Character.isLetter(range.charAt(range.length()-1)) && !range.contains("IN")) {
 				try {
 					range = ((TimeExpression) cm
 							.get(TimeExpression.Annotation.class))
 							.getTemporal().getRange().toString();
+					System.out.println("range 2: " + range);
 				} catch (Exception exception) {
 					range = ((TimeExpression) cm
 							.get(TimeExpression.Annotation.class))
@@ -165,7 +202,9 @@ public class VnTimeParser {
 				}
 			}
 			TimeRange timeRange = RangeParser.parser(range);
+			System.out.println("timeRange: " + timeRange.toString());
 			timeRange.setExpression(cm.toString());
+			
 			rangeList.add(timeRange);
 		}
 		return rangeList;
