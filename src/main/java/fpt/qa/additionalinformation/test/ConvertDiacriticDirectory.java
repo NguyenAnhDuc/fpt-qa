@@ -7,13 +7,16 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import fpt.qa.mdnlib.diacritic.DiacriticConverter;
+import jmdn.nlp.diacritic.DiacriticConverter;
+
+
 
 public class ConvertDiacriticDirectory{
 
 	public static void main( String[] args ) {
 		//convert( "/home/dungx/git/rubyweb/src/main/resources/data-name-mapper", "/home/dungx/git/rubyweb/src/main/resources/non-diacritic/data-name-mapper" );
-		convert( "/home/dungx/git/rubyweb/src/main/resources/surroundWords", "/home/dungx/git/rubyweb/src/main/resources/non-diacritic/surroundWords" );
+//		convert( "/home/dungx/git/rubyweb/src/main/resources/surroundWords", "/home/dungx/git/rubyweb/src/main/resources/non-diacritic/surroundWords" );
+		convert( "/home/dungx/git/rubyweb/src/main/resources/domains_classifier", "/home/dungx/git/rubyweb/src/main/resources/domains_classifier2" );
 	}
 	
 	public static void convert( String originPath, String destPath ){
