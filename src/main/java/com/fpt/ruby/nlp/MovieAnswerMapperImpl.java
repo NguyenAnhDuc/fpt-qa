@@ -251,7 +251,7 @@ public class MovieAnswerMapperImpl implements MovieAnswerMapper {
 			return "Xin lỗi, chúng tôi không tìm thấy dữ liệu cho câu trả lời";
 		}
 		Cinema cin = ans.get(0);
-		String res = "Phim " + cin.getName() + " ở địa chỉ: " + cin.getAddress();
+		String res =  cin.getName() + " ở địa chỉ: " + cin.getAddress();
 		return res;
 	}
 
