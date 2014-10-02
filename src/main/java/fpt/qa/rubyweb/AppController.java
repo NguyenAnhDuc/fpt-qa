@@ -93,7 +93,6 @@ public class AppController {
 	
 	
 	
-	
 	/*@RequestMapping(value="/allCinema", method = RequestMethod.GET, produces = "application/json; charset=UTF-8")
 	@ResponseBody
 	public BasicDBObject testMovie(){

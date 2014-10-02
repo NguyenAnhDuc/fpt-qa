@@ -70,7 +70,7 @@ public class CrawlTV {
 		}
 		return tvPrograms;
 	}*/
-	
+
 	public static void main(String[] args) throws Exception {
 	/*	List<TVProgram> tvPrograms = crawlChanel("vtv1", "http://vtv.vn/truyen-hinh-truc-tuyen/vtv1.htm");
 		TVProgramService tvProgramService = new TVProgramService();

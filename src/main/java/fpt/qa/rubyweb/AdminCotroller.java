@@ -238,7 +238,7 @@ public class AdminCotroller {
 		}
 		return "showLog";
 	}
-	
+
 	@RequestMapping(value = "/deleteTicket", method = RequestMethod.GET)
 	public String deleteBot(@RequestParam("ticketId") String ticketId,Model model) {
 		MovieTicket movieTicket = movieTicketService.findById(ticketId);

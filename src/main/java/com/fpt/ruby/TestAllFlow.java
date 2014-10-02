@@ -91,7 +91,7 @@ public class TestAllFlow {
 					System.out.println("Answer: " + answer);
 				}
 	}
-	
+
 	public static void main(String[] args) throws UnsupportedEncodingException {
 		movieFlyService = new MovieFlyService();
 		movieTicketService = new MovieTicketService();
