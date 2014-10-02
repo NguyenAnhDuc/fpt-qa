@@ -29,7 +29,7 @@ public class CinemaService {
 	}
 	
 	public List<Cinema> findByName(String name){
-		Query query = new Query(Criteria.where("title").regex("^" + name + "$","i"));
+		Query query = new Query(Criteria.where("name").regex("^" + name + "$","i"));
 		return mongoOperations.find(query, Cinema.class);
 	}
 	
