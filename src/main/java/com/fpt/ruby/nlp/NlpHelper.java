@@ -19,46 +19,20 @@ import fpt.qa.mdnlib.struct.pair.Pair;
 public class NlpHelper {
 	private static ConjunctionHelper conjunctionHelper;
 	private static AbsoluteTime absoluteTime;
-	static{
+	static {
 		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
 		MovieIntentDetection.init(dir + "/qc/movie", dir + "/dicts");
 		NonDiacriticMovieIntentDetection.init( dir + "/qc/movie/non-diacritic", dir + "/dicts/non-diacritic" );
-		conjunctionHelper = new ConjunctionHelper(dir);
+		//conjunctionHelper = new ConjunctionHelper(dir);
 		absoluteTime = new AbsoluteTime( NlpHelper.class.getClassLoader().getResource("").getPath() + "vnsutime/" );
 	}
 	
-	public static String getMovieTitle(String question){
-		List<Pair<String, String>> conjunctions = conjunctionHelper.getConjunction(question);
-		for (Pair<String, String> conjunction : conjunctions ){
-			System.out.println(conjunction.first + " | " + conjunction.second);
-			if (conjunction.second.equals(IntentConstants.MOV_TITLE))
-				return conjunction.first.replace("{", "").replace("}", "");
-		}
-		return null;
+	public String getIntent(boolean isDiacritic, String question){
+		if (isDiacritic) return MovieIntentDetection.getIntent(question);
+		else return NonDiacriticMovieIntentDetection.getIntent(question);
 	}
 	
-	public static String getCinemaName(String question){
-		List<Pair<String, String>> conjunctions = conjunctionHelper.getConjunction(question);
-		for (Pair<String, String> conjunction : conjunctions ){
-			System.out.println(conjunction.first + " | " + conjunction.second);
-			if (conjunction.second.equals(IntentConstants.CIN_NAME))
-				return conjunction.first.replace("{", "").replace("}", "");
-		}
-		return null;
-	}
 	
-	public static MovieTicket getMovieTicket(String question){
-		List<Pair<String, String>> conjunctions = conjunctionHelper.getConjunction(question);
-		MovieTicket movieTicket = new MovieTicket();
-		for (Pair<String, String> conjunction : conjunctions ){
-			System.out.println(conjunction.first + " | " + conjunction.second);
-			if (conjunction.second.equals(IntentConstants.CIN_NAME))
-				movieTicket.setCinema(conjunction.first.replace("{", "").replace("}", ""));
-			if (conjunction.second.equals(IntentConstants.MOV_TITLE))
-				movieTicket.setMovie(conjunction.first.replace("{", "").replace("}", ""));
-		}
-		return movieTicket;
-	}
 	
 	
 	public static QuestionStructure processQuestionStructure(String question){
