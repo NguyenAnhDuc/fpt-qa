@@ -140,6 +140,7 @@ public class VnTimeParser {
 	public List<TimeRange> parser3(String textInput, String referenceDate)
 			throws ParseException {
 		System.out.println("\n\nbegin parser3");
+		
 		Annotation annotation = new Annotation(textInput);
 		annotation.set(CoreAnnotations.DocDateAnnotation.class, referenceDate);
 		this.coreNLP.annotate(annotation);
@@ -158,7 +159,8 @@ public class VnTimeParser {
 			if (cmString.equals( "giờ" ) || cmString.equals( "chiều" )){
 				continue;
 			}
-			if (cmString.endsWith( "giờ" ) || cmString.endsWith( "phút" )){
+			if (cmString.endsWith( "giờ" ) || cmString.endsWith( "phút" ) || 
+					cmString.endsWith( "trưa" ) || cmString.endsWith( "chiều" ) || cmString.endsWith( "tối" )){
 				return parser3( textInput.replace( cmString, cmString + " hôm nay" ), referenceDate );
 			}
 			
@@ -186,19 +188,19 @@ public class VnTimeParser {
 					
 				}
 			}
-//			if (!range.contains("IN")) {
-//				try {
-//					range = ((TimeExpression) cm
-//							.get(TimeExpression.Annotation.class))
-//							.getTemporal().getRange().toString();
-//					System.out.println("range 2: " + range);
-//				} catch (Exception exception) {
-//					range = ((TimeExpression) cm
-//							.get(TimeExpression.Annotation.class))
-//							.getTemporal().toString();
-//					// exception.printStackTrace();
-//				}
-//			}
+			if (itmp > 0 && Character.isLetter(range.charAt(range.length()-1)) && !range.contains("IN")) {
+				try {
+					range = ((TimeExpression) cm
+							.get(TimeExpression.Annotation.class))
+							.getTemporal().getRange().toString();
+					System.out.println("range 2: " + range);
+				} catch (Exception exception) {
+					range = ((TimeExpression) cm
+							.get(TimeExpression.Annotation.class))
+							.getTemporal().toString();
+					// exception.printStackTrace();
+				}
+			}
 			TimeRange timeRange = RangeParser.parser(range);
 			System.out.println("timeRange: " + timeRange.toString());
 			timeRange.setExpression(cm.toString());

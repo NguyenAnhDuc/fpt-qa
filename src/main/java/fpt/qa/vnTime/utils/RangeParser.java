@@ -20,6 +20,13 @@ public class RangeParser{
 
 	public static TimeRange parser( String timeString ) throws ParseException {
 		TimeRange timeRange = new TimeRange();
+		boolean plusOneDay = false;
+		
+		// Handle case like 9 giờ ngày mai, 9 giờ tối mai
+		if (timeString.contains("NEXT") && timeString.contains("INTERSECT")){
+			plusOneDay = true;
+		}
+		
 		System.out.println( "timeString: " + timeString );
 		//System.out.println( timeString );
 		try{
@@ -41,15 +48,15 @@ public class RangeParser{
 			System.out.println( "!!!!!!" + list.get( 0 ) );
 //			System.out.println( "~~~~~~" + list.get( 1 ) );
 			if( list.size() >= 2 ){
-				timeRange.setfDate( list.get( 0 ) );
-				timeRange.setsDate( list.get( 1 ) );
+				timeRange.setfDate( list.get( 0 ), plusOneDay );
+				timeRange.setsDate( list.get( 1 ), plusOneDay );
 			} else if( list.size() == 1 ){
-				timeRange.setfDate( list.get( 0 ) );
-				timeRange.setsDate( list.get( 0 ) );
+				timeRange.setfDate( list.get( 0 ), plusOneDay );
+				timeRange.setsDate( list.get( 0 ), plusOneDay );
 			}else{
 
 			}
-
+			
 		}catch ( Exception e ){
 			//System.err.println( e.toString() );
 			e.printStackTrace();

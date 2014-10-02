@@ -36,8 +36,29 @@ public class AbsoluteTimeTest{
 //		
 //		testFile( "/home/ngan/Work/AHongPhuong/Intent_detection/data/tv/AIML_tvd_questions.txt",
 //				"/home/ngan/Work/AHongPhuong/Intent_detection/data/tv/AIML_tvd_questions.out", absoluteTime );
-		TimeResult timeResult = absoluteTime.getAbsoluteTime( " 9 giờ tối mai có chương trình gì" );
+		
+		
+		TimeResult timeResult = absoluteTime.getAbsoluteTime( "sáng mai chiếu chương trình gì" );
 		System.out.println( timeResult.getBeginTime() );
 		System.out.println( timeResult.getEndTime() );
+		
+//		System.out.println();
+//		System.out.println();
+//		timeResult = absoluteTime.getAbsoluteTime( " 9 giờ 30 tối mai có chương trình gì" );
+//		System.out.println( timeResult.getBeginTime() );
+//		System.out.println( timeResult.getEndTime() );
+//		
+//		System.out.println();
+//		System.out.println();
+//		timeResult = absoluteTime.getAbsoluteTime( "mai có chương trình gì" );
+//		System.out.println( timeResult.getBeginTime() );
+//		System.out.println( timeResult.getEndTime() );
+//		
+//		
+//		System.out.println();
+//		System.out.println();
+//		timeResult = absoluteTime.getAbsoluteTime( "9 giờ ngày mai có chương trình gì" );
+//		System.out.println( timeResult.getBeginTime() );
+//		System.out.println( timeResult.getEndTime() );
 	}
 }

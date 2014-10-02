@@ -9,6 +9,7 @@ import java.util.Date;
 public class TimeRange implements Serializable{
 
 	static final long HAFL_DAY = 12 * 60 * 60 * 1000;
+	static final long ONE_DAY = 2 * HAFL_DAY;
 	
 	private String expression;
 	private Date fDate;
@@ -128,16 +129,24 @@ public class TimeRange implements Serializable{
 		return fDate;
 	}
 
-	public void setfDate( String fDate ) throws ParseException {
-		this.fDate = parsefDate( fDate );
+	public void setfDate( String fDate, boolean plusOneDay) throws ParseException {
+		Date parsedDate = parsefDate( fDate );
+		if (parsedDate != null && plusOneDay){
+			parsedDate = new Date(parsedDate.getTime() + ONE_DAY);
+		}
+		this.fDate = parsedDate;
 	}
 
 	public Date getsDate() {
 		return sDate;
 	}
 
-	public void setsDate( String sDate ) throws ParseException {
-		this.sDate = parsesDate( sDate );
+	public void setsDate( String sDate, boolean plusOneDay ) throws ParseException {
+		Date parsedDate = parsesDate( sDate );
+		if (parsedDate != null && plusOneDay){
+			parsedDate = new Date(parsedDate.getTime() + ONE_DAY);
+		}
+		this.sDate = parsedDate;
 	}
 
 	@Override
