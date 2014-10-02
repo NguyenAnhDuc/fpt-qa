@@ -55,7 +55,7 @@ public class ProcessHelper{
 			MovieTicketService movieTicketService, CinemaService cinemaService, LogService logService ) {
 		RubyAnswer rubyAnswerDiacritic = getAnswer(true, question, movieFlyService, movieTicketService, cinemaService, logService);
 		RubyAnswer rubyAnswerNoneDiacritic = getAnswer(false, question, movieFlyService, movieTicketService, cinemaService, logService);
-		if( rubyAnswerNoneDiacritic.isSuccessful() ){
+		if( rubyAnswerNoneDiacritic.isSuccessful() && !rubyAnswerDiacritic.isSuccessful() ){
 			return rubyAnswerNoneDiacritic;
 		}
 		return rubyAnswerDiacritic;
