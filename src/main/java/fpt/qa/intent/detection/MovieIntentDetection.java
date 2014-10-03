@@ -50,7 +50,7 @@ public class MovieIntentDetection {
         }
 
         if (tunedSent.contains("sản xuất năm nào") || tunedSent.contains("sản xuất năm bao nhiêu") ||
-        		tunedSent.contains("sản xuất năm")) {
+        		tunedSent.contains("sản xuất năm") || tunedSent.contains("năm sản xuất")) {
             return IntentConstants.MOV_YEAR;
         }
 
@@ -161,7 +161,7 @@ public class MovieIntentDetection {
             	idx2 = tunedSent.indexOf("rap");
             }
             if (idx2 > 0 && idx1 < 0) {
-            	if (tunedSent.contains( "rạp có gì" ))
+            	if (tunedSent.contains( "rạp" ) && tunedSent.contains("có gì"))
             		return IntentConstants.MOV_TITLE;
                 return IntentConstants.CIN_NAME;
             }
@@ -262,7 +262,7 @@ public class MovieIntentDetection {
 //            Logger.getLogger(MovieIntentDetection.class.getName()).log(Level.SEVERE, null, ex);
 //        }
         
-        String sent1 = "rạp lotte chiếu phim the november man lúc mấy giờ";
+        String sent1 = "rạp quốc gia hôm nay có gì";
         String sent2 = "phim tâm lý kinh dị nào đang chiếu rạp";
         String sent3 = "phim tâm lý tình cảm nào đang chiếu rạp";
         String sent4 = "rạp vincom bà triệu tối nay chiếu the maze runner lúc mấy giờ?";
@@ -271,19 +271,19 @@ public class MovieIntentDetection {
         System.out.println(getTunedSent(sent1));
         System.out.println(getIntent(sent1));
         
-        System.out.println(getTunedSent(sent2));
-        System.out.println(getIntent(sent2));
-        
-        System.out.println(getTunedSent(sent3));
-        System.out.println(getIntent(sent3));
-        
-        System.out.println(getTunedSent(sent4));
-        System.out.println(getIntent(sent4));
-        
-        System.out.println(getTunedSent(sent5));
-        System.out.println(getIntent(sent5));
-        
-        System.out.println(getTunedSent( "có phim hài nào hay" ));
-        System.out.println(getIntent( "có phim hài nào hay" ));
+//        System.out.println(getTunedSent(sent2));
+//        System.out.println(getIntent(sent2));
+//        
+//        System.out.println(getTunedSent(sent3));
+//        System.out.println(getIntent(sent3));
+//        
+//        System.out.println(getTunedSent(sent4));
+//        System.out.println(getIntent(sent4));
+//        
+//        System.out.println(getTunedSent(sent5));
+//        System.out.println(getIntent(sent5));
+//        
+//        System.out.println(getTunedSent( "có phim hài nào hay" ));
+//        System.out.println(getIntent( "có phim hài nào hay" ));
     }
 }

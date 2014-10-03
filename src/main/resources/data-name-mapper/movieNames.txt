@@ -8187,7 +8187,40 @@ mov_title	Zebraman 2 Attack On Zebra City; Zebraman 2: Tấn Công Thành Phố 
 mov_title	Zombieland The Series
 mov_title	Donot Cry; Park Bom
 mov_title	một triệu kiểu chết miền viễn tây
-
+mov_title	Lupin III; Lupin the 3rd; Siêu Đạo Chích Lupin Đệ Tam
+mov_title	Hiệp Sĩ Mù
+mov_title	As Above, As Below; Hầm mộ ma quái
+mov_title	Legends of OZ: Dorothy's Return; Legends of OZ; Huyền Thoại Xứ Oz; Huyền Thoại Xứ Oz: Dorothy trở lại
+mov_title	Good People; Vận Đen
+mov_title	The Pirates; Hải Tặc
+mov_title	Are you here; Ngố Làm Triệu Phú
+mov_title	The Damned; Đồi Quỷ Ám
+mov_title	Outpost 37; Chiến Tuyến 37
+mov_title	Before I Go to Sleep; Tội Ác Ngủ Say
+mov_title	The Maze Runner; Giải Mã Mê Cung
+mov_title	The Boxtrolls; Hội Quái Hộp
+mov_title	Closed door Village; Ngôi làng tử khí
+mov_title	The November Man; Sát Thủ Tháng 11
+mov_title	The Four 3; Tứ Đại Danh Bổ 3
+mov_title	Scandal 2
+mov_title	Đại thủy chiến
+mov_title	Viy; Vùng đất quỷ
+mov_title	The Equalizer;Equalizer; Thiện Ác Đối Đầu
+mov_title	Outcast; Mối thù hoàng tộc
+mov_title	Bước khẽ đến hạnh phúc
+mov_title	Holiday; Nghỉ phép
+mov_title	The Good Lie; Lời Nói Dối Ngọt Ngào
+mov_title	Annabelle
+mov_title	A Walk Among the Tombstones; Lối Đi Giữa Rừng Bia Mộ
+mov_title	The Giver; Người Truyền Ký Ức
+mov_title	Dracula Untold; Ác Quỷ Dracula; Ác Quỷ Dracula: Huyền Thoại Chưa Kể
+mov_title	Decoding Annie Parker; Không Là Chuyện Nhỏ
+mov_title	Lạc Giới
+mov_title	Committed; Duyên Vội
+mov_title	Automata; Số Hóa
+mov_title	Call Me Bad Girl; Gái Hư
+mov_title	One Direction: Where We Are Concert Film; One Direction; Where We Are Concert Film
+mov_title	Black & White: The Dawn of Justice; Black & White; The Dawn of Justice; Anh Hùng Du Côn 
 
 
 cin_name	CGV Vincom City Towers; CGV Vincom City Tower, CGV Vincom City, CGV Vincom Tower, CGV Vincom Towers, CGV Vincom, Megastar Vincom City Towers, Megastar Vincom City Tower, Megastar Vincom City, Megastar Vincom Tower, Megastar Vincom Towers, Megastar Vincom, Vincom City Tower, Vincom City Towers, Vincom Tower, Vincom Towers, Vincom City, vincom bà triệu
