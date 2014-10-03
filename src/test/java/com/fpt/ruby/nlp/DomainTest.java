@@ -13,13 +13,24 @@ import fpt.qa.domainclassifier.DomainClassifier;
 public class DomainTest {
 	DomainClassifier domainClassifier;
 	@Test
-	public void testDomain(){
-		
+	public void testDomainMovie(){
 		String dir = (new IOHelp()).getClass().getClassLoader().getResource("").getPath();
 		domainClassifier = new DomainClassifier( dir );
-		List<String> questions = IOHelp.readFileToList(dir  + "/TestDomainData.txt");
-		for (String question : questions){
-			Assert.assertEquals("Movie Domain Expected", "movie", domainClassifier.getDomain(question));
-		}
+		List<String> questions = IOHelp.readFileToList(dir  + "/TestDomainData_Movie.txt");
+		for (String question : questions)
+			if (!question.isEmpty()){
+				Assert.assertEquals("Movie Domain Expected", "movie", domainClassifier.getDomain(question));
+			}
+	}
+	
+	@Test
+	public void testDomainTV(){
+		String dir = (new IOHelp()).getClass().getClassLoader().getResource("").getPath();
+		domainClassifier = new DomainClassifier( dir );
+		List<String> questions = IOHelp.readFileToList(dir  + "/TestDomainData_TV.txt");
+		for (String question : questions)
+			if (!question.isEmpty()){
+			Assert.assertEquals("TV Domain Expected", "tv", domainClassifier.getDomain(question));
+			}
 	}
 }
