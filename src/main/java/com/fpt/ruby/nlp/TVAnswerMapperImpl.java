@@ -5,11 +5,13 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 
 import com.fpt.ruby.helper.RedisHelper;
 import com.fpt.ruby.model.RubyAnswer;
 import com.fpt.ruby.model.TVProgram;
+import com.fpt.ruby.model.TimeExtract;
 import com.fpt.ruby.service.TVProgramService;
 
 import fpt.qa.intent.detection.TVIntentDetection;
@@ -60,8 +62,22 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		rubyAnswer.setMovieTitle(mod.getProg_title() + "\n" + mod.getStart() + "\n" + mod.getEnd());
 		System.out.println("TV channel: " + mod.getChannel());
 		System.out.println("TV prog title: " + mod.getProg_title());
+		
+		// get Time condition
+		TimeExtract timeExtract = NlpHelper.getTimeCondition( question );
+		Date start = timeExtract.getBeforeDate();
+		Date end = timeExtract.getAfterDate();
+		
+		if (question.contains( "đang" ) && !question.contains( "đang làm gì" ) ||
+				question.contains( "bây giờ" ) || question.contains( "hiện tại" )){
+			start = new Date();
+			end = start;
+		}
+		mod.setStart(start);
+		mod.setEnd(end);
 		System.out.println("TV query start time: " + mod.getStart());
 		System.out.println("TV query end time: " + mod.getEnd());
+		// end time processing
 		
 		List< TVProgram > progs = tps.getList( mod, question );
 

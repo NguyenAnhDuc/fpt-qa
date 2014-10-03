@@ -71,16 +71,6 @@ public class TVModifiers{
 				continue;
 			}
 		}
-		if (question.contains( "đang" ) && !question.contains( "đang làm gì" ) ||
-				question.contains( "bây giờ" ) || question.contains( "hiện tại" )){
-			mod.setStart( new Date() );
-			mod.setEnd( mod.getStart() );
-			return mod;
-		}
-		
-		TimeResult time = timeParser.getAbsoluteTime( question );
-		mod.setStart( time.getBeginTime() );
-		mod.setEnd( time.getEndTime() );
 		
 		return mod;
 	}
