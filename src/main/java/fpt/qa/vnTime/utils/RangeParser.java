@@ -27,8 +27,6 @@ public class RangeParser{
 			plusOneDay = true;
 		}
 		
-		System.out.println( "timeString: " + timeString );
-		//System.out.println( timeString );
 		try{
 			List< String > list = new ArrayList< String >();
 			Pattern pattern = Pattern.compile( IConstants.DTIME_REGEX );
@@ -46,7 +44,6 @@ public class RangeParser{
 			}
 			System.out.println("list size: " + list.size());
 			System.out.println( "!!!!!!" + list.get( 0 ) );
-//			System.out.println( "~~~~~~" + list.get( 1 ) );
 			if( list.size() >= 2 ){
 				timeRange.setfDate( list.get( 0 ), plusOneDay );
 				timeRange.setsDate( list.get( 1 ), plusOneDay );
