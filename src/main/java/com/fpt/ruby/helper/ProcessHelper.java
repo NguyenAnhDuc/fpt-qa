@@ -56,8 +56,10 @@ public class ProcessHelper{
 		RubyAnswer rubyAnswerDiacritic = getAnswer(true, question, movieFlyService, movieTicketService, cinemaService, logService);
 		RubyAnswer rubyAnswerNoneDiacritic = getAnswer(false, question, movieFlyService, movieTicketService, cinemaService, logService);
 		if( rubyAnswerNoneDiacritic.isSuccessful() && !rubyAnswerDiacritic.isSuccessful() ){
+			System.out.println("None Diacritic ANSWER");
 			return rubyAnswerNoneDiacritic;
 		}
+		System.out.println("Diacritic ANSWER");
 		return rubyAnswerDiacritic;
 	}
 

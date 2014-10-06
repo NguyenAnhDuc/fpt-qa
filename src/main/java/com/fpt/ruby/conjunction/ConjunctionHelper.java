@@ -44,6 +44,7 @@ public class ConjunctionHelper {
 	}
 	
 	public MovieTicket getMovieTicket(String question){
+		System.err.println("Conjunction Helper: " + question);
 		List<Pair<String, String>> conjunctions = getConjunction(question);
 		MovieTicket movieTicket = new MovieTicket();
 		for (Pair<String, String> conjunction : conjunctions ){

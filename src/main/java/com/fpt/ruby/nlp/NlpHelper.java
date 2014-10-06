@@ -60,6 +60,7 @@ public class NlpHelper {
 			TimeExtract timeExtract = new TimeExtract();
 			timeExtract.setBeforeDate(timeResult.getBeginTime());
 			timeExtract.setAfterDate(timeResult.getEndTime());
+			System.err.println("Time Extract: " + timeResult.getBeginTime() + " | " + timeResult.getEndTime());
 			return timeExtract;
 		}
 		catch (Exception ex){
