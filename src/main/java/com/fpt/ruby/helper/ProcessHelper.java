@@ -100,7 +100,7 @@ public class ProcessHelper{
 						movieFlies = new ArrayList< MovieFly >();
 						MovieFly movieFly = movieFlyService.searchOnImdbByTitle( movieTitle );
 						if( movieFly != null ){
-							movieFlyService.save( movieFly );
+							movieFlyService.insert( movieFly );
 							movieFlies.add( movieFly );
 						}
 					}
@@ -129,7 +129,7 @@ public class ProcessHelper{
 			}else{
 				System.out.println( "Feature .." );
 				MovieTicket matchMovieTicket = new MovieTicket();
-				matchMovieTicket.setCinema( "BHD Star Cineplex Icon 68" );
+				matchMovieTicket.setCinema( "CGV Vincom City Towers" );
 				Date today = new Date();
 				System.out.println( "afterdate: " + today );
 
