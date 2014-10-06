@@ -15,18 +15,36 @@ Movie:
  + đạo diễn phim
  + diễn viên trong phim
  + imdb rating
- + khung giờ chiếu của một phim tại 1 rạp
- + có thể hỏi về
-	* tình trạng vé phim
-	* giá vé xem phim tại 1 rạp
+ + năm sản xuất
+ + nước sản xuất
+ + ngôn ngữ sử dụng
+ + thời lượng phim
+ + ngày công chiếu 
+ + nội dung phim có phù hợp với trẻ em không
+	
 
 - Hỏi về rạp chiếu phim
  + những phim đang được chiếu rạp
- + giờ mở cửa/đóng cửa
- + khung giờ chiếu
- + địa chỉ, khoảng cách so với 1 địa điểm, đường đi đến 1 rạp chiếu phim
- + không gian, chất lượng phục vụ
+ + rạp có chiếu một phim (vào một khoảng thời gian)
+ + khung giờ chiếu phim tại 1 rạp
+ + địa chỉ
  
+ Các câu hỏi kết hợp:
+ phim hài nào đang chiếu ngoài rạp
+ phim mỹ nào đang chiếu ngoài rạp
+ phim của đạo diễn A đang chiếu ngoài rạp
+ phim có diễn viên B đang chiếu ngoài rạp
+ 
+
+ 
+ 
+ có thể hỏi về:
+ + giờ mở cửa/đóng cửa
+ + không gian, chất lượng phục vụ
+ + khoảng cách so với 1 địa điểm, đường đi đến 1 rạp chiếu phim
+ + số điện thoại liên lạc của 1 rạp
+ * tình trạng vé phim
+ * giá vé xem phim tại 1 rạp
  
  TV:
  - Chương trình X phát sóng vào khung giờ nào
