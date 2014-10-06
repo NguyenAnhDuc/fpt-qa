@@ -5,12 +5,14 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 
 import com.fpt.ruby.helper.RedisHelper;
 import com.fpt.ruby.model.QueryParamater;
 import com.fpt.ruby.model.RubyAnswer;
 import com.fpt.ruby.model.TVProgram;
+import com.fpt.ruby.model.TimeExtract;
 import com.fpt.ruby.service.TVProgramService;
 
 import fpt.qa.intent.detection.TVIntentDetection;
@@ -57,9 +59,23 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		tmp += "\t" + question.replaceAll("(\\d+)(h)", "$1 giờ ").replaceAll( "\\s+", " " ) + "\n";
 		tmp += "\t" + mod + "\n";
 		
+		rubyAnswer.setQuestionType(mod.getChannel());
 		rubyAnswer.setMovieTitle(mod.getProg_title() + "\n" + mod.getStart() + "\n" + mod.getEnd());
 		System.out.println("TV channel: " + mod.getChannel());
 		System.out.println("TV prog title: " + mod.getProg_title());
+		
+		// get Time condition
+		TimeExtract timeExtract = NlpHelper.getTimeCondition( question );
+		Date start = timeExtract.getBeforeDate();
+		Date end = timeExtract.getAfterDate();
+		
+		if (question.contains( "đang" ) && !question.contains( "đang làm gì" ) ||
+				question.contains( "bây giờ" ) || question.contains( "hiện tại" )){
+			start = new Date();
+			end = start;
+		}
+		mod.setStart(start);
+		mod.setEnd(end);
 		QueryParamater queryParamater = new QueryParamater();
 		if (mod.getChannel() != null) queryParamater.setTvChannel("TV channel: " + mod.getChannel());
 		if (mod.getProg_title() != null) queryParamater.setTvProTitle("TV Program Title: " + mod.getProg_title());
@@ -68,6 +84,8 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		System.out.println("TV query end time: " + mod.getEnd());
 		rubyAnswer.setBeginTime(mod.getStart());
 		rubyAnswer.setEndTime(mod.getEnd());
+		// end time processing
+		
 		List< TVProgram > progs = tps.getList( mod, question );
 
 		if (mod.getChannel() == null && mod.getProg_title() == null){
@@ -179,7 +197,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 			limit = progs.size();
 		}
 		for (int i = 0; i < limit; i++){
-			channel += progs.get( i ).getTitle() + "\n";
+			channel += progs.get( i ).getChannel() + "\n";
 		}
 		
 		return channel.substring( 0, channel.length() - 2 );
