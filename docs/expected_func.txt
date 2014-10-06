@@ -32,6 +32,8 @@ Movie:
  Các câu hỏi kết hợp:
  phim hài nào đang chiếu ngoài rạp
  phim mỹ nào đang chiếu ngoài rạp
+ phim của đạo diễn A đang chiếu ngoài rạp
+ phim có diễn viên B đang chiếu ngoài rạp
  
 
  
