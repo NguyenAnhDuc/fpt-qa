@@ -58,7 +58,7 @@ Movie:
  - đang có chương trình gì			
  - chương trình X hết lúc mấy giờ										ANSWER: Không đúng
  - lịch chiếu tất cả chương trình trên kênh Y hôm nay
- - mấy giờ có chương trình X trên kênh Y								ANSWER: Không đúng
+ - mấy giờ có chương trình X trên kênh Y								ANSWER: Không đúng   FIXED
 
  
  
@@ -69,7 +69,7 @@ Movie:
  - PHIM 4 giờ đến 6 giờ trên kênh Y							SAI TIME
  - hôm nay/9 giờ tối kênh Y có chiếu chương trình X không	SAI INTENT	
  - hôm nay có chương trình X không   						SAI INTENT
- - hôm nay chương trình X chiếu lúc mấy giờ					ANSWER: Không đúng
+ - hôm nay chương trình X chiếu lúc mấy giờ					ANSWER: Không đúng		FIXED
  - chương trình x có trên kênh Y không						SAI INTENT
  - chương trình x có trên kênh nào?							NO ANSWER
  - tối nay kênh Y chiếu PHIM gì

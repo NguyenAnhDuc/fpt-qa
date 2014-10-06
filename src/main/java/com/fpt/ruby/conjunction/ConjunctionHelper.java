@@ -43,6 +43,15 @@ public class ConjunctionHelper {
 		return null;
 	}
 	
+	public String getChannelName(String text){
+		List<Pair<String, String>> conjunctions = getConjunction(text);
+		for (Pair<String, String> conjunction : conjunctions ){
+			if (conjunction.second.equals("chanel_title"))
+				return conjunction.first.replace("{", "").replace("}", "");
+		}
+		return null;
+	}
+	
 	public MovieTicket getMovieTicket(String question){
 		System.err.println("Conjunction Helper: " + question);
 		List<Pair<String, String>> conjunctions = getConjunction(question);

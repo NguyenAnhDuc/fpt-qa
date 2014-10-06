@@ -148,7 +148,11 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 			return rubyAnswer;
 		}
 		if (intent.equals( "DAT" )){
-			rubyAnswer.setAnswer( getTime( progs ) + "\n\n\n" );
+			if (progs.size() > 0){
+				rubyAnswer.setAnswer( getTime( progs ) + "\n\n\n" );
+				return rubyAnswer;
+			}
+			rubyAnswer.setAnswer(mod.getChannel() + " không chiếu " + mod.getProg_title());
 			return rubyAnswer;
 		}
 		

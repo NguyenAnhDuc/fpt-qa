@@ -15,10 +15,12 @@ import org.springframework.stereotype.Service;
 
 import com.fpt.ruby.config.SpringMongoConfig;
 import com.fpt.ruby.model.MovieTicket;
+import com.fpt.ruby.model.TVProgram;
 
 
 @Service
 public class MovieTicketService {
+	private static long ONE_WEEK = 7 * 24 * 60 * 60 * 1000;
 	private static final Logger logger = LoggerFactory.getLogger(MovieTicketService.class);
 	private final String MT_MOVIE = "movie";
 	private final String MT_CINEMA = "cinema";
@@ -38,6 +40,15 @@ public class MovieTicketService {
 			return false;
 		}
 		
+	}
+	
+	public void cleanOldData(){
+		Date now = new Date(new Date().getTime() - ONE_WEEK);
+		Query query = new Query(Criteria.where("start_date" ).lt( now ));
+		List<MovieTicket> movieTickets = mongoOperations.find(query, MovieTicket.class);
+		for (MovieTicket movieTicket : movieTickets){
+			mongoOperations.remove(movieTicket);
+		}
 	}
 	
 	public MovieTicket findById(String ticketId){

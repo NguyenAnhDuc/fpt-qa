@@ -30,6 +30,16 @@ public class TVProgramService {
 		this.mongoOperations = (MongoOperations) ctx.getBean("mongoTemplate");
 	}
 	
+	public void cleanOldData(){
+		Date now = new Date(new Date().getTime() - ONE_WEEK);
+		Query query = new Query(Criteria.where("start_date" ).lt( now ));
+		List<TVProgram> tvPrograms = mongoOperations.find(query, TVProgram.class);
+		for (TVProgram tvProgram : tvPrograms){
+			System.out.println("TV Program: " + tvProgram.getChannel() + " | " + tvProgram.getTitle() +  " | " + tvProgram.getStart_date());
+			mongoOperations.remove(tvProgram);
+		}
+	}
+	
 	public List< TVProgram > getList(TVModifiers mod, String question){
 		String channel = mod.getChannel();
 		String title = mod.getProg_title();
@@ -213,6 +223,7 @@ public class TVProgramService {
 	
 	public static void main(String[] args) throws Exception {
 		TVProgramService tvService = new TVProgramService();
+		tvService.cleanOldData();
 //		List< TVProgram > all = tvService.findAll();
 //		
 //		// Export db section
