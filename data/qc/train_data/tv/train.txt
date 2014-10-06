@@ -1,0 +1,591 @@
+DAT	Chương trình Ai là triệu phú phát sóng vào khung giờ nào
+TTL	tối nay có trận nào không
+TTL	tối nay có chương trình nào hay
+TTL	tối nay có chương trình gì hay
+TTL	tối nay có chương trình gì
+TTL	tối nay có chương trình nào
+TTL	tối nay có gì hay
+TTL	tối nay có gì hay không
+CHN	Ai là triệu phú được phát trên kênh nào
+CHN	ai là triệu phú phát trên kênh nào
+CHN	ai là triệu phú phát sóng trên kênh nào
+CHN	ai là triệu phú được chiếu trên kênh nào
+CHN	ai là triệu phú chiếu trên kênh nào
+CHN	Ai là triệu phú được phát trên kênh mấy
+CHN	ai là triệu phú phát trên kênh mấy
+CHN	ai là triệu phú phát sóng trên kênh mấy
+CHN	ai là triệu phú được chiếu trên kênh mấy
+CHN	ai là triệu phú chiếu trên kênh mấy
+DAT	Chương trình Ai là triệu phú chiếu vào khung giờ nào
+CHN	Chương trình Ai là triệu phú chiếu trên kênh nào
+CHN	Chương trình Ai là triệu phú chiếu trên kênh mấy
+DAT	Ai là triệu phú phát sóng vào khung giờ nào
+DAT	Ai là triệu phú được phát trên kênh VTV3 lúc mấy giờ
+DAT	Ai là triệu phú được phát trên kênh VTV3 lúc nào
+DAT	Ai là triệu phú chiếu trên VTV3 khung giờ nào
+DAT	Ai là triệu phú chiếu trên kênh VTV3 lúc mấy giờ
+DAT	ai là triệu phú chiếu trên vtv3 lúc mấy giờ
+DAT	ai là triệu phú chiếu trên vtv3 lúc nào
+DAT	ai là triệu phú chiếu trên kênh này lúc mấy giờ
+DAT	ai là triệu phú chiếu trên kênh này lúc nào
+DAT	ai là triệu phú chiếu trên kênh này khi nào
+DAT	khi nào có ai là triệu phú
+DAT	khi nào chiếu ai là triệu phú
+DAT	ai là triệu phú chiếu lúc nào
+DAT	ai là triệu phú phát sóng lúc nào
+CHN	Phim Bánh đúc có xương phát sóng trên kênh nào
+CHN	phim bánh đúc có xương chiếu trên kênh nào
+CHN	phải mở kênh nào để xem được bánh đúc có xương
+CHN	bánh đúc có xương đang chiếu ở kênh nào
+CHN	bánh đúc có xương đang chiếu trên kênh nào
+DAT	Phim Bánh đúc có xương phát sóng vào khung giờ nào
+CHN	Phim Bánh đúc có xương được chiếu trên kênh nào
+DAT	phim bánh đúc có xương chiếu lúc mấy giờ
+DAT	phim bánh đúc có xương chiếu lúc nào
+DAT	phim bánh đúc có xương chiếu hôm nào
+DAT	khi nào chiếu phim bánh đúc có xương
+DAT	phim bánh đúc có xương được chiếu lúc nào
+DAT	phim bánh đúc có xương được phát sóng lúc nào
+DAT	phim bánh đúc có xương phát sóng lúc nào
+DAT	phim bánh đúc có xương phát sóng lúc mấy giờ
+DAT	phim bánh đúc có xương phát sóng hôm nào
+DAT	hôm nào có phim bánh đúc có xương
+DAT	phim bánh đúc có xương được lên sóng lúc nào
+DAT	phim bánh đúc có xương lên sóng lúc mấy giờ
+DAT	phim bánh đúc có xương lên sóng lúc nào
+DAT	phim bánh đúc có xương lên sóng hôm nào
+DAT	khi nào phim bánh đúc có xương lên sóng
+DAT	phim "Bánh đúc có xương" phát trên VTV1 lúc mấy giờ
+DAT	bánh đúc có xương chiếu trên VTV1 vào những ngày nào trong tuần
+DAT	phim bánh đúc có xương phát sóng trên kênh VTV1 lúc nào
+CHN	Bánh đúc có xương phát sóng trên kênh nào
+CHN	bánh đúc có xương chiếu trên kênh nào
+CHN	phải mở kênh nào để xem được phim bánh đúc có xương
+CHN	phim bánh đúc có xương đang chiếu ở kênh nào
+CHN	phim bánh đúc có xương đang chiếu trên kênh nào
+DAT	Bánh đúc có xương phát sóng vào khung giờ nào
+CHN	Bánh đúc có xương được chiếu trên kênh nào
+DAT	bánh đúc có xương chiếu lúc mấy giờ
+DAT	bánh đúc có xương chiếu lúc nào
+DAT	phim đúc có xương chiếu hôm nào
+DAT	khi nào chiếu bánh đúc có xương
+DAT	bánh đúc có xương được chiếu lúc nào
+DAT	bánh đúc có xương được phát sóng lúc nào
+DAT	bánh đúc có xương phát sóng lúc nào
+DAT	bánh đúc có xương phát sóng lúc mấy giờ
+DAT	bánh đúc có xương phát sóng hôm nào
+DAT	hôm nào có bánh đúc có xương
+DAT	bánh đúc có xương được lên sóng lúc nào
+DAT	bánh đúc có xương lên sóng lúc mấy giờ
+DAT	bánh đúc có xương lên sóng lúc nào
+DAT	bánh đúc có xương lên sóng hôm nào
+DAT	khi nào bánh đúc có xương lên sóng
+DAT	"Bánh đúc có xương" phát trên VTV1 lúc mấy giờ
+DAT	phim bánh đúc có xương chiếu trên VTV1 vào những ngày nào trong tuần
+DAT	bánh đúc có xương phát sóng trên kênh VTV1 lúc nào
+DAT	Phim Bão qua làng chiếu vào giờ nào
+DAT	Phim Bão qua làng chiếu vào lúc nào
+CHN	Phim Bão qua làng chiếu ở đâu
+CHN	phim bão qua làng chiếu trên kênh nào
+CHN	phim bão qua làng chiếu ở kênh nào
+CHN	phim bão qua làng đang được chiếu ở đâu
+CHN	phim bão qua làng đang được chiếu trên kênh nào
+CHN	phim bão qua làng đang được chiếu ở kênh nào
+UDF	Phim bão qua làng chiếu đến tập bao nhiêu
+UDF	Phim bão qua làng chiếu đến tập bao nhiêu rồi
+UDF	bão qua làng đang chiếu đến tập bao nhiêu
+UDF	bão qua làng đang chiếu đến tập bao nhiêu rồi
+UDF	Ngày 23/9 phim bão qua làng chiếu đến tập bao nhiêu rồi
+UDF	thứ năm tới có tập bao nhiêu của bão qua làng
+UDF	thứ năm tới bão qua làng chiếu tới tập bao nhiêu
+UDF	thứ năm tới bão qua làng chiếu tới tập bao nhiêu rồi
+UDF	thứ năm tới có tập bao nhiêu của phim bão qua làng
+UDF	thứ năm tới phim bão qua làng chiếu tới tập bao nhiêu
+UDF	thứ năm tới phim bão qua làng chiếu tới tập bao nhiêu rồi
+UDF	23/9 phim bão qua làng đang chiếu tập bao nhiêu
+POL	Giải bóng đá Ngoại hạng Anh có trên kênh VTV3 không
+POL	vtv3 có chiếu giải ngoại hạng anh không
+POL	kênh vtv3 có chiếu giải ngoại hạng anh không
+CHN	giải bóng đá ngoại hạng anh chiếu trên kênh nào
+POL	bóng đá ngoại hạng anh có chiếu trên vtv3 không
+POL	bóng đá hạng Anh có trên kênh VTV3 không
+POL	kênh vtv3 có chiếu bóng đá ngoại hạng anh không
+DAT	Hôm nay trên kênh VTC có chiếu giải Ngoại hạng Anh không
+DAT	hôm nay có trận nào trong giải ngoại hạng anh không
+DAT	vtc có chiếu giải ngoại hạng anh hôm nay không
+DAT	hôm nay vtc có chiếu giải ngoại hạng anh không
+DAT	vtc hôm nay có chiếu giải ngoại hạng anh không
+DAT	Chương trình Quà tặng cuộc sống được phát sóng lúc mấy giờ
+DAT	Chương trình Quà tặng cuộc sống được chiếu lúc mấy giờ
+DAT	Quà tặng cuộc sống được phát sóng lúc mấy giờ
+DAT	Quà tặng cuộc sống được chiếu lúc mấy giờ
+DAT	Chương trình Quà tặng cuộc sống được phát sóng lúc nào
+DAT	Chương trình Quà tặng cuộc sống được chiếu lúc nào
+DAT	Quà tặng cuộc sống được phát sóng lúc nào
+DAT	Quà tặng cuộc sống được chiếu lúc nào
+DAT	Chương trình Quà tặng cuộc sống được phát sóng khi nào
+DAT	Chương trình Quà tặng cuộc sống được chiếu khi nào
+DAT	Quà tặng cuộc sống được phát sóng khi nào
+DAT	Quà tặng cuộc sống được chiếu khi nào
+DAT	khi nào chương trình Quà tặng cuộc sống được phát sóng
+DAT	khi nào chương trình Quà tặng cuộc sống được chiếu
+DAT	khi nào quà tặng cuộc sống được phát sóng
+DAT	khi nào quà tặng cuộc sống được chiếu
+CHN	Quà tặng cuộc sống được chiếu trên kênh nào
+POL	Quà tặng cuộc sống chiếu trên VTV3 phải không
+UDF	Truyền hình kĩ thuật số VTC có tốt không
+TTL	vtc có nhiều chương trình không
+TTL	vtc chiếu những chương trình gì
+UDF	Chương trình gây sốt cho giới trẻ hiện nay là chương trình gì
+UDF	Chương trình gây sốt cho giới trẻ hiện nay là gì
+TTL	đang có chương trình gì hay
+TTL	có chương trình gì mới không
+UDF	chương trình truyền hình nào có số lượng người xem nhiều nhất
+UDF	chương trình truyền hình nào đang được yêu thích nhất
+UDF	chương trình truyền hình nào đang được quan tâm nhất
+UDF	chương trình truyền hình nào ăn khách nhất hiện nay
+DAT	The Voice Kid được phát sóng lúc mấy giờ
+DAT	The Voice Kid được phát sóng lúc nào
+POL	Tối nay có phát sóng The Voice Kid không
+POL	Tối nay có The Voice Kid không
+POL	Tối nay có chiếu The Voice Kid không
+TTL	9 giờ tối nay kênh VTV1 chiếu phim gì
+TTL	phim 9 giờ tối trên vtv1 tối nay là phim gì
+TTL	phim gì chiếu trên vtv1 chín giờ tối nay
+TTL	phim gì chiếu trên vtv1 lúc chín giờ tối nay
+TTL	9h tối hôm nay chiếu phim gì trên VTV1
+TTL	9h tối nay phim gì chiếu trên vtv1
+TTL	Cuối tuần này VTVCab có trận bóng nào hay
+TTL	Cuối tuần này VTVCab có trận bóng nào không
+TTL	Cuối tuần này VTVCab có trận nào không
+POL	VTVCab đang chiếu Ngoại hạng Anh phải không
+POL	VTVCab đang chiếu Ngoại hạng Anh à
+POL	VTVCab đang chiếu Ngoại hạng Anh đúng không
+POL	Chủ nhật tuần này có trận nào của MU không
+POL	Chủ nhật tuần này MU có đá không
+POL	Chủ nhật tuần này MU có trận nào không
+DAT	Chủ nhật tuần này Man U đá lúc mấy giờ
+DAT	Chủ nhật tuần này Man U đá lúc nào
+UDF	Chủ nhật tuần này MU đá với đội nào
+UDF	Chủ nhật tuần này MU gặp đội nào
+POL	Chủ nhật này có trận nào của MU không
+POL	Chủ nhật này MU có đá không
+POL	Chủ nhật này MU có trận nào không
+DAT	Chủ nhật này Man U đá lúc mấy giờ
+DAT	Chủ nhật này Man U đá lúc nào
+UDF	Chủ nhật này MU đá với đội nào
+UDF	Chủ nhật này MU gặp đội nào
+CHN	Giải bóng đá Tây Ban Nha được phát sóng trên kênh nào
+UDF	VTV3 mua bản quyền giải bóng đá Tây Ban Nha phải không
+POL	VTV3 có chiếu giải bóng đá Tây Ban Nha không
+POL	VTV3 chiếu Laliga phải không
+TTL	Chương trình gì được chiếu vào khung giờ vàng của VTV3
+TTL	Chương trình nào được chiếu vào khung giờ vàng của VTV3
+TTL	VTV3 có gì vào khung giờ vàng
+UDF	khung giờ vàng của VTV3 là mấy giờ
+DAT	Chung kết Đồ Rê Mí được chiếu bao giờ
+DAT	Chung kết Đồ Rê Mí được chiếu khi nào
+DAT	Chung kết Đồ Rê Mí được chiếu hôm nào
+DAT	Chung kết Đồ Rê Mí được phát sóng khi nào
+DAT	bao giờ có chung kết Đồ Rê Mí
+DAT	khi nào có chung kết Đồ Rê Mí
+DAT	Bao giờ có chung kết Đồ Rê Mí
+DAT	hôm nào có chung kết Đồ Rê Mí
+DAT	hôm nào chiếu chung kết Đồ Rê Mí
+DAT	Chung kết Đồ Rê Mí được VTV3 chiếu khi nào
+DAT	chung kết đồ rê mí được chiếu khi nào
+UDF	Chung kết đồ rê mí được chiếu trực tiếp phải không
+UDF	chung kết đồ rê mí có được truyền hình trực tiếp không
+DAT	khi nào chung kết đồ rê mí được truyền hình trực tiếp
+TTL	có chương trình thể thao nào bây giờ
+TTL	đang có chương trình thể thao nào
+TTL	chương trình thể thao nào đang được chiếu
+TTL	có chương trình thể thao nào đang được chiếu
+POL	tối nay có thời sự không
+CHN	kênh nào đang có thời sự
+UDF	thời sự được phát lại khi nào
+UDF	khi nào thời sự được phát lại
+UDF	thời sự được phát lại lúc nào
+UDF	mấy giờ chương trình thời sự được phát lại
+UDF	chương trình thời sự phát lại lúc mấy giờ
+POL	tối nay có chương trình thời sự không
+UDF	hết thời sự là đến chương trình gì
+UDF	hết thời sự là đến chương trình nào
+UDF	hết chương trình thời sự là đến chương trình gì
+UDF	chương trình gì chiếu sau khi hết thời sự
+UDF	chương trình nào chiếu sau khi hết thời sự
+DUR	thời lượng phát sóng của chương trình người đương thời là bao lâu
+DUR	chương trình người đương thời kéo dài bao lâu
+DUR	người đương thời kéo dài bao lâu
+DAT	ai là triệu phú hết lúc mấy giờ
+DAT	ai là triệu phú kết thúc lúc mấy giờ
+DAT	ai là triệu phú chiếu đến mấy giờ
+DAT	ai là triệu phú được chiếu đến mấy giờ
+TTL	dự báo thời tiết hôm nay
+TTL	dự báo thời tiết hôm nay thế nào
+CAL	lịch chiếu tất cả chương trình kênh sports hôm nay là gì
+CAL	lịch chiếu tất cả chương trình kênh sports hôm nay thế nào
+CAL	lịch chiếu tất cả chương trình kênh sports hôm nay như thế nào
+CAL	kênh sports hôm nay có gì
+CAL	có gì trên kênh sports hôm nay
+CAL	lịch chiếu tất cả chương trình kênh SCTVHD hôm nay là gì
+CAL	lịch chiếu tất cả chương trình kênh K+ hôm nay là gì
+CAL	lịch chiếu tất cả chương trình kênh VTC1 hôm nay là gì
+CAL	lịch chiếu tất cả chương trình kênh VTC hôm nay là gì
+TTL	kênh cinemax đang chiếu phim gì
+TTL	hôm nay kênh cinemax có phim gì
+TTL	phim 4 giờ chiều đến 6 giờ chiều trên kênh VTC11 là gì
+UDF	lịch thi đấu giải premier league
+UDF	lịch thi đấu giải premier league thế nào
+DAT	tin tức trên VTV3 lúc mấy giờ
+DAT	chương trình tin tức trên vtv3 chiếu lúc mấy giờ
+DAT	chương trình chuyện đêm muộn chiếu lúc mấy giờ
+DAT	chương trình kể chuyện đêm khuya bắt đầu lúc mấy giờ
+TTL	hbo đang chiếu gì
+TTL	hbo sắp chiếu phim gì
+TTL	kênh hbo đang chiếu phim gì
+TTL	kênh hbo chiếu phim gì vào 9h tối nay
+UDF	kênh star movies là kênh xem phim hay nhất phải không
+TTL	15h ngày mai kênh VTV3 chiếu chương trình gì
+TTL	Bây giờ đang có chương trình gì trên kênh vtv6
+TTL	Bây giờ đang có chương trình gì trên vtv6
+TTL	đang có chương trình gì trên kênh vtv6
+TTL	đang có chương trình gì trên vtv6
+TTL	vtv6 đang chiếu gì
+TTL	vtv6 đang có gì
+POL	Tối nay có trận nào của giải Ngoại hạng Anh không
+DAT	Chương trình The Voice Kid bao giờ thì kết thúc
+DAT	bao giờ hết chương trình the voice kid
+DAT	bao giờ hết the voice kid
+DAT	bao giờ the voice kid kết thúc
+DAT	Giọng hát Việt nhí bao giờ thì kết thúc
+DAT	Giọng hát Việt nhí bao giờ hết
+DAT	The Void Kid lúc nào hết
+POL	9 giờ tối nay trên kênh vtv1 có phim Bão qua làng đúng không
+POL	9 giờ tối nay trên kênh vtv1 có phim Bão qua làng không
+TTL	có chương trình thể thao nào bây giờ trên VTV3
+TTL	có chương trình thể thao nào đang chiếu trên VTV3
+TTL	có chương trình thể thao nào đang phát sóng trên VTV3
+TTL	bây giờ có chương trình thể thao nào trên vtv3
+TTL	đang có chương trình thể thao nào trên vtv3
+TTL	phim lúc 9h tối nay là gì
+TTL	phim nào chiếu vào 9 giờ tối nay
+TTL	phim trên hbo tối nay là gì
+TTL	tối nay hbo chiếu phim gì
+CAL	chương trình trên kênh discovery chiều nay
+CAL	chiều nay trên kênh discovery có gì
+CAL	có gì trên kênh discovery chiều nay
+CAL	chương trình trên kênh vtv2 tối nay
+TTL	vtv1 12 giờ trưa chiếu gì
+TTL	vtv1 12 giờ trưa có gì
+TTL	12 giờ trưa trên kênh vtv1 có gì
+TTL	12 giờ trưa trên kênh vtv1 chiếu gì
+TTL	hai mươi giờ tối nay có phim gì
+TTL	20 giờ tối nay có phim gì
+TTL	tám giờ tối nay có phim gì
+TTL	8 giờ tối nay có phim gì
+TTL	phim 8 giờ
+TTL	20 giờ có chương trình gì
+TTL	phim đang chiếu
+TTL	đang có phim gì
+TTL	đang chiếu chương trình gì
+TTL	đang có chương trình gì
+TTL	kênh cinemax đang chiếu phim gì
+TTL	kênh cinemax đang có phim gì
+TTL	Cinemax đang chiếu gì
+TTL	kênh star movies đang chiếu phim gì
+TTL	hbo đang chiếu gì
+TTL	Cinemax đang có gì
+TTL	kênh star movies đang có phim gì
+TTL	hbo đang có gì
+TTL	vtv1 đang có gì
+TTL	21 giờ tối mai trên vtv1 có gì
+CAL	lịch chiếu tất cả chương trình kênh K 
+CAL	lịch chiếu tất cả chương trình kênh VTC1
+CAL	lịch chiếu tất cả chương trình kênh VTC
+CAL	lịch chiếu tất cả chương trình kênh sports
+TTL	phim 4 giờ chiều đến 6 giờ chiều
+UDF	lịch phát sóng ngoại hạng anh
+UDF	lịch phát sóng giải ngoại hạng anh
+UDF	lịch thi đấu giải ngoại hạng anh
+CAL	vtv3 đêm mai có gì
+CAL	đêm mai vtv3 có gì
+CAL	vtv3 có gì đêm mai
+POL	tối nay có hương ngọc lan không
+POL	tối nay có chương trình thời sự không
+TTL	chương trình thời sự tối nay có gì
+UDF	chương trình thời sự tối nay nói về cái gì
+DAT	dự báo thời tiết hôm nay phát lúc mấy giờ
+DAT	mấy giờ hôm nay có dự báo thời tiết
+CAL	dự báo thời tiết hôm nay thế nào
+CAL	chương trình thời sự tối nay
+CAL	chương trình dự báo thời tiết
+POL	tối nay có phim hugo không
+DAT	tối nay phim hugo chiếu lúc mấy giờ
+CAL	hbo sắp chiếu phim gì
+CAL	hbo sắp có phim gì
+CAL	tối mai có phim gì
+CAL	phim cinemax hôm nay
+CAL	chương trình discovery tối nay
+TTL	12 giờ đêm có phim gì
+DAT	chương trình ai là triệu phú tuần này lúc mấy giờ
+DAT	khi nào lại có chương trình ai là triệu phú
+CAL	lịch chiếu tất cả chương trình kênh SCTVHD
+CAL	lịch chiếu trên kênh SCTVHD
+UDF	lịch thi đấu giải premier league trên vtc
+CAL	phim hoạt hình tối nay là gì
+POL	tối nay có phim hoạt hình nào không
+TTL	có phim hoạt hình nào tối nay
+CAL	phim hoạt hình tối nay
+DAT	mấy giờ tối nay có phim hoạt hình
+CHN	kênh nào đang chiếu phim hoạt hình
+POL	tối nay MU có đá không
+POL	tối nay có trận nào của MU không
+POL	có trận nào của MU tối nay không
+UDF	Truyền hình ANTV có hay không
+CAL	truyền hình antv có gì
+UDF	Có nên đăng ký ANTV không
+UDF	nội dung chuyện đêm muộn nói về cái gì
+UDF	nội dung chuyện đêm muộn là về cái gì
+UDF	nội dung chuyện đêm muộn thường nói về cái gì
+UDF	chuyện đêm muộn kể về cái gì
+UDF	chuyện đêm muộn nói về cái gì
+UDF	chuyện đêm muộn thường nói về cái gì
+UDF	chuyện đêm muộn thường kể về điều gì
+UDF	nội dung chính của chuyện đêm muộn xoay quanh cái gì
+DAT	bao giờ thì bắt đầu bước nháy hoàn vũ
+DAT	bao giờ có bước nhảy hoàn vũ
+DAT	bao giờ chiếu bước nhảy hoàn vũ
+DAT	bao giờ bắt đầu có bước nhảy hoàn vũ
+DAT	bao giờ bắt đầu chiếu bước nhảy hoàn vũ
+DAT	bước nhảy hoàn vũ bắt đầu khi nào
+DAT	khi nào vtv3 chiếu bước nhảy hoàn vũ
+CHN	kênh nào chiếu bước nhảy hoàn vũ
+CHN	kênh nào có bước nhảy hoàn vũ
+DAT	cuộc thi bước nhảy hoàn vũ khi nào được chiếu
+DAT	khi nào có bước nhảy hoàn vũ
+DAT	bước nhảy hoàn vũ khi nào được phát sóng
+UDF	có nên cho trẻ nhỏ xem phim trên start movies không
+UDF	trẻ nhỏ nên xem kênh nào
+UDF	kênh nào dành cho trẻ em
+UDF	khung giờ dành cho thiếu nhi trên vtv3 là lúc nào
+DAT	mấy giờ có chương trình dành cho thiếu nhi trên vtv3
+CHN	phim hay thì xem kênh nào
+CHN	kênh nào có phim hay
+CHN	kênh nào đang có phim
+CHN	kênh nào có nhiều phim hay
+UDF	Truyền hình An Viên ưu việt hơn các loại dịch vụ truyền hình cáp có phải không
+UDF	SD và HD khác nhau như thế nào
+UDF	Những tỉnh/thành phố Truyền hình An Viên đã phủ sóng
+UDF	Sử dụng dịch vụ TH An Viên cần điều kiện gì
+UDF	Đầu AVG thu được các chương trình phát theo công nghệ DVB-T không
+UDF	MyTV có thu cước qua hệ thống thanh toán điện tử hay không
+UDF	xem lại chương trình "Tuổi học đường" phát sóng vào 17h15 ngày 13/9/2014 ở đâu
+UDF	xem lại chương trình "Tuổi học đường" phát sóng vào 17h15 ngày 13/9/2014 vào thời gian nào
+UDF	xem lại chương trình "Tuổi học đường" phát sóng vào 17h15 ngày 13/9/2014 vào lúc nào
+UDF	Muốn lắp đặt truyền hình cáp VCTV thì như thế nào
+UDF	liên hệ với ai để lắp truyền hình cáp VCTV
+UDF	làm thế nào để lắp đặt truyền hình cáp VCTV
+UDF	các bước để lắp đặt truyền hình cáp VCTV là gì
+UDF	làm sao để lắp truyền hình cáp VCTV
+UDF	muốn lắp đặt truyền hình cáp VCTV thì cần làm gì
+UDF	Để xem được truyền hình cáp, tivi cần có những tiêu chuẩn gì
+UDF	Dò sóng xem Style TV như thế nào
+UDF	dò sóng cho tv như thế nào
+UDF	Kênh BiBi dành cho thiếu nhi phải không
+UDF	Kênh truyền hình mới về sức khoẻ trên VCTV là kênh nào
+UDF	Kênh thể thao trên VTVcab là những kênh nào
+UDF	VTVCab có những kênh thể thao nào
+UDF	VTVCab có những kênh thể thao là gì
+UDF	Kênh Disney có thuyết minh tiếng việt không
+UDF	Kênh Disney có phụ đề tiếng việt không
+UDF	Disney Chanel có thuyết minh tiếng việt không
+UDF	Disney Chanel có phụ đề tiếng việt không
+UDF	Phim hoạt hình trên kênh Bibi hoàn toàn mang tính giáo dục đúng không
+UDF	phim hoạt hình trên kênh Bibi thế nào
+UDF	phim hoạt hình trên kênh Bibi có mang tính giáo dục không
+UDF	Kênh FBNC nói về cái gì
+UDF	Kênh FBNC nói về vấn đề gì
+UDF	Kênh FBNC chủ đề là gì
+UDF	kênh fbnc thường nói về cái gì
+UDF	nội dung chủ yếu của các chương trình trên kbnc là gì
+UDF	Kênh FBNC phát sóng về vấn đề gì
+UDF	giá lắp đặt K+ bao nhiêu
+UDF	giá lắp đặt K+ là bao nhiêu
+UDF	Lắp đặt K+ có đắt không
+CAL	VTVcab 19 hôm nay có phim gì hay
+CAL	VTVcab 19 chiếu phim gì vào tối nay
+CAL	VTVcab 19  có phim gì vào cuối tuần
+UDF	VTV1 HD chính thức lên sóng ngày nào
+UDF	VTV1 HD lên sóng ngày nào
+UDF	VTV1 HD lên sóng bao giờ
+UDF	VTV1 HD lên sóng khi nào
+UDF	khi nào vtv1 hd lên sóng
+UDF	bao giờ vtv1 hd lên sóng
+UDF	hôm nào vtv1 hd lên sóng
+UDF	vtv1 hd lên sóng vào hôm nào
+UDF	Danh sách các tỉnh thành có mạng Truyền hình Cáp Việt Nam phủ sóng là những tỉnh nào
+UDF	truyền hình cáp việt nam phủ sóng những tỉnh nào
+UDF	Danh sách các tỉnh thành có mạng Truyền hình Cáp Việt Nam phủ sóng là gì
+UDF	Xem chương trình HTV2 trực tuyến trên website có được không
+UDF	xem những bộ phim htv2 đã chiếu ở đâu
+UDF	làm sao để xem lại những bộ phim đã chiếu trên htv2
+UDF	Chương trình Bài Hát Yêu Thích trên VTV3 có phải là một cuộc thi không
+UDF	tần số phát sóng của VTC tại Bình Dương và Bình Phước là bao nhiêu
+UDF	Trẻ con xem truyền hình sớm có bị chậm phát triển ko
+UDF	xem truyền hình sớm có ảnh hưởng đến sự phát triển của trẻ nhỏ không
+TTL	có chương trình thể thao nào bây giờ
+TTL	đang có chương trình thể thao nào
+CHN	kênh nào đang có chương trình thể thao
+TTL	có chương trình thể thao nào đang được phát sóng
+POL	tối nay có thời sự không
+POL	tối nay có chương trình thời sự không
+DAT	dự báo thời tiết hôm nay lúc mấy giờ
+DAT	mấy giờ có chương trình dự báo thời tiết
+DAT	khi  nào có dự báo thời tiết
+DAT	dự báo thời tiết chiếu lúc mấy giờ
+CAL	lịch chiếu tất cả chương trình kênh sports
+CAL	lịch chiếu tất cả chương trình kênh SCTVHD
+CAL	lịch chiếu tất cả chương trình kênh K+
+CAL	lịch chiếu tất cả chương trình kênh VTC1
+CAL	lịch chiếu tất cả chương trình kênh VTC
+UDF	lịch thi đấu giải ngoại hạng anh xem trên kênh nào
+UDF	lịch thi đấu giải premier league phát lúc nào
+CAL	tin tức lúc 12 giờ tối
+TTL	có chương trình nào bây giờ
+TTL	21 giờ tối mai trên vtv1 có gì
+TTL	7h có phim gì không
+TTL	Bây giờ có chương trình gì trên VTV3
+TTL	Bây giờ có phim gì trên VTV3
+TTL	Bây giờ trên vtv3 có chương trình gì
+TTL	Bây giờ trên vtv3 có phim gì
+TTL	vtv3 đang có chương trình gì
+TTL	vtv3 đang có phim gì
+TTL	phim gì đang chiếu trên vtv3
+TTL	7 giờ 30 phút trên vtv3 có chương trình gì
+TTL	vtv3 đang chiếu chương trình gì lúc 7 giờ 30 phút
+TTL	lúc 7 giờ 30 phút vtv3 đang có chương trình gì
+TTL	vtv3 đang có chương trình gì lúc 7 giờ 30 phút
+TTL	7 giờ 30 phút vtv3 đang có chương trình gì
+TTL	7 giờ 30 phút vtv3 đang chiếu chương trình gì
+CAL	Sáng nay có chương trình gì
+CAL	sáng nay có phim gì
+CAL	sáng nay vtv3 có phim gì
+CAL	sáng nay có phim gì trên vtv3
+CAL	sáng nay vtv3 chiếu phim gì
+CAL	sáng nay vtv3 có chương trình gì
+CAL	sáng nay vtv3 chiếu chương trình gì
+CAL	Sáng mai có phim gì hay
+TTL	Bây giờ có phim gì
+TTL	Bây giờ có chương trình gì
+UDF	Còn bao lâu nữa đến chương trình bài hát việt
+UDF	còn bao lâu nữa thì đến bài hát việt
+UDF	còn bao lâu nữa thì đến phim bão qua làng
+UDF	bao nhiêu phút nữa đến chương trình bài hát việt
+UDF	bao nhiêu phút nữa đến bài hát việt
+UDF	bao nhiêu phút nữa đến phim bão qua làng
+UDF	Chương trình đang chiếu trên vtv3 bao giờ kết thúc
+DAT	Phim đang chiếu trên vtv3 bao giờ kết thúc
+UDF	Chương trình này bao giờ chiếu lại
+UDF	Phim này bao giờ chiếu lại
+UDF	Phim bão qua làng bao giờ chiếu lại
+POL	Phim bão qua làng chỉ phát sóng vào thứ 6 và thứ 7 hàng tuần đúng không
+CAL	Tôi muốn xem lịch phát sóng của kênh vtv3 
+CAL	Cho tôi xem lịch phát sóng của kênh vtv3 hôm nay
+CAL	Lịch phát sóng của kênh vtv3 hôm nay
+CAL	Lịch chiếu của kênh vtv3 hôm nay
+POL	9 giờ có phim bánh đúc có xương đúng không
+POL	8 giờ có chương trình quà tặng cuộc sống đúng không
+TTL	vtv1 12 giờ trưa có gì
+TTL	vtv3 tám giờ tối có chương trình gì
+TTL	discovery 8 giờ tối chiếu gì
+TTL	8 giờ tối trên kênh discovery chiếu chương trình gì
+DAT	chúng tôi là chiến sĩ phát sóng lúc mấy giờ
+POL	thể thao đêm mai có trận bóng nào hay không
+TTL	hai mươi giờ tối nay có phim gì
+TTL	20 giờ tối nay có phim gì
+TTL	phim 8 giờ tối trên vtv3 là phim gì
+TTL	20 giờ có chương trình gì trên vtv3
+TTL	phim đang chiếu trên vtv3 là gì
+TTL	phim đang chiếu trên vtv3 là phim gi
+TTL	phim gì đang chiếu trên vtv3
+TTL	đang có phim gì trên vtv3
+TTL	đang chiếu chương trình gì trên kênh vtv3
+TTL	đang chiếu chương trình gì trên vtv3
+TTL	kênh cinemax đang có phim gì
+TTL	Cinemax đang chiếu gì
+TTL	21 giờ tối mai trên vtv1 có gì
+TTL	7 giờ có phim gì không
+UDF	Chương trình hôm nay có phim gì hay
+POL	tối nay MU có đá không
+POL	tối nay mu đá không
+UDF	muốn xem lại chung kết đường lên đỉnh olympia thì xem trên kênh nào
+UDF	kênh nào chiếu lại đường lên đỉnh olympia
+UDF	chung kết đường lên đỉnh olympia chiếu lại trên kênh nào
+UDF	kênh nào chiếu lại chung kết đường lên đỉnh olympia
+UDF	kênh nào chiếu lại trận chung kết đường lên đỉnh olympia
+UDF	chung kết đường lên đỉnh olympia chiếu lại ở kênh nào
+UDF	chung kết đường lên đỉnh olympia chiếu lại vào lúc nào
+UDF	chung kết đường lên đỉnh olympia phát lại vào lúc nào
+UDF	khi nào chiếu lại chung kết đường lên đỉnh olympia
+UDF	khi nào phát lại chung kết đường lên đỉnh olympia
+UDF	Chuẩn HD là gì
+UDF	chuẩn SD là gì
+UDF	Điều kiện để xem được Truyền hình độ nét cao HDTV
+UDF	Bộ thu VTC – HD có xem được nhiều Tivi không
+UDF	Bộ thu model cũ có xem được các chương trình HDTV không
+UDF	Lắp đặp đầu thu HD có khó khăn gì
+UDF	làm thế nào để lắp đặt được đầu thu hd
+UDF	Nơi nào có thể xem được truyền hình vệ tinh của VTC
+UDF	làm thế nào để xem được truyền hình vệ tinh vtc
+UDF	1 chảo phản xạ có dùng được cho nhiều đầu thu không
+UDF	Có tận dụng được đường cáp sẵn không hay vẫn phải dùng Cáp của VTC
+UDF	Khi hết một năm thuê bao thì xem được bao nhiêu chương trình
+UDF	Trong thời gian tới giá đầu thu có giảm không
+UDF	Gặp vấn đề khi sử dụng chảo phản xạ của Trung Quốc
+UDF	Các chương trình HD do VTC phát sóng đã đạt chuẩn Full HD chưa
+UDF	Truyền hình Cáp và truyền hình vệ tinh số HD khác nhau như thế nào
+UDF	Cổng Internet trên đầu thu HD được dùng làm gì
+UDF	Đầu thu HD thì có mã pin như các model trước không
+UDF	Mua sản phẩm ở tỉnh khác thì có phải về Hà Nội bảo hành không
+UDF	Màn hình báo lỗi E107 – 4 
+UDF	Sử dụng đầu thu vệ tinh của VTC để dò thêm các chương trình khác
+UDF	Đầu thu vệ tinh VTC HD chạy rất nóng
+UDF	Giá lắp đặt dv truyền hình HDTV cao so với nhu cầu của đa số người dân
+UDF	Bộ thu vệ tinh VTC - HD có sử dụng thẻ như các Model trước không
+UDF	Một số lỗi thông thường và cách khắc phục đầu thu VTC F901
+UDF	Một số lỗi thông thường và cách khắc phục đầu thu E901
+UDF	Một số lỗi thông thường và cách khắc phục đầu thu D901
+UDF	tôi muốn xem lại thời sự ngày 18-9-2014 thì phải làm thế nào
+UDF	kênh tiếng dân tộc của Vtv là kênh nào
+UDF	kênh truyền hình tiếng dân tộc của vtv là gì
+CHN	truyền hình tiếng dân tộc được phát trên kênh nào
+UDF	kênh tiếng dân tộc ở kênh nào
+UDF	kênh tiếng dân tộc là kênh nào
+UDF	kênh tiếng dân tộc ở kênh bao nhiêu
+CHN	truyền hình tiếng dân tộc ở kênh bao nhiêu
+UDF	Ai là bên sản xuất nội dung esports trên VETV và HTV Thể thao
+UDF	Chương trình truyền hình esports 2 bộ môn LMHT và FIFA Online 3 bắt đầu có từ khi nào
+UDF	Khi đường truyền Internet của tôi gặp sự cố thì tôi có thể dùng được iVoice và OneTV không
+UDF	lịch thi đấu giải ngoại hạng anh cuối tuần này
+CAL	ngoại hạng anh cuối tuần này có trận nào chú ý
+CAL	cuối tuần này có trận nào của giải ngoại hạng anh
+DAT	trận việt nam - nhật bản bắt đầu lúc mấy giờ
+DAT	trận việt nam - nhật bản bắt đầu khi nào
+DAT	trận việt nam - nhật bản bắt đầu bao giờ
+DAT	trận việt nam - nhật bản bắt đầu lúc nào
+DAT	khi nào trận việt nam - nhật bản bắt đầu
+DAT	bao giờ trận việt nam - nhật bản bắt đầu
+DAT	mấy giờ trận việt nam - nhật bản bắt đầu
+TTL	trận nào hay ở giải ngoại hạng anh tối nay
+CHN	cuối tuần này kênh nào tường thuật ngoại hạng anh
+CHN	kênh nào chiếu giải ngoại hạng anh cuối tuần này
+UDF	ngoại hạng anh được mua bản quyền trên hệ thống truyền hình nào
+CHN	kênh nào chiếu giải ngoại hạng anh
+CHN	kênh nào sẽ chiếu giải ngoại hạng anh
+CHN	có thể xem giải ngoại hạng anh ở kênh nào
+POL	Truyền hình cáp có chiếu ngoại hạng anh không
+DAT	Trận deby thành Manchester chiếu lúc mấy giờ
+DAT	man u gặp man city tường thuật lúc mấy giờ tối nay
+DAT	trận đấu sớm của ngoại hạng anh bắt đầu lúc mấy giờ
+POL	8 giờ tối nay có trận ngoại hạng anh nào không
