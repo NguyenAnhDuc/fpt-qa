@@ -1,5 +1,6 @@
 package com.fpt.ruby.nlp;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashSet;
@@ -34,21 +35,9 @@ public class TicketAnswerMapperImpl implements TicketAnswerMapper {
 		for (String movie : movies){
 			movieNames.add(movie);
 		}
-		String res = "Phim ";
+		String res = "";
 		for (int i = 0; i < movieNames.size(); i++) {
-			if (i > 0 && i == movieNames.size() - 1) {
-				res += "và " + movieNames.get(i) + " đang được chiếu";
-				break;
-			} else if (i == movieNames.size() - 1) {
-				res += movieNames.get(i) + " đang được chiếu";
-				break;
-			}
-			res += movieNames.get(i);
-			if (ans.size() > 1) {
-				res += ", ";
-			} else {
-				res += " ";
-			}
+			res += movieNames.get(i) + "</br>";
 		}
 
 		return res;
@@ -62,9 +51,9 @@ public class TicketAnswerMapperImpl implements TicketAnswerMapper {
 		for (MovieTicket movieTicket : ans){
 			cinemas.add(movieTicket.getCinema());
 		}
-		String res = "Rạp ";
+		String res = "";
 		for (String cinema : cinemas){
-			res += cinema + ", ";
+			res += cinema + "</br>";
 		}
 		return res.substring(0, res.length() - 2);
 	}
@@ -78,9 +67,10 @@ public class TicketAnswerMapperImpl implements TicketAnswerMapper {
 		for (MovieTicket movieTicket : ans){
 			dates.add(movieTicket.getDate());
 		}
+		SimpleDateFormat sdf = new SimpleDateFormat("hh:mm:ss a");
 		String res = "Giờ chiếu: ";
 		for (Date date : dates){
-			res += date.toLocaleString() + ", ";
+			res += sdf.format(date) +  "</br>";
 		}
 		return res.substring(0, res.length() - 2);
 	}

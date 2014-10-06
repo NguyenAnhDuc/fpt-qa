@@ -20,7 +20,6 @@ import com.fpt.ruby.model.RubyAnswer;
 import com.fpt.ruby.model.TimeExtract;
 import com.fpt.ruby.nlp.AnswerMapper;
 import com.fpt.ruby.nlp.NlpHelper;
-import com.fpt.ruby.nlp.NonDiacriticNlpHelper;
 import com.fpt.ruby.service.CinemaService;
 import com.fpt.ruby.service.LogService;
 import com.fpt.ruby.service.MovieFlyService;

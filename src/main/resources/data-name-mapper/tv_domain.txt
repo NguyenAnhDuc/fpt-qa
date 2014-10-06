@@ -61,7 +61,7 @@ chanel_title	qtv2; qtv 2, truyền hình quảng ninh, truyen hinh quang ninh
 
 chanel_title	cinemax
 chanel_title	hbo
-chanel_title	star movies; starmovies
+chanel_title	starmovies; star movies
 chanel_title	espn
 chanel_title	star sports; starsports, star sport, starsport
 

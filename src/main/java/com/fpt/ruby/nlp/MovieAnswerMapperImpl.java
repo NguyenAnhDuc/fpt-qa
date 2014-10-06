@@ -91,7 +91,7 @@ public class MovieAnswerMapperImpl implements MovieAnswerMapper {
 				res += "và " + ans.get(i).getTitle() + " đang được chiếu";
 				break;
 			} else if (i == ans.size() - 1) {
-				res += ans.get(i).getTitle();
+				res += ans.get(i).getTitle() + "</br>";
 				break;
 			}
 			res += ans.get(i).getTitle();

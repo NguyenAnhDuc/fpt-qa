@@ -5,6 +5,7 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -89,10 +90,12 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		List< TVProgram > progs = tps.getList( mod, question );
 
 		if (mod.getChannel() == null && mod.getProg_title() == null){
+			System.err.println("[TVAnserMapper]: Channel null and program null");
 			if (mod.getStart() == null){
 				rubyAnswer.setAnswer( DEF_ANS + "\n\n\n" );
 				return rubyAnswer;
 			}
+			
 			if (mod.getStart().equals( mod.getEnd() )){
 				rubyAnswer.setAnswer( getChannelAndProgram( progs ) + "\n\n\n" );
 				return rubyAnswer;
@@ -102,8 +105,17 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		}
 		
 		if (mod.getChannel() == null){
-			if (intent.equals( "DAT" ) || intent.equals( "POL" ) && progs.isEmpty()){
+			System.err.println("[TVAnserMapper]: Channel null");
+			if ( intent.equals( "POL" ) && progs.isEmpty()){
 				rubyAnswer.setAnswer( "Không đúng!" + "\n\n\n" );
+				return rubyAnswer;
+			}
+			if (intent.equals( "DAT" )){
+				rubyAnswer.setAnswer( getTime( progs ) + "\n\n\n" );
+				return rubyAnswer;
+			}
+			if (intent.equals( "CHN" )){
+				rubyAnswer.setAnswer( getChannel( progs ) + "\n\n\n" );
 				return rubyAnswer;
 			}
 			if (mod.getStart() == null){
@@ -123,6 +135,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		}
 		
 		if (mod.getProg_title() == null){
+			System.err.println("[TVAnserMapper]: Program null");
 			if (mod.getStart() == null){
 				rubyAnswer.setAnswer( DEF_ANS + "\n\n\n" );
 				return rubyAnswer;
@@ -132,6 +145,10 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 				return rubyAnswer;
 			}
 			rubyAnswer.setAnswer( getTitleAndTime( progs ) + "\n\n\n" );
+			return rubyAnswer;
+		}
+		if (intent.equals( "DAT" )){
+			rubyAnswer.setAnswer( getTime( progs ) + "\n\n\n" );
 			return rubyAnswer;
 		}
 		
@@ -158,17 +175,17 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 	public String  getTime ( List< TVProgram > progs ) {
 		if (progs.isEmpty())
 			return DEF_ANS;
-		
+		SimpleDateFormat sdf = new SimpleDateFormat("hh:mm:ss a");
 		String time = "";
 		int limit = 5;
 		if (progs.size() < 5) {
 			limit = progs.size();
 		}
 		for (int i = 0; i < limit; i++){
-			time += progs.get( i ).getStart_date() + "\n";
+			time += sdf.format(progs.get( i ).getStart_date()) + "</br>";
 		}
 		
-		return time.substring( 0, time.length() - 2 );
+		return time.substring( 0, time.length() - 1 );
 	}
 
 	public String  getTitle ( List< TVProgram > progs ) {
@@ -181,7 +198,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 			limit = progs.size();
 		}
 		for (int i = 0; i < limit; i++){
-			title += progs.get( i ).getTitle() + "\n";
+			title += progs.get( i ).getTitle() + "</br>";
 		}
 		
 		return title.substring( 0, title.length() - 1 );
@@ -197,7 +214,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 			limit = progs.size();
 		}
 		for (int i = 0; i < limit; i++){
-			channel += progs.get( i ).getChannel() + "\n";
+			channel += progs.get( i ).getChannel() + "</br>";
 		}
 		
 		return channel.substring( 0, channel.length() - 2 );
@@ -206,7 +223,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 	public String  getTitleAndTime ( List< TVProgram > progs ) {
 		if (progs.isEmpty())
 			return DEF_ANS;
-		
+		SimpleDateFormat sdf = new SimpleDateFormat("hh:mm:ss a");
 		String title = "";
 		int limit = 5;
 		if (progs.size() < 5) {
@@ -214,7 +231,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		}
 		for (int i = 0; i < limit; i++){
 			TVProgram tv = progs.get( i );
-			title += tv.getTitle() + " : " + tv.getStart_date().toString() + "\n";
+			title += tv.getTitle() + " : " + sdf.format(tv.getStart_date()) + "</br>";
 		}
 		
 		return title.substring( 0, title.length() - 2 );
@@ -231,7 +248,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		}
 		for (int i = 0; i < limit; i++){
 			TVProgram tv = progs.get( i );
-			info += tv.getChannel() + " : " + tv.getTitle() + "\n";
+			info += tv.getChannel() + " : " + tv.getTitle() + "</br>";
 		}
 		
 		return info.substring( 0, info.length() - 2 );
@@ -240,7 +257,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 	public String  getChannelAndTime ( List< TVProgram > progs ) {
 		if (progs.isEmpty())
 			return DEF_ANS;
-		
+		SimpleDateFormat sdf = new SimpleDateFormat("hh:mm:ss a");
 		String info = "";
 		int limit = 5;
 		if (progs.size() < 5) {
@@ -248,7 +265,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		}
 		for (int i = 0; i < limit; i++){
 			TVProgram tv = progs.get( i );
-			info += tv.getChannel() + " : " + tv.getStart_date() + "\n";
+			info += tv.getChannel() + " : " + sdf.format(tv.getStart_date()) + "</br>";
 		}
 		
 		return info.substring( 0, info.length() - 2 );
@@ -257,7 +274,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 	public String  getChannelProgAndTime ( List< TVProgram > progs ) {
 		if (progs.isEmpty())
 			return DEF_ANS;
-		
+		SimpleDateFormat sdf = new SimpleDateFormat("hh:mm:ss a");
 		String info = "";
 		int limit = 5;
 		if (progs.size() < 5) {
@@ -265,7 +282,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		}
 		for (int i = 0; i < limit; i++){
 			TVProgram tv = progs.get( i );
-			info += tv.getChannel() + " : " + tv.getTitle() + " : " + tv.getStart_date() + "\n";
+			info += tv.getChannel() + " : " + tv.getTitle() + " : " + sdf.format(tv.getStart_date()) + "</br>";
 		}
 		
 		return info.substring( 0, info.length() - 2 );
