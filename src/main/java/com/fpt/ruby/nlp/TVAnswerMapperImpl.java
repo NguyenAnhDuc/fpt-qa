@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.util.List;
 
 import com.fpt.ruby.helper.RedisHelper;
+import com.fpt.ruby.model.QueryParamater;
 import com.fpt.ruby.model.RubyAnswer;
 import com.fpt.ruby.model.TVProgram;
 import com.fpt.ruby.service.TVProgramService;
@@ -56,13 +57,17 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		tmp += "\t" + question.replaceAll("(\\d+)(h)", "$1 giờ ").replaceAll( "\\s+", " " ) + "\n";
 		tmp += "\t" + mod + "\n";
 		
-		rubyAnswer.setQuestionType(mod.getChannel());
 		rubyAnswer.setMovieTitle(mod.getProg_title() + "\n" + mod.getStart() + "\n" + mod.getEnd());
 		System.out.println("TV channel: " + mod.getChannel());
 		System.out.println("TV prog title: " + mod.getProg_title());
+		QueryParamater queryParamater = new QueryParamater();
+		if (mod.getChannel() != null) queryParamater.setTvChannel("TV channel: " + mod.getChannel());
+		if (mod.getProg_title() != null) queryParamater.setTvProTitle("TV Program Title: " + mod.getProg_title());
+		rubyAnswer.setQueryParamater(queryParamater);
 		System.out.println("TV query start time: " + mod.getStart());
 		System.out.println("TV query end time: " + mod.getEnd());
-		
+		rubyAnswer.setBeginTime(mod.getStart());
+		rubyAnswer.setEndTime(mod.getEnd());
 		List< TVProgram > progs = tps.getList( mod, question );
 
 		if (mod.getChannel() == null && mod.getProg_title() == null){
@@ -161,7 +166,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 			title += progs.get( i ).getTitle() + "\n";
 		}
 		
-		return title.substring( 0, title.length() - 2 );
+		return title.substring( 0, title.length() - 1 );
 	}
 
 	public String  getChannel ( List< TVProgram > progs ) {

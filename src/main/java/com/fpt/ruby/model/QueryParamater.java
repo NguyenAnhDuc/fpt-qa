@@ -7,6 +7,9 @@ public class QueryParamater {
 	private MovieTicket movieTicket;
 	private Date beginTime;
 	private Date endTime;
+	private String cinName;
+	private String tvChannel;
+	private String tvProTitle;
 	public QueryParamater(){
 		movieTitle = null;
 		movieTicket = null;
@@ -34,6 +37,27 @@ public class QueryParamater {
 	public MovieTicket getMovieTicket() {
 		return movieTicket;
 	}
+	public String getCinName() {
+		return cinName;
+	}
+	public void setCinName(String cinName) {
+		this.cinName = cinName;
+	}
+	public String getTvChannel() {
+		return tvChannel;
+	}
+	public void setTvChannel(String tvChannel) {
+		this.tvChannel = tvChannel;
+	}
+	public String getTvProTitle() {
+		return tvProTitle;
+	}
+	public void setTvProTitle(String tvProTitle) {
+		this.tvProTitle = tvProTitle;
+	}
+	public Date getBeginTime() {
+		return beginTime;
+	}
 	public void setMovieTicket(MovieTicket movieTicket) {
 		this.movieTicket = movieTicket;
 	}
@@ -46,4 +70,6 @@ public class QueryParamater {
 		if (endTime != null) result.append("End Time: " + endTime.toLocaleString() + " | ");
 		return result.append("}").toString();
 	}
+	
+
 }

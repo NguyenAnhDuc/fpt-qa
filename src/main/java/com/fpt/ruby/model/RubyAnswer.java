@@ -3,6 +3,12 @@ package com.fpt.ruby.model;
 import java.util.Date;
 
 public class RubyAnswer {
+	private String domain;
+	private QueryParamater queryParamater;
+	
+	public QueryParamater getQueryParamater() {
+		return queryParamater;
+	}
 
 	private String question;
 	private String answer;
@@ -16,7 +22,12 @@ public class RubyAnswer {
 	private Date  endTime;
 	private boolean successful = false;
 	
-	
+	public String getDomain() {
+		return domain;
+	}
+	public void setDomain(String domain) {
+		this.domain = domain;
+	}
 	public boolean isSuccessful() {
 		return successful;
 	}
@@ -82,6 +93,11 @@ public class RubyAnswer {
 	}
 	public void setQuestionStructure(QuestionStructure questionStructure) {
 		this.questionStructure = questionStructure;
+	}
+	public void setQueryParamater(QueryParamater queryParamater) {
+		// TODO Auto-generated method stub
+		this.queryParamater = queryParamater;
+		
 	}
 	
 }

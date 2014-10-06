@@ -80,28 +80,39 @@
 						if (result.questionStructure.modifiers.length > 0)
 							structureQuestion += result.questionStructure.modifiers[result.questionStructure.modifiers.length-1];
 						 */
+						$('#result-domain').html(result.domain);
 						$('#result-intent').html(result.intent);
-						$('#result-question-type').html(result.questionType);
-						if (result.questionType == 'static') {
-							$('#result-paramaters').html(
-									'Mov_title: ' + result.movieTitle);
-						} else {
-							var htmlParamater = '', dateExtract = '';
-							if (result.movieTicket.cinema != null)
-								htmlParamater += 'Cin_name: '
-										+ result.movieTicket.cinema + "</br>";
-							if (result.movieTicket.movie != null)
-								htmlParamater += 'Mov_Title: '
-										+ result.movieTicket.movie + "</br>";
-							if (result.beginTime != null)
-								dateExtract += 'Begin Time: '
-										+ new Date(result.beginTime) + "</br>";
-							if (result.endTime != null)
-								dateExtract += 'End Time: ' + new Date( result.endTime);
-										+ "</br>";
-							$('#result-time').html(dateExtract);
-							$('#result-paramaters').html(htmlParamater);
-						}
+						/* if (result.domain == 'movie'){
+							if (result.questionType == 'static') {
+								$('#result-paramaters').html(
+										'Mov_title: ' + result.movieTitle);
+							} else {
+								
+								if (result.movieTicket.cinema != null)
+									htmlParamater += 'Cin_name: '
+											+ result.movieTicket.cinema + "</br>";
+								if (result.movieTicket.movie != null)
+									htmlParamater += 'Mov_Title: '
+											+ result.movieTicket.movie + "</br>";
+								
+								$('#result-paramaters').html(htmlParamater);
+							}	
+						} */
+						// Query Paramaters
+						var queryParamater = "";
+						if (result.queryParamater.movieTitle != null) queryParamater +=  result.queryParamater.movieTitle + "</br>";
+						if (result.queryParamater.cinName != null) queryParamater +=  result.queryParamater.cinName + "</br>";
+						if (result.queryParamater.tvChannel != null) queryParamater += result.queryParamater.tvChannel + "</br>";
+						if (result.queryParamater.tvProTitle != null) queryParamater += result.queryParamater.tvProTitle + "</br>";
+						$('#result-paramaters').html(queryParamater);
+						var htmlParamater = '', dateExtract = '';
+						if (result.beginTime != null)
+							dateExtract += 'Begin Time: '
+									+ new Date(result.beginTime) + "</br>";
+						if (result.endTime != null)
+							dateExtract += 'End Time: ' + new Date( result.endTime);
+									+ "</br>";
+						$('#result-time').html(dateExtract);
 						$('#result-final').html(result.answer);
 					},
 					error : function(result) {
@@ -300,8 +311,8 @@ body {
 									<i class="entypo-feather"></i>
 								</div>
 								<div class="timeline-label">
-									<h2>Get Intent</h2>
-									<p id="result-intent">Intent of the question</p>
+									<h2>Domain Classify</h2>
+									<p id="result-domain">Domain of the question</p>
 								</div>
 							</div>
 						</article>
@@ -312,9 +323,8 @@ body {
 									<i class="entypo-suitcase"></i>
 								</div>
 								<div class="timeline-label">
-									<h2>Depend on the intent, get question type!</h2>
-									<p id="result-question-type">The question is dynamic or
-										static?</p>
+									<h2>Intent</h2>
+									<p id="result-intent">Intent of the question</p>
 								</div>
 							</div>
 						</article>

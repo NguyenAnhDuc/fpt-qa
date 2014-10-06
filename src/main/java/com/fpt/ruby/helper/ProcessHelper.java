@@ -85,11 +85,13 @@ public class ProcessHelper{
 		System.out.println( "[ProcessHelper] Question Type: " + questionType );
 		// static question
 		try{
+			QueryParamater queryParamater = new QueryParamater();
 			if( questionType.equals( AnswerMapper.Static_Question ) ){
 				if (intent.equals(IntentConstants.CIN_ADD)){
 					String cinName = conjunctionHelper.getCinemaName(question);
 					System.out.println("[Process Helper] Cin name: " + cinName);
 					List<Cinema> cinemas = cinemaService.findByName(cinName);
+					queryParamater.setCinName(cinName);
 					rubyAnswer.setAnswer( AnswerMapper.getCinemaStaticAnswer( intent, cinemas ) );
 				}
 				else{
@@ -104,11 +106,10 @@ public class ProcessHelper{
 							movieFlies.add( movieFly );
 						}
 					}
-					rubyAnswer.setMovieTitle( movieTitle );
+					queryParamater.setMovieTitle(movieTitle);
 					rubyAnswer.setAnswer( AnswerMapper.getStaticAnswer( intent, movieFlies ) );
 				}
-				
-				
+				rubyAnswer.setQueryParamater(queryParamater);
 				rubyAnswer.setQuestionType( AnswerMapper.Static_Question );
 				
 			}else if( questionType.equals( AnswerMapper.Dynamic_Question ) ){
@@ -122,9 +123,11 @@ public class ProcessHelper{
 					rubyAnswer.setBeginTime( timeExtract.getBeforeDate() );
 				if( timeExtract.getAfterDate() != null )
 					rubyAnswer.setEndTime( timeExtract.getAfterDate() );
+				queryParamater.setMovieTitle(matchMovieTicket.getMovie());
+				queryParamater.setCinName(matchMovieTicket.getCinema());
+				rubyAnswer.setQueryParamater(queryParamater);
 				rubyAnswer.setAnswer( AnswerMapper.getDynamicAnswer( intent, movieTickets ) );
 				rubyAnswer.setQuestionType( AnswerMapper.Dynamic_Question );
-				rubyAnswer.setMovieTicket( matchMovieTicket );
 				System.out.println( "DONE Process" );
 			}else{
 				System.out.println( "Feature .." );
