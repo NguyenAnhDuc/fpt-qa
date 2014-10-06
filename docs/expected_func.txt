@@ -52,7 +52,7 @@ Movie:
  - chương trình X được phát trên kênh nào								NO ANSWER			FIXED
  - chương trình x được phát trên kênh y vào khung giờ nào				NO ANSWER			FIXED
  - kênh Y đang chiếu chương trình gì									
- - kênh Y sắp chiếu chương trình gì										Không bắt được từ sắp
+ - kênh Y sắp chiếu chương trình gì										Không bắt được từ sắp	
  - kênh Y chiếu chương trình gì											NO ANSWER
  - kênh Y chiếu chương trình gì trong khoảng thời gian từ D1 đến D2		Có answer, nhưng chỉ có 1 answer.
  - đang có chương trình gì			
