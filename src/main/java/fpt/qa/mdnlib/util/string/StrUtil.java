@@ -129,4 +129,13 @@ public class StrUtil {
         
         return StrUtil.join(normalizedTokens);
     }
+    
+    public static String getMovieName(String str) {
+        String text = StrUtil.toInitCap(str);
+        int idx = text.indexOf("-");
+        if (idx < 0){
+        	idx = text.length();
+        }
+        return text.substring(0, idx).trim();
+    }
 }
