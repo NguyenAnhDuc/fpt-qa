@@ -8,5 +8,5 @@ public interface TicketAnswerMapper {
 	String getTypeTicketAnswer(List<MovieTicket> ans);
 	String getTitleTicketAnswer(List<MovieTicket> ans);
 	String getCinemaTicketAnswer(List<MovieTicket> ans);
-	String getDateTicketAnswer(List<MovieTicket> ans);
+	String getDateTicketAnswer(List<MovieTicket> ans, MovieTicket matchMovieTicket, boolean haveTimeInfo);
 }
