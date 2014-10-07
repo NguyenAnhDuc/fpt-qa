@@ -83,7 +83,7 @@ public class AppController {
 	
 	@RequestMapping(value="/", method = RequestMethod.GET)
 	public String home(Model model){
-		logger.info(personService.name);
+		logger.info("HOME CONTROLLER");
 		return "chat";
 	}
 	

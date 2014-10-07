@@ -146,6 +146,7 @@ public class MovieFlyService {
 	
 	public  MovieFly searchOnImdbByTitle(String title) throws UnsupportedEncodingException{
 		System.out.println("[Search on imdb by title]: " + title);
+		if (title==null) return null;
 		MovieFly movieFly = new MovieFly();
 		String url = "http://www.omdbapi.com/?t=" + URLEncoder.encode(title,"UTF-8") ;
 		try{

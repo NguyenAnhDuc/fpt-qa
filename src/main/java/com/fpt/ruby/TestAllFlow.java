@@ -55,7 +55,7 @@ public class TestAllFlow {
 	
 	public static void test1() throws UnsupportedEncodingException{
 		//init 
-				conjunctionHelper = new ConjunctionHelper();
+				/*conjunctionHelper = new ConjunctionHelper();
 				movieFlyService = new MovieFlyService();
 				movieTicketService = new MovieTicketService();
 				String question = "đạo diễn phim Ninja  là ai?";
@@ -89,7 +89,7 @@ public class TestAllFlow {
 					List<MovieTicket> movieTickets = movieTicketService.findMoviesMatchCondition(matchMovieTicket, beforeDate, afterDate);
 					String answer = AnswerMapper.getDynamicAnswer(intent, movieTickets);
 					System.out.println("Answer: " + answer);
-				}
+				}*/
 	}
 
 	public static void main(String[] args) throws UnsupportedEncodingException {

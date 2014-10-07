@@ -1,5 +1,7 @@
 package com.fpt.ruby.helper;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 import com.fpt.ruby.model.MovieFly;
@@ -25,11 +27,15 @@ public class FeaturedMovieHelper {
 	}
 	
 	public static String filterByActor(String actor, List<MovieFly> movieFlies){
+		List<String> movieNames = new ArrayList<String>();
 		System.out.println("Filter by Actor: " + actor);
 		String movTitles = "";
 		for (MovieFly mf : movieFlies){
 			if (mf.getActor().contains(actor)){
-				movTitles += mf.getTitle() + ", ";
+				if (!movieNames.contains(mf.getTitle())){
+					movTitles += mf.getTitle() + "</br>";
+					movieNames.add(mf.getTitle());
+				}
 			}
 		}
 
@@ -59,11 +65,15 @@ public class FeaturedMovieHelper {
 	}
 	
 	public static String filterByCountry(String country, List<MovieFly> movieFlies){
+		List<String> movieNames = new ArrayList<String>();
 		System.out.println("Filter by Country: " + country);
 		String movTitles = "";
 		for (MovieFly mf : movieFlies){
 			if (mf.getCountry() != null && mf.getCountry().equals(country)){
-				movTitles += mf.getTitle() + ", ";
+				if (!movieNames.contains(mf.getTitle())){
+					movTitles += mf.getTitle() + "</br>";
+					movieNames.add(mf.getTitle());
+				}
 			}
 		}
 
@@ -91,6 +101,7 @@ public class FeaturedMovieHelper {
 	
 	public static String filterByGenre(List<String> genre, List<MovieFly> movieFlies){
 		System.out.println("Filter by Genre: " + genre);
+		List<String> movieNames = new ArrayList<String>(); 
 		String movTitles = "";
 		for (MovieFly mf : movieFlies){
 			String movGen = mf.getGenre() != null ? mf.getGenre().toLowerCase() : null;
@@ -102,7 +113,11 @@ public class FeaturedMovieHelper {
 				}
 			}
 			if (satisfied){
-				movTitles += mf.getTitle() + ", ";
+				if (!movieNames.contains(mf.getTitle())){
+					movTitles += mf.getTitle() + "</br>";
+					movieNames.add(mf.getTitle());
+				}
+				
 			}
 		}
 
