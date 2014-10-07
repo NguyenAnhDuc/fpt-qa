@@ -8,6 +8,8 @@ import java.util.List;
 
 import com.fpt.ruby.model.MovieTicket;
 
+import fpt.qa.mdnlib.util.string.StrUtil;
+
 public class TicketAnswerMapperImpl implements TicketAnswerMapper {
 	public String getTypeTicketAnswer(List<MovieTicket> ans){
 		if (ans.size() == 0){
@@ -33,7 +35,12 @@ public class TicketAnswerMapperImpl implements TicketAnswerMapper {
 		}
 		List<String> movieNames = new ArrayList<String>();
 		for (String movie : movies){
-			movieNames.add(movie);
+			String title = StrUtil.toInitCap(movie);
+			int idx = title.indexOf("-");
+			if (idx < 0){
+				idx = title.length();
+			}
+			movieNames.add(title.substring(0, idx).trim());
 		}
 		String res = "";
 		for (int i = 0; i < movieNames.size(); i++) {
