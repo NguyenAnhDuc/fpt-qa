@@ -72,15 +72,24 @@ public class TicketAnswerMapperImpl implements TicketAnswerMapper {
 	 * Tra loi ca ten phim + gio chieu, neu tickets cho nhieu hon 1 phim
 	 * sap xep thoi gian theo chieu tang dan
 	 */
-	public String getDateTicketAnswer(List<MovieTicket> ans){
+	public String getDateTicketAnswer(List<MovieTicket> ans, MovieTicket matchMovieTicket, boolean haveTimeInfo){
 		System.out.println("Date answer");
 		if (ans.size() == 0){
+			if (matchMovieTicket.getCinema() != null){
+				if (matchMovieTicket.getMovie() != null){
+					return "Phim này đang không được chiếu tại rạp " + matchMovieTicket.getCinema();
+				}
+				return "Xin lỗi, chúng tôi không tìm thấy thông tin về lịch chiếu cho rạp này";
+			}
 			return "Xin lỗi, chúng tôi không tìm thấy dữ liệu cho câu trả lời";
 		}
-		// The key is the movie title, the value is the slots
+		// The key is the movie title or the cinema name, the value is the slots
 		HashMap<String, List<Date>> movMap = new HashMap<String, List<Date>>();
 		for (MovieTicket movieTicket : ans){
 			String titile = movieTicket.getMovie();
+			if (matchMovieTicket.getMovie() != null){
+				titile = movieTicket.getCinema();
+			}
 			List<Date> val = movMap.get(titile);
 			if (val == null){
 				val = new ArrayList<Date>();
@@ -91,6 +100,10 @@ public class TicketAnswerMapperImpl implements TicketAnswerMapper {
 		
 		Object[] obs = movMap.keySet().toArray();
 		SimpleDateFormat sdf = new SimpleDateFormat("hh:mm a");
+		if (!haveTimeInfo){
+			sdf = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm");
+		}
+		
 		String res = "";
 		if (obs.length == 1){
 			res = "Giờ chiếu:</br>";
@@ -109,6 +122,7 @@ public class TicketAnswerMapperImpl implements TicketAnswerMapper {
 			for (Date date : slots){
 				res += sdf.format(date) +  "</br>";
 			}
+			res += "</br>";
 		}
 		
 		return res.substring(0, res.length() - 2);

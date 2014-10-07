@@ -107,9 +107,9 @@ public class AnswerMapper {
 		return "Xin lỗi, chúng tôi chưa có câu trả lời cho câu hỏi của bạn";
 	}
 	
-	public static String getDynamicAnswer(String intent, List<MovieTicket> ans){
+	public static String getDynamicAnswer(String intent, List<MovieTicket> ans, MovieTicket matchMovieTicket, boolean haveTimeInfo){
 		if (intent.equals(IntentConstants.MOV_DATE)){
-			return tam.getDateTicketAnswer(ans);
+			return tam.getDateTicketAnswer(ans, matchMovieTicket, haveTimeInfo);
 		}
 		
 		if (intent.equals(IntentConstants.CIN_NAME)){

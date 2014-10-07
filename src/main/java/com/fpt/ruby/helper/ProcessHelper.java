@@ -130,7 +130,7 @@ public class ProcessHelper{
 				queryParamater.setMovieTitle(matchMovieTicket.getMovie());
 				queryParamater.setCinName(matchMovieTicket.getCinema());
 				rubyAnswer.setQueryParamater(queryParamater);
-				rubyAnswer.setAnswer( AnswerMapper.getDynamicAnswer( intent, movieTickets ) );
+				rubyAnswer.setAnswer( AnswerMapper.getDynamicAnswer( intent, movieTickets, matchMovieTicket, timeExtract.getBeforeDate() != null ) );
 				rubyAnswer.setQuestionType( AnswerMapper.Dynamic_Question );
 				System.out.println( "DONE Process" );
 			}else{
