@@ -67,7 +67,6 @@ public class AppController {
 		//QuestionStructure questionStructure = ProcessHelper.getQuestionStucture(question, questionStructureService );
 		//QuestionStructure questionStructure = new QuestionStructure();
 		// Process answer
-		System.out.println(movieFlyService.test);
 		if (domain.equals( "tv" )){
 //		if ( question.startsWith( "tv" ) ){
 			System.err.println( "[AppController] Domain TV" );

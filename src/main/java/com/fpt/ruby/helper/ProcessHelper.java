@@ -84,7 +84,7 @@ public class ProcessHelper{
 		rubyAnswer.setIntent( intent );
 		
 		String questionType = AnswerMapper.getTypeOfAnswer( intent, question );
-		rubyAnswer.setAnswer( "Xin lá»—i, tÃ´i khÃ´ng tráº£ lá»i cÃ¢u há»i nÃ y Ä‘Æ°á»£c" );
+		rubyAnswer.setAnswer( "Xin lỗi, tôi không trả lời câu hỏi này được" );
 		System.out.println( "[ProcessHelper] Question Type: " + questionType );
 		// static question
 		try{
@@ -105,7 +105,8 @@ public class ProcessHelper{
 						movieFlies = new ArrayList< MovieFly >();
 						MovieFly movieFly = movieFlyService.searchOnImdbByTitle( movieTitle );
 						if( movieFly != null ){
-							movieFlyService.insert( movieFly );
+							System.out.println("Insert to db new movie");
+							movieFlyService.save( movieFly );
 							movieFlies.add( movieFly );
 						}
 					}

@@ -26,7 +26,6 @@ import com.mongodb.WriteResult;
 public class MovieFlyService {
 	private static final String RT_apikey = "squrt6un22xe46uy5wmxej8e";
 	private MongoOperations mongoOperations;
-	public String test;
 	/*public MovieFlyService(MongoOperations mongoOperations){
 		this.mongoOperations = mongoOperations;
 	}*/
@@ -34,7 +33,6 @@ public class MovieFlyService {
 	public MovieFlyService(){
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringMongoConfig.class);
 		this.mongoOperations = (MongoOperations) ctx.getBean("mongoTemplate");
-		test = "hello";
 	}
 	
 	public List<MovieFly> findAll(){
@@ -206,11 +204,14 @@ public class MovieFlyService {
 	public static void main(String[] args) throws Exception {
 		MovieFlyService movieFlyService = new MovieFlyService();
 		//List<MovieFly> movieFlies = movieFlyService.getAllMovieFrom2013();
-		List<MovieFly> movieFlies = movieFlyService.findByTitle("the damned");
+		/*List<MovieFly> movieFlies = movieFlyService.findByTitle("the damned");
 		for (MovieFly movieFly : movieFlies) {
 			System.out.println("Title: " + movieFly.getTitle() + " | " + movieFly.getYear()  + " | " + movieFly.getGenre());
-		}
-		
+		}*/
+		MovieFly movieFly = new MovieFly();
+		movieFly.setTitle("test111");
+		movieFlyService.save(movieFly);
+		System.out.println("DONE");
 		/*MovieFlyService movieFlyService = new MovieFlyService();
 		ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		MovieService movieService = (MovieService) context.getBean("movieService");
