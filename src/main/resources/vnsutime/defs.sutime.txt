@@ -189,9 +189,9 @@
 
   // Relative days
   YESTERDAY = RelativeTime(THIS, Duration(DAY, -1) );
-  BEFOREYESTERDAY = RelativeTime(Duration(DAY, -2) );
+  BEFOREYESTERDAY = RelativeTime(THIS, Duration(DAY, -2) );
   TOMORROW = RelativeTime(THIS, Duration(DAY, +1) );
-  AFTERTOMORROW = RelativeTime(Duration(DAY, +2) );
+  AFTERTOMORROW = RelativeTime(THIS,Duration(DAY, +2) );
   TODAY = RelativeTime( THIS, DAY );
   TONIGHT = RelativeTime( THIS, NIGHT );  
   

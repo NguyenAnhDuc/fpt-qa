@@ -21,7 +21,7 @@
 # $FREQ_MOD = ( /each/ | /every/ $NUM_ORD | /every/ /other|alternate|alternating/? | /alternate|alternating/ );
   $FREQ_MOD = ( /mỗi/ | /mọi/ | /hằng/);
 #  $EARLY_LATE_MOD = ( /late|early|mid-?/ | /the/? /beginning|start|dawn|middle|end/ /of/ );
-  $EARLY_LATE_MOD = ( /cuối|sớm|giữa|đầu|trễ|muộn/ );
+  $EARLY_LATE_MOD = ( /sớm|giữa|đầu|trễ|muộn/ );
   $APPROX_MOD = ( /khoảng|tầm|cỡ|vài|một_vài|chính_xác|đúng/ );
   $YEAR = ( /[012]\d\d\d/ | /\w+|twenty/ [ { numcompvalue<100 } & { numcompvalue>0 } & $INT ] );
 # $YEAR = ( /[012]\d\d\d/ | /\w+|twenty/ [ { numcompvalue<100 } & { numcompvalue>0 } & $INT ] );
@@ -271,6 +271,9 @@
   { (/[Tt]hứ/ /7/) => SATURDAY }
   { (/[C]n/) => SUNDAY }
 
+  { (/[Cc]uối/ /tuần/) => WEEKEND }
+  { (/[Cc]uối/ /ngày/) => InexactTime(TimeRange(IsoTime(15,0,0),IsoTime(23,0,0) ))}
+  { (/[Đđ]ầu/ /ngày/) => InexactTime(TimeRange(IsoTime(6,0,0),IsoTime(10,0,0) )) }
 #  { (/weekends?/) => WEEKEND }
 #  { (/weekdays?/) => WEEKDAY }
 
@@ -508,7 +511,15 @@
     priority: 20,
     pattern: (  ( [ $hasTemporal & !{ temporal::IS_TIMEX_SET } ] ) /|tuần|tháng|năm/? ( $REL_MOD )),
 	result: RelativeTime( GetTag($2[0], "TemporalOp"), $1[0].temporal.value )
-  }
+  } 
+  
+  # từ ngày xxx đến ngày xxx , từ xxx giờ đến xx giờ 
+   { 
+    name: "temporal-composite-1",
+    priority: 20,
+    pattern: ( /[Tt]ừ/ ( [ $hasTemporal ] ) /đến|tới|sang/  ( [ $hasTemporal  ] ) ),
+	result: TimeRange($1[0].temporal.value, $2[0].temporal.value )
+   }
 	
 ###############################################################################################################
   ENV.defaults["stage"] = 4 
@@ -549,16 +560,12 @@
 			  DAY)
   }
   
-  #đầu ngày, cuối ngày, giữa ngày
-  { name: "temporal-composite-6a",
-    pattern: ( /the/? ( $EARLY_LATE_MOD ) ( [ $hasTemporal & !{ temporal::IS_TIMEX_SET } ] ) ),
-	result: TemporalCompose( ADD_MODIFIER, $2[0].temporal.value, GetTag($1[0], "Modifier") )
-  }
+  
   
   #Mỗi ngày, hằng ngày, mọi ngày
   { name: "temporal-composite-7b",
 #    pattern: ( ( $FREQ_MOD ) ( [ $hasTemporal & !{ temporal::IS_TIMEX_SET } ] ) ),
-     pattern: ( ( $FREQ_MOD ) ( [ $hasTemporal ] ) ),
+     pattern: ( ( $FREQ_MOD ) ( [ temporal::IS_TIMEX_DURATION ] ) ),
 	 result: MakePeriodicTemporalSet($2[0].temporal, GetTag($1[0], "PTS.quant"), GetTag($1[0], "PTS.multiple") )
   }
   #khoảng 10 ngày
@@ -568,17 +575,8 @@
     result: $0[-1].temporal.value
   }
   
-  #đầu ngày, cuối ngày
-  { name: "temporal-composite-6a",
-    pattern: ( ( $EARLY_LATE_MOD ) ( [ $hasTemporal & !{ temporal::IS_TIMEX_SET } ] ) ),
-	result: TemporalCompose( ADD_MODIFIER, $2[0].temporal.value, GetTag($1[0], "Modifier") )
-  }
-  
-  #chiều muộn
-  { name: "temporal-composite-6a",
-    pattern: ( ( [ $hasTemporal & !{ temporal::IS_TIMEX_SET } ] ) ( $EARLY_LATE_MOD ) ),
-	result: TemporalCompose( ADD_MODIFIER, $1[0].temporal.value, GetTag($2[0], "Modifier") )
-  }
+ 
+
   
   
  
