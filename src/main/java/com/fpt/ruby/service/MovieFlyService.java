@@ -19,6 +19,8 @@ import org.springframework.stereotype.Service;
 import com.fpt.ruby.config.SpringMongoConfig;
 import com.fpt.ruby.helper.HttpHelper;
 import com.fpt.ruby.model.MovieFly;
+import com.mongodb.MongoException;
+import com.mongodb.WriteResult;
 
 @Service
 public class MovieFlyService {
@@ -44,8 +46,30 @@ public class MovieFlyService {
 		return mongoOperations.find(query, MovieFly.class);
 	}
 	
+	public boolean remove (String title, int year){
+		Query query = new Query(Criteria.where("title").regex("^" + title + "$","i").and("year").is(year));
+		WriteResult res = mongoOperations.remove(query, MovieFly.class);
+		if (res != null){
+			System.out.println(res);
+			return true;
+		}
+		return false;
+	}
+	
 	public void save(MovieFly movieFly){
-		mongoOperations.save(movieFly);
+		try{
+			mongoOperations.save(movieFly);
+		}catch(MongoException ex){
+			System.out.println("mongo exception");
+		}
+	}
+	
+	public void insert(MovieFly movieFly){
+		try{
+			mongoOperations.insert(movieFly);
+		}catch(MongoException ex){
+			System.out.println("mongo exception");
+		}
 	}
 	
 	public void dropCollection(){
@@ -182,9 +206,9 @@ public class MovieFlyService {
 	public static void main(String[] args) throws Exception {
 		MovieFlyService movieFlyService = new MovieFlyService();
 		//List<MovieFly> movieFlies = movieFlyService.getAllMovieFrom2013();
-		List<MovieFly> movieFlies = movieFlyService.findByTitle("lucy");
+		List<MovieFly> movieFlies = movieFlyService.findByTitle("the damned");
 		for (MovieFly movieFly : movieFlies) {
-			System.out.println("Title: " + movieFly.getTitle() + " | " + movieFly.getYear());
+			System.out.println("Title: " + movieFly.getTitle() + " | " + movieFly.getYear()  + " | " + movieFly.getGenre());
 		}
 		
 		/*MovieFlyService movieFlyService = new MovieFlyService();

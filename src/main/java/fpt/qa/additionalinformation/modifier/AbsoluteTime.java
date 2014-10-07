@@ -57,8 +57,6 @@ public class AbsoluteTime{
 		
 		try {
 			results = getTimeParser().parser3( text, dateFormatHour.format( new Date() ) );
-			System.out.println("results size: " + results.size());
-			//System.out.println(results);
 			
 			System.out.println("curentdate :"+dateFormatHour.format( new Date() ));
 			if(results.isEmpty()) {

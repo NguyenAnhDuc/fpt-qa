@@ -60,6 +60,7 @@ public class AppController {
 		String key = NlpHelper.normalizeQuestion(question);
 		RubyAnswer rubyAnswer = new RubyAnswer();
 		String domain = classifier.getDomain( key );
+		
 		//rubyAnswer.setInCache(this.questionStructureService.isInCache(key));
 		//rubyAnswer.setQuestion(question);
 		// Process question
@@ -76,6 +77,7 @@ public class AppController {
 			System.err.println( "[AppController] Domain Movie" );
 			rubyAnswer =  ProcessHelper.getAnswer(question,movieFlyService,movieTicketService,cinemaService,logService);
 		}
+		rubyAnswer.setDomain(domain);
 		return rubyAnswer;
 		//return app.getAnswer(question);
 	}

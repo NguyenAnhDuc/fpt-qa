@@ -34,7 +34,10 @@ public class TimeRange implements Serializable{
 		if (dateString.endsWith( "pm" )){
 			bonusTime = HAFL_DAY;
 			dateString = date.substring( 0, date.length() - 2 );
+<<<<<<< HEAD
 			//System.out.println("dateString: " + dateString);
+=======
+>>>>>>> b74e0eed25f8054b3251adcffc99b8274ecb31a5
 		}
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 		
@@ -78,7 +81,10 @@ public class TimeRange implements Serializable{
 		if (dateString.endsWith( "pm" )){
 			bonusTime = HAFL_DAY;
 			dateString = date.substring( 0, date.length() - 2 );
+<<<<<<< HEAD
 			//System.out.println("dateString: " + dateString);
+=======
+>>>>>>> b74e0eed25f8054b3251adcffc99b8274ecb31a5
 		}
 		////System.out.println(dateString);
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm");
@@ -98,7 +104,10 @@ public class TimeRange implements Serializable{
 					utilDate.setDate( 30 );
 					dateString = new SimpleDateFormat( "yyyy-MM-dd" ).format( utilDate );
 					utilDate = parsesDate( dateString );
+<<<<<<< HEAD
 					//System.out.println( dateString );
+=======
+>>>>>>> b74e0eed25f8054b3251adcffc99b8274ecb31a5
 					// utilDate = new Date(utilDate.getTime()+ 30 * (60 * 60 *
 					// 1000 * 23 + 60 * 1000 * 59 + 59 * 1000));
 					//e.printStackTrace();

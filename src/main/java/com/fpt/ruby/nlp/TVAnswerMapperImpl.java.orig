@@ -59,10 +59,19 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		tmp += "\t" + question.replaceAll("(\\d+)(h)", "$1 giờ ").replaceAll( "\\s+", " " ) + "\n";
 		tmp += "\t" + mod + "\n";
 		
-		rubyAnswer.setQuestionType(mod.getChannel());
 		rubyAnswer.setMovieTitle(mod.getProg_title() + "\n" + mod.getStart() + "\n" + mod.getEnd());
 		System.out.println("TV channel: " + mod.getChannel());
 		System.out.println("TV prog title: " + mod.getProg_title());
+<<<<<<< HEAD
+		QueryParamater queryParamater = new QueryParamater();
+		if (mod.getChannel() != null) queryParamater.setTvChannel("TV channel: " + mod.getChannel());
+		if (mod.getProg_title() != null) queryParamater.setTvProTitle("TV Program Title: " + mod.getProg_title());
+		rubyAnswer.setQueryParamater(queryParamater);
+		System.out.println("TV query start time: " + mod.getStart());
+		System.out.println("TV query end time: " + mod.getEnd());
+		rubyAnswer.setBeginTime(mod.getStart());
+		rubyAnswer.setEndTime(mod.getEnd());
+=======
 		
 		// get Time condition
 		TimeExtract timeExtract = NlpHelper.getTimeCondition( question );
@@ -76,16 +85,11 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		}
 		mod.setStart(start);
 		mod.setEnd(end);
-		QueryParamater queryParamater = new QueryParamater();
-		if (mod.getChannel() != null) queryParamater.setTvChannel("TV channel: " + mod.getChannel());
-		if (mod.getProg_title() != null) queryParamater.setTvProTitle("TV Program Title: " + mod.getProg_title());
-		rubyAnswer.setQueryParamater(queryParamater);
 		System.out.println("TV query start time: " + mod.getStart());
 		System.out.println("TV query end time: " + mod.getEnd());
-		rubyAnswer.setBeginTime(mod.getStart());
-		rubyAnswer.setEndTime(mod.getEnd());
 		// end time processing
 		
+>>>>>>> fefa055b45986f57d46944df4e74e5ee22b74abd
 		List< TVProgram > progs = tps.getList( mod, question );
 
 		if (mod.getChannel() == null && mod.getProg_title() == null){
@@ -197,7 +201,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 			limit = progs.size();
 		}
 		for (int i = 0; i < limit; i++){
-			channel += progs.get( i ).getChannel() + "\n";
+			channel += progs.get( i ).getTitle() + "\n";
 		}
 		
 		return channel.substring( 0, channel.length() - 2 );

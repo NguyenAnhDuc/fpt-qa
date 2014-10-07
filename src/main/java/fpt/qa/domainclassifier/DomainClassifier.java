@@ -178,36 +178,38 @@ public class DomainClassifier{
 
 	public static void main( String[] args ) {
 		DomainClassifier testClassifier = new DomainClassifier( "/home/dungx/git/rubyweb/src/main/resources" );
-		testClassifier.setPrintDebug( false );
+		testClassifier.setPrintDebug( true );
 
-		try{
-			
-			int count = 0;
-			
-			File movieFile = new File( "500_movie_2.txt" );
-			BufferedReader reader = new BufferedReader( new FileReader( movieFile ) );
-			String line = null;
-			while( ( line = reader.readLine() ) != null ){
-				if( !testClassifier.getDomain( line ).equalsIgnoreCase( "movie" ) ){
-					System.out.println( "True:Movie Predict:" + testClassifier.getDomain( line ) + " " + line );
-					count++;
-				}
-			}
-			
-			File tvFile = new File( "tv_quest.txt" );
-			reader = new BufferedReader( new FileReader( tvFile ) );
-			line = null;
-			while( ( line = reader.readLine() ) != null ){
-				if( !testClassifier.getDomain( line ).equalsIgnoreCase( "tv" ) ){
-					System.out.println( "True:tv Predict:" + testClassifier.getDomain( line ) + " " + line );
-					count++;
-				}
-			}
-			
-			System.out.println( "Total Errors: " + count );
-		}catch ( IOException e ){
-			e.printStackTrace();
-		}
+//		try{
+//			
+//			int count = 0;
+//			
+//			File movieFile = new File( "500_movie_2.txt" );
+//			BufferedReader reader = new BufferedReader( new FileReader( movieFile ) );
+//			String line = null;
+//			while( ( line = reader.readLine() ) != null ){
+//				if( !testClassifier.getDomain( line ).equalsIgnoreCase( "movie" ) ){
+//					System.out.println( "True:Movie Predict:" + testClassifier.getDomain( line ) + " " + line );
+//					count++;
+//				}
+//			}
+//			
+//			File tvFile = new File( "tv_quest.txt" );
+//			reader = new BufferedReader( new FileReader( tvFile ) );
+//			line = null;
+//			while( ( line = reader.readLine() ) != null ){
+//				if( !testClassifier.getDomain( line ).equalsIgnoreCase( "tv" ) ){
+//					System.out.println( "True:tv Predict:" + testClassifier.getDomain( line ) + " " + line );
+//					count++;
+//				}
+//			}
+//			
+//			System.out.println( "Total Errors: " + count );
+//		}catch ( IOException e ){
+//			e.printStackTrace();
+//		}
+		
+		System.out.println( testClassifier.getDomain( "Rạp quốc gia chiếu phim gì hôm nay" ) );
 
 	}
 

@@ -52,8 +52,12 @@ public class RangeParser{
 				timeString = date + "T" + listTime.get(0) + "," + date + "T" + listTime.get(1) ;
 			}
 		}
+<<<<<<< HEAD
 		//System.out.println( "timeString: " + timeString );
 		////System.out.println( timeString );
+=======
+		
+>>>>>>> b74e0eed25f8054b3251adcffc99b8274ecb31a5
 		try{
 			List< String > list = new ArrayList< String >();
 			Pattern pattern = Pattern.compile( IConstants.DTIME_REGEX );
@@ -69,7 +73,12 @@ public class RangeParser{
 			if (list.isEmpty()){
 				return timeRange;
 			}
+<<<<<<< HEAD
 			
+=======
+			System.out.println("list size: " + list.size());
+			System.out.println( "!!!!!!" + list.get( 0 ) );
+>>>>>>> b74e0eed25f8054b3251adcffc99b8274ecb31a5
 			if( list.size() >= 2 ){
 				timeRange.setfDate( list.get( 0 ), plusOneDay );
 				timeRange.setsDate( list.get( 1 ), plusOneDay );
