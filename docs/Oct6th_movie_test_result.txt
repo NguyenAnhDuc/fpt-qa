@@ -1,0 +1,979 @@
+cac cau hoi ve: 
+ + năm sản xuất
+ + nước sản xuất
+ + ngôn ngữ sử dụng
+ + thời lượng phim
+dang bi nhap nhang sang domain TV --> KHONG TRA LOI DUOC
+
+
+--- Moi cau hoi chay query 2 lan cho ca co' dau' va khong co' dau' ---> qua ton tai nguyen va khong can thiet
+
+--- Time mapper ERROR:
+list size: 1
+!!!!!!2014-01
+java.text.ParseException: Unparseable date: "2014-01"
+	at java.text.DateFormat.parse(DateFormat.java:357)
+	at fpt.qa.vnTime.vntime.TimeRange.parsefDate(TimeRange.java:49)
+	at fpt.qa.vnTime.vntime.TimeRange.setfDate(TimeRange.java:130)
+	at fpt.qa.vnTime.utils.RangeParser.parser(RangeParser.java:51)
+	at fpt.qa.vnTime.vntime.VnTimeParser.parser3(VnTimeParser.java:196)
+	at fpt.qa.additionalinformation.modifier.AbsoluteTime.getAbsoluteTime(AbsoluteTime.java:59)
+	at fpt.qa.additionalinformation.test.AbsoluteTimeTest.main(AbsoluteTimeTest.java:41)
+curentdate :2014-10-06 17:11
+<<null , null>>
+null
+null
+
+
+
+tối nay có phim gì hay
+phim The Pirates có imdb rating cao nhất
+No class def found MongoSocketException
+
+
+có phim gì hay tối nay
+No class def found MongoSocketException
+
+
+tối nay các rạp chiếu phim gì
+Phim OUTCAST đang được chiếu
+
+
+rạp chiếu phim gì tối nay
+Phim OUTCAST đang được chiếu
+
+
+phim gì tối nay chiếu rạp
+Phim OUTCAST đang được chiếu
+
+
+phim gì chiếu rạp tối nay
+Phim OUTCAST đang được chiếu
+
+
+tối nay có phim gì chiếu rạp
+Phim OUTCAST đang được chiếu
+
+
+tối nay rạp chiếu phim gì
+Phim OUTCAST đang được chiếu
+
+
+rạp quốc gia tối nay có phim gì
+[Conjunction Helper - getCinemaName: ]Phim | program_title
+[Conjunction Helper - getCinemaName: ]TT Chiếu Phim Quốc Gia | cin_name
+KHÔNG TRẢ LỜI ĐƯỢC
+
+
+rạp quốc gia hôm nay có phim gì
+Phim LUPIN THE 3RD, OUTCAST, HIỆP SĨ MÙ, THE DAMNED, GOOD PEOPLE, BƯỚC KHẼ ĐẾN HẠNH PHÚC, SCANDAL: HÀO QUANG TRỞ LẠI, THE MAZE RUNNER, ARE YOU HERE, LEGENDS OF OZ: DOROTHY'S RETURN, THE EQUALIZER, HOLIDAY, và AS ABOVE, SO BELOW đang được chiếu
+
+
+rạp nào còn vé phim outcast
+Rạp Lotte Cinema Hà Đông, Platinum Garden Mall, Platinum Vincom Royal City, Platinum Vincom Long Biên, TT Chiếu Phim Quốc Gia, CGV MIPEC Tower, CGV Vincom City Towers, Lotte Cinema Landmark
+
+
+tối nay rạp nào còn vé xem phim outcast
+Rạp Lotte Cinema Hà Đông
+
+
+tối nay rạp nào còn vé phim outcast
+Rạp Lotte Cinema Hà Đông
+
+
+rạp nào còn vé xem phim outcast tối nay
+Rạp Lotte Cinema Hà Đông
+
+
+rạp nào còn vé phim outcast tối nay
+Rạp Lotte Cinema Hà Đông
+
+
+lịch chiếu phim tối nay tại rạp quốc gia thế nào
+curentdate :2014-10-06 09:24
+<<Mon Oct 06 18:00:00 ICT 2014 , Mon Oct 06 23:00:00 ICT 2014>>
+Giờ chiếu: Oct 6, 2014 10:00:00 PM, Oct 6, 2014 8:25:00 PM, Oct 6, 2014 8:20:00 PM, Oct 6, 2014 7:05:00 PM, Oct 6, 2014 9:45:00 PM, Oct 6, 2014 6:00:00 PM, Oct 6, 2014 6:50:00 PM, Oct 6, 2014 7:10:00 PM, Oct 6, 2014 9:00:00 PM, Oct 6, 2014 7:15:00 PM, Oct 6, 2014 10:25:00 PM, Oct 6, 2014 8:15:00 PM, Oct 6, 2014 7:45:00 PM, Oct 6, 2014 9:00:00 PM, Oct 6, 2014 6:40:00 PM, Oct 6, 2014 8:45:00 PM, Oct 6, 2014 10:05:00 PM, Oct 6, 2014 6:40:00 PM, Oct 6, 2014 9:50:00 PM, Oct 6, 2014 10:05:00 PM, Oct 6, 2014 7:00:00 PM
+- hôm nay thì bỏ ngày đi, chỉ trả lời giờ thôi
+- cho cả tên phim ---> phim:giờ
+
+
+tối nay lịch chiếu phim tại rạp quốc gia thế nào
+Same as above
+
+
+lịch chiếu phim tại rạp quốc gia tối nay thế nào
+Same as above
+
+
+lịch chiếu phim tại rạp quốc gia thế nào tối nay
+Same as above
+
+
+cho tôi biết lịch chiếu phim tối nay tại rạp quốc gia
+Same as above
+
+
+cho mình biết lịch chiếu phim tối nay tại rạp quốc gia
+Same as above
+
+
+cho tôi biết lịch chiếu phim tại rạp quốc gia vào tối nay
+Same as above
+
+
+cho mình biết lịch chiếu phim tại rạp quốc gia vào tối nay
+Same as above
+
+
+lịch chiếu phim tối nay tại rạp platinum thế nào
+- giờ trả lời được, nhưng có quá nhiều kết quả, chắc là sort theo giờ rồi output ra 1 phần thôi
+
+
+cho tôi biết lịch chiếu phim tại rạp platinum vào tối nay
+Same as above
+
+
+cho mình biết lịch chiếu phim tại rạp platinum vào tối nay
+Same as above
+
+
+cho tôi biết lịch chiếu phim tại rạp platinum tối nay
+Same as above
+
+
+cho mình biết lịch chiếu phim tại rạp platinum tối nay
+Same as above
+
+
+tối nay tại rạp quốc gia có phim gì
+Phim ĐỒI QUỶ ÁM - THE DAMNED, VẬN ĐEN - GOOD PEOPLE, GIẢI MÃ MÊ CUNG - THE MAZE RUNNER, SIÊU ĐẠO CHÍCH LUPIN ĐỆ TAM - LUPIN THE THIRD, BƯỚC KHẼ ĐẾN HẠNH PHÚC, HIỆP SĨ MÙ, MỐI THÙ HOÀNG TỘC - OUTCAST, NGỐ LÀM TRIỆU PHÚ - ARE YOU HERE, HẦM MỘ MA QUÁI - AS ABOVE, SO BELOW, HUYỀN THOẠI XỨ OZ: DOROTHY TRỞ LẠI - LEGENDS OF OZ: DOROTHY'S RETURN, và THIỆN ÁC ĐỐI ĐẦU - THE EQUALIZER đang được chiếu
+- có vẻ hơi rối, có thể bỏ tên TA, mà chỉ output phần tên tiếng Việt thôi ko :-?
+
+
+rạp quốc gia tối nay chiếu phim gì
+Same as above
+
+
+tối nay tại rạp quốc gia chiếu phim gì
+Same as above
+
+
+tối nay rạp quốc gia chiếu phim gì
+Same as above
+
+
+rạp quốc gia tối nay có phim gì
+Same as above
+
+
+có những phim gì chiếu tại rạp quốc gia tối nay
+Same as above
+
+
+hôm nay rạp quốc gia chiếu phim lucy vào những khung giờ nào
+Xin lỗi, chúng tôi không tìm thấy dữ liệu cho câu trả lời
+- Nhận đúng tên phim + tên rạp, nhưng kết quả trả về rỗng, phải trả lời 1 câu more informative hơn, câu xin lỗi này là ko tìm được dữ liệu thôi, đánh đồng thế này ko đúng
+
+
+vé xem phim giải mã mê cung tại rạp quốc gia lúc 12 giờ còn không
+[ProcessHelper] Intent: ticket_status
+[ProcessHelper] Question Type: static
+The Maze Runner | mov_title
+Movie Title: The Maze Runner
+Câu hỏi loại static đúng hay sai?, sai đúng ko, câu này ko trả lời được nhể :-?
+
+
+đặt vé phim này tại rạp quốc gia lúc 12 giờ có được không
+-  12 gio nhan dung'
+Tuned sent: POL	đặt vé phim này tại rạp quốc gia lúc 12 giờ
+[ProcessHelper] Intent: ticket_status
+[ProcessHelper] Question Type: static
+[ConjWithType] [RawConj] [{Quốc Gia}, {Phim}]
+[ConjWithType] [Better Surr Conj] [[{Quốc Gia}, cin_name], [{Phim}, program_title]]
+[ConjWithType] [Longer Conj] [[{Quốc Gia}, cin_name], [{Phim}, program_title]]
+[ConjWithType] [Final Conj] [[TT Chiếu Phim Quốc Gia, cin_name], [Phim, program_title]]
+TT Chiếu Phim Quốc Gia | cin_name
+Phim | program_title
+luc besson | đạo_diễn
+Movie Title: null
+Exception! null
+java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:205)
+	at com.fpt.ruby.service.MovieFlyService.searchOnImdbByTitle(MovieFlyService.java:122)
+
+
+
+
+vé xem phim đồi quỷ ám lúc 12 giờ tại rạp quốc gia còn không
+the damned | mov_title
+Movie Title: the damned
+Tuned sent: POL	ve phim doi quy am luc 12 gio tai rap quoc gia con
+[ProcessHelper] Intent: ticket_status
+[ProcessHelper] Question Type: static
+[ConjWithType] [RawConj] [{Quoc Gia}, {Phim}, {luc}, {doi quy am}]
+[ConjWithType] [Better Surr Conj] [[{Quoc Gia}, cin_name], [{Phim}, program_title], [{luc}, đạo_diễn], [{doi quy am}, mov_title]]
+[ConjWithType] [Longer Conj] [[{Quoc Gia}, cin_name], [{Phim}, program_title], [{luc}, đạo_diễn], [{doi quy am}, mov_title]]
+[ConjWithType] [Final Conj] [[TT Chiếu Phim Quốc Gia, cin_name], [Phim, program_title], [luc besson, đạo_diễn], [the damned, mov_title]]
+TT Chiếu Phim Quốc Gia | cin_name
+Phim | program_title
+luc besson | đạo_diễn
+the damned | mov_title
+Movie Title: the damned
+
+
+phim đồi quỷ ám thuộc thể loại nào
+Phim The Damned thuộc thể loại truyền hình
+- Sao search trên web imdb có the damned 2014 rồi mà ctrinh của mình ko search được
+
+
+
+phim này thuộc thể loại nào
+chưa xử lý được này và đó
+
+
+lucy là phim hài hay phim hành động
+Phim Lucy thuộc thể loại hành động, khoa học viễn tưởng
+
+
+phim lucy có hay không
+Phim Lucy có imdb rating khoảng 6.6
+
+
+tôi muốn biết nội dung tóm tắt của phim lucy
+A woman, accidentally caught in a dark deal, turns the tables on her captors and transforms into a merciless warrior evolved beyond human logic.
+- Có thể chuyển sang tiếng Việt ko?
+
+
+phim lucy có sự góp mặt của những diễn viên nào
+Phim Lucy có sự góp mặt của diễn viên Scarlett Johansson, Morgan Freeman, Min-sik Choi, Amr Waked
+
+
+rạp quốc gia mở cửa lúc mấy giờ
+Tuned sent: DTI	rạp quốc gia mở cửa lúc mấy giờ
+[ProcessHelper] Intent: cin_date
+[ProcessHelper] Question Type: static
+[ConjWithType] [RawConj] [{Quốc Gia}]
+[ConjWithType] [Better Surr Conj] [[{Quốc Gia}, cin_name]]
+[ConjWithType] [Longer Conj] [[{Quốc Gia}, cin_name]]
+[ConjWithType] [Final Conj] [[TT Chiếu Phim Quốc Gia, cin_name]]
+TT Chiếu Phim Quốc Gia | cin_name
+Movie Title: null
+Exception! null
+java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:205)
+	at com.fpt.ruby.service.MovieFlyService.searchOnImdbByTitle(MovieFlyService.java:141)
+
+- Question type có phải static ko, đáng nhẽ ko phải rồi =))
+
+
+rạp quốc gia đóng cửa lúc mấy giờ
+Same as above
+
+
+
+rạp quốc gia có chỗ gửi xe không
+Tuned sent: POL	rạp quốc gia có chỗ gửi xe
+[ProcessHelper] Intent: undefined
+[ProcessHelper] Question Type: static
+TT Chiếu Phim Quốc Gia | cin_name
+Movie Title: null
+[Domain Classifier] rạp quốc gia có chỗ gửi xe không  {tv, 0.0}  {movie, 1.0} 
+[AppController] Domain Movie
+[ConjWithType] [RawConj] [{Quốc Gia}]
+[ConjWithType] [Better Surr Conj] [[{Quốc Gia}, cin_name]]
+[ConjWithType] [Longer Conj] [[{Quốc Gia}, cin_name]]
+[ConjWithType] [Final Conj] [[TT Chiếu Phim Quốc Gia, cin_name]]
+Exception! null
+java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:205)
+	at com.fpt.ruby.service.MovieFlyService.searchOnImdbByTitle(MovieFlyService.java:141)
+-- Đáng nhẽ đến chỗ intent undefined là phải return luôn câu trả lời tôi ko trả lời câu hỏi này được rồi
+-- Tất cả các câu hỏi có intent undefined thì nên trả lời là ko trả lời được, còn lại thì ko thấy dữ liệu hoặc là ko có cái nào như thế
+
+
+
+
+phim ngố làm triệu phú là phim 2D hay 3D
+Phim Ngố Làm Triệu Phú - Are you here có phiên bản 2D + 2D + 2D + 2D + 2D + 2D + 2D + 2D + 2D + 2D + 2D + 2D
+----Sửa lại chỉ để 1 2D thôi, lọc distinct chứ
+----Có thể ko optimize query cho từng loại câu hỏi, chứ để thế này ngu si thế
+
+phim ngố làm triệu phú có 3d không
+[Domain Classifier] phim ngố làm triệu phú có 3d không hello
+ {tv, 2.0}  {movie, 2.0} 
+[AppController] Domain TV
+TV Intent: POL
+Non-diacritic TV Intent: UDF
+------Có sửa nó về domain movie được không và có nên không
+
+
+
+rạp nào có vé xem phim 2D rẻ nhất
+Rạp Platinum Garden Mall, Lotte Cinema Hà Đông, Platinum Vincom Royal City, Platinum Vincom Long Biên, TT Chiếu Phim Quốc Gia, CGV MIPEC Tower, CGV Vincom City Towers, Kim Đồng Cinema, Tháng 8 Cinema, Platinum Cineplex Times City, Lotte Cinema Landmark
+
+Tuned sent: NAM	rạp nào có vé phim 2D rẻ nhất
+[ProcessHelper] Intent: cin_name
+[ProcessHelper] Question Type: dynamic
+Dynamic ....
+[ConjWithType] [RawConj] [{Phim}]
+[ConjWithType] [Better Surr Conj] [[{Phim}, program_title]]
+[ConjWithType] [Longer Conj] [[{Phim}, program_title]]
+[ConjWithType] [Final Conj] [[Phim, program_title]]
+[Conjunction Helper - getCinemaName: ]Phim | program_title
+curentdate :2014-10-06 11:43
+Size: 365
+DONE Process
+--------------Tại sao câu nào cũng thấy xử lý cả không dấu và có dấu song song thế
+--- Xem xét thông tin giá vé rồi quyết định có nên trả lời câu này không
+
+
+rạp nào bán vé rẻ nhất
+Same as above
+
+rạp nào bán vé 2D rẻ nhất
+Same as above
+
+rạp nào đang có khuyến mãi vào hôm nay
+Same as above -- có khi bỏ khuyến mãi đi
+
+rạp nào có khuyến mãi vào hôm nay
+Same as above
+
+rạp nào đang khuyến mãi vào hôm nay
+Same as above
+
+rạp quốc gia có phát hành thẻ thành viên không
+Xin lỗi, tôi không trả lời câu hỏi này được
+[Domain Classifier] rạp quốc gia có phát hành thẻ thành viên không hello
+ {tv, 0.0}  {movie, 1.0} 
+[AppController] Domain Movie
+Tuned sent: POL	rạp quốc gia có phát hành thẻ thành viên
+[ProcessHelper] Intent: undefined
+[ProcessHelper] Question Type: static
+[ConjWithType] [RawConj] [{Quốc Gia}]
+[ConjWithType] [Better Surr Conj] [[{Quốc Gia}, cin_name]]
+[ConjWithType] [Longer Conj] [[{Quốc Gia}, cin_name]]
+[ConjWithType] [Final Conj] [[TT Chiếu Phim Quốc Gia, cin_name]]
+TT Chiếu Phim Quốc Gia | cin_name
+Movie Title: null
+Exception! null
+
+
+
+mức giảm giá cho người có thẻ thành viên ở rạp platinum là bao nhiêu
+same as above
+
+người có thẻ thành viên ở rạp platinum được giảm giá bao nhiêu
+same as above
+
+rạp platinum giảm giá bao nhiêu cho thành viên
+same as above
+
+phim lucy kéo dài bao lâu
+[Domain Classifier] phim lucy kéo dài bao lâu hello
+ {tv, 2.0}  {movie, 2.0} 
+[AppController] Domain TV
+TV Intent: UDF
+Non-diacritic TV Intent: TTL
+--- Tên phim là phim chiếu rạp thì phải domain là movie, not TV
+
+
+phim lucy có cấm trẻ em dưới 16 tuổi không
+Phim Lucy không phù hợp với trẻ em
+[AppController] Domain Movie
+Tuned sent: HUM	phim lucy có cấm trẻ em dưới 16 tuổi
+[ProcessHelper] Intent: mov_audience
+[ProcessHelper] Question Type: static
+
+
+
+phim thiện ác đối đầu có dành cho trẻ em không
+Phim Good Against Evil không phù hợp với trẻ em
+---- expect là The Equalizer ---> ưu tiên phim mới hơn --> phim nào cũ thì bỏ đi nếu có nhập nhằng
+
+
+
+địa chỉ của rạp quốc gia là gì
+TT Chiếu Phim Quốc Gia ở địa chỉ: 87 Láng Hạ, Quận Ba Đình, Tp. Hà Nội
+
+
+phim đồi quỷ ám công chiếu ngày nào
+Phim The Damned được công chiếu ngày Thu Dec 18 00:00:00 ICT 1969
+-- Vấn đề về dữ liệu ko update được thông tim phim mới nhất. The damned từ 1969 ko phải là phim đang cần tìm
+
+
+
+rạp quốc gia cách đây bao xa
+Xin lỗi, tôi không trả lời câu hỏi này được
+Tuned sent: DIS	rạp quốc gia cách đây bao xa
+[ProcessHelper] Intent: cin_dis
+[ProcessHelper] Question Type: static
+-- Sua lai question type ko hoac la hoi den day thi return luon ko tra loi duoc cau hoi nay di
+
+
+từ đây đến rạp quốc gia mất bao lâu
+Tuned sent: DUR	rạp quốc gia mất bao lâu
+[ProcessHelper] Intent: undefined
+[ProcessHelper] Question Type: static
+same as above
+
+
+từ đây đến rạp quốc gia bao xa
+Tuned sent: DIS	rạp quốc gia bao xa
+[ProcessHelper] Intent: cin_dis
+[ProcessHelper] Question Type: static
+Same as above
+
+
+rạp quốc gia cách đây có xa không
+same as above
+
+rạp quốc gia cách đây bao nhiêu phút xe máy
+same as above
+
+rạp quốc gia cách đây bao nhiêu phút đi xe
+same as above
+
+chỉ cho tôi đường đến rạp quốc gia
+Xin lỗi, tôi không trả lời câu hỏi này được
+Tuned sent: DES	đường đến rạp quốc gia
+[ProcessHelper] Intent: cin_map
+[ProcessHelper] Question Type: static
+[ConjWithType] [RawConj] [{Quốc Gia}]
+[ConjWithType] [Better Surr Conj] [[{Quốc Gia}, cin_name]]
+[ConjWithType] [Longer Conj] [[{Quốc Gia}, cin_name]]
+[ConjWithType] [Final Conj] [[TT Chiếu Phim Quốc Gia, cin_name]]
+TT Chiếu Phim Quốc Gia | cin_name
+Movie Title: null
+Exception! null
+java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:205)
+	at com.fpt.ruby.service.MovieFlyService.searchOnImdbByTitle(MovieFlyService.java:142)
+	at com.fpt.ruby.helper.ProcessHelper.getAnswer(ProcessHelper.java:103)
+
+
+
+từ đây đến rạp quốc gia bao xa
+Xin lỗi, tôi không trả lời câu hỏi này được
+Tuned sent: DIS	rạp quốc gia bao xa
+[ProcessHelper] Intent: cin_dis
+[ProcessHelper] Question Type: static
+
+
+mất bao lâu để đi từ đây đến rạp quốc gia
+Xin lỗi, tôi không trả lời câu hỏi này được
+Tuned sent: DUR	mất bao lâu để đi đến rạp quốc gia
+[ProcessHelper] Intent: undefined
+[ProcessHelper] Question Type: static
+
+
+mất bao lâu để đi đến rạp quốc gia
+same as above
+
+
+
+rạp quốc gia còn vé cho phim lucy suất chiếu 12 giờ không
+Xin lỗi, chúng tôi chưa có câu trả lời cho câu hỏi của bạn
+[AppController] Domain Movie
+Tuned sent: POL	rạp quốc gia còn vé cho phim lucy suất chiếu 12 giờ
+[ProcessHelper] Intent: ticket_status
+[ProcessHelper] Question Type: static
+[ConjWithType] [RawConj] [{Lucy}, {Phim}, {Quốc Gia}, {Lucy}]
+[ConjWithType] [Better Surr Conj] [[{Lucy}, mov_title], [{Phim}, program_title], [{Quốc Gia}, cin_name], [{Lucy}, mov_title]]
+[ConjWithType] [Longer Conj] [[{Lucy}, mov_title], [{Phim}, program_title], [{Quốc Gia}, cin_name], [{Lucy}, mov_title]]
+[ConjWithType] [Final Conj] [[Lucy, mov_title], [Phim, program_title], [TT Chiếu Phim Quốc Gia, cin_name]]
+
+
+đạo diễn phim lucy là ai
+Phim Lucy của đạo diễn Luc Besson
+
+
+giá vé phim 3D ghế vip tại rạp quốc gia vào thứ 5 bao nhiêu
+Xin lỗi, tôi không trả lời câu hỏi này được
+Tuned sent: PRI	giá vé phim 3D ghế vip tại rạp quốc gia vào thứ 5 bao nhiêu
+[ProcessHelper] Intent: ticket_price
+[ProcessHelper] Question Type: static
+[ConjWithType] [Better Surr Conj] [[{Phim}, program_title], [{Quốc Gia}, cin_name]]
+[ConjWithType] [Longer Conj] [[{Phim}, program_title], [{Quốc Gia}, cin_name]]
+[ConjWithType] [Final Conj] [[Phim, program_title], [TT Chiếu Phim Quốc Gia, cin_name]]
+Phim | program_title
+TT Chiếu Phim Quốc Gia | cin_name
+Movie Title: null
+Exception! null
+java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:205)
+	at com.fpt.ruby.service.MovieFlyService.searchOnImdbByTitle(MovieFlyService.java:142)
+
+
+
+phim lucy bắt đầu khởi chiếu từ khi nào
+Tuned sent: DTI	phim lucy bắt đầu khởi chiếu từ khi nào
+[ProcessHelper] Intent: mov_release
+[ProcessHelper] Question Type: static
+-- những câu hỏi về released date thì nếu năm sản xuất ko phải năm nay hoặc năm trước đới thì bảo là ko tìm thấy dữ liệu còn hơn là trả lời sai
+
+
+
+
+lịch chiếu phim hội quái hộp tại rạp tháng tám thế nào
+[Conjunction Helper - getCinemaName: ]The Boxtrolls | mov_title
+[Conjunction Helper - getCinemaName: ]Tháng 8 Cinema | cin_name
+[Conjunction Helper - getCinemaName: ]Phim | program_title
+list size: 1
+!!!!!!2014-08
+java.text.ParseException: Unparseable date: "2014-08"
+--------- Lỗi time mapper bắt tháng tám
+
+
+
+lịch chiếu phim hội quái hộp tại rạp quốc gia thế nào
+Xin lỗi, chúng tôi không tìm thấy dữ liệu cho câu trả lời
+---- Phải trả lời là hôm nay rạp quốc gia ko chiếu phim này, ko phải là ko tìm thấy dữ liệu
+
+
+cho tôi biết rạp chiếu phim gần đây nhất có chiếu phim hercules
+chưa address được cụm từ gần đây nhất, tuy nhiên cứ trả lời tất cả các rạp ra cũng có thể gọi là acceptable
+
+
+chỉ đường từ đây đến rạp chiếm phim gần nhất
+Xin lỗi, tôi không trả lời câu hỏi này được
+Tuned sent: DES	chỉ đường rạp chiếm phim
+[ProcessHelper] Intent: cin_map
+[ProcessHelper] Question Type: static
+
+
+suất chiếu giải mã mê cung gần nhất tại rạp quốc gia vào lúc mấy giờ
+Giờ chiếu: Oct 7, 2014 9:45:00 AM, Oct 6, 2014 1:45:00 PM, Oct 6, 2014 9:45:00 PM, Oct 6, 2014 5:45:00 PM, Oct 6, 2014 3:45:00 PM, Oct 6, 2014 3:45:00 PM, Oct 6, 2014 5:45:00 PM, Oct 8, 2014 9:45:00 AM, Oct 6, 2014 5:45:00 PM, Oct 6, 2014 5:45:00 PM, Oct 6, 2014 5:45:00 PM, Oct 6, 2014 7:45:00 PM, Oct 6, 2014 7:45:00 PM, Oct 6, 2014 3:45:00 PM, Oct 6, 2014 5:45:00 PM, Oct 6, 2014 5:45:00 PM, Oct 6, 2014 7:45:00 PM, Oct 6, 2014 3:45:00 PM, Oct 6, 2014 3:45:00 PM, Oct 6, 2014 9:45:00 PM, Oct 6, 2014 9:45:00 PM, Oct 6, 2014 3:45:00 PM, Oct 6, 2014 7:45:00 PM, Oct 6, 2014 9:45:00 PM, Oct 6, 2014 7:45:00 PM, Oct 6, 2014 9:45:00 PM, Oct 6, 2014 3:45:00 PM, Oct 6, 2014 9:45:00 PM, Oct 6, 2014 9:45:00 PM, Oct 6, 2014 7:45:00 PM, Oct 6, 2014 7:45:00 PM
+------ Duplicate entries in movie db 
+------ address từ gần nhất như thế nào, làm sao để loại bỏ những suất chiếu đã qua rồi và những suất chiếu của ngày mai
+------ chắc là loại bỏ những suất chiếu đã qua rồi dễ hơn
+
+
+
+còn vé phim giải mã mê cung tại rạp platinum lúc 8 giờ tối nay không
+phim giải mã mê cung tại rạp platinum lúc 8 giờ tối nay còn chỗ không
+Xin lỗi, chúng tôi chưa có câu trả lời cho câu hỏi của bạn
+ticket_status ---> chưa trả lời được
+
+
+
+phim nào đang được quan tâm nhất hiện nay
+phim The Pirates có imdb rating cao nhất
+-- Moi cau dang duoc chay query 2 lan ===> qua' ton' thoi gian ===> can sua lai
+
+
+
+
+
+phim gì đang được quan tâm 
+Phim ĐỒI QUỶ ÁM - THE DAMNED, ANNABELLE, GIẢI MÃ MÊ CUNG - THE MAZE RUNNER, HIỆP SĨ MÙ, THE DAMNED, HẢI TẶC - THE PIRATES, GOOD PEOPLE, VẬN ĐEN - GOOD PEOPLE, SIÊU ĐẠO CHÍCH LUPIN ĐỆ TAM - LUPIN THE THIRD, BƯỚC KHẼ ĐẾN HẠNH PHÚC, SCANDAL: HÀO QUANG TRỞ LẠI, THE MAZE RUNNER, THE EQUALIZER, NGỐ LÀM TRIỆU PHÚ - ARE YOU HERE, HOLIDAY, THIỆN ÁC ĐỐI ĐẦU - THE EQUALIZER, LUPIN THE 3RD, ROARING CURRENTS, OUTCAST, MỐI THÙ HOÀNG TỘC - OUTCAST, HẦM MỘ MA QUÁI - AS ABOVE, SO BELOW, THE PIRATES, LEGENDS OF OZ: DOROTHY'S RETURN, ARE YOU HERE, HUYỀN THOẠI XỨ OZ: DOROTHY TRỞ LẠI - LEGENDS OF OZ: DOROTHY'S RETURN, và AS ABOVE, SO BELOW đang được chiếu
+
+
+
+phim nào có số lượng người xem nhiều nhất
+Xin lỗi, chúng tôi không có thông tin cho câu trả lời của bạn 
+[Domain Classifier] phim nào có số lượng người xem nhiều nhất  {tv, 2.0}  {movie, 2.0} 
+[AppController] Domain TV
+TV Intent: CHN
+Non-diacritic TV Intent: UDF
+TV channel: null
+TV prog title: Phim
+curentdate :2014-10-06 16:53
+TV query start time: null
+TV query end time: null
+------ db có dữ liệu về film có vẻ như query có vấn đề à
+
+
+
+
+phim nào đang được xem nhiều nhất
+VTV4 : Phim truyện Giọt nước rơi - Tập 9 HanoiTV1 : Phim thiếu nhi: Khủng long biến hình (tập 25) LongAnTV : Phim : Ước mơ lấp lánh - tập 9 - 10 DaNangTV1 : Phim truyện VN - Bước qua bóng tối - Tập 29 Vĩnh Phúc : Phim truyện : Mẹ và con trai (Tập 30 – Phim VN 
+----- trả lời sang domain TV rồi còn đâu
+
+
+
+những rạp nào sẽ chiếu phim hercules vào 12 giờ thứ 7 tới
+<<Mon Oct 06 00:00:00 ICT 2014 , Mon Oct 06 23:59:59 ICT 2014>>
+----- bắt sai thời gian
+
+
+phim nào được trông đợi nhất vào tháng 10 này
+phim The Pirates có imdb rating cao nhất
+Tuned sent: NAM	phim nào được trông đợi nhất vào tháng 10 này
+[ProcessHelper] Intent: mov_title
+[ProcessHelper] Question Type: featured
+Feature ..
+Filter by ImDB
+--- Chỉ nên list ra những phim sẽ được công chiếu trong tháng 10 này thôi chứ
+--- câu trả lời này có vẻ chưa phù hợp lắm
+
+
+phim nào sẽ được công chiếu trong tháng 10 này
+Xin lỗi, tôi không trả lời câu hỏi này được
+Tuned sent: NAM	phim nào sẽ được công chiếu trong tháng 10 này
+[ProcessHelper] Intent: mov_release
+[ProcessHelper] Question Type: static
+[ConjWithType] [RawConj] [{Phim}, {Phim}]
+[ConjWithType] [Better Surr Conj] [[{Phim}, program_title], [{Phim}, program_title]]
+[ConjWithType] [Longer Conj] [[{Phim}, program_title], [{Phim}, program_title]]
+[ConjWithType] [Final Conj] [[Phim, program_title]]
+Phim | program_title
+Movie Title: null
+Exception! null
+java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:205)
+	at com.fpt.ruby.service.MovieFlyService.searchOnImdbByTitle(MovieFlyService.java:142)
+
+--- Hoặc là chấp nhận ko trả lời được câu này hoặc là trả lời lại
+--- tạm thời cứ để chưa trả lời được câu này đi 
+
+
+rạp quốc gia khởi chiếu phim step up all in khi nào
+Phim Step Up All In được công chiếu ngày Fri Aug 08 00:00:00 ICT 2014
+---- Ideally, câu này nên trả lời ngày đầu tiên rạp quốc gia chiếu phim này
+Tuned sent: DTI	rạp quốc gia khởi chiếu phim step up all in khi nào
+[ProcessHelper] Intent: mov_release
+[ProcessHelper] Question Type: static
+---------- chỗ này hình như cũng ko bắt được rạp quốc gia thì phải, check lại xem nhé
+
+
+
+rạp quốc gia khởi chiếu phim step up all in hôm nào
+rạp quốc gia khởi chiếu phim step up all in ngày nào
+rạp quốc gia khởi chiếu phim step up all in vào thứ mấy
+rạp quốc gia khởi chiếu phim step up all in thứ mấy
+rạp quốc gia sẽ khởi chiếu phim step up all in vào thứ mấy
+rạp quốc gia sẽ khởi chiếu phim step up all in thứ mấy
+same as above
+
+
+
+
+địa chỉ của rạp platinum gần đây nhất
+Xin lỗi, chúng tôi không tìm thấy dữ liệu cho câu trả lời
+Tuned sent: ADD	địa chỉ của rạp platinum
+[ProcessHelper] Intent: cin_address
+[ProcessHelper] Question Type: static
+[Process Helper] Cin name: null
+--- Tại sao cin name lại là null, default cho nó 1 cái nào đấy đi ví dụ như platinum là nghĩ đến gadern mall chẳng hạn
+
+
+
+địa chỉ của rạp platinum gần nhất
+cho tôi biết địa chỉ của rạp platinum gần nhất
+cho tôi biết địa chỉ của rạp platinum gần đây nhất
+cho mình biết địa chỉ của rạp platinum gần nhất
+cho mình biết địa chỉ của rạp platinum gần đây nhất
+tôi muốn biết địa chỉ của rạp platinum gần nhất
+tôi muốn biết địa chỉ của rạp platinum gần đây nhất
+mình muốn biết địa chỉ của rạp platinum gần nhất
+mình muốn biết địa chỉ của rạp platinum gần đây nhất
+Same as above
+
+
+
+rạp platinum nào gần đây nhất
+Rạp Platinum Garden Mall, Lotte Cinema Hà Đông, Platinum Vincom Royal City, Platinum Vincom Long Biên, TT Chiếu Phim Quốc Gia, CGV Vincom City Towers, CGV MIPEC Tower, Kim Đồng Cinema, Tháng 8 Cinema, Platinum Cineplex Times City, Lotte Cinema Landmark
+
+[Domain Classifier] rạp platinum nào gần đây nhất hello {tv, 0.0}  {movie, 1.0} 
+[AppController] Domain Movie
+
+Tuned sent: NAM	rạp platinum nào
+[ProcessHelper] Intent: cin_name
+[ProcessHelper] Question Type: dynamic
+Dynamic ....
+[ConjWithType] [RawConj] []
+[ConjWithType] [Better Surr Conj] []
+[ConjWithType] [Longer Conj] []
+[ConjWithType] [Final Conj] []
+curentdate :2014-10-06 17:31
+Size: 1930
+----- Sao lại output hết tên rạp ra thế này, ít ra là chỉ output tên rạp có chữ platinum thôi chứ
+
+
+
+
+
+rạp platinum gần nhất cách đây bao xa
+chỉ cho tôi đường đến rạp platinum gần nhất
+chỉ cho tôi đường đến rạp platinum gần đây nhất
+CHƯA TRẢ LỜI ĐƯỢC
+
+
+rạp tháng tám ở đâu
+rạp tháng tám nằm trên đường nào
+rạp tháng tám nằm ở khu nào
+Tháng 8 Cinema ở địa chỉ: 45 Hàng Bài, Hoàn Kiếm, Hà Nội
+
+
+rạp tháng tám cách đây có xa không
+rạp tháng tám cách đây bao xa
+--------------Lại lỗi ở chỗ cin_dis để là static question rồi query db
+
+
+
+hôm nay rạp tháng tám chiếu phim hercules lúc mấy giờ
+Xin lỗi, chúng tôi không tìm thấy dữ liệu cho câu trả lời
+---- dang nhe phai tra loi hom nay rap thang tam khong chieu phim nay
+
+
+
+
+hôm nay rạp tháng tám chiếu phim giải mã mê cung lúc mấy giờ
+Giờ chiếu: Oct 6, 2014 5:35:00 PM, Oct 6, 2014 5:35:00 PM, Oct 6, 2014 5:35:00 PM, Oct 6, 2014 5:35:00 PM, Oct 6, 2014 5:35:00 PM, Oct 6, 2014 5:35:00 PM, Oct 6, 2014 5:35:00 PM
+
+
+
+phim hercules có được chiếu ở rạp tháng tám không
+rạp tháng tám có chiếu phim hercules không
+rạp tháng tám có đông khách không
+----- Intent undefined, Question Type: static
+
+
+
+
+có những phim hành động nào đang được chiếu tại các rạp
+Phim The Equalizer, The Maze Runner
+
+
+
+rạp đó đang chiếu những phim hài nào
+=====> output to user: rap do dang chieu nhung phim hai nao
+Tuned sent: NAM	rạp đó đang chiếu phim hài nào
+[ProcessHelper] Intent: mov_title
+[ProcessHelper] Question Type: featured
+Feature ..
+afterdate: Mon Oct 06 17:42:10 ICT 2014
+No of returned tickets: 86
+{"Title":"Lupin the Third: The Legend of Twilight Gemini","Year":"1996","Rated":"N/A","Released":"02 Aug 1996","Runtime":"92 min","Genre":"Action, Adventure, Animation","Director":"Gisaburo Sugii","Writer":"Naoya Azuma (screenplay), Naoya Higashi (screenplay), Hideki Mitsui (screenplay), Monkey Punch (characters), Gisaburo Sugii (screenplay)","Actors":"Kan'ichi Kurita, Kiyoshi Kobayashi, Eiko Masuyama, Makio Inoue","Plot":"Lupin comes into the possession of half a diamond containing half a map, and goes in search of the other half so that he can obtain the map's treasure.","Language":"English, German, Italian, Japanese","Country":"Japan","Awards":"N/A","Poster":"N/A","Metascore":"N/A","imdbRating":"6.9","imdbVotes":"175","imdbID":"tt0363140","Type":"movie","Response":"True"}
+{"Title":"Rupan sansei: Ikiteita majutsushi","Year":"2002","Rated":"N/A","Released":"03 Apr 2002","Runtime":"50 min","Genre":"Action, Animation, Comedy","Director":"Mamoru Hamatsu","Writer":"Monkey Punch (comic)","Actors":"Takeshi Aono, Daisuke Egawa, Makio Inoue, Kiyoshi Kobayashi","Plot":"30 years after \"The Magician who lived\".","Language":"Japanese","Country":"Japan","Awards":"1 nomination.","Poster":"N/A","Metascore":"N/A","imdbRating":"6.3","imdbVotes":"67","imdbID":"tt0420138","Type":"movie","Response":"True"}
+{"Title":"Lupin III: Burning Memory - Tokyo Crisis","Year":"1998","Rated":"N/A","Released":"24 Jul 1998","Runtime":"95 min","Genre":"Animation, Action, Comedy","Director":"Toshiya Shinohara","Writer":"Monkey Punch (creator), Monkey Punch (screenplay)","Actors":"Megumi Hayashibara, Kan'ichi Kurita, Kiyoshi Kobayashi, Eiko Masuyama","Plot":"Lupin attempts to get his hands on a treasure map, but finds himself in a crisis where the future of Tokyo hangs in the balance.","Language":"English, Japanese","Country":"Japan","Awards":"N/A","Poster":"http://ia.media-imdb.com/images/M/MV5BNzk4MjQwMzc0MV5BMl5BanBnXkFtZTcwODU0NTkyMQ@@._V1_SX300.jpg","Metascore":"N/A","imdbRating":"6.8","imdbVotes":"171","imdbID":"tt0189973","Type":"movie","Response":"True"}
+{"Title":"The Admiral: Roaring Currents","Year":"2014","Rated":"N/A","Released":"15 Aug 2014","Runtime":"126 min","Genre":"War","Director":"Han-min Kim","Writer":"Cheol-Hong Jeon, Han-min Kim","Actors":"Min-sik Choi, Ryu Seung-Ryong, Jin-Woong Cho, Myung-gon Kim","Plot":"At the strait 'Roaring Currents', master strategist Admiral Yi and his 12 battleships oppose enemy's fleet of 330, and win the most incredible victory of history.","Language":"Korean","Country":"South Korea","Awards":"N/A","Poster":"http://ia.media-imdb.com/images/M/MV5BMjA1MzE5NTMyNl5BMl5BanBnXkFtZTgwODA4MzI0MjE@._V1_SX300.jpg","Metascore":"N/A","imdbRating":"7.1","imdbVotes":"235","imdbID":"tt3541262","Type":"movie","Response":"True"}
+Filter by Genre: [comedy]
+Tuned sent: NAM	rap do dang chieu phim hai nao
+[ProcessHelper] Intent: mov_title
+[ProcessHelper] Question Type: dynamic
+Dynamic ....
+[ConjWithType] [RawConj] [{Phim}]
+[ConjWithType] [Better Surr Conj] [[{Phim}, program_title]]
+[Conjunction Helper - getCinemaName: ]Phim | program_title
+[ConjWithType] [Longer Conj] [[{Phim}, program_title]]
+[ConjWithType] [Final Conj] [[Phim, program_title]]
+list size: 2
+!!!!!!2014-10-06 12:00:00
+curentdate :2014-10-06 17:42
+<<Mon Oct 06 12:00:00 ICT 2014 , Mon Oct 06 18:00:00 ICT 2014>>
+Size: 915
+DONE Process
+------------------------------- tại sao lại trả lời câu hỏi không dấu, có dấu là câu trả lời đúng mà
+Phim LUPIN THE 3RD, ĐỒI QUỶ ÁM - THE DAMNED, GIẢI MÃ MÊ CUNG - THE MAZE RUNNER, OUTCAST, HIỆP SĨ MÙ, THE DAMNED, MỐI THÙ HOÀNG TỘC - OUTCAST, HẦM MỘ MA QUÁI - AS ABOVE, SO BELOW, HẢI TẶC - THE PIRATES, GOOD PEOPLE, VẬN ĐEN - GOOD PEOPLE, SIÊU ĐẠO CHÍCH LUPIN ĐỆ TAM - LUPIN THE THIRD, BƯỚC KHẼ ĐẾN HẠNH PHÚC, SCANDAL: HÀO QUANG TRỞ LẠI, THE PIRATES, LEGENDS OF OZ: DOROTHY'S RETURN, ARE YOU HERE, THE MAZE RUNNER, THE EQUALIZER, HOLIDAY, NGỐ LÀM TRIỆU PHÚ - ARE YOU HERE, HUYỀN THOẠI XỨ OZ: DOROTHY TRỞ LẠI - LEGENDS OF OZ: DOROTHY'S RETURN, AS ABOVE, SO BELOW, và THIỆN ÁC ĐỐI ĐẦU - THE EQUALIZER đang được chiếu
+
+
+
+
+
+
+có phim hoạt hình 3D nào đang được chiếu tại các rạp không
+Xin lỗi, chúng tôi không tìm thấy câu trả lời cho câu hỏi cảu bạn
+Tuned sent: NAM	phim hoạt hình 3D nào đang được
+[ProcessHelper] Intent: mov_title
+[ProcessHelper] Question Type: featured
+Feature ..
+afterdate: Mon Oct 06 17:44:41 ICT 2014
+No of returned tickets: 86
+Filter by Genre: [animation]
+Tuned sent: NAM	phim hoat hinh 3D nao dang duoc
+[ProcessHelper] Intent: mov_title
+[ProcessHelper] Question Type: dynamic
+Dynamic ..
+-------- Phải trả lời là ko có phim hoạt hình 3D nào đang được chiếu rạp
+
+
+
+bao nhiêu tiền một vé
+vé giá bao nhiêu
+vé bao nhiêu
+vé vip giá bao nhiêu
+----------------------ticket_price chưa trả lời được
+
+
+
+đặt vé qua mạng có được không
+đặt vé qua mạng được không
+tôi muốn đặt vé qua mạng có được không
+mình muốn đặt vé qua mạng có được không
+tôi muốn đặt vé qua mạng được không
+mình muốn đặt vé qua mạng được không
+Xin lỗi, tôi không trả lời câu hỏi này được
+Tuned sent: POL	đặt vé qua mạng
+[ProcessHelper] Intent: ticket_status
+[ProcessHelper] Question Type: static
+
+
+
+trẻ con có xem được phim này không
+trẻ con có xem được phim này không TV Intent: UDF Non-diacritic TV Intent: UDF Xin lỗi, chúng tôi không có thông tin cho câu trả lời của bạn 
+[Domain Classifier] trẻ con có xem được phim này không hello
+ {tv, 2.0}  {movie, 2.0} 
+[AppController] Domain TV
+TV Intent: UDF
+Non-diacritic TV Intent: UDF
+--------------- cai nay phai la domain movie, not tv
+
+
+
+trong rạp có ghế ngồi cho trẻ em không
+Xin lỗi, tôi không trả lời câu hỏi này được
+Tuned sent: POL	trong rạp có ghế ngồi cho trẻ em
+[ProcessHelper] Intent: undefined
+[ProcessHelper] Question Type: static
+
+
+
+rạp nào tốt nhất ở hà nội
+Rạp Platinum Garden Mall, Lotte Cinema Hà Đông, Platinum Vincom Royal City, Platinum Vincom Long Biên, TT Chiếu Phim Quốc Gia, CGV MIPEC Tower, CGV Vincom City Towers, Kim Đồng Cinema, Tháng 8 Cinema, Platinum Cineplex Times City, Lotte Cinema Landmarks
+Tuned sent: NAM	rạp nào tốt nhất hà nội
+[ProcessHelper] Intent: cin_name
+[ProcessHelper] Question Type: dynamic
+Dynamic ....
+------------------ Chua address duoc tot nhat,  chua tra loi duoc rap chi o HN
+
+
+
+
+rạp nào mới nhất ở hà nội
+rạp tốt nhất ở hà nội là rạp nào
+rạp mới nhất ở hà nội là rạp nào
+rạp mới mở ở hà nội là rạp nào
+rạp sắp mở ở hà nội là rạp nào
+rạp rộng nhất ở hà nội là rạp nào
+rạp lâu đời nhất ở hà nội là rạp nào
+rạp có sức chứa lớn nhất ở hà nội là rạp nào
+rạp nào mới mở ở hà nội
+rạp nào sắp mở ở hà nội
+rạp nào rộng nhất ở hà nội
+rạp nào lâu đời nhất ở hà nội
+rạp nào có sức chứa lớn nhất ở hà nội
+--------------------- May cau hoi kieu feature cho rap the nay, chua tra loi duoc
+
+
+
+diễn viên nữ chính trong phim này là ai
+diễn viên nữ chính trong phim này tên là gì
+diễn viên nữ chính trong phim này tên gì
+ai là diễn viên nữ chính trong phim này
+tên diễn viên nữ chính trong phim này là gì
+diễn viên nữ chính trong phim đó là ai
+diễn viên nữ chính trong phim đó tên là gì
+diễn viên nữ chính trong phim đó tên gì
+diễn viên nữ chính trong phim là ai
+diễn viên nữ chính trong phim tên là gì
+diễn viên nữ chính trong phim tên gì
+diễn viên nữ chính trong phim đó có tên là gì
+diễn viên nữ chính trong phim đó có tên gì
+diễn viên nữ chính trong phim này có tên là gì
+diễn viên nữ chính trong phim này có tên gì
+ai là diễn viên nữ chính trong phim đó
+ai là diễn viên nữ chính trong phim
+tên diễn viên nữ chính trong phim đó là gì
+tên diễn viên nữ chính trong phim là gì
+------------------------- Chi tra loi duoc dan dien vien, khong tra loi duoc dien vien nu chinh
+
+
+
+
+
+
+
+
+
+
+
+phim nào đang được giới trẻ yêu thích
+những phim nào đang được giới trẻ yêu thích
+phim này được đánh giá thế nào
+phim đó được đánh giá thế nào
+ai thực hiện ca khúc trong phim sky fall
+trong phim sử dụng những ca khúc nào
+trong phim này sử dụng những ca khúc nào
+trong phim đó sử dụng những ca khúc nào
+phim sử dụng những ca khúc nào
+phim này sử dụng những ca khúc nào
+phim đó sử dụng những ca khúc nào
+những ca khúc nào được sử dụng trong phim này
+những ca khúc nào được sử dụng trong phim đó
+những ca khúc nào được sử dụng trong phim
+ca khúc nào được sử dụng trong phim này
+ca khúc nào được sử dụng trong phim đó
+ca khúc nào được sử dụng trong phim
+the terminal nói về cái gì
+the terminal kể về cái gì
+the terminal có nội dung gì
+nội dung the terminal nói về cái gì
+nội dung the terminal là về cái gì
+nội dung the terminal là gì
+nội dung phim nói về cái gì
+nội dung phim là về cái gì
+nội dung phim là gì
+nội dung phim the terminal nói về cái gì
+nội dung phim the terminal là về cái gì
+nội dung phim the terminal là gì
+nội dung phim này nói về cái gì
+nội dung phim này là về cái gì
+nội dung phim này là gì
+nội dung phim đó nói về cái gì
+nội dung phim đó là về cái gì
+nội dung phim đó là gì
+một vé giá bao nhiêu
+giá bao nhiêu một vé
+ngoài rạp sắp chiếu phim gì nhỉ
+phim gì sắp chiếu ngoài rạp nhỉ
+phim này kéo dài đến mấy giờ
+phim này chiếu đến mấy giờ
+
+
+
+
+
+
+
+
+
+
+rạp này mở cửa đến mấy giờ
+Xin lỗi, tôi không trả lời câu hỏi này được
+[ProcessHelper] Intent: cin_date
+[ProcessHelper] Question Type: static
+[ConjWithType] [Final Conj] [[TT Chiếu Phim Quốc Gia, cin_name]]
+TT Chiếu Phim Quốc Gia | cin_name
+Movie Title: null
+Exception! null
+java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:205)
+	at com.fpt.ruby.service.MovieFlyService.searchOnImdbByTitle(MovieFlyService.java:142)
+
+
+
+
+
+
+
+phim lucy ra mắt khi nào
+---------- domain: TV but expect là movie
+
+
+
+
+rạp quốc gia bắt đầu chiếu phim lucy vào thứ mấy
+rạp quốc gia bắt đầu chiếu phim lucy vào ngày nào
+Phim Lucy được công chiếu ngày Fri Jul 25 00:00:00 ICT 2014
+
+
+
+phim lucy sử dụng ngôn ngữ nào
+phim lucy sử dụng ngôn ngữ gì
+ngôn ngữ nào được sử dụng trong phim này
+ngôn ngữ dùng trong phim lucy là gì
+phim lucy sử dụng tiếng gì
+phim lucy sử dụng tiếng nước nào
+---------- Tất cả đều được bắt là domain TV -----> not as expected 

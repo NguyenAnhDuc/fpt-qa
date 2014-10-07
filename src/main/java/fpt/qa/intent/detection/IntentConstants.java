@@ -28,5 +28,13 @@ public interface IntentConstants {
 	public static final String TICKET_STATUS = "ticket_status";
 	public static final String TICKET_PRICE = "ticket_price";
 	
+	// Tivi domain
+	public static final String TV_DAT = "tv_dat"; // date
+	public static final String TV_CAL = "tv_cal"; // calendar
+	public static final String TV_TTL = "tv_ttl"; // title
+	public static final String TV_CHN = "tv_chn"; // channel
+	public static final String TV_POL = "tv_pol"; // 
+	public static final String TV_UDF = "tv_udf"; // undefine
+	
 	public static final String UNDEF = "undefined";
 }
