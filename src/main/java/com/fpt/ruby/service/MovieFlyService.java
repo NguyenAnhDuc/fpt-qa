@@ -7,7 +7,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -39,9 +38,20 @@ public class MovieFlyService {
 		return mongoOperations.findAll(MovieFly.class);
 	}
 	
-	public List<MovieFly> findByTitle(String title){
+	public List<MovieFly> findByTitle(String title) throws UnsupportedEncodingException{
 		Query query = new Query(Criteria.where("title").regex("^" + title + "$","i"));
-		return mongoOperations.find(query, MovieFly.class);
+		List<MovieFly> movieFlies = mongoOperations.find(query, MovieFly.class);
+		if  (movieFlies.size() > 0) return movieFlies;
+		MovieFly movieFly = searchOnImdbByTitle(title);
+		if (movieFly!=null) {
+			query = new Query(Criteria.where("title").regex("^.*" + title + ".*","i"));
+			movieFlies = mongoOperations.find(query, MovieFly.class);
+			if (movieFlies.size() == 0){
+				save(movieFly);
+			}
+			movieFlies.add(movieFly);
+		}
+		return movieFlies;
 	}
 	
 	public boolean remove (String title, int year){
@@ -74,7 +84,7 @@ public class MovieFlyService {
 		mongoOperations.dropCollection(MovieFly.class);
 	}
 	
-	private static List<String> searchOnRT(String title) throws UnsupportedEncodingException{
+	/*private static List<String> searchOnRT(String title) throws UnsupportedEncodingException{
 		List<String> imdbIds = new ArrayList<String>();
 		String url = "http://api.rottentomatoes.com/api/public/v1.0/movies.json?q="+URLEncoder.encode(title,"UTF-8")
 					+"&apikey=" + RT_apikey;
@@ -94,7 +104,7 @@ public class MovieFlyService {
 			System.out.println("Exception: " + ex.getMessage());
 		}
 		return imdbIds;
-	}
+	}*/
 	
 	public  MovieFly searchOnImdbById(String id){
 		MovieFly movieFly = new MovieFly();
@@ -135,6 +145,7 @@ public class MovieFlyService {
 	}
 	
 	public  MovieFly searchOnImdbByTitle(String title) throws UnsupportedEncodingException{
+		System.out.println("[Search on imdb by title]: " + title);
 		MovieFly movieFly = new MovieFly();
 		String url = "http://www.omdbapi.com/?t=" + URLEncoder.encode(title,"UTF-8") ;
 		try{
@@ -144,7 +155,11 @@ public class MovieFlyService {
 			if (jsonImdb.getString("Response").equals("False")) return null;
 			if (!jsonImdb.getString("Title").equals("N/A")) movieFly.setTitle(jsonImdb.getString("Title"));
 			if (!jsonImdb.getString("Genre").equals("N/A")) movieFly.setGenre(jsonImdb.getString("Genre"));
-			if (!jsonImdb.getString("Year").equals("N/A")) movieFly.setYear(Integer.parseInt(jsonImdb.getString("Year")));
+			try{
+				if (!jsonImdb.getString("Year").equals("N/A")) movieFly.setYear(Integer.parseInt(jsonImdb.getString("Year")));
+			}
+			catch (Exception ex){
+			}
 			if (!jsonImdb.getString("Actors").equals("N/A")) movieFly.setActor(jsonImdb.getString("Actors"));
 			if (!jsonImdb.getString("Runtime").equals("N/A")) movieFly.setRuntime(jsonImdb.getString("Runtime"));
 			if (!jsonImdb.getString("imdbRating").equals("N/A")) movieFly.setImdbRating(Float.parseFloat(jsonImdb.getString("imdbRating")));
@@ -168,7 +183,7 @@ public class MovieFlyService {
 		return movieFly;
 	}
 	
-	public List<MovieFly> searchOnImdb(String title) throws UnsupportedEncodingException {
+	/*public List<MovieFly> searchOnImdb(String title) throws UnsupportedEncodingException {
 		List<MovieFly> movieFlies = new ArrayList<MovieFly>();
 		List<MovieFly> inDb = findByTitle(title);
 		if (!inDb.isEmpty()){
@@ -185,13 +200,13 @@ public class MovieFlyService {
 			}
 		}
 		return movieFlies;
-	}
+	}*/
 	
-	public List<MovieFly> searchOnImdb(List<String> titles) throws UnsupportedEncodingException {
+	public List<MovieFly> findByListTitle(List<String> titles) throws UnsupportedEncodingException {
 		List<MovieFly> movieFlies = new ArrayList<MovieFly>();
 		
 		for (String t : titles){
-			movieFlies.addAll(searchOnImdb(t));
+			movieFlies.addAll(findByTitle(t));
 		}
 		return movieFlies;
 	}

@@ -130,8 +130,7 @@ public class AnswerMapper {
 	
 	public static String getFeaturedAnswer(String question, List<MovieTicket> ans, MovieFlyService movieFlyService) throws UnsupportedEncodingException{
 		List<String> titles = getDistinctMovieTitle(ans);
-		List<MovieFly> movieFlies = movieFlyService.searchOnImdb(titles);
-		
+		List<MovieFly> movieFlies = movieFlyService.findByListTitle(titles);
 		if (question.contains("nhất") || question.contains("hay")){
 			return FeaturedMovieHelper.filterByImdb(movieFlies);
 		}
@@ -169,6 +168,9 @@ public class AnswerMapper {
 		
 		for (MovieTicket mt : ans){
 			String curTitle = mt.getMovie();
+			String[] someTiles = curTitle.split("-");
+			if (someTiles.length == 1) curTitle = someTiles[0].trim();
+			if (someTiles.length == 2) curTitle = someTiles[1].trim();
 			if (!titles.contains(curTitle)){
 				titles.add(curTitle);
 			}

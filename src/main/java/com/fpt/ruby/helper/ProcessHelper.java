@@ -53,7 +53,7 @@ public class ProcessHelper{
 
 	public static RubyAnswer getAnswer( String question, MovieFlyService movieFlyService,
 			MovieTicketService movieTicketService, CinemaService cinemaService, LogService logService ) {
-		if (DiacriticConverter.hasDiacriticAccents(question)){
+		/*if (DiacriticConverter.hasDiacriticAccents(question)){
 			RubyAnswer rubyAnswerDiacritic = getAnswer(true, question, movieFlyService, movieTicketService, cinemaService, logService);
 			if (rubyAnswerDiacritic.isSuccessful()){
 				return rubyAnswerDiacritic;
@@ -61,7 +61,9 @@ public class ProcessHelper{
 		}
 		
 		RubyAnswer rubyAnswerNoneDiacritic = getAnswer(false, question, movieFlyService, movieTicketService, cinemaService, logService);
-		return rubyAnswerNoneDiacritic;
+		return rubyAnswerNoneDiacritic;*/
+		RubyAnswer rubyAnswerDiacritic = getAnswer(true, question, movieFlyService, movieTicketService, cinemaService, logService);
+		return rubyAnswerDiacritic;
 	}
 
 	private static RubyAnswer getAnswer(boolean isDiacritic, String question, MovieFlyService movieFlyService,
@@ -101,15 +103,6 @@ public class ProcessHelper{
 					String movieTitle = conjunctionHelper.getMovieTitle( question );
 					System.out.println( "Movie Title: " + movieTitle );
 					List< MovieFly > movieFlies = movieFlyService.findByTitle( movieTitle );
-					if( movieFlies.size() == 0 ){
-						movieFlies = new ArrayList< MovieFly >();
-						MovieFly movieFly = movieFlyService.searchOnImdbByTitle( movieTitle );
-						if( movieFly != null ){
-							System.out.println("Insert to db new movie");
-							movieFlyService.save( movieFly );
-							movieFlies.add( movieFly );
-						}
-					}
 					queryParamater.setMovieTitle(movieTitle);
 					rubyAnswer.setAnswer( AnswerMapper.getStaticAnswer( intent, movieFlies ) );
 				}
@@ -166,14 +159,14 @@ public class ProcessHelper{
 		log.setQueryParamater( queryParamater );
 		logService.save( log );
 		
-		if( !rubyAnswer.getAnswer().contains( "Xin lá»—i," ) ){
+		if( !rubyAnswer.getAnswer().contains( "Xin lỗi," ) ){
 			rubyAnswer.setSuccessful( true );
 		}
 		
 		return rubyAnswer;
 	}
 
-	public static String getSimsimiResponse( String question ) {
+	/*public static String getSimsimiResponse( String question ) {
 		System.out.println( "Simsimi get answer ...." );
 		System.out.println( "question: " + question );
 		try{
@@ -188,7 +181,7 @@ public class ProcessHelper{
 			return "Em má»‡t rá»“i, khÃ´ng chÆ¡i ná»¯a, Ä‘i ngá»§ Ä‘Ã¢y!";
 		}
 
-	}
+	}*/
 
 	public static RubyAnswer getAnswerFromSimsimi( String question, QuestionStructure questionStructure ) {
 		RubyAnswer rubyAnswer = new RubyAnswer();

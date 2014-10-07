@@ -118,7 +118,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		if (mod.getChannel() == null){
 			System.err.println("[TVAnserMapper]: Channel null");
 			if ( intent.equals( IntentConstants.TV_POL ) && progs.isEmpty()){
-				rubyAnswer.setAnswer( "Không đúng!" + "\n\n\n" );
+				rubyAnswer.setAnswer( "Không!" + "\n\n\n" );
 				return rubyAnswer;
 			}
 			if (intent.equals( IntentConstants.TV_DAT )){

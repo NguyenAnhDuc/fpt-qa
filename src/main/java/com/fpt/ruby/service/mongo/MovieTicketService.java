@@ -41,7 +41,6 @@ public class MovieTicketService {
 		catch (Exception ex){
 			return false;
 		}
-		
 	}
 	
 	public void cleanOldData(){
@@ -60,7 +59,7 @@ public class MovieTicketService {
 	public List<MovieTicket> findTicketToShow(){
 		Date date = new Date();
 		date.setHours(0);date.setMinutes(0);date.setSeconds(0);
-		Query query = new Query(Criteria.where("start_date").gt( date )).with( new Sort( Direction.ASC, "start_date" ) );
+		Query query = new Query(Criteria.where("date").gt( date )).with( new Sort( Direction.ASC, "date" ) );
 		List<MovieTicket> results = mongoOperations.find(query, MovieTicket.class);
 		return results;
 	}
