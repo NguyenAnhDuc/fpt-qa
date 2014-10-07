@@ -8,6 +8,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.Sort.Direction;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
@@ -56,17 +58,11 @@ public class MovieTicketService {
 	}
 	
 	public List<MovieTicket> findTicketToShow(){
-		List<MovieTicket> movieTickets = mongoOperations.findAll(MovieTicket.class);
-		List<MovieTicket> tickets = new ArrayList<MovieTicket>();
 		Date date = new Date();
 		date.setHours(0);date.setMinutes(0);date.setSeconds(0);
-		for (MovieTicket movieTicket : movieTickets){
-			if (movieTicket.getDate() != null && 
-				(movieTicket.getDate().getDate() == date.getDate() && movieTicket.getDate().getMonth() == date.getMonth() 
-				 && movieTicket.getDate().getYear() == date.getYear()))
-				 tickets.add(movieTicket);
-		}
-		return tickets;
+		Query query = new Query(Criteria.where("start_date").gt( date )).with( new Sort( Direction.ASC, "start_date" ) );
+		List<MovieTicket> results = mongoOperations.find(query, MovieTicket.class);
+		return results;
 	}
 	
 	private List<MovieTicket> findMatch(MovieTicket movieTicket){

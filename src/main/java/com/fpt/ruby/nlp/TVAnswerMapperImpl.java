@@ -71,7 +71,14 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		Date end = timeExtract.getAfterDate();
 		
 		if (question.contains( "đang" ) && !question.contains( "đang làm gì" ) ||
-				question.contains( "bây giờ" ) || question.contains( "hiện tại" )){
+				question.contains( "bây giờ" ) || question.contains( "hiện tại" )
+					|| question.contains( "sắp" ) || question.contains( "tiếp theo" )){
+			start = new Date();
+			end = start;
+		}
+		if (question.contains( "dang" ) && !question.contains( "dang lam gi" ) ||
+				question.contains( "bay gio" ) || question.contains( "hien tai" )
+					|| question.contains( "sap" ) || question.contains( "tiep theo" )){
 			start = new Date();
 			end = start;
 		}

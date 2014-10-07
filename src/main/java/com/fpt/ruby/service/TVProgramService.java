@@ -199,16 +199,10 @@ public class TVProgramService {
 	
 	
 	public List<TVProgram> findProgramToShow(){
-		List<TVProgram> tvPrograms = mongoOperations.findAll(TVProgram.class);
-		List<TVProgram> results = new ArrayList<TVProgram>();
 		Date date = new Date();
 		date.setHours(0);date.setMinutes(0);date.setSeconds(0);
-		for (TVProgram tvProgram : tvPrograms){
-			if (tvProgram.getStart_date() != null && 
-				(tvProgram.getStart_date().getDate() == date.getDate() && tvProgram.getStart_date().getMonth() == date.getMonth() 
-				 && tvProgram.getStart_date().getYear() == date.getYear()))
-				 results.add(tvProgram);
-		}
+		Query query = new Query(Criteria.where("start_date").gt( date )).with( new Sort( Direction.ASC, "start_date" ) );
+		List<TVProgram> results = mongoOperations.find(query, TVProgram.class);
 		return results;
 	}
 	

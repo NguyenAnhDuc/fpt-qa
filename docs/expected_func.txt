@@ -70,8 +70,8 @@ Movie:
  - hôm nay/9 giờ tối kênh Y có chiếu chương trình X không	SAI INTENT	
  - hôm nay có chương trình X không   						SAI INTENT
  - hôm nay chương trình X chiếu lúc mấy giờ					ANSWER: Không đúng		FIXED
- - chương trình x có trên kênh Y không						SAI INTENT
- - chương trình x có trên kênh nào?							NO ANSWER
+ - chương trình x có trên kênh Y không						SAI INTENT	
+ - chương trình x có trên kênh nào?							NO ANSWER				FIXED
  - tối nay kênh Y chiếu PHIM gì
  - PHIM gì chiếu trên kênh Y lúc 9 giờ tối nay				
  - chủ nhật tuần này chương trình X chiếu lúc mấy giờ		ANSWER: Không đúng
