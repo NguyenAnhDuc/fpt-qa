@@ -90,6 +90,18 @@ public class ProcessHelper{
 		System.out.println( "[ProcessHelper] Question Type: " + questionType );
 		// static question
 		try{
+			if(intent.equals(IntentConstants.CIN_DIS) || intent.equals(IntentConstants.CIN_MAP) || intent.equals(IntentConstants.CIN_SERVICETIME)){
+				rubyAnswer.setSuccessful( true );
+				return rubyAnswer;
+			}
+			
+			if (intent.equals(IntentConstants.MOV_AWARD) || intent.equals(IntentConstants.MOV_WRITER) ||
+					intent.equals(IntentConstants.TICKET_PRICE) || intent.equals(IntentConstants.TICKET_STATUS) ||
+					intent.equals(IntentConstants.UNDEF)){
+				rubyAnswer.setSuccessful( true );
+				return rubyAnswer;
+			}
+			
 			QueryParamater queryParamater = new QueryParamater();
 			if( questionType.equals( AnswerMapper.Static_Question ) ){
 				if (intent.equals(IntentConstants.CIN_ADD)){

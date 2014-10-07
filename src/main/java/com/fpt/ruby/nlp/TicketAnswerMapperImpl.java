@@ -19,11 +19,15 @@ public class TicketAnswerMapperImpl implements TicketAnswerMapper {
 		}
 		String type = "";
 		for (MovieTicket tick : ans){
-			type += tick.getType() + " + ";
+			if (!type.contains(tick.getType())){
+				type += tick.getType() + " và ";
+			}
 		}
-		
-		MovieTicket mov = ans.get(0);
-		String res = "Phim " + mov.getMovie() + " có phiên bản " + type.substring(0, type.length() - 3);
+		type = type.substring(0, type.length() - 4);
+		String res = "Phim này có phiên bản " + type;
+		if (type.indexOf(" và ") < 0){
+			res = "Phim này chỉ có phiên bản " + type;
+		}
 		return res;
 	}
 	
@@ -77,7 +81,7 @@ public class TicketAnswerMapperImpl implements TicketAnswerMapper {
 		if (ans.size() == 0){
 			if (matchMovieTicket.getCinema() != null){
 				if (matchMovieTicket.getMovie() != null){
-					return "Phim này đang không được chiếu tại rạp " + matchMovieTicket.getCinema();
+					return "Phim này đang không được chiếu";
 				}
 				return "Xin lỗi, chúng tôi không tìm thấy thông tin về lịch chiếu cho rạp này";
 			}
