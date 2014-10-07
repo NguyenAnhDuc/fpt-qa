@@ -22,6 +22,6 @@ public class TVIntentDetection {
     }
 
     public String getIntent(String sent) {
-    	return classifier.classify(sent);
+    	return "tv_" + classifier.classify(sent).toLowerCase();
     }
 }

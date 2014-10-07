@@ -15,6 +15,7 @@ import com.fpt.ruby.model.TVProgram;
 import com.fpt.ruby.model.TimeExtract;
 import com.fpt.ruby.service.TVProgramService;
 
+import fpt.qa.intent.detection.IntentConstants;
 import fpt.qa.intent.detection.TVIntentDetection;
 import fpt.qa.mdnlib.util.string.DiacriticConverter;
 
@@ -26,7 +27,8 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 	
 	public void init() {
 		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
-//		String dir = "/home/ngan/Work/AHongPhuong/RubyWeb/rubyweb/src/main/resources";
+//		String dir = "D:/Workspace/Code/FTI/rubyweb/src/main/resources";
+		
 		intentDetector.init( dir + "/qc/tv", dir + "/dicts");
 		nonDiacritic.init( dir + "/qc/tv/non-diacritic", dir + "/dicts/non-diacritic");
 	}
@@ -51,9 +53,8 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		rubyAnswer.setIntent(intent);
 		rubyAnswer.setAnswer(tmp + DEF_ANS + "\n\n\n");
 		
-		if (intent.equals( "UDF")){
+		if (intent.equalsIgnoreCase(IntentConstants.TV_UDF)) 
 			return rubyAnswer;
-		}
 		
 		TVModifiers mod = TVModifiers.getModifiers( question.replaceAll("(\\d+)(h)", "$1 giờ ").replaceAll( "\\s+", " " ) );
 		tmp += "\t" + question.replaceAll("(\\d+)(h)", "$1 giờ ").replaceAll( "\\s+", " " ) + "\n";
@@ -74,12 +75,15 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 			start = new Date();
 			end = start;
 		}
+		
 		mod.setStart(start);
 		mod.setEnd(end);
+		
 		QueryParamater queryParamater = new QueryParamater();
 		if (mod.getChannel() != null) queryParamater.setTvChannel("TV channel: " + mod.getChannel());
 		if (mod.getProg_title() != null) queryParamater.setTvProTitle("TV Program Title: " + mod.getProg_title());
 		rubyAnswer.setQueryParamater(queryParamater);
+		
 		System.out.println("TV query start time: " + mod.getStart());
 		System.out.println("TV query end time: " + mod.getEnd());
 		rubyAnswer.setBeginTime(mod.getStart());
@@ -102,7 +106,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		}
 		
 		if (mod.getChannel() == null){
-			if (intent.equals( "DAT" ) || intent.equals( "POL" ) && progs.isEmpty()){
+			if (intent.equalsIgnoreCase(IntentConstants.TV_DAT) || intent.equalsIgnoreCase(IntentConstants.TV_POL) && progs.isEmpty()){
 				rubyAnswer.setAnswer( "Không đúng!" + "\n\n\n" );
 				return rubyAnswer;
 			}
@@ -111,7 +115,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 				return rubyAnswer;
 			}
 			if (mod.getStart().equals( mod.getEnd() )){
-				if (intent.equals( "CHN" )){
+				if (intent.equals(IntentConstants.TV_CHN)){
 					rubyAnswer.setAnswer( getChannel( progs ) + "\n\n\n" );
 					return rubyAnswer;
 				}
@@ -300,8 +304,8 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 	public static void main (String[] args){
 		TVAnswerMapperImpl tam = new TVAnswerMapperImpl();
 		tam.init();
-		tam.studyFile( "/home/ngan/Work/AHongPhuong/Intent_detection/data/tv/AIML_tvd_questions.txt",
-				"/home/ngan/Work/AHongPhuong/Intent_detection/data/tv/AIML_tvd_questions.out" );
+		tam.studyFile( "D:\\Workspace\\Code\\FTI\\rubyweb\\AIML_tvd_questions.txt",
+				"D:\\Workspace\\Code\\FTI\\rubyweb\\AIML_tvd_questions.out" );
 	}
 
 }
