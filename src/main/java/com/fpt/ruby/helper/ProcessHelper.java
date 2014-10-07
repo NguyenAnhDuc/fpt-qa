@@ -53,12 +53,15 @@ public class ProcessHelper{
 
 	public static RubyAnswer getAnswer( String question, MovieFlyService movieFlyService,
 			MovieTicketService movieTicketService, CinemaService cinemaService, LogService logService ) {
-		RubyAnswer rubyAnswerDiacritic = getAnswer(true, question, movieFlyService, movieTicketService, cinemaService, logService);
-		RubyAnswer rubyAnswerNoneDiacritic = getAnswer(false, question, movieFlyService, movieTicketService, cinemaService, logService);
-		if( rubyAnswerNoneDiacritic.isSuccessful() && !rubyAnswerDiacritic.isSuccessful() ){
-			return rubyAnswerNoneDiacritic;
+		if (DiacriticConverter.hasDiacriticAccents(question)){
+			RubyAnswer rubyAnswerDiacritic = getAnswer(true, question, movieFlyService, movieTicketService, cinemaService, logService);
+			if (rubyAnswerDiacritic.isSuccessful()){
+				return rubyAnswerDiacritic;
+			}
 		}
-		return rubyAnswerDiacritic;
+		
+		RubyAnswer rubyAnswerNoneDiacritic = getAnswer(false, question, movieFlyService, movieTicketService, cinemaService, logService);
+		return rubyAnswerNoneDiacritic;
 	}
 
 	private static RubyAnswer getAnswer(boolean isDiacritic, String question, MovieFlyService movieFlyService,
