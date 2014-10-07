@@ -1,4 +1,33 @@
+cac cau hoi ve: 
+ + năm sản xuất
+ + nước sản xuất
+ + ngôn ngữ sử dụng
+ + thời lượng phim
+dang bi nhap nhang sang domain TV --> KHONG TRA LOI DUOC
+
+
+--- Moi cau hoi chay query 2 lan cho ca co' dau' va khong co' dau' ---> qua ton tai nguyen va khong can thiet
+
+--- Time mapper ERROR:
+list size: 1
+!!!!!!2014-01
+java.text.ParseException: Unparseable date: "2014-01"
+	at java.text.DateFormat.parse(DateFormat.java:357)
+	at fpt.qa.vnTime.vntime.TimeRange.parsefDate(TimeRange.java:49)
+	at fpt.qa.vnTime.vntime.TimeRange.setfDate(TimeRange.java:130)
+	at fpt.qa.vnTime.utils.RangeParser.parser(RangeParser.java:51)
+	at fpt.qa.vnTime.vntime.VnTimeParser.parser3(VnTimeParser.java:196)
+	at fpt.qa.additionalinformation.modifier.AbsoluteTime.getAbsoluteTime(AbsoluteTime.java:59)
+	at fpt.qa.additionalinformation.test.AbsoluteTimeTest.main(AbsoluteTimeTest.java:41)
+curentdate :2014-10-06 17:11
+<<null , null>>
+null
+null
+
+
+
 tối nay có phim gì hay
+phim The Pirates có imdb rating cao nhất
 No class def found MongoSocketException
 
 
@@ -375,242 +404,261 @@ Phim The Damned được công chiếu ngày Thu Dec 18 00:00:00 ICT 1969
 
 
 rạp quốc gia cách đây bao xa
+Xin lỗi, tôi không trả lời câu hỏi này được
+Tuned sent: DIS	rạp quốc gia cách đây bao xa
+[ProcessHelper] Intent: cin_dis
+[ProcessHelper] Question Type: static
+-- Sua lai question type ko hoac la hoi den day thi return luon ko tra loi duoc cau hoi nay di
+
+
 từ đây đến rạp quốc gia mất bao lâu
+Tuned sent: DUR	rạp quốc gia mất bao lâu
+[ProcessHelper] Intent: undefined
+[ProcessHelper] Question Type: static
+same as above
+
+
 từ đây đến rạp quốc gia bao xa
+Tuned sent: DIS	rạp quốc gia bao xa
+[ProcessHelper] Intent: cin_dis
+[ProcessHelper] Question Type: static
+Same as above
+
+
 rạp quốc gia cách đây có xa không
+same as above
+
 rạp quốc gia cách đây bao nhiêu phút xe máy
+same as above
+
 rạp quốc gia cách đây bao nhiêu phút đi xe
-rạp này cách đây bao nhiêu phút xe máy
-rạp này cách đây bao nhiêu phút đi xe
-rạp đó cách đây bao nhiêu phút xe máy
-rạp đó cách đây bao nhiêu phút đi xe
-đến rạp quốc gia mất bao lâu
-mất bao lâu để đến rạp quốc gia
+same as above
+
 chỉ cho tôi đường đến rạp quốc gia
+Xin lỗi, tôi không trả lời câu hỏi này được
+Tuned sent: DES	đường đến rạp quốc gia
+[ProcessHelper] Intent: cin_map
+[ProcessHelper] Question Type: static
+[ConjWithType] [RawConj] [{Quốc Gia}]
+[ConjWithType] [Better Surr Conj] [[{Quốc Gia}, cin_name]]
+[ConjWithType] [Longer Conj] [[{Quốc Gia}, cin_name]]
+[ConjWithType] [Final Conj] [[TT Chiếu Phim Quốc Gia, cin_name]]
+TT Chiếu Phim Quốc Gia | cin_name
+Movie Title: null
+Exception! null
+java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:205)
+	at com.fpt.ruby.service.MovieFlyService.searchOnImdbByTitle(MovieFlyService.java:142)
+	at com.fpt.ruby.helper.ProcessHelper.getAnswer(ProcessHelper.java:103)
+
+
+
 từ đây đến rạp quốc gia bao xa
-từ đây đến rạp này bao xa
-từ đây đến rạp đó bao xa
+Xin lỗi, tôi không trả lời câu hỏi này được
+Tuned sent: DIS	rạp quốc gia bao xa
+[ProcessHelper] Intent: cin_dis
+[ProcessHelper] Question Type: static
+
+
 mất bao lâu để đi từ đây đến rạp quốc gia
+Xin lỗi, tôi không trả lời câu hỏi này được
+Tuned sent: DUR	mất bao lâu để đi đến rạp quốc gia
+[ProcessHelper] Intent: undefined
+[ProcessHelper] Question Type: static
+
+
 mất bao lâu để đi đến rạp quốc gia
-mất bao lâu để đi đến rạp này
-mất bao lâu để đi đến rạp đó
+same as above
+
+
+
 rạp quốc gia còn vé cho phim lucy suất chiếu 12 giờ không
-rạp quốc gia còn vé cho phim lucy lúc 12 giờ không
-rạp quốc gia còn vé phim lucy suất chiếu 12 giờ không
-rạp quốc gia còn vé phim lucy lúc 12 giờ không
-từ tòa nhà fpt đường duy tân đến rạp quốc gia bao xa
-từ tòa nhà fpt đến rạp quốc gia bao xa
+Xin lỗi, chúng tôi chưa có câu trả lời cho câu hỏi của bạn
+[AppController] Domain Movie
+Tuned sent: POL	rạp quốc gia còn vé cho phim lucy suất chiếu 12 giờ
+[ProcessHelper] Intent: ticket_status
+[ProcessHelper] Question Type: static
+[ConjWithType] [RawConj] [{Lucy}, {Phim}, {Quốc Gia}, {Lucy}]
+[ConjWithType] [Better Surr Conj] [[{Lucy}, mov_title], [{Phim}, program_title], [{Quốc Gia}, cin_name], [{Lucy}, mov_title]]
+[ConjWithType] [Longer Conj] [[{Lucy}, mov_title], [{Phim}, program_title], [{Quốc Gia}, cin_name], [{Lucy}, mov_title]]
+[ConjWithType] [Final Conj] [[Lucy, mov_title], [Phim, program_title], [TT Chiếu Phim Quốc Gia, cin_name]]
+
+
 đạo diễn phim lucy là ai
-đạo diễn phim này là ai
-đạo diễn phim đó là ai
-phim lucy có diễn viên nào nổi tiếng không
-phim lucy có diễn viên nổi tiếng nào
-cho tôi biết về dàn diễn viên phim lucy
+Phim Lucy của đạo diễn Luc Besson
+
+
 giá vé phim 3D ghế vip tại rạp quốc gia vào thứ 5 bao nhiêu
-giá vé phim 3D ghế vip tại rạp quốc gia vào thứ 5 là bao nhiêu
-giá vé vip phim 3D tại rạp quốc gia vào thứ 5 bao nhiêu
-giá vé vip phim 3D tại rạp quốc gia vào thứ 5 là bao nhiêu
-giá vé vip phim 3D tại rạp quốc gia thứ 5 bao nhiêu
-giá vé vip phim 3D tại rạp quốc gia thứ 5 là bao nhiêu
-giá vé phim 3D ghế vip vào thứ 5 tại rạp quốc gia bao nhiêu
-giá vé phim 3D ghế vip vào thứ 5 tại rạp quốc gia là bao nhiêu
-giá vé vip phim 3D vào thứ 5 tại rạp quốc gia bao nhiêu
-giá vé vip phim 3D vào thứ 5 tại rạp quốc gia là bao nhiêu
-giá vé vip phim 3D vào thứ 5 tại rạp quốc gia bao nhiêu
-giá vé vip phim 3D vào thứ 5 tại rạp quốc gia là bao nhiêu
-giá vé vip phim 3D thứ 5 tại rạp quốc gia bao nhiêu
-giá vé vip phim 3D thứ 5 tại rạp quốc gia là bao nhiêu
-giá vé vip phim 3D thứ 5 tại rạp quốc gia bao nhiêu
-giá vé vip phim 3D thứ 5 tại rạp quốc gia là bao nhiêu
-giá vé vip thứ 5 phim 3D tại rạp quốc gia bao nhiêu
-giá vé vip thứ 5 phim 3D tại rạp quốc gia là bao nhiêu
-giá vé vip thứ 5 phim 3D tại rạp quốc gia bao nhiêu
-giá vé vip thứ 5 phim 3D tại rạp quốc gia là bao nhiêu
+Xin lỗi, tôi không trả lời câu hỏi này được
+Tuned sent: PRI	giá vé phim 3D ghế vip tại rạp quốc gia vào thứ 5 bao nhiêu
+[ProcessHelper] Intent: ticket_price
+[ProcessHelper] Question Type: static
+[ConjWithType] [Better Surr Conj] [[{Phim}, program_title], [{Quốc Gia}, cin_name]]
+[ConjWithType] [Longer Conj] [[{Phim}, program_title], [{Quốc Gia}, cin_name]]
+[ConjWithType] [Final Conj] [[Phim, program_title], [TT Chiếu Phim Quốc Gia, cin_name]]
+Phim | program_title
+TT Chiếu Phim Quốc Gia | cin_name
+Movie Title: null
+Exception! null
+java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:205)
+	at com.fpt.ruby.service.MovieFlyService.searchOnImdbByTitle(MovieFlyService.java:142)
+
+
+
 phim lucy bắt đầu khởi chiếu từ khi nào
-phim lucy bắt đầu khởi chiếu từ ngày nào
-phim lucy bắt đầu khởi chiếu từ hôm nào
-phim lucy bắt đầu khởi chiếu hôm nào
-phim lucy bắt đầu khởi chiếu khi nào
-phim lucy bắt đầu khởi chiếu ngày nào
-phim lucy bắt đầu chiếu từ khi nào
-phim lucy bắt đầu chiếu từ ngày nào
-phim lucy bắt đầu chiếu từ hôm nào
-phim lucy bắt đầu chiếu hôm nào
-phim lucy bắt đầu chiếu khi nào
-phim lucy bắt đầu chiếu ngày nào
-phim này bắt đầu khởi chiếu từ khi nào
-phim này bắt đầu khởi chiếu từ ngày nào
-phim này bắt đầu khởi chiếu từ hôm nào
-phim này bắt đầu khởi chiếu hôm nào
-phim này bắt đầu khởi chiếu khi nào
-phim này bắt đầu khởi chiếu ngày nào
-phim này bắt đầu chiếu từ khi nào
-phim này bắt đầu chiếu từ ngày nào
-phim này bắt đầu chiếu từ hôm nào
-phim này bắt đầu chiếu hôm nào
-phim này bắt đầu chiếu khi nào
-phim này bắt đầu chiếu ngày nào
-phim đó bắt đầu khởi chiếu từ khi nào
-phim đó bắt đầu khởi chiếu từ ngày nào
-phim đó bắt đầu khởi chiếu từ hôm nào
-phim đó bắt đầu khởi chiếu hôm nào
-phim đó bắt đầu khởi chiếu khi nào
-phim đó bắt đầu khởi chiếu ngày nào
-phim đó bắt đầu chiếu từ khi nào
-phim đó bắt đầu chiếu từ ngày nào
-phim đó bắt đầu chiếu từ hôm nào
-phim đó bắt đầu chiếu hôm nào
-phim đó bắt đầu chiếu khi nào
-phim đó bắt đầu chiếu ngày nào
-lịch chiếu phim hercules tại rạp tháng tám thế nào
-lịch chiếu phim hercules tại rạp này thế nào
-lịch chiếu phim hercules tại rạp đó thế nào
-cho tôi biết lịch chiếu phim hercules tại rạp tháng tám
-cho mình biết lịch chiếu phim hercules tại rạp tháng tám
-lịch chiếu phim hercules tại rạp tháng 8 thế nào
-cho tôi biết lịch chiếu phim hercules tại rạp tháng 8
-cho mình biết lịch chiếu phim hercules tại rạp tháng 8
-cho tôi biết lịch chiếu phim hercules tại rạp này
-cho mình biết lịch chiếu phim hercules tại rạp này
-cho tôi biết lịch chiếu phim hercules tại rạp đó
-cho mình biết lịch chiếu phim hercules tại rạp đó
+Tuned sent: DTI	phim lucy bắt đầu khởi chiếu từ khi nào
+[ProcessHelper] Intent: mov_release
+[ProcessHelper] Question Type: static
+-- những câu hỏi về released date thì nếu năm sản xuất ko phải năm nay hoặc năm trước đới thì bảo là ko tìm thấy dữ liệu còn hơn là trả lời sai
+
+
+
+
+lịch chiếu phim hội quái hộp tại rạp tháng tám thế nào
+[Conjunction Helper - getCinemaName: ]The Boxtrolls | mov_title
+[Conjunction Helper - getCinemaName: ]Tháng 8 Cinema | cin_name
+[Conjunction Helper - getCinemaName: ]Phim | program_title
+list size: 1
+!!!!!!2014-08
+java.text.ParseException: Unparseable date: "2014-08"
+--------- Lỗi time mapper bắt tháng tám
+
+
+
+lịch chiếu phim hội quái hộp tại rạp quốc gia thế nào
+Xin lỗi, chúng tôi không tìm thấy dữ liệu cho câu trả lời
+---- Phải trả lời là hôm nay rạp quốc gia ko chiếu phim này, ko phải là ko tìm thấy dữ liệu
+
+
 cho tôi biết rạp chiếu phim gần đây nhất có chiếu phim hercules
-cho tôi biết rạp gần đây nhất có chiếu phim hercules
-cho tôi biết rạp gần nhất có chiếu phim hercules
-cho tôi biết rạp chiếu phim gần đây nhất chiếu phim hercules
-cho tôi biết rạp gần đây nhất chiếu phim hercules
-cho tôi biết rạp gần nhất chiếu phim hercules
-cho mình biết rạp chiếu phim gần đây nhất có chiếu phim hercules
-cho mình biết rạp gần đây nhất có chiếu phim hercules
-cho mình biết rạp gần nhất có chiếu phim hercules
-cho mình biết rạp chiếu phim gần đây nhất chiếu phim hercules
-cho mình biết rạp gần đây nhất chiếu phim hercules
-cho mình biết rạp gần nhất chiếu phim hercules
+chưa address được cụm từ gần đây nhất, tuy nhiên cứ trả lời tất cả các rạp ra cũng có thể gọi là acceptable
+
+
 chỉ đường từ đây đến rạp chiếm phim gần nhất
-suất chiếu hercules gần nhất tại rạp platinum vào lúc mấy giờ
-suất chiếu hercules sớm nhất tại rạp platinum vào lúc mấy giờ
-suất chiếu hercules gần nhất tại rạp platinum vào lúc nào
-suất chiếu hercules sớm nhất tại rạp platinum vào lúc nào
-suất chiếu hercules gần nhất tại rạp platinum lúc mấy giờ
-suất chiếu hercules sớm nhất tại rạp platinum lúc mấy giờ
-mấy giờ có suất chiếu hercules gần nhất tại rạp platinum
-mấy giờ có suất chiếu hercules sớm nhất tại rạp platinum
-phim hercules tại rạp platinum lúc 12 giờ hôm nay còn chỗ không
-phim hercules tại rạp này lúc 12 giờ hôm nay còn chỗ không
-phim hercules tại rạp đó lúc 12 giờ hôm nay còn chỗ không
-phim hercules tại rạp platinum vé lúc 12 giờ hôm nay còn không
-phim hercules tại rạp này vé lúc 12 giờ hôm nay còn không
-phim hercules tại rạp đó vé lúc 12 giờ hôm nay còn không
-phim hercules tại rạp platinum còn chỗ lúc 12 giờ hôm nay không
-phim hercules tại rạp này còn chỗ lúc 12 giờ hôm nay không
-phim hercules tại rạp đó còn chỗ lúc 12 giờ hôm nay không
-phim hercules tại rạp platinum còn vé lúc 12 giờ hôm nay không
-phim hercules tại rạp này còn vé lúc 12 giờ hôm nay không
-phim hercules tại rạp đó còn vé lúc 12 giờ hôm nay không
-phim hercules tại rạp platinum hôm nay lúc 12 giờ còn chỗ không
-phim hercules tại rạp này hôm nay lúc 12 giờ còn chỗ không
-phim hercules tại rạp đó hôm nay lúc 12 giờ còn chỗ không
-phim hercules tại rạp platinum vé hôm nay lúc 12 giờ còn không
-phim hercules tại rạp này vé hôm nay lúc 12 giờ còn không
-phim hercules tại rạp đó vé hôm nay lúc 12 giờ còn không
-phim hercules tại rạp platinum còn chỗ hôm nay lúc 12 giờ không
-phim hercules tại rạp này còn chỗ hôm nay lúc 12 giờ không
-phim hercules tại rạp đó còn chỗ hôm nay lúc 12 giờ không
-phim hercules tại rạp platinum còn vé hôm nay lúc 12 giờ không
-phim hercules tại rạp này còn vé hôm nay lúc 12 giờ không
-phim hercules tại rạp đó còn vé hôm nay lúc 12 giờ không
-còn vé phim hercules tại rạp platinum lúc 12 giờ hôm nay không
-còn vé phim hercules tại rạp này lúc 12 giờ hôm nay không
-còn vé phim hercules tại rạp đó lúc 12 giờ hôm nay không
-còn vé phim hercules tại rạp platinum hôm nay lúc 12 giờ không
-còn vé phim hercules tại rạp này hôm nay lúc 12 giờ không
-còn vé phim hercules tại rạp đó hôm nay lúc 12 giờ không
+Xin lỗi, tôi không trả lời câu hỏi này được
+Tuned sent: DES	chỉ đường rạp chiếm phim
+[ProcessHelper] Intent: cin_map
+[ProcessHelper] Question Type: static
+
+
+suất chiếu giải mã mê cung gần nhất tại rạp quốc gia vào lúc mấy giờ
+Giờ chiếu: Oct 7, 2014 9:45:00 AM, Oct 6, 2014 1:45:00 PM, Oct 6, 2014 9:45:00 PM, Oct 6, 2014 5:45:00 PM, Oct 6, 2014 3:45:00 PM, Oct 6, 2014 3:45:00 PM, Oct 6, 2014 5:45:00 PM, Oct 8, 2014 9:45:00 AM, Oct 6, 2014 5:45:00 PM, Oct 6, 2014 5:45:00 PM, Oct 6, 2014 5:45:00 PM, Oct 6, 2014 7:45:00 PM, Oct 6, 2014 7:45:00 PM, Oct 6, 2014 3:45:00 PM, Oct 6, 2014 5:45:00 PM, Oct 6, 2014 5:45:00 PM, Oct 6, 2014 7:45:00 PM, Oct 6, 2014 3:45:00 PM, Oct 6, 2014 3:45:00 PM, Oct 6, 2014 9:45:00 PM, Oct 6, 2014 9:45:00 PM, Oct 6, 2014 3:45:00 PM, Oct 6, 2014 7:45:00 PM, Oct 6, 2014 9:45:00 PM, Oct 6, 2014 7:45:00 PM, Oct 6, 2014 9:45:00 PM, Oct 6, 2014 3:45:00 PM, Oct 6, 2014 9:45:00 PM, Oct 6, 2014 9:45:00 PM, Oct 6, 2014 7:45:00 PM, Oct 6, 2014 7:45:00 PM
+------ Duplicate entries in movie db 
+------ address từ gần nhất như thế nào, làm sao để loại bỏ những suất chiếu đã qua rồi và những suất chiếu của ngày mai
+------ chắc là loại bỏ những suất chiếu đã qua rồi dễ hơn
+
+
+
+còn vé phim giải mã mê cung tại rạp platinum lúc 8 giờ tối nay không
+phim giải mã mê cung tại rạp platinum lúc 8 giờ tối nay còn chỗ không
+Xin lỗi, chúng tôi chưa có câu trả lời cho câu hỏi của bạn
+ticket_status ---> chưa trả lời được
+
+
+
 phim nào đang được quan tâm nhất hiện nay
-phim gì đang được quan tâm nhất hiện nay
-phim gì đang được quan tâm nhất
-phim nào đang được quan tâm nhất
-phim nào đang được quan tâm hiện nay
-phim gì đang được quan tâm hiện nay
+phim The Pirates có imdb rating cao nhất
+-- Moi cau dang duoc chay query 2 lan ===> qua' ton' thoi gian ===> can sua lai
+
+
+
+
+
 phim gì đang được quan tâm 
-phim nào đang được quan tâm
-phim nào đang được giới trẻ quan tâm nhất hiện nay
-phim gì đang được giới trẻ quan tâm nhất hiện nay
-phim gì đang được giới trẻ quan tâm nhất
-phim nào đang được giới trẻ quan tâm nhất
-những phim nào đang được quan tâm nhất hiện nay
-những phim gì đang được quan tâm nhất hiện nay
-những phim gì đang được quan tâm nhất
-những phim nào đang được quan tâm nhất
-có những phim nào đang được quan tâm nhất hiện nay
-có những phim gì đang được quan tâm nhất hiện nay
-có những phim gì đang được quan tâm nhất
-có những phim nào đang được quan tâm nhất
-những phim nào đang được quan tâm hiện nay
-những phim gì đang được quan tâm hiện nay
-những phim gì đang được quan tâm
-những phim nào đang được quan tâm
-có những phim nào đang được quan tâm hiện nay
-có những phim gì đang được quan tâm hiện nay
-có những phim gì đang được quan tâm
-có những phim nào đang được quan tâm
-những phim nào đang được giới trẻ quan tâm hiện nay
-những phim gì đang được giới trẻ quan tâm hiện nay
-những phim gì đang được giới trẻ quan tâm
-những phim nào đang được giới trẻ quan tâm
-có những phim nào đang được giới trẻ quan tâm hiện nay
-có những phim gì đang được giới trẻ quan tâm hiện nay
-có những phim gì đang được giới trẻ quan tâm
-có những phim nào đang được giới trẻ quan tâm
+Phim ĐỒI QUỶ ÁM - THE DAMNED, ANNABELLE, GIẢI MÃ MÊ CUNG - THE MAZE RUNNER, HIỆP SĨ MÙ, THE DAMNED, HẢI TẶC - THE PIRATES, GOOD PEOPLE, VẬN ĐEN - GOOD PEOPLE, SIÊU ĐẠO CHÍCH LUPIN ĐỆ TAM - LUPIN THE THIRD, BƯỚC KHẼ ĐẾN HẠNH PHÚC, SCANDAL: HÀO QUANG TRỞ LẠI, THE MAZE RUNNER, THE EQUALIZER, NGỐ LÀM TRIỆU PHÚ - ARE YOU HERE, HOLIDAY, THIỆN ÁC ĐỐI ĐẦU - THE EQUALIZER, LUPIN THE 3RD, ROARING CURRENTS, OUTCAST, MỐI THÙ HOÀNG TỘC - OUTCAST, HẦM MỘ MA QUÁI - AS ABOVE, SO BELOW, THE PIRATES, LEGENDS OF OZ: DOROTHY'S RETURN, ARE YOU HERE, HUYỀN THOẠI XỨ OZ: DOROTHY TRỞ LẠI - LEGENDS OF OZ: DOROTHY'S RETURN, và AS ABOVE, SO BELOW đang được chiếu
+
+
+
 phim nào có số lượng người xem nhiều nhất
-những phim nào có số lượng người xem nhiều nhất
+Xin lỗi, chúng tôi không có thông tin cho câu trả lời của bạn 
+[Domain Classifier] phim nào có số lượng người xem nhiều nhất  {tv, 2.0}  {movie, 2.0} 
+[AppController] Domain TV
+TV Intent: CHN
+Non-diacritic TV Intent: UDF
+TV channel: null
+TV prog title: Phim
+curentdate :2014-10-06 16:53
+TV query start time: null
+TV query end time: null
+------ db có dữ liệu về film có vẻ như query có vấn đề à
+
+
+
+
 phim nào đang được xem nhiều nhất
-phim nào đang được đánh giá cao nhất hiện nay
-phim nào đang được đánh giá tốt nhất hiện nay
-phim nào đang được đánh giá cao nhất
-phim nào đang được đánh giá tốt nhất
-những phim nào đang được xem nhiều nhất
-những phim nào đang được đánh giá cao nhất hiện nay
-những phim nào đang được đánh giá tốt nhất hiện nay
-những phim nào đang được đánh giá cao nhất
-những phim nào đang được đánh giá tốt nhất
-trong các phim đang chiếu rạp phim nào được bình luận tốt nhất
-phim nào đang được bình luận tốt nhất
-những phim nào đang được bình luận tốt nhất
-phim nào có bình luận tốt nhất
-những phim nào có bình luận tốt nhất
-trong các phim đang chiếu rạp phim nào hay nhất
-phim nào hay nhất
-phim nào được bình luận tốt nhất
-phim nào được đánh giá cao nhất
-phim nào được đánh giá tốt nhất
-những rạp nào sẽ chiếu phim hercules vào thứ 7 tới
+VTV4 : Phim truyện Giọt nước rơi - Tập 9 HanoiTV1 : Phim thiếu nhi: Khủng long biến hình (tập 25) LongAnTV : Phim : Ước mơ lấp lánh - tập 9 - 10 DaNangTV1 : Phim truyện VN - Bước qua bóng tối - Tập 29 Vĩnh Phúc : Phim truyện : Mẹ và con trai (Tập 30 – Phim VN 
+----- trả lời sang domain TV rồi còn đâu
+
+
+
 những rạp nào sẽ chiếu phim hercules vào 12 giờ thứ 7 tới
-những rạp nào chiếu phim hercules vào thứ 7 tới
-những rạp nào chiếu phim hercules vào 12 giờ thứ 7 tới
-những rạp nào còn vé phim hercules lúc 12 giờ thứ 7 tới
-phim nào được trông đợi nhất vào tháng 8 này
-phim nào đang được trông đợi nhất vào tháng 8 này
-phim nào đang được trông đợi nhất
-những phim nào được trông đợi nhất vào tháng 8 này
-những phim nào đang được trông đợi nhất vào tháng 8 này
-những phim nào đang được trông đợi nhất
-rạp nào sẽ chiếu phim step up all in vào ngày mồng 6 tháng 8
-rạp nào sẽ chiếu phim step up all in vào ngày 6 tháng 8
-rạp nào sẽ chiếu phim step up all in vào ngày mồng 6 tháng 8 tới
-rạp nào sẽ chiếu phim step up all in vào ngày 6 tháng 8 tới
-rạp nào sẽ chiếu phim step up all in đầu tiên
-khi nào phim step up all in sẽ được khởi chiếu
-phim step up all in sẽ được khởi chiếu đầu tiên tại rạp nào
-phim step up all in được khởi chiếu đầu tiên tại rạp nào
-khi nào rạp quốc gia khởi chiếu phim step up all in
+<<Mon Oct 06 00:00:00 ICT 2014 , Mon Oct 06 23:59:59 ICT 2014>>
+----- bắt sai thời gian
+
+
+phim nào được trông đợi nhất vào tháng 10 này
+phim The Pirates có imdb rating cao nhất
+Tuned sent: NAM	phim nào được trông đợi nhất vào tháng 10 này
+[ProcessHelper] Intent: mov_title
+[ProcessHelper] Question Type: featured
+Feature ..
+Filter by ImDB
+--- Chỉ nên list ra những phim sẽ được công chiếu trong tháng 10 này thôi chứ
+--- câu trả lời này có vẻ chưa phù hợp lắm
+
+
+phim nào sẽ được công chiếu trong tháng 10 này
+Xin lỗi, tôi không trả lời câu hỏi này được
+Tuned sent: NAM	phim nào sẽ được công chiếu trong tháng 10 này
+[ProcessHelper] Intent: mov_release
+[ProcessHelper] Question Type: static
+[ConjWithType] [RawConj] [{Phim}, {Phim}]
+[ConjWithType] [Better Surr Conj] [[{Phim}, program_title], [{Phim}, program_title]]
+[ConjWithType] [Longer Conj] [[{Phim}, program_title], [{Phim}, program_title]]
+[ConjWithType] [Final Conj] [[Phim, program_title]]
+Phim | program_title
+Movie Title: null
+Exception! null
+java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:205)
+	at com.fpt.ruby.service.MovieFlyService.searchOnImdbByTitle(MovieFlyService.java:142)
+
+--- Hoặc là chấp nhận ko trả lời được câu này hoặc là trả lời lại
+--- tạm thời cứ để chưa trả lời được câu này đi 
+
+
 rạp quốc gia khởi chiếu phim step up all in khi nào
+Phim Step Up All In được công chiếu ngày Fri Aug 08 00:00:00 ICT 2014
+---- Ideally, câu này nên trả lời ngày đầu tiên rạp quốc gia chiếu phim này
+Tuned sent: DTI	rạp quốc gia khởi chiếu phim step up all in khi nào
+[ProcessHelper] Intent: mov_release
+[ProcessHelper] Question Type: static
+---------- chỗ này hình như cũng ko bắt được rạp quốc gia thì phải, check lại xem nhé
+
+
+
 rạp quốc gia khởi chiếu phim step up all in hôm nào
 rạp quốc gia khởi chiếu phim step up all in ngày nào
 rạp quốc gia khởi chiếu phim step up all in vào thứ mấy
 rạp quốc gia khởi chiếu phim step up all in thứ mấy
 rạp quốc gia sẽ khởi chiếu phim step up all in vào thứ mấy
 rạp quốc gia sẽ khởi chiếu phim step up all in thứ mấy
+same as above
+
+
+
+
 địa chỉ của rạp platinum gần đây nhất
+Xin lỗi, chúng tôi không tìm thấy dữ liệu cho câu trả lời
+Tuned sent: ADD	địa chỉ của rạp platinum
+[ProcessHelper] Intent: cin_address
+[ProcessHelper] Question Type: static
+[Process Helper] Cin name: null
+--- Tại sao cin name lại là null, default cho nó 1 cái nào đấy đi ví dụ như platinum là nghĩ đến gadern mall chẳng hạn
+
+
+
 địa chỉ của rạp platinum gần nhất
 cho tôi biết địa chỉ của rạp platinum gần nhất
 cho tôi biết địa chỉ của rạp platinum gần đây nhất
@@ -620,229 +668,179 @@ tôi muốn biết địa chỉ của rạp platinum gần nhất
 tôi muốn biết địa chỉ của rạp platinum gần đây nhất
 mình muốn biết địa chỉ của rạp platinum gần nhất
 mình muốn biết địa chỉ của rạp platinum gần đây nhất
+Same as above
+
+
+
 rạp platinum nào gần đây nhất
+Rạp Platinum Garden Mall, Lotte Cinema Hà Đông, Platinum Vincom Royal City, Platinum Vincom Long Biên, TT Chiếu Phim Quốc Gia, CGV Vincom City Towers, CGV MIPEC Tower, Kim Đồng Cinema, Tháng 8 Cinema, Platinum Cineplex Times City, Lotte Cinema Landmark
+
+[Domain Classifier] rạp platinum nào gần đây nhất hello {tv, 0.0}  {movie, 1.0} 
+[AppController] Domain Movie
+
+Tuned sent: NAM	rạp platinum nào
+[ProcessHelper] Intent: cin_name
+[ProcessHelper] Question Type: dynamic
+Dynamic ....
+[ConjWithType] [RawConj] []
+[ConjWithType] [Better Surr Conj] []
+[ConjWithType] [Longer Conj] []
+[ConjWithType] [Final Conj] []
+curentdate :2014-10-06 17:31
+Size: 1930
+----- Sao lại output hết tên rạp ra thế này, ít ra là chỉ output tên rạp có chữ platinum thôi chứ
+
+
+
+
+
 rạp platinum gần nhất cách đây bao xa
 chỉ cho tôi đường đến rạp platinum gần nhất
 chỉ cho tôi đường đến rạp platinum gần đây nhất
+CHƯA TRẢ LỜI ĐƯỢC
+
+
 rạp tháng tám ở đâu
 rạp tháng tám nằm trên đường nào
 rạp tháng tám nằm ở khu nào
+Tháng 8 Cinema ở địa chỉ: 45 Hàng Bài, Hoàn Kiếm, Hà Nội
+
+
 rạp tháng tám cách đây có xa không
 rạp tháng tám cách đây bao xa
-rạp này ở đâu
-rạp này nằm trên đường nào
-rạp này nằm ở khu nào
-rạp này cách đây có xa không
-rạp này cách đây bao xa
-rạp đó ở đâu
-rạp đó nằm trên đường nào
-rạp đó nằm ở khu nào
-rạp đó cách đây có xa không
-rạp đó cách đây bao xa
-hôm nay rạp tháng tám có những phim gì
-hôm nay rạp tháng tám chiếu những phim gì
-hôm nay rạp tháng tám chiếu phim gì
-hôm nay rạp này có những phim gì
-hôm nay rạp này chiếu những phim gì
-hôm nay rạp này chiếu phim gì
-hôm nay rạp đó có những phim gì
-hôm nay rạp đó chiếu những phim gì
-hôm nay rạp đó chiếu phim gì
+--------------Lại lỗi ở chỗ cin_dis để là static question rồi query db
+
+
+
 hôm nay rạp tháng tám chiếu phim hercules lúc mấy giờ
-rạp tháng tám chiếu phim hercules lúc mấy giờ hôm nay
-rạp tháng tám có chiếu phim hercules không
+Xin lỗi, chúng tôi không tìm thấy dữ liệu cho câu trả lời
+---- dang nhe phai tra loi hom nay rap thang tam khong chieu phim nay
+
+
+
+
+hôm nay rạp tháng tám chiếu phim giải mã mê cung lúc mấy giờ
+Giờ chiếu: Oct 6, 2014 5:35:00 PM, Oct 6, 2014 5:35:00 PM, Oct 6, 2014 5:35:00 PM, Oct 6, 2014 5:35:00 PM, Oct 6, 2014 5:35:00 PM, Oct 6, 2014 5:35:00 PM, Oct 6, 2014 5:35:00 PM
+
+
+
 phim hercules có được chiếu ở rạp tháng tám không
+rạp tháng tám có chiếu phim hercules không
 rạp tháng tám có đông khách không
-hôm nay rạp này chiếu phim hercules lúc mấy giờ
-rạp này chiếu phim hercules lúc mấy giờ hôm nay
-rạp này có chiếu phim hercules không
-phim hercules có được chiếu ở rạp này không
-rạp này có đông khách không
-hôm nay rạp đó chiếu phim hercules lúc mấy giờ
-rạp đó chiếu phim hercules lúc mấy giờ hôm nay
-rạp đó có chiếu phim hercules không
-phim hercules có được chiếu ở rạp đó không
-rạp đó có đông khách không
+----- Intent undefined, Question Type: static
+
+
+
+
 có những phim hành động nào đang được chiếu tại các rạp
-có những phim hành động nào đang được chiếu tại rạp
-có những phim hành động nào đang được chiếu rạp
-có những phim hài nào đang được chiếu tại các rạp
-có những phim hài nào đang được chiếu tại rạp
-có những phim hài nào đang được chiếu rạp
-có phim hài nào đang chiếu tại rạp tháng tám không
-có những phim hài nào đang chiếu tại rạp tháng tám
-có những phim hài nào đang được chiếu tại rạp tháng tám
-rạp tháng tám đang chiếu những phim hài nào
-rạp tháng tám đang chiếu phim hài nào
-có phim hài nào đang chiếu tại rạp này không
-có những phim hài nào đang chiếu tại rạp này
-có những phim hài nào đang được chiếu tại rạp này
-rạp này đang chiếu những phim hài nào
-rạp này đang chiếu phim hài nào
-có phim hài nào đang chiếu tại rạp đó không
-có những phim hài nào đang chiếu tại rạp đó
-có những phim hài nào đang được chiếu tại rạp đó
+Phim The Equalizer, The Maze Runner
+
+
+
 rạp đó đang chiếu những phim hài nào
-rạp đó đang chiếu phim hài nào
+=====> output to user: rap do dang chieu nhung phim hai nao
+Tuned sent: NAM	rạp đó đang chiếu phim hài nào
+[ProcessHelper] Intent: mov_title
+[ProcessHelper] Question Type: featured
+Feature ..
+afterdate: Mon Oct 06 17:42:10 ICT 2014
+No of returned tickets: 86
+{"Title":"Lupin the Third: The Legend of Twilight Gemini","Year":"1996","Rated":"N/A","Released":"02 Aug 1996","Runtime":"92 min","Genre":"Action, Adventure, Animation","Director":"Gisaburo Sugii","Writer":"Naoya Azuma (screenplay), Naoya Higashi (screenplay), Hideki Mitsui (screenplay), Monkey Punch (characters), Gisaburo Sugii (screenplay)","Actors":"Kan'ichi Kurita, Kiyoshi Kobayashi, Eiko Masuyama, Makio Inoue","Plot":"Lupin comes into the possession of half a diamond containing half a map, and goes in search of the other half so that he can obtain the map's treasure.","Language":"English, German, Italian, Japanese","Country":"Japan","Awards":"N/A","Poster":"N/A","Metascore":"N/A","imdbRating":"6.9","imdbVotes":"175","imdbID":"tt0363140","Type":"movie","Response":"True"}
+{"Title":"Rupan sansei: Ikiteita majutsushi","Year":"2002","Rated":"N/A","Released":"03 Apr 2002","Runtime":"50 min","Genre":"Action, Animation, Comedy","Director":"Mamoru Hamatsu","Writer":"Monkey Punch (comic)","Actors":"Takeshi Aono, Daisuke Egawa, Makio Inoue, Kiyoshi Kobayashi","Plot":"30 years after \"The Magician who lived\".","Language":"Japanese","Country":"Japan","Awards":"1 nomination.","Poster":"N/A","Metascore":"N/A","imdbRating":"6.3","imdbVotes":"67","imdbID":"tt0420138","Type":"movie","Response":"True"}
+{"Title":"Lupin III: Burning Memory - Tokyo Crisis","Year":"1998","Rated":"N/A","Released":"24 Jul 1998","Runtime":"95 min","Genre":"Animation, Action, Comedy","Director":"Toshiya Shinohara","Writer":"Monkey Punch (creator), Monkey Punch (screenplay)","Actors":"Megumi Hayashibara, Kan'ichi Kurita, Kiyoshi Kobayashi, Eiko Masuyama","Plot":"Lupin attempts to get his hands on a treasure map, but finds himself in a crisis where the future of Tokyo hangs in the balance.","Language":"English, Japanese","Country":"Japan","Awards":"N/A","Poster":"http://ia.media-imdb.com/images/M/MV5BNzk4MjQwMzc0MV5BMl5BanBnXkFtZTcwODU0NTkyMQ@@._V1_SX300.jpg","Metascore":"N/A","imdbRating":"6.8","imdbVotes":"171","imdbID":"tt0189973","Type":"movie","Response":"True"}
+{"Title":"The Admiral: Roaring Currents","Year":"2014","Rated":"N/A","Released":"15 Aug 2014","Runtime":"126 min","Genre":"War","Director":"Han-min Kim","Writer":"Cheol-Hong Jeon, Han-min Kim","Actors":"Min-sik Choi, Ryu Seung-Ryong, Jin-Woong Cho, Myung-gon Kim","Plot":"At the strait 'Roaring Currents', master strategist Admiral Yi and his 12 battleships oppose enemy's fleet of 330, and win the most incredible victory of history.","Language":"Korean","Country":"South Korea","Awards":"N/A","Poster":"http://ia.media-imdb.com/images/M/MV5BMjA1MzE5NTMyNl5BMl5BanBnXkFtZTgwODA4MzI0MjE@._V1_SX300.jpg","Metascore":"N/A","imdbRating":"7.1","imdbVotes":"235","imdbID":"tt3541262","Type":"movie","Response":"True"}
+Filter by Genre: [comedy]
+Tuned sent: NAM	rap do dang chieu phim hai nao
+[ProcessHelper] Intent: mov_title
+[ProcessHelper] Question Type: dynamic
+Dynamic ....
+[ConjWithType] [RawConj] [{Phim}]
+[ConjWithType] [Better Surr Conj] [[{Phim}, program_title]]
+[Conjunction Helper - getCinemaName: ]Phim | program_title
+[ConjWithType] [Longer Conj] [[{Phim}, program_title]]
+[ConjWithType] [Final Conj] [[Phim, program_title]]
+list size: 2
+!!!!!!2014-10-06 12:00:00
+curentdate :2014-10-06 17:42
+<<Mon Oct 06 12:00:00 ICT 2014 , Mon Oct 06 18:00:00 ICT 2014>>
+Size: 915
+DONE Process
+------------------------------- tại sao lại trả lời câu hỏi không dấu, có dấu là câu trả lời đúng mà
+Phim LUPIN THE 3RD, ĐỒI QUỶ ÁM - THE DAMNED, GIẢI MÃ MÊ CUNG - THE MAZE RUNNER, OUTCAST, HIỆP SĨ MÙ, THE DAMNED, MỐI THÙ HOÀNG TỘC - OUTCAST, HẦM MỘ MA QUÁI - AS ABOVE, SO BELOW, HẢI TẶC - THE PIRATES, GOOD PEOPLE, VẬN ĐEN - GOOD PEOPLE, SIÊU ĐẠO CHÍCH LUPIN ĐỆ TAM - LUPIN THE THIRD, BƯỚC KHẼ ĐẾN HẠNH PHÚC, SCANDAL: HÀO QUANG TRỞ LẠI, THE PIRATES, LEGENDS OF OZ: DOROTHY'S RETURN, ARE YOU HERE, THE MAZE RUNNER, THE EQUALIZER, HOLIDAY, NGỐ LÀM TRIỆU PHÚ - ARE YOU HERE, HUYỀN THOẠI XỨ OZ: DOROTHY TRỞ LẠI - LEGENDS OF OZ: DOROTHY'S RETURN, AS ABOVE, SO BELOW, và THIỆN ÁC ĐỐI ĐẦU - THE EQUALIZER đang được chiếu
+
+
+
+
+
+
 có phim hoạt hình 3D nào đang được chiếu tại các rạp không
-có phim hoạt hình 3D nào đang được chiếu tại rạp không
-có phim 3D nào đang được chiếu tại các rạp không
-có phim 3D nào đang được chiếu tại rạp không
-có phim 3D nào đang chiếu tại các rạp không
-có phim 3D nào đang chiếu tại rạp không
-trong các phim chiếu rạp, có phim nào dành cho thiếu nhi không
-phim dành cho thiếu nhi đang chiếu tại rạp là phim nào
-phim dành cho thiếu nhi đang chiếu tại các rạp là phim nào
-phim dành cho thiếu nhi đang chiếu tại rạp là những phim nào
-phim dành cho thiếu nhi đang chiếu tại các rạp là những phim nào
-cho tôi biết một phim dành cho thiếu nhi đang được chiếu rạp
-cho tôi biết một phim tình cảm lãng mạn đang chiếu rạp
-có phim nào dành cho thiếu nhi đang chiếu rạp không
-có phim việt nam nào đang được chiếu rạp không
-có phim hành động mỹ nào đang được chiếu rạp không
-có phim tâm lý tình cảm nào đang được chiếu rạp không
+Xin lỗi, chúng tôi không tìm thấy câu trả lời cho câu hỏi cảu bạn
+Tuned sent: NAM	phim hoạt hình 3D nào đang được
+[ProcessHelper] Intent: mov_title
+[ProcessHelper] Question Type: featured
+Feature ..
+afterdate: Mon Oct 06 17:44:41 ICT 2014
+No of returned tickets: 86
+Filter by Genre: [animation]
+Tuned sent: NAM	phim hoat hinh 3D nao dang duoc
+[ProcessHelper] Intent: mov_title
+[ProcessHelper] Question Type: dynamic
+Dynamic ..
+-------- Phải trả lời là ko có phim hoạt hình 3D nào đang được chiếu rạp
+
+
+
 bao nhiêu tiền một vé
 vé giá bao nhiêu
 vé bao nhiêu
 vé vip giá bao nhiêu
+----------------------ticket_price chưa trả lời được
+
+
+
 đặt vé qua mạng có được không
 đặt vé qua mạng được không
 tôi muốn đặt vé qua mạng có được không
 mình muốn đặt vé qua mạng có được không
 tôi muốn đặt vé qua mạng được không
 mình muốn đặt vé qua mạng được không
-phim đó chiếu lúc mấy giờ
-phim chiếu lúc mấy giờ
-phim được chiếu lúc mấy giờ
-phim đó chiếu lúc nào
-phim chiếu lúc nào
-phim được chiếu lúc nào
-phim này chiếu lúc mấy giờ
-phim này chiếu lúc nào
-phim này sắp chiếu chưa
-vé thường giá bao nhiêu
-vé vip còn không
-vé thường còn không
-check cho tôi còn vé không
-check cho tôi phim đó còn vé không
-check cho tôi phim này suất chiếu 12 giờ ngày mai còn không
-kiểm tra xem còn vé không
-kiểm tra cho tôi xem còn vé không
-kiểm tra cho tôi xem vé còn không
-kiểm tra cho tôi phim đó còn vé không
-kiểm tra cho tôi phim đó vé còn không
-kiểm tra cho tôi xem phim đó còn vé không
-kiểm tra cho tôi xem phim đó vé còn không
-kiểm tra cho tôi phim này suất chiếu 12 giờ ngày mai còn không
-phim đó nói về cái gì
-phim này nói về cái gì
-phim nói về cái gì
-phim the terminal nói về cái gì
-imdb rating của phim này là bao nhiêu
-imdb rating của phim đó là bao nhiêu
-phim này có imdb rating cao không
-phim đó có imdb rating cao không
-imdb rating của phim này bao nhiêu
-imdb rating của phim đó bao nhiêu
-cho tôi biết imdb rating của phim này
-cho tôi biết imdb rating của phim đó
-cho tôi biết imdb rating của phim the terminal
+Xin lỗi, tôi không trả lời câu hỏi này được
+Tuned sent: POL	đặt vé qua mạng
+[ProcessHelper] Intent: ticket_status
+[ProcessHelper] Question Type: static
+
+
+
 trẻ con có xem được phim này không
-trẻ con có xem được phim đó không
-trẻ con có được xem phim này không
-trẻ con có được xem phim đó không
-có đưa trẻ con đi xem phim đó được không
-đưa trẻ con đi xem phim đó được không
-đưa trẻ con đi xem phim đó có được không
-tôi đưa con đi xem phim này được khônng
-tôi đưa con đi xem phim này có được không
-có đưa trẻ con đi xem phim này được không
-đưa trẻ con đi xem phim này được không
-đưa trẻ con đi xem phim này có được không
-tôi đưa con đi xem phim đó được khônng
-tôi đưa con đi xem phim đó có được không
-phim này có diễn viên nổi tiếng nào không
-phim đó có diễn viên nổi tiếng nào không
-phim này có diễn viên nào nổi tiếng không
-phim đó có diễn viên nào nổi tiếng không
-dàn sao trong phim có ai
-dàn sao trong phim có những diễn viên nổi tiếng nào
-dàn sao trong phim có diễn viên nổi tiếng nào
-dàn sao trong phim có những nhân vật nổi tiếng nào
-dàn sao trong phim có nhân vật nổi tiếng nào
-dàn sao trong phim có những người nổi tiếng nào
-dàn sao trong phim có người nổi tiếng nào
-dàn sao trong phim đó có những ai
-dàn sao trong phim này có những ai
-dàn sao trong phim có những ai
-dàn sao trong phim có ai
-có diễn viên nổi tiếng nào đóng phim này
-có diễn viên nổi tiếng nào trong phim này
-có diễn viên nổi tiếng nào đóng phim đó
-có diễn viên nổi tiếng nào trong phim đó
-có diễn viên nổi tiếng nào trong phim
-có sao nào trong phim đó
-có sao nào trong phim này
-có sao nào trong phim
-thời lượng phim này bao lâu
-thời lượng phim này là bao lâu
-thời lượng phim này bao nhiêu
-thời lượng phim này là bao nhiêu
-phim này kéo dài bao nhiêu phút
-thời lượng phim đó bao lâu
-thời lượng phim đó là bao lâu
-thời lượng phim đó là bao nhiêu
-thời lượng phim đó bao nhiêu
-phim đó kéo dài bao nhiêu phút
-thời lượng phim bao nhiêu
-thời lượng phim bao nhiêu phút
-thời lượng phim là bao nhiêu
-thời lượng phim là bao nhiêu phút
-phim kéo dài bao lâu
-phim kéo dài bao nhiêu phút
-thời lượng phim là bao lâu
-thời lượng phim bao lâu
-phim chiếu đến mấy giờ
-phim này chiếu đến mấy giờ
-phim đó chiếu đến mấy giờ
-phim chiếu đến lúc nào
-phim này chiếu đến lúc nào
-phim đó chiếu đến lúc nào
+trẻ con có xem được phim này không TV Intent: UDF Non-diacritic TV Intent: UDF Xin lỗi, chúng tôi không có thông tin cho câu trả lời của bạn 
+[Domain Classifier] trẻ con có xem được phim này không hello
+ {tv, 2.0}  {movie, 2.0} 
+[AppController] Domain TV
+TV Intent: UDF
+Non-diacritic TV Intent: UDF
+--------------- cai nay phai la domain movie, not tv
+
+
+
 trong rạp có ghế ngồi cho trẻ em không
-có ghế ngồi cho trẻ em trong rạp không
-có ghế ngồi trong rạp cho trẻ em không
-có ghế dành riêng cho trẻ em trong rạp không
-có ghế cho trẻ em trong rạp không
-có ghế trong rạp cho trẻ em không
-có ghế ngồi dành riêng cho trẻ em trong rạp không
-trong rạp có ghế ngồi dành riêng cho trẻ em không
-trong rạp có ghế dành riêng cho trẻ em không
-rạp có ghế ngồi cho trẻ em không
-rạp có ghế ngồi dành riêng cho trẻ em không
-rạp có ghế dành riêng cho trẻ em không
-rạp có ưu tiên trẻ em không
-rạp có ưu tiên dành riêng cho trẻ em không
-rạp có ưu tiên nào cho trẻ em không
-rạp có ưu tiên nào dành riêng cho trẻ em không
-giá vé cho trẻ em là bao nhiêu
-giá vé cho trẻ em bao nhiêu
-vé trẻ em giá bao nhiêu
-vé dành cho trẻ em giá bao nhiêu
-bao nhiêu một vé cho trẻ em
-bao nhiêu một vé dành cho trẻ em
-giá vé trẻ em bao nhiêu
-giá vé trẻ em là bao nhiêu
-giá vé dành cho trẻ em bao nhiêu
-giá vé dành cho trẻ em là bao nhiêu
-giá vé cho thành viên là bao nhiêu
-giá vé cho thành viên bao nhiêu
-giá vé dành cho thành viên là bao nhiêu
-giá vé dành cho thành viên bao nhiêu
-giá vé cho người có thẻ thành viên là bao nhiêu
-giá vé cho người có thẻ thành viên bao nhiêu
-giá vé dành cho người có thẻ thành viên là bao nhiêu
-giá vé dành cho người có thẻ thành viên bao nhiêu
+Xin lỗi, tôi không trả lời câu hỏi này được
+Tuned sent: POL	trong rạp có ghế ngồi cho trẻ em
+[ProcessHelper] Intent: undefined
+[ProcessHelper] Question Type: static
+
+
+
 rạp nào tốt nhất ở hà nội
+Rạp Platinum Garden Mall, Lotte Cinema Hà Đông, Platinum Vincom Royal City, Platinum Vincom Long Biên, TT Chiếu Phim Quốc Gia, CGV MIPEC Tower, CGV Vincom City Towers, Kim Đồng Cinema, Tháng 8 Cinema, Platinum Cineplex Times City, Lotte Cinema Landmarks
+Tuned sent: NAM	rạp nào tốt nhất hà nội
+[ProcessHelper] Intent: cin_name
+[ProcessHelper] Question Type: dynamic
+Dynamic ....
+------------------ Chua address duoc tot nhat,  chua tra loi duoc rap chi o HN
+
+
+
+
 rạp nào mới nhất ở hà nội
 rạp tốt nhất ở hà nội là rạp nào
 rạp mới nhất ở hà nội là rạp nào
@@ -856,6 +854,10 @@ rạp nào sắp mở ở hà nội
 rạp nào rộng nhất ở hà nội
 rạp nào lâu đời nhất ở hà nội
 rạp nào có sức chứa lớn nhất ở hà nội
+--------------------- May cau hoi kieu feature cho rap the nay, chua tra loi duoc
+
+
+
 diễn viên nữ chính trong phim này là ai
 diễn viên nữ chính trong phim này tên là gì
 diễn viên nữ chính trong phim này tên gì
@@ -875,6 +877,18 @@ ai là diễn viên nữ chính trong phim đó
 ai là diễn viên nữ chính trong phim
 tên diễn viên nữ chính trong phim đó là gì
 tên diễn viên nữ chính trong phim là gì
+------------------------- Chi tra loi duoc dan dien vien, khong tra loi duoc dien vien nu chinh
+
+
+
+
+
+
+
+
+
+
+
 phim nào đang được giới trẻ yêu thích
 những phim nào đang được giới trẻ yêu thích
 phim này được đánh giá thế nào
@@ -916,68 +930,50 @@ ngoài rạp sắp chiếu phim gì nhỉ
 phim gì sắp chiếu ngoài rạp nhỉ
 phim này kéo dài đến mấy giờ
 phim này chiếu đến mấy giờ
+
+
+
+
+
+
+
+
+
+
 rạp này mở cửa đến mấy giờ
-đạo diễn phim lucy là ai
-ai là đạo diễn phim lucy
-đạo diễn của phim lucy là ai
-phim lucy của đạo diễn nào
-đạo diễn phim này là ai
-ai là đạo diễn phim này
-đạo diễn của phim này là ai
-phim này của đạo diễn nào
-đạo diễn phim đó là ai
-ai là đạo diễn phim đó
-đạo diễn của phim đó là ai
-phim đó của đạo diễn nào
-lucy là phim nước nào
-phim này được sản xuất ở nước nào
-phim lucy sản xuất tại mỹ có phải không
-phim này là phim nước nào
-phim lucy là phim nước nào
-phim đó là phim nước nào
-phim lucy được sản xuất năm nào
-phim lucy sản xuất năm nào
-phim này được sản xuất năm nào
-phim này sản xuất năm nào
-phim đó được sản xuất năm nào
-phim đó sản xuất năm nào
-phim lucy được chiếu đầu tiên tại rạp nào
-phim này được chiếu đầu tiên tại rạp nào
-phim đó được chiếu đầu tiên tại rạp nào
-khi nào lucy được khởi chiếu
-khi nào khởi chiếu phim lucy
-phim lucy khởi chiếu ngày nào
-phim lucy được công chiếu ngày nào
-phim lucy ra mắt ngày nào
-phim lucy được ra mắt ngày nào
-phim lucy khởi chiếu khi nào
-phim lucy được công chiếu khi nào
+Xin lỗi, tôi không trả lời câu hỏi này được
+[ProcessHelper] Intent: cin_date
+[ProcessHelper] Question Type: static
+[ConjWithType] [Final Conj] [[TT Chiếu Phim Quốc Gia, cin_name]]
+TT Chiếu Phim Quốc Gia | cin_name
+Movie Title: null
+Exception! null
+java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:205)
+	at com.fpt.ruby.service.MovieFlyService.searchOnImdbByTitle(MovieFlyService.java:142)
+
+
+
+
+
+
+
 phim lucy ra mắt khi nào
-phim lucy được ra mắt khi nào
-bao giờ khởi chiếu phim lucy
-bao giờ công chiếu phim lucy
-bao giờ phim lucy được công chiếu
-bao giờ phim lucy được ra mắt
-bao giờ ra mắt phim lucy
-bao giờ phim lucy bắt đầu được chiếu
-bao giờ bắt đầu chiếu phim lucy
-phim lucy bắt đầu chiếu ngày nào
-phim lucy bắt đầu chiếu khi nào
-khi nào rạp quốc gia bắt đầu chiếu phim lucy
+---------- domain: TV but expect là movie
+
+
+
+
 rạp quốc gia bắt đầu chiếu phim lucy vào thứ mấy
 rạp quốc gia bắt đầu chiếu phim lucy vào ngày nào
+Phim Lucy được công chiếu ngày Fri Jul 25 00:00:00 ICT 2014
+
+
+
 phim lucy sử dụng ngôn ngữ nào
 phim lucy sử dụng ngôn ngữ gì
 ngôn ngữ nào được sử dụng trong phim này
-ngôn ngữ dùng trong phim lucy là phim gì
+ngôn ngữ dùng trong phim lucy là gì
 phim lucy sử dụng tiếng gì
-phim lucy sử dụng tiếng nước nào 
-ngoài rạp có phim gì
-ngoài rạp có gì
-hôm nay ngoài rạp có gì
-rạp quốc gia hôm nay có gì
-rạp quốc gia hôm nay có phim gì
-hôm nay ngoài rạp quốc gia có gì
-hôm nay ngoài rạp quốc gia có phim gì
-có phim gì ngoài rạp quốc gia hôm nay
-rạp quốc gia có gì hôm nay
+phim lucy sử dụng tiếng nước nào
+---------- Tất cả đều được bắt là domain TV -----> not as expected 
