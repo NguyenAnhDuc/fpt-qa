@@ -230,7 +230,7 @@
     
   # Time of Day
   { (/sang/) => MORNING }
-  #{ (/chieu/) => AFTERNOON }
+  { (/chieu/) => AFTERNOON }
   { (/toi/) => EVENING }
   { (/hoang_hon/) => DUSK }
   { (/chang_vang/) => TWILIGHT }
@@ -348,18 +348,18 @@
   
   #bat cac buoi trong ngay
   { text:/[Ll]uc\ssang/ => MORNING }
-  #{ text:/[Ll]uc\schieu/ => AFTERNOON }
+  { text:/[Ll]uc\schieu/ => AFTERNOON }
   { text:/[Ll]uc\stoi/ => EVENING }
   { text:/[Bb]ay\sgio/ => InexactTime( TimeRange(IsoTime(8, 0, 0), IsoTime(23, 0, 0))) }
   { text:/[Bb]an\ssang/ => MORNING }
-  #{ text:/[Bb]an\schieu/ => AFTERNOON }
+  { text:/[Bb]an\schieu/ => AFTERNOON }
   { text:/[Bb]an\stoi/ => EVENING }
   { text:/[Bb]an\sdem/ => EVENING }
 
   { text:/[Ll]uc\shoang\shon/ => DUSK }
   { text:/[Ll]uc\sxam\stoi/ => DUSK }
   { text:/[Ll]uc\schap\stoi/ => DUSK }
-  #{ text:/[Ll]uc\schieu\stoi/ => DUSK }
+  { text:/[Ll]uc\schieu\stoi/ => DUSK }
 
   { text:/[Ll]uc\s[Cc]hang\svang/ => TWILIGHT }
   { text:/[Ll]uc\s[Cc]hieu \smuon/ => TWILIGHT }
@@ -368,7 +368,7 @@
   { text:/[Ll]uc\s[Rr]ang\ssang/ => SUNRISE }
   
   { text:/[Bb]uoi\ssang/ => MORNING }
-  #{ text:/[Bb]uoi\schieu/ => AFTERNOON }
+  { text:/[Bb]uoi\schieu/ => AFTERNOON }
   { text:/[Bb]uoi\stoi/ => EVENING }
   
   { text:/[Hh]oang\shon/ => DUSK }

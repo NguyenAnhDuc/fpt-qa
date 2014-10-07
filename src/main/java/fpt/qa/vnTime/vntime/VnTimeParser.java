@@ -153,7 +153,9 @@ public class VnTimeParser {
 			String range = "";
 			id = Integer.valueOf(tmp98_96.intValue() + 1);
 			String cmString = cm.toString();
-
+			if (cm.toString().equalsIgnoreCase("chieu")) {
+				continue;
+			}
 			//System.out.println("cm.toString: " + cmString);
 
 			
