@@ -23,7 +23,7 @@ public class FeaturedMovieHelper {
 			return AnswerMapper.Default_Answer;
 		}
 		
-		return "phim " + movTitles.substring(0, movTitles.length() - 2);
+		return movTitles.substring(0, movTitles.length() - 2);
 	}
 	
 	public static String filterByActor(String actor, List<MovieFly> movieFlies){
@@ -43,7 +43,7 @@ public class FeaturedMovieHelper {
 			return AnswerMapper.Default_Answer;
 		}
 		
-		return "phim " + movTitles.substring(0, movTitles.length() - 2);
+		return movTitles.substring(0, movTitles.length() - 2);
 	}
 	
 	public static String filterByImdb(List<MovieFly> movieFlies){
@@ -61,7 +61,7 @@ public class FeaturedMovieHelper {
 			return AnswerMapper.Default_Answer;
 		}
 		
-		return "phim " + title + " có imdb rating cao nhất";
+		return title + " có imdb rating cao nhất";
 	}
 	
 	public static String filterByCountry(String country, List<MovieFly> movieFlies){
@@ -80,7 +80,7 @@ public class FeaturedMovieHelper {
 		if (movTitles.isEmpty()){
 			return AnswerMapper.Default_Answer;
 		}
-		return "phim " + movTitles.substring(0, movTitles.length() - 2);
+		return movTitles.substring(0, movTitles.length() - 2);
 	}
 	
 	public static String filterByLang(String lang, List<MovieFly> movieFlies){
@@ -96,7 +96,7 @@ public class FeaturedMovieHelper {
 			return AnswerMapper.Default_Answer;
 		}
 		
-		return "phim " + movTitles.substring(0, movTitles.length() - 2);
+		return movTitles.substring(0, movTitles.length() - 2);
 	}
 	
 	public static String filterByGenre(List<String> genre, List<MovieFly> movieFlies){
@@ -125,7 +125,7 @@ public class FeaturedMovieHelper {
 			return "Xin lỗi, chúng tôi không tìm thấy phim như thế trong cơ sở dữ liệu";
 		}
 		
-		return "phim " + movTitles.substring(0, movTitles.length() - 2);
+		return movTitles.substring(0, movTitles.length() - 2);
 	}
 	
 	public static String filterByImdbAndGenre(List<String> genre, List<MovieFly> movieFlies){
@@ -153,7 +153,7 @@ public class FeaturedMovieHelper {
 			return AnswerMapper.Default_Answer;
 		}
 		
-		return "phim " + movTitles;
+		return movTitles;
 	}
 	
 	public static String filterByImdbAndCountry(String country, List<MovieFly> movieFlies){
@@ -174,7 +174,7 @@ public class FeaturedMovieHelper {
 			return AnswerMapper.Default_Answer;
 		}
 		
-		return "phim " + movTitles;
+		return movTitles;
 	}
 	
 	public static String filterByAward(String award, List<MovieFly> movieFlies){
@@ -189,7 +189,7 @@ public class FeaturedMovieHelper {
 			return AnswerMapper.Default_Answer;
 		}
 		
-		return "phim " + movTitles.substring(0, movTitles.length() - 2) + " đã nhận được giải thưởng";
+		return movTitles.substring(0, movTitles.length() - 2) + " đã nhận được giải thưởng";
 	}
 	
 }

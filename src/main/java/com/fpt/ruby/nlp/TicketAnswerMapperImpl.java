@@ -58,7 +58,7 @@ public class TicketAnswerMapperImpl implements TicketAnswerMapper {
 	
 	public String getCinemaTicketAnswer(List<MovieTicket> ans){
 		if (ans.size() == 0){
-			return "Xin lỗi, chúng tôi không tìm thấy dữ liệu cho câu trả lời";
+			return "Xin lỗi, chúng tôi không tìm thấy rạp nào phù hợp";
 		}
 		HashSet<String> cinemas = new HashSet<String>();
 		for (MovieTicket movieTicket : ans){
@@ -81,7 +81,7 @@ public class TicketAnswerMapperImpl implements TicketAnswerMapper {
 		if (ans.size() == 0){
 			if (matchMovieTicket.getCinema() != null){
 				if (matchMovieTicket.getMovie() != null){
-					return "Phim này đang không được chiếu";
+					return "Phim này đang không được chiếu ở đó!";
 				}
 				return "Xin lỗi, chúng tôi không tìm thấy thông tin về lịch chiếu cho rạp này";
 			}

@@ -25,6 +25,13 @@ public class MovieModifiers {
 		initActorsMap(dir);
 		initDirectorsMap(dir);
 		initLangMap(dir);
+		
+		dir = dir + "non-diacritic/";
+		initGenreMap(dir);
+		initCountryMap(dir);
+		initActorsMap(dir);
+		initDirectorsMap(dir);
+		initLangMap(dir);
 	}
 	
 	private String title;
