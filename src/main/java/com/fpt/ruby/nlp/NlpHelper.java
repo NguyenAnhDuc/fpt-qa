@@ -39,7 +39,8 @@ public class NlpHelper {
 		return questionStructure;
 	}
 	
-	public static String normalizeQuestion(String question){
+	public static String normalizeQuestion(String ques){
+		String question = ques.toLowerCase();
 		if(question.isEmpty()){
 			return "";
 		}
