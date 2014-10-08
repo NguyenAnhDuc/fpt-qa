@@ -147,11 +147,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		
 		if (mod.getProg_title() == null){
 			System.err.println("[TVAnserMapper]: Program null");
-			if (mod.getStart() == null){
-				rubyAnswer.setAnswer( DEF_ANS + "\n\n\n" );
-				return rubyAnswer;
-			}
-			if (mod.getStart().equals( mod.getEnd() )){
+			if (mod.getStart() != null && mod.getStart().equals( mod.getEnd() )){
 				rubyAnswer.setAnswer( getTitle( progs ) + "\n\n\n" );
 				return rubyAnswer;
 			}
@@ -200,7 +196,10 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 			time += sdf.format(progs.get( i ).getStart_date()) + "</br>";
 		}
 		
-		return time.substring( 0, time.length() - 1 );
+		if (limit < progs.size()){
+			time += ". . . ";
+		}
+		return time;
 	}
 
 	public String  getTitle ( List< TVProgram > progs ) {
@@ -215,8 +214,11 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		for (int i = 0; i < limit; i++){
 			title += progs.get( i ).getTitle() + "</br>";
 		}
+		if (limit < progs.size()){
+			title += ". . . ";
+		}
 		
-		return title.substring( 0, title.length() - 1 );
+		return title;
 	}
 
 	public String  getChannel ( List< TVProgram > progs ) {
@@ -233,8 +235,10 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 				channel += progs.get( i ).getChannel() + "</br>";
 			}
 		}
-		
-		return channel.substring( 0, channel.length() - 2 );
+		if (limit < progs.size()){
+			channel += ". . . ";
+		}
+		return channel;
 	}
 
 	public String  getTitleAndTime ( List< TVProgram > progs ) {
@@ -248,10 +252,13 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		}
 		for (int i = 0; i < limit; i++){
 			TVProgram tv = progs.get( i );
-			title += tv.getTitle() + " : " + sdf.format(tv.getStart_date()) + "</br>";
+			title += sdf.format(tv.getStart_date()) + " : " + tv.getTitle() + "</br>";
+		}
+		if (limit < progs.size()){
+			title += ". . . ";
 		}
 		
-		return title.substring( 0, title.length() - 2 );
+		return title;
 	}
 
 	public String  getChannelAndProgram ( List< TVProgram > progs ) {
@@ -267,8 +274,10 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 			TVProgram tv = progs.get( i );
 			info += tv.getChannel() + " : " + tv.getTitle() + "</br>";
 		}
-		
-		return info.substring( 0, info.length() - 2 );
+		if (limit < progs.size()){
+			info += ". . . ";
+		}
+		return info;
 	}
 
 	public String  getChannelAndTime ( List< TVProgram > progs ) {
@@ -284,8 +293,11 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 			TVProgram tv = progs.get( i );
 			info += tv.getChannel() + " : " + sdf.format(tv.getStart_date()) + "</br>";
 		}
+		if (limit < progs.size()){
+			info += ". . . ";
+		}
 		
-		return info.substring( 0, info.length() - 2 );
+		return info;
 	}
 
 	public String  getChannelProgAndTime ( List< TVProgram > progs ) {
@@ -299,10 +311,13 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		}
 		for (int i = 0; i < limit; i++){
 			TVProgram tv = progs.get( i );
-			info += tv.getChannel() + " : " + tv.getTitle() + " : " + sdf.format(tv.getStart_date()) + "</br>";
+			info += tv.getChannel() + " : " + sdf.format(tv.getStart_date()) + " : " + tv.getTitle() + "</br>";
+		}
+		if (limit < progs.size()){
+			info += ". . . ";
 		}
 		
-		return info.substring( 0, info.length() - 2 );
+		return info;
 	}
 
 	public String  getEndDate ( List< TVProgram > progs ) {
