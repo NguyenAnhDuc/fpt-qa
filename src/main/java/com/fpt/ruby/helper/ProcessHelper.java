@@ -54,12 +54,11 @@ public class ProcessHelper{
 	public static RubyAnswer getAnswer( String question, MovieFlyService movieFlyService,
 			MovieTicketService movieTicketService, CinemaService cinemaService, LogService logService ) {
 		if (DiacriticConverter.hasDiacriticAccents(question)){
+			System.out.println("DIACRITIC");
 			RubyAnswer rubyAnswerDiacritic = getAnswer(true, question, movieFlyService, movieTicketService, cinemaService, logService);
-			if (rubyAnswerDiacritic.isSuccessful()){
-				return rubyAnswerDiacritic;
-			}
+			return rubyAnswerDiacritic;
 		}
-		
+		System.out.println("NONE DIACRITIC");
 		RubyAnswer rubyAnswerNoneDiacritic = getAnswer(false, question, movieFlyService, movieTicketService, cinemaService, logService);
 		return rubyAnswerNoneDiacritic;
 		/*RubyAnswer rubyAnswerDiacritic = getAnswer(true, question, movieFlyService, movieTicketService, cinemaService, logService);
