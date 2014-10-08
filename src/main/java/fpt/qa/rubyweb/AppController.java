@@ -71,15 +71,15 @@ public class AppController {
 		if (domain.equals( "tv" )){
 //		if ( question.startsWith( "tv" ) ){
 			System.err.println( "[AppController] Domain TV" );
-			rubyAnswer = tam.getAnswer( question );
+			rubyAnswer = tam.getAnswer( key );
 			// Neu khong tra loi duoc cau hoi co dau, thi chuyen cau hoi do ve cau hoi khong dau va xu ly
-			if (DiacriticConverter.hasDiacriticAccents(question) && rubyAnswer.getAnswer().contains(TVAnswerMapperImpl.UDF_ANS)){
-				rubyAnswer = tam.getAnswer(DiacriticConverter.removeDiacritics(question));
+			if (DiacriticConverter.hasDiacriticAccents(key) && rubyAnswer.getAnswer().contains(TVAnswerMapperImpl.UDF_ANS)){
+				rubyAnswer = tam.getAnswer(DiacriticConverter.removeDiacritics(key));
 			}
 		}
 		else{
 			System.err.println( "[AppController] Domain Movie" );
-			rubyAnswer =  ProcessHelper.getAnswer(question,movieFlyService,movieTicketService,cinemaService,logService);
+			rubyAnswer =  ProcessHelper.getAnswer(key,movieFlyService,movieTicketService,cinemaService,logService);
 		}
 		rubyAnswer.setDomain(domain);
 		return rubyAnswer;

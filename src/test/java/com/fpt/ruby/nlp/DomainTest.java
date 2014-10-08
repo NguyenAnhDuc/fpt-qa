@@ -19,6 +19,7 @@ public class DomainTest {
 		List<String> questions = IOHelp.readFileToList(dir  + "/TestDomainData_Movie.txt");
 		for (String question : questions)
 			if (!question.isEmpty()){
+				System.out.println("Question: " + question);
 				Assert.assertEquals("Movie Domain Expected", "movie", domainClassifier.getDomain(question));
 			}
 	}
