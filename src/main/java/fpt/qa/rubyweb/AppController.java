@@ -23,6 +23,7 @@ import com.fpt.ruby.service.PersonService;
 import com.fpt.ruby.service.mongo.MovieTicketService;
 
 import fpt.qa.domainclassifier.DomainClassifier;
+import fpt.qa.mdnlib.util.string.DiacriticConverter;
 
 @Controller
 @RequestMapping("/")
@@ -71,6 +72,10 @@ public class AppController {
 //		if ( question.startsWith( "tv" ) ){
 			System.err.println( "[AppController] Domain TV" );
 			rubyAnswer = tam.getAnswer( question );
+			// Neu khong tra loi duoc cau hoi co dau, thi chuyen cau hoi do ve cau hoi khong dau va xu ly
+			if (DiacriticConverter.hasDiacriticAccents(question) && rubyAnswer.getAnswer().contains(TVAnswerMapperImpl.UDF_ANS)){
+				rubyAnswer = tam.getAnswer(DiacriticConverter.removeDiacritics(question));
+			}
 		}
 		else{
 			System.err.println( "[AppController] Domain Movie" );
