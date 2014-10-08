@@ -119,8 +119,9 @@ public class TVProgramService {
 	public List< TVProgram > findByTitleAndChannel(String title, String channel){
 		Date today = new Date();
 		Date oneWeekLater = new Date(today.getTime() + ONE_WEEK);
+		Date oneWeekBefore = new Date(today.getTime() - ONE_WEEK);
 		
-		return findByTitleInPeriodAtChannel( title, today, oneWeekLater, channel );
+		return findByTitleInPeriodAtChannel( title, oneWeekBefore, oneWeekLater, channel );
 	}
 	
 	public List< TVProgram > findInPeriod(Date start, Date end){
