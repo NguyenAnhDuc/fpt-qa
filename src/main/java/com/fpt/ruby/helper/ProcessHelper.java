@@ -86,7 +86,7 @@ public class ProcessHelper{
 		rubyAnswer.setIntent( intent );
 		
 		String questionType = AnswerMapper.getTypeOfAnswer( intent, question );
-		rubyAnswer.setAnswer( "Xin lỗi, tôi không trả lời câu hỏi này được" );
+		rubyAnswer.setAnswer( "Xin lỗi, tôi không trả lời được câu hỏi này" );
 		System.out.println( "[ProcessHelper] Question Type: " + questionType );
 		// static question
 		try{
@@ -171,7 +171,7 @@ public class ProcessHelper{
 		log.setQueryParamater( queryParamater );
 		logService.save( log );
 		
-		if( !rubyAnswer.getAnswer().contains( "Xin lỗi," ) ){
+		if( !rubyAnswer.getAnswer().contains( "Xin lỗi, tôi không trả lời được câu hỏi này" ) ){
 			rubyAnswer.setSuccessful( true );
 		}
 		
