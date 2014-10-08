@@ -22,6 +22,7 @@ import fpt.qa.mdnlib.util.string.DiacriticConverter;
 
 public class TVAnswerMapperImpl implements TVAnswerMapper {
 	public static final String DEF_ANS = "Xin lỗi, chúng tôi không có thông tin cho câu trả lời của bạn";
+	public static final String UDF_ANS = "Xin lỗi, chúng tôi không trả lời được câu hỏi của bạn";
 	private TVIntentDetection intentDetector = new TVIntentDetection();
 	private TVIntentDetection nonDiacritic = new TVIntentDetection();
 	private TVProgramService tps = new TVProgramService();
@@ -53,7 +54,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		
 		rubyAnswer.setQuestion(question);
 		rubyAnswer.setIntent(intent);
-		rubyAnswer.setAnswer(tmp + DEF_ANS + "\n\n\n");
+		rubyAnswer.setAnswer(DEF_ANS + "\n\n\n");
 		
 		if (intent.equalsIgnoreCase(IntentConstants.TV_UDF)) 
 			return rubyAnswer;
@@ -103,7 +104,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		if (mod.getChannel() == null && mod.getProg_title() == null){
 			System.err.println("[TVAnserMapper]: Channel null and program null");
 			if (mod.getStart() == null){
-				rubyAnswer.setAnswer( DEF_ANS + "\n\n\n" );
+				rubyAnswer.setAnswer( UDF_ANS + "\n\n\n" );
 				return rubyAnswer;
 			}
 			
@@ -122,7 +123,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 				return rubyAnswer;
 			}
 			if (intent.equals( IntentConstants.TV_DAT )){
-				rubyAnswer.setAnswer( getTime( progs ) + "\n\n\n" );
+				rubyAnswer.setAnswer( getChannelAndTime( progs ) + "\n\n\n" );
 				return rubyAnswer;
 			}
 			if (intent.equals( IntentConstants.TV_CHN )){
@@ -177,6 +178,11 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 			return rubyAnswer;
 		}
 		
+		if (progs.isEmpty()){
+			rubyAnswer.setAnswer( "Không có chương trình " + mod.getProg_title() +
+					" nào trên " + mod.getChannel() + " vào lúc đó\n\n\n" );
+			return rubyAnswer;
+		}
 		rubyAnswer.setAnswer( getTitleAndTime( progs ) + "\n\n\n" );
 		return rubyAnswer;
 		
