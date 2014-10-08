@@ -29,14 +29,17 @@ public class FinalResultTest {
 			String[] strings = data.split("\\|");
 			Data adata = new Data();
 			adata.question = strings[0].trim();
-			adata.answer = strings[1].trim();
+			if (strings.length > 1)
+				adata.answer = strings[1].trim();
 			dataTests.add(adata);
 		}
 		for (Data data : dataTests)
 			if (!data.question.isEmpty()){
 				System.out.println("Question: " + data.question);
 				String finalAnswer = ProcessHelper.getAnswer(data.question, movieFlyService, movieTicketService, cinemaService, logService).getAnswer();
-				Assert.assertTrue(finalAnswer.contains(data.answer));
+				if  (!data.answer.isEmpty())
+					Assert.assertTrue(finalAnswer.toLowerCase().contains(data.answer.toLowerCase()));
+				else Assert.assertTrue(!finalAnswer.toLowerCase().contains("xin lỗi"));
 			}
 	}
 }
