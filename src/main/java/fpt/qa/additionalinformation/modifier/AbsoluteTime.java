@@ -46,7 +46,11 @@ public class AbsoluteTime{
 		return new Date();
 	}
 
-	public TimeResult getAbsoluteTime( String text ) {
+	public TimeResult getAbsoluteTime( String sent ) {
+		String text = sent;
+		if (sent.contains("rạp tháng tám") || sent.contains("rạp tháng 8") || sent.contains("rap thang tam") || sent.contains("rap thang 8")){
+			text = sent.replace("rạp tháng tám", "").replace("rạp tháng 8", "").replace("rap thang tam", "").replace("rap thang 8", "");
+		}
 		TimeResult timeResult = new TimeResult();
 
 		DateFormat dateFormatHour = new SimpleDateFormat( "yyyy-MM-dd HH:mm" );

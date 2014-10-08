@@ -7,6 +7,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import jmdn.util.string.StrUtil;
+
 import com.fpt.ruby.helper.RedisHelper;
 import com.fpt.ruby.model.Cinema;
 import com.fpt.ruby.model.MovieFly;
@@ -87,14 +89,16 @@ public class MovieAnswerMapperImpl implements MovieAnswerMapper {
 			return "Xin lỗi, chúng tôi không tìm được kết quả thích hợp";
 		}
 		for (int i = 0; i < ans.size(); i++) {
+			String title = StrUtil.toInitCap(ans.get(i).getTitle());
+			int idx = title.indexOf("-");
 			if (i > 0 && i == ans.size() - 1) {
-				res += "và " + ans.get(i).getTitle() + " đang được chiếu";
+				res += "và " + title.substring(0, idx) + " đang được chiếu";
 				break;
 			} else if (i == ans.size() - 1) {
-				res += ans.get(i).getTitle();
+				res += title.substring(0, idx) + "</br>";
 				break;
 			}
-			res += ans.get(i).getTitle();
+			res += title.substring(0, idx);
 			if (ans.size() > 1) {
 				res += ", ";
 			} else {

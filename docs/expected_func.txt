@@ -34,6 +34,7 @@ Movie:
  phim mỹ nào đang chiếu ngoài rạp
  phim của đạo diễn A đang chiếu ngoài rạp
  phim có diễn viên B đang chiếu ngoài rạp
+ phim nào có bình luận tốt nhất
  
 
  
@@ -47,18 +48,18 @@ Movie:
  * giá vé xem phim tại 1 rạp
  
  TV:
- - Chương trình X phát sóng vào khung giờ nào
+ - Chương trình X phát sóng vào khung giờ nào							ANSWER: Không đúng	FIXED
  - Tối nay có chương trình nào
- - chương trình X được phát trên kênh nào
- - chương trình x được phát trên kênh y vào khung giờ nào
- - kênh Y đang chiếu chương trình gì
- - kênh Y sắp chiếu chương trình gì
- - kênh Y chiếu chương trình gì
- - kênh Y chiếu chương trình gì trong khoảng thời gian từ D1 đến D2
- - đang có chương trình gì
- - chương trình X hết lúc mấy giờ
+ - chương trình X được phát trên kênh nào								NO ANSWER			FIXED
+ - chương trình x được phát trên kênh y vào khung giờ nào				NO ANSWER			FIXED
+ - kênh Y đang chiếu chương trình gì									
+ - kênh Y sắp chiếu chương trình gì										Không bắt được từ sắp	
+ - kênh Y chiếu chương trình gì											NO ANSWER
+ - kênh Y chiếu chương trình gì trong khoảng thời gian từ D1 đến D2		Có answer, nhưng chỉ có 1 answer.
+ - đang có chương trình gì			
+ - chương trình X hết lúc mấy giờ										ANSWER: Không đúng
  - lịch chiếu tất cả chương trình trên kênh Y hôm nay
- - mấy giờ có chương trình X trên kênh Y
+ - mấy giờ có chương trình X trên kênh Y								ANSWER: Không đúng   FIXED
 
  
  
@@ -66,15 +67,16 @@ Movie:
  - đang có chương trình THỂ THAO nào
  - kênh nào đang có THỜI SỰ
  - kênh Y đang chiếu PHIM gì
- - PHIM 4 giờ đến 6 giờ trên kênh Y
- - hôm nay/9 giờ tối kênh Y có chiếu chương trình X không
- - hôm nay có chương trình X không
- - hôm nay chương trình X chiếu lúc mấy giờ
- - chương trình x có trên kênh Y không
+ - PHIM 4 giờ đến 6 giờ trên kênh Y							SAI TIME
+ - hôm nay/9 giờ tối kênh Y có chiếu chương trình X không	SAI INTENT	
+ - hôm nay có chương trình X không   						SAI INTENT
+ - hôm nay chương trình X chiếu lúc mấy giờ					ANSWER: Không đúng		FIXED
+ - chương trình x có trên kênh Y không						SAI INTENT	
+ - chương trình x có trên kênh nào?							NO ANSWER				FIXED
  - tối nay kênh Y chiếu PHIM gì
- - PHIM gì chiếu trên kênh Y lúc 9 giờ tối nay
- - chủ nhật tuần này chương trình X chiếu lúc mấy giờ
+ - PHIM gì chiếu trên kênh Y lúc 9 giờ tối nay				
+ - chủ nhật tuần này chương trình X chiếu lúc mấy giờ		ANSWER: Không đúng
  - 9 giờ tối nay có PHIM gì
- - chiều nay kênh Y có gì
+ - chiều nay kênh Y có gì									
  - có PHIM gì từ 4 giờ đến 6 giờ
  

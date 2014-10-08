@@ -5,6 +5,8 @@ import java.io.InputStreamReader;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
@@ -19,13 +21,29 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.springframework.stereotype.Component;
 
+import com.fpt.ruby.conjunction.ConjunctionHelper;
+import com.fpt.ruby.helper.RedisHelper;
 import com.fpt.ruby.model.Channel;
 import com.fpt.ruby.model.TVProgram;
 import com.fpt.ruby.service.TVProgramService;
 
 @Component
 public class CrawlerMyTV {
-
+	List<String> crawlChannels = Collections.unmodifiableList(
+		    Arrays.asList(new String[] {"VTV1", "VTV2","VTV3", "VTV4", "VTV5", "VTV6", "VTV9", 
+		    							"HBO", "STAR MOVIES","MAX",
+		    							"Hà Nội 1","Hà Nội 2",
+		    							"VTC1","VTC2", 
+		    							"HTV7","HTV9","HTV1","HTV1",
+		    							"DISNEY", "CARTOON",
+		    							"VITV",
+		    							"O2 TV",
+		    							"DISCOVERY",
+		    							"ANTV",
+		    							"VTVCAB1","VTVCAB2",
+		    							"STAR WORLD HD",
+		    							"VOV"
+		    							}));
 	public static String sendGet(String url) throws Exception{
 		HttpClient client = HttpClientBuilder.create().build();
 		HttpGet request = new HttpGet(url);
@@ -49,6 +67,8 @@ public class CrawlerMyTV {
 	
 	
 	public List<Channel> getChanel() throws Exception{
+		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
+		ConjunctionHelper conjunctionHelper = new ConjunctionHelper( dir );
 		List< Channel > channels = new ArrayList< Channel >();
 		Document doc = Jsoup.parse(sendGet("http://www.mytv.com.vn/lich-phat-song"));
 		Element chanel = doc.getElementById("channelId");
@@ -57,18 +77,24 @@ public class CrawlerMyTV {
 		for (Element element : chanElements){
 			Channel channel = new Channel();
 			channel.setId(element.val());
-			channel.setName(element.text());
+			String name = conjunctionHelper.getChannelName(element.text().trim());
+			if ( name != null)
+				channel.setName(name);
+			else channel.setName(element.text().trim());
+			System.out.println("Channel name: " + element.text().trim() + " | " + channel.getName());
 			channels.add(channel);
 		}
 		return channels;
 	}
 	
 	public void crawlMyTV(TVProgramService tvProgramService) throws Exception{
+		
 		System.out.println("Crawling from MYTV");
 		DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
 		String date = df.format(new Date(System.currentTimeMillis()));
 		List< Channel > channels = getChanel();
 		for (Channel channel : channels){
+			if (crawlChannels.contains(channel.getName().toUpperCase())){
 				try{
 					System.out.println("Crawling from " + channel.getName());
 					List< TVProgram > tvPrograms =  crawlChannel( channel, date);
@@ -81,6 +107,8 @@ public class CrawlerMyTV {
 					ex.printStackTrace();
 					continue;
 				}
+			}
+			
 		}
 	}
 	
@@ -115,6 +143,14 @@ public class CrawlerMyTV {
 			tvProgram.setChannel( channel.getName() );
 			tvProgram.setTitle( StringEscapeUtils.unescapeJava(programName) );
 			tvProgram.setStart_date( channelDate );
+			if (channel.getName().toLowerCase().equals("hbo") || channel.getName().toLowerCase().equals("star movies")
+				|| channel.getName().toLowerCase().equals("max") || channel.getName().toLowerCase().equals("vtvcab2"))
+				tvProgram.setType("phim");
+			if (channel.getName().toLowerCase().equals("disney") || channel.getName().toLowerCase().equals("cartoon"))
+				tvProgram.setType("phim hoạt hình");
+			if (channel.getName().toLowerCase().equals("discovery"))
+				tvProgram.setType("khám phá");
+			
 			tvPrograms.add( tvProgram );
 		}
 		return tvPrograms;
@@ -156,20 +192,9 @@ public class CrawlerMyTV {
 		}*/
 		//getChanel();
 		//crawlChannel("1","26/09/2014");
-		List< Channel > channels = new ArrayList< Channel >();
-		Document doc = Jsoup.parse(sendGet("http://www.mytv.com.vn/lich-phat-song"));
-		Element chanel = doc.getElementById("channelId");
-		
-		Elements chanElements = chanel.select("option");
-		for (Element element : chanElements){
-			Channel channel = new Channel();
-			channel.setId(element.val());
-			channel.setName(element.text());
-			channels.add(channel);
-			if (channel.getId() == "161"){
-
-			}
-		}
+		TVProgramService tvProgramService = new TVProgramService();
+		CrawlerMyTV crawlerMyTV = new CrawlerMyTV();
+		crawlerMyTV.crawlMyTV(tvProgramService);
 				
 	}
 }

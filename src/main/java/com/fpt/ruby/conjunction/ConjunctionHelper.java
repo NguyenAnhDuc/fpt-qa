@@ -43,14 +43,24 @@ public class ConjunctionHelper {
 		return null;
 	}
 	
+	public String getChannelName(String text){
+		List<Pair<String, String>> conjunctions = getConjunction(text);
+		for (Pair<String, String> conjunction : conjunctions ){
+			if (conjunction.second.equals("chanel_title"))
+				return conjunction.first.replace("{", "").replace("}", "");
+		}
+		return null;
+	}
+	
 	public MovieTicket getMovieTicket(String question){
+		System.err.println("Conjunction Helper: " + question);
 		List<Pair<String, String>> conjunctions = getConjunction(question);
 		MovieTicket movieTicket = new MovieTicket();
 		for (Pair<String, String> conjunction : conjunctions ){
 			System.out.println("[Conjunction Helper - getCinemaName: ]" + conjunction.first + " | " + conjunction.second);
-			if (conjunction.second.equals(IntentConstants.CIN_NAME))
+			if (movieTicket.getCinema() == null && conjunction.second.equals(IntentConstants.CIN_NAME))
 				movieTicket.setCinema(conjunction.first.replace("{", "").replace("}", ""));
-			if (conjunction.second.equals(IntentConstants.MOV_TITLE))
+			if (movieTicket.getMovie() == null && conjunction.second.equals(IntentConstants.MOV_TITLE))
 				movieTicket.setMovie(conjunction.first.replace("{", "").replace("}", ""));
 		}
 		return movieTicket;

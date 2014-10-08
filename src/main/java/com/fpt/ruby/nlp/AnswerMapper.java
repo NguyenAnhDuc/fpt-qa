@@ -107,9 +107,9 @@ public class AnswerMapper {
 		return "Xin lỗi, chúng tôi chưa có câu trả lời cho câu hỏi của bạn";
 	}
 	
-	public static String getDynamicAnswer(String intent, List<MovieTicket> ans){
+	public static String getDynamicAnswer(String intent, List<MovieTicket> ans, MovieTicket matchMovieTicket, boolean haveTimeInfo){
 		if (intent.equals(IntentConstants.MOV_DATE)){
-			return tam.getDateTicketAnswer(ans);
+			return tam.getDateTicketAnswer(ans, matchMovieTicket, haveTimeInfo);
 		}
 		
 		if (intent.equals(IntentConstants.CIN_NAME)){
@@ -130,8 +130,7 @@ public class AnswerMapper {
 	
 	public static String getFeaturedAnswer(String question, List<MovieTicket> ans, MovieFlyService movieFlyService) throws UnsupportedEncodingException{
 		List<String> titles = getDistinctMovieTitle(ans);
-		List<MovieFly> movieFlies = movieFlyService.searchOnImdb(titles);
-		
+		List<MovieFly> movieFlies = movieFlyService.findByListTitle(titles);
 		if (question.contains("nhất") || question.contains("hay")){
 			return FeaturedMovieHelper.filterByImdb(movieFlies);
 		}
@@ -169,6 +168,9 @@ public class AnswerMapper {
 		
 		for (MovieTicket mt : ans){
 			String curTitle = mt.getMovie();
+			String[] someTiles = curTitle.split("-");
+			if (someTiles.length == 1) curTitle = someTiles[0].trim();
+			if (someTiles.length == 2) curTitle = someTiles[1].trim();
 			if (!titles.contains(curTitle)){
 				titles.add(curTitle);
 			}

@@ -30,6 +30,16 @@ public class TVProgramService {
 		this.mongoOperations = (MongoOperations) ctx.getBean("mongoTemplate");
 	}
 	
+	public void cleanOldData(){
+		Date now = new Date(new Date().getTime() - ONE_WEEK);
+		Query query = new Query(Criteria.where("start_date" ).lt( now ));
+		List<TVProgram> tvPrograms = mongoOperations.find(query, TVProgram.class);
+		for (TVProgram tvProgram : tvPrograms){
+			System.out.println("TV Program: " + tvProgram.getChannel() + " | " + tvProgram.getTitle() +  " | " + tvProgram.getStart_date());
+			mongoOperations.remove(tvProgram);
+		}
+	}
+	
 	public List< TVProgram > getList(TVModifiers mod, String question){
 		String channel = mod.getChannel();
 		String title = mod.getProg_title();
@@ -189,16 +199,10 @@ public class TVProgramService {
 	
 	
 	public List<TVProgram> findProgramToShow(){
-		List<TVProgram> tvPrograms = mongoOperations.findAll(TVProgram.class);
-		List<TVProgram> results = new ArrayList<TVProgram>();
 		Date date = new Date();
 		date.setHours(0);date.setMinutes(0);date.setSeconds(0);
-		for (TVProgram tvProgram : tvPrograms){
-			if (tvProgram.getStart_date() != null && 
-				(tvProgram.getStart_date().getDate() == date.getDate() && tvProgram.getStart_date().getMonth() == date.getMonth() 
-				 && tvProgram.getStart_date().getYear() == date.getYear()))
-				 results.add(tvProgram);
-		}
+		Query query = new Query(Criteria.where("start_date").gt( date )).with( new Sort( Direction.ASC, "start_date" ) );
+		List<TVProgram> results = mongoOperations.find(query, TVProgram.class);
 		return results;
 	}
 	
@@ -213,6 +217,7 @@ public class TVProgramService {
 	
 	public static void main(String[] args) throws Exception {
 		TVProgramService tvService = new TVProgramService();
+		tvService.cleanOldData();
 //		List< TVProgram > all = tvService.findAll();
 //		
 //		// Export db section

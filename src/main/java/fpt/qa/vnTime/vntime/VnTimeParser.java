@@ -88,7 +88,7 @@ public class VnTimeParser {
 				String range = ((TimeExpression) cm
 						.get(TimeExpression.Annotation.class)).getTemporal()
 						.getRange().toString();
-				//System.out.println(range);
+				////System.out.println(range);
 			} catch (Exception exception) {
 				//
 			}
@@ -153,6 +153,11 @@ public class VnTimeParser {
 			String range = "";
 			id = Integer.valueOf(tmp98_96.intValue() + 1);
 			String cmString = cm.toString();
+			if (cm.toString().equalsIgnoreCase("chieu")) {
+				continue;
+			}
+			//System.out.println("cm.toString: " + cmString);
+
 			
 			if (cmString.equals( "giờ" ) || cmString.equals( "chiều" )){
 				continue;
@@ -171,8 +176,19 @@ public class VnTimeParser {
 			// xử lý các trường hợp: 9 giờ tối, 9 giờ 30 phút tối nay, 1 giờ chiều nay, 2 giờ trưa nay
 			int itmp = range.lastIndexOf( "T" );
 			if (itmp > 0){
+				
 				try{
+					System.out.println("range: " + range);
+//					//System.out.println(range.substring( itmp + 1,  itmp + 3 < range.length() ? itmp + 3 : range.length()));
 					int hour = Integer.parseInt( range.substring( range.lastIndexOf( "T" ) + 1,  itmp + 3));
+					////System.out.println("hour: " + hour);
+					if ((cmString.contains( "tối" ) || cmString.contains( "chiều" ) || cmString.contains( "trưa" )) && hour < 12){
+						range += "pm";
+					}
+					
+					////System.out.println("range after change: " + range);
+
+					hour = Integer.parseInt( range.substring( range.lastIndexOf( "T" ) + 1,  itmp + 3));
 					if ((cmString.contains( "tối" ) || cmString.contains( "chiều" ) || cmString.contains( "trưa" )) && hour < 12){
 						range += "pm";
 					}
@@ -186,13 +202,30 @@ public class VnTimeParser {
 					range = ((TimeExpression) cm
 							.get(TimeExpression.Annotation.class))
 							.getTemporal().getRange().toString();
+
 				} catch (Exception exception) {
 					range = ((TimeExpression) cm
 							.get(TimeExpression.Annotation.class))
 							.getTemporal().toString();
+					//System.out.println("Range = "+range);
 					// exception.printStackTrace();
 				}
 			}
+			else {
+				try {
+					range = ((TimeExpression) cm
+							.get(TimeExpression.Annotation.class))
+							.getTemporal().getRange().toString();
+					////System.out.println("range 2: " + range);
+				} catch (Exception exception) {
+					range = ((TimeExpression) cm
+							.get(TimeExpression.Annotation.class))
+							.getTemporal().toString();
+					//System.out.println("Range = "+range);
+					// exception.printStackTrace();
+				}
+			}
+			//System.out.println("Range = "+range);
 			TimeRange timeRange = RangeParser.parser(range);
 			timeRange.setExpression(cm.toString());
 			

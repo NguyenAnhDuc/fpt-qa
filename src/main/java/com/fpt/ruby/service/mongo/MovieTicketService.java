@@ -8,6 +8,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.Sort.Direction;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
@@ -15,10 +17,12 @@ import org.springframework.stereotype.Service;
 
 import com.fpt.ruby.config.SpringMongoConfig;
 import com.fpt.ruby.model.MovieTicket;
+import com.fpt.ruby.model.TVProgram;
 
 
 @Service
 public class MovieTicketService {
+	private static long ONE_WEEK = 7 * 24 * 60 * 60 * 1000;
 	private static final Logger logger = LoggerFactory.getLogger(MovieTicketService.class);
 	private final String MT_MOVIE = "movie";
 	private final String MT_CINEMA = "cinema";
@@ -37,7 +41,15 @@ public class MovieTicketService {
 		catch (Exception ex){
 			return false;
 		}
-		
+	}
+	
+	public void cleanOldData(){
+		Date now = new Date(new Date().getTime() - ONE_WEEK);
+		Query query = new Query(Criteria.where("start_date" ).lt( now ));
+		List<MovieTicket> movieTickets = mongoOperations.find(query, MovieTicket.class);
+		for (MovieTicket movieTicket : movieTickets){
+			mongoOperations.remove(movieTicket);
+		}
 	}
 	
 	public MovieTicket findById(String ticketId){
@@ -45,17 +57,11 @@ public class MovieTicketService {
 	}
 	
 	public List<MovieTicket> findTicketToShow(){
-		List<MovieTicket> movieTickets = mongoOperations.findAll(MovieTicket.class);
-		List<MovieTicket> tickets = new ArrayList<MovieTicket>();
 		Date date = new Date();
 		date.setHours(0);date.setMinutes(0);date.setSeconds(0);
-		for (MovieTicket movieTicket : movieTickets){
-			if (movieTicket.getDate() != null && 
-				(movieTicket.getDate().getDate() == date.getDate() && movieTicket.getDate().getMonth() == date.getMonth() 
-				 && movieTicket.getDate().getYear() == date.getYear()))
-				 tickets.add(movieTicket);
-		}
-		return tickets;
+		Query query = new Query(Criteria.where("date").gt( date )).with( new Sort( Direction.ASC, "date" ) );
+		List<MovieTicket> results = mongoOperations.find(query, MovieTicket.class);
+		return results;
 	}
 	
 	private List<MovieTicket> findMatch(MovieTicket movieTicket){

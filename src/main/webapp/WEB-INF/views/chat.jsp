@@ -184,7 +184,7 @@ body {
 											<!-- <strong class="primary-font">Jack Sparrow</strong> <small class="pull-right text-muted">
                                         <span class="glyphicon glyphicon-time"></span>14 mins ago</small> -->
 										</div>
-										<p>Gần đây có rạp nào tốt không?</p>
+										<p>Tối nay có phim gì</p>
 									</div></li>
 								<li class="right clearfix"><span
 									class="chat-img pull-right"> <img
@@ -196,8 +196,7 @@ body {
 											<!-- <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>15 mins ago</small>
                                     <strong class="pull-right primary-font">Bhaumik Patel</strong> -->
 										</div>
-										<p>Gần đây có rạp Lotte Lanmard và rạp Plantium The
-											Garden.</p>
+										<p>Bánh đúc có xương </p>
 									</div></li>
 							</ul>
 						</div>
@@ -214,9 +213,9 @@ body {
 						</div>
 
 					</div>
-					<div class="text-center">
+					<%-- <div class="text-center">
 						<%@ include file="questionType.jsp"%>
-					</div>
+					</div> --%>
 					<%-- <div class="box">
                 <h3 class="text-center">Cached Questions</h3>
                 <select class="questions_combo" id="ui_element">

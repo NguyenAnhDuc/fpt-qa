@@ -1,0 +1,1228 @@
+NAME	quanh day co quan nao ngon khong
+NAME	co quan nao ngon quanh day khong
+NAME	chi cho toi mot quan ngon quanh day
+NAME	chi cho minh mot quan ngon quanh day
+NAME	quanh day co quan an nao ngon khong
+NAME	co quan an nao ngon quanh day khong
+NAME	chi cho toi mot quan an ngon quanh day
+NAME	chi cho minh mot quan an ngon quanh day
+NAME	quanh day co quan bun cha nao ngon khong
+NAME	quanh day co quan bun cha nao an ngon khong
+NAME	quanh day co quan pho nao ngon khong
+NAME	quanh day co quan bun cha nao an ngon khong
+NAME	quanh day co hang banh my nao ngon khong
+NAME	quanh day co hang banh my nao an ngon khong
+NAME	quanh day co quan an nao duoc khong
+NAME	quanh day co quan nao an duoc khong
+NAME	quanh day co hang banh my nao duoc khong
+NAME	quanh day co hang banh my nao an duoc khong
+NAME	quanh day co hang nao an duoc khong
+NAME	quanh day co hang an nao duoc khong
+NAME	co quan an nao duoc quanh day khong
+NAME	co quan nao an duoc quanh day khong
+NAME	co hang banh my nao duoc quanh day khong
+NAME	co hang banh my nao an duoc quanh day khong
+NAME	co hang nao an duoc quanh day khong
+NAME	co hang an nao duoc quanh day khong
+NAME	quanh day co hang banh my sot vang nao ngon khong
+NAME	quanh day co hang banh cuon nao ngon khong
+NAME	quanh day co hang banh cuon nao khong
+NAME	co hang banh cuon nao quanh day khong
+DESC	an o pizza hut co ngon khong
+DESC	an o pizza hut co duoc khong
+DESC	an o pizza hut co on khong
+DESC	pizza hut co ngon khong
+DESC	pizza hut co duoc khong
+DESC	pizza hut co on khong
+DESC	quan pizza hut co ngon khong
+DESC	quan pizza hut co duoc khong
+DESC	quan pizza hut co on khong
+DESC	quan pizza hut co ok khong
+NAME	pizza o dau ngon
+NAME	pizza o dau duoc
+NAME	pizza o dau re
+NAME	pizza o dau phuc vu tot
+NAME	pizza o dau on
+NAME	pizza o dau ok
+NAME	gan day co quan pizza nao khong
+NAME	co quan pizza nao gan day khong
+NAME	co hang pizza nao gan day khong
+DESC	pizza alfresco the nao
+DESC	pizza alfresco co duoc khong
+DESC	pizza alfresco co ngon khong
+DESC	pizza alfresco co on khong
+DESC	pizza alfresco co ok khong
+NAME	quan nao ngon nhat o khu vuc cau giay
+NAME	quan nao an ngon nhat o khu vuc cau giay
+NAME	quan an nao ngon nhat o khu vuc cau giay
+NAME	o khu vuc cau giay quan nao ngon nhat
+NAME	o khu vuc cau giay quan nao an ngon nhat
+NAME	o khu vuc cau giay quan an nao ngon nhat
+NAME	quan nao duoc nhat o khu vuc cau giay
+NAME	quan nao an duoc nhat o khu vuc cau giay
+NAME	quan an nao duoc nhat o khu vuc cau giay
+NAME	o khu vuc cau giay quan nao duoc nhat
+NAME	o khu vuc cau giay quan nao an duoc nhat
+NAME	o khu vuc cau giay quan an nao duoc nhat
+NAME	quan com nao duoc nhat khu vuc cau giay
+NAME	quan com nao on nhat khu vuc cau giay
+NAME	quan com nao ngon nhat khu vuc cau giay
+NAME	co quan com binh dan nao quanh day khong
+NAME	co quan com sinh vien nao quanh day khong
+NAME	co quan com gia dinh nao quanh day khong
+NAME	co quan com nao quanh day khong
+NAME	co quan com nao gan day khong
+NAME	co quan com binh dan nao gan day khong
+NAME	co quan com sinh vien nao gan day khong
+NAME	co quan com gia dinh nao gan day khong
+NAME	co quan lau nao quanh day khong
+NAME	co quan lau nao gan day khong
+NAME	quanh day co quan lau rieu nao khong
+NAME	gan day co quan lau rieu nao khong
+NAME	cho minh biet cac nha hang noi tieng o ha noi
+NAME	toi muon biet cac nha hang noi tieng o ha noi
+NAME	minh muon biet cac nha hang noi tieng o ha noi
+NAME	cho toi biet cac nha hang noi tieng o ha noi
+NAME	cho minh biet cac quan an noi tieng o ha noi
+NAME	toi muon biet cac quan an noi tieng o ha noi
+NAME	minh muon biet cac quan an noi tieng o ha noi
+NAME	cho toi biet cac quan an noi tieng o ha noi
+NAME	chi cho toi nha hang lau thai ngon nhat ha noi
+NAME	chi cho toi nha hang lau thai duoc nhat ha noi
+NAME	hay chi cho toi nha hang lau thai ngon nhat ha noi
+NAME	hay chi cho toi nha hang lau thai duoc nhat ha noi
+NAME	quan thit cho ngon nhat ha noi la quan nao
+NAME	quan thit cho duoc nhat ha noi la quan nao
+NAME	quan thit cho nao ngon nhat ha noi
+NAME	quan thit cho nao duoc nhat ha noi
+NAME	co nhung quan fast food nao quanh day
+NAME	co quan fast food nao quanh day khong
+NAME	co nhung quan fast food nao gan day
+NAME	co quan fast food nao gan day khong
+NAME	co quan cafe take away nao quanh day khong
+NAME	co quan cafe take away nao gan day khong
+POL	toi co can goi dien dat cho truoc khi den quan ngon phan boi chau khong
+POL	truoc khi den quan ngon phan boi chau toi co can goi dien dat cho truoc khong
+POL	co can goi dien dat cho truoc khi den quan ngon phan boi chau khong
+POL	toi co can goi dien dat truoc khi den quan ngon phan boi chau khong
+POL	truoc khi den quan ngon phan boi chau toi co can goi dien dat truoc khong
+POL	co can goi dien dat truoc khi den quan ngon phan boi chau khong
+POL	quan ngon phan boi chau co can goi dien dat cho truoc khong
+POL	quan ngon phan boi chau co can goi dien dat truoc khong
+NAME	pizza huts co nhung mon gi
+NAME	pizza huts co mon gi
+NAME	pizza huts phuc vu mon gi
+NAME	pizza huts phuc vu nhung mon gi
+DESC	quan chieu hoa co duoc khong
+DESC	quan chieu hoa co ok khong
+DESC	quan chieu hoa co on khong
+DESC	quan chieu hoa co ngon khong
+DESC	an o lotte the nao
+DESC	an o lotte duoc khong
+DESC	an o lotte ngon khong
+DESC	an o lotte on khong
+DESC	an o lotte ok khong
+PRICE	khoang gia do an o pizza huts tu bao nhieu den bao nhieu
+PRICE	khoang gia do an o pizza huts the nao
+PRICE	do an o pizza huts nam trong khoang gia nao
+DIST	quan lotte gan nhat cach day bao xa
+DIST	quan lotte gan nhat cach bao xa
+DIST	quan lotte gan day nhat cach day bao xa
+DIST	quan lotte gan day nhat cach bao xa
+NAME	co quan pho cuon nao quanh day khong
+NAME	quanh day co quan pho cuon nao khong
+DIST	quan pho cuon gan nhat cach day bao xa
+NAME	khu nghia tan co quan pho cuon nao khong
+NAME	co quan pho cuon nao o khu nghia tan khong
+DUR	di tu day den quan pho cuon gan nhat mat bao lau
+DUR	tu day den quan pho cuon gan nhat di mat bao lau
+DIST	tu day den quan pho cuon gan nhat bao xa
+DUR	tu day den quan pho cuon gan nhat di xe may mat bao lau
+NAME	ke ten nhung quan an noi tieng o ha noi
+NAME	ke ten nhung quan an noi tieng o khu cau giay
+NAME	ke ten nhung quan an lang man o ha noi
+NAME	cho toi biet nhung nha hang lau nuong ngon o ha noi
+NAME	cho minh biet dia chi mot nha hang buffet nuong ngon o ha noi
+NAME	co quan banh ngot phap nao quanh day khong
+DIST	cua hang banh my thu huong cau giay cach day bao xa
+NAME	banh sinh nhat o dau ngon
+NAME	banh sinh nhat o dau dep
+NAME	banh sinh nhat o dau duoc
+NAME	banh sinh nhat o dau an ngon
+NAME	banh sinh nhat o dau an duoc
+NAME	cho toi biet mot quan an co cho choi cho tre nho gan day
+NAME	cho toi biet mot quan an co cho choi cho tre nho o gan day
+NAME	cho toi biet mot quan an gia dinh gan day
+NAME	co cua hang rau qua sach nao gan day khong
+NAME	co cua hang rau qua sach nao gan cho nay khong
+DIST	hieu fresh fruit gan nhat cach day bao xa
+DIST	hieu fresh fruit gan day nhat cach day bao xa
+NAME	co quan banh xeo nao gan day khong
+NAME	co quan banh xeo nao ngon gan day khong
+NAME	co quan banh xeo nao an ngon gan day khong
+NAME	co quan banh xeo nao an duoc gan day khong
+NAME	khu tap the nghia tan co nhung quan an noi tieng nao
+NAME	khu tap the nghia tan co nhung quan noi tieng nao
+NAME	oc xao o dau ngon nhat
+NAME	oc xao o dau ngon
+NAME	oc xao o dau duoc nhat
+NAME	oc xao o dau duoc
+NAME	oc xao dua o dau ngon nhat
+DESC	oc giang vo co ngon khong
+DESC	oc giang vo an the nao
+DESC	oc giang vo an co duoc khong
+DESC	oc giang vo an co on khong
+DESC	oc giang vo an duoc khong
+ADDR	cho toi biet dia chi quan oc cay giang vo
+ADDR	dia chi quan oc cay giang vo la gi
+ADDR	quan oc cay nam o so bao nhieu giang vo
+POL	quan oc cay co gan ho giang vo khong
+DESC	chi duong den quan oc cay giang vo
+DESC	hay chi duong den quan oc cay giang vo
+DIST	tu day den quan oc cay giang vo bao xa
+DIST	tu day den quan oc cay giang vo co xa khong
+DUR	tu day den quan oc cay giang vo di mat bao lau
+DUR	tu day den quan oc cay giang vo di mat bao nhieu phut
+DUR	tu day den quan oc cay giang vo lai xe mat bao lau
+DUR	tu day den quan oc cay giang vo lai xe mat bao nhieu phut
+DUR	tu day den quan oc cay giang vo di xe may mat bao lau
+DUR	tu day den quan oc cay giang vo di xe may mat bao nhieu phut
+DUR	den quan oc cay giang vo di mat bao nhieu phut
+DUR	den quan oc cay giang vo lai xe mat bao lau
+DUR	den quan oc cay giang vo lai xe mat bao nhieu phut
+POL	tu day den quan oc cay giang vo co xe bus khong
+POL	den quan oc cay giang vo di xe bus co duoc khong
+POL	den quan oc cay giang vo di xe bus co tien khong
+DUR	den quan oc cay giang vo di xe bus mat bao lau
+NAME	co quan kem nao doc dao quanh day khong
+NAME	quanh day co quan kem nao doc dao khong
+NAME	quan cafe nhac song noi tieng nhat khu cau giay la quan nao
+NAME	cho toi biet cac quan an dac san o ha noi
+NAME	den ha noi nen an o nhung quan nao
+NAME	nen an o nhung quan nao khi den ha noi
+NAME	nen an o quan nao khi den ha noi
+NAME	cho toi biet cac quan an dac san noi tieng o ha noi
+NAME	cho toi biet cac quan an dac san o ha noi
+DESC	do an o quan nay the nao
+NAME	quan nay phuc vu loai do an gi
+NAME	quan nay phuc vu nhung loai do an gi
+NAME	quan nay phuc vu nhung mon gi
+NAME	mon gi ngon nhat o day
+NAME	mon gi ngon nhat o quan nay
+NAME	mon nao ngon nhat o day
+NAME	mon nao ngon nhat o quan nay
+NAME	mon gi noi tieng nhat o day
+NAME	mon gi noi tieng nhat o quan nay
+NAME	mon nao noi tieng nhat o day
+NAME	mon nao noi tieng nhat o quan nay
+NAME	mon gi duoc nhat o day
+NAME	mon gi duoc nhat o quan nay
+NAME	mon nao duoc nhat o day
+NAME	mon nao duoc nhat o quan nay
+NAME	mon gi on nhat o day
+NAME	mon gi on nhat o quan nay
+NAME	mon nao on nhat o day
+NAME	mon nao on nhat o quan nay
+NAME	mon gi ok nhat o day
+NAME	mon gi ok nhat o quan nay
+NAME	mon nao ok nhat o day
+NAME	mon nao ok nhat o quan nay
+DESC	quan nay phuc vu co tot khong
+DESC	quan nay phuc vu co on khong
+DESC	quan nay phuc vu co duoc khong
+POL	quan nay co giao hang khong
+POL	quan nay co nhan dat hang qua dien thoai khong
+POL	quan nay co giao hang mien phi khong
+POL	quan nay co ship hang khong
+POL	quan nay co nhan giao hang khong
+POL	quan nay co nhan ship hang khong
+POL	quan nay co dong y ship hang khong
+DESC	quan nay an co duoc khong
+NAME	quan nay co nhung loai do an nao
+NAME	quan nay co nhung loai do an gi
+NAME	quan nay co nhung loai do uong nao
+NAME	quan nay co nhung loai do uong gi
+POL	quan nay co xuat hoa don do khong
+POL	quan nay co xuat hoa don khong
+DESC	quan do phuc vu co tot khong
+DESC	quan do phuc vu co on khong
+DESC	quan do phuc vu co duoc khong
+POL	quan do co giao hang khong
+POL	quan do co nhan dat hang qua dien thoai khong
+POL	quan do co giao hang mien phi khong
+POL	quan do co ship hang khong
+POL	quan do co nhan giao hang khong
+POL	quan do co nhan ship hang khong
+POL	quan do co dong y ship hang khong
+DESC	quan do an co duoc khong
+NAME	quan do co nhung loai do an nao
+NAME	quan do co nhung loai do an gi
+NAME	quan do co nhung loai do uong nao
+NAME	quan do co nhung loai do uong gi
+POL	quan do co xuat hoa don do khong
+POL	quan do co xuat hoa don khong
+DESC	quan phuc vu co tot khong
+DESC	quan phuc vu co on khong
+DESC	quan phuc vu co duoc khong
+POL	quan co giao hang khong
+POL	quan co nhan dat hang qua dien thoai khong
+POL	quan co giao hang mien phi khong
+POL	quan co ship hang khong
+POL	quan co nhan giao hang khong
+POL	quan co nhan ship hang khong
+POL	quan co dong y ship hang khong
+DESC	quan an co duoc khong
+NAME	quan co nhung loai do an nao
+NAME	quan co nhung loai do an gi
+NAME	quan co nhung loai do uong nao
+NAME	quan co nhung loai do uong gi
+POL	quan co xuat hoa don do khong
+POL	quan co xuat hoa don khong
+POL	gia tren da bao gom thue chua
+POL	gia tren da bao gom vat chua
+POL	gia tren da bao gom thue vat chua
+POL	gia tren da bao gom 10 phan tram vat chua
+POL	gia tren da bao gom 10 phan tram thue vat chua
+PRICE	gia trung binh cho mot nguoi an tai quan nay la bao nhieu
+PRICE	gia trung binh cho mot nguoi an o quan nay la bao nhieu
+PRICE	gia trung binh cho mot nguoi an tai quan nay bao nhieu
+PRICE	gia trung binh cho mot nguoi an o quan nay bao nhieu
+PRICE	gia cho mot nguoi an tai quan nay trung binh la bao nhieu
+PRICE	gia cho mot nguoi an o quan nay trung binh la bao nhieu
+PRICE	gia cho mot nguoi an tai quan nay trung binh bao nhieu
+PRICE	gia cho mot nguoi an o quan nay trung binh bao nhieu
+PRICE	gia cho mot nguoi an tai quan nay la bao nhieu
+PRICE	gia cho mot nguoi an o quan nay la bao nhieu
+PRICE	gia cho mot nguoi an tai quan nay bao nhieu
+PRICE	gia cho mot nguoi an o quan nay bao nhieu
+PRICE	gia trung binh cho mot nguoi an tai quan do la bao nhieu
+PRICE	gia trung binh cho mot nguoi an o quan do la bao nhieu
+PRICE	gia trung binh cho mot nguoi an tai quan do bao nhieu
+PRICE	gia trung binh cho mot nguoi an o quan do bao nhieu
+PRICE	gia cho mot nguoi an tai quan do trung binh la bao nhieu
+PRICE	gia cho mot nguoi an o quan do trung binh la bao nhieu
+PRICE	gia cho mot nguoi an tai quan do trung binh bao nhieu
+PRICE	gia cho mot nguoi an o quan do trung binh bao nhieu
+PRICE	gia cho mot nguoi an tai quan do la bao nhieu
+PRICE	gia cho mot nguoi an o quan do la bao nhieu
+PRICE	gia cho mot nguoi an tai quan do bao nhieu
+PRICE	gia cho mot nguoi an o quan do bao nhieu
+PRICE	gia trung binh cho mot nguoi an tai quan la bao nhieu
+PRICE	gia trung binh cho mot nguoi an o quan la bao nhieu
+PRICE	gia trung binh cho mot nguoi an tai quan bao nhieu
+PRICE	gia trung binh cho mot nguoi an o quan bao nhieu
+PRICE	gia cho mot nguoi an tai quan trung binh la bao nhieu
+PRICE	gia cho mot nguoi an o quan trung binh la bao nhieu
+PRICE	gia cho mot nguoi an tai quan trung binh bao nhieu
+PRICE	gia cho mot nguoi an o quan trung binh bao nhieu
+PRICE	gia cho mot nguoi an tai quan la khoang bao nhieu
+PRICE	gia cho mot nguoi an o quan la khoang bao nhieu
+PRICE	gia cho mot nguoi an tai quan khoang bao nhieu
+PRICE	gia cho mot nguoi an o quan khoang bao nhieu
+PRICE	gia cho mot nguoi an tai quan la bao nhieu
+PRICE	gia cho mot nguoi an o quan la bao nhieu
+PRICE	gia cho mot nguoi an tai quan bao nhieu
+PRICE	gia cho mot nguoi an o quan bao nhieu
+PRICE	gia trung binh cho mot nguoi an tai quan nay la khoang bao nhieu
+PRICE	gia trung binh cho mot nguoi an o quan nay la khoang bao nhieu
+PRICE	gia trung binh cho mot nguoi an tai quan nay khoang bao nhieu
+PRICE	gia trung binh cho mot nguoi an o quan nay khoang bao nhieu
+PRICE	gia cho mot nguoi an tai quan nay trung binh la khoang bao nhieu
+PRICE	gia cho mot nguoi an o quan nay trung binh la khoang bao nhieu
+PRICE	gia cho mot nguoi an tai quan nay trung binh khoang bao nhieu
+PRICE	gia cho mot nguoi an o quan nay trung binh khoang bao nhieu
+PRICE	gia cho mot nguoi an tai quan nay la khoang bao nhieu
+PRICE	gia cho mot nguoi an o quan nay la khoang bao nhieu
+PRICE	gia cho mot nguoi an tai quan nay khoang bao nhieu
+PRICE	gia cho mot nguoi an o quan nay khoang bao nhieu
+PRICE	gia trung binh cho mot nguoi an tai quan do la khoang bao nhieu
+PRICE	gia trung binh cho mot nguoi an o quan do la khoang bao nhieu
+PRICE	gia trung binh cho mot nguoi an tai quan do khoang bao nhieu
+PRICE	gia trung binh cho mot nguoi an o quan do khoang bao nhieu
+PRICE	gia cho mot nguoi an tai quan do trung binh la khoang bao nhieu
+PRICE	gia cho mot nguoi an o quan do trung binh la khoang bao nhieu
+PRICE	gia cho mot nguoi an tai quan do trung binh khoang bao nhieu
+PRICE	gia cho mot nguoi an o quan do trung binh khoang bao nhieu
+PRICE	gia cho mot nguoi an tai quan do la khoang bao nhieu
+PRICE	gia cho mot nguoi an o quan do la khoang bao nhieu
+PRICE	gia cho mot nguoi an tai quan do khoang bao nhieu
+PRICE	gia cho mot nguoi an o quan do khoang bao nhieu
+PRICE	gia trung binh cho mot nguoi an tai quan la khoang bao nhieu
+PRICE	gia trung binh cho mot nguoi an o quan la khoang bao nhieu
+PRICE	gia trung binh cho mot nguoi an tai quan khoang bao nhieu
+PRICE	gia trung binh cho mot nguoi an o quan khoang bao nhieu
+PRICE	gia cho mot nguoi an tai quan trung binh la khoang bao nhieu
+PRICE	gia cho mot nguoi an o quan trung binh la khoang bao nhieu
+PRICE	gia cho mot nguoi an tai quan trung binh khoang bao nhieu
+PRICE	gia cho mot nguoi an o quan trung binh khoang bao nhieu
+HUM	quan nay danh cho nhung doi tuong nao
+HUM	quan nay phu hop voi nhung doi tuong nao
+HUM	quan nay phuc vu nhung doi tuong nao
+HUM	quan nay danh cho doi tuong nao
+HUM	quan nay phu hop voi doi tuong nao
+HUM	quan nay phuc vu doi tuong nao
+HUM	quan do danh cho nhung doi tuong nao
+HUM	quan do phu hop voi nhung doi tuong nao
+HUM	quan do phuc vu nhung doi tuong nao
+HUM	quan do danh cho doi tuong nao
+HUM	quan do phu hop voi doi tuong nao
+HUM	quan do phuc vu doi tuong nao
+HUM	quan danh cho nhung doi tuong nao
+HUM	quan phu hop voi nhung doi tuong nao
+HUM	quan phuc vu nhung doi tuong nao
+HUM	quan danh cho doi tuong nao
+HUM	quan phu hop voi doi tuong nao
+HUM	quan phuc vu doi tuong nao
+DESC	khong gian quan nay co rong khong
+DESC	khong gian quan nay rong khong
+DESC	quan nay co khong gian rong khong
+DESC	khong gian quan nay the nao
+DESC	khong gian quan do co rong khong
+DESC	khong gian quan do rong khong
+DESC	quan do co khong gian rong khong
+DESC	khong gian quan do the nao
+DESC	khong gian quan co rong khong
+DESC	khong gian quan rong khong
+DESC	quan co khong gian rong khong
+DESC	khong gian quan the nao
+DESC	khong gian quan nay the nao
+DESC	khong gian quan do the nao
+CAL	quan phuc vu vao nhung khung gio nao
+CAL	quan phuc vu vao khung gio nao
+CAL	quan phuc vu vao khoang thoi gian nao
+CAL	quan phuc vu vao nhung khoang thoi gian nao
+DTIME	quan bat dau phuc vu vao luc nao
+DTIME	quan phuc vu vao luc nao
+POL	quan con mo cua khong
+CAL	quan nay phuc vu vao nhung khung gio nao
+CAL	quan nay phuc vu vao khung gio nao
+CAL	quan nay phuc vu vao khoang thoi gian nao
+CAL	quan nay phuc vu vao nhung khoang thoi gian nao
+DTIME	quan nay bat dau phuc vu vao luc nao
+DTIME	quan nay phuc vu vao luc nao
+POL	quan nay con mo cua khong
+CAL	quan do phuc vu vao nhung khung gio nao
+CAL	quan do phuc vu vao khung gio nao
+CAL	quan do phuc vu vao khoang thoi gian nao
+CAL	quan do phuc vu vao nhung khoang thoi gian nao
+DTIME	quan do bat dau phuc vu vao luc nao
+DTIME	quan do phuc vu vao luc nao
+POL	quan do con mo cua khong
+POL	quan nay co cho do xe o to khong
+POL	quan nay co cho de xe o to khong
+POL	quan nay co nam o mat pho khong
+POL	quan nay co de tim khong
+POL	quan nay co nam o mat duong khong
+POL	quan nay nam trong ngo phai khong
+POL	quan nay co nam trong ngo khong
+SEL	quan nay nam trong ngo hay ngoai pho
+POL	quan do co cho do xe o to khong
+POL	quan do co cho de xe o to khong
+POL	quan do co nam o mat pho khong
+POL	quan do co de tim khong
+POL	quan do co nam o mat duong khong
+POL	quan do nam trong ngo phai khong
+POL	quan do co nam trong ngo khong
+SEL	quan do nam trong ngo hay ngoai pho
+POL	quan co cho do xe o to khong
+POL	quan co cho de xe o to khong
+POL	quan co nam o mat pho khong
+POL	quan co de tim khong
+POL	quan co nam o mat duong khong
+POL	quan nam trong ngo phai khong
+POL	quan co nam trong ngo khong
+SEL	quan nam trong ngo hay ngoai pho
+POL	quan nay co phai doi do an lau khong
+DESC	quan nay phuc vu co nhanh khong
+POL	quan nay co dieu hoa khong
+DESC	quan nay co sach se khong
+DESC	quan nay co ve sinh khong
+PRICE	quan nay gia ca co phai chang khong
+PRICE	quan nay gia ca co phu hop voi sinh vien khong
+POL	quan do co phai doi do an lau khong
+DESC	quan do phuc vu co nhanh khong
+POL	quan do co dieu hoa khong
+DESC	quan do co sach se khong
+DESC	quan do co ve sinh khong
+PRICE	quan do gia ca co phai chang khong
+PRICE	quan do gia ca co phu hop voi sinh vien khong
+POL	quan co phai doi do an lau khong
+DESC	quan phuc vu co nhanh khong
+POL	quan co dieu hoa khong
+DESC	quan co sach se khong
+DESC	quan co ve sinh khong
+PRICE	quan gia ca co phai chang khong
+PRICE	quan gia ca co phu hop voi sinh vien khong
+POL	quan co nhan to chuc sinh nhat khong
+POL	quan nay co nhan to chuc sinh nhat khong
+POL	quan do co nhan to chuc sinh nhat khong
+POL	quan co nhan to chuc tiec sinh nhat khong
+POL	quan nay co nhan to chuc tiec sinh nhat khong
+POL	quan do co nhan to chuc tiec sinh nhat khong
+NAME	co quan nhau nao gan day khong
+NAME	co quan nhau nao ngon gan day khong
+NAME	co quan nhau nao duoc gan day khong
+NAME	co quan nhau nao binh dan gan day khong
+NAME	co quan nhau binh dan nao gan day khong
+NAME	quanh day co quan nhau nao khong
+NAME	quanh day co quan nhau binh dan nao khong
+NAME	quanh day co quan nhau nao binh dan khong
+POL	quan co phuc vu cac mon an chau au khong
+POL	quan ngon phan boi chau co pho cuon khong
+POL	quan ngon phan boi chau co phuc vu buoi sang khong
+POL	quan ngon phan boi chau co mon trung vit lon rang me khong
+NAME	toi nay co phim gi hay
+NAME	co phim gi hay toi nay
+NAME	toi nay cac rap chieu phim gi
+NAME	rap chieu phim gi toi nay
+NAME	phim gi toi nay chieu rap
+NAME	phim gi chieu rap toi nay
+NAME	toi nay co phim gi chieu rap
+NAME	toi nay rap chieu phim gi
+NAME	rap nao con ve phim ve binh dai ngan ha toi nay
+NAME	toi nay rap nao con ve xem phim ve binh dai ngan ha
+NAME	toi nay rap nao con ve phim ve binh dai ngan ha
+NAME	rap nao con ve xem phim ve binh dai ngan ha toi nay
+NAME	rap nao con ve phim ve binh dai ngan ha toi nay
+CAL	lich chieu phim toi nay tai rap quoc gia the nao
+CAL	toi nay lich chieu phim tai rap quoc gia the nao
+CAL	lich chieu phim tai rap quoc gia toi nay the nao
+CAL	lich chieu phim tai rap quoc gia the nao toi nay
+CAL	cho toi biet lich chieu phim toi nay tai rap quoc gia
+CAL	cho minh biet lich chieu phim toi nay tai rap quoc gia
+CAL	cho toi biet lich chieu phim tai rap quoc gia vao toi nay
+CAL	cho minh biet lich chieu phim tai rap quoc gia vao toi nay
+CAL	lich chieu phim toi nay tai rap platinum the nao
+CAL	cho toi biet lich chieu phim tai rap platinum vao toi nay
+CAL	cho minh biet lich chieu phim tai rap platinum vao toi nay
+CAL	cho toi biet lich chieu phim tai rap platinum toi nay
+CAL	cho minh biet lich chieu phim tai rap platinum toi nay
+NAME	toi nay tai rap quoc gia co phim gi
+NAME	rap quoc gia toi nay chieu phim gi
+NAME	toi nay tai rap quoc gia chieu phim gi
+NAME	toi nay rap quoc gia chieu phim gi
+NAME	rap quoc gia toi nay co phim gi
+NAME	co nhung phim gi chieu tai rap quoc gia toi nay
+CAL	hom nay rap quoc gia chieu phim mot trieu kieu chet mien vien tay vao nhung khung gio nao
+CAL	rap quoc gia chieu phim nhoc nicolas 2 vao nhung khung gio nao
+CAL	toi nay rap platinum chieu phim nhoc nicolas 2 nhung khung gio nao
+CAL	toi nay rap platinum chieu phim nhoc nicolas 2 vao nhung khung gio nao
+CAL	rap platinum chieu phim nhoc nicolas 2 nhung khung gio nao toi nay
+CAL	toi nay rap platinum chieu phim nhoc nicolas 2 vao nhung khung gio nao toi nay
+POL	ve xem phim mot trieu kieu chet mien vien tay tai rap quoc gia luc 12 gio con khong
+POL	dat ve phim nay tai rap quoc gia luc 12 gio co duoc khong
+POL	dat ve phim nay tai rap quoc gia luc 12 gio duoc khong
+POL	toi muon dat ve phim nay tai rap quoc gia luc 12 gio co duoc khong
+POL	toi muon dat ve phim nay tai rap quoc gia luc 12 gio duoc khong
+POL	ve xem phim mot trieu kieu chet mien vien tay luc 12 gio tai rap quoc gia con khong
+POL	dat ve phim nay luc 12 gio tai rap quoc gia co duoc khong
+POL	dat ve phim nay luc 12 gio tai rap quoc gia duoc khong
+POL	toi muon dat ve phim nay luc 12 gio tai rap quoc gia co duoc khong
+POL	toi muon dat ve phim nay luc 12 gio tai rap quoc gia duoc khong
+PRICE	ve xem phim mot trieu kieu chet mien vien tay tai rap quoc gia luc 12 gio gia bao nhieu
+NAME	phim mot trieu kieu chet mien vien tay thuoc the loai nao
+NAME	phim mot trieu kieu chet mien vien tay thuoc the loai phim gi
+NAME	phim nay thuoc the loai nao
+NAME	phim do thuoc the loai nao
+SEL	lucy la phim hai hay phim hanh dong
+NAME	phim nay thuoc the loai phim gi
+NAME	phim do thuoc the loai phim gi
+DESC	phim mot trieu kieu chet mien vien tay co hay khong
+DESC	phim mot trieu kieu chet mien vien tay duoc danh gia the nao
+DESC	phim mot trieu kieu chet mien vien tay duoc danh gia cao khong
+DESC	phim mot trieu kieu chet mien vien tay duoc danh gia tot khong
+DESC	phim nay co hay khong
+DESC	phim do co hay khong
+DESC	phim nay duoc danh gia the nao
+DESC	phim do duoc danh gia the nao
+DESC	phim nay duoc danh gia cao khong
+DESC	phim do duoc danh gia cao khong
+DESC	phim nay duoc danh gia tot khong
+DESC	phim nay duoc danh gia co tot khong
+DESC	phim do duoc danh gia tot khong
+DESC	phim do duoc danh gia co tot khong
+DESC	phim nay hay khong
+DESC	phim do hay khong
+DESC	toi muon biet noi dung tom tat cua phim mot trieu kieu chet mien vien tay
+DESC	minh muon biet noi dung tom tat cua phim mot trieu kieu chet mien vien tay
+DESC	cho toi biet noi dung tom tat cua phim mot trieu kieu chet mien vien tay
+DESC	cho minh biet noi dung tom tat cua phim mot trieu kieu chet mien vien tay
+DESC	tom tat noi dung phim mot trieu kieu chet mien vien tay
+DESC	noi dung phim mot trieu kieu chet mien vien tay the nao
+DESC	noi dung tom tat phim mot trieu kieu chet mien vien tay la gi
+DESC	noi dung tom tat phim mot trieu kieu chet mien vien tay the nao
+DESC	noi dung tom tat phim mot trieu kieu chet mien vien tay ra sao
+DESC	cho toi biet noi dung phim mot trieu kieu chet mien vien tay
+DESC	cho minh biet noi dung phim mot trieu kieu chet mien vien tay
+HUM	phim mot trieu kieu chet mien vien tay co su gop mat cua nhung dien vien nao
+HUM	phim mot trieu kieu chet mien vien tay co nhung dien vien nao
+HUM	phim mot trieu kieu chet mien vien tay co su gop mat cua nhung dien vien noi tieng nao
+HUM	phim mot trieu kieu chet mien vien tay co nhung dien vien noi tieng nao
+HUM	phim mot trieu kieu chet mien vien tay co su gop mat cua nhung sao nao
+HUM	phim mot trieu kieu chet mien vien tay co nhung sao nao
+DESC	toi muon biet noi dung tom tat cua phim nay
+DESC	minh muon biet noi dung tom tat cua phim nay
+DESC	cho toi biet noi dung tom tat cua phim nay
+DESC	cho minh biet noi dung tom tat cua phim nay
+DESC	tom tat noi dung phim nay
+DESC	noi dung phim nay the nao
+DESC	noi dung tom tat phim nay la gi
+DESC	noi dung tom tat phim nay the nao
+DESC	noi dung tom tat phim nay ra sao
+DESC	cho toi biet noi dung phim nay
+DESC	cho minh biet noi dung phim nay
+HUM	phim nay co su gop mat cua nhung dien vien nao
+HUM	phim nay co nhung dien vien nao
+HUM	phim nay co su gop mat cua nhung dien vien noi tieng nao
+HUM	phim nay co nhung dien vien noi tieng nao
+HUM	phim nay co su gop mat cua nhung sao nao
+HUM	phim nay co nhung sao nao
+DESC	toi muon biet noi dung tom tat cua phim do
+DESC	minh muon biet noi dung tom tat cua phim do
+DESC	cho toi biet noi dung tom tat cua phim do
+DESC	cho minh biet noi dung tom tat cua phim do
+DESC	tom tat noi dung phim do
+DESC	noi dung phim do the nao
+DESC	noi dung tom tat phim do la gi
+DESC	noi dung tom tat phim do the nao
+DESC	noi dung tom tat phim do ra sao
+DESC	cho toi biet noi dung phim do
+DESC	cho minh biet noi dung phim do
+HUM	phim do co su gop mat cua nhung dien vien nao
+HUM	phim do co nhung dien vien nao
+HUM	phim do co su gop mat cua nhung dien vien noi tieng nao
+HUM	phim do co nhung dien vien noi tieng nao
+HUM	phim do co su gop mat cua nhung sao nao
+HUM	phim do co nhung sao nao
+DTIME	rap quoc gia mo cua luc may gio
+DTIME	rap quoc gia dong cua luc may gio
+POL	rap quoc gia co cho gui xe khong
+DTIME	rap nay mo cua luc may gio
+DTIME	rap nay dong cua luc may gio
+POL	rap nay co cho gui xe khong
+DTIME	rap do mo cua luc may gio
+DTIME	rap do dong cua luc may gio
+POL	rap do co cho gui xe khong
+SEL	phim mot trieu kieu chet mien vien tay la phim 2D hay 3D
+SEL	phim do la phim 2D hay 3D
+POL	phim do co 3D khong
+SEL	phim nay la phim 2D hay 3D
+POL	phim nay co 3D khong
+NAME	rap nao co ve xem phim 2D re nhat
+NAME	rap nao ban ve re nhat
+NAME	rap nao ban ve 2D re nhat
+NAME	rap nao dang co khuyen mai vao hom nay
+NAME	rap nao co khuyen mai vao hom nay
+NAME	rap nao dang khuyen mai vao hom nay
+NAME	rap nao dang co khuyen mai hom nay
+NAME	rap nao co khuyen mai hom nay
+NAME	rap nao dang khuyen mai hom nay
+POL	rap quoc gia co phat hanh the thanh vien khong
+NUM	muc giam gia cho nguoi co the thanh vien o rap platinum la bao nhieu
+NUM	nguoi co the thanh vien o rap platinum duoc giam gia bao nhieu
+NUM	rap platinum giam gia bao nhieu cho thanh vien
+DUR	phim mot trieu kieu chet mien vien tay keo dai bao lau
+HUM	phim mot trieu kieu chet mien vien tay co cam tre em duoi 16 tuoi khong
+HUM	phim mot trieu kieu chet mien vien tay co cam tre em khong
+HUM	phim nay co cam tre em duoi 16 tuoi khong
+HUM	phim nay co cam tre em khong
+HUM	phim do co cam tre em duoi 16 tuoi khong
+HUM	phim do co cam tre em khong
+HUM	phim mot trieu kieu chet mien vien tay co danh cho thieu  nhi khong
+HUM	phim mot trieu kieu chet mien vien tay co danh cho tre em khong
+HUM	phim nay co danh cho thieu  nhi khong
+HUM	phim nay co danh cho tre em khong
+HUM	phim do co danh cho thieu  nhi khong
+HUM	phim do co danh cho tre em khong
+ADDR	dia chi cua rap quoc gia la gi
+ADDR	cho toi biet dia chi cua rap quoc gia
+ADDR	cho minh biet dia chi cua rap quoc gia
+DIST	rap quoc gia cach day bao xa
+DUR	tu day den rap quoc gia mat bao lau
+DIST	tu day den rap quoc gia bao xa
+DIST	rap quoc gia cach day co xa khong
+DUR	rap quoc gia cach day bao nhieu phut xe may
+DUR	rap quoc gia cach day bao nhieu phut di xe
+DUR	rap nay cach day bao nhieu phut xe may
+DUR	rap nay cach day bao nhieu phut di xe
+DUR	rap do cach day bao nhieu phut xe may
+DUR	rap do cach day bao nhieu phut di xe
+DUR	den rap quoc gia mat bao lau
+DUR	mat bao lau de den rap quoc gia
+DIST	tu day den rap quoc gia bao xa
+DIST	tu day den rap nay bao xa
+DIST	tu day den rap do bao xa
+DUR	mat bao lau de di tu day den rap quoc gia
+DUR	mat bao lau de di den rap quoc gia
+DUR	mat bao lau de di den rap nay
+DUR	mat bao lau de di den rap do
+POL	rap quoc gia con ve cho phim mot trieu kieu chet mien vien tay suat chieu 12 gio khong
+POL	rap quoc gia con ve cho phim mot trieu kieu chet mien vien tay luc 12 gio khong
+POL	rap quoc gia con ve phim mot trieu kieu chet mien vien tay suat chieu 12 gio khong
+POL	rap quoc gia con ve phim mot trieu kieu chet mien vien tay luc 12 gio khong
+DIST	tu toa nha fpt duong duy tan den rap quoc gia bao xa
+DIST	tu toa nha fpt den rap quoc gia bao xa
+HUM	dao dien phim mot trieu kieu chet mien vien tay la ai
+HUM	dao dien phim nay la ai
+HUM	dao dien phim do la ai
+HUM	phim mot trieu kieu chet mien vien tay co dien vien nao noi tieng khong
+HUM	phim mot trieu kieu chet mien vien tay co dien vien noi tieng nao
+HUM	cho toi biet ve dan dien vien phim mot trieu kieu chet mien vien tay
+PRICE	gia ve phim 3D ghe vip tai rap quoc gia vao thu 5 bao nhieu
+PRICE	gia ve phim 3D ghe vip tai rap quoc gia vao thu 5 la bao nhieu
+PRICE	gia ve vip phim 3D tai rap quoc gia vao thu 5 bao nhieu
+PRICE	gia ve vip phim 3D tai rap quoc gia vao thu 5 la bao nhieu
+PRICE	gia ve vip phim 3D tai rap quoc gia thu 5 bao nhieu
+PRICE	gia ve vip phim 3D tai rap quoc gia thu 5 la bao nhieu
+PRICE	gia ve phim 3D ghe vip vao thu 5 tai rap quoc gia bao nhieu
+PRICE	gia ve phim 3D ghe vip vao thu 5 tai rap quoc gia la bao nhieu
+PRICE	gia ve vip phim 3D vao thu 5 tai rap quoc gia bao nhieu
+PRICE	gia ve vip phim 3D vao thu 5 tai rap quoc gia la bao nhieu
+PRICE	gia ve vip phim 3D vao thu 5 tai rap quoc gia bao nhieu
+PRICE	gia ve vip phim 3D vao thu 5 tai rap quoc gia la bao nhieu
+PRICE	gia ve vip phim 3D thu 5 tai rap quoc gia bao nhieu
+PRICE	gia ve vip phim 3D thu 5 tai rap quoc gia la bao nhieu
+PRICE	gia ve vip phim 3D thu 5 tai rap quoc gia bao nhieu
+PRICE	gia ve vip phim 3D thu 5 tai rap quoc gia la bao nhieu
+PRICE	gia ve vip thu 5 phim 3D tai rap quoc gia bao nhieu
+PRICE	gia ve vip thu 5 phim 3D tai rap quoc gia la bao nhieu
+PRICE	gia ve vip thu 5 phim 3D tai rap quoc gia bao nhieu
+PRICE	gia ve vip thu 5 phim 3D tai rap quoc gia la bao nhieu
+DTIME	phim mot trieu kieu chet mien vien tay bat dau khoi chieu tu khi nao
+DTIME	phim mot trieu kieu chet mien vien tay bat dau khoi chieu tu ngay nao
+DTIME	phim mot trieu kieu chet mien vien tay bat dau khoi chieu tu hom nao
+DTIME	phim mot trieu kieu chet mien vien tay bat dau khoi chieu hom nao
+DTIME	phim mot trieu kieu chet mien vien tay bat dau khoi chieu khi nao
+DTIME	phim mot trieu kieu chet mien vien tay bat dau khoi chieu ngay nao
+DTIME	phim mot trieu kieu chet mien vien tay bat dau chieu tu khi nao
+DTIME	phim mot trieu kieu chet mien vien tay bat dau chieu tu ngay nao
+DTIME	phim mot trieu kieu chet mien vien tay bat dau chieu tu hom nao
+DTIME	phim mot trieu kieu chet mien vien tay bat dau chieu hom nao
+DTIME	phim mot trieu kieu chet mien vien tay bat dau chieu khi nao
+DTIME	phim mot trieu kieu chet mien vien tay bat dau chieu ngay nao
+DTIME	phim nay bat dau khoi chieu tu khi nao
+DTIME	phim nay bat dau khoi chieu tu ngay nao
+DTIME	phim nay bat dau khoi chieu tu hom nao
+DTIME	phim nay bat dau khoi chieu hom nao
+DTIME	phim nay bat dau khoi chieu khi nao
+DTIME	phim nay bat dau khoi chieu ngay nao
+DTIME	phim nay bat dau chieu tu khi nao
+DTIME	phim nay bat dau chieu tu ngay nao
+DTIME	phim nay bat dau chieu tu hom nao
+DTIME	phim nay bat dau chieu hom nao
+DTIME	phim nay bat dau chieu khi nao
+DTIME	phim nay bat dau chieu ngay nao
+DTIME	phim do bat dau khoi chieu tu khi nao
+DTIME	phim do bat dau khoi chieu tu ngay nao
+DTIME	phim do bat dau khoi chieu tu hom nao
+DTIME	phim do bat dau khoi chieu hom nao
+DTIME	phim do bat dau khoi chieu khi nao
+DTIME	phim do bat dau khoi chieu ngay nao
+DTIME	phim do bat dau chieu tu khi nao
+DTIME	phim do bat dau chieu tu ngay nao
+DTIME	phim do bat dau chieu tu hom nao
+DTIME	phim do bat dau chieu hom nao
+DTIME	phim do bat dau chieu khi nao
+DTIME	phim do bat dau chieu ngay nao
+CAL	lich chieu phim hercules tai rap thang tam the nao
+CAL	lich chieu phim hercules tai rap nay the nao
+CAL	lich chieu phim hercules tai rap do the nao
+CAL	cho toi biet lich chieu phim hercules tai rap thang tam
+CAL	cho minh biet lich chieu phim hercules tai rap thang tam
+CAL	lich chieu phim hercules tai rap thang 8 the nao
+CAL	cho toi biet lich chieu phim hercules tai rap thang 8
+CAL	cho minh biet lich chieu phim hercules tai rap thang 8
+CAL	cho toi biet lich chieu phim hercules tai rap nay
+CAL	cho minh biet lich chieu phim hercules tai rap nay
+CAL	cho toi biet lich chieu phim hercules tai rap do
+CAL	cho minh biet lich chieu phim hercules tai rap do
+NAME	cho toi biet rap chieu phim gan day nhat co chieu phim hercules
+NAME	cho toi biet rap gan day nhat co chieu phim hercules
+NAME	cho toi biet rap gan nhat co chieu phim hercules
+NAME	cho toi biet rap chieu phim gan day nhat chieu phim hercules
+NAME	cho toi biet rap gan day nhat chieu phim hercules
+NAME	cho toi biet rap gan nhat chieu phim hercules
+NAME	cho minh biet rap chieu phim gan day nhat co chieu phim hercules
+NAME	cho minh biet rap gan day nhat co chieu phim hercules
+NAME	cho minh biet rap gan nhat co chieu phim hercules
+NAME	cho minh biet rap chieu phim gan day nhat chieu phim hercules
+NAME	cho minh biet rap gan day nhat chieu phim hercules
+NAME	cho minh biet rap gan nhat chieu phim hercules
+DESC	chi duong tu day den rap chieu phim gan nhat
+DTIME	suat chieu hercules gan nhat tai rap platinum vao luc may gio
+DTIME	suat chieu hercules som nhat tai rap platinum vao luc may gio
+DTIME	suat chieu hercules gan nhat tai rap platinum vao luc nao
+DTIME	suat chieu hercules som nhat tai rap platinum vao luc nao
+DTIME	suat chieu hercules gan nhat tai rap platinum luc may gio
+DTIME	suat chieu hercules som nhat tai rap platinum luc may gio
+DTIME	may gio co suat chieu hercules gan nhat tai rap platinum
+DTIME	may gio co suat chieu hercules som nhat tai rap platinum
+POL	phim hercules tai rap platinum luc 12 gio hom nay con cho khong
+POL	phim hercules tai rap nay luc 12 gio hom nay con cho khong
+POL	phim hercules tai rap do luc 12 gio hom nay con cho khong
+POL	phim hercules tai rap platinum ve luc 12 gio hom nay con khong
+POL	phim hercules tai rap nay ve luc 12 gio hom nay con khong
+POL	phim hercules tai rap do ve luc 12 gio hom nay con khong
+POL	phim hercules tai rap platinum con cho luc 12 gio hom nay khong
+POL	phim hercules tai rap nay con cho luc 12 gio hom nay khong
+POL	phim hercules tai rap do con cho luc 12 gio hom nay khong
+POL	phim hercules tai rap platinum con ve luc 12 gio hom nay khong
+POL	phim hercules tai rap nay con ve luc 12 gio hom nay khong
+POL	phim hercules tai rap do con ve luc 12 gio hom nay khong
+POL	phim hercules tai rap platinum hom nay luc 12 gio con cho khong
+POL	phim hercules tai rap nay hom nay luc 12 gio con cho khong
+POL	phim hercules tai rap do hom nay luc 12 gio con cho khong
+POL	phim hercules tai rap platinum ve hom nay luc 12 gio con khong
+POL	phim hercules tai rap nay ve hom nay luc 12 gio con khong
+POL	phim hercules tai rap do ve hom nay luc 12 gio con khong
+POL	phim hercules tai rap platinum con cho hom nay luc 12 gio khong
+POL	phim hercules tai rap nay con cho hom nay luc 12 gio khong
+POL	phim hercules tai rap do con cho hom nay luc 12 gio khong
+POL	phim hercules tai rap platinum con ve hom nay luc 12 gio khong
+POL	phim hercules tai rap nay con ve hom nay luc 12 gio khong
+POL	phim hercules tai rap do con ve hom nay luc 12 gio khong
+POL	con ve phim hercules tai rap platinum luc 12 gio hom nay khong
+POL	con ve phim hercules tai rap nay luc 12 gio hom nay khong
+POL	con ve phim hercules tai rap do luc 12 gio hom nay khong
+POL	con ve phim hercules tai rap platinum hom nay luc 12 gio khong
+POL	con ve phim hercules tai rap nay hom nay luc 12 gio khong
+POL	con ve phim hercules tai rap do hom nay luc 12 gio khong
+NAME	phim nao dang duoc quan tam nhat hien nay
+NAME	phim gi dang duoc quan tam nhat hien nay
+NAME	phim gi dang duoc quan tam nhat
+NAME	phim nao dang duoc quan tam nhat
+NAME	phim nao dang duoc quan tam hien nay
+NAME	phim gi dang duoc quan tam hien nay
+NAME	phim gi dang duoc quan tam 
+NAME	phim nao dang duoc quan tam
+NAME	phim nao dang duoc gioi tre quan tam nhat hien nay
+NAME	phim gi dang duoc gioi tre quan tam nhat hien nay
+NAME	phim gi dang duoc gioi tre quan tam nhat
+NAME	phim nao dang duoc gioi tre quan tam nhat
+NAME	nhung phim nao dang duoc quan tam nhat hien nay
+NAME	nhung phim gi dang duoc quan tam nhat hien nay
+NAME	nhung phim gi dang duoc quan tam nhat
+NAME	nhung phim nao dang duoc quan tam nhat
+NAME	co nhung phim nao dang duoc quan tam nhat hien nay
+NAME	co nhung phim gi dang duoc quan tam nhat hien nay
+NAME	co nhung phim gi dang duoc quan tam nhat
+NAME	co nhung phim nao dang duoc quan tam nhat
+NAME	nhung phim nao dang duoc quan tam hien nay
+NAME	nhung phim gi dang duoc quan tam hien nay
+NAME	nhung phim gi dang duoc quan tam
+NAME	nhung phim nao dang duoc quan tam
+NAME	co nhung phim nao dang duoc quan tam hien nay
+NAME	co nhung phim gi dang duoc quan tam hien nay
+NAME	co nhung phim gi dang duoc quan tam
+NAME	co nhung phim nao dang duoc quan tam
+NAME	nhung phim nao dang duoc gioi tre quan tam hien nay
+NAME	nhung phim gi dang duoc gioi tre quan tam hien nay
+NAME	nhung phim gi dang duoc gioi tre quan tam
+NAME	nhung phim nao dang duoc gioi tre quan tam
+NAME	co nhung phim nao dang duoc gioi tre quan tam hien nay
+NAME	co nhung phim gi dang duoc gioi tre quan tam hien nay
+NAME	co nhung phim gi dang duoc gioi tre quan tam
+NAME	co nhung phim nao dang duoc gioi tre quan tam
+NAME	phim nao co so luong nguoi xem nhieu nhat
+NAME	nhung phim nao co so luong nguoi xem nhieu nhat
+NAME	phim nao dang duoc xem nhieu nhat
+NAME	phim nao dang duoc danh gia cao nhat hien nay
+NAME	phim nao dang duoc danh gia tot nhat hien nay
+NAME	phim nao dang duoc danh gia cao nhat
+NAME	phim nao dang duoc danh gia tot nhat
+NAME	nhung phim nao dang duoc xem nhieu nhat
+NAME	nhung phim nao dang duoc danh gia cao nhat hien nay
+NAME	nhung phim nao dang duoc danh gia tot nhat hien nay
+NAME	nhung phim nao dang duoc danh gia cao nhat
+NAME	nhung phim nao dang duoc danh gia tot nhat
+NAME	trong cac phim dang chieu rap phim nao duoc binh luan tot nhat
+NAME	phim nao dang duoc binh luan tot nhat
+NAME	nhung phim nao dang duoc binh luan tot nhat
+NAME	phim nao co binh luan tot nhat
+NAME	nhung phim nao co binh luan tot nhat
+NAME	trong cac phim dang chieu rap phim nao hay nhat
+NAME	phim nao hay nhat
+NAME	phim nao duoc binh luan tot nhat
+NAME	phim nao duoc danh gia cao nhat
+NAME	phim nao duoc danh gia tot nhat
+NAME	nhung rap nao se chieu phim hercules vao thu 7 toi
+NAME	nhung rap nao se chieu phim hercules vao 12 gio thu 7 toi
+NAME	nhung rap nao chieu phim hercules vao thu 7 toi
+NAME	nhung rap nao chieu phim hercules vao 12 gio thu 7 toi
+NAME	nhung rap nao con ve phim hercules luc 12 gio thu 7 toi
+NAME	phim nao duoc trong doi nhat vao thang 8 nay
+NAME	phim nao dang duoc trong doi nhat vao thang 8 nay
+NAME	phim nao dang duoc trong doi nhat
+NAME	nhung phim nao duoc trong doi nhat vao thang 8 nay
+NAME	nhung phim nao dang duoc trong doi nhat vao thang 8 nay
+NAME	nhung phim nao dang duoc trong doi nhat
+NAME	rap nao se chieu phim step up all in vao ngay mong 6 thang 8
+NAME	rap nao se chieu phim step up all in vao ngay 6 thang 8
+NAME	rap nao se chieu phim step up all in vao ngay mong 6 thang 8 toi
+NAME	rap nao se chieu phim step up all in vao ngay 6 thang 8 toi
+NAME	rap nao se chieu phim step up all in dau tien
+DTIME	khi nao phim step up all in se duoc khoi chieu
+NAME	phim step up all in se duoc khoi chieu dau tien tai rap nao
+NAME	phim step up all in duoc khoi chieu dau tien tai rap nao
+DTIME	khi nao rap quoc gia khoi chieu phim step up all in
+DTIME	rap quoc gia khoi chieu phim step up all in khi nao
+DTIME	rap quoc gia khoi chieu phim step up all in hom nao
+DTIME	rap quoc gia khoi chieu phim step up all in ngay nao
+DTIME	rap quoc gia khoi chieu phim step up all in vao thu may
+DTIME	rap quoc gia khoi chieu phim step up all in thu may
+DTIME	rap quoc gia se khoi chieu phim step up all in vao thu may
+DTIME	rap quoc gia se khoi chieu phim step up all in thu may
+ADDR	dia chi cua rap platinum gan day nhat
+ADDR	dia chi cua rap platinum gan nhat
+ADDR	cho toi biet dia chi cua rap platinum gan nhat
+ADDR	cho toi biet dia chi cua rap platinum gan day nhat
+ADDR	cho minh biet dia chi cua rap platinum gan nhat
+ADDR	cho minh biet dia chi cua rap platinum gan day nhat
+ADDR	toi muon biet dia chi cua rap platinum gan nhat
+ADDR	toi muon biet dia chi cua rap platinum gan day nhat
+ADDR	minh muon biet dia chi cua rap platinum gan nhat
+ADDR	minh muon biet dia chi cua rap platinum gan day nhat
+NAME	rap platinum nao gan day nhat
+DIST	rap platinum gan nhat cach day bao xa
+ADDR	rap thang tam o dau
+ADDR	rap thang tam nam tren duong nao
+ADDR	rap thang tam nam o khu nao
+DIST	rap thang tam cach day co xa khong
+DIST	rap thang tam cach day bao xa
+ADDR	rap nay o dau
+ADDR	rap nay nam tren duong nao
+ADDR	rap nay nam o khu nao
+DIST	rap nay cach day co xa khong
+DIST	rap nay cach day bao xa
+ADDR	rap do o dau
+ADDR	rap do nam tren duong nao
+ADDR	rap do nam o khu nao
+DIST	rap do cach day co xa khong
+DIST	rap do cach day bao xa
+NAME	hom nay rap thang tam co nhung phim gi
+NAME	hom nay rap thang tam chieu nhung phim gi
+NAME	hom nay rap thang tam chieu phim gi
+NAME	hom nay rap nay co nhung phim gi
+NAME	hom nay rap nay chieu nhung phim gi
+NAME	hom nay rap nay chieu phim gi
+NAME	hom nay rap do co nhung phim gi
+NAME	hom nay rap do chieu nhung phim gi
+NAME	hom nay rap do chieu phim gi
+DTIME	hom nay rap thang tam chieu phim hercules luc may gio
+DTIME	rap thang tam chieu phim hercules luc may gio hom nay
+POL	rap thang tam co chieu phim hercules khong
+POL	phim hercules co duoc chieu o rap thang tam khong
+POL	rap thang tam co dong khach khong
+DTIME	hom nay rap nay chieu phim hercules luc may gio
+DTIME	rap nay chieu phim hercules luc may gio hom nay
+POL	rap nay co chieu phim hercules khong
+POL	phim hercules co duoc chieu o rap nay khong
+POL	rap nay co dong khach khong
+DTIME	hom nay rap do chieu phim hercules luc may gio
+DTIME	rap do chieu phim hercules luc may gio hom nay
+POL	rap do co chieu phim hercules khong
+POL	phim hercules co duoc chieu o rap do khong
+POL	rap do co dong khach khong
+NAME	co nhung phim hanh dong nao dang duoc chieu tai cac rap
+NAME	co nhung phim hanh dong nao dang duoc chieu tai rap
+NAME	co nhung phim hanh dong nao dang duoc chieu rap
+NAME	co nhung phim hai nao dang duoc chieu tai cac rap
+NAME	co nhung phim hai nao dang duoc chieu tai rap
+NAME	co nhung phim hai nao dang duoc chieu rap
+NAME	co phim hai nao dang chieu tai rap thang tam khong
+NAME	co nhung phim hai nao dang chieu tai rap thang tam
+NAME	co nhung phim hai nao dang duoc chieu tai rap thang tam
+NAME	rap thang tam dang chieu nhung phim hai nao
+NAME	rap thang tam dang chieu phim hai nao
+NAME	co phim hai nao dang chieu tai rap nay khong
+NAME	co nhung phim hai nao dang chieu tai rap nay
+NAME	co nhung phim hai nao dang duoc chieu tai rap nay
+NAME	rap nay dang chieu nhung phim hai nao
+NAME	rap nay dang chieu phim hai nao
+NAME	co phim hai nao dang chieu tai rap do khong
+NAME	co nhung phim hai nao dang chieu tai rap do
+NAME	co nhung phim hai nao dang duoc chieu tai rap do
+NAME	rap do dang chieu nhung phim hai nao
+NAME	rap do dang chieu phim hai nao
+NAME	co phim hoat hinh 3D nao dang duoc chieu tai cac rap khong
+NAME	co phim hoat hinh 3D nao dang duoc chieu tai rap khong
+NAME	co phim 3D nao dang duoc chieu tai cac rap khong
+NAME	co phim 3D nao dang duoc chieu tai rap khong
+NAME	co phim 3D nao dang chieu tai cac rap khong
+NAME	co phim 3D nao dang chieu tai rap khong
+NAME	trong cac phim chieu rap, co phim nao danh cho thieu nhi khong
+NAME	phim danh cho thieu nhi dang chieu tai rap la phim nao
+NAME	phim danh cho thieu nhi dang chieu tai cac rap la phim nao
+NAME	phim danh cho thieu nhi dang chieu tai rap la nhung phim nao
+NAME	phim danh cho thieu nhi dang chieu tai cac rap la nhung phim nao
+NAME	cho toi biet mot phim danh cho thieu nhi dang duoc chieu rap
+NAME	cho toi biet mot phim tinh cam lang man dang chieu rap
+NAME	co phim nao danh cho thieu nhi dang chieu rap khong
+NAME	co phim viet nam nao dang duoc chieu rap khong
+NAME	co phim hanh dong my nao dang duoc chieu rap khong
+NAME	co phim tam ly tinh cam nao dang duoc chieu rap khong
+PRICE	bao nhieu tien mot ve
+PRICE	ve gia bao nhieu
+PRICE	ve bao nhieu
+PRICE	ve vip gia bao nhieu
+POL	dat ve qua mang co duoc khong
+POL	dat ve qua mang duoc khong
+POL	toi muon dat ve qua mang co duoc khong
+POL	minh muon dat ve qua mang co duoc khong
+POL	toi muon dat ve qua mang duoc khong
+POL	minh muon dat ve qua mang duoc khong
+DTIME	phim do chieu luc may gio
+DTIME	phim chieu luc may gio
+DTIME	phim duoc chieu luc may gio
+DTIME	phim do chieu luc nao
+DTIME	phim chieu luc nao
+DTIME	phim duoc chieu luc nao
+DTIME	phim nay chieu luc may gio
+DTIME	phim nay chieu luc nao
+DTIME	phim nay sap chieu chua
+PRICE	ve thuong gia bao nhieu
+POL	ve vip con khong
+POL	ve thuong con khong
+POL	check cho toi con ve khong
+POL	check cho toi phim do con ve khong
+POL	check cho toi phim nay suat chieu 12 gio ngay mai con khong
+POL	kiem tra xem con ve khong
+POL	kiem tra cho toi xem con ve khong
+POL	kiem tra cho toi xem ve con khong
+POL	kiem tra cho toi phim do con ve khong
+POL	kiem tra cho toi phim do ve con khong
+POL	kiem tra cho toi xem phim do con ve khong
+POL	kiem tra cho toi xem phim do ve con khong
+POL	kiem tra cho toi phim nay suat chieu 12 gio ngay mai con khong
+DESC	phim do noi ve cai gi
+DESC	phim nay noi ve cai gi
+DESC	phim noi ve cai gi
+DESC	phim the terminal noi ve cai gi
+NUM	imdb rating cua phim nay la bao nhieu
+NUM	imdb rating cua phim do la bao nhieu
+NUM	phim nay co imdb rating cao khong
+NUM	phim do co imdb rating cao khong
+NUM	imdb rating cua phim nay bao nhieu
+NUM	imdb rating cua phim do bao nhieu
+NUM	cho toi biet imdb rating cua phim nay
+NUM	cho toi biet imdb rating cua phim do
+NUM	cho toi biet imdb rating cua phim the terminal
+HUM	tre con co xem duoc phim nay khong
+HUM	tre con co xem duoc phim do khong
+HUM	tre con co duoc xem phim nay khong
+HUM	tre con co duoc xem phim do khong
+HUM	co dua tre con di xem phim do duoc khong
+HUM	dua tre con di xem phim do duoc khong
+HUM	dua tre con di xem phim do co duoc khong
+HUM	toi dua con di xem phim nay duoc khong
+HUM	toi dua con di xem phim nay co duoc khong
+HUM	co dua tre con di xem phim nay duoc khong
+HUM	dua tre con di xem phim nay duoc khong
+HUM	dua tre con di xem phim nay co duoc khong
+HUM	toi dua con di xem phim do duoc khonng
+HUM	toi dua con di xem phim do co duoc khong
+HUM	phim nay co dien vien noi tieng nao khong
+HUM	phim do co dien vien noi tieng nao khong
+HUM	phim nay co dien vien nao noi tieng khong
+HUM	phim do co dien vien nao noi tieng khong
+HUM	dan sao trong phim co ai
+HUM	dan sao trong phim co nhung dien vien noi tieng nao
+HUM	dan sao trong phim co dien vien noi tieng nao
+HUM	dan sao trong phim co nhung nhan vat noi tieng nao
+HUM	dan sao trong phim co nhan vat noi tieng nao
+HUM	dan sao trong phim co nhung nguoi noi tieng nao
+HUM	dan sao trong phim co nguoi noi tieng nao
+HUM	dan sao trong phim do co nhung ai
+HUM	dan sao trong phim nay co nhung ai
+HUM	dan sao trong phim co nhung ai
+HUM	dan sao trong phim co ai
+HUM	co dien vien noi tieng nao dong phim nay
+HUM	co dien vien noi tieng nao trong phim nay
+HUM	co dien vien noi tieng nao dong phim do
+HUM	co dien vien noi tieng nao trong phim do
+HUM	co dien vien noi tieng nao trong phim
+HUM	co sao nao trong phim do
+HUM	co sao nao trong phim nay
+HUM	co sao nao trong phim
+DUR	thoi luong phim nay bao lau
+DUR	thoi luong phim nay la bao lau
+DUR	thoi luong phim nay bao nhieu
+DUR	thoi luong phim nay la bao nhieu
+DUR	phim nay keo dai bao nhieu phut
+DUR	thoi luong phim do bao lau
+DUR	thoi luong phim do la bao lau
+DUR	thoi luong phim do la bao nhieu
+DUR	thoi luong phim do bao nhieu
+DUR	phim do keo dai do nhieu phut
+DUR	thoi luong phim bao nhieu
+DUR	thoi luong phim bao nhieu phut
+DUR	thoi luong phim la bao nhieu
+DUR	thoi luong phim la bao nhieu phut
+DUR	phim keo dai bao lau
+DUR	phim keo dai bao nhieu phut
+DUR	thoi luong phim la bao lau
+DUR	thoi luong phim bao lau
+DTIME	phim chieu den may gio
+DTIME	phim nay chieu den may gio
+DTIME	phim do chieu den may gio
+DTIME	phim chieu den luc nao
+DTIME	phim nay chieu den luc nao
+DTIME	phim do chieu den luc nao
+POL	trong rap co ghe ngoi cho tre em khong
+POL	co ghe ngoi cho tre em trong rap khong
+POL	co ghe ngoi trong rap cho tre em khong
+POL	co ghe danh rieng cho tre em trong rap khong
+POL	co ghe cho tre em trong rap khong
+POL	co ghe trong rap cho tre em khong
+POL	co ghe ngoi danh rieng cho tre em trong rap khong
+POL	trong rap co ghe ngoi danh rieng cho tre em khong
+POL	trong rap co ghe danh rieng cho tre em khong
+POL	rap co ghe ngoi cho tre em khong
+POL	rap co ghe ngoi danh rieng cho tre em khong
+POL	rap co ghe danh rieng cho tre em khong
+POL	rap co uu tien tre em khong
+POL	rap co uu tien danh rieng cho tre em khong
+POL	rap co uu tien nao cho tre em khong
+POL	rap co uu tien nao danh rieng cho tre em khong
+PRICE	gia ve cho tre em la bao nhieu
+PRICE	gia ve cho tre em bao nhieu
+PRICE	ve tre em gia bao nhieu
+PRICE	ve danh cho tre em gia bao nhieu
+PRICE	bao nhieu mot ve cho tre em
+PRICE	bao nhieu mot ve danh cho tre em
+PRICE	gia ve tre em bao nhieu
+PRICE	gia ve tre em la bao nhieu
+PRICE	gia ve danh cho tre em bao nhieu
+PRICE	gia ve danh cho tre em la bao nhieu
+PRICE	gia ve cho thanh vien la bao nhieu
+PRICE	gia ve cho thanh vien bao nhieu
+PRICE	gia ve danh cho thanh vien la bao nhieu
+PRICE	gia ve danh cho thanh vien bao nhieu
+PRICE	gia ve cho nguoi co the thanh vien la bao nhieu
+PRICE	gia ve cho nguoi co the thanh vien bao nhieu
+PRICE	gia ve danh cho nguoi co the thanh vien la bao nhieu
+PRICE	gia ve danh cho nguoi co the thanh vien bao nhieu
+PRICE	gia ve vao cuoi tuan tai sao lai cao hon
+PRICE	gia ve vao cuoi tuan sao lai cao hon
+PRICE	gia ve vao cuoi tuan tai sao cao hon
+PRICE	gia ve vao cuoi tuan sao cao hon
+NAME	rap nao tot nhat o ha noi
+NAME	rap nao moi nhat o ha noi
+NAME	rap tot nhat o ha noi la rap nao
+NAME	rap moi nhat o ha noi la rap nao
+NAME	rap moi mo o ha noi la rap nao
+NAME	rap sap mo o ha noi la rap nao
+NAME	rap rong nhat o ha noi la rap nao
+NAME	rap lau doi nhat o ha noi la rap nao
+NAME	rap co suc chua lon nhat o ha noi la rap nao
+NAME	rap nao moi mo o ha noi
+NAME	rap nao sap mo o ha noi
+NAME	rap nao rong nhat o ha noi
+NAME	rap nao lau doi nhat o ha noi
+NAME	rap nao co suc chua lon nhat o ha noi
+HUM	dien vien nu chinh trong phim nay la ai
+HUM	dien vien nu chinh trong phim nay ten la gi
+HUM	dien vien nu chinh trong phim nay ten gi
+HUM	ai la dien vien nu chinh trong phim nay
+HUM	ten dien vien nu chinh trong phim nay la gi
+HUM	dien vien nu chinh trong phim do la ai
+HUM	dien vien nu chinh trong phim do ten la gi
+HUM	dien vien nu chinh trong phim do ten gi
+HUM	dien vien nu chinh trong phim la ai
+HUM	dien vien nu chinh trong phim ten la gi
+HUM	dien vien nu chinh trong phim ten gi
+HUM	dien vien nu chinh trong phim do co co ten la gi
+HUM	dien vien nu chinh trong phim do co co ten gi
+HUM	dien vien nu chinh trong phim do nay co ten la gi
+HUM	dien vien nu chinh trong phim do nay co ten gi
+HUM	ai la dien vien nu chinh trong phim do
+HUM	ai la dien vien nu chinh trong phim
+HUM	ten dien vien nu chinh trong phim do la gi
+HUM	ten dien vien nu chinh trong phim la gi
+NAME	phim nao dang duoc gioi tre yeu thich
+NAME	nhung phim nao dang duoc gioi tre yeu thich
+DESC	phim nay duoc danh gia the nao
+DESC	phim do duoc danh gia the nao
+NAME	trong phim su dung nhung ca khuc nao
+NAME	trong phim nay su dung nhung ca khuc nao
+NAME	trong phim do su dung nhung ca khuc nao
+NAME	phim su dung nhung ca khuc nao
+NAME	phim nay su dung nhung ca khuc nao
+NAME	phim do su dung nhung ca khuc nao
+NAME	nhung ca khuc nao duoc su dung trong phim nay
+NAME	nhung ca khuc nao duoc su dung trong phim do
+NAME	nhung ca khuc nao duoc su dung trong phim
+NAME	ca khuc nao duoc su dung trong phim nay
+NAME	ca khuc nao duoc su dung trong phim do
+NAME	ca khuc nao duoc su dung trong phim
+DESC	the terminal noi ve cai gi
+DESC	the terminal ke ve cai gi
+DESC	the terminal co noi dung gi
+DESC	noi dung the terminal noi ve cai gi
+DESC	noi dung the terminal la ve cai gi
+DESC	noi dung the terminal la gi
+DESC	noi dung phim noi ve cai gi
+DESC	noi dung phim la ve cai gi
+DESC	noi dung phim la gi
+DESC	noi dung phim the terminal noi ve cai gi
+DESC	noi dung phim the terminal la ve cai gi
+DESC	noi dung phim the terminal la gi
+DESC	noi dung phim nay noi ve cai gi
+DESC	noi dung phim nay la ve cai gi
+DESC	noi dung phim nay la gi
+DESC	noi dung phim do noi ve cai gi
+DESC	noi dung phim do la ve cai gi
+DESC	noi dung phim do la gi
+PRICE	mot ve gia bao nhieu
+PRICE	gia bao nhieu mot ve
+NAME	ngoai rap sap chieu phim gi nhi
+NAME	phim gi sap chieu ngoai rap nhi
+NAME	mon gi ngon nhat o quan nay
+NAME	quan nay co mon gi ngon nhat
+NAME	an pho cuon o dau ngon nhat
+NAME	quan nay noi tieng nhat ve mon nao
+SEL	do la quan an ha noi hay sai gon
+SEL	do la quan an nhanh hay nha hang
+HUM	dao dien phim lucy la ai
+HUM	ai la dao dien phim lucy
+HUM	dao dien cua phim lucy la ai
+HUM	phim lucy cua dao dien nao
+HUM	dao dien phim nay la ai
+HUM	ai la dao dien phim nay
+HUM	dao dien cua phim nay la ai
+HUM	phim nay cua dao dien nao
+HUM	dao dien phim do la ai
+HUM	ai la dao dien phim do
+HUM	dao dien cua phim do la ai
+HUM	phim do cua dao dien nao
+DTIME	phim lucy duoc san xuat nam nao
+DTIME	phim lucy san xuat nam nao
+DTIME	phim nay duoc san xuat nam nao
+DTIME	phim nay san xuat nam nao
+DTIME	phim do duoc san xuat nam nao
+DTIME	phim do san xuat nam nao
+NAME	phim lucy duoc chieu dau tien tai rap nao
+NAME	phim nay duoc chieu dau tien tai rap nao
+NAME	phim do duoc chieu dau tien tai rap nao
+DTIME	khi nao lucy duoc khoi chieu
+DTIME	khi nao khoi chieu phim lucy
+DTIME	phim lucy khoi chieu ngay nao
+DTIME	phim lucy duoc cong chieu ngay nao
+DTIME	phim lucy ra mat ngay nao
+DTIME	phim lucy duoc ra mat ngay nao
+DTIME	phim lucy khoi chieu khi nao
+DTIME	phim lucy duoc cong chieu khi nao
+DTIME	phim lucy ra mat khi nao
+DTIME	phim lucy duoc ra mat khi nao
+DTIME	bao gio khoi chieu phim lucy
+DTIME	bao gio cong chieu phim lucy
+DTIME	bao gio phim lucy duoc cong chieu
+DTIME	bao gio phim lucy duoc ra mat
+DTIME	bao gio ra mat phim lucy
+DTIME	bao gio phim lucy bat dau duoc chieu
+DTIME	bao gio bat dau chieu phim lucy
+DTIME	phim lucy bat dau chieu ngay nao
+DTIME	phim lucy bat dau chieu khi nao
+DTIME	khi nao rap quoc gia bat dau chieu phim lucy
+DTIME	rap quoc gia bat dau chieu phim lucy vao thu may
+DTIME	rap quoc gia bat dau chieu phim lucy vao ngay nao

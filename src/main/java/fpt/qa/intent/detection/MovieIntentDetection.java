@@ -123,20 +123,26 @@ public class MovieIntentDetection {
         if (tunedSent.indexOf("NAM\t") == 0 && (tunedSent.contains("thuộc thể loại") || tunedSent.contains("thuoc the loai"))) {
             return IntentConstants.MOV_GENRE;
         }
-        if (tunedSent.indexOf("NAM\t") == 0 && (tunedSent.contains("phim gì") || tunedSent.contains("phim nào") ||
-        		tunedSent.contains("phim gi") || tunedSent.contains("phim nao"))) {
-            return IntentConstants.MOV_TITLE;
-        }
         if (tunedSent.indexOf("NAM\t") == 0 && (tunedSent.contains("rạp nào") || tunedSent.contains("rạp gì") ||
         		tunedSent.contains("rap nao") || tunedSent.contains("rap gi"))) {
             return IntentConstants.CIN_NAME;
         }
+        
+        if (tunedSent.indexOf("NAM\t") == 0 && (tunedSent.contains("phim gì") || tunedSent.contains("phim nào") ||
+        		tunedSent.contains("phim nao"))) {
+            return IntentConstants.MOV_TITLE;
+        }
+        
         if (tunedSent.indexOf("NAM\t") == 0 && (tunedSent.contains("diễn viên nào") || tunedSent.contains("dien vien nao")
         		|| tunedSent.contains("dien vien nào"))) {
             return IntentConstants.MOV_ACTOR;
         }
-        if (tunedSent.indexOf("NAM\t") == 0 && (tunedSent.contains("nào") || tunedSent.contains("nao"))) {
+        if (tunedSent.indexOf("NAM\t") == 0 && 
+        		(tunedSent.contains("nào") || tunedSent.contains("nao") || tunedSent.contains("gì") || tunedSent.contains("gi"))) {
             int idx = tunedSent.indexOf("nào");
+            if (idx < 0){
+            	idx = tunedSent.indexOf("gì");
+            }
             int idx1 = Math.abs(idx - tunedSent.indexOf("phim"));
             int idx2 = Math.abs(idx - (tunedSent.indexOf("rạp") > 0 ? tunedSent.indexOf("rạp") : tunedSent.indexOf("rap")));
             int idx3 = Math.abs(idx - (tunedSent.indexOf("diễn viên") > 0 ? tunedSent.indexOf("diễn viên") : tunedSent.indexOf("dien vien")));
@@ -262,7 +268,7 @@ public class MovieIntentDetection {
 //            Logger.getLogger(MovieIntentDetection.class.getName()).log(Level.SEVERE, null, ex);
 //        }
         
-        String sent1 = "rạp quốc gia hôm nay có gì";
+        String sent1 = "ngoài rạp có phim chiến tranh gì không";
         String sent2 = "phim tâm lý kinh dị nào đang chiếu rạp";
         String sent3 = "phim tâm lý tình cảm nào đang chiếu rạp";
         String sent4 = "rạp vincom bà triệu tối nay chiếu the maze runner lúc mấy giờ?";

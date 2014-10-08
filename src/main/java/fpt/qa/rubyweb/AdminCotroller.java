@@ -49,6 +49,7 @@ public class AdminCotroller {
 	public BasicDBObject crawlPhimChieuRap(){
 		CrawlPhimChieuRap crawlPhimChieuRap = new CrawlPhimChieuRap();
 		try{
+			movieTicketService.cleanOldData();
 			crawlPhimChieuRap.crawlHaNoi();
 			
 		}
@@ -64,6 +65,7 @@ public class AdminCotroller {
 	public BasicDBObject crawlMyTV(){
 		CrawlerMyTV crawlerMyTV = new CrawlerMyTV();
 		try{
+			tvProgramService.cleanOldData();
 			crawlerMyTV.crawlMyTV(tvProgramService);
 		}
 		catch (Exception ex){
@@ -77,6 +79,7 @@ public class AdminCotroller {
 	@ResponseBody
 	public BasicDBObject crawlMoveek(){
 		try{
+			movieTicketService.cleanOldData();
 			MoveekCrawler.doCrawl( movieTicketService );
 		}
 		catch (Exception ex){

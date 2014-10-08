@@ -20,10 +20,11 @@ chanel_title	vtv3; vtv 3
 chanel_title	vtv4; vtv 4
 chanel_title	vtv5; vtv 5
 chanel_title	vtv6; vtv 6
-chanel_title	Hà Nội 1
-chanel_title	Hà Nội 2
+chanel_title	Hà Nội 1; HanoiTV1
+chanel_title	Hà Nội 2; HanoiTV2
 chanel_title	vtv9; vtv 9
 chanel_title	vtv3 hd; vtv 3 hd
+chanel_title	vtv1 hd; vtv 1 hd
 chanel_title	vtv6 hd; vtv 6 hd
 chanel_title	vtv cần thơ 1
 chanel_title	vtv cần thơ 2
@@ -33,14 +34,14 @@ chanel_title	vov; vovtv, vov tv, vov giao thông
 chanel_title	ttxvn; truyền hình thông tấn xã việt nam, ttxvn thông tấn xã việt nam, thong tan xa viet nam
 chanel_title	antv; an ninh tv
 chanel_title	vtc1; vtc 1
-chanel_title	vtc2; vtc2
-chanel_title	vtc3; vtc3
-chanel_title	vtc4; vtc4
-chanel_title	vtc5; vtc5
-chanel_title	vtc6; vtc6
-chanel_title	vtc7; vtc7, vtc7 hd today, giải trí tổng hợp, giai tri tong hop
-chanel_title	vtc8; vtc8
-chanel_title	vtc9; vtc9, let's việt; lets việt, let's viet
+chanel_title	vtc2; vtc 2
+chanel_title	vtc3; vtc 3
+chanel_title	vtc4; vtc 4
+chanel_title	vtc5; vtc 5
+chanel_title	vtc6; vtc 6
+chanel_title	vtc7; vtc 7, vtc7 hd today, giải trí tổng hợp, giai tri tong hop
+chanel_title	vtc8; vtc 8
+chanel_title	vtc9; vtc 9, let's việt; lets việt, let's viet
 chanel_title	vtc10; vtc 10
 chanel_title	vtc11; vtc 11, kids & family tv, kids and family tv, kids & family, kids and family, truyền hình thiếu nhi, thiếu nhi, thieu nhi, truyen hình thieu nhi
 chanel_title	vtc12; vtc12
@@ -64,6 +65,14 @@ chanel_title	hbo
 chanel_title	star movies; starmovies
 chanel_title	espn
 chanel_title	star sports; starsports, star sport, starsport
+chanel_title	vtvcab1; VTVCab1 - Giải trí TV
+chanel_title	vtvcab2; VTVCab 2 - Phim Việt
+chanel_title	disney
+chanel_title	cartoon; Cartoon Network
+chanel_title	vitv
+chanel_title	O2 TV; O2TV
+chanel_title	Star World HD
+
 
 
 program_title	vì bạn xứng đáng
