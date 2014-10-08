@@ -123,14 +123,16 @@ public class MovieIntentDetection {
         if (tunedSent.indexOf("NAM\t") == 0 && (tunedSent.contains("thuộc thể loại") || tunedSent.contains("thuoc the loai"))) {
             return IntentConstants.MOV_GENRE;
         }
-        if (tunedSent.indexOf("NAM\t") == 0 && (tunedSent.contains("phim gì") || tunedSent.contains("phim nào") ||
-        		tunedSent.contains("phim gi") || tunedSent.contains("phim nao"))) {
-            return IntentConstants.MOV_TITLE;
-        }
         if (tunedSent.indexOf("NAM\t") == 0 && (tunedSent.contains("rạp nào") || tunedSent.contains("rạp gì") ||
         		tunedSent.contains("rap nao") || tunedSent.contains("rap gi"))) {
             return IntentConstants.CIN_NAME;
         }
+        
+        if (tunedSent.indexOf("NAM\t") == 0 && (tunedSent.contains("phim gì") || tunedSent.contains("phim nào") ||
+        		tunedSent.contains("phim nao"))) {
+            return IntentConstants.MOV_TITLE;
+        }
+        
         if (tunedSent.indexOf("NAM\t") == 0 && (tunedSent.contains("diễn viên nào") || tunedSent.contains("dien vien nao")
         		|| tunedSent.contains("dien vien nào"))) {
             return IntentConstants.MOV_ACTOR;

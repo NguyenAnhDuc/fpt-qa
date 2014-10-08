@@ -229,7 +229,9 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 			limit = progs.size();
 		}
 		for (int i = 0; i < limit; i++){
-			channel += progs.get( i ).getChannel() + "</br>";
+			if (!channel.contains(progs.get( i ).getChannel())){
+				channel += progs.get( i ).getChannel() + "</br>";
+			}
 		}
 		
 		return channel.substring( 0, channel.length() - 2 );
