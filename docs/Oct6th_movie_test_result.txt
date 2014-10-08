@@ -29,6 +29,7 @@ null
 tối nay có phim gì hay
 phim The Pirates có imdb rating cao nhất
 No class def found MongoSocketException
+-- Còn cả query exception nữa
 
 
 có phim gì hay tối nay

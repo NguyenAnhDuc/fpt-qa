@@ -1,0 +1,283 @@
+phim đồi quỷ ám thuộc thể loại nào
+Phim The Damned thuộc thể loại truyền hình
+- Sao search trên web imdb có the damned 2014 rồi mà ctrinh của mình ko search được
+--------- Add thêm api để add thông tin phim manually (nếu có thể)
+
+
+
+tôi muốn biết nội dung tóm tắt của phim lucy
+A woman, accidentally caught in a dark deal, turns the tables on her captors and transforms into a merciless warrior evolved beyond human logic.
+- Có thể chuyển sang tiếng Việt ko?
+
+
+
+------------------------ Sai domain:
+phim ngố làm triệu phú có 3d không
+phim lucy kéo dài bao lâu
+phim lucy ra mắt khi nào
+phim lucy sử dụng ngôn ngữ nào
+phim lucy sử dụng ngôn ngữ gì
+ngôn ngữ nào được sử dụng trong phim này
+ngôn ngữ dùng trong phim lucy là gì
+phim lucy sử dụng tiếng gì
+phim lucy sử dụng tiếng nước nào
+
+
+
+################################################################
+rạp nào có vé xem phim 2D rẻ nhất
+rạp nào bán vé rẻ nhất
+rạp nào bán vé 2D rẻ nhất
+rạp nào đang có khuyến mãi vào hôm nay
+rạp nào có khuyến mãi vào hôm nay
+rạp nào đang khuyến mãi vào hôm nay
+------------------ Chưa address được vé 2D rẻ nhất, rẻ nhất, có khuyến mãi,...
+------------------ Hiện tại đang list tất cả tên rạp ra
+
+
+
+
+
+
+
+phim đồi quỷ ám công chiếu ngày nào
+Phim The Damned được công chiếu ngày Thu Dec 18 00:00:00 ICT 1969
+-- Vấn đề về dữ liệu ko update được thông tim phim mới nhất. The damned từ 1969 ko phải là phim đang cần tìm
+
+
+
+
+
+
+
+
+cho tôi biết rạp chiếu phim gần đây nhất có chiếu phim hercules
+----------------chưa address được cụm từ gần đây nhất, tuy nhiên cứ trả lời tất cả các rạp ra cũng có thể gọi là acceptable
+
+
+
+
+
+phim nào có số lượng người xem nhiều nhất
+vtv1
+vtv3
+------------ nhận là domain TV: which might be ok, nhưng mà intent lúc này lại là CHN --> sai
+------------ Cứ để pending đây, fix sau
+
+
+
+
+phim nào đang được xem nhiều nhất
+vtv3 : Phim truyện Mặt nạ hoàn hảo - Tập 6
+vtv2 : Phim truyện Trái tim giản đơn - Tập 59
+vtv4 : Phim tài liệu Huyền thoại trên tháp Cột cờ
+vtc1 : PHIM TRUYỆN 
+----- trả lời sang domain TV rồi còn đâu
+
+
+
+những rạp nào sẽ chiếu phim hercules vào 12 giờ thứ 7 tới
+<<Mon Oct 06 00:00:00 ICT 2014 , Mon Oct 06 23:59:59 ICT 2014>>
+----- bắt sai thời gian
+
+
+phim nào được trông đợi nhất vào tháng 10 này
+phim The Pirates có imdb rating cao nhất
+Tuned sent: NAM	phim nào được trông đợi nhất vào tháng 10 này
+[ProcessHelper] Intent: mov_title
+[ProcessHelper] Question Type: featured
+Feature ..
+Filter by ImDB
+--- Chỉ nên list ra những phim sẽ được công chiếu trong tháng 10 này thôi chứ
+--- câu trả lời này có vẻ chưa phù hợp lắm
+
+
+phim nào sẽ được công chiếu trong tháng 10 này
+Xin lỗi, tôi không trả lời câu hỏi này được
+Tuned sent: NAM	phim nào sẽ được công chiếu trong tháng 10 này
+[ProcessHelper] Intent: mov_release
+[ProcessHelper] Question Type: static
+[ConjWithType] [RawConj] [{Phim}, {Phim}]
+[ConjWithType] [Better Surr Conj] [[{Phim}, program_title], [{Phim}, program_title]]
+[ConjWithType] [Longer Conj] [[{Phim}, program_title], [{Phim}, program_title]]
+[ConjWithType] [Final Conj] [[Phim, program_title]]
+Phim | program_title
+Movie Title: null
+Exception! null
+java.lang.NullPointerException
+	at java.net.URLEncoder.encode(URLEncoder.java:205)
+	at com.fpt.ruby.service.MovieFlyService.searchOnImdbByTitle(MovieFlyService.java:142)
+
+--- Hoặc là chấp nhận ko trả lời được câu này hoặc là trả lời lại
+--- tạm thời cứ để chưa trả lời được câu này đi 
+
+
+rạp quốc gia khởi chiếu phim step up all in khi nào
+Phim Step Up All In được công chiếu ngày Fri Aug 08 00:00:00 ICT 2014
+---- Ideally, câu này nên trả lời ngày đầu tiên rạp quốc gia chiếu phim này
+Tuned sent: DTI	rạp quốc gia khởi chiếu phim step up all in khi nào
+[ProcessHelper] Intent: mov_release
+[ProcessHelper] Question Type: static
+---------- chỗ này hình như cũng ko bắt được rạp quốc gia thì phải, check lại xem nhé
+
+
+
+
+
+địa chỉ của rạp platinum gần đây nhất
+Xin lỗi, chúng tôi không tìm thấy dữ liệu cho câu trả lời
+Tuned sent: ADD	địa chỉ của rạp platinum
+[ProcessHelper] Intent: cin_address
+[ProcessHelper] Question Type: static
+[Process Helper] Cin name: null
+--- Tại sao cin name lại là null, default cho nó 1 cái nào đấy đi ví dụ như platinum là nghĩ đến gadern mall chẳng hạn
+
+
+
+
+
+rạp platinum nào gần đây nhất
+Rạp Platinum Garden Mall, Lotte Cinema Hà Đông, Platinum Vincom Royal City, Platinum Vincom Long Biên, TT Chiếu Phim Quốc Gia, CGV Vincom City Towers, CGV MIPEC Tower, Kim Đồng Cinema, Tháng 8 Cinema, Platinum Cineplex Times City, Lotte Cinema Landmark
+
+[Domain Classifier] rạp platinum nào gần đây nhất hello {tv, 0.0}  {movie, 1.0} 
+[AppController] Domain Movie
+
+Tuned sent: NAM	rạp platinum nào
+[ProcessHelper] Intent: cin_name
+[ProcessHelper] Question Type: dynamic
+Dynamic ....
+[ConjWithType] [RawConj] []
+[ConjWithType] [Better Surr Conj] []
+[ConjWithType] [Longer Conj] []
+[ConjWithType] [Final Conj] []
+curentdate :2014-10-06 17:31
+Size: 1930
+----- Sao lại output hết tên rạp ra thế này, ít ra là chỉ output tên rạp có chữ platinum thôi chứ
+
+
+
+
+
+trẻ con có xem được phim này không
+trẻ con có xem được phim này không TV Intent: UDF Non-diacritic TV Intent: UDF Xin lỗi, chúng tôi không có thông tin cho câu trả lời của bạn 
+[Domain Classifier] trẻ con có xem được phim này không hello
+ {tv, 2.0}  {movie, 2.0} 
+[AppController] Domain TV
+TV Intent: UDF
+Non-diacritic TV Intent: UDF
+--------------- cai nay phai la domain movie, not tv
+
+
+
+
+
+
+rạp nào tốt nhất ở hà nội
+Rạp Platinum Garden Mall, Lotte Cinema Hà Đông, Platinum Vincom Royal City, Platinum Vincom Long Biên, TT Chiếu Phim Quốc Gia, CGV MIPEC Tower, CGV Vincom City Towers, Kim Đồng Cinema, Tháng 8 Cinema, Platinum Cineplex Times City, Lotte Cinema Landmarks
+Tuned sent: NAM	rạp nào tốt nhất hà nội
+[ProcessHelper] Intent: cin_name
+[ProcessHelper] Question Type: dynamic
+Dynamic ....
+------------------ Chua address duoc tot nhat,  chua tra loi duoc rap chi o HN
+
+
+
+
+rạp nào mới nhất ở hà nội
+rạp tốt nhất ở hà nội là rạp nào
+rạp mới nhất ở hà nội là rạp nào
+rạp mới mở ở hà nội là rạp nào
+rạp sắp mở ở hà nội là rạp nào
+rạp rộng nhất ở hà nội là rạp nào
+rạp lâu đời nhất ở hà nội là rạp nào
+rạp có sức chứa lớn nhất ở hà nội là rạp nào
+rạp nào mới mở ở hà nội
+rạp nào sắp mở ở hà nội
+rạp nào rộng nhất ở hà nội
+rạp nào lâu đời nhất ở hà nội
+rạp nào có sức chứa lớn nhất ở hà nội
+--------------------- May cau hoi kieu feature cho rap the nay, chua tra loi duoc
+
+
+
+diễn viên nữ chính trong phim này là ai
+diễn viên nữ chính trong phim này tên là gì
+diễn viên nữ chính trong phim này tên gì
+ai là diễn viên nữ chính trong phim này
+tên diễn viên nữ chính trong phim này là gì
+diễn viên nữ chính trong phim đó là ai
+diễn viên nữ chính trong phim đó tên là gì
+diễn viên nữ chính trong phim đó tên gì
+diễn viên nữ chính trong phim là ai
+diễn viên nữ chính trong phim tên là gì
+diễn viên nữ chính trong phim tên gì
+diễn viên nữ chính trong phim đó có tên là gì
+diễn viên nữ chính trong phim đó có tên gì
+diễn viên nữ chính trong phim này có tên là gì
+diễn viên nữ chính trong phim này có tên gì
+ai là diễn viên nữ chính trong phim đó
+ai là diễn viên nữ chính trong phim
+tên diễn viên nữ chính trong phim đó là gì
+tên diễn viên nữ chính trong phim là gì
+------------------------- Chi tra loi duoc dan dien vien, khong tra loi duoc dien vien nu chinh
+
+
+
+
+
+
+
+
+phim nào đang được giới trẻ yêu thích
+những phim nào đang được giới trẻ yêu thích
+phim này được đánh giá thế nào
+phim đó được đánh giá thế nào
+ai thực hiện ca khúc trong phim sky fall
+trong phim sử dụng những ca khúc nào
+trong phim này sử dụng những ca khúc nào
+trong phim đó sử dụng những ca khúc nào
+phim sử dụng những ca khúc nào
+phim này sử dụng những ca khúc nào
+phim đó sử dụng những ca khúc nào
+những ca khúc nào được sử dụng trong phim này
+những ca khúc nào được sử dụng trong phim đó
+những ca khúc nào được sử dụng trong phim
+ca khúc nào được sử dụng trong phim này
+ca khúc nào được sử dụng trong phim đó
+ca khúc nào được sử dụng trong phim
+the terminal nói về cái gì
+the terminal kể về cái gì
+the terminal có nội dung gì
+nội dung the terminal nói về cái gì
+nội dung the terminal là về cái gì
+nội dung the terminal là gì
+nội dung phim nói về cái gì
+nội dung phim là về cái gì
+nội dung phim là gì
+nội dung phim the terminal nói về cái gì
+nội dung phim the terminal là về cái gì
+nội dung phim the terminal là gì
+nội dung phim này nói về cái gì
+nội dung phim này là về cái gì
+nội dung phim này là gì
+nội dung phim đó nói về cái gì
+nội dung phim đó là về cái gì
+nội dung phim đó là gì
+một vé giá bao nhiêu
+giá bao nhiêu một vé
+ngoài rạp sắp chiếu phim gì nhỉ
+phim gì sắp chiếu ngoài rạp nhỉ
+phim này kéo dài đến mấy giờ
+phim này chiếu đến mấy giờ
+
+
+
+
+
+
+
+
+
+rạp quốc gia bắt đầu chiếu phim lucy vào thứ mấy
+rạp quốc gia bắt đầu chiếu phim lucy vào ngày nào
+Phim Lucy được công chiếu ngày Fri Jul 25 00:00:00 ICT 2014
