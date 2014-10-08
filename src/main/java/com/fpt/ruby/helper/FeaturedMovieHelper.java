@@ -122,7 +122,7 @@ public class FeaturedMovieHelper {
 		}
 
 		if (movTitles.isEmpty()){
-			return AnswerMapper.Default_Answer;
+			return "Xin lỗi, chúng tôi không tìm thấy phim như thế trong cơ sở dữ liệu";
 		}
 		
 		return "phim " + movTitles.substring(0, movTitles.length() - 2);
