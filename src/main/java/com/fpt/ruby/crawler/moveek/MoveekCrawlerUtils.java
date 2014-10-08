@@ -72,22 +72,22 @@ public class MoveekCrawlerUtils {
 			int eType = response.indexOf("</", bType);
 			String type = response.substring(bType, eType);
 			
-			idx = response.indexOf("<a onClick=\"ga('send'", eType);
-			if (idx < 0){
-				break;
+			int idx1 = response.indexOf("<a onClick=\"ga('send'", eType);
+			eType = idx1;
+			int endIdx = response.indexOf("<a href=\"#\" class=\"btn btn-primary btn-xs\">", eType);
+			while(idx1 > 0 && (endIdx < 0) || idx1 < endIdx){
+				int bTime = response.indexOf("'time' : '", idx1) + 10;
+				int eTime = response.indexOf("'", bTime);
+				String time = response.substring(bTime, eTime);
+				
+				if (!Character.isDigit(time.charAt(0))){
+					break;
+				}
+				idx1 = response.indexOf("<a onClick=\"ga('send'", eTime + 20);
+				res.add(new Pair<String, Date>(type, parseDate(time)));
 			}
 			
-			int bTime = response.indexOf("'time' : '", eType) + 10;
-			int eTime = response.indexOf("'", bTime);
-			String time = response.substring(bTime, eTime);
-			
-			if (!Character.isDigit(time.charAt(0))){
-				idx = response.indexOf("<a href=\"#\" class=\"btn btn-primary btn-xs\">", eTime);
-				continue;
-			}
-			res.add(new Pair<String, Date>(type, parseDate(time)));
-			
-			idx = response.indexOf("<a href=\"#\" class=\"btn btn-primary btn-xs\">", eTime);
+			idx = response.indexOf("<a href=\"#\" class=\"btn btn-primary btn-xs\">", eType);
 		}
 		
 		return res;
@@ -113,24 +113,12 @@ public class MoveekCrawlerUtils {
 	
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-
-		String response = "<a href=\"/lich-chieu-rap/cgv-marine-plaza/the-november-man/\">";
-		int idx = response.indexOf("<a href=\"/lich-chieu-rap");
-			int bquote = response.indexOf("\"", idx) + 1;
-			int equote = response.indexOf("\"", bquote) - 1;
-			String link = response.substring(bquote, equote);
-			System.out.println(link);
-			
-			System.out.println(CrawlerUtils.sendGet("http://moveek.com/ajax/showtimesCinema/ha-long?t=cgv-marine-plaza", "p[]=the-november-man"));
-			
-			response = "<a href=\"#\" class=\"btn btn-primary btn-xs\">2D</a>"+ 
-			"<a onClick=\"ga('send', 'event', 'Showtime', 'Book', 'CGV Marine Plaza', { 'movie' : 'The November Man', 'time' : '11:30 15/09/2014' });";
-			int bTime = response.indexOf("'time' : '", idx) + 10;
-			int eTime = response.indexOf("'", bTime);
-			String time = response.substring(bTime, eTime);
-			System.out.println(time);
-			
-			System.out.println(parseDate("11:30 15/09/2014"));
+		String url = "http://moveek.com/ajax/showtimesCinema/ha-noi?t=megastar-mipec-tower";
+		String mov = "the-equalizer";
+		List<Pair<String, Date>> slots = getSessionTime(url, mov);
+		for (Pair<String, Date> slot : slots){
+			System.out.println(slot.first + " | " + slot.second);
+		}
 	}
 
 }
