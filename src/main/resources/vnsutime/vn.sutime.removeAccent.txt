@@ -16,12 +16,12 @@
   
   $INT_TIMES = ( $INT /lan/ );
 #  $REL_MOD = ( /the/? /next|following|last|previous/ | /this/ /coming|past/? | /the/ /coming|past/ );
-  $REL_MOD = ( /nay|nay|ke|tiep|mai|truoc|nay|toi|qua|sau|ngoai|nua|moi/);
+  $REL_MOD = ( /nay|nay|ke|tiep|mai|truoc|nay|toi|qua|sau|nua|moi/);
   $REL2_MOD = (/sang/);
 # $FREQ_MOD = ( /each/ | /every/ $NUM_ORD | /every/ /other|alternate|alternating/? | /alternate|alternating/ );
   $FREQ_MOD = ( /moi/ | /moi/ | /hang/);
 #  $EARLY_LATE_MOD = ( /late|early|mid-?/ | /the/? /beginning|start|dawn|middle|end/ /of/ );
-  $EARLY_LATE_MOD = ( /cuoi|som|giua|dau|tre|muon/ );
+  $EARLY_LATE_MOD = ( /som|giua|dau|tre|muon/ );
   $APPROX_MOD = ( /khoang|tam|co|vai|mot_vai|chinh_xac|dung/ );
   $YEAR = ( /[012]\d\d\d/ | /\w+|twenty/ [ { numcompvalue<100 } & { numcompvalue>0 } & $INT ] );
 # $YEAR = ( /[012]\d\d\d/ | /\w+|twenty/ [ { numcompvalue<100 } & { numcompvalue>0 } & $INT ] );
@@ -83,8 +83,7 @@
   
   BASIC_NUMBER_MAP = {
     "nhat":1,
-    "khong":0,
-    "mot": 1,
+	"mot": 1,
     "hai": 2,
     "ba": 3,
     "bon": 4,
@@ -264,6 +263,9 @@
   { (/[Tt]hu/ /7/) => SATURDAY }
   { (/[C]n/) => SUNDAY }
 
+  { (/[Cc]uoi/ /tuan/) => WEEKEND }
+  { (/[Cc]uoi/ /ngay/) => InexactTime(TimeRange(IsoTime(15,0,0),IsoTime(23,0,0) ))}
+  { (/[Dd]au/ /ngay/) => InexactTime(TimeRange(IsoTime(6,0,0),IsoTime(10,0,0) )) }
 #  { (/weekends?/) => WEEKEND }
 #  { (/weekdays?/) => WEEKDAY }
 
@@ -302,18 +304,6 @@
   { (/thang_muoi/) => OCTOBER }
   { (/thang_muoi_mot/) => NOVEMBER }
   { (/thang_muoi_hai|thang_chap/) => DECEMBER }
-
-#  { (/jan\.?/) => JANUARY }
-#  { (/feb\.?/) => FEBRUARY }
-#  { (/mar\.?/) => MARCH }
-#  { (/apr\.?/) => APRIL }
-#  { (/jun\.?/) => JUNE }
-#  { (/jul\.?/) => JULY }
-#  { (/aug\.?/) => AUGUST }
-#  { (/sept?\.?/) => SEPTEMBER }
-#  { (/oct\.?/) => OCTOBER }
-#  { (/nov\.?/) => NOVEMBER }
-#  { (/dec\.?/) => DECEMBER }
 		   
 #############################################################################################################################
  
@@ -321,7 +311,7 @@
   
   
   
-		# Thu trong tuan
+  # Thu trong tuan
   
   {text: /[Tt]hu\s[Hh]ai/ => MONDAY }
   {text: /[Tt]hu\s[Bb]a/ => TUESDAY }
@@ -333,18 +323,18 @@
   
  
   # Thang bang so 
-  {text: /[Tt]ang\s1/ => JANUARY }
-  {text: /[Tt]ang\s2/  => FEBRUARY }
-  {text: /[Tt]ang\s3/  => MARCH }
-  {text: /[Tt]ang\s4/  => APRIL }
-  {text:/[Tt]ang\s5/  => MAY }
-  {text:/[Tt]ang\s6/  => JUNE }
-  {text:/[Tt]ang\s7/  => JULY }
-  {text: /[Tt]ang\s8/  => AUGUST }
-  {text: /[Tt]ang\s9/  => SEPTEMBER }
-  {text:/[Tt]ang\s10/  => OCTOBER }
-  {text:/[Tt]ang\s11/  => NOVEMBER }
-  {text:/[Tt]ang\s12/  => DECEMBER }
+  {text: /[Tt]hang\s1/ => JANUARY }
+  {text: /[Tt]hang\s2/  => FEBRUARY }
+  {text: /[Tt]hang\s3/  => MARCH }
+  {text: /[Tt]hang\s4/  => APRIL }
+  {text:/[Tt]hang\s5/  => MAY }
+  {text:/[Tt]hang\s6/  => JUNE }
+  {text:/[Tt]hang\s7/  => JULY }
+  {text: /[Tt]hang\s8/  => AUGUST }
+  {text: /[Tt]hang\s9/  => SEPTEMBER }
+  {text:/[Tt]hang\s10/  => OCTOBER }
+  {text:/[Tt]hang\s11/  => NOVEMBER }
+  {text:/[Tt]hang\s12/  => DECEMBER }
   
   #bat cac buoi trong ngay
   { text:/[Ll]uc\ssang/ => MORNING }
@@ -396,17 +386,17 @@
 	 #{ text: /mai/ => TOMORROW }
 	  
 	  { text:/[Tt]hang\sgieng|[Tt]hang\smot/ => JANUARY }
-	  { text:/[Tt]hangshai|[Tt]hang\s2/ => FEBRUARY }
-	  { text:/[Tt]hang\sba|[Tt]hang\s3/ => MARCH }
-	  { text:/[Tt]hang\stu|[Tt]hang\sbon|[Tt]hang\s4/ => APRIL }
-	  { text:/[Tt]hang\snam|[Tt]hang\s5/ => MAY }
-	  { text:/[Tt]hang\sau|[Tt]hang\s6/ => JUNE }
-	  { text:/[Tt]hang\sbay|[Tt]hang\s7/ => JULY }
-	  { text:/[Tt]hang\stam|[Tt]hang\s8/ => AUGUST }
-	  { text:/[Tt]hang\schin|[Tt]hang\s9/ => SEPTEMBER }
-	  { text:/[Tt]hang\smuoi|[Tt]hang\s10/ => OCTOBER }
-	  { text:/[Tt]hang\smuoi\smot|[Tt]hang\s11/ => NOVEMBER }
-	  { text:/[Tt]hang\smuoi\shai|[Tt]hang\schap|[Tt]hang\s12/ => DECEMBER }
+	  { text:/[Tt]hangshai/ => FEBRUARY }
+	  { text:/[Tt]hang\sba/ => MARCH }
+	  { text:/[Tt]hang\stu|[Tt]hang\sbon/ => APRIL }
+	  { text:/[Tt]hang\snam/ => MAY }
+	  { text:/[Tt]hang\sau/ => JUNE }
+	  { text:/[Tt]hang\sbay/ => JULY }
+	  { text:/[Tt]hang\stam/ => AUGUST }
+	  { text:/[Tt]hang\schin/ => SEPTEMBER }
+	  { text:/[Tt]hang\smuoi/ => OCTOBER }
+	  { text:/[Tt]hang\smuoi\smot/ => NOVEMBER }
+	  { text:/[Tt]hang\smuoi\shai|[Tt]hang\schap/ => DECEMBER }
 	  { text:/mua\she|mua\sha/ => SUMMER }
 	  { text:/mua\sdong/ => WINTER }
 	  { text:/mua\sthu/ => FALL }
@@ -427,14 +417,14 @@
 	  { text: /[Gg]io\s[Tt]uat/ => IsoTime(20, NIL, NIL) }
 	  { text: /[Gg]io\s[Hh]oi/ => IsoTime(22, NIL, NIL) }
 	  
-	  { text: /([Ll]uc\s|[Vv]ao\s)?(\d+)(h|\sgio\s)(\d+)(p|ph|\sphut\s)(\d+)(gi|giay)?/ => IsoTime($2, $4, $6) }
-	  { text: /([Ll]uc\s|[Vv]ao\s)?(\d+)(h|\sgio\s)(\d+)(p|ph|\sphut)?/ => IsoTime($2, $4, NIL) }
+	  { text: /(\d+)(h|\sgio\s)(\d+)('|p|ph|\sphut\s)(\d+)(gi|giay)?/ => RelativeTime(THIS,IsoTime($2, $4, $6)) }
+	  { text: /(\d+)(h|\sgio\s)(\d+)('|p|ph|\sphut)?/ => RelativeTime(IsoTime($1, $3, NIL)) }
 	  { text: /(\d\d?)(:?(\d\d))(:\d\d)?\s*sang/ => TemporalCompose(INTERSECT, IsoTime($1,$3,$4), AM) }
 	  { text: /(\d\d?)(:?(\d\d))(:\d\d)?\s*(chieu|toi)/ => TemporalCompose(INTERSECT, IsoTime($1,$3,$4), PM) }
 	  { text: /(\d\d?)(h|\sgio\s)\s*sang/ => TemporalCompose(INTERSECT, IsoTime($1,"0",NIL), AM) }
 	  { text: /(\d\d?)(h|\sgio\s)\s*(chieu|toi)/ => TemporalCompose(INTERSECT, IsoTime($1,"0",NIL), PM) }
-  
-  
+  	  { text: /(\d+)(h|\sgio)/ => RelativeTime(THIS,IsoTime($1, NIL, NIL)) }
+  	  { text: /(12)(h|\sgio\s)\s*dem/ => RelativeTime(NEXT,IsoTime(0, 0, 0)) }
   
   #Bat ngay thang nam tieng Viet
   
@@ -446,8 +436,8 @@
 	  { text: /[Nn]gay\s(\d+)(\sthang\s|)?(\d+)(\snam\s|)?(\d+)/ => IsoDate($3, $2, $1) }
 	  { text: /[Nn]gay\s(\d+)\sthang\s(\d+)/ => IsoDate(NIL, $2, $1) }
 	  { text: /([Nn]gay|[Mm]ung|[Mm]ong)(\d+)/ => IsoDate(NIL, NIL, $2) }
-	  { text: /[Nn]gay\s(\d+)/ => IsoDate(NIL, NIL, $1) }
-	  { text: / (\d+)[-|\/](\d+)[-|\/](\d+)/ => IsoDate($3, $2, $1) }
+	  { text: /[Nn]gay(\d+)/ => IsoDate(NIL, NIL, $1) }
+	  #{ text: / (\d+)[-|\/](\d+)[-|\/](\d+)/ => IsoDate($3, $2, $1) }
    
   #Bat thap nien
 	  { text: /[Nn]hung\snam\s($Decades)/ => IsoDate( Concat("XX", DECADES_MAP[Lowercase($1)]) , NIL, NIL) }
@@ -487,7 +477,7 @@
 	
 	  #Ngay thang nam Viet Nam
 	  { ruleType: "time", pattern: /HH?hmm?/ }
-	  { ruleType: "time", pattern: /dd?[-\/]MM?[-\/]yy(yy)?/ }
+	 # { ruleType: "time", pattern: /dd?[-\/]MM?[-\/]yy(yy)?/ }
 	 #{ ruleType: "time", pattern: /dd?[-\/]MM?/ }
 	 #{ ruleType: "time", pattern: /MM?[-\/]yy(yy)?/ }
 
@@ -513,7 +503,15 @@
     priority: 20,
     pattern: (  ( [ $hasTemporal & !{ temporal::IS_TIMEX_SET } ] ) /|tuan|thang|nam/? ( $REL_MOD )),
 	result: RelativeTime( GetTag($2[0], "TemporalOp"), $1[0].temporal.value )
-  }
+  } 
+  
+  # tu ngay xxx den ngay xxx , tu xxx gio den xx gio 
+   { 
+    name: "temporal-composite-1",
+    priority: 20,
+    pattern: ( /[Tt]u/ ( [ $hasTemporal ] ) /den|toi|sang/  ( [ $hasTemporal  ] ) ),
+	result: TimeRange($1[0].temporal.value, $2[0].temporal.value )
+   }
 	
 ###############################################################################################################
   ENV.defaults["stage"] = 4 
@@ -530,7 +528,7 @@
       ( [ { temporal::IS_TIMEX_DATE } ] ) /|trong|cua|vao|luc/? ( [ { temporal::IS_TIMEX_TIME } ] ) |
       ( [ { temporal::IS_TIMEX_TIME } | { temporal::IS_TIMEX_DURATION } ] ) /|trong|cua|vao|luc/?  ( [ { temporal::IS_TIMEX_DATE } ] | [ { temporal::IS_TIMEX_SET } ]) |
       ( [ { temporal::IS_TIMEX_DATE } | { temporal::IS_TIMEX_TIME } ] ) /|trong|cua|vao|luc/? ( [ $hasTemporal ] )) ),
-	result: TemporalCompose(INTERSECT, $1[0].temporal.value, $1[-1].temporal.value)
+	result: TemporalCompose(INTERSECT, $1[0].temporal, $1[-1].temporal)
   }
   
   #ngay truoc mot ngay nao do ie: ngay truoc ngay thu hai
@@ -554,16 +552,12 @@
 			  DAY)
   }
   
-  #dau ngay, cuoi ngay, giua ngay
-  { name: "temporal-composite-6a",
-    pattern: ( /the/? ( $EARLY_LATE_MOD ) ( [ $hasTemporal & !{ temporal::IS_TIMEX_SET } ] ) ),
-	result: TemporalCompose( ADD_MODIFIER, $2[0].temporal.value, GetTag($1[0], "Modifier") )
-  }
+  
   
   #Moi ngay, hang ngay, moi ngay
   { name: "temporal-composite-7b",
 #    pattern: ( ( $FREQ_MOD ) ( [ $hasTemporal & !{ temporal::IS_TIMEX_SET } ] ) ),
-     pattern: ( ( $FREQ_MOD ) ( [ $hasTemporal ] ) ),
+     pattern: ( ( $FREQ_MOD ) ( [ temporal::IS_TIMEX_DURATION ] ) ),
 	 result: MakePeriodicTemporalSet($2[0].temporal, GetTag($1[0], "PTS.quant"), GetTag($1[0], "PTS.multiple") )
   }
   #khoang 10 ngay
@@ -573,17 +567,8 @@
     result: $0[-1].temporal.value
   }
   
-  #dau ngay, cuoi ngay
-  { name: "temporal-composite-6a",
-    pattern: ( ( $EARLY_LATE_MOD ) ( [ $hasTemporal & !{ temporal::IS_TIMEX_SET } ] ) ),
-	result: TemporalCompose( ADD_MODIFIER, $2[0].temporal.value, GetTag($1[0], "Modifier") )
-  }
-  
-  #chieu muon
-  { name: "temporal-composite-6a",
-    pattern: ( ( [ $hasTemporal & !{ temporal::IS_TIMEX_SET } ] ) ( $EARLY_LATE_MOD ) ),
-	result: TemporalCompose( ADD_MODIFIER, $1[0].temporal.value, GetTag($2[0], "Modifier") )
-  }
+ 
+
   
   
  
