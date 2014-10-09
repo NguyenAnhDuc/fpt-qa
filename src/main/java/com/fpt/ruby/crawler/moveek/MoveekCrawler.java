@@ -22,7 +22,16 @@ public class MoveekCrawler {
 	private static HashMap<String, String> cin_cities = new HashMap<String, String>();
 	
 	static {
-		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath() + "/dicts";
+		String dir = "./test-classes/dicts/";
+		
+		try {
+			dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath() + "/dicts";
+		} catch (Exception ex) {
+			System.out.println("Error init Moveek Crawler: " + ex.getMessage());
+		} finally {
+			System.out.println("Scan dir = " + dir);
+		}
+		
 		loadMovieUrls(dir);
 		loadshowTimeUrls(dir);
 		loadCinCity(dir);

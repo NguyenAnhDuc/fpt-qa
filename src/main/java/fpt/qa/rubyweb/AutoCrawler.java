@@ -49,6 +49,7 @@ public class AutoCrawler {
 			crawlerMyTV.crawlMyTV(tvProgramService);
 		} catch (Exception ex) {
 			System.out.println("error");
+			ex.printStackTrace();
 			System.out.println(ex.getMessage());
 			return "failed";
 		}
@@ -75,8 +76,8 @@ public class AutoCrawler {
 		System.out.println("crawl phim chieu rap");
 		x.crawlPhimChieuRap();
 		
-//		System.out.println("crawl moveek");
-//		x.crawlMoveek();
+		System.out.println("crawl moveek");
+		x.crawlMoveek();
 		
 		System.out.println("crawl myTV");
 		x.crawlMyTV();
