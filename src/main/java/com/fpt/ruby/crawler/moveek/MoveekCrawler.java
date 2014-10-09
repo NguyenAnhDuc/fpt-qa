@@ -36,14 +36,20 @@ public class MoveekCrawler {
 			
 			List<Pair<String, String>>	movies = MoveekCrawlerUtils.GetMoviesByCinemas(movie_urls.get(cinName), "");
 			for (Pair<String, String> movie : movies){
-				List<Pair<String, Date>> slots = MoveekCrawlerUtils.getSessionTime(showtime_urls.get(cinName), movie.first);
+				System.err.println("CINAME: " + cinName);
+				List<Pair<String, Date>> slots;
+				if (!cinName.equals("Tháng 8 Cinema")){
+					slots = MoveekCrawlerUtils.getSessionTime(showtime_urls.get(cinName), movie.first);
+				} else {
+					slots = MoveekCrawlerUtils.getSessionTime2(showtime_urls.get(cinName), movie.first);
+				}
 				
 				for (Pair<String, Date> slot : slots){
 					MovieTicket newTicket = new MovieTicket();
 					newTicket.setType(slot.first);
 					newTicket.setDate(slot.second);
 					newTicket.setCinema(cinName);
-					System.out.println("Cin name: " + cinName);
+
 					newTicket.setCity(city);
 					newTicket.setMovie(movie.second);
 					if (!mts.existedInDb(newTicket)){
