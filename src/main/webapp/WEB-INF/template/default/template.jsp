@@ -44,8 +44,8 @@
 						<a href="/rubyweb"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
 						<a href="/rubyweb/admin"><i class="fa fa-fw fa-star-o"></i><span>Admin</span></a>
 						<a href="/rubyweb/admin-show-cinemas"><i class="fa fa-fw fa-bank"></i><span>Cinemas</span></a>
-						<a href="/rubyweb/admin-show-tickets"><i class="fa fa-fw fa-list"></i><span>Tickets Today</span></a>
-						<a href="/rubyweb/admin-show-tvprograms"><i class="fa fa-fw fa-list-alt"></i><span>TV Today</span></a>
+						<a href="/rubyweb/admin-show-tickets?day=0"><i class="fa fa-fw fa-list"></i><span>Tickets Today</span></a>
+						<a href="/rubyweb/admin-show-tvprograms?day=0"><i class="fa fa-fw fa-list-alt"></i><span>TV Today</span></a>
 						<a href="/rubyweb/admin-show-logs?num=0"><i class="fa fa-fw fa-list-ul"></i><span>Logs</span></a>
 						<a href="/rubyweb/comments"><i class="fa fa-fw fa-comment-o"></i><span>Comments</span></a>
 						<a href="/rubyweb/analytics"><i class="fa fa-fw fa-bar-chart-o"></i><span>Analytics</span></a>

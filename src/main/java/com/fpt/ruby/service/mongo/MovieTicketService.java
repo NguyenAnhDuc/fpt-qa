@@ -23,6 +23,7 @@ import com.fpt.ruby.model.TVProgram;
 @Service
 public class MovieTicketService {
 	private static long ONE_WEEK = 7 * 24 * 60 * 60 * 1000;
+	private static long ONE_DAY = 24 * 60 * 60 * 1000;
 	private static final Logger logger = LoggerFactory.getLogger(MovieTicketService.class);
 	private final String MT_MOVIE = "movie";
 	private final String MT_CINEMA = "cinema";
@@ -56,8 +57,8 @@ public class MovieTicketService {
 		return mongoOperations.findById(ticketId, MovieTicket.class);
 	}
 	
-	public List<MovieTicket> findTicketToShow(){
-		Date date = new Date();
+	public List<MovieTicket> findTicketToShow(int day){
+		Date date = new Date(new Date().getTime() + day * ONE_DAY);
 		date.setHours(0);date.setMinutes(0);date.setSeconds(0);
 		Query query = new Query(Criteria.where("date").gt( date )).with( new Sort( Direction.ASC, "date" ) );
 		List<MovieTicket> results = mongoOperations.find(query, MovieTicket.class);

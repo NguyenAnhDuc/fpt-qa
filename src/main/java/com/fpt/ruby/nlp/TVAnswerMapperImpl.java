@@ -54,7 +54,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		
 		rubyAnswer.setQuestion(question);
 		rubyAnswer.setIntent(intent);
-		rubyAnswer.setAnswer(DEF_ANS + "\n\n\n");
+		rubyAnswer.setAnswer(DEF_ANS );
 		
 		if (intent.equalsIgnoreCase(IntentConstants.TV_UDF)) 
 			return rubyAnswer;
@@ -104,60 +104,60 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		if (mod.getChannel() == null && mod.getProg_title() == null){
 			System.err.println("[TVAnserMapper]: Channel null and program null");
 			if (mod.getStart() == null){
-				rubyAnswer.setAnswer( UDF_ANS + "\n\n\n" );
+				rubyAnswer.setAnswer( UDF_ANS  );
 				return rubyAnswer;
 			}
 			
 			if (mod.getStart().equals( mod.getEnd() )){
-				rubyAnswer.setAnswer( getChannelAndProgram( progs ) + "\n\n\n" );
+				rubyAnswer.setAnswer( getChannelAndProgram( progs )  );
 				return rubyAnswer;
 			}
-			rubyAnswer.setAnswer( getChannelProgAndTime( progs ) + "\n\n\n" );
+			rubyAnswer.setAnswer( getChannelProgAndTime( progs )  );
 			return rubyAnswer;
 		}
 		
 		if (mod.getChannel() == null){
 			System.err.println("[TVAnserMapper]: Channel null");
 			if ( intent.equals( IntentConstants.TV_POL ) && progs.isEmpty()){
-				rubyAnswer.setAnswer( "Không!" + "\n\n\n" );
+				rubyAnswer.setAnswer( "Không!"  );
 				return rubyAnswer;
 			}
 			if (intent.equals( IntentConstants.TV_DAT )){
-				rubyAnswer.setAnswer( getChannelAndTime( progs ) + "\n\n\n" );
+				rubyAnswer.setAnswer( getChannelAndTime( progs )  );
 				return rubyAnswer;
 			}
 			if (intent.equals( IntentConstants.TV_CHN )){
-				rubyAnswer.setAnswer( getChannel( progs ) + "\n\n\n" );
+				rubyAnswer.setAnswer( getChannel( progs )  );
 				return rubyAnswer;
 			}
 			if (mod.getStart() == null){
-				rubyAnswer.setAnswer( DEF_ANS + "\n\n\n" );
+				rubyAnswer.setAnswer( DEF_ANS  );
 				return rubyAnswer;
 			}
 			if (mod.getStart().equals( mod.getEnd() )){
 				if (intent.equals( IntentConstants.TV_CHN )){
-					rubyAnswer.setAnswer( getChannel( progs ) + "\n\n\n" );
+					rubyAnswer.setAnswer( getChannel( progs )  );
 					return rubyAnswer;
 				}
-				rubyAnswer.setAnswer( getChannelAndProgram( progs ) + "\n\n\n" );
+				rubyAnswer.setAnswer( getChannelAndProgram( progs )  );
 				return rubyAnswer;
 			}
-			rubyAnswer.setAnswer( getChannelProgAndTime( progs ) + "\n\n\n" );
+			rubyAnswer.setAnswer( getChannelProgAndTime( progs )  );
 			return rubyAnswer;
 		}
 		
 		if (mod.getProg_title() == null){
 			System.err.println("[TVAnserMapper]: Program null");
 			if (mod.getStart() != null && mod.getStart().equals( mod.getEnd() )){
-				rubyAnswer.setAnswer( getTitle( progs ) + "\n\n\n" );
+				rubyAnswer.setAnswer( getTitle( progs )  );
 				return rubyAnswer;
 			}
-			rubyAnswer.setAnswer( getTitleAndTime( progs ) + "\n\n\n" );
+			rubyAnswer.setAnswer( getTitleAndTime( progs )  );
 			return rubyAnswer;
 		}
 		if (intent.equals( IntentConstants.TV_DAT )){
 			if (progs.size() > 0){
-				rubyAnswer.setAnswer( getTime( progs ) + "\n\n\n" );
+				rubyAnswer.setAnswer( getTime( progs )  );
 				return rubyAnswer;
 			}
 			rubyAnswer.setAnswer(mod.getChannel() + " không chiếu " + mod.getProg_title());
@@ -166,7 +166,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		
 		if (intent.equals( IntentConstants.TV_POL )){
 			if (progs.size() > 0){
-				rubyAnswer.setAnswer( "Có" + "\n\n\n" );
+				rubyAnswer.setAnswer( "Có"  );
 				return rubyAnswer;
 			}
 			rubyAnswer.setAnswer(mod.getChannel() + " không chiếu " + mod.getProg_title());
@@ -174,25 +174,25 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		}
 		
 		if (mod.getStart() == null){
-			rubyAnswer.setAnswer( DEF_ANS + "\n\n\n" );
+			rubyAnswer.setAnswer( DEF_ANS  );
 			return rubyAnswer;
 		}
 		
 		if (mod.getStart().equals( mod.getEnd() )){
 			if (progs.isEmpty()){
-				rubyAnswer.setAnswer( "Không có " + mod.getProg_title() + " nào trên kênh " + mod.getChannel() + " vào lúc đó!\n\n\n" );
+				rubyAnswer.setAnswer( "Không có " + mod.getProg_title() + " nào trên kênh " + mod.getChannel() + " vào lúc đó!" );
 				return rubyAnswer;
 			}
-			rubyAnswer.setAnswer( getTitle( progs ) + "\n\n\n" );
+			rubyAnswer.setAnswer( getTitle( progs )  );
 			return rubyAnswer;
 		}
 		
 		if (progs.isEmpty()){
 			rubyAnswer.setAnswer( "Không có chương trình " + mod.getProg_title() +
-					" nào trên " + mod.getChannel() + " vào lúc đó\n\n\n" );
+					" nào trên " + mod.getChannel() + " vào lúc đó" );
 			return rubyAnswer;
 		}
-		rubyAnswer.setAnswer( getTitleAndTime( progs ) + "\n\n\n" );
+		rubyAnswer.setAnswer( getTitleAndTime( progs )  );
 		return rubyAnswer;
 		
 //		return DEF_ANS;

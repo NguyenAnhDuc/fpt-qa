@@ -161,7 +161,7 @@ body {
 										<!--  <strong class="primary-font"></strong> <small class="pull-right text-muted">
                                      <span class="glyphicon glyphicon-time"></span>12 mins ago</small>  -->
 										<!-- </div> -->
-										<p>Tối nay ngoài rạp có phim gì hay không?</p>
+										<p>Tối nay ngoài rạp có phim không?</p>
 									</div></li>
 								<li class="right clearfix"><span
 									class="chat-img pull-right"> <img
@@ -184,7 +184,7 @@ body {
 											<!-- <strong class="primary-font">Jack Sparrow</strong> <small class="pull-right text-muted">
                                         <span class="glyphicon glyphicon-time"></span>14 mins ago</small> -->
 										</div>
-										<p>Tối nay có phim gì</p>
+										<p>Vtv3 đang chiếu gì</p>
 									</div></li>
 								<li class="right clearfix"><span
 									class="chat-img pull-right"> <img
@@ -196,7 +196,7 @@ body {
 											<!-- <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>15 mins ago</small>
                                     <strong class="pull-right primary-font">Bhaumik Patel</strong> -->
 										</div>
-										<p>Bánh đúc có xương </p>
+										<p>Ai là triệu phú </p>
 									</div></li>
 							</ul>
 						</div>

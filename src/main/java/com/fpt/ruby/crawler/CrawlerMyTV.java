@@ -44,6 +44,8 @@ public class CrawlerMyTV {
 		    							"STAR WORLD HD",
 		    							"VOV"
 		    							}));
+	private static long ONE_DAY = 24 * 60 * 60 * 1000;
+	private static long FUTUREDAY_CRAWL = 1;
 	public static String sendGet(String url) throws Exception{
 		HttpClient client = HttpClientBuilder.create().build();
 		HttpGet request = new HttpGet(url);
@@ -91,16 +93,18 @@ public class CrawlerMyTV {
 		
 		System.out.println("Crawling from MYTV");
 		DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
-		String date = df.format(new Date(System.currentTimeMillis()));
 		List< Channel > channels = getChanel();
 		for (Channel channel : channels){
 			if (crawlChannels.contains(channel.getName().toUpperCase())){
 				try{
 					System.out.println("Crawling from " + channel.getName());
-					List< TVProgram > tvPrograms =  crawlChannel( channel, date);
-					tvPrograms = calculateEndTime( tvPrograms );
-					for (TVProgram tvProgram : tvPrograms){
-						tvProgramService.save( tvProgram );
+					for (int i=0;i<= FUTUREDAY_CRAWL;i++){
+						String date = df.format(new Date(new Date().getTime() + ONE_DAY * i));
+						List< TVProgram > tvPrograms =  crawlChannel( channel, date, i);
+						tvPrograms = calculateEndTime( tvPrograms );
+						for (TVProgram tvProgram : tvPrograms){
+							tvProgramService.save( tvProgram );
+						}
 					}
 				}
 				catch (Exception ex){
@@ -123,7 +127,7 @@ public class CrawlerMyTV {
 		return results;
 	}
 	
-	public  List<TVProgram> crawlChannel(Channel channel, String date) throws Exception{
+	public  List<TVProgram> crawlChannel(Channel channel, String date,int day) throws Exception{
 		List< TVProgram > tvPrograms = new ArrayList< TVProgram >();
 		String url="http://www.mytv.com.vn/module/ajax/ajax_get_schedule.php?channelId=" + channel.getId() 
 					+ "&dateSchedule=" + date;
@@ -136,7 +140,7 @@ public class CrawlerMyTV {
 			String programName = tmp.substring(5,tmp.length());
 			//System.out.println("Time: " + time + " | " + "Program Name: " + StringEscapeUtils.unescapeJava(programName));
 			String[] times = time.split(":");
-			Date channelDate = new Date();
+			Date channelDate = new Date(new Date().getTime() + day * ONE_DAY );
 			channelDate.setHours(Integer.parseInt(times[0]));
 			channelDate.setMinutes(Integer.parseInt(times[1]));
 			TVProgram tvProgram = new TVProgram();
