@@ -136,13 +136,16 @@ public class ProcessHelper{
 			}else{
 				System.out.println( "Feature .." );
 				MovieTicket matchMovieTicket = new MovieTicket();
-				matchMovieTicket.setCinema( "CGV Vincom City Towers" );
 				Date today = new Date();
 				System.out.println( "afterdate: " + today );
-
+				TimeExtract timeExtract = NlpHelper.getTimeCondition( question );
+				if( timeExtract.getBeforeDate() != null )
+					rubyAnswer.setBeginTime( timeExtract.getBeforeDate() );
+				if( timeExtract.getAfterDate() != null )
+					rubyAnswer.setEndTime( timeExtract.getAfterDate() );
 				// list movie tickets for the duration of one day
 				List< MovieTicket > movieTickets = movieTicketService.findMoviesMatchCondition( matchMovieTicket,
-						today, new Date( today.getTime() + 86400000 ) );
+						timeExtract.getBeforeDate(), timeExtract.getAfterDate());
 				System.out.println( "No of returned tickets: " + movieTickets.size() );
 				rubyAnswer.setAnswer( AnswerMapper.getFeaturedAnswer( question, movieTickets, movieFlyService ) );
 				rubyAnswer.setQuestionType( AnswerMapper.Featured_Question );
