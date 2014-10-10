@@ -252,6 +252,7 @@ public class AdminCotroller {
 		for (int  i=0;i<numLog;i++){
 			results.add(logs.get(i));
 		}
+		model.addAttribute("logs",logs);
 		return "showLog";
 	}
 
@@ -259,7 +260,7 @@ public class AdminCotroller {
 	public String deleteBot(@RequestParam("ticketId") String ticketId,Model model) {
 		MovieTicket movieTicket = movieTicketService.findById(ticketId);
 		movieTicketService.delete(movieTicket);
-		List<MovieTicket> tickets = movieTicketService.findTicketToShow();
+		List<MovieTicket> tickets = movieTicketService.findTicketToShow(0);
 		model.addAttribute("tickets",tickets);
 		return "showTicket";
 	}
