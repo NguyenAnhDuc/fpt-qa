@@ -69,7 +69,13 @@ public class CrawlerMyTV {
 	
 	
 	public List<Channel> getChanel() throws Exception{
-		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
+		String dir = "./test-classes/"; // hack for standalone crawler and in-web-app crawler.
+		try {
+			dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
+		} catch (Exception e) {
+			System.out.println("[get Channel] Life goes on! Dir = " + dir);
+		} 
+		
 		ConjunctionHelper conjunctionHelper = new ConjunctionHelper( dir );
 		List< Channel > channels = new ArrayList< Channel >();
 		Document doc = Jsoup.parse(sendGet("http://www.mytv.com.vn/lich-phat-song"));
