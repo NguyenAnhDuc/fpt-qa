@@ -1,36 +1,30 @@
-hôm nay ngoài rạp chiếu phim gì | 12:00:00 AM | 11:59:59 PM
-hôm nay ngoai rap chieu phim gi| 12:00:00 AM | 11:59:59 PM
-ngày mai rap lotte co phim gi hay khong | 12:00:00 AM | 11:59:59 PM
+ngày mai rạp lotte có phim gì hay không | 12:00:00 AM | 11:59:59 PM
 chiều mai có phim gì không | 12:00:00 PM | 06:00:00 PM
-12 giờ đêm có phim gì | 12:00:00 AM | 12:00:00 AM
+#12 giờ đêm có phim gì | 12:00:00 AM | 12:00:00 AM
 15h  ngày mai kênh VTV3 chiếu chương trình gì | 03:00:00 PM | 03:00:00 PM
 20 giờ tối nay có phim gì | 08:00:00 PM | 08:00:00 PM
-20h có chương trình gì | 08:00:00 PM | 08:59:00 PM
-20h có chương trình gì trên vtv3 | 08:00:00 PM | 08:59:00 PM
+20h hôm nay có chương trình gì | 08:00:00 PM | 08:00:00 PM
+20h có chương trình gì trên vtv3 | 08:00:00 PM | 08:00:00 PM
 21 giờ tối mai trên vtv1 có gì | 09:00:00 PM | 09:00:00 PM
 23/9 phim bão qua làng đang chiếu tập bao nhiêu | 12:00:00 AM | 11:59:59 PM
 7h30 phút trên vtv3 có chương trình gì | 07:30:00 AM | 07:30:00 AM
-7h có phim gì không | 07:00:00 AM | 07:59:00 AM
-7h có phim gì không | 07:00:00 AM | 07:59:00 AM
+7h có phim gì không | 07:00:00 AM | 07:00:00 AM
+7h có phim gì không | 07:00:00 AM | 07:00:00 AM
 8 giờ tối nay có trận ngoại hạng anh nào không | 08:00:00 PM | 08:00:00 PM
 8 giờ tối trên kênh discovery chiếu chương trình gì | 08:00:00 PM | 08:00:00 PM
-8h có chương trình quà tặng cuộc sống đúng đúng k | 08:00:00 AM | 08:59:00 AM
+8h có chương trình quà tặng cuộc sống đúng đúng k | 08:00:00 AM | 08:00:00 AM
 9 giờ 30 chiếu chương trình gì | 09:30:00 AM | 09:30:00 AM
 9 giờ 30 sáng mai chiếu chương trình gì | 09:30:00 AM | 09:30:00 AM
-9 giờ 30 tối mai chiếu chương trình gì | 09:30:00 PM | 09:30:00 PM
 9 giờ chiếu chương trình gì | 09:00:00 AM | 09:00:00 AM
 9 giờ sáng nay trên VTV3 chiếu phim gì | 09:00:00 AM | 09:00:00 AM
 9 giờ tối mai trên VTV3 chiếu phim gì | 09:00:00 PM | 09:00:00 PM
 9 giờ tối nay chiếu chương trình gì | 09:00:00 PM | 09:00:00 PM
-9 giờ trên kênh VTV3 chiếu chương trình gì | 09:00:00 AM | 09:59:00 AM
-9 giờ trên kênh VTV3 chiếu phim gì | 09:00:00 AM | 09:59:00 AM
+9 giờ trên kênh VTV3 chiếu chương trình gì | 09:00:00 AM | 09:00:00 AM
+9 giờ trên kênh VTV3 chiếu phim gì | 09:00:00 AM | 09:00:00 AM
 9 giờ trên VTV3 chiếu chương trình gì | 09:00:00 AM | 09:00:00 AM
 9 giờ trên VTV3 chiếu phim gì | 09:00:00 AM | 09:00:00 AM
 9h có phim bánh đúc có xương đúng k | 09:00:00 AM | 09:00:00 AM
 9h tối hôm nay chiếu phim gì trên VTV1 | 09:00:00 PM | 09:00:00 PM
-Bộ thu model cũ có xem được các chương trình HDTV không |  | 
-Bộ thu vệ tinh VTC - HD có sử dụng thẻ như các Model trước không |  | 
-Bộ thu VTC – HD có xem được nhiều Tivi không |  | 
 Cho tôi xem lịch phát sóng của kênh vtv3 hôm nay | 12:00:00 AM | 11:59:59 PM
 Chủ nhật tuần này có trận nào của MU không | 12:00:00 AM | 11:59:59 PM
 Chủ nhật tuần này Man U đá lúc mấy giờ | 12:00:00 AM | 11:59:59 PM
@@ -49,13 +43,13 @@ chương trình gì chiếu lúc 9 giờ 30 sáng mai trên VTV3 | 09:30:00 AM |
 chương trình gì chiếu lúc 9 giờ 30 thế | 09:30:00 AM | 09:30:00 AM
 chương trình gì chiếu lúc 9 giờ 30 tối mai | 09:30:00 PM | 09:30:00 PM
 chương trình gì chiếu lúc 9 giờ 30 tối mai thế | 09:30:00 PM | 09:30:00 PM
-chương trình gì chiếu lúc 9 giờ 30 tối mai trên VTV3 | 09:30:00 AM | 09:30:00 AM
+chương trình gì chiếu lúc 9 giờ 30 tối mai trên VTV3 | 09:30:00 PM | 09:30:00 PM
 chương trình gì chiếu lúc 9 giờ 30 trên VTV3 | 09:30:00 AM | 09:30:00 AM
 chương trình gì chiếu lúc 9 giờ sáng mai | 09:00:00 AM | 09:00:00 AM
 chương trình gì chiếu lúc 9 giờ sáng nay | 09:00:00 AM | 09:00:00 AM
 chương trình gì chiếu lúc 9 giờ sáng nay thế | 09:00:00 AM | 09:00:00 AM
 chương trình gì chiếu lúc 9 giờ sáng nay trên VTV3 | 09:00:00 AM | 09:00:00 AM
-chương trình gì chiếu lúc 9 giờ thế | 09:00:00 AM | 09:59:00 AM
+chương trình gì chiếu lúc 9 giờ thế | 09:00:00 AM | 09:00:00 AM
 chương trình gì chiếu lúc 9 giờ tối mai | 09:00:00 PM | 09:00:00 PM
 chương trình gì chiếu lúc 9 giờ tối mai thế | 09:00:00 PM | 09:00:00 PM
 chương trình gì chiếu lúc 9 giờ tối mai trên VTV3 | 09:00:00 PM | 09:00:00 PM
@@ -89,18 +83,10 @@ Chương trình hôm nay có phim gì hay | 12:00:00 AM | 11:59:59 PM
 chương trình thời sự tối nay | 06:00:00 PM | 11:00:00 PM
 chương trình trên kênh discovery chiều nay | 12:00:00 PM | 06:00:00 PM
 chương trình trên kênh vtv2 tối nay | 06:00:00 PM | 11:00:00 PM
-Cổng Internet trên đầu thu HD được dùng làm gì | 12:00:00 AM | 11:59:59 PM
-cuối tuần này kênh nào tường thuật ngoại hạng anh | 12:00:00 AM | 11:59:59 PM
-Cuối tuần này VTVCab có trận bóng nào hay | 12:00:00 AM | 11:59:59 PM
-Đầu AVG thu được các chương trình phát theo công nghệ DVB-T không | 12:00:00 AM | 11:59:59 PM
-Đầu thu HD thì có mã pin như các model trước không | 12:00:00 AM | 11:59:59 PM
-Đầu thu vệ tinh VTC HD chạy rất nóng | 12:00:00 AM | 11:59:59 PM
 discovery 8 giờ tối chiếu gì | 08:00:00 PM | 08:00:00 PM
 dự báo thời tiết hôm nay | 12:00:00 AM | 11:59:59 PM
 dự báo thời tiết hôm nay lúc mấy giờ | 12:00:00 AM | 11:59:59 PM
 dự báo thời tiết hôm nay phát lúc mấy giờ | 12:00:00 AM | 11:59:59 PM
-hai mươi giờ tối nay có phim gì | 01:00:00 AM | 08:00:00 PM
-hbo sắp chiếu phim gì | 12:00:00 AM | 11:59:59 PM
 hôm nay chiếu chương trình gì | 12:00:00 AM | 11:59:59 PM
 hôm nay chiếu chương trình gì hay không | 12:00:00 AM | 11:59:59 PM
 hôm nay chiếu chương trình gì không | 12:00:00 AM | 11:59:59 PM
@@ -121,7 +107,6 @@ hôm nay trên kênh VTV3 chiếu phim gì | 12:00:00 AM | 11:59:59 PM
 hôm nay trên VTV3 chiếu chương trình gì | 12:00:00 AM | 11:59:59 PM
 hôm nay trên VTV3 chiếu phim gì | 12:00:00 AM | 11:59:59 PM
 kênh hbo chiếu phim gì vào 9h tối nay | 09:00:00 PM | 09:00:00 PM
-Lắp đặp đầu thu HD có khó khăn gì | 12:00:00 AM | 11:59:59 PM
 Lịch chiếu của kênh vtv3 hôm nay | 12:00:00 AM | 11:59:59 PM
 lịch chiếu tất cả chương trình kênh K+ hôm nay là gì | 12:00:00 AM | 11:59:59 PM
 lịch chiếu tất cả chương trình kênh SCTVHD hôm nay là gì | 12:00:00 AM | 11:59:59 PM
@@ -129,12 +114,7 @@ lịch chiếu tất cả chương trình kênh sports hôm nay là gì | 12:00:
 lịch chiếu tất cả chương trình kênh VTC1 hôm nay là gì | 12:00:00 AM | 11:59:59 PM
 lịch chiếu tất cả chương trình kênh VTC hôm nay là gì | 12:00:00 AM | 11:59:59 PM
 Lịch phát sóng của kênh vtv3 hôm nay | 12:00:00 AM | 11:59:59 PM
-lịch thi đấu giải ngoại hạng anh cuối tuần này | 12:00:00 AM | 11:59:59 PM
-man u gặp man city tường thuật lúc mấy giờ tối nay | 01:00:00 AM | 08:00:00 PM
-Một số lỗi thông thường và cách khắc phục đầu thu D901 | 12:00:00 AM | 11:59:59 PM
-Một số lỗi thông thường và cách khắc phục đầu thu E901 | 12:00:00 AM | 11:59:59 PM
-Một số lỗi thông thường và cách khắc phục đầu thu VTC F901 | 12:00:00 AM | 11:59:59 PM
-MyTV có thu cước qua hệ thống thanh toán điện tử hay không | 12:00:00 AM | 11:59:59 PM
+man u gặp man city tường thuật tối nay lúc mấy giờ  | 06:00:00 PM | 11:00:00 PM
 Ngày 23/9 phim bão qua làng chiếu đến tập bao nhiêu rồi | 12:00:00 AM | 11:59:59 PM
 ngày mai chiếu chương trình gì | 12:00:00 AM | 11:59:59 PM
 ngày mai chiếu chương trình gì hay không | 12:00:00 AM | 11:59:59 PM
@@ -154,7 +134,7 @@ ngày mai trên kênh VTV3 chiếu chương trình gì | 12:00:00 AM | 11:59:59 
 ngày mai trên kênh VTV3 chiếu phim gì | 12:00:00 AM | 11:59:59 PM
 ngày mai trên VTV3 chiếu chương trình gì | 12:00:00 AM | 11:59:59 PM
 ngày mai trên VTV3 chiếu phim gì | 12:00:00 AM | 11:59:59 PM
-ngoại hạng anh cuối tuần này có trận nào chú ý | 12:00:00 AM | 11:59:59 PM
+#ngoại hạng anh cuối tuần này có trận nào chú ý | 12:00:00 AM | 11:59:59 PM
 nội dung chuyện đêm muộn là về cái gì | 09:00:00 PM | 11:59:00 PM
 nội dung chuyện đêm muộn nói về cái gì | 09:00:00 PM | 11:59:00 PM
 nội dung chuyện đêm muộn thường nói về cái gì | 09:00:00 PM | 11:59:00 PM
@@ -163,34 +143,8 @@ phim 8h tối trên vtv3 là phim gì | 08:00:00 PM | 08:00:00 PM
 Phim bão qua làng chỉ phát sóng vào thứ 6 và thứ 7 hàng tuần đúng không | 12:00:00 AM | 11:59:59 PM
 phim cinemax hôm nay | 12:00:00 AM | 11:59:59 PM
 phim gì chiếu hôm nay | 12:00:00 AM | 11:59:59 PM
-phim gì chiếu hôm nay thế | 12:00:00 AM | 11:59:59 PM
-phim gì chiếu lúc 9 giờ | 09:00:00 AM | 09:59:00 AM
 phim gì chiếu lúc 9 giờ 30 | 09:30:00 AM | 09:30:00 AM
 phim gì chiếu lúc 9 giờ 30 hôm nay | 09:30:00 AM | 09:30:00 AM
-phim gì chiếu lúc 9 giờ 30 hôm nay thế | 09:30:00 AM | 09:30:00 AM
-phim gì chiếu lúc 9 giờ 30 hôm nay trên VTV3 | 09:30:00 AM | 09:30:00 AM
-phim gì chiếu lúc 9 giờ 30 phút | 09:30:00 AM | 09:30:00 AM
-phim gì chiếu lúc 9 giờ 30 phút thế | 09:30:00 AM | 09:30:00 AM
-phim gì chiếu lúc 9 giờ 30 phút trên VTV3 | 09:30:00 AM | 09:30:00 AM
-phim gì chiếu lúc 9 giờ 30 sáng mai | 09:30:00 AM | 09:30:00 AM
-phim gì chiếu lúc 9 giờ 30 sáng mai thế | 09:30:00 AM | 09:30:00 AM
-phim gì chiếu lúc 9 giờ 30 sáng mai trên VTV3 | 09:30:00 AM | 09:30:00 AM
-phim gì chiếu lúc 9 giờ 30 thế | 09:30:00 AM | 09:30:00 AM
-phim gì chiếu lúc 9 giờ 30 tối mai | 09:30:00 AM | 09:30:00 AM
-phim gì chiếu lúc 9 giờ 30 tối mai thế | 09:30:00 AM | 09:30:00 AM
-phim gì chiếu lúc 9 giờ 30 tối mai trên VTV3 | 09:30:00 AM | 09:30:00 AM
-phim gì chiếu lúc 9 giờ 30 trên VTV3 | 09:30:00 AM | 09:30:00 AM
-phim gì chiếu lúc 9 giờ sáng mai | 09:00:00 AM | 09:00:00 AM
-phim gì chiếu lúc 9 giờ sáng mai thế | 09:00:00 AM | 09:00:00 AM
-phim gì chiếu lúc 9 giờ sáng mai trên VTV3 | 09:00:00 AM | 09:00:00 AM
-phim gì chiếu lúc 9 giờ sáng nay | 09:00:00 AM | 09:00:00 AM
-phim gì chiếu lúc 9 giờ sáng nay thế | 09:00:00 AM | 09:00:00 AM
-phim gì chiếu lúc 9 giờ sáng nay trên VTV3 | 09:00:00 AM | 09:00:00 AM
-phim gì chiếu lúc 9 giờ thế | 09:00:00 AM | 09:59:00 AM
-phim gì chiếu lúc 9 giờ tối mai | 09:00:00 PM | 09:00:00 PM
-phim gì chiếu lúc 9 giờ tối mai thế | 09:00:00 PM | 09:00:00 PM
-phim gì chiếu lúc 9 giờ tối mai trên VTV3 | 09:00:00 PM | 09:00:00 PM
-phim gì chiếu lúc 9 giờ tối nay | 09:00:00 PM | 09:00:00 PM
 phim gì chiếu lúc 9 giờ tối nay thế | 09:00:00 PM | 09:00:00 PM
 phim gì chiếu lúc 9 giờ tối nay trên VTV3 | 09:00:00 PM | 09:00:00 PM
 phim gì chiếu ngày mai | 12:00:00 AM | 11:59:59 PM
@@ -254,9 +208,7 @@ sáng nay có phim son môi hồng không | 06:00:00 AM | 12:00:00 PM
 sáng nay có thời sự không | 06:00:00 AM | 12:00:00 PM
 sáng nay trên kênh VTV3 chiếu chương trình gì | 06:00:00 AM | 12:00:00 PM
 sáng nay trên kênh VTV3 chiếu phim gì | 06:00:00 AM | 12:00:00 PM
-sáng nay trên VTV3 chiếu chương trình gì | 06:00:00 AM | 12:00:00 PM
 sáng nay trên VTV3 chiếu phim gì | 06:00:00 AM | 12:00:00 PM
-Sử dụng đầu thu vệ tinh của VTC để dò thêm các chương trình khác | 12:00:00 AM | 11:59:59 PM
 thể thao đêm mai có trận bóng nao hay không | 09:00:00 PM | 11:59:00 PM
 tin tức lúc 12 giờ tối | 12:00:00 PM | 12:00:00 PM
 tối mai chiếu chương trình gì | 06:00:00 PM | 11:00:00 PM
@@ -304,9 +256,7 @@ tối nay mu đá | 06:00:00 PM | 11:00:00 PM
 tối nay trên kênh VTV3 chiếu chương trình gì | 06:00:00 PM | 11:00:00 PM
 tối nay trên kênh VTV3 chiếu phim gì | 06:00:00 PM | 11:00:00 PM
 tối nay trên VTV3 chiếu chương trình gì | 06:00:00 PM | 11:00:00 PM
-tối nay trên VTV3 chiếu phim gì | 06:00:00 PM | 11:00:00 PM
 trận nào hay ở giải ngoại hạng anh tối nay | 06:00:00 PM | 11:00:00 PM
-Trong thời gian tới giá đầu thu có giảm không | 12:00:00 AM | 11:59:59 PM
 trưa mai chiếu chương trình gì | 12:00:00 PM | 12:00:00 PM
 trưa mai chiếu chương trình gì hay không | 12:00:00 PM | 12:00:00 PM
 trưa mai chiếu chương trình gì không | 12:00:00 PM | 12:00:00 PM
@@ -346,9 +296,7 @@ trưa nay trên VTV3 chiếu phim gì | 12:00:00 PM | 12:00:00 PM
 vtv1 12 giờ trưa chiếu gì | 12:00:00 PM | 12:00:00 PM
 vtv1 12 giờ trưa có gì | 12:00:00 PM | 12:00:00 PM
 vtv3 đêm mai có gì | 09:00:00 PM | 11:59:00 PM
-vtv3 tám giờ tối có chương trình gì | 08:00:00 PM | 8:00:00 PM
+#vtv3 tám giờ tối có chương trình gì | 08:00:00 PM | 8:00:00 PM
 VTVcab 19 chiếu phim gì vào tối nay | 06:00:00 PM | 11:00:00 PM
-VTVcab 19  có phim gì vào cuối tuần | 12:00:00 AM | 11:59:59 PM
+#VTVcab 19  có phim gì vào cuối tuần | 12:00:00 AM | 11:59:59 PM
 VTVcab 19 hôm nay có phim gì hay | 12:00:00 AM | 11:59:59 PM
-xem lại chương trình "Tuổi học đường" phát sóng vào 17h15 ngày 13/9/2014 ở đâu | 08:00:00 PM | 02:00:00 PM
-xem lại chương trình "Tuổi học đường" phát sóng vào 17h15 ngày 13/9/2014 vào thời gian nào | 08:00:00 PM | 02:00:00 PM
