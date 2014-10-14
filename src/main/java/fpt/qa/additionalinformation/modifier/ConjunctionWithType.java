@@ -78,7 +78,7 @@ public class ConjunctionWithType extends ConjunctionChecker{
         }
     }
 
-	public void addConjunctionWithType( String str, String type ) {
+	private void addConjunctionWithType( String str, String type ) {
 		addConjunction( "{" + str + "}" );
 		String normalizedConjunction = str.toLowerCase();
 		if( conjunctionType.containsKey( normalizedConjunction ) ){
@@ -88,7 +88,7 @@ public class ConjunctionWithType extends ConjunctionChecker{
 		}
 	}
 
-	public HashSet< String > getConjunctionType( String conjunction ) {
+	private HashSet< String > getConjunctionType( String conjunction ) {
 		return conjunctionType.get( conjunction.toLowerCase().substring( 1, conjunction.length() - 1 ) );
 	}
 
@@ -120,6 +120,35 @@ public class ConjunctionWithType extends ConjunctionChecker{
 
 		return relConjunctions;
 	}
+	
+	public List< Pair< String, String > > getOriginRelevantConjunctionsWithType( String domain, String text ) {
+		List< Pair< String, String > > relConjunctions = new ArrayList< Pair< String, String > >();
+
+		Set< String > originSets = new HashSet< String >();
+		
+		List< String > rawConj = getRelevantConjunctions( VnTokenizer.tokenize( text ) , true );
+		System.err.println( "[ConjWithType] [RawConj] " + rawConj );
+		
+		List< Pair< String, String > > rawConjWithType = new ArrayList< Pair< String, String > >();
+		for( String conj : rawConj ){
+			for( String type : getConjunctionType( conj ) ){
+				rawConjWithType.add( new Pair< String, String >( conj, type ) );
+			}
+		}
+					
+		for( Pair< String, String > conj : getLongerOverlappedResult( getBetterSurroundingContext( rawConjWithType, text ) ) ){
+			String origin = nameMapperEngine.getFinalName( domain, conj.second,
+					conj.first.substring( 1, conj.first.length() - 1 ) );
+			if( !originSets.contains( origin ) && origin != null ){
+				relConjunctions.add( new Pair< String, String >( origin, conj.second ) );
+				originSets.add( origin );
+			}
+		}
+		
+		System.err.println( "[ConjWithType] [Final Conj] " + relConjunctions );
+
+		return relConjunctions;
+	}
 
 	public List< Pair< ArrayList< String >, String > > getListRelevantConjunctionsWithType( String text ) {
 		List< Pair< String, String > > origins = getOriginRelevantConjunctionsWithType( text );
@@ -139,7 +168,7 @@ public class ConjunctionWithType extends ConjunctionChecker{
 //		return rawResult;
 //	}
 	
-	public List< Pair< String, String > > getLongerOverlappedResult( List< Pair< String, String > > conjunctionList ){
+	private List< Pair< String, String > > getLongerOverlappedResult( List< Pair< String, String > > conjunctionList ){
 		List< Pair< String, String > > newList = new ArrayList< Pair< String, String > >();
 		newList.addAll( conjunctionList );
 		
@@ -164,7 +193,7 @@ public class ConjunctionWithType extends ConjunctionChecker{
 		return newList;
 	}
 	
-	public List< Pair< String, String > > getBetterSurroundingContext( List< Pair< String, String > > conjunctionList, String sentence ){
+	private List< Pair< String, String > > getBetterSurroundingContext( List< Pair< String, String > > conjunctionList, String sentence ){
 		List< Pair< String, String > > newList = new ArrayList< Pair< String, String > >();
 		newList.addAll( conjunctionList );
 		

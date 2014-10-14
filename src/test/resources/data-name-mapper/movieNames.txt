@@ -677,7 +677,6 @@ mov_title	Đối Thủ
 mov_title	Puppet Master X: Axis Rising; Đồ Chơi Siêu Hạng
 mov_title	Frailty; Đồi Bại
 mov_title	Wuthering Heights; Đồi Gió Hú
-mov_title	Gallows Hill; Đồi Quỷ Ám
 mov_title	Ripd; Đồn Cảnh Sát Ma
 mov_title	As One; Đồng Đội
 mov_title	Đồng Hồ Cát
@@ -8948,7 +8947,6 @@ mov_title	Đối Thủ; Đoi Thu
 mov_title	Puppet Master X: Axis Rising;  Đo Choi Sieu Hang
 mov_title	Frailty;  Đoi Bai
 mov_title	Wuthering Heights;  Đoi Gio Hu
-mov_title	Gallows Hill;  Đoi Quy Ám
 mov_title	Ripd;  Đon Canh Sat Ma
 mov_title	As One;  Đong Đoi
 mov_title	Đồng Hồ Cát; Đong Ho Cat

@@ -55,10 +55,10 @@ public class NameMapperEngine{
 	
 	public String getFinalName(String domain, String type, String name){
 		String finalName;
-		if( !mappers.containsKey( domain ) && ( finalName = mappers.get( domain ).getFinalName(type, name) ) != "" ){
+		if( mappers.containsKey( domain ) && ( finalName = mappers.get( domain ).getFinalName(type, name) ) != "" ){
 			return finalName;
 		}
-		return name;
+		return null;
 	}
 	
 	public Set<String> getVariationNames(String type, String name) {

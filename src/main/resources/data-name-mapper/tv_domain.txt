@@ -4,7 +4,6 @@
 # Date : 2014/9/20 21:52:13
 
 chanel_title	Star Movie
-program_title	Phim
 program_title	NEWS
 program_title	Game show
 program_title	Bóng đá
@@ -612,7 +611,6 @@ program_title	ai là triệu phú
 
 
 chanel_title	Star Movie; 
-program_title	Phim; 
 program_title	NEWS; 
 program_title	Game show; 
 program_title	Bóng đá; Bong da
