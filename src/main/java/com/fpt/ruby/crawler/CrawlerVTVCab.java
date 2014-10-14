@@ -128,7 +128,7 @@ public class CrawlerVTVCab {
 	}
 
 	@SuppressWarnings("deprecation")
-	public List<TVProgram> getPrograms(Channel channel, Date date, int day)
+	public List<TVProgram> getPrograms(Channel channel, Date date)
 			throws Exception {
 		List<TVProgram> progs = new ArrayList<TVProgram>();
 		String url = makeUrl(channel, date);
@@ -151,7 +151,7 @@ public class CrawlerVTVCab {
 			String[] parts = strTime.split(":");
 			if (parts.length < 2) break;		
 			
-			Date broadcastDate = new Date(new Date().getTime() + day * ONE_DAY);
+			Date broadcastDate = date;
 			broadcastDate.setHours(Integer.parseInt(parts[0]));
 			broadcastDate.setMinutes(Integer.parseInt(parts[1]));
 
@@ -214,7 +214,7 @@ public class CrawlerVTVCab {
 					Date today = new Date();
 					for (int i =  0; i <= FUTUREDAY_CRAWL; ++i) {
 						Date crawlDate = new Date(today.getTime() + ONE_DAY * i);
-						List<TVProgram> progs = getPrograms(channel, crawlDate, i);
+						List<TVProgram> progs = getPrograms(channel, crawlDate);
 						progs = calculateEndTime(progs);
 						
 						for (TVProgram prog : progs) {
