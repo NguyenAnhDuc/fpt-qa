@@ -20,6 +20,7 @@ import com.fpt.ruby.nlp.TVModifiers;
 @Service
 public class TVProgramService {
 	private static long ONE_WEEK = 7 * 24 * 60 * 60 * 1000;
+	private static long ONE_DAY = 24 * 60 * 60 * 1000;
 	private MongoOperations mongoOperations;
 	public TVProgramService(MongoOperations mongoOperations){
 		this.mongoOperations = mongoOperations;
@@ -130,6 +131,7 @@ public class TVProgramService {
 	}
 	
 	public List< TVProgram > findByTitleInPeriod(String title, Date start, Date end){
+		System.out.println("Find By Title In Period: " + start.toGMTString() + " | " + end.toGMTString());
 		Query query = new Query(Criteria.where("title").regex("^.*" + title + ".*","i")
 				.and( "start_date" ).
 				gt( start ).and( "end_date" ).lt( end ));
@@ -199,8 +201,8 @@ public class TVProgramService {
 	}
 	
 	
-	public List<TVProgram> findProgramToShow(){
-		Date date = new Date();
+	public List<TVProgram> findProgramToShow(int day){
+		Date date = new Date(new Date().getTime() + day*ONE_DAY );
 		date.setHours(0);date.setMinutes(0);date.setSeconds(0);
 		Query query = new Query(Criteria.where("start_date").gt( date )).with( new Sort( Direction.ASC, "start_date" ) );
 		List<TVProgram> results = mongoOperations.find(query, TVProgram.class);

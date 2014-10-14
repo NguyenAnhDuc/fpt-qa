@@ -48,18 +48,18 @@ Movie:
  * giá vé xem phim tại 1 rạp
  
  TV:
- - Chương trình X phát sóng vào khung giờ nào							ANSWER: Không đúng	FIXED
+ - Chương trình X phát sóng vào khung giờ nào							
  - Tối nay có chương trình nào
- - chương trình X được phát trên kênh nào								NO ANSWER			FIXED
- - chương trình x được phát trên kênh y vào khung giờ nào				NO ANSWER			FIXED
+ - chương trình X được phát trên kênh nào							
+ - chương trình x được phát trên kênh y vào khung giờ nào				
  - kênh Y đang chiếu chương trình gì									
- - kênh Y sắp chiếu chương trình gì										Không bắt được từ sắp	
- - kênh Y chiếu chương trình gì											NO ANSWER			FIXED
- - kênh Y chiếu chương trình gì trong khoảng thời gian từ D1 đến D2		Có answer, nhưng chỉ có 1 answer --- bắt sai thời gian.
+ - kênh Y sắp chiếu chương trình gì										
+ - kênh Y chiếu chương trình gì											
+ - kênh Y chiếu chương trình gì trong khoảng thời gian từ D1 đến D2		
  - đang có chương trình gì			
- - chương trình X hết lúc mấy giờ										ANSWER: Không đúng
+ - chương trình X hết lúc mấy giờ										
  - lịch chiếu tất cả chương trình trên kênh Y hôm nay
- - mấy giờ có chương trình X trên kênh Y								ANSWER: Không đúng   FIXED
+ - mấy giờ có chương trình X trên kênh Y								
 
  
  
@@ -67,15 +67,13 @@ Movie:
  - đang có chương trình THỂ THAO nào
  - kênh nào đang có THỜI SỰ
  - kênh Y đang chiếu PHIM gì
- - PHIM 4 giờ đến 6 giờ trên kênh Y							SAI TIME nhưng bắt đúng cho câu phim từ 4 giờ đến 6 giờ trên kênh vtv1
- - hôm nay/9 giờ tối kênh Y có chiếu chương trình X không	SAI INTENT	
- - hôm nay có chương trình X không   						SAI INTENT
- - hôm nay chương trình X chiếu lúc mấy giờ					ANSWER: Không đúng		FIXED
- - chương trình x có trên kênh Y không						SAI INTENT	
- - chương trình x có trên kênh nào?							NO ANSWER				FIXED
+ - hôm nay/9 giờ tối kênh Y có chiếu chương trình X không	
+ - hôm nay có chương trình X không   						
+ - hôm nay chương trình X chiếu lúc mấy giờ					
+ - chương trình x có trên kênh Y không						
+ - chương trình x có trên kênh nào?							
  - tối nay kênh Y chiếu PHIM gì
  - PHIM gì chiếu trên kênh Y lúc 9 giờ tối nay				
- - chủ nhật tuần này chương trình X chiếu lúc mấy giờ		ANSWER: Không đúng
  - 9 giờ tối nay có PHIM gì
  - chiều nay kênh Y có gì									
  - có PHIM gì từ 4 giờ đến 6 giờ

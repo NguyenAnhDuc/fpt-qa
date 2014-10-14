@@ -136,7 +136,7 @@ public class AdminCotroller {
 			return "crawl";
 		}
 		model.addAttribute("status","success");
-		List<MovieTicket> tickets = movieTicketService.findTicketToShow();
+		List<MovieTicket> tickets = movieTicketService.findTicketToShow(0);
 		model.addAttribute("tickets",tickets);
 		return "showTicket";
 	}
@@ -193,8 +193,15 @@ public class AdminCotroller {
 	}
 	
 	@RequestMapping(value="admin-show-tickets", method = RequestMethod.GET)
-	public String showTickets(Model model){
-		List<MovieTicket> tickets = movieTicketService.findTicketToShow();
+	public String showTickets(@RequestParam("day") String  day, Model model){
+		int numday = 0 ;
+		try{
+			numday = Integer.parseInt(day);
+		}
+		catch (Exception ex){
+		}
+
+		List<MovieTicket> tickets = movieTicketService.findTicketToShow(numday);
 		model.addAttribute("tickets",tickets);
 		HashSet<String> movies = new HashSet<String>();
 		HashSet<String> cinemas = new HashSet<String>();
@@ -208,8 +215,14 @@ public class AdminCotroller {
 	}
 	
 	@RequestMapping(value="admin-show-tvprograms", method = RequestMethod.GET)
-	public String showTVPrograms(Model model){
-		List<TVProgram> tvPrograms = tvProgramService.findProgramToShow();
+	public String showTVPrograms(@RequestParam("day") String day, Model model){
+		int numday = 0 ;
+		try{
+			numday = Integer.parseInt(day);
+		}
+		catch (Exception ex){
+		}
+		List<TVProgram> tvPrograms = tvProgramService.findProgramToShow(numday);
 		model.addAttribute("tvPrograms",tvPrograms);
 		return "showTV";
 	}
@@ -239,6 +252,7 @@ public class AdminCotroller {
 		for (int  i=0;i<numLog;i++){
 			results.add(logs.get(i));
 		}
+		model.addAttribute("logs",logs);
 		return "showLog";
 	}
 
@@ -246,7 +260,7 @@ public class AdminCotroller {
 	public String deleteBot(@RequestParam("ticketId") String ticketId,Model model) {
 		MovieTicket movieTicket = movieTicketService.findById(ticketId);
 		movieTicketService.delete(movieTicket);
-		List<MovieTicket> tickets = movieTicketService.findTicketToShow();
+		List<MovieTicket> tickets = movieTicketService.findTicketToShow(0);
 		model.addAttribute("tickets",tickets);
 		return "showTicket";
 	}

@@ -28,6 +28,7 @@ import fpt.qa.mdnlib.util.string.DiacriticConverter;
 @Controller
 @RequestMapping("/")
 public class AppController {
+	
 	@Autowired PersonService personService;
 	@Autowired
 	MovieTicketService movieTicketService;
