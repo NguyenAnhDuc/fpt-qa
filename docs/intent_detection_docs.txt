@@ -1,21 +1,4 @@
-August 19th, 2014:
-The following question types will be used:
-yesno, where, when, what, how, how long, how far, which, selection, map, how much
-(phim, which): phim này thuộc thể loại nào
-(phim, yesno): phim đó có dành cho trẻ em không
-(rạp, where): rạp quốc gia nằm ở đâu
-(phim, when): rạp quốc gia chiếu phim này vào lúc nào
-(nội dung, what): nội dung tóm tắt của phim này là gì
-(phim, how): phim đó có hay không
-(phim, how long): phim này kéo dài bao lâu; thời lượng phim này bao lâu v
-(phim, which): phim này thuộc thể loại nào v
-(phim, selection): phim đó là phim hài hay phim hành động v
-(rạp, map): chỉ cho tôi đường đi đến rạp đó
-(rạp, how far): rạp quốc gia cách đây bao xa
-(rạp, how much): vé xem phim 2D tại rạp đó bao nhiêu
-
-
-Sep 4th, 2014:
+For the movie domain, users' intents can be classified into the following classes:
 	mov_titlemov_genre
 	mov_actor
 	mov_writer
@@ -43,3 +26,34 @@ Sep 4th, 2014:
 	ticket_price
 	
 	undefined
+	
+	
+The intent detection process was divided into 2 steps. In the first step, questions will be classified into one of the following classes:
+PRICE: giá vé
+DURation: film kéo dài bao lâu
+DIStance: khoảng cách bao xa
+NAMes: tên rạp chiếu film, tên film, etc.
+HUMan: diễn viên nào, đạo diễn nào, phim dành cho đối tượng nào
+DTIme: rạp mở cửa/đóng cửa lúc nào, phim bắt đầu chiếu lúc mấy giờ, suất chiếu gần nhất lúc mấy giờ
+DEScription: nội dung phim, phim có được không, có tốt khôngs, có ổn không, có ok không,
+POLar: phim này có dành cho trẻ em không
+ADDress: cho tôi biết địa chỉ của rạp quốc gia
+CALendar: lịch chiếu phim
+SELection: phim này là phim 2D hay 3D
+NUMber: mức giảm giá cho người có thẻ thành viên ở rạp platinum là bao nhiêu
+	người có thẻ thành viên ở rạp platinum được giảm giá bao nhiêu
+	rạp platinum giảm giá bao nhiêu cho thành viên
+A Maximum Entropy classifier was used. After a question has been successfully classified, we use rules to match the classified question to the corresponding intent.
+Refer to file MovieIntentDetection.java for a full list of rule. 
+
+
+
+
+For the domain TV, classes are intents. So we only use a classifier to detect intent. Again, a ME classifier was used. Classes are listed below:
+DATe: mấy giờ có chương trình ai là triệu phú
+TTL which refers to title: vtv1 tối nay có chương trình gì
+CHN which refers to channel: ai là triệu phú được phát trên kênh nào
+POL which refers to yes/no question: bóng đá hạng Anh có trên kênh VTV3 không, tối nay có the voice kids không
+DURation: chương trình người đương thời kéo dài bao lâu
+CALendar: lịch chiếu tất cả chương trình kênh sports hôm nay là gì
+UDF which refers to undefined: truyền hình ANTV có hay không
