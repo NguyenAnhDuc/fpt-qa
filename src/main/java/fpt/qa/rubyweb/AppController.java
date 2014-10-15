@@ -72,10 +72,10 @@ public class AppController {
 		if (domain.equals( "tv" )){
 //		if ( question.startsWith( "tv" ) ){
 			System.err.println( "[AppController] Domain TV" );
-			rubyAnswer = tam.getAnswer( key );
+			rubyAnswer = tam.getAnswer( key,logService );
 			// Neu khong tra loi duoc cau hoi co dau, thi chuyen cau hoi do ve cau hoi khong dau va xu ly
 			if (DiacriticConverter.hasDiacriticAccents(key) && rubyAnswer.getAnswer().contains(TVAnswerMapperImpl.UDF_ANS)){
-				rubyAnswer = tam.getAnswer(DiacriticConverter.removeDiacritics(key));
+				rubyAnswer = tam.getAnswer(DiacriticConverter.removeDiacritics(key),logService);
 			}
 		}
 		else{

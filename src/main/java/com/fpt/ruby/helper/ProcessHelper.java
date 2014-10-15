@@ -135,7 +135,7 @@ public class ProcessHelper{
 				System.out.println( "DONE Process" );
 			}else{
 				System.out.println( "Feature .." );
-				MovieTicket matchMovieTicket = new MovieTicket();
+				MovieTicket matchMovieTicket = conjunctionHelper.getMovieTicket( question );
 				Date today = new Date();
 				System.out.println( "afterdate: " + today );
 				TimeExtract timeExtract = NlpHelper.getTimeCondition( question );
@@ -147,6 +147,9 @@ public class ProcessHelper{
 				List< MovieTicket > movieTickets = movieTicketService.findMoviesMatchCondition( matchMovieTicket,
 						timeExtract.getBeforeDate(), timeExtract.getAfterDate());
 				System.out.println( "No of returned tickets: " + movieTickets.size() );
+				queryParamater.setMovieTitle(matchMovieTicket.getMovie());
+				queryParamater.setCinName(matchMovieTicket.getCinema());
+				rubyAnswer.setQueryParamater(queryParamater);
 				rubyAnswer.setAnswer( AnswerMapper.getFeaturedAnswer( question, movieTickets, movieFlyService ) );
 				rubyAnswer.setQuestionType( AnswerMapper.Featured_Question );
 				rubyAnswer.setMovieTicket( matchMovieTicket );

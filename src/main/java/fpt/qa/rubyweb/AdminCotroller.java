@@ -239,9 +239,6 @@ public class AdminCotroller {
 	public String showLogs(Model model, @RequestParam("num") String numString){
 		System.out.println("Admin Show Logs");
 		List<Log> logs = Lists.reverse(logService.findLogToShow());
-		for (Log log : logs){
-			System.out.println("Log question: " + log.getQuestion());
-		}
 		int numLog = 0;
 		try {
 			numLog = Integer.parseInt(numString);

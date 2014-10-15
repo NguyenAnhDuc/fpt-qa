@@ -4,10 +4,11 @@ import java.util.List;
 
 import com.fpt.ruby.model.RubyAnswer;
 import com.fpt.ruby.model.TVProgram;
+import com.fpt.ruby.service.LogService;
 
 public interface TVAnswerMapper{
 	void init();
-	RubyAnswer getAnswer ( String question );
+	RubyAnswer getAnswer ( String question, LogService logService );
 	
 	String getTime ( List< TVProgram > progs );
 	String getTitle ( List< TVProgram > progs );
