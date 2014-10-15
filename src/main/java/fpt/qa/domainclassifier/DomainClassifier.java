@@ -96,11 +96,11 @@ public class DomainClassifier{
 		}
 		for( File dataFile : dataDirectory.listFiles() ){
 			if( !dataFile.isDirectory() ){
-				if( dataFile.getName().endsWith( ".1" ) ){
+				if( dataFile.getName().endsWith( ".1.txt" ) ){
 					String fileName = dataFile.getName();
 					String domainName = fileName.substring( 0, fileName.lastIndexOf( "." ) );
 					loadDomainConjunction( domainName, "1", dataFile );
-				}else if( dataFile.getName().endsWith( ".2" ) ){
+				}else if( dataFile.getName().endsWith( ".2.txt" ) ){
 					String fileName = dataFile.getName();
 					String domainName = fileName.substring( 0, fileName.lastIndexOf( "." ) );
 					loadDomainConjunction( domainName, "2", dataFile );
