@@ -97,15 +97,16 @@ public class CrawlerMyTV {
 		System.out.println("Crawling from MYTV");
 		DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
 		List<Channel> channels = getChanel();
+		Date today = new Date();
+
 		for (Channel channel : channels) {
 			if (crawlChannels.contains(channel.getName().toUpperCase())) {
 				try {
 					System.out.println("Crawling from " + channel.getName());
 					for (int i = 0; i <= FUTUREDAY_CRAWL; i++) {
-						String date = df.format(new Date(new Date().getTime()
-								+ ONE_DAY * i));
-						List<TVProgram> tvPrograms = crawlChannel(channel,
-								date, i);
+						String date = df.format(new Date(today.getTime() + ONE_DAY * i));
+						List<TVProgram> tvPrograms = crawlChannel(channel, date);
+
 						tvPrograms = calculateEndTime(tvPrograms);
 						for (TVProgram tvProgram : tvPrograms) {
 							tvProgramService.save(tvProgram);
@@ -131,7 +132,7 @@ public class CrawlerMyTV {
 		return results;
 	}
 
-	public List<TVProgram> crawlChannel(Channel channel, String date, int day)
+	public List<TVProgram> crawlChannel(Channel channel, String date)
 			throws Exception {
 		List<TVProgram> tvPrograms = new ArrayList<TVProgram>();
 		String url = "http://www.mytv.com.vn/module/ajax/ajax_get_schedule.php?channelId="
@@ -146,26 +147,29 @@ public class CrawlerMyTV {
 			String programName = tmp.substring(5, tmp.length());
 			// System.out.println("Time: " + time + " | " + "Program Name: " +
 			// StringEscapeUtils.unescapeJava(programName));
+
+			DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+			Date channelDate = formatter.parse(date);
+
 			String[] times = time.split(":");
-			Date channelDate = new Date(new Date().getTime() + day * ONE_DAY);
 			channelDate.setHours(Integer.parseInt(times[0]));
 			channelDate.setMinutes(Integer.parseInt(times[1]));
-			
+
 			TVProgram tvProgram = new TVProgram();
 			tvProgram.setChannel(channel.getName());
 			tvProgram.setTitle(StringEscapeUtils.unescapeJava(programName));
 			tvProgram.setStart_date(channelDate);
-			
+
 			if (channel.getName().toLowerCase().equals("hbo")
 					|| channel.getName().toLowerCase().equals("star movies")
 					|| channel.getName().toLowerCase().equals("max")
 					|| channel.getName().toLowerCase().equals("vtvcab2"))
 				tvProgram.setType("phim");
-			
+
 			if (channel.getName().toLowerCase().equals("disney")
 					|| channel.getName().toLowerCase().equals("cartoon"))
 				tvProgram.setType("phim hoạt hình");
-			
+
 			if (channel.getName().toLowerCase().equals("discovery"))
 				tvProgram.setType("khám phá");
 
