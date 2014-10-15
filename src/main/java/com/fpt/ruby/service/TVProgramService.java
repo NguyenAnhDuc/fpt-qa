@@ -104,21 +104,27 @@ public class TVProgramService {
 	}
 	
 	public List<TVProgram> findByTitle(String title){
+		System.out.println("FIND BY TITLE");
 		Date today = new Date();
+		today.setHours(0);today.setMinutes(0);today.setSeconds(0);
+		Date oneWeekBefore = new Date(today.getTime() - ONE_WEEK);
 		Date oneWeekLater = new Date(today.getTime() + ONE_WEEK);
 		
-		return findByTitleInPeriod( title, today, oneWeekLater );
+		return findByTitleInPeriod( title, oneWeekBefore, oneWeekLater );
 	}
 	
 	public List< TVProgram > findByChannel(String channel){
 		Date today = new Date();
+		today.setHours(0);today.setMinutes(0);today.setSeconds(0);
+		Date oneWeekBefore = new Date(today.getTime() - ONE_WEEK);
 		Date oneWeekLater = new Date(today.getTime() + ONE_WEEK);
 		
-		return findInPeriodAtChannel( today, oneWeekLater, channel );
+		return findInPeriodAtChannel(oneWeekBefore,oneWeekLater, channel );
 	}
 	
 	public List< TVProgram > findByTitleAndChannel(String title, String channel){
 		Date today = new Date();
+		today.setHours(0);today.setMinutes(0);today.setSeconds(0);
 		Date oneWeekLater = new Date(today.getTime() + ONE_WEEK);
 		Date oneWeekBefore = new Date(today.getTime() - ONE_WEEK);
 		

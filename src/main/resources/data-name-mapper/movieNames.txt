@@ -8188,7 +8188,7 @@ mov_title	Donot Cry; Park Bom
 mov_title	một triệu kiểu chết miền viễn tây
 mov_title	Lupin III; Lupin the 3rd; Siêu Đạo Chích Lupin Đệ Tam
 mov_title	Hiệp Sĩ Mù
-mov_title	As Above, As Below; Hầm mộ ma quái
+mov_title	As Above, So Below; Hầm mộ ma quái
 mov_title	Legends of OZ: Dorothy's Return; Legends of OZ; Huyền Thoại Xứ Oz; Huyền Thoại Xứ Oz: Dorothy trở lại
 mov_title	Good People; Vận Đen
 mov_title	The Pirates; Hải Tặc

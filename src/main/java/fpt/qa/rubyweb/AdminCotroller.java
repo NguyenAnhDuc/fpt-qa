@@ -30,6 +30,7 @@ import com.fpt.ruby.service.CinemaService;
 import com.fpt.ruby.service.LogService;
 import com.fpt.ruby.service.TVProgramService;
 import com.fpt.ruby.service.mongo.MovieTicketService;
+import com.google.common.collect.Lists;
 import com.mongodb.BasicDBObject;
 
 @Controller
@@ -236,8 +237,11 @@ public class AdminCotroller {
 	
 	@RequestMapping(value="admin-show-logs", method = RequestMethod.GET)
 	public String showLogs(Model model, @RequestParam("num") String numString){
-		List<Log> logs = logService.findLogToShow();
-		List<Log> results = new ArrayList<Log>();
+		System.out.println("Admin Show Logs");
+		List<Log> logs = Lists.reverse(logService.findLogToShow());
+		for (Log log : logs){
+			System.out.println("Log question: " + log.getQuestion());
+		}
 		int numLog = 0;
 		try {
 			numLog = Integer.parseInt(numString);
@@ -249,10 +253,8 @@ public class AdminCotroller {
 			model.addAttribute("logs",logs);
 			return "showLog";
 		}
-		for (int  i=0;i<numLog;i++){
-			results.add(logs.get(i));
-		}
-		model.addAttribute("logs",logs);
+		
+		model.addAttribute("logs",logs.subList(0, numLog));
 		return "showLog";
 	}
 
