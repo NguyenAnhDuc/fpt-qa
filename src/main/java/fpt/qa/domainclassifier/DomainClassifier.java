@@ -36,10 +36,10 @@ public class DomainClassifier{
 	public DomainClassifier() {
 		domainDataType1 = new HashMap< String, ConjunctionChecker >();
 		domainDataType2 = new HashMap< String, ConjunctionChecker >();
-		
+
 		type1Weight = 2.0;
 		conjunctionWeight = 0.5;
-		
+
 		printDebug = true;
 	}
 
@@ -54,10 +54,10 @@ public class DomainClassifier{
 	public DomainClassifier( String resourcePath ) {
 		this();
 		loadDomainData( resourcePath + "/domains_classifier" );
-        VnTokenizer.loadSpecialChars( resourcePath + "/dicts/specialchars/special-chars.xml" );
+		VnTokenizer.loadSpecialChars( resourcePath + "/dicts/specialchars/special-chars.xml" );
 		VnTokenizer.loadRegexXMLFile( resourcePath + "/regexes/regular-expressions.xml" );
-		
-		conjunctionChecker = new ConjunctionWithType(resourcePath);
+
+		conjunctionChecker = new ConjunctionWithType( resourcePath );
 	}
 
 	private void loadDomainConjunction( String domainName, String type, File file ) {
@@ -110,32 +110,37 @@ public class DomainClassifier{
 	}
 
 	public String getDomain( String text ) {
-		if( isPrintDebug() ) System.err.print( "[Domain Classifier] " + text + " " );
-		
-		//Tokenize text
+		if( isPrintDebug() )
+			System.err.print( "[Domain Classifier] " + text + " " );
+
+		// Tokenize text
 		text = VnTokenizer.tokenize( text );
-		
+
 		Map< String, Double > type1Score = computeScore( text, "1" );
 		Map< String, Double > type2Score = computeScore( text, "2" );
 		Map< String, Double > conjunctionScore = computeScore( text, "conjunction" );
 		Map< String, Double > finalScore = computeFinalScore( type1Score, type2Score, conjunctionScore );
 
 		for( String domain : finalScore.keySet() ){
-			if( isPrintDebug() ) System.err.print( " {" + domain + ", " + finalScore.get( domain ) + "} " );
+			if( isPrintDebug() )
+				System.err.print( " {" + domain + ", " + finalScore.get( domain ) + "} " );
 		}
 
-		if( isPrintDebug() ) System.err.println();
-		if( isPrintDebug() ) System.err.flush();
+		if( isPrintDebug() )
+			System.err.println();
+		if( isPrintDebug() )
+			System.err.flush();
 		return getHighestScore( finalScore ).first;
 	}
 
 	private Map< String, Double > computeScore( String text, String type ) {
 		Map< String, Double > score = new HashMap< String, Double >();
-		
+
 		if( type.equalsIgnoreCase( "conjunction" ) ){
 			for( String domain : domainDataType1.keySet() ){
-				double s = conjunctionChecker.getOriginRelevantConjunctionsWithType(domain, text).size();
-				System.out.println( "[Conjunction with Domain " + domain + "]" + conjunctionChecker.getOriginRelevantConjunctionsWithType(domain, text) );
+				double s = conjunctionChecker.getOriginRelevantConjunctionsWithType( domain, text ).size();
+				System.out.println( "[Conjunction with Domain " + domain + "]"
+						+ conjunctionChecker.getOriginRelevantConjunctionsWithType( domain, text ) );
 				score.put( domain, s );
 			}
 			return score;
@@ -155,7 +160,8 @@ public class DomainClassifier{
 		return score;
 	}
 
-	private Map< String, Double > computeFinalScore( Map< String, Double > score1, Map< String, Double > score2, Map< String, Double > conjunctionScore ) {
+	private Map< String, Double > computeFinalScore( Map< String, Double > score1, Map< String, Double > score2,
+			Map< String, Double > conjunctionScore ) {
 		Map< String, Double > finalScore = new HashMap< String, Double >();
 
 		Set< String > domains = new HashSet< String >( score1.keySet() );
@@ -199,35 +205,38 @@ public class DomainClassifier{
 		DomainClassifier testClassifier = new DomainClassifier( "/home/dungx/git/rubyweb/src/main/resources" );
 		testClassifier.setPrintDebug( true );
 
-//		try{
-//			
-//			int count = 0;
-//			
-//			File movieFile = new File( "500_movie_2.txt" );
-//			BufferedReader reader = new BufferedReader( new FileReader( movieFile ) );
-//			String line = null;
-//			while( ( line = reader.readLine() ) != null ){
-//				if( !testClassifier.getDomain( line ).equalsIgnoreCase( "movie" ) ){
-//					System.out.println( "True:Movie Predict:" + testClassifier.getDomain( line ) + " " + line );
-//					count++;
-//				}
-//			}
-//			
-//			File tvFile = new File( "tv_quest.txt" );
-//			reader = new BufferedReader( new FileReader( tvFile ) );
-//			line = null;
-//			while( ( line = reader.readLine() ) != null ){
-//				if( !testClassifier.getDomain( line ).equalsIgnoreCase( "tv" ) ){
-//					System.out.println( "True:tv Predict:" + testClassifier.getDomain( line ) + " " + line );
-//					count++;
-//				}
-//			}
-//			
-//			System.out.println( "Total Errors: " + count );
-//		}catch ( IOException e ){
-//			e.printStackTrace();
-//		}
-		
+		// try{
+		//
+		// int count = 0;
+		//
+		// File movieFile = new File( "500_movie_2.txt" );
+		// BufferedReader reader = new BufferedReader( new FileReader( movieFile
+		// ) );
+		// String line = null;
+		// while( ( line = reader.readLine() ) != null ){
+		// if( !testClassifier.getDomain( line ).equalsIgnoreCase( "movie" ) ){
+		// System.out.println( "True:Movie Predict:" + testClassifier.getDomain(
+		// line ) + " " + line );
+		// count++;
+		// }
+		// }
+		//
+		// File tvFile = new File( "tv_quest.txt" );
+		// reader = new BufferedReader( new FileReader( tvFile ) );
+		// line = null;
+		// while( ( line = reader.readLine() ) != null ){
+		// if( !testClassifier.getDomain( line ).equalsIgnoreCase( "tv" ) ){
+		// System.out.println( "True:tv Predict:" + testClassifier.getDomain(
+		// line ) + " " + line );
+		// count++;
+		// }
+		// }
+		//
+		// System.out.println( "Total Errors: " + count );
+		// }catch ( IOException e ){
+		// e.printStackTrace();
+		// }
+
 		System.out.println( testClassifier.getDomain( "Rạp quốc gia chiếu phim gì hôm nay" ) );
 
 	}
