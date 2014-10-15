@@ -1,13 +1,18 @@
 package fpt.qa.rubyweb;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.HashSet;
 import java.util.List;
+import java.util.stream.Stream;
 
 import javax.annotation.PostConstruct;
 
+import org.codehaus.jackson.map.ObjectMapper;
+import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import sun.util.logging.resources.logging;
+
 
 import com.fpt.ruby.crawler.CrawlPhimChieuRap;
 import com.fpt.ruby.crawler.CrawlerMyTV;
@@ -26,6 +31,7 @@ import com.fpt.ruby.model.Cinema;
 import com.fpt.ruby.model.Log;
 import com.fpt.ruby.model.MovieTicket;
 import com.fpt.ruby.model.TVProgram;
+import com.fpt.ruby.model.chart.DataChart;
 import com.fpt.ruby.service.CinemaService;
 import com.fpt.ruby.service.LogService;
 import com.fpt.ruby.service.TVProgramService;
@@ -264,6 +270,49 @@ public class AdminCotroller {
 		model.addAttribute("tickets",tickets);
 		return "showTicket";
 	}
-
-
+	@RequestMapping(value = "/testChartData", method = RequestMethod.POST)
+	public List<String> getData() {
+		List<String> data = new ArrayList<String>();
+		data.add("Jan");data.add("Feb");
+		return data;
+	}
+	
+	@RequestMapping(value = "/testChart", method = RequestMethod.GET)
+	public String testChart(Model model) {
+		int ONE_DAY = 24 * 3600 * 1000;
+		//cal.set(Calendar.DAY_OF_MONTH,0);cal.set(Calendar.HOUR, 0);cal.set(Calendar.MINUTE, 0);cal.set(Calendar.SECOND, 0);
+		Date today = new Date();
+		today.setHours(0);today.setMinutes(0);today.setSeconds(0);
+		Date firstdayOfMonth = new Date(today.getTime() - (today.getDate() -1) * ONE_DAY);
+		List<String> months = new ArrayList<String>();
+		List<DataChart> series = new ArrayList<DataChart>();
+		DataChart dataChart = new DataChart();
+		dataChart.name = "All";
+		dataChart.data = new ArrayList<Integer>();
+		List<Log> logs = logService.findLogGtTime(firstdayOfMonth);
+		for (int i = firstdayOfMonth.getDate(); i <= today.getDate(); i++ ){
+			months.add(""+i);
+			Date before = new Date(firstdayOfMonth.getTime() + i*ONE_DAY);
+			Date after = new Date(firstdayOfMonth.getTime() + (i-1)*ONE_DAY);
+			Integer numData = (int) logs.stream().filter(l -> ( l.getDate().after(after) &&  l.getDate().before(before))).count();
+			dataChart.data.add(numData);
+		}
+		series.add(dataChart);
+		
+		
+		System.out.println();
+		ObjectMapper mapper = new ObjectMapper();
+		String json = "", jsonS = "";
+		
+		
+		try {
+			json = mapper.writeValueAsString(months);
+			jsonS = mapper.writeValueAsString(series);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		model.addAttribute("data", json);
+		model.addAttribute("jsonS", jsonS);
+		return "testChart";
+	}
 }

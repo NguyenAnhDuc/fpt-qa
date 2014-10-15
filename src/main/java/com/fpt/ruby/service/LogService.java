@@ -1,5 +1,6 @@
 package com.fpt.ruby.service;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.context.ApplicationContext;
@@ -30,6 +31,11 @@ public class LogService {
 	
 	public List<Log> findByTitle(String title){
 		Query query = new Query(Criteria.where("title").regex("^" + title + "$","i"));
+		return mongoOperations.find(query, Log.class);
+	}
+	
+	public List<Log> findLogGtTime(Date date){
+		Query query = new Query(Criteria.where("date").gt(date));
 		return mongoOperations.find(query, Log.class);
 	}
 	
