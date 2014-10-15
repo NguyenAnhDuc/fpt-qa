@@ -1,5 +1,7 @@
 package fpt.qa.rubyweb;
 
+import java.util.Date;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,7 +42,7 @@ public class AppController {
 	LogService logService;
 	static TVAnswerMapper tam = new TVAnswerMapperImpl();
 	static DomainClassifier classifier;
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	private static final Logger logger = LoggerFactory.getLogger(AppController.class);
 	
 	static {
 		tam.init();
@@ -62,6 +64,7 @@ public class AppController {
 		String key = NlpHelper.normalizeQuestion(question);
 		RubyAnswer rubyAnswer = new RubyAnswer();
 		String domain = classifier.getDomain( key );
+		logger.info("Current time: " + new Date());
 		
 		//rubyAnswer.setInCache(this.questionStructureService.isInCache(key));
 		//rubyAnswer.setQuestion(question);
@@ -83,6 +86,7 @@ public class AppController {
 			rubyAnswer =  ProcessHelper.getAnswer(key,movieFlyService,movieTicketService,cinemaService,logService);
 		}
 		rubyAnswer.setDomain(domain);
+		logger.info("Returned answer:\n" + rubyAnswer.getAnswer());
 		return rubyAnswer;
 		//return app.getAnswer(question);
 	}
