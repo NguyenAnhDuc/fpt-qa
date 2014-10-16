@@ -158,19 +158,6 @@ public class ProcessHelper{
 			System.out.println( "Exception! " + ex.getMessage() );
 			ex.printStackTrace();
 		}
-		// Log
-		Log log = new Log();
-		log.setQuestion( question );
-		log.setIntent( rubyAnswer.getIntent() );
-		log.setAnswer( rubyAnswer.getAnswer() );
-		log.setDate( new Date() );
-		QueryParamater queryParamater = new QueryParamater();
-		queryParamater.setBeginTime( rubyAnswer.getBeginTime() );
-		queryParamater.setEndTime( rubyAnswer.getEndTime() );
-		queryParamater.setMovieTitle( rubyAnswer.getMovieTitle() );
-		queryParamater.setMovieTicket( rubyAnswer.getMovieTicket() );
-		log.setQueryParamater( queryParamater );
-		logService.save( log );
 		
 		if( !rubyAnswer.getAnswer().contains( "Xin lỗi, tôi không trả lời được câu hỏi này" ) ){
 			rubyAnswer.setSuccessful( true );

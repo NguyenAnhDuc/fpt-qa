@@ -1,5 +1,7 @@
 package fpt.qa.rubyweb;
 
+import java.util.Date;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +14,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.fpt.ruby.helper.ProcessHelper;
 import com.fpt.ruby.helper.RedisHelper;
+import com.fpt.ruby.model.Log;
+import com.fpt.ruby.model.QueryParamater;
 import com.fpt.ruby.model.RubyAnswer;
 import com.fpt.ruby.nlp.NlpHelper;
 import com.fpt.ruby.nlp.TVAnswerMapper;
@@ -83,6 +87,21 @@ public class AppController {
 			rubyAnswer =  ProcessHelper.getAnswer(key,movieFlyService,movieTicketService,cinemaService,logService);
 		}
 		rubyAnswer.setDomain(domain);
+		// Log
+		Log log = new Log();
+		log.setQuestion( question );
+		log.setDomain( rubyAnswer.getDomain() );
+		log.setIntent( rubyAnswer.getIntent() );
+		log.setAnswer( rubyAnswer.getAnswer() );
+		log.setDate( new Date() );
+		QueryParamater queryParamater = new QueryParamater();
+		queryParamater.setBeginTime( rubyAnswer.getBeginTime() );
+		queryParamater.setEndTime( rubyAnswer.getEndTime() );
+		queryParamater.setMovieTitle( rubyAnswer.getMovieTitle() );
+		queryParamater.setMovieTicket( rubyAnswer.getMovieTicket() );
+		log.setQueryParamater( rubyAnswer.getQueryParamater() );
+		logService.save( log );
+				
 		return rubyAnswer;
 		//return app.getAnswer(question);
 	}

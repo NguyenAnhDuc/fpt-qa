@@ -1,10 +1,5 @@
 package com.fpt.ruby.nlp;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -107,76 +102,53 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		// Log
 		System.out.println("[TVANSWERMAPPERIMPL]: WRITE LOG" );
 		Log log = new Log();
-		log.setQuestion( question );
-		log.setIntent( rubyAnswer.getIntent() );
-		log.setDate( new Date() );
 		queryParamater = new QueryParamater();
 		queryParamater.setBeginTime( rubyAnswer.getBeginTime() );
 		queryParamater.setEndTime( rubyAnswer.getEndTime() );
 		queryParamater.setTvProTitle(mod.getProg_title());
-		queryParamater.setTvChannel(mod.getChannel());;
-		log.setQueryParamater(queryParamater);
+		queryParamater.setTvChannel(mod.getChannel());
+		rubyAnswer.setQueryParamater(queryParamater);
 		if (mod.getChannel() == null && mod.getProg_title() == null){
 			System.err.println("[TVAnserMapper]: Channel null and program null");
 			if (mod.getStart() == null){
 				rubyAnswer.setAnswer( UDF_ANS  );
-				log.setAnswer(rubyAnswer.getAnswer());
-				logService.save(log);
 				return rubyAnswer;
 			}
 			
 			if (mod.getStart().equals( mod.getEnd() )){
 				rubyAnswer.setAnswer( getChannelAndProgram( progs )  );
-				log.setAnswer(rubyAnswer.getAnswer());
-				logService.save(log);
 				return rubyAnswer;
 			}
 			rubyAnswer.setAnswer( getChannelProgAndTime( progs )  );
-			log.setAnswer(rubyAnswer.getAnswer());
-			logService.save(log);
 			return rubyAnswer;
 		}
 		if (mod.getChannel() == null){
 			System.err.println("[TVAnserMapper]: Channel null");
 			if ( intent.equals( IntentConstants.TV_POL ) && progs.isEmpty()){
 				rubyAnswer.setAnswer( "Không!"  );
-				log.setAnswer(rubyAnswer.getAnswer());
-				logService.save(log);
 				return rubyAnswer;
 			}
 			if (intent.equals( IntentConstants.TV_DAT )){
 				rubyAnswer.setAnswer( getChannelAndTime( progs )  );
-				log.setAnswer(rubyAnswer.getAnswer());
-				logService.save(log);
 				return rubyAnswer;
 			}
 			if (intent.equals( IntentConstants.TV_CHN )){
 				rubyAnswer.setAnswer( getChannel( progs )  );
-				log.setAnswer(rubyAnswer.getAnswer());
-				logService.save(log);
 				return rubyAnswer;
 			}
 			if (mod.getStart() == null){
 				rubyAnswer.setAnswer( DEF_ANS  );
-				log.setAnswer(rubyAnswer.getAnswer());
-				logService.save(log);
 				return rubyAnswer;
 			}
 			if (mod.getStart().equals( mod.getEnd() )){
 				if (intent.equals( IntentConstants.TV_CHN )){
 					rubyAnswer.setAnswer( getChannel( progs )  );
-					log.setAnswer(rubyAnswer.getAnswer());
-					logService.save(log);
 					return rubyAnswer;
 				}
 				rubyAnswer.setAnswer( getChannelAndProgram( progs )  );
-				log.setAnswer(rubyAnswer.getAnswer());
-				logService.save(log);
 				return rubyAnswer;
 			}
 			rubyAnswer.setAnswer( getChannelProgAndTime( progs )  );
-			log.setAnswer(rubyAnswer.getAnswer());
-			logService.save(log);
 			return rubyAnswer;
 		}
 		
@@ -184,70 +156,49 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 			System.err.println("[TVAnserMapper]: Program null");
 			if (mod.getStart() != null && mod.getStart().equals( mod.getEnd() )){
 				rubyAnswer.setAnswer( getTitle( progs )  );
-				logService.save(log);
 				return rubyAnswer;
 			}
 			rubyAnswer.setAnswer( getTitleAndTime( progs )  );
-			log.setAnswer(rubyAnswer.getAnswer());
-			logService.save(log);
 			return rubyAnswer;
 		}
 		if (intent.equals( IntentConstants.TV_DAT )){
 			if (progs.size() > 0){
 				rubyAnswer.setAnswer( getTime( progs )  );
-				log.setAnswer(rubyAnswer.getAnswer());
 				return rubyAnswer;
 			}
 			rubyAnswer.setAnswer(mod.getChannel() + " không chiếu " + mod.getProg_title());
-			log.setAnswer(rubyAnswer.getAnswer());
-			logService.save(log);
 			return rubyAnswer;
 		}
 		
 		if (intent.equals( IntentConstants.TV_POL )){
 			if (progs.size() > 0){
 				rubyAnswer.setAnswer( "Có"  );
-				log.setAnswer(rubyAnswer.getAnswer());
-				logService.save(log);
 				return rubyAnswer;
 			}
 			rubyAnswer.setAnswer(mod.getChannel() + " không chiếu " + mod.getProg_title());
-			log.setAnswer(rubyAnswer.getAnswer());
-			logService.save(log);
 			return rubyAnswer;
 		}
 		
 		if (mod.getStart() == null){
 			rubyAnswer.setAnswer( DEF_ANS  );
-			log.setAnswer(rubyAnswer.getAnswer());
-			logService.save(log);
 			return rubyAnswer;
 		}
 		
 		if (mod.getStart().equals( mod.getEnd() )){
 			if (progs.isEmpty()){
 				rubyAnswer.setAnswer( "Không có " + mod.getProg_title() + " nào trên kênh " + mod.getChannel() + " vào lúc đó!" );
-				log.setAnswer(rubyAnswer.getAnswer());
-				logService.save(log);
 				return rubyAnswer;
 			}
 			rubyAnswer.setAnswer( getTitle( progs )  );
-			log.setAnswer(rubyAnswer.getAnswer());
-			logService.save(log);
 			return rubyAnswer;
 		}
 		
 		if (progs.isEmpty()){
 			rubyAnswer.setAnswer( "Không có chương trình " + mod.getProg_title() +
 					" nào trên " + mod.getChannel() + " vào lúc đó" );
-			log.setAnswer(rubyAnswer.getAnswer());
-			logService.save(log);
 			return rubyAnswer;
 		}
-		log.setAnswer(rubyAnswer.getAnswer());
-		logService.save(log);
 		rubyAnswer.setAnswer( getTitleAndTime( progs )  );
-		logService.save( log );
 		return rubyAnswer;
 	}
 

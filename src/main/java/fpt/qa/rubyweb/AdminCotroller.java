@@ -1,37 +1,28 @@
 package fpt.qa.rubyweb;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Stream;
 
-import javax.annotation.PostConstruct;
-
 import org.codehaus.jackson.map.ObjectMapper;
-import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-
-
 import com.fpt.ruby.crawler.CrawlPhimChieuRap;
 import com.fpt.ruby.crawler.CrawlerMyTV;
 import com.fpt.ruby.crawler.moveek.MoveekCrawler;
 import com.fpt.ruby.model.Cinema;
+import com.fpt.ruby.model.DataChart;
 import com.fpt.ruby.model.Log;
 import com.fpt.ruby.model.MovieTicket;
 import com.fpt.ruby.model.TVProgram;
-import com.fpt.ruby.model.chart.DataChart;
 import com.fpt.ruby.service.CinemaService;
 import com.fpt.ruby.service.LogService;
 import com.fpt.ruby.service.TVProgramService;
@@ -276,7 +267,7 @@ public class AdminCotroller {
 		return data;
 	}
 	
-	@RequestMapping(value = "/testChart", method = RequestMethod.GET)
+	@RequestMapping(value = "/admin-analytic", method = RequestMethod.GET)
 	public String testChart(Model model) {
 		int ONE_DAY = 24 * 3600 * 1000;
 		//cal.set(Calendar.DAY_OF_MONTH,0);cal.set(Calendar.HOUR, 0);cal.set(Calendar.MINUTE, 0);cal.set(Calendar.SECOND, 0);
@@ -285,33 +276,37 @@ public class AdminCotroller {
 		Date firstdayOfMonth = new Date(today.getTime() - (today.getDate() -1) * ONE_DAY);
 		List<String> months = new ArrayList<String>();
 		List<DataChart> series = new ArrayList<DataChart>();
-		DataChart dataChart = new DataChart();
-		dataChart.name = "All";
-		dataChart.data = new ArrayList<Integer>();
+		DataChart dataAll = new DataChart();
+		dataAll.name = "All";
+		dataAll.data = new ArrayList<Integer>();
+		DataChart domainTV = new DataChart();
+		domainTV.name = "TV Domain";
+		domainTV.data = new ArrayList<Integer>();
+		DataChart domainMovie = new DataChart();
+		domainMovie.name = "Movie Domain";
+		domainMovie.data = new ArrayList<Integer>();
+		
 		List<Log> logs = logService.findLogGtTime(firstdayOfMonth);
 		for (int i = firstdayOfMonth.getDate(); i <= today.getDate(); i++ ){
 			months.add(""+i);
 			Date before = new Date(firstdayOfMonth.getTime() + i*ONE_DAY);
 			Date after = new Date(firstdayOfMonth.getTime() + (i-1)*ONE_DAY);
-			Integer numData = (int) logs.stream().filter(l -> ( l.getDate().after(after) &&  l.getDate().before(before))).count();
-			dataChart.data.add(numData);
+			Stream<Log> streamLog =  logs.stream().filter(l -> ( l.getDate().after(after) &&  l.getDate().before(before)));
+			domainTV.data.add((int)logs.stream().filter(l -> (l.getDomain() != null && l.getDomain().equals("tv") && l.getDate().after(after) &&  l.getDate().before(before))).count());
+			domainMovie.data.add((int)logs.stream().filter(l -> (l.getDomain() != null && l.getDomain().equals("movie") && l.getDate().after(after) &&  l.getDate().before(before))).count());
+			dataAll.data.add((int)logs.stream().filter(l -> (l.getDate().after(after) &&  l.getDate().before(before))).count());
 		}
-		series.add(dataChart);
-		
-		
-		System.out.println();
+		series.add(dataAll);series.add(domainTV);series.add(domainMovie);
 		ObjectMapper mapper = new ObjectMapper();
-		String json = "", jsonS = "";
-		
-		
+		String json = "", jsonAll = "", jsonTV = "", jsonMovie = "";
 		try {
 			json = mapper.writeValueAsString(months);
-			jsonS = mapper.writeValueAsString(series);
+			jsonAll = mapper.writeValueAsString(series);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		model.addAttribute("data", json);
-		model.addAttribute("jsonS", jsonS);
-		return "testChart";
+		model.addAttribute("jsonS", jsonAll);
+		return "admin-dashboard";
 	}
 }
