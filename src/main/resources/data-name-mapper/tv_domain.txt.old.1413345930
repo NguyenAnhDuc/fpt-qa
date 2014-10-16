@@ -59,13 +59,41 @@ chanel_title	ndtv2; dntv 2, truyền hình đồng nai, truyen hinh dong nai
 chanel_title	qtv1; qtv 1, truyền hình quảng ninh, truyen hinh quang ninh
 chanel_title	qtv2; qtv 2, truyền hình quảng ninh, truyen hinh quang ninh
 
+# START - CRAW FROM VTVCAB.VN , thucdx
+chanel_title	k+1; k+1 HD
+chanel_title	k+pm; k+pm HD
+chanel_title	starmovie; starmovies hd, starmovie hd
+chanel_title	vtvcab3; VTVcab 3 - Thể Thao TV, VTVcab3 - Thể Thao TV, VTVcab - Thể Thao
+chanel_title	vtvcab4; VTVcab 4 - Kênh 17, VTVcab4 - Kênh 17, VTVcab - Kênh 17	
+chanel_title	vtvcab5; VTVcab 5 - E Channel, VTVcab5 - E Channel, VTVcab- E Channel
+chanel_title	vtvcab6; VTVcab 6 - Hay TV, VTVcab6 - Hay TV, VTVcab - Hay TV
+chanel_title	vtvcab7; VTVcab 7 - D Drama, VTVcab7 - D Drama, VTVcab - D Drama 
+chanel_title	vtvcab8; VTVcab 8 - BiBi, VTVcab8 - BiBi, VTVcab - BiBi
+chanel_title	vtvcab15; VTVcab 15 - Invest TV, VTVcab15 - Invest TV, VTVcab - Invest TV
+chanel_title 	vtvcab17; VTVcab 17 - Yeah1 TV, VTVcab17 - Yeah1 TV, VTVcab - Yeah1 TV
+chanel_title	vtvcab19; VTVcab 19 - Kênh Phim, VTVcab19 - Kênh Phim, VTVcab - Kênh Phim
+chanel_title	k+ns; K+NS HD; K+NSHD
+chanel_title	vtvcab12; VTVcab 12 - Style TV HD, VTVcab12 - Style TV HD, VTVcab - Style TV HD,VTVcab 12 - Style TV, VTVcab12 - Style TV, VTVcab - Style TV
+chanel_title	vtvcab16; VTVcab 16 - Bóng đá TV, VTVcab16 - Bóng đá TV, VTVcab - Bóng đá TV, VTVcab 16 - Bóng đá TV HD, VTVcab16 - Bóng đá TV HD
+chanel_title	fox sports; Fox Sports HD, Fox Sports
+chanel_title	warner; Warner TV HD, warner tv
+chanel_title	gem; gem tv hd, gem tv
+chanel_title	axn; axn hd, axn
+chanel_title	screen red; screen red
+chanel_title	travel living; travel living
+chanel_title	animal planet; animal planet
+chanel_title	ngc
+chanel_title	discovery world; discovery world hd, discovery world
+
+# END OF CHANNEL CRAW FROM VTVCAB
+
 chanel_title	cinemax
 chanel_title	hbo
 chanel_title	star movies; starmovies
 chanel_title	espn
 chanel_title	star sports; starsports, star sport, starsport
-chanel_title	vtvcab1; VTVCab1 - Giải trí TV
-chanel_title	vtvcab2; VTVCab 2 - Phim Việt
+chanel_title	vtvcab1; VTVCab1 - Giải trí TV, VTVCab 1 - Giải trí TV 
+chanel_title	vtvcab2; VTVCab 2 - Phim Việt, VTVCab2 - Phim Việt 
 chanel_title	disney
 chanel_title	cartoon; Cartoon Network
 chanel_title	vitv

@@ -50,7 +50,6 @@ public class AppController {
 		tam.init();
 		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
 		classifier = new DomainClassifier( dir );
-		System.out.println("Init done!");
 	}
 	
 	/*
@@ -67,7 +66,7 @@ public class AppController {
 		String key = NlpHelper.normalizeQuestion(question);
 		RubyAnswer rubyAnswer = new RubyAnswer();
 		String domain = classifier.getDomain( key );
-		logger.info("Current time: " + new Date() + " | domain: " + domain);
+		logger.info("Current time: " + new Date());
 		
 		//rubyAnswer.setInCache(this.questionStructureService.isInCache(key));
 		//rubyAnswer.setQuestion(question);
@@ -89,6 +88,7 @@ public class AppController {
 			rubyAnswer =  ProcessHelper.getAnswer(key,movieFlyService,movieTicketService,cinemaService,logService);
 		}
 		rubyAnswer.setDomain(domain);
+<<<<<<< HEAD
 		// Log
 		Log log = new Log();
 		log.setQuestion( question );
@@ -104,7 +104,9 @@ public class AppController {
 		log.setQueryParamater( rubyAnswer.getQueryParamater() );
 		logService.save( log );
 				
+=======
 		logger.info("Returned answer:\n" + rubyAnswer.getAnswer());
+>>>>>>> 0bd1be586dca01a10d862ff293e550efcb620e57
 		return rubyAnswer;
 		//return app.getAnswer(question);
 	}

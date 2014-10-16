@@ -51,4 +51,9 @@ public class TVProgram {
 		this.end_date = end_date;
 	}
 	
+	@Override
+	public String toString() {
+		return String.format("id = %s; title = %s; type = %s; start_date = %s; end_date = %s; channel= %s", id, title, type, start_date, end_date, channel);
+	}
+	
 }
