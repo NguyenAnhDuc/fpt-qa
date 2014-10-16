@@ -2,6 +2,12 @@ package fpt.qa.rubyweb;
 
 import java.util.Date;
 
+import javax.servlet.http.HttpServletRequest;
+
+import net.sf.uadetector.ReadableUserAgent;
+import net.sf.uadetector.UserAgentStringParser;
+import net.sf.uadetector.service.UADetectorServiceFactory;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +38,7 @@ import fpt.qa.mdnlib.util.string.DiacriticConverter;
 @Controller
 @RequestMapping("/")
 public class AppController {
-	
+	@Autowired HttpServletRequest request;
 	@Autowired PersonService personService;
 	@Autowired
 	MovieTicketService movieTicketService;
@@ -45,6 +51,11 @@ public class AppController {
 	static TVAnswerMapper tam = new TVAnswerMapperImpl();
 	static DomainClassifier classifier;
 	private static final Logger logger = LoggerFactory.getLogger(AppController.class);
+	
+	//get user agent
+	private String getUserAgent() {
+		return request.getHeader("user-agent");
+	}
 	
 	static {
 		tam.init();
@@ -64,6 +75,11 @@ public class AppController {
 	@RequestMapping(value="/getAnswer", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
 	@ResponseBody
 	public RubyAnswer prototypeGetAnswer(@RequestParam("question") String question){
+		UserAgentStringParser parser = UADetectorServiceFactory.getResourceModuleParser();
+		ReadableUserAgent agent = parser.parse(request.getHeader("User-Agent"));
+		System.out.println("Operating system: " + agent.getOperatingSystem().getName());
+		System.out.println("Device category: " + agent.getDeviceCategory().getName() );
+		System.out.println("Family: " + agent.getFamily() );
 		String key = NlpHelper.normalizeQuestion(question);
 		RubyAnswer rubyAnswer = new RubyAnswer();
 		String domain = classifier.getDomain( key );
