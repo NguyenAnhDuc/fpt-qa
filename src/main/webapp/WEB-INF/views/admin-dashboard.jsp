@@ -12,7 +12,7 @@ $(function () {
 	var data = '${data}';
     $('#container').highcharts({
         title: {
-            text: 'Requests Per Month',
+            text: 'Requests Per Day',
             x: -20 //center
         },
         subtitle: {
