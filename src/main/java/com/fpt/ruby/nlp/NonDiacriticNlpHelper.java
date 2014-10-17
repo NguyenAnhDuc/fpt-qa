@@ -74,7 +74,7 @@ public class NonDiacriticNlpHelper{
 				break;
 			}
 		}
-		return question.toLowerCase().substring( 0, j ).replaceAll( "(\\d+)(h)", "$1 giờ" );
+		return question.toLowerCase().substring( 0, j );
 	}
 
 	public static TimeExtract getTimeCondition( String text ) {

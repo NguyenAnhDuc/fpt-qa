@@ -71,9 +71,9 @@ public class TVProgramService {
 					return new ArrayList< TVProgram >();
 				}
 				if (start.equals( end )){
-					return findAtTime( start );
+					return findAtTime( start, mod.getType() );
 				}
-				return findInPeriod( start, end );
+				return findInPeriod( start, end, mod.getType() );
 			}
 			if (start == null && end == null){
 				return findByTitle( title );
@@ -85,12 +85,12 @@ public class TVProgramService {
 		}
 		if (title == null){
 			if (start == null && end == null){
-				return findByChannel( channel );
+				return findByChannel( channel, mod.getType() );
 			}
 			if (start.equals( end )){
-				return findAtTimeAtChannel( start, channel );
+				return findAtTimeAtChannel( start, channel, mod.getType() );
 			}
-			return findInPeriodAtChannel( start, end, channel );
+			return findInPeriodAtChannel( start, end, channel, mod.getType() );
 		}
 		if (start == null && end == null){
 			return findByTitleAndChannel( title, channel );
@@ -110,11 +110,11 @@ public class TVProgramService {
 		return findByTitleInPeriod( title, today, oneWeekLater );
 	}
 	
-	public List< TVProgram > findByChannel(String channel){
+	public List< TVProgram > findByChannel(String channel, List<String> type){
 		Date today = new Date();
 		Date oneWeekLater = new Date(today.getTime() + ONE_WEEK);
 		
-		return findInPeriodAtChannel( today, oneWeekLater, channel );
+		return findInPeriodAtChannel( today, oneWeekLater, channel, type );
 	}
 	
 	public List< TVProgram > findByTitleAndChannel(String title, String channel){
@@ -125,9 +125,9 @@ public class TVProgramService {
 		return findByTitleInPeriodAtChannel( title, oneWeekBefore, oneWeekLater, channel );
 	}
 	
-	public List< TVProgram > findInPeriod(Date start, Date end){
+	public List< TVProgram > findInPeriod(Date start, Date end, List<String> type){
 		Query query = new Query(Criteria.where("start_date").gt( start ).lt( end ));
-		return mongoOperations.find(query, TVProgram.class);
+		return filterByType( mongoOperations.find(query, TVProgram.class), type );
 	}
 	
 	public List< TVProgram > findByTitleInPeriod(String title, Date start, Date end){
@@ -138,10 +138,10 @@ public class TVProgramService {
 		return mongoOperations.find(query, TVProgram.class);
 	}
 	
-	public List< TVProgram > findInPeriodAtChannel(Date start, Date end, String channel){
+	public List< TVProgram > findInPeriodAtChannel(Date start, Date end, String channel, List<String> type){
 		Query query = new Query(Criteria.where("channel").regex("^" + channel + "$","i").and( "start_date" ).
 				gt( start ).and( "end_date" ).lt( end ));
-		return mongoOperations.find(query, TVProgram.class);
+		return filterByType(mongoOperations.find(query, TVProgram.class), type);
 	}
 	
 	public List< TVProgram > findByTitleInPeriodAtChannel(String title, Date start, Date end, String channel){
@@ -151,9 +151,9 @@ public class TVProgramService {
 		return mongoOperations.find(query, TVProgram.class);
 	}
 	
-	public List< TVProgram > findAtTime(Date startDate){
+	public List< TVProgram > findAtTime(Date startDate, List<String> type){
 		Query query = new Query(Criteria.where("start_date").lt( startDate ).and( "end_date" ).gt( startDate ));
-		return mongoOperations.find(query, TVProgram.class);
+		return filterByType( mongoOperations.find(query, TVProgram.class), type );
 	}
 	
 	public List< TVProgram > findByTitleAtTime(String title, Date date){
@@ -162,10 +162,10 @@ public class TVProgramService {
 		return mongoOperations.find(query, TVProgram.class);
 	}
 	
-	public List< TVProgram > findAtTimeAtChannel(Date date, String channel){
+	public List< TVProgram > findAtTimeAtChannel(Date date, String channel, List<String> type){
 		Query query = new Query(Criteria.where("channel").regex("^" + channel + "$","i").
 				and("start_date").lt( date ).and( "end_date" ).gt( date ));
-		return mongoOperations.find(query, TVProgram.class);
+		return filterByType( mongoOperations.find(query, TVProgram.class), type );
 	}
 	
 	public List< TVProgram > findByTitleAtTimeAtChannel(String title, Date date, String channel){
@@ -176,9 +176,9 @@ public class TVProgramService {
 	}
 	
 	
-	public List< TVProgram > findAfter(Date date){
+	public List< TVProgram > findAfter(Date date, List<String> type){
 		Query query = new Query(Criteria.where("start_date").gt( date )).with( new Sort( Direction.ASC, "start_date" ) );
-		return mongoOperations.find(query, TVProgram.class);
+		return filterByType( mongoOperations.find(query, TVProgram.class), type);
 	}
 	
 	public List< TVProgram > findAfterByTitle(String title, Date date){
@@ -187,10 +187,10 @@ public class TVProgramService {
 		return mongoOperations.find(query, TVProgram.class);
 	}
 	
-	public List< TVProgram > findAfterAtChannel(Date date, String channel){
+	public List< TVProgram > findAfterAtChannel(Date date, String channel, List<String> type){
 		Query query = new Query(Criteria.where("channel").regex("^" + channel + "$","i").
 				and("start_date").gt( date )).with( new Sort( Direction.ASC, "start_date" ) );
-		return mongoOperations.find(query, TVProgram.class);
+		return filterByType( mongoOperations.find(query, TVProgram.class), type );
 	}
 	
 	public List< TVProgram > findAfterByTitleAtChannel(String title, Date date, String channel){
@@ -201,12 +201,12 @@ public class TVProgramService {
 	}
 	
 	
-	public List<TVProgram> findProgramToShow(int day){
+	public List<TVProgram> findProgramToShow(int day, List<String> type){
 		Date date = new Date(new Date().getTime() + day*ONE_DAY );
 		date.setHours(0);date.setMinutes(0);date.setSeconds(0);
 		Query query = new Query(Criteria.where("start_date").gt( date )).with( new Sort( Direction.ASC, "start_date" ) );
 		List<TVProgram> results = mongoOperations.find(query, TVProgram.class);
-		return results;
+		return filterByType( results, type );
 	}
 	
 	public void save(TVProgram tvProgram){
@@ -217,6 +217,28 @@ public class TVProgramService {
 		mongoOperations.dropCollection(TVProgram.class);
 	}
 	
+	private List<TVProgram> filterByType(List<TVProgram> lst, List<String> type){
+		if (type == null || type.isEmpty()){
+			return lst;
+		}
+		// filter by type
+		List<TVProgram> res = new ArrayList<TVProgram>();
+		for (TVProgram prog : lst) {
+			boolean check = true;
+			String curType = prog.getType();
+			for (String t : type) {
+				if (!curType.contains(t)) {
+					check = false;
+					break;
+				}
+			}
+			if (check) {
+				res.add(prog);
+			}
+		}
+
+		return res;
+	}
 	
 	public static void main(String[] args) throws Exception {
 		TVProgramService tvService = new TVProgramService();
