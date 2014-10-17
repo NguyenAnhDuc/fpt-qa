@@ -1,14 +1,16 @@
 package com.fpt.ruby.helper;
 
+import java.net.URLEncoder;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.fpt.ruby.conjunction.ConjunctionHelper;
 import com.fpt.ruby.model.Cinema;
-import com.fpt.ruby.model.Log;
 import com.fpt.ruby.model.MovieFly;
 import com.fpt.ruby.model.MovieTicket;
 import com.fpt.ruby.model.QueryParamater;
@@ -165,7 +167,34 @@ public class ProcessHelper{
 		
 		return rubyAnswer;
 	}
+	
+	private static boolean isUdfAnswer(String answer, List<String> answers){
+		return answers.stream().anyMatch(a -> answer.contains(a));
+	}
+	
+	public static String getAIMLAnswer( String question ) {
+		List<String> udfAnswers = new ArrayList<String>();
+		udfAnswers.add("Tôi không biết");
+		udfAnswers.add("Tôi không có thông tin");
+		udfAnswers.add("Tôi không rõ");
+		udfAnswers.add("Tôi không nghe rõ, bạn nói gì vậy");
+		udfAnswers.add("Câu hỏi của bạn rất thú vị, tôi sẽ tìm kiếm thông tin và trả lời bạn dịp khác");
+		System.out.println( "AIML get answer ...." );
+		try{
+			String url = "http://tech.fpt.com.vn/AIML/api/bots/539f0c17e4b051fa88b36a61/chat?token=be3dbdb0-aa37-4819-a097-a89756df9704&request="
+					+ URLEncoder.encode( question, "UTF-8" );
+			String jsonString = HttpHelper.sendGet( url );
+			JSONObject json = new JSONObject( jsonString );
+			String answer = json.getString( "response" );
+			if (isUdfAnswer(answer, udfAnswers)) return null;
+			return answer;
+		}catch ( Exception ex ){
+			ex.printStackTrace();
+			return null;
+		}
 
+	}
+	
 	/*public static String getSimsimiResponse( String question ) {
 		System.out.println( "Simsimi get answer ...." );
 		System.out.println( "question: " + question );
@@ -206,4 +235,11 @@ public class ProcessHelper{
 		questionStructureService.save( questionStructure );
 		return questionStructure;
 	}
+	
+	public static void main (String[] args){
+		String answer = getAIMLAnswer("xin chào");
+		System.out.println(answer);
+	}
+	
+	
 }

@@ -4,9 +4,9 @@ import java.util.Date;
 
 import javax.servlet.http.HttpServletRequest;
 
-import net.sf.uadetector.ReadableUserAgent;
+/*import net.sf.uadetector.ReadableUserAgent;
 import net.sf.uadetector.UserAgentStringParser;
-import net.sf.uadetector.service.UADetectorServiceFactory;
+import net.sf.uadetector.service.UADetectorServiceFactory;*/
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -80,8 +80,24 @@ public class AppController {
 		System.out.println("Operating system: " + agent.getOperatingSystem().getName());
 		System.out.println("Device category: " + agent.getDeviceCategory().getName() );
 		System.out.println("Family: " + agent.getFamily() );*/
-		String key = NlpHelper.normalizeQuestion(question);
+		Log log = new Log();
+		log.setUserAgent(request.getHeader("User-Agent"));
+		log.setQuestion( question );
+		log.setDate( new Date() );
 		RubyAnswer rubyAnswer = new RubyAnswer();
+		//AIML Layer First
+		String  answer = ProcessHelper.getAIMLAnswer(question);
+		if (answer != null){
+			rubyAnswer.setAnswer(answer);
+			rubyAnswer.setQuestion(question);
+			log.setAnswer( rubyAnswer.getAnswer() );
+			log.setIntent("AIML");
+			log.setDomain("AIML");
+			logService.save(log);
+			return rubyAnswer;
+		}
+		
+		String key = NlpHelper.normalizeQuestion(question);
 		String domain = classifier.getDomain( key );
 		logger.info("Current time: " + new Date() + " | domain: " + domain);
 		
@@ -106,13 +122,9 @@ public class AppController {
 		}
 		rubyAnswer.setDomain(domain);
 		// Log
-		Log log = new Log();
-		log.setUserAgent(request.getHeader("User-Agent"));
-		log.setQuestion( question );
+		log.setAnswer( rubyAnswer.getAnswer() );
 		log.setDomain( rubyAnswer.getDomain() );
 		log.setIntent( rubyAnswer.getIntent() );
-		log.setAnswer( rubyAnswer.getAnswer() );
-		log.setDate( new Date() );
 		QueryParamater queryParamater = new QueryParamater();
 		queryParamater.setBeginTime( rubyAnswer.getBeginTime() );
 		queryParamater.setEndTime( rubyAnswer.getEndTime() );

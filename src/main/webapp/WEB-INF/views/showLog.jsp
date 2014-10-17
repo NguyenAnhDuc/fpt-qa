@@ -148,7 +148,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-10">
+				<div class="col-md-12">
 					<div class="panel panel-primary">
 						<div class="panel-heading">
 							<h3 class="panel-title">Today TV</h3>
@@ -173,6 +173,7 @@
 									<th>Intent</th>
 									<th>Query Paramaters</th>
 									<th>Date</th>
+									<th>User Agent</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -189,6 +190,7 @@
 									<td>${log.intent}</td>
 									<td>${log.queryParamater.toShow()}</td>
 									<td>${log.date.toLocaleString()}</td>
+									<td>${log.userAgent}</td>
 										<td>
 											<div class="pull-right action-buttons">
 
