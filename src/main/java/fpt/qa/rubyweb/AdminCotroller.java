@@ -3,7 +3,10 @@ package fpt.qa.rubyweb;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import org.codehaus.jackson.map.ObjectMapper;
@@ -23,6 +26,7 @@ import com.fpt.ruby.model.DataChart;
 import com.fpt.ruby.model.Log;
 import com.fpt.ruby.model.MovieTicket;
 import com.fpt.ruby.model.TVProgram;
+import com.fpt.ruby.model.chart.DataPieChart;
 import com.fpt.ruby.service.CinemaService;
 import com.fpt.ruby.service.LogService;
 import com.fpt.ruby.service.TVProgramService;
@@ -270,7 +274,7 @@ public class AdminCotroller {
 	@RequestMapping(value = "/admin-analytic", method = RequestMethod.GET)
 	public String testChart(Model model) {
 		int ONE_DAY = 24 * 3600 * 1000;
-		//cal.set(Calendar.DAY_OF_MONTH,0);cal.set(Calendar.HOUR, 0);cal.set(Calendar.MINUTE, 0);cal.set(Calendar.SECOND, 0);
+		// Line Chart: NumberOfRequest
 		Date today = new Date();
 		today.setHours(0);today.setMinutes(0);today.setSeconds(0);
 		Date firstdayOfMonth = new Date(today.getTime() - (today.getDate() -1) * ONE_DAY);
@@ -307,6 +311,28 @@ public class AdminCotroller {
 		}
 		model.addAttribute("data", json);
 		model.addAttribute("jsonS", jsonAll);
+		// Pie Chart: Intent
+		logs = logService.findAll();
+		List<DataPieChart> dataPies = new ArrayList<DataPieChart>();
+		Map<String, Long> counted = logs.stream()
+		            .collect(Collectors.groupingBy(o -> o.getIntent(), Collectors.counting()));
+		Iterator iterator = counted.keySet().iterator();
+		while(iterator.hasNext()){
+			Object key   = iterator.next();
+	          Object value = counted.get(key);
+		      DataPieChart dataPieChart = new DataPieChart();
+		      dataPieChart.name = key.toString();
+		      dataPieChart.y = Integer.parseInt(value.toString()) * 1.0 / logs.size();
+		      dataPies.add(dataPieChart);
+		}
+		String jsonPie = "";
+		try{
+			jsonPie = mapper.writeValueAsString(dataPies);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		model.addAttribute("jsonPie", jsonPie);
+		
 		return "admin-dashboard";
 	}
 }

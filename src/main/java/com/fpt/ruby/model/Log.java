@@ -9,12 +9,19 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 public class Log {
 	@Id private String id;
+	private String userAgent;
 	private String question;
 	private String answer;
 	private String intent;
 	private String domain;
 	private QueryParamater queryParamater;
 	private Date date;
+	public String getUserAgent() {
+		return userAgent;
+	}
+	public void setUserAgent(String userAgent) {
+		this.userAgent = userAgent;
+	}
 	public Date getDate() {
 		return date;
 	}

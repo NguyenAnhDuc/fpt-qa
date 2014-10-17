@@ -9,8 +9,7 @@
 
 		<script type="text/javascript">
 $(function () {
-	var data = '${data}';
-    $('#container').highcharts({
+    $('#line-chart').highcharts({
         title: {
             text: 'Requests Per Day',
             x: -20 //center
@@ -49,9 +48,43 @@ $(function () {
         }] */
         series: JSON.parse('${jsonS}')
     });
+    
+    // Pie Chart
+    var dataPie =  JSON.parse('${jsonPie}');
+    $('#pie-chart').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
+        },
+        title: {
+            text: 'Intent Of Question'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false
+                },
+                showInLegend: true
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Percent',
+            data : JSON.parse('${jsonPie}')
+        }]
+    });
+    
+    
 });
 		</script>
 <script src="resources/js/highcharts.js"></script>
-<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<div id="line-chart" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<div id="pie-chart" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 	</tiles:putAttribute>
 </tiles:insertDefinition>

@@ -75,11 +75,11 @@ public class AppController {
 	@RequestMapping(value="/getAnswer", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
 	@ResponseBody
 	public RubyAnswer prototypeGetAnswer(@RequestParam("question") String question){
-		UserAgentStringParser parser = UADetectorServiceFactory.getResourceModuleParser();
+		/*UserAgentStringParser parser = UADetectorServiceFactory.getResourceModuleParser();
 		ReadableUserAgent agent = parser.parse(request.getHeader("User-Agent"));
 		System.out.println("Operating system: " + agent.getOperatingSystem().getName());
 		System.out.println("Device category: " + agent.getDeviceCategory().getName() );
-		System.out.println("Family: " + agent.getFamily() );
+		System.out.println("Family: " + agent.getFamily() );*/
 		String key = NlpHelper.normalizeQuestion(question);
 		RubyAnswer rubyAnswer = new RubyAnswer();
 		String domain = classifier.getDomain( key );
@@ -107,6 +107,7 @@ public class AppController {
 		rubyAnswer.setDomain(domain);
 		// Log
 		Log log = new Log();
+		log.setUserAgent(request.getHeader("User-Agent"));
 		log.setQuestion( question );
 		log.setDomain( rubyAnswer.getDomain() );
 		log.setIntent( rubyAnswer.getIntent() );
