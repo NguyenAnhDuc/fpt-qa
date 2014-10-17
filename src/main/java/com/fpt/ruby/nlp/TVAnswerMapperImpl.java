@@ -227,7 +227,9 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 			limit = progs.size();
 		}
 		for (int i = 0; i < limit; i++){
-			title += progs.get( i ).getTitle() + "</br>";
+			if (!title.contains(progs.get( i ).getTitle() + "</br>")){
+				title += progs.get( i ).getTitle() + "</br>";
+			}
 		}
 		if (limit < progs.size()){
 			title += ". . . ";
