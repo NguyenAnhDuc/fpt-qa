@@ -40,7 +40,7 @@ public class TVProgramServiceTest{
 	
 	public void findByChannel(){
 		System.out.println("Testing findByChannel func");
-		List< TVProgram > res = tvService.findByChannel( channel );
+		List< TVProgram > res = tvService.findByChannel( channel, null );
 		System.out.println(res.size());
 		
 		if (!res.isEmpty()){
@@ -68,7 +68,7 @@ public class TVProgramServiceTest{
 	
 	public void findInPeriod(){
 		System.out.println("Testing findInPeriod func");
-		List< TVProgram > res = tvService.findInPeriod( now, after_one_hour );
+		List< TVProgram > res = tvService.findInPeriod( now, after_one_hour, null );
 		System.out.println(res.size());
 		
 		if (!res.isEmpty()){
@@ -96,7 +96,7 @@ public class TVProgramServiceTest{
 	
 	public void findInPeriodAtChannel(){
 		System.out.println("Testing findInPeriodAtChannel func");
-		List< TVProgram > res = tvService.findInPeriodAtChannel( now, after_one_hour, "vtv2");
+		List< TVProgram > res = tvService.findInPeriodAtChannel( now, after_one_hour, "vtv2", null);
 		System.out.println(res.size());
 		
 		if (!res.isEmpty()){
@@ -124,7 +124,7 @@ public class TVProgramServiceTest{
 	
 	public void findAtTime(){
 		System.out.println("Testing findAtTime func");
-		List< TVProgram > res = tvService.findAtTime( now );
+		List< TVProgram > res = tvService.findAtTime( now, null );
 		System.out.println(res.size());
 		
 		if (!res.isEmpty()){
@@ -152,7 +152,7 @@ public class TVProgramServiceTest{
 	
 	public void findAtTimeAtChannel(){
 		System.out.println("Testing findAtTimeAtChannel func");
-		List< TVProgram > res = tvService.findAtTimeAtChannel( now, channel );
+		List< TVProgram > res = tvService.findAtTimeAtChannel( now, channel, null );
 		System.out.println(res.size());
 		
 		if (!res.isEmpty()){
@@ -181,7 +181,7 @@ public class TVProgramServiceTest{
 	
 	public void findAfter(){
 		System.out.println("Testing findAfter func");
-		List< TVProgram > res = tvService.findAfter( now );
+		List< TVProgram > res = tvService.findAfter( now, null );
 		System.out.println(res.size());
 		
 		if (!res.isEmpty()){
@@ -209,7 +209,7 @@ public class TVProgramServiceTest{
 	
 	public void findAfterAtChannel(){
 		System.out.println("Testing findAfterAtChannel func");
-		List< TVProgram > res = tvService.findAfterAtChannel( now, channel );
+		List< TVProgram > res = tvService.findAfterAtChannel( now, channel, null );
 		System.out.println(res.size());
 		
 		if (!res.isEmpty()){
@@ -240,7 +240,7 @@ public class TVProgramServiceTest{
 		// TODO Auto-generated method stub
 		TVProgramServiceTest test = new TVProgramServiceTest();
 //		test.findByTitle();
-//		test.findAfter();
+		test.findAfter();
 //		test.findAfterAtChannel();
 //		test.findAfterByTitle();
 //		test.findAfterByTitleAtChannel();

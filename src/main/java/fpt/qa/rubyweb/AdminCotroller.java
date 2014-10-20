@@ -224,7 +224,7 @@ public class AdminCotroller {
 		}
 		catch (Exception ex){
 		}
-		List<TVProgram> tvPrograms = tvProgramService.findProgramToShow(numday);
+		List<TVProgram> tvPrograms = tvProgramService.findProgramToShow(numday, new ArrayList<String>());
 		model.addAttribute("tvPrograms",tvPrograms);
 		return "showTV";
 	}

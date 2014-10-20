@@ -31,6 +31,7 @@ public class TVModifiers{
 	private String channel;
 	private Date start;
 	private Date end;
+	private List<String> type;
 	
 	public String getProg_title() {
 		return prog_title;
@@ -57,6 +58,12 @@ public class TVModifiers{
 	public void setEnd( Date end ) {
 		this.end = end;
 	}
+	public List<String> getType() {
+		return type;
+	}
+	public void setType(List<String> type) {
+		this.type = type;
+	}
 	public static TVModifiers getModifiers(String question){
 		TVModifiers mod = new TVModifiers();
 		List<Pair<String, String>> conjunctions = conjunctionHelper.getConjunction(question);
@@ -70,6 +77,8 @@ public class TVModifiers{
 				mod.setProg_title( conjunction.first );
 				continue;
 			}
+			
+			// Need to add code to get type in here
 		}
 		
 		return mod;

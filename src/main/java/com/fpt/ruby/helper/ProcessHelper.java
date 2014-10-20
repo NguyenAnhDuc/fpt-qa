@@ -121,7 +121,7 @@ public class ProcessHelper{
 			}else if( questionType.equals( AnswerMapper.Dynamic_Question ) ){
 				System.out.println( "Dynamic ...." );
 				MovieTicket matchMovieTicket = conjunctionHelper.getMovieTicket( question );
-				TimeExtract timeExtract = NlpHelper.getTimeCondition( question );
+				TimeExtract timeExtract = NlpHelper.getTimeCondition( question.replaceAll("(\\d+)(h)", "$1 giờ") );
 				List< MovieTicket > movieTickets = movieTicketService.findMoviesMatchCondition( matchMovieTicket,
 						timeExtract.getBeforeDate(), timeExtract.getAfterDate() );
 				System.out.println( "Size: " + movieTickets.size() );

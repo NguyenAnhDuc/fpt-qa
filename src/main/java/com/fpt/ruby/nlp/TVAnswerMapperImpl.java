@@ -56,8 +56,8 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		if (intent.equalsIgnoreCase(IntentConstants.TV_UDF)) 
 			return rubyAnswer;
 		
-		TVModifiers mod = TVModifiers.getModifiers( question.replaceAll("(\\d+)(h)", "$1 giờ ").replaceAll( "\\s+", " " ) );
-		tmp += "\t" + question.replaceAll("(\\d+)(h)", "$1 giờ ").replaceAll( "\\s+", " " ) + "\n";
+		TVModifiers mod = TVModifiers.getModifiers( question );
+		tmp += "\t" + question.replaceAll( "\\s+", " " ) + "\n";
 		tmp += "\t" + mod + "\n";
 		
 		rubyAnswer.setQuestionType(mod.getChannel());
@@ -66,7 +66,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		System.out.println("TV prog title: " + mod.getProg_title());
 		
 		// get Time condition
-		TimeExtract timeExtract = NlpHelper.getTimeCondition( question );
+		TimeExtract timeExtract = NlpHelper.getTimeCondition( question.replaceAll( "(\\d+)(h)", "$1 giờ" ) );
 		Date start = timeExtract.getBeforeDate();
 		Date end = timeExtract.getAfterDate();
 		
@@ -231,7 +231,9 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 			limit = progs.size();
 		}
 		for (int i = 0; i < limit; i++){
-			title += progs.get( i ).getTitle() + "</br>";
+			if (!title.contains(progs.get( i ).getTitle() + "</br>")){
+				title += progs.get( i ).getTitle() + "</br>";
+			}
 		}
 		if (limit < progs.size()){
 			title += ". . . ";

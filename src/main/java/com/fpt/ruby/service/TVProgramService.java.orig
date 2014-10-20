@@ -119,7 +119,11 @@ public class TVProgramService {
 		Date oneWeekBefore = new Date(today.getTime() - ONE_WEEK);
 		Date oneWeekLater = new Date(today.getTime() + ONE_WEEK);
 		
+<<<<<<< HEAD
+		return findInPeriodAtChannel(oneWeekBefore,oneWeekLater, channel );
+=======
 		return findInPeriodAtChannel( today, oneWeekLater, channel, type );
+>>>>>>> 12679c35b02097905e8826ecaad0cf79aaf79d55
 	}
 	
 	public List< TVProgram > findByTitleAndChannel(String title, String channel){
