@@ -4,13 +4,8 @@ import java.util.Date;
 
 import javax.servlet.http.HttpServletRequest;
 
-/*import net.sf.uadetector.ReadableUserAgent;
-import net.sf.uadetector.UserAgentStringParser;
-import net.sf.uadetector.service.UADetectorServiceFactory;*/
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -34,6 +29,11 @@ import com.fpt.ruby.service.mongo.MovieTicketService;
 
 import fpt.qa.domainclassifier.DomainClassifier;
 import fpt.qa.mdnlib.util.string.DiacriticConverter;
+/*import net.sf.uadetector.ReadableUserAgent;
+import net.sf.uadetector.UserAgentStringParser;
+import net.sf.uadetector.service.UADetectorServiceFactory;*/
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Controller
 @RequestMapping("/")
@@ -51,7 +51,8 @@ public class AppController {
 	static TVAnswerMapper tam = new TVAnswerMapperImpl();
 	static DomainClassifier classifier;
 	private static final Logger logger = LoggerFactory.getLogger(AppController.class);
-	
+	@Value("${aimlBotID}") private String  botId;
+	@Value("${aimlToken}") private String  token;
 	//get user agent
 	private String getUserAgent() {
 		return request.getHeader("user-agent");
@@ -86,7 +87,7 @@ public class AppController {
 		log.setDate( new Date() );
 		RubyAnswer rubyAnswer = new RubyAnswer();
 		//AIML Layer First
-		String  answer = ProcessHelper.getAIMLAnswer(question);
+		String  answer = ProcessHelper.getAIMLAnswer(question, botId, token);
 		if (answer != null){
 			rubyAnswer.setAnswer(answer);
 			rubyAnswer.setQuestion(question);

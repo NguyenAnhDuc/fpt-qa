@@ -172,17 +172,18 @@ public class ProcessHelper{
 		return answers.stream().anyMatch(a -> answer.contains(a));
 	}
 	
-	public static String getAIMLAnswer( String question ) {
+	public static String getAIMLAnswer( String question, String botId, String token ) {
 		List<String> udfAnswers = new ArrayList<String>();
 		udfAnswers.add("Tôi không biết");
-		udfAnswers.add("Tôi không có thông tin");
+		/*udfAnswers.add("Tôi không có thông tin");
 		udfAnswers.add("Tôi không rõ");
 		udfAnswers.add("Tôi không nghe rõ, bạn nói gì vậy");
-		udfAnswers.add("Câu hỏi của bạn rất thú vị, tôi sẽ tìm kiếm thông tin và trả lời bạn dịp khác");
+		udfAnswers.add("Câu hỏi của bạn rất thú vị, tôi sẽ tìm kiếm thông tin và trả lời bạn dịp khác");*/
 		System.out.println( "AIML get answer ...." );
 		try{
-			String url = "http://tech.fpt.com.vn/AIML/api/bots/539f0c17e4b051fa88b36a61/chat?token=be3dbdb0-aa37-4819-a097-a89756df9704&request="
-					+ URLEncoder.encode( question, "UTF-8" );
+			String url = "http://tech.fpt.com.vn/AIML/api/bots/" + botId + "/chat?token=" 
+						+ token + "&request="
+						+ URLEncoder.encode( question, "UTF-8" );
 			String jsonString = HttpHelper.sendGet( url );
 			JSONObject json = new JSONObject( jsonString );
 			String answer = json.getString( "response" );
@@ -235,11 +236,5 @@ public class ProcessHelper{
 		questionStructureService.save( questionStructure );
 		return questionStructure;
 	}
-	
-	public static void main (String[] args){
-		String answer = getAIMLAnswer("xin chào");
-		System.out.println(answer);
-	}
-	
 	
 }
