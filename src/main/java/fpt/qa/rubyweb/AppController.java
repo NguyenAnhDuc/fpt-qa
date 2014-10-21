@@ -1,13 +1,25 @@
 package fpt.qa.rubyweb;
 
-import java.util.Date;
+import io.keen.client.java.JavaKeenClientBuilder;
+import io.keen.client.java.KeenClient;
+import io.keen.client.java.KeenProject;
 
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
+import java.util.UUID;
+
+import javax.annotation.PostConstruct;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -29,6 +41,17 @@ import com.fpt.ruby.service.mongo.MovieTicketService;
 
 import fpt.qa.domainclassifier.DomainClassifier;
 import fpt.qa.mdnlib.util.string.DiacriticConverter;
+
+
+
+
+
+
+
+
+
+
+
 /*import net.sf.uadetector.ReadableUserAgent;
 import net.sf.uadetector.UserAgentStringParser;
 import net.sf.uadetector.service.UADetectorServiceFactory;*/
@@ -53,34 +76,44 @@ public class AppController {
 	private static final Logger logger = LoggerFactory.getLogger(AppController.class);
 	@Value("${aimlBotID}") private String  botId;
 	@Value("${aimlToken}") private String  token;
-	//get user agent
-	private String getUserAgent() {
-		return request.getHeader("user-agent");
-	}
 	
-	static {
+	//Keen
+	private KeenClient keenClient;
+	@Value("${keenProjectID}") private String KEEN_PROJECT_ID;
+	@Value("${keenWriteKey}") private String KEEN_WRITE_KEY;
+	@Value("${keenReadKey}") private String KEEN_READ_KEY;
+	
+	//get user agent
+	/*private String getUserAgent() {
+		return request.getHeader("user-agent");
+	}*/
+	
+	@PostConstruct
+	public void init(){
 		tam.init();
 		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
 		classifier = new DomainClassifier( dir );
-		System.out.println("Init done!");
+		keenClient =  new JavaKeenClientBuilder().build();
+		KeenProject keenProject = new KeenProject(KEEN_PROJECT_ID, KEEN_WRITE_KEY, KEEN_READ_KEY);
+		keenClient.setDefaultProject(keenProject);
 	}
 	
-	/*
-	@RequestMapping(value="/listCachedQuestion", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
-	@ResponseBody
-	public List<String> getListQuestion(){
-		return app.getListCachedQuestion();
-		//return "haha";
-	}*/
+	private void track(String filter, Map<String, Object> event){
+		keenClient.addEvent(filter, event);
+	}
+	
+	
 	
 	@RequestMapping(value="/getAnswer", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
 	@ResponseBody
-	public RubyAnswer prototypeGetAnswer(@RequestParam("question") String question){
+	public RubyAnswer prototypeGetAnswer(@RequestParam("question") String question, @CookieValue(value = "userID", defaultValue = "") String userID){
 		/*UserAgentStringParser parser = UADetectorServiceFactory.getResourceModuleParser();
 		ReadableUserAgent agent = parser.parse(request.getHeader("User-Agent"));
 		System.out.println("Operating system: " + agent.getOperatingSystem().getName());
 		System.out.println("Device category: " + agent.getDeviceCategory().getName() );
 		System.out.println("Family: " + agent.getFamily() );*/
+		
+		logger.info("UserID: " + userID);
 		Log log = new Log();
 		log.setUserAgent(request.getHeader("User-Agent"));
 		log.setQuestion( question );
@@ -133,20 +166,35 @@ public class AppController {
 		queryParamater.setMovieTicket( rubyAnswer.getMovieTicket() );
 		log.setQueryParamater( rubyAnswer.getQueryParamater() );
 		logService.save( log );
-				
+		
+		// Analytic
+		Map<String, Object> event  = new HashMap<String, Object>(); 
+		event.put("userID", userID);
+		event.put("domain", rubyAnswer.getDomain());
+		event.put("intent", rubyAnswer.getIntent());
+		event.put("question", rubyAnswer.getQuestion());
+		event.put("answer", rubyAnswer.getAnswer());
+		track("userActivity", event);
+		
 		logger.info("Returned answer:\n" + rubyAnswer.getAnswer());
 		return rubyAnswer;
 		//return app.getAnswer(question);
 	}
 	
 	@RequestMapping(value="/", method = RequestMethod.GET)
-	public String home(Model model){
+	public String home(Model model, @CookieValue(value = "userID", defaultValue = "") String userID, HttpServletResponse response){
 		logger.info("HOME CONTROLLER");
+		logger.info("userID from cookies: " + userID);
+		if (userID.isEmpty()){
+			Cookie cookie = new Cookie("userID", UUID.randomUUID().toString());
+			response.addCookie(cookie);
+		}
+		
 		return "chat";
 	}
 	
 	@RequestMapping(value="/test", method = RequestMethod.GET)
-	public String test(Model model){
+	public String test(Model model, @CookieValue(value = "userId") String userID, HttpServletResponse response ){
 		return "testCombo";
 	}
 	
