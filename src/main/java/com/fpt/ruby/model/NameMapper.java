@@ -81,4 +81,15 @@ public class NameMapper {
 		this.lastMention = lastMention;
 	}
 	
+	public String getFormattedVariants() {
+		StringBuilder result = new StringBuilder();
+		if (variants.size() == 0) return "";
+		
+		result.append(variants.get(0));
+		for (int i = 1; i < variants.size(); ++i) {
+			result.append(", " + variants.get(i).trim());
+		}
+		
+		return result.toString().trim();
+	}
 }

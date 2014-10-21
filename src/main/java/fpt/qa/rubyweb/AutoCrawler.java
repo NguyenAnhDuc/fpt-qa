@@ -34,6 +34,13 @@ public class AutoCrawler {
 		} catch (Exception e) {
 			System.out.println("error clean movie ticket.");
 		}
+		
+		try {
+			movieTicketService.clearDataOnSpecificDay(0);
+			tvProgramService.clearDataOnSpecificDay(0);
+		} catch (Exception e) {
+			System.out.println("Error clear today data. " + e.getMessage());
+		}
 	}
 	
 	private void doCrawl() {

@@ -28,10 +28,19 @@
 			<input type="submit" class="btn btn-primary btn-lg btn-block"
 				id="btnSubmit" value="Show TVPrograms Today" />
 		</form>
+		
+		</form>
+		<form action="admin-show-name-mapper">
+			<input type="submit" class="btn btn-primary btn-lg btn-block"
+				id="btnSubmit" value="Show name mapper" />
+		</form>
+		
 		<form action="admin-add-cinema">
 			<input type="submit" class="btn btn-primary btn-lg btn-block"
 				id="btnSubmit" value="Add Cinema Information" />
 		</form>
+	
+		
 	</tiles:putAttribute>
 </tiles:insertDefinition>
 
