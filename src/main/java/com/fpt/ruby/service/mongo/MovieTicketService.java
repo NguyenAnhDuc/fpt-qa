@@ -53,6 +53,22 @@ public class MovieTicketService {
 		}
 	}
 	
+	public void clearDataOnSpecificDay(int beforeToday) {
+		Date cur = new Date(new Date().getTime() + beforeToday * ONE_DAY);
+		cur.setSeconds(0);
+		cur.setMinutes(0);
+		cur.setHours(0);
+		
+		Date afterCur = new Date(cur.getTime() + ONE_DAY);
+		Query query = new Query(Criteria.where("start_date").gte(cur).lt(afterCur));
+		
+		System.out.println(query.toString());
+		List<MovieTicket> toRemove = mongoOperations.find(query, MovieTicket.class);
+		for (MovieTicket mt : toRemove) {
+			mongoOperations.remove(mt);
+		}
+	}
+	
 	public MovieTicket findById(String ticketId){
 		return mongoOperations.findById(ticketId, MovieTicket.class);
 	}

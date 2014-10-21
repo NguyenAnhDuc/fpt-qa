@@ -150,7 +150,7 @@ public class CrawlerVTVCab {
 			String[] parts = strTime.split(":");
 			if (parts.length < 2) break;		
 			
-			Date broadcastDate = date;
+			Date broadcastDate = (Date) date.clone();
 			broadcastDate.setHours(Integer.parseInt(parts[0]));
 			broadcastDate.setMinutes(Integer.parseInt(parts[1]));
 

@@ -25,10 +25,12 @@ import com.fpt.ruby.model.Cinema;
 import com.fpt.ruby.model.DataChart;
 import com.fpt.ruby.model.Log;
 import com.fpt.ruby.model.MovieTicket;
+import com.fpt.ruby.model.NameMapper;
 import com.fpt.ruby.model.TVProgram;
 import com.fpt.ruby.model.chart.DataPieChart;
 import com.fpt.ruby.service.CinemaService;
 import com.fpt.ruby.service.LogService;
+import com.fpt.ruby.service.NameMapperService;
 import com.fpt.ruby.service.TVProgramService;
 import com.fpt.ruby.service.mongo.MovieTicketService;
 import com.google.common.collect.Lists;
@@ -36,7 +38,7 @@ import com.mongodb.BasicDBObject;
 
 @Controller
 @RequestMapping("")
-public class AdminCotroller {
+public class AdminController {
 	@Autowired
 	private MovieTicketService movieTicketService;
 	@Autowired
@@ -45,6 +47,8 @@ public class AdminCotroller {
 	private LogService logService;
 	@Autowired
 	private CinemaService cinemaService;
+	@Autowired
+	private NameMapperService nameMapperService;
 	
 	@RequestMapping(value="/crawlPhimChieuRap", method = RequestMethod.POST,  produces = "application/json; charset=UTF-8")
 	@ResponseBody
@@ -232,6 +236,7 @@ public class AdminCotroller {
 	@RequestMapping(value="admin-show-cinemas", method = RequestMethod.GET)
 	public String showCinemas(Model model){
 		List<Cinema> cinemas = cinemaService.findAll();
+		
 		model.addAttribute("cinemas",cinemas);
 		return "showCinema";
 	}
@@ -255,7 +260,14 @@ public class AdminCotroller {
 		model.addAttribute("logs",logs.subList(0, numLog));
 		return "showLog";
 	}
-
+	
+	@RequestMapping(value="admin-show-name-mapper", method = RequestMethod.GET)
+	public String showNameMapper(Model model) {
+		List<NameMapper> nms = nameMapperService.findAll().subList(0, 200);
+		model.addAttribute("nameMappers", nms);
+		return "showNameMapper";
+	}
+	
 	@RequestMapping(value = "/deleteTicket", method = RequestMethod.GET)
 	public String deleteBot(@RequestParam("ticketId") String ticketId,Model model) {
 		MovieTicket movieTicket = movieTicketService.findById(ticketId);

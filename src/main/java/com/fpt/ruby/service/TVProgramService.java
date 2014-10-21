@@ -40,6 +40,31 @@ public class TVProgramService {
 			mongoOperations.remove(tvProgram);
 		}
 	}
+	/*
+	 * Remove crawled data on specific day 
+	 * parameter: beforeToday
+	 * 0 => today
+	 * -1 : yester day
+	 * -i : i day before today
+	 * 1 : tomorrow
+	 * i : i day after today
+	 */
+	public void clearDataOnSpecificDay(int beforeToday) {
+		Date cur = new Date(new Date().getTime() + beforeToday * ONE_DAY);
+		cur.setSeconds(0);
+		cur.setMinutes(0);
+		cur.setHours(0);
+		
+		Date afterCur = new Date(cur.getTime() + ONE_DAY);
+		Query query = new Query(Criteria.where("start_date").gte(cur).lt(afterCur));
+		
+		System.out.println(query.toString());
+		List<TVProgram> toRemove = mongoOperations.find(query, TVProgram.class);
+		for (TVProgram prog : toRemove) {
+			mongoOperations.remove(prog);
+			System.out.println("TV Program: " + prog.getChannel() + " | " + prog.getTitle() +  " | " + prog.getStart_date());
+		}
+	}
 	
 	public List< TVProgram > getList(TVModifiers mod, String question){
 		String channel = mod.getChannel();
@@ -248,7 +273,8 @@ public class TVProgramService {
 	
 	public static void main(String[] args) throws Exception {
 		TVProgramService tvService = new TVProgramService();
-		tvService.cleanOldData();
+//		tvService.cleanOldData();
+		tvService.clearDataOnSpecificDay(0);
 //		List< TVProgram > all = tvService.findAll();
 //		
 //		// Export db section
