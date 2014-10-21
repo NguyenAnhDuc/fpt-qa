@@ -1,0 +1,6 @@
+FILM	hbo, star movie, bánh đúc có xương, ninja rùa, 5s online, bão qua làng
+DOC_FILM	vtv1, người đương thời
+CARTOON	cartoon network, tom and jerry, phim hoạt hình, nàng bạch tuyết và bảy chú lùn
+FASHION	thời trang và cuộc sống,
+GAME_SHOW	ai là triệu phú, chiếc nón kì diệu, giọng hát việt nhí, vietnam idol
+MULTI_MEDIA	bài hát việt, 
