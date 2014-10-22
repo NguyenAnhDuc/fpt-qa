@@ -22,7 +22,6 @@ import org.jsoup.nodes.*;
 import org.jsoup.select.Elements;
 import org.springframework.stereotype.Component;
 
-import sun.reflect.ReflectionFactory.GetReflectionFactoryAction;
 
 import com.fpt.ruby.conjunction.ConjunctionHelper;
 import com.fpt.ruby.helper.RedisHelper;

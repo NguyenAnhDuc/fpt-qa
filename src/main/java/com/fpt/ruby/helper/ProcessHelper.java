@@ -1,14 +1,16 @@
 package com.fpt.ruby.helper;
 
+import java.net.URLEncoder;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.fpt.ruby.conjunction.ConjunctionHelper;
 import com.fpt.ruby.model.Cinema;
-import com.fpt.ruby.model.Log;
 import com.fpt.ruby.model.MovieFly;
 import com.fpt.ruby.model.MovieTicket;
 import com.fpt.ruby.model.QueryParamater;
@@ -135,15 +137,21 @@ public class ProcessHelper{
 				System.out.println( "DONE Process" );
 			}else{
 				System.out.println( "Feature .." );
-				MovieTicket matchMovieTicket = new MovieTicket();
-				matchMovieTicket.setCinema( "CGV Vincom City Towers" );
+				MovieTicket matchMovieTicket = conjunctionHelper.getMovieTicket( question );
 				Date today = new Date();
 				System.out.println( "afterdate: " + today );
-
+				TimeExtract timeExtract = NlpHelper.getTimeCondition( question );
+				if( timeExtract.getBeforeDate() != null )
+					rubyAnswer.setBeginTime( timeExtract.getBeforeDate() );
+				if( timeExtract.getAfterDate() != null )
+					rubyAnswer.setEndTime( timeExtract.getAfterDate() );
 				// list movie tickets for the duration of one day
 				List< MovieTicket > movieTickets = movieTicketService.findMoviesMatchCondition( matchMovieTicket,
-						today, new Date( today.getTime() + 86400000 ) );
+						timeExtract.getBeforeDate(), timeExtract.getAfterDate());
 				System.out.println( "No of returned tickets: " + movieTickets.size() );
+				queryParamater.setMovieTitle(matchMovieTicket.getMovie());
+				queryParamater.setCinName(matchMovieTicket.getCinema());
+				rubyAnswer.setQueryParamater(queryParamater);
 				rubyAnswer.setAnswer( AnswerMapper.getFeaturedAnswer( question, movieTickets, movieFlyService ) );
 				rubyAnswer.setQuestionType( AnswerMapper.Featured_Question );
 				rubyAnswer.setMovieTicket( matchMovieTicket );
@@ -152,19 +160,6 @@ public class ProcessHelper{
 			System.out.println( "Exception! " + ex.getMessage() );
 			ex.printStackTrace();
 		}
-		// Log
-		Log log = new Log();
-		log.setQuestion( question );
-		log.setIntent( rubyAnswer.getIntent() );
-		log.setAnswer( rubyAnswer.getAnswer() );
-		log.setDate( new Date() );
-		QueryParamater queryParamater = new QueryParamater();
-		queryParamater.setBeginTime( rubyAnswer.getBeginTime() );
-		queryParamater.setEndTime( rubyAnswer.getEndTime() );
-		queryParamater.setMovieTitle( rubyAnswer.getMovieTitle() );
-		queryParamater.setMovieTicket( rubyAnswer.getMovieTicket() );
-		log.setQueryParamater( queryParamater );
-		logService.save( log );
 		
 		if( !rubyAnswer.getAnswer().contains( "Xin lỗi, tôi không trả lời được câu hỏi này" ) ){
 			rubyAnswer.setSuccessful( true );
@@ -172,7 +167,35 @@ public class ProcessHelper{
 		
 		return rubyAnswer;
 	}
+	
+	private static boolean isUdfAnswer(String answer, List<String> answers){
+		return answers.stream().anyMatch(a -> answer.contains(a));
+	}
+	
+	public static String getAIMLAnswer( String question, String botId, String token ) {
+		List<String> udfAnswers = new ArrayList<String>();
+		udfAnswers.add("Tôi không biết");
+		/*udfAnswers.add("Tôi không có thông tin");
+		udfAnswers.add("Tôi không rõ");
+		udfAnswers.add("Tôi không nghe rõ, bạn nói gì vậy");
+		udfAnswers.add("Câu hỏi của bạn rất thú vị, tôi sẽ tìm kiếm thông tin và trả lời bạn dịp khác");*/
+		System.out.println( "AIML get answer ...." );
+		try{
+			String url = "http://tech.fpt.com.vn/AIML/api/bots/" + botId + "/chat?token=" 
+						+ token + "&request="
+						+ URLEncoder.encode( question, "UTF-8" );
+			String jsonString = HttpHelper.sendGet( url );
+			JSONObject json = new JSONObject( jsonString );
+			String answer = json.getString( "response" );
+			if (isUdfAnswer(answer, udfAnswers)) return null;
+			return answer;
+		}catch ( Exception ex ){
+			ex.printStackTrace();
+			return null;
+		}
 
+	}
+	
 	/*public static String getSimsimiResponse( String question ) {
 		System.out.println( "Simsimi get answer ...." );
 		System.out.println( "question: " + question );
@@ -213,4 +236,5 @@ public class ProcessHelper{
 		questionStructureService.save( questionStructure );
 		return questionStructure;
 	}
+	
 }

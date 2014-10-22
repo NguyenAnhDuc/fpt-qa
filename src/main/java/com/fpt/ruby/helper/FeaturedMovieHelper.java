@@ -1,7 +1,6 @@
 package com.fpt.ruby.helper;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
 import com.fpt.ruby.model.MovieFly;

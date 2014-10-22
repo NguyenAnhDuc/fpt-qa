@@ -1,19 +1,16 @@
 package com.fpt.ruby.nlp;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
 import com.fpt.ruby.helper.RedisHelper;
+import com.fpt.ruby.model.Log;
 import com.fpt.ruby.model.QueryParamater;
 import com.fpt.ruby.model.RubyAnswer;
 import com.fpt.ruby.model.TVProgram;
 import com.fpt.ruby.model.TimeExtract;
+import com.fpt.ruby.service.LogService;
 import com.fpt.ruby.service.TVProgramService;
 
 import fpt.qa.intent.detection.IntentConstants;
@@ -35,16 +32,16 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		nonDiacritic.init( dir + "/qc/tv/non-diacritic", dir + "/dicts/non-diacritic");
 	}
 	
-	public RubyAnswer getAnswer ( String question ) {
+	public RubyAnswer getAnswer ( String question, LogService logService ) {
 		System.out.println("RUBY GET ANSWER");
 		RubyAnswer rubyAnswer = new RubyAnswer();
 		String tmp = "\t" + question + "\n";
 		
-		String intent = intentDetector.getIntent( NlpHelper.normalizeQuestion(question) );
+		String intent = intentDetector.getIntent( question );
 		System.out.println("TV Intent: " + intent);
 		tmp += "\t" + "TV Intent: " + intent + "\n";
 		
-		String intent2 = nonDiacritic.getIntent( NlpHelper.normalizeQuestion(question) );
+		String intent2 = nonDiacritic.getIntent( question );
 		System.out.println("Non-diacritic TV Intent: " + intent2);
 		tmp += "\t" + "Non-diacritic TV Intent: " + intent2 + "\n";
 		
@@ -72,6 +69,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		TimeExtract timeExtract = NlpHelper.getTimeCondition( question.replaceAll( "(\\d+)(h)", "$1 giờ" ) );
 		Date start = timeExtract.getBeforeDate();
 		Date end = timeExtract.getAfterDate();
+		
 		
 		if (question.contains( "đang" ) && !question.contains( "đang làm gì" ) ||
 				question.contains( "bây giờ" ) || question.contains( "hiện tại" )){
@@ -101,6 +99,15 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		System.out.println("Find list TV Program");
 		List< TVProgram > progs = tps.getList( mod, question );
 		System.out.println("List TVProgram Size: " + progs.size());
+		// Log
+		System.out.println("[TVANSWERMAPPERIMPL]: WRITE LOG" );
+		Log log = new Log();
+		queryParamater = new QueryParamater();
+		queryParamater.setBeginTime( rubyAnswer.getBeginTime() );
+		queryParamater.setEndTime( rubyAnswer.getEndTime() );
+		queryParamater.setTvProTitle(mod.getProg_title());
+		queryParamater.setTvChannel(mod.getChannel());
+		rubyAnswer.setQueryParamater(queryParamater);
 		if (mod.getChannel() == null && mod.getProg_title() == null){
 			System.err.println("[TVAnserMapper]: Channel null and program null");
 			if (mod.getStart() == null){
@@ -115,7 +122,6 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 			rubyAnswer.setAnswer( getChannelProgAndTime( progs )  );
 			return rubyAnswer;
 		}
-		
 		if (mod.getChannel() == null){
 			System.err.println("[TVAnserMapper]: Channel null");
 			if ( intent.equals( IntentConstants.TV_POL ) && progs.isEmpty()){
@@ -194,8 +200,6 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		}
 		rubyAnswer.setAnswer( getTitleAndTime( progs )  );
 		return rubyAnswer;
-		
-//		return DEF_ANS;
 	}
 
 	public String  getTime ( List< TVProgram > progs ) {
@@ -345,7 +349,7 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 	}
 	
 	
-	public void studyFile(String fileIn, String fileOut){
+	/*public void studyFile(String fileIn, String fileOut){
 		try{
 			BufferedReader reader = new BufferedReader( new FileReader( fileIn ) );
 			BufferedWriter writer = new BufferedWriter( new FileWriter( fileOut ) );
@@ -368,6 +372,6 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		tam.init();
 		tam.studyFile( "D:\\Workspace\\Code\\FTI\\rubyweb\\AIML_tvd_questions.txt",
 				"D:\\Workspace\\Code\\FTI\\rubyweb\\AIML_tvd_questions.out" );
-	}
+	}*/
 
 }

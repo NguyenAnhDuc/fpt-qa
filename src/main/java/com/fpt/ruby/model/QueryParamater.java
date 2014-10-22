@@ -68,6 +68,8 @@ public class QueryParamater {
 		if (movieTicket != null) result.append("Movie Ticket: " + movieTicket.toShow() + " | ");
 		if (beginTime != null) result.append("Begin Time: " + beginTime.toLocaleString() + " | ");
 		if (endTime != null) result.append("End Time: " + endTime.toLocaleString() + " | ");
+		if (tvChannel != null) result.append("TVChannel: " + tvChannel + " | ");
+		if (tvProTitle != null) result.append("TVProgram: " + tvProTitle + " | ");
 		return result.append("}").toString();
 	}
 	

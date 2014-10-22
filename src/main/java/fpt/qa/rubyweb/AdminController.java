@@ -1,37 +1,39 @@
 package fpt.qa.rubyweb;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
-import javax.annotation.PostConstruct;
-
+import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import sun.util.logging.resources.logging;
-
 import com.fpt.ruby.crawler.CrawlPhimChieuRap;
 import com.fpt.ruby.crawler.CrawlerMyTV;
 import com.fpt.ruby.crawler.moveek.MoveekCrawler;
 import com.fpt.ruby.model.Cinema;
+import com.fpt.ruby.model.DataChart;
 import com.fpt.ruby.model.Log;
 import com.fpt.ruby.model.MovieTicket;
 import com.fpt.ruby.model.NameMapper;
 import com.fpt.ruby.model.TVProgram;
+import com.fpt.ruby.model.chart.DataPieChart;
 import com.fpt.ruby.service.CinemaService;
 import com.fpt.ruby.service.LogService;
 import com.fpt.ruby.service.NameMapperService;
 import com.fpt.ruby.service.TVProgramService;
 import com.fpt.ruby.service.mongo.MovieTicketService;
+import com.google.common.collect.Lists;
 import com.mongodb.BasicDBObject;
 
 @Controller
@@ -241,8 +243,8 @@ public class AdminController {
 	
 	@RequestMapping(value="admin-show-logs", method = RequestMethod.GET)
 	public String showLogs(Model model, @RequestParam("num") String numString){
-		List<Log> logs = logService.findLogToShow();
-		List<Log> results = new ArrayList<Log>();
+		System.out.println("Admin Show Logs");
+		List<Log> logs = Lists.reverse(logService.findLogToShow());
 		int numLog = 0;
 		try {
 			numLog = Integer.parseInt(numString);
@@ -254,10 +256,8 @@ public class AdminController {
 			model.addAttribute("logs",logs);
 			return "showLog";
 		}
-		for (int  i=0;i<numLog;i++){
-			results.add(logs.get(i));
-		}
-		model.addAttribute("logs",logs);
+		
+		model.addAttribute("logs",logs.subList(0, numLog));
 		return "showLog";
 	}
 	
@@ -276,6 +276,75 @@ public class AdminController {
 		model.addAttribute("tickets",tickets);
 		return "showTicket";
 	}
-
-
+	@RequestMapping(value = "/testChartData", method = RequestMethod.POST)
+	public List<String> getData() {
+		List<String> data = new ArrayList<String>();
+		data.add("Jan");data.add("Feb");
+		return data;
+	}
+	
+	@RequestMapping(value = "/admin-analytic", method = RequestMethod.GET)
+	public String testChart(Model model) {
+		int ONE_DAY = 24 * 3600 * 1000;
+		// Line Chart: NumberOfRequest
+		Date today = new Date();
+		today.setHours(0);today.setMinutes(0);today.setSeconds(0);
+		Date firstdayOfMonth = new Date(today.getTime() - (today.getDate() -1) * ONE_DAY);
+		List<String> months = new ArrayList<String>();
+		List<DataChart> series = new ArrayList<DataChart>();
+		DataChart dataAll = new DataChart();
+		dataAll.name = "All";
+		dataAll.data = new ArrayList<Integer>();
+		DataChart domainTV = new DataChart();
+		domainTV.name = "TV Domain";
+		domainTV.data = new ArrayList<Integer>();
+		DataChart domainMovie = new DataChart();
+		domainMovie.name = "Movie Domain";
+		domainMovie.data = new ArrayList<Integer>();
+		
+		List<Log> logs = logService.findLogGtTime(firstdayOfMonth);
+		for (int i = firstdayOfMonth.getDate(); i <= today.getDate(); i++ ){
+			months.add(""+i);
+			Date before = new Date(firstdayOfMonth.getTime() + i*ONE_DAY);
+			Date after = new Date(firstdayOfMonth.getTime() + (i-1)*ONE_DAY);
+			Stream<Log> streamLog =  logs.stream().filter(l -> ( l.getDate().after(after) &&  l.getDate().before(before)));
+			domainTV.data.add((int)logs.stream().filter(l -> (l.getDomain() != null && l.getDomain().equals("tv") && l.getDate().after(after) &&  l.getDate().before(before))).count());
+			domainMovie.data.add((int)logs.stream().filter(l -> (l.getDomain() != null && l.getDomain().equals("movie") && l.getDate().after(after) &&  l.getDate().before(before))).count());
+			dataAll.data.add((int)logs.stream().filter(l -> (l.getDate().after(after) &&  l.getDate().before(before))).count());
+		}
+		series.add(dataAll);series.add(domainTV);series.add(domainMovie);
+		ObjectMapper mapper = new ObjectMapper();
+		String json = "", jsonAll = "", jsonTV = "", jsonMovie = "";
+		try {
+			json = mapper.writeValueAsString(months);
+			jsonAll = mapper.writeValueAsString(series);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		model.addAttribute("data", json);
+		model.addAttribute("jsonS", jsonAll);
+		// Pie Chart: Intent
+		logs = logService.findAll();
+		List<DataPieChart> dataPies = new ArrayList<DataPieChart>();
+		Map<String, Long> counted = logs.stream()
+		            .collect(Collectors.groupingBy(o -> o.getIntent(), Collectors.counting()));
+		Iterator iterator = counted.keySet().iterator();
+		while(iterator.hasNext()){
+			Object key   = iterator.next();
+	          Object value = counted.get(key);
+		      DataPieChart dataPieChart = new DataPieChart();
+		      dataPieChart.name = key.toString();
+		      dataPieChart.y = Integer.parseInt(value.toString()) * 1.0 / logs.size();
+		      dataPies.add(dataPieChart);
+		}
+		String jsonPie = "";
+		try{
+			jsonPie = mapper.writeValueAsString(dataPies);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		model.addAttribute("jsonPie", jsonPie);
+		
+		return "admin-dashboard";
+	}
 }
