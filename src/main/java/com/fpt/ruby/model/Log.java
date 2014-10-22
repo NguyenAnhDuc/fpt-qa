@@ -9,6 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 public class Log {
 	@Id private String id;
+	private String inputType;
 	private String userAgent;
 	private String question;
 	private String answer;
@@ -16,6 +17,13 @@ public class Log {
 	private String domain;
 	private QueryParamater queryParamater;
 	private Date date;
+	
+	public String getInputType() {
+		return inputType;
+	}
+	public void setInputType(String inputType) {
+		this.inputType = inputType;
+	}
 	public String getUserAgent() {
 		return userAgent;
 	}

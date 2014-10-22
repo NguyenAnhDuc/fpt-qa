@@ -107,6 +107,7 @@ public class AppController {
 	public RubyAnswer prototypeGetAnswer(
 			@RequestParam("question") String question,
 			@RequestParam(value="userID", defaultValue = "") String appUserID,
+			@RequestParam(value="inputType", defaultValue = "text") String inputType,
 			@CookieValue(value = "userID", defaultValue = "") String browserUserID) {
 		/*
 		 * UserAgentStringParser parser =
@@ -119,9 +120,11 @@ public class AppController {
 		 * + agent.getFamily() );
 		 */
 		String userID = browserUserID;
+		if (!inputType.equals("text")) inputType = "voice";
 		if (!appUserID.isEmpty()) userID = appUserID;
 		logger.info("UserID: " + userID);
 		Log log = new Log();
+		log.setInputType(inputType);
 		log.setUserAgent(request.getHeader("User-Agent"));
 		log.setQuestion(question);
 		log.setDate(new Date());
@@ -183,6 +186,7 @@ public class AppController {
 		// Analytic
 		Map<String, Object> event = new HashMap<String, Object>();
 		event.put("userID", userID);
+		event.put("inputType", inputType);
 		event.put("domain", rubyAnswer.getDomain());
 		event.put("intent", rubyAnswer.getIntent());
 		event.put("question", rubyAnswer.getQuestion());
