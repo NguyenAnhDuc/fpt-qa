@@ -175,11 +175,6 @@ public class ProcessHelper{
 	public static String getAIMLAnswer( String question, String botId, String token ) {
 		List<String> udfAnswers = new ArrayList<String>();
 		udfAnswers.add("Tôi không biết");
-		/*udfAnswers.add("Tôi không có thông tin");
-		udfAnswers.add("Tôi không rõ");
-		udfAnswers.add("Tôi không nghe rõ, bạn nói gì vậy");
-		udfAnswers.add("Câu hỏi của bạn rất thú vị, tôi sẽ tìm kiếm thông tin và trả lời bạn dịp khác");*/
-		System.out.println( "AIML get answer ...." );
 		try{
 			String url = "http://tech.fpt.com.vn/AIML/api/bots/" + botId + "/chat?token=" 
 						+ token + "&request="
@@ -187,7 +182,10 @@ public class ProcessHelper{
 			String jsonString = HttpHelper.sendGet( url );
 			JSONObject json = new JSONObject( jsonString );
 			String answer = json.getString( "response" );
-			if (isUdfAnswer(answer, udfAnswers)) return null;
+			System.out.println( "AIML get answer: " + answer );
+			if (answer.contains("sraix_wiki")) 
+				answer = new JSONObject(answer).getJSONObject("response").getString("content").trim();
+			if (!answer.isEmpty() && isUdfAnswer(answer, udfAnswers)) return null;
 			return answer;
 		}catch ( Exception ex ){
 			ex.printStackTrace();
@@ -195,23 +193,6 @@ public class ProcessHelper{
 		}
 
 	}
-	
-	/*public static String getSimsimiResponse( String question ) {
-		System.out.println( "Simsimi get answer ...." );
-		System.out.println( "question: " + question );
-		try{
-			String url = "http://sandbox.api.simsimi.com/request.p?key=9cac0c6c-1810-447b-ad5c-c1c76b2aadeb&lc=vn&text="
-					+ URLEncoder.encode( question, "UTF-8" );
-			String jsonString = HttpHelper.sendGet( url );
-			System.out.println( "response: " + jsonString );
-			JSONObject json = new JSONObject( jsonString );
-			String answer = json.getString( "response" );
-			return answer;
-		}catch ( Exception ex ){
-			return "Em má»‡t rá»“i, khÃ´ng chÆ¡i ná»¯a, Ä‘i ngá»§ Ä‘Ã¢y!";
-		}
-
-	}*/
 
 	public static RubyAnswer getAnswerFromSimsimi( String question, QuestionStructure questionStructure ) {
 		RubyAnswer rubyAnswer = new RubyAnswer();

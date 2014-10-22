@@ -100,11 +100,13 @@
 						} */
 						// Query Paramaters
 						var queryParamater = "";
-						if (result.queryParamater.movieTitle != null) queryParamater +=  result.queryParamater.movieTitle + "</br>";
-						if (result.queryParamater.cinName != null) queryParamater +=  result.queryParamater.cinName + "</br>";
-						if (result.queryParamater.tvChannel != null) queryParamater += result.queryParamater.tvChannel + "</br>";
-						if (result.queryParamater.tvProTitle != null) queryParamater += result.queryParamater.tvProTitle + "</br>";
-						$('#result-paramaters').html(queryParamater);
+						if (result.queryParamater != null){
+							if (result.queryParamater.movieTitle != null) queryParamater +=  result.queryParamater.movieTitle + "</br>";
+							if (result.queryParamater.cinName != null) queryParamater +=  result.queryParamater.cinName + "</br>";
+							if (result.queryParamater.tvChannel != null) queryParamater += result.queryParamater.tvChannel + "</br>";
+							if (result.queryParamater.tvProTitle != null) queryParamater += result.queryParamater.tvProTitle + "</br>";
+							$('#result-paramaters').html(queryParamater);	
+						}
 						var htmlParamater = '', dateExtract = '';
 						if (result.beginTime != null)
 							dateExtract += 'Begin Time: '
