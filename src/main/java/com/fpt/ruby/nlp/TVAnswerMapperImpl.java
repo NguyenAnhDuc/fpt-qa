@@ -16,6 +16,7 @@ import com.fpt.ruby.service.TVProgramService;
 import fpt.qa.intent.detection.IntentConstants;
 import fpt.qa.intent.detection.TVIntentDetection;
 import fpt.qa.mdnlib.util.string.DiacriticConverter;
+import fpt.qa.mdnlib.util.string.StrUtil;
 
 public class TVAnswerMapperImpl implements TVAnswerMapper {
 	public static final String DEF_ANS = "Xin lỗi, chúng tôi không có thông tin cho câu trả lời của bạn";
@@ -108,6 +109,13 @@ public class TVAnswerMapperImpl implements TVAnswerMapper {
 		queryParamater.setTvProTitle(mod.getProg_title());
 		queryParamater.setTvChannel(mod.getChannel());
 		rubyAnswer.setQueryParamater(queryParamater);
+		
+		// Now extract the needed information from the list of returned item
+		// to generate the answer
+		if (mod.getProg_title() == null && mod.getType() != null && !mod.getType().isEmpty()){
+			mod.setProg_title(StrUtil.join(mod.getType(), ","));
+		}
+		
 		if (mod.getChannel() == null && mod.getProg_title() == null){
 			System.err.println("[TVAnserMapper]: Channel null and program null");
 			if (mod.getStart() == null){
