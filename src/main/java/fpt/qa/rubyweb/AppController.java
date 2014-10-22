@@ -106,7 +106,8 @@ public class AppController {
 	@ResponseBody
 	public RubyAnswer prototypeGetAnswer(
 			@RequestParam("question") String question,
-			@CookieValue(value = "userID", defaultValue = "") String userID) {
+			@RequestParam(value="userID", defaultValue = "") String appUserID,
+			@CookieValue(value = "userID", defaultValue = "") String browserUserID) {
 		/*
 		 * UserAgentStringParser parser =
 		 * UADetectorServiceFactory.getResourceModuleParser(); ReadableUserAgent
@@ -117,7 +118,8 @@ public class AppController {
 		 * agent.getDeviceCategory().getName() ); System.out.println("Family: "
 		 * + agent.getFamily() );
 		 */
-
+		String userID = browserUserID;
+		if (!appUserID.isEmpty()) userID = appUserID;
 		logger.info("UserID: " + userID);
 		Log log = new Log();
 		log.setUserAgent(request.getHeader("User-Agent"));

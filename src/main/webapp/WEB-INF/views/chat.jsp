@@ -27,6 +27,7 @@
 		$('#result-paramaters').html("");
 		$('#result-time').html("");
 		$('#result-final').html("");
+		$('#loading').removeClass('hidden');
 		$
 				.ajax({
 					type : "POST",
@@ -34,6 +35,7 @@
 					contentType : "application/x-www-form-urlencoded;charset=UTF-8",
 					data : "question=" + encodeURIComponent(question),
 					success : function(result) {
+						$('#loading').addClass('hidden');
 						var htmlResult = "";
 						//question
 						htmlResult = htmlResult
@@ -146,8 +148,67 @@ body {
 	color: #ccc;
 	text-shadow: 0 1px 0 #fff;
 }
-</style>
 
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+</style>
+			<div class="spinner hidden" id="loading">
+			  <div class="rect1"></div>
+			  <div class="rect2"></div>
+			  <div class="rect3"></div>
+			  <div class="rect4"></div>
+			  <div class="rect5"></div>
+			</div>
 			<div class="row">
 				<div class="col-md-5 col-lg-5">
 					<div class="panel panel-primary">
