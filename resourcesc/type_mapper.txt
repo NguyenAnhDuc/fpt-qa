@@ -1,5 +1,5 @@
 FILM	hbo, star movie, bánh đúc có xương, ninja rùa, 5s online, bão qua làng
-DOC_FILM	vtv1, người đương thời
+DOC_FILM	hậu quả chất độc màu da cam
 CARTOON	cartoon network, tom and jerry, phim hoạt hình, nàng bạch tuyết và bảy chú lùn
 FASHION	thời trang và cuộc sống,
 GAME_SHOW	ai là triệu phú, chiếc nón kì diệu, giọng hát việt nhí, vietnam idol
