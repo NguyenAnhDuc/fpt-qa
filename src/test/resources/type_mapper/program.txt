@@ -4,7 +4,7 @@ vtv1; Phim truyện Bác sĩ thú y Dolittle - Tập 5; FILM
 vtv1; âm nhạc và cuộc sống; MUSIC
 vtv3; bánh đúc có xương; FILM
 vtv3; giọng hát việt nhí; GAME_SHOW
-vtv3: the voice kid; GAME_SHOW
+vtv3; the voice kid; GAME_SHOW
 vtv3; master chef; GAME_SHOW
 hbo; frozen; FILM
 screen red; snow white; CARTOON
@@ -38,95 +38,95 @@ vtvcab17; Nhảy 123Số 24; MUSIC
 vtvcab3; Thể thao & Cuộc sống; SPORT
 vtv1; tom and jerry; CARTOON
 k+1; MU - Asernal; SPORT
-VTV1;tin tức;NEW
+VTV1;tin tức;NEWS
 VTV1;vtv kết nối;OTHER
-VTV1;báo chí toàn cảnh;NEW
+VTV1;báo chí toàn cảnh;NEWS
 VTV1;khám phá việt nam;OTHER người đẽo thuyền độc mộc cuối cùng;OTHER
-VTV1;toàn cảnh thế giới mỹ mở rộng cuộc chiến chống is;NEW
+VTV1;toàn cảnh thế giới mỹ mở rộng cuộc chiến chống is;NEWS
 VTV1;cổng làng tự truyện;OTHER
-VTV1;sự kiện và bình luận;NEW
+VTV1;sự kiện và bình luận;NEWS
 VTV1;trường sa là nhà;OTHER
-VTV1;chính sách kinh tế và cuộc sống;NEW
+VTV1;chính sách kinh tế và cuộc sống;NEWS
 VTV1;khám phá thế giới;OTHER
 VTV1;chào cờ;CARTOON
 VTV1;cựu chiến binh việt nam;OTHER
-VTV1;chào buổi sáng;NEW
-VTV1;tài chính kinh doanh;NEW
-VTV1;s việt nam;NEW
-VTV1;cùng dân bám biển;NEW
-VTV1;khám phá việt nam;OTHER;NEW
-VTV1;phiên chất vấn và trả lời chất vấn của ủy ban thường vụ quốc hội;NEW;NEW
-VTV1;cải cách hành chính;NEW;NEW
+VTV1;chào buổi sáng;NEWS
+VTV1;tài chính kinh doanh;NEWS
+VTV1;s việt nam;NEWS
+VTV1;cùng dân bám biển;NEWS
+VTV1;khám phá việt nam;OTHER;NEWS
+VTV1;phiên chất vấn và trả lời chất vấn của ủy ban thường vụ quốc hội;NEWS;NEWS
+VTV1;cải cách hành chính;NEWS;NEWS
 VTV1;điểm hẹn văn hóa;OTHER
-VTV1;thời sự;NEW;
-VTV1;về quê;NEW
-VTV1;24 giờ;NEW
-VTV1;phiên chất vấn và trả lời chất vấn của ủy ban thường vụ quốc hội;NEW
-VTV1;tin quốc tế;NEW
-VTV1;cải cách hành chính;NEW
-VTV1;khuyến công;NEW
-VTV1;cuộc sống thường ngày;NEW
-VTV1;khoảnh khắc thường ngày;NEW
-VTV1;thời sự;NEW
-VTV1;thể thao 24 trên 7;NEW
-VTV1;quốc hội với cử tri;NEW
+VTV1;thời sự;NEWS;
+VTV1;về quê;NEWS
+VTV1;24 giờ;NEWS
+VTV1;phiên chất vấn và trả lời chất vấn của ủy ban thường vụ quốc hội;NEWS
+VTV1;tin quốc tế;NEWS
+VTV1;cải cách hành chính;NEWS
+VTV1;khuyến công;NEWS
+VTV1;cuộc sống thường ngày;NEWS
+VTV1;khoảnh khắc thường ngày;NEWS
+VTV1;thời sự;NEWS
+VTV1;thể thao 24 trên 7;NEWS
+VTV1;quốc hội với cử tri;NEWS
 VTV1;bánh đúc có xương;FILM
-VTV1;tài chính kinh doanh;NEW
-VTV1;thế giới trong ngày;NEW
-VTV1;tiêu điểm;NEW
+VTV1;tài chính kinh doanh;NEWS
+VTV1;thế giới trong ngày;NEWS
+VTV1;tiêu điểm;NEWS
 VTV1;thế giới góc nhìn;OTHER
 VTV1;vtv kết nối;OTHER
-VTV1;bản tin;NEW
+VTV1;bản tin;NEWS
 VTV1;khám phá việt nam;OTHER rừng chè cổ thụ giữa đại ngàn;OTHER
-VTV1;tài chính kinh doanh;NEW
+VTV1;tài chính kinh doanh;NEWS
 VTV1;yblôk êban vị tướng của núi rừng tây nguyên;OTHER
 VTV1;chìa khoá thành công;OTHER
-VTV1;cổng làng tự truyện;NEW
+VTV1;cổng làng tự truyện;NEWS
 VTV1;ca nhạc;MUSIC
 VTV1;bánh đúc có xương;FILM
-VTV1;tin tức;NEW
+VTV1;tin tức;NEWS
 VTV1;khám phá thế giới;OTHER
 VTV1;chào cờ;CARTOON
-VTV1;cải cách hành chính;NEW
-VTV1;chào buổi sáng;NEW
-VTV1;tài chính kinh doanh;NEW
-VTV1;s việt nam;NEW
-VTV1;người và đảo;NEW
-VTV1;khám phá việt nam;OTHER;NEW
+VTV1;cải cách hành chính;NEWS
+VTV1;chào buổi sáng;NEWS
+VTV1;tài chính kinh doanh;NEWS
+VTV1;s việt nam;NEWS
+VTV1;người và đảo;NEWS
+VTV1;khám phá việt nam;OTHER;NEWS
 VTV1;chuyện đương thời;OTHER
 VTV1;đèn giao thông;OTHER
-VTV1;thời sự;NEW
-VTV1;quốc hội với cử tri;NEW
-VTV1;tài chính kinh doanh;NEW
-VTV1;phá rừng tự nhiên để trồng cao su;NEW
-VTV1;trang địa phương;NEW
+VTV1;thời sự;NEWS
+VTV1;quốc hội với cử tri;NEWS
+VTV1;tài chính kinh doanh;NEWS
+VTV1;phá rừng tự nhiên để trồng cao su;NEWS
+VTV1;trang địa phương;NEWS
 VTV1;lao động và công đoàn;OTHER
 VTV1;điểm hẹn văn hóa;OTHER
-VTV1;thời sự;NEW
-VTV1;tài chính kinh doanh;NEW
-VTV1;24 giờ;NEW
+VTV1;thời sự;NEWS
+VTV1;tài chính kinh doanh;NEWS
+VTV1;24 giờ;NEWS
 VTV1;trở về từ ký ức;OTHER
 VTV1;nông thôn mới;OTHER
 VTV1;vì người nghèo;OTHER
-VTV1;vtv kết nối;NEW
-VTV1;thời sự;NEW
+VTV1;vtv kết nối;NEWS
+VTV1;thời sự;NEWS
 VTV1;truyền hình công thương;OTHER
-VTV1;chính sách kinh tế và cuộc sống;NEW
-VTV1;tin quốc tế;NEW
+VTV1;chính sách kinh tế và cuộc sống;NEWS
+VTV1;tin quốc tế;NEWS
 VTV1;lao động và công đoàn;OTHER
 VTV1;khuyến công;OTHER
 VTV1;tài chính tiêu dùng;OTHER
-VTV1;cuộc sống thường ngày
-VTV1;khoảnh khắc thường ngày
-VTV1;thời sự;NEW
-VTV1;thể thao 24 trên 7;NEW
-VTV1;đảng trong cuộc sống hôm nay
+VTV1;cuộc sống thường ngày;OTHER
+VTV1;khoảnh khắc thường ngày;OTHER
+VTV1;thời sự;NEWS
+VTV1;thể thao 24 trên 7;NEWS
+VTV1;đảng trong cuộc sống hôm nay;OTHER
 VTV1;bánh đúc có xương;FILM
-VTV1;tài chính kinh doanh;NEW
-VTV1;thế giới trong ngày;NEW
+VTV1;tài chính kinh doanh;NEWS
+VTV1;thế giới trong ngày;NEWS
 VTV1;gương sáng trong cuộc sống;OTHER
 VTV1;không gian văn hóa nghệ thuật;MUSIC
-VTV1;bản tin;NEW
+VTV1;bản tin;NEWS
 VTV1;khám phá việt nam;OTHER
 VTV3;thể thao;SPORT
 VTV3;thời trang cuộc sống;OTHER
@@ -135,7 +135,7 @@ VTV3;việt nam trong tim tôi;OTHER
 VTV3;360 độ thể thao;SPORT
 VTV3;sống đẹp;OTHER
 VTV3;đường tới hạnh phúc;OTHER
-VTV3;thời sự;NEW
+VTV3;thời sự;NEWS
 VTV3;ai là triệu phú;GAME_SHOW
 VTV3;sắc màu phái đẹp;OTHER
 VTV3;dấu chân du mục;OTHER
@@ -150,17 +150,17 @@ VTV3;hãy chọn giá đúng;GAME_SHOW
 VTV3;trò chơi âm nhạc;GAME_SHOW
 VTV3;nhịp đập 360 độ thể thao;SPORT
 VTV3;hai trái tim vàng;FILM
-VTV3;cà phê sáng;NEW
+VTV3;cà phê sáng;NEWS
 VTV3;bảng xếp hạng bài hát yêu thích;MUSIC
 VTV3;sáng tạo việt;OTHER
-VTV3;vtv kết nối;NEW
+VTV3;vtv kết nối;NEWS
 VTV3;dạy thê thao trên truyền hình;SPORT
 VTV3;hãy chọn giá đúng;GAME_SHOW
 VTV3;thông tin 260;OTHER
 VTV3;đường tới vương miện;OTHER
 VTV3;phụ nữ là số 1;OTHER
 VTV3;cảm ơn cuộc đời;OTHER
-VTV3;vui sống mỗi ngày
+VTV3;vui sống mỗi ngày;OTHER
 VTV3;thể thao 9;SPORT
 VTV3;nhật ký asiad 2014;SPORT
 VTV3;đường tới đích;SPORT
@@ -178,12 +178,11 @@ VTV3;đấu trường 100;GAME_SHOW
 VTV3;văn hoá sự kiện nhân vật;OTHER
 VTV3;nhịp đập 360 thể thao;SPORT
 VTV3;hai trái tim vàng;FILM
-VTV3;cà phê sáng;NEW
+VTV3;cà phê sáng;NEWS
 VTV3;ca nhạc;MUSIC
 VTV3;vua đầu bếp;GAME_SHOW
 VTV3;thể thao;SPORT
 VTV3;chúng tôi là chiến sĩ;GAME_SHOW
-
 VTV2;pháp luật và cuộc sống;OTHER
 VTV2;phổ biến kiến thức;OTHER
 VTV2;chỉ có thể là yêu;FILM
@@ -207,7 +206,7 @@ VTV2;khoa học giáo dục quốc phòng;OTHER
 VTV2;ranbir và rano;CARTOON
 VTV2;tây du ký;FILM
 VTV2;việt nam xanh;OTHER
-VTV2;bản tin;NEW
+VTV2;bản tin;NEWS
 VTV2;phong tục việt;OTHER
 VTV2;khám phá thế giới;OTHER
 VTV2;7 ngày công nghệ;OTHER
@@ -216,20 +215,20 @@ VTV2;mười vạn câu hỏi vì sao;CARTOON
 VTV2;chỉ có thể là yêu;FILM
 VTV2;chúc bé ngủ ngon;CARTOON
 VTV4;tuổi 20 hát;MUSIC
-VTV4;dân hỏi bộ trưởng trả lời;NEW
+VTV4;dân hỏi bộ trưởng trả lời;NEWS
 VTV4;vườn cổ tích;CARTOON
-VTV4;đối thoại chính sách;NEW
+VTV4;đối thoại chính sách;NEWS
 VTV4;khám phá việt nam;OTHER
-VTV4;bản tin tiếng anh;NEW
-VTV4;bản tin thời sự tiếng việt;NEW
-VTV4;bản tin thời sự;NEW
+VTV4;bản tin tiếng anh;NEWS
+VTV4;bản tin thời sự tiếng việt;NEWS
+VTV4;bản tin thời sự;NEWS
 VTV4;bếp việt;GAME_SHOW
 VTV4;giấc mơ hạnh phúc;FILM
-VTV4;bản tin tài chính đầu tư;NEW
-VTV4;bản tin tiếng anh;NEW
-VTV4;tạp chí du lịch
+VTV4;bản tin tài chính đầu tư;NEWS
+VTV4;bản tin tiếng anh;NEWS
+VTV4;tạp chí du lịch;OTHER
 VTV4;bản tin thời sự tiếng việt
-VTV4;bản tin tiếng pháp;NEW
+VTV4;bản tin tiếng pháp;NEWS
 VTV4;phim tài liệu;FILM
 VTV4;chúng tôi là chiến sĩ;GAME_SHOW
 VTV3;bình luận thể thao;SPORT
@@ -237,22 +236,22 @@ VTV3;vòng bảng uefa champion league;SPORT
 VTV3;duyên nghiệp;FILM
 VTV3;tạp chí champions league;SPORT
 VTV3;ai là triệu phú;GAME_SHOW
-HanoiTV1;bản tin;NEW
+HanoiTV1;bản tin;NEWS
 HanoiTV1;trên đường hội nhập;OTHER
 HanoiTV1;ca nhạc;MUSIC
 HanoiTV1;phim thiếu nhi;CARTOON
 HanoiTV1;49 ngày phim hàn quốc;FILM
-HanoiTV1;bản tin kinh tế;NEW
-HanoiTV1;thời sự;NEW
-HanoiTV1;tiếp sóng chương trình thời sự đài truyền hình việt nam;NEW
+HanoiTV1;bản tin kinh tế;NEWS
+HanoiTV1;thời sự;NEWS
+HanoiTV1;tiếp sóng chương trình thời sự đài truyền hình việt nam;NEWS
 HanoiTV1;ký ức 60 năm giải phóng thủ đô;OTHER
 HanoiTV1;chung kết giọng hát hay hà nội 2014;MUSIC
-HanoiTV1;bản tin tài chính và thị trường;NEW
-HanoiTV1;bản tin cuối ngày;NEW
+HanoiTV1;bản tin tài chính và thị trường;NEWS
+HanoiTV1;bản tin cuối ngày;NEWS
 HANOITV2;thể dục buổi sáng;SPORT
-HANOITV2;chào ngày mới;NEW
+HANOITV2;chào ngày mới;NEWS
 HANOITV2;phim truyện :lời nguyền sapphire phim vn tập 34;FILM
-HANOITV2;phóng sự;NEW
+HANOITV2;phóng sự;NEWS
 HANOITV2;ca nhạc :thức dậy đi em;MUSIC
 HANOITV2;khám phá thế giới :thiên nhiên tươi đẹp;OTHER
 HANOITV2;hoạt hình :góc khám phá trẻ thơ t116;CARTOON
@@ -266,8 +265,8 @@ HANOITV2;sức khỏe khoa học đời sống;OTHER
 HANOITV2;ngôi nhà tuổi thơ;CARTOON
 HANOITV2;thể thao;SPORT
 HANOITV2;cậu bé thần kỳ;CARTOON
-HANOITV2;bản tin attp;NEW
-HANOITV2;thời sự;NEW
+HANOITV2;bản tin attp;NEWS
+HANOITV2;thời sự;NEWS
 HANOITV2;tình như mây xa;FILM
 HANOITV2;lời nguyền sapphire;FILM
 HANOITV2;phóng sự
@@ -418,7 +417,7 @@ VTVCab3;bản tin thế giới;SPORT
 VTVCab3;muôn màu asiad 2014;SPORT
 VTVCab3;asiad 17;SPORT
 VTVCab3;nhật kí asiad 2014;SPORT
-VTVCab3;bản tin thế giới;NEW
+VTVCab3;bản tin thế giới;NEWS
 VTVCab16;asiad 17;SPORT
 VTVCab16;tường thuật ngoại hạng anh 14/15;SPORT
 VTVCab16;nhật kí asiad 2014;SPORT
@@ -834,7 +833,7 @@ DANANGTV1;gameshow gia đình vui nhộn;GAME_SHOW
 DANANGTV1;phim truyện hq mặt nạ thủy tinh tập 97;FILM
 DANANGTV1;phim truyện vn dòng đời nghiệt ngã tập 01;FILM
 DANANGTV1;phim truyện hq gia đình là số 1 p3 tâp 33;FILM
-DANANGTV1;thời sự pt th đn;NEW
+DANANGTV1;thời sự pt th đn;NEWS
 DANANGTV1;phim truyện philippine trái tim vay mượn tập 22;FILM
 DANANGTV1;phim truyện hq mặt nạ thủy tinh tập 98;FILM
 DANANGTV1;thiếu nhi hoàng tử orjaru tập 12;CARTOON
@@ -843,7 +842,7 @@ DANANGTV1;phim truyện vn dòng đời nghiệt ngã tập 02;FILM
 DANANGTV1;thiếu nhi 10 vạn câu hỏi vì sao phần ii 9/10;CARTOON
 DANANGTV1;phim truyện trái tim vay mượn tập 20;FILM
 DANANGTV1;chương trình hòa nhạc 2014 : danang chamber music 2014 vn;MUSIC
-DONGNAITV1;bản tin tiếng nhật bản tin tiếng hàn;NEW
+DONGNAITV1;bản tin tiếng nhật bản tin tiếng hàn;NEWS
 DONGNAITV1;phim truyện 94t đường về nhà tập 67;FILM
 DONGNAITV1;phim việt nam 135 dù gió có thổi tập 68 69;FILM
 DONGNAITV1;thể thao;SPORT
@@ -851,6 +850,6 @@ DONGNAITV1;phim tài liệu;FILM
 DONGNAITV1;phim truyện 69t gia đình đá quý tập 48;FILM
 DONGNAITV1;phim tài liệu trong lịch sử oai hùng tập 1 :việt nam   cuba;FILM
 DONGNAITV1;ca nhạc nhạc trẻ chọn lọc 68;MUSIC
-DONGNAITV1;chào ngày mới;NEW
+DONGNAITV1;chào ngày mới;NEWS
 DONGNAITV1;văn nghệ thiếu nhi yêu mẹ thương ba;CARTOON
 DONGNAITV1;phim việt nam 22t đồng quê tập 12 13;FILM

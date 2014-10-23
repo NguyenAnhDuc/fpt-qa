@@ -3,10 +3,7 @@
  */
 package fpt.qa.type_mapper;
 
-/**
- * @author Bui Thien
- *
- */
 public enum ProgramType {
-	SPORT, FILM, DOC_FILM, MUSIC, GAME_SHOW, MULTI_MEDIA, NEW, FASHION, CARTOON, ALL
+	FILM, SPORT, MUSIC, GAME_SHOW, CARTOON, NEWS, ALL;
+//	SPORT, FILM, DOC_FILM, MUSIC, GAME_SHOW, MULTI_MEDIA, NEWS, FASHION, CARTOON, ALL
 }

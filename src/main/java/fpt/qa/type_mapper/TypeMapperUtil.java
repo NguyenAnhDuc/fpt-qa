@@ -113,6 +113,8 @@ public class TypeMapperUtil {
 		while (m.find()) {
 			++count;
 		}
+//		if (count != 0)
+//			System.out.println("###" + pat + " : " + count);
 		return count;
 		
 	}

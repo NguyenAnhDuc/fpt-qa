@@ -5,13 +5,15 @@ import java.util.*;
 public class SportTypeRecognizer extends TypeRecognizer {
 	public SportTypeRecognizer() {
 		SetType(ProgramType.SPORT);
-		
+
 		String[] dedicatedChannels = new String[] { "fox sports" };
 		String[] typeKeywords = new String[] { "sport", "bongda", "football",
-				"bongchuyen", "soccer", "championleague" };
-		String[] relatedKeyword = new String[] { "sport", "bóng đá",
-				"football", "bóng chuyền", "soccer", "match",
-				"champion league", "cúp", "vô địch", "thi đấu", "đua xe", "racing"};
+				"bongchuyen", "soccer", "championleague", "thethao", "league" };
+		String[] relatedKeyword = new String[] { "sport", "bóng đá", "ngoại hạng",
+				"football", "bóng chuyền", "soccer", "match", "league",
+				"racing", "trận đấu", "tấn công", "gặp nhau", "bàn thắng",
+				"ghi điểm", "đánh bại", "thắng lợi", "vòng", "livescore",
+				"tường thuật", "trực tiếp", "thất thủ", "chiến thắng", "vdqg", "vđqg", "vòng", "tournament", "event", "ticket"};
 
 		super.loadConfig(dedicatedChannels, typeKeywords, relatedKeyword);
 	}
