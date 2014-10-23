@@ -82,7 +82,7 @@ public class TypeMapperUtil {
 
 	public static String getGoogleSearch(String keyword, Boolean inQuoted)
 			throws IOException {
-		keyword = keyword.substring(0, 20);
+//		keyword = keyword.substring(0, 20);
 		String query = keyword.replaceAll("\\s", "\\+");
 		if (inQuoted)
 			query = "%22" + query + "%22";

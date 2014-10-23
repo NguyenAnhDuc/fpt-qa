@@ -11,9 +11,9 @@ public class TypeMapperTest {
 	@Test
 	public void testTypeMapper() {
 		TypeMapper tm = new TypeMapper();
-		ProgramType type = tm.getType("k+ns", "CHAMPIONS LEAGUE 2014-2015 TỔNG HỢP LƯỢT ĐẤU THỨ 3 - SỐ 1");
+		ProgramType type = tm.getType("vtvcab5", "SIX BULLETS");
 		System.out.println(type);
 		
-		assertTrue(ProgramType.SPORT == type);
+		assertTrue(ProgramType.FILM == type);
 	}
 }
