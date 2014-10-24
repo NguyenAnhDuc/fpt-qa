@@ -173,7 +173,9 @@
 									<th>Intent</th>
 									<th>Query Paramaters</th>
 									<th>Date</th>
+									<th>Input type</th>
 									<th>User Agent</th>
+									<th>UserID</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -190,7 +192,9 @@
 									<td>${log.intent}</td>
 									<td>${log.queryParamater.toShow()}</td>
 									<td>${log.date.toLocaleString()}</td>
+									<td>${log.inputType}</td>
 									<td>${log.userAgent}</td>
+									<td>${log.userID}</td>
 										<td>
 											<div class="pull-right action-buttons">
 

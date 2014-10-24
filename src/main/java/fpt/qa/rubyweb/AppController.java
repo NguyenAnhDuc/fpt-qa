@@ -91,6 +91,7 @@ public class AppController {
 		tam.init();
 		String dir = (new RedisHelper()).getClass().getClassLoader()
 				.getResource("").getPath();
+		System.out.println("Dir Init: " + dir);
 		classifier = new DomainClassifier(dir);
 		keenClient = new JavaKeenClientBuilder().build();
 		KeenProject keenProject = new KeenProject(KEEN_PROJECT_ID,
@@ -120,7 +121,8 @@ public class AppController {
 		 * + agent.getFamily() );
 		 */
 		String userID = browserUserID;
-		if (!inputType.equals("text")) inputType = "voice";
+		if (inputType.trim().toLowerCase().equals("keyboard")) inputType = "keyboard";
+		if (inputType.trim().toLowerCase().equals("voice")) inputType = "voice";
 		if (!appUserID.isEmpty()) userID = appUserID;
 		logger.info("UserID: " + userID);
 		Log log = new Log();
@@ -172,6 +174,7 @@ public class AppController {
 		}
 
 		// Log
+		log.setUserID(userID);
 		log.setAnswer(rubyAnswer.getAnswer());
 		log.setDomain(rubyAnswer.getDomain());
 		log.setIntent(rubyAnswer.getIntent());

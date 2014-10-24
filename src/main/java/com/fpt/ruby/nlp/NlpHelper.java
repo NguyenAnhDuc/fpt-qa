@@ -16,7 +16,9 @@ public class NlpHelper {
 	private static ConjunctionHelper conjunctionHelper;
 	private static AbsoluteTime absoluteTime;
 	static {
+		
 		String dir = (new RedisHelper()).getClass().getClassLoader().getResource("").getPath();
+		System.out.println("Nlp Helper: " + dir);
 		MovieIntentDetection.init(dir + "/qc/movie", dir + "/dicts");
 		NonDiacriticMovieIntentDetection.init( dir + "/qc/movie/non-diacritic", dir + "/dicts/non-diacritic" );
 		//conjunctionHelper = new ConjunctionHelper(dir);
