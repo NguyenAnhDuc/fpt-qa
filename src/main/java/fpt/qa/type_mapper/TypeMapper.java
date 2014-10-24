@@ -27,6 +27,8 @@ public class TypeMapper {
 		types.add(new GameShowTypeRecognizer());
 		types.add(new MusicTypeRecognizer());
 		types.add(new SportTypeRecognizer());
+		types.add(new CartoonTypeRecognize());
+		types.add(new NewsTypeRecognizer());
 		
 		for (TypeRecognizer tp : types) {
 			tp.show();
@@ -37,7 +39,7 @@ public class TypeMapper {
 
 	public TypeMapper() {
 	}
-	
+
 	private static void loadData(String fileName) {
 		typeMapper = new HashMap<ProgramType, Set<String>>();
 		String[] lines = UTF8FileUtility.getLines(fileName);
@@ -79,21 +81,42 @@ public class TypeMapper {
 		// step 2 : based on keywords
 		Double maxScore = 0.0;
 		ProgramType type = null;
-
+		List<Double> rs = new ArrayList<Double>();
 		for (TypeRecognizer tp : types) {
 			Double confidentLv = tp.belongThisType(channel, program);
+			rs.add(confidentLv);
 			if (confidentLv > maxScore) {
 				maxScore = confidentLv;
 				type = tp.getType();
 			}
 			System.out.println(tp.getType() + " " + confidentLv);
 		}
+		
+		int count = 0;
+		List<TypeRecognizer> candidates = new ArrayList<TypeRecognizer>();
 
+		int i = 0;
+		for (Double d: rs) {
+			if (d.equals(maxScore)) {
+				count++;
+				candidates.add(types.get(i));
+			}
+			++i;
+		}
+		
+		System.out.println(maxScore + " --- " + count + "  " + candidates.size());
 		if (maxScore > NOT_SURE) {
-			return type;
+			if (count == 1)
+				return type;
+			// >= 2;
+			else return getResultFromSearch(candidates, program);
 		}
 
 		System.out.println("STEP 3");
+		return getResultFromSearch(types, program);
+	}
+	
+	private static ProgramType getResultFromSearch(final List<TypeRecognizer> candidates, String program) {
 		// step 3 : ba.fi
 		try {
 			String doc1 = TypeMapperUtil.getGoogleSearch(program, true);
@@ -102,11 +125,11 @@ public class TypeMapper {
 			TypeRecognizer result = null;
 			Double max = 0.0;
 
-			for (TypeRecognizer tp : types) {
+			for (TypeRecognizer tp : candidates) {
 				int a1 = TypeMapperUtil.getTotalWord(doc1, tp);
 				int a2 = TypeMapperUtil.getTotalWord(doc2, tp);
 
-				Double score = WITH_QUOTE_RATIO * a1 + a2;
+				Double score = WITH_QUOTE_RATIO * a1 + (1 - WITH_QUOTE_RATIO) * a2;
 				System.out.println(tp.getType() + " " + a1 + " " + a2
 						+ " score = " + score);
 
@@ -118,11 +141,11 @@ public class TypeMapper {
 
 			if (max > RANGE)
 				return result.getType();
+			else return ProgramType.ALL;
 		} catch (Exception ex) {
 			System.out.println("ERRO " + ex.getMessage());
-		}
-
-		return ProgramType.ALL;
+			return ProgramType.ALL;
+		} 
 	}
 
 	public Set<String> getContent(ProgramType type) {
@@ -140,26 +163,21 @@ public class TypeMapper {
 	}
 
 	private static ProgramType getType(String type) {
-		// TODO Auto-generated method stub
 		switch (type) {
-		case "SPORT":
-			return ProgramType.SPORT;
-		case "CARTOON":
-			return ProgramType.CARTOON;
-		case "DOC_FILM":
-			return ProgramType.DOC_FILM;
-		case "FASHION":
-			return ProgramType.FASHION;
-		case "GAME_SHOW":
-			return ProgramType.GAME_SHOW;
-		case "NEW":
-			return ProgramType.NEW;
-		case "MULTI_MEDIA":
-			return ProgramType.MULTI_MEDIA;
-		case "FILM":
-			return ProgramType.FILM;
-		default:
-			return ProgramType.ALL;
+			case "SPORT":
+				return ProgramType.SPORT;
+			case "CARTOON":
+				return ProgramType.CARTOON;
+			case "GAME_SHOW":
+				return ProgramType.GAME_SHOW;
+			case "NEWS":
+				return ProgramType.NEWS;
+			case "FILM":
+				return ProgramType.FILM;
+			case "MUSIC":
+				return ProgramType.MUSIC;
+			default:
+				return ProgramType.ALL;
 		}
 	}
 

@@ -14,15 +14,15 @@ public class TypeRecognizer {
 	private Set<String> typeKeywords; // highly confident keyword
 	private Set<String> relatedKeywords; // related keyword for searching
 	
-	private final static Double PERFECT = 1.0;
-	private final static Double CONFIDENT = 0.8;
-	private final static Double QUITE_CONFIDENT = 0.6;
-	private final static Double CLUELESS = 0.0;
+	protected final static Double PERFECT = 1.0;
+	protected final static Double CONFIDENT = 0.8;
+	protected final static Double QUITE_CONFIDENT = 0.6;
+	protected final static Double CLUELESS = 0.0;
 	
 	public void loadConfig(String[] chns, String[] kws, String[] rks) {
-		dedicatedChannels = new TreeSet<String>();
-		typeKeywords = new TreeSet<String>();
-		relatedKeywords = new TreeSet<String>();
+		dedicatedChannels = new HashSet<String>();
+		typeKeywords = new HashSet<String>();
+		relatedKeywords = new HashSet<String>();
 				
 		for (String chn: chns) {
 			dedicatedChannels.add(TypeMapperUtil.normalize(chn));
@@ -109,6 +109,12 @@ public class TypeRecognizer {
 			}
 		}
 		
+		Double result = customRecognizer(nCh, nProg);
+		if (result > CLUELESS) return result;
+		return CLUELESS;
+	}
+	
+	protected Double customRecognizer(String channel, String prog) {
 		return CLUELESS;
 	}
 	

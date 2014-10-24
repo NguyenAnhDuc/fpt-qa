@@ -8,7 +8,7 @@ public class GameShowTypeRecognizer extends TypeRecognizer {
 		String[] typeKeywords = new String[] { "gameshow" };
 		String[] relatedKeyword = new String[] { "gameshow", "game show",
 				"series", "mùa thứ", "tập", "episode", "người chơi", "câu hỏi",
-				"question", "format", "cuộc thi", "tổ chức", "phiên bản tiếng việt", "lượt chơi" };
+				"question", "format", "cuộc thi", "tổ chức", "phiên bản tiếng việt", "lượt chơi", "youtube", "mc","event", "ticket"};
 
 		super.loadConfig(dedicatedChannels, typeKeywords, relatedKeyword);
 	}
