@@ -4,7 +4,7 @@ public class NewsTypeRecognizer extends TypeRecognizer {
 	public NewsTypeRecognizer() {
 		SetType(ProgramType.NEWS);
 
-		String[] dedicatedChannels = new String[] { "CNN" };
+		String[] dedicatedChannels = new String[] { "cnn" };
 		String[] typeKeywords = new String[] { "tintuc", "bantin", "thoisu",
 				"news" };
 		String[] relatedKeyword = new String[] { "tin tức", "bản tin",

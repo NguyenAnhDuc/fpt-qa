@@ -20,7 +20,7 @@ public class TypeMapperTest {
 	@BeforeClass
 	public static void loadData() {
 		String[] lines = UTF8FileUtility
-				.getLines("/home/someone/Workspace/code/rubyweb/src/test/resources/type_mapper/program.txt");
+				.getLines("src/test/resources/type_mapper/program.txt");
 		for (String line : lines) {
 			try {
 				String[] part = line.split(";");
@@ -33,7 +33,7 @@ public class TypeMapperTest {
 		}
 	}
 
-	@Test
+//	@Test
 	public void massiveTest() {
 		int totalTest = 0;
 		int pass = 0;
@@ -57,10 +57,20 @@ public class TypeMapperTest {
 			}
 
 		}
-		System.out.println("\n **** \n " + pass + "\\" + totalTest
+		System.out.println("\n ********** \n " + pass + "/" + totalTest
 				+ ".\n Percent : " + (pass * 100 / totalTest) + "%");
 	}
 
+	@Test
+	public void singleTest02() {
+		TypeMapper tm = new TypeMapper();
+		ProgramType type = tm.getType("vtv1", "SMAC challenge 2014");
+		System.out.println(type);
+
+		assertTrue(ProgramType.GAME_SHOW == type);
+	}
+	 
+	
 	// @Test
 	public void testCustomRecognizer1() {
 		TypeMapper tm = new TypeMapper();
