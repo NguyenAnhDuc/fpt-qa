@@ -292,7 +292,7 @@ public class TypeMapper {
 		}
 	}
 
-	private static ProgramType getType(String type) {
+	public static ProgramType getType(String type) {
 		switch (type) {
 		case "SPORT":
 			return ProgramType.SPORT;
