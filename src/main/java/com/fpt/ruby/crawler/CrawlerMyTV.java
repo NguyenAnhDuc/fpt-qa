@@ -27,6 +27,8 @@ import com.fpt.ruby.model.Channel;
 import com.fpt.ruby.model.TVProgram;
 import com.fpt.ruby.service.TVProgramService;
 
+import fpt.qa.type_mapper.TypeMapper;
+
 @Component
 public class CrawlerMyTV {
 	List<String> crawlChannels = Collections.unmodifiableList(Arrays
@@ -104,7 +106,8 @@ public class CrawlerMyTV {
 				try {
 					System.out.println("Crawling from " + channel.getName());
 					for (int i = 0; i <= FUTUREDAY_CRAWL; i++) {
-						String date = df.format(new Date(today.getTime() + ONE_DAY * i));
+						String date = df.format(new Date(today.getTime()
+								+ ONE_DAY * i));
 						List<TVProgram> tvPrograms = crawlChannel(channel, date);
 
 						tvPrograms = calculateEndTime(tvPrograms);
@@ -132,49 +135,59 @@ public class CrawlerMyTV {
 		return results;
 	}
 
-	public List<TVProgram> crawlChannel(Channel channel, String date)
-			throws Exception {
+	public List<TVProgram> crawlChannel(Channel channel, String date) {
 		List<TVProgram> tvPrograms = new ArrayList<TVProgram>();
 		String url = "http://www.mytv.com.vn/module/ajax/ajax_get_schedule.php?channelId="
 				+ channel.getId() + "&dateSchedule=" + date;
 		System.out.println(url);
-		Document doc = Jsoup.parse(sendGet(url));
-		Elements elements = doc.select("p");
-		for (Element element : elements) {
-			String tmp = element.text().replace("<\\/strong>", "")
-					.replace("<\\/p>", "");
-			String time = tmp.substring(0, 5);
-			String programName = tmp.substring(5, tmp.length());
-			// System.out.println("Time: " + time + " | " + "Program Name: " +
-			// StringEscapeUtils.unescapeJava(programName));
+		Document doc;
+		try {
+			doc = Jsoup.parse(sendGet(url));
+			Elements elements = doc.select("p");
+			TypeMapper tm = new TypeMapper();
 
-			DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
-			Date channelDate = formatter.parse(date);
+			for (Element element : elements) {
+				String tmp = element.text().replace("<\\/strong>", "")
+						.replace("<\\/p>", "");
+				String time = tmp.substring(0, 5);
+				String programName = tmp.substring(5, tmp.length());
+				// System.out.println("Time: " + time + " | " + "Program Name: "
+				// +
+				// StringEscapeUtils.unescapeJava(programName));
 
-			String[] times = time.split(":");
-			channelDate.setHours(Integer.parseInt(times[0]));
-			channelDate.setMinutes(Integer.parseInt(times[1]));
+				DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+				Date channelDate = formatter.parse(date);
 
-			TVProgram tvProgram = new TVProgram();
-			tvProgram.setChannel(channel.getName());
-			tvProgram.setTitle(StringEscapeUtils.unescapeJava(programName));
-			tvProgram.setStart_date(channelDate);
+				String[] times = time.split(":");
+				channelDate.setHours(Integer.parseInt(times[0]));
+				channelDate.setMinutes(Integer.parseInt(times[1]));
 
-			if (channel.getName().toLowerCase().equals("hbo")
-					|| channel.getName().toLowerCase().equals("star movies")
-					|| channel.getName().toLowerCase().equals("max")
-					|| channel.getName().toLowerCase().equals("vtvcab2"))
-				tvProgram.setType("phim");
+				TVProgram tvProgram = new TVProgram();
+				tvProgram.setChannel(channel.getName());
+				tvProgram.setTitle(StringEscapeUtils.unescapeJava(programName));
+				tvProgram.setStart_date(channelDate);
 
-			if (channel.getName().toLowerCase().equals("disney")
-					|| channel.getName().toLowerCase().equals("cartoon"))
-				tvProgram.setType("phim hoạt hình");
-
-			if (channel.getName().toLowerCase().equals("discovery"))
-				tvProgram.setType("khám phá");
-
-			tvPrograms.add(tvProgram);
+				tvProgram.setTypes(tm.getTypes(channel.getName(),
+						tvProgram.getTitle()));
+				tvPrograms.add(tvProgram);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
+
+		// if (channel.getName().toLowerCase().equals("hbo")
+		// || channel.getName().toLowerCase().equals("star movies")
+		// || channel.getName().toLowerCase().equals("max")
+		// || channel.getName().toLowerCase().equals("vtvcab2"))
+		// tvProgram.setType("phim");
+		//
+		// if (channel.getName().toLowerCase().equals("disney")
+		// || channel.getName().toLowerCase().equals("cartoon"))
+		// tvProgram.setType("phim hoạt hình");
+		//
+		// if (channel.getName().toLowerCase().equals("discovery"))
+		// tvProgram.setType("khám phá");
+
 		return tvPrograms;
 	}
 

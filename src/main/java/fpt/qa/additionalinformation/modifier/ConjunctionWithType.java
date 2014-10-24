@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import fpt.qa.additionalinformation.name_mapper.NameMapper;
 import fpt.qa.additionalinformation.name_mapper.NameMapperEngine;
 import fpt.qa.mdnlib.nlp.vn.vntokenizer.VnTokenizer;
 import fpt.qa.mdnlib.struct.conjunction.ConjunctionChecker;
@@ -22,7 +23,7 @@ public class ConjunctionWithType extends ConjunctionChecker{
 	private Map< String, HashSet< String > > conjunctionType;
 	private NameMapperEngine nameMapperEngine;
 	private SurroundingWords surroundingWords;
-
+	
 	public ConjunctionWithType( String resourcePath ) {
 		conjunctionType = new HashMap< String, HashSet< String > >();
 
@@ -30,7 +31,7 @@ public class ConjunctionWithType extends ConjunctionChecker{
 		nameMapperEngine.loadDomainMapper( "movie", "movieNames.txt" );
 		nameMapperEngine.loadDomainMapper( "food", "foodNames.txt" );
 		nameMapperEngine.loadDomainMapper( "tv", "tv_domain.txt" );
-
+		nameMapperEngine.loadDomainMapper( "type", "Type.txt" );
 		surroundingWords = new SurroundingWords( resourcePath );
 
 		loadConjunctionFromNameMapper( nameMapperEngine );
@@ -100,7 +101,7 @@ public class ConjunctionWithType extends ConjunctionChecker{
 		Set< String > originSets = new HashSet< String >();
 
 		List< String > rawConj = getRelevantConjunctions( VnTokenizer.tokenize( text ), true );
-		System.err.println( "[ConjWithType] [RawConj] " + rawConj );
+		//System.err.println( "[ConjWithType] [RawConj] " + rawConj );
 
 		List< Pair< String, String > > rawConjWithType = new ArrayList< Pair< String, String > >();
 		for( String conj : rawConj ){
@@ -119,7 +120,7 @@ public class ConjunctionWithType extends ConjunctionChecker{
 			}
 		}
 
-		System.err.println( "[ConjWithType] [Final Conj] " + relConjunctions );
+		//System.err.println( "[ConjWithType] [Final Conj] " + relConjunctions );
 
 		return relConjunctions;
 	}
@@ -130,7 +131,7 @@ public class ConjunctionWithType extends ConjunctionChecker{
 		Set< String > originSets = new HashSet< String >();
 
 		List< String > rawConj = getRelevantConjunctions( VnTokenizer.tokenize( text ), true );
-		System.err.println( "[ConjWithType] [RawConj] " + rawConj );
+		//System.err.println( "[ConjWithType] [RawConj] " + rawConj );
 
 		List< Pair< String, String > > rawConjWithType = new ArrayList< Pair< String, String > >();
 		for( String conj : rawConj ){
@@ -149,7 +150,7 @@ public class ConjunctionWithType extends ConjunctionChecker{
 			}
 		}
 
-		System.err.println( "[ConjWithType] [Final Conj] " + relConjunctions );
+		//System.err.println( "[ConjWithType] [Final Conj] " + relConjunctions );
 
 		return relConjunctions;
 	}
@@ -195,7 +196,7 @@ public class ConjunctionWithType extends ConjunctionChecker{
 			}
 		}
 
-		System.err.println( "[ConjWithType] [Longer Conj] " + newList );
+		//System.err.println( "[ConjWithType] [Longer Conj] " + newList );
 		return newList;
 	}
 
@@ -225,7 +226,7 @@ public class ConjunctionWithType extends ConjunctionChecker{
 			}
 		}
 
-		System.err.println( "[ConjWithType] [Better Surr Conj] " + newList );
+		//System.err.println( "[ConjWithType] [Better Surr Conj] " + newList );
 
 		return newList;
 	}
@@ -245,6 +246,10 @@ public class ConjunctionWithType extends ConjunctionChecker{
 		lhsSet.removeAll( Arrays.asList( new String[] { "" } ) );
 		lhsSet.retainAll( rhsSet );
 		return lhsSet.size() > 0;
+	}
+	
+	public NameMapperEngine getNameMapper() {
+		return nameMapperEngine;
 	}
 
 	public static void main( String[] args ) {
