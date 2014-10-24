@@ -8,7 +8,7 @@ public class SportTypeRecognizer extends TypeRecognizer {
 
 		String[] dedicatedChannels = new String[] { "fox sports" };
 		String[] typeKeywords = new String[] { "sport", "bongda", "football",
-				"bongchuyen", "soccer", "thethao", "league", "worldcup", "seagame", "asiad", "laliga", "hangnhat", "cupquocgia"};
+				"bongchuyen", "soccer", "thethao", "league", "worldcup", "seagame", "asiad", "laliga", "hangnhat", "cupquocgia", "duaxe", "caulong"};
 		String[] relatedKeyword = new String[] { "sport", "bóng đá", "ngoại hạng",
 				"football", "bóng chuyền", "soccer", "match", "league", "asiad",
 				"racing", "trận đấu", "tấn công", "gặp nhau", "bàn thắng",

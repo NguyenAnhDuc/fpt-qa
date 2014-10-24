@@ -13,6 +13,7 @@ import java.util.*;
 import vn.hus.nlp.utils.UTF8FileUtility;
 import fpt.qa.type_mapper.ProgramType;
 import fpt.qa.type_mapper.TypeMapper;
+import fpt.qa.type_mapper.TypeWithConfidentLevel;
 
 public class TypeMapperTest {
 	static List<Tuple> ts = new ArrayList<Tuple>();
@@ -33,7 +34,7 @@ public class TypeMapperTest {
 		}
 	}
 
-//	@Test
+	@Test
 	public void massiveTest() {
 		int totalTest = 0;
 		int pass = 0;
@@ -44,7 +45,8 @@ public class TypeMapperTest {
 			if (t.getExpectedType().equals(ProgramType.ALL))
 				continue;
 			totalTest++;
-			ProgramType type = tm.getType(t.getChannel(), t.getProgram());
+			if (i >= 222) break;
+			ProgramType type = tm.getTypes(t.getChannel(), t.getProgram()).get(0).getType();
 			System.out.println("-------------\nCase " + (++i) + ": "
 					+ t.toString());
 			System.out.println("Result = " + type.toString());
@@ -61,41 +63,45 @@ public class TypeMapperTest {
 				+ ".\n Percent : " + (pass * 100 / totalTest) + "%");
 	}
 
-	@Test
+//	@Test
 	public void singleTest02() {
 		TypeMapper tm = new TypeMapper();
-		ProgramType type = tm.getType("vtv1", "SMAC challenge 2014");
-		System.out.println(type);
+		List<TypeWithConfidentLevel> types = tm.getTypes("vtv1", "ĐƯỜNG TỚI THẾ VẬN HỘO");
+		System.out.println("RESULT : ");
+		for (TypeWithConfidentLevel t: types) {
+			System.out.println(t.toString());
+		}
+//		System.out.println(type);
 
-		assertTrue(ProgramType.GAME_SHOW == type);
+//		assertTrue(ProgramType.FILM == type);
 	}
-	 
-	
-	// @Test
-	public void testCustomRecognizer1() {
-		TypeMapper tm = new TypeMapper();
-		ProgramType type = tm.getType("vtv3", "doi gio hu t20");
-		System.out.println(type);
-
-		assertTrue(ProgramType.FILM == type);
-	}
-
-	// @Test
-	public void singtest01() {
-		TypeMapper tm = new TypeMapper();
-		ProgramType type = tm.getType("vtv3", "phim hoat hinh");
-		System.out.println(type);
-
-		assertTrue(ProgramType.CARTOON == type);
-	}
-
-	// @Test
-	public void testIndividual() {
-		TypeMapper tm = new TypeMapper();
-		ProgramType type = tm.getType("vtv3", "master chef");
-		System.out.println(type);
-
-		assertTrue(ProgramType.GAME_SHOW == type);
-	}
+//	 
+//	
+//	// @Test
+//	public void testCustomRecognizer1() {
+//		TypeMapper tm = new TypeMapper();
+//		ProgramType type = tm.getType("vtv3", "doi gio hu t20");
+//		System.out.println(type);
+//
+//		assertTrue(ProgramType.FILM == type);
+//	}
+//
+//	// @Test
+//	public void singtest01() {
+//		TypeMapper tm = new TypeMapper();
+//		ProgramType type = tm.getType("vtv3", "phim hoat hinh");
+//		System.out.println(type);
+//
+//		assertTrue(ProgramType.CARTOON == type);
+//	}
+//
+//	// @Test
+//	public void testIndividual() {
+//		TypeMapper tm = new TypeMapper();
+//		ProgramType type = tm.getType("vtv3", "master chef");
+//		System.out.println(type);
+//
+//		assertTrue(ProgramType.GAME_SHOW == type);
+//	}
 
 }

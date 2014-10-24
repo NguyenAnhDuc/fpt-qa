@@ -19,6 +19,6 @@ public class SpringMongoConfig extends AbstractMongoConfiguration {
 	@Bean
 	public Mongo mongo() throws Exception {
 		return new MongoClient("10.3.9.236");
-		//return new MongoClient("localhost");
+//		return new MongoClient("localhost");
 	}
 }

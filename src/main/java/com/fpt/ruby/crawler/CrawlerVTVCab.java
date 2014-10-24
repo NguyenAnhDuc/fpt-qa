@@ -22,12 +22,13 @@ import org.jsoup.nodes.*;
 import org.jsoup.select.Elements;
 import org.springframework.stereotype.Component;
 
-
 import com.fpt.ruby.conjunction.ConjunctionHelper;
 import com.fpt.ruby.helper.RedisHelper;
 import com.fpt.ruby.model.Channel;
 import com.fpt.ruby.model.TVProgram;
 import com.fpt.ruby.service.TVProgramService;
+
+import fpt.qa.type_mapper.TypeMapper;
 
 @Component
 public class CrawlerVTVCab {
@@ -130,6 +131,7 @@ public class CrawlerVTVCab {
 	public List<TVProgram> getPrograms(Channel channel, Date date)
 			throws Exception {
 		List<TVProgram> progs = new ArrayList<TVProgram>();
+		TypeMapper tm = new TypeMapper();
 		String url = makeUrl(channel, date);
 		System.out.println(url);
 		Document doc = Jsoup.parse(getResponse(url, "get"));
@@ -159,7 +161,7 @@ public class CrawlerVTVCab {
 			prog.setTitle(StringEscapeUtils.unescapeJava(info.get(1).text()));
 			prog.setStart_date(broadcastDate);
 			
-			prog.setType("tinh sau");
+			prog.setTypes(tm.getTypes(prog.getChannel(), prog.getTitle()));
 			progs.add(prog);
 			System.out.println(prog.toString());
 		}

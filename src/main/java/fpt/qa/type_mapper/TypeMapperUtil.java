@@ -20,6 +20,10 @@ import org.jsoup.select.Elements;
 import com.fasterxml.jackson.databind.deser.DataFormatReaders.Match;
 
 public class TypeMapperUtil {
+	private static int query = 0;
+	private static long delay = 60 * 1000;
+	private static int maxQuery = 100;
+	
 	private static String[] co_dau = new String[] { "à", "á", "ạ", "ả", "ã",
 			"â", "ầ", "ấ", "ậ", "ẩ", "ẫ", "ă", "ằ", "ắ", "ặ", "ẳ", "ẵ", "è",
 			"é", "ẹ", "ẻ", "ẽ", "ê", "ề", "ế", "ệ", "ể", "ễ", "ì", "í", "ị",
@@ -55,7 +59,11 @@ public class TypeMapperUtil {
 		}
 		return name;
 	}
-
+	
+	public static void resetCount() {
+		query = 0;
+	}
+	
 	private static String sendGet(String url) throws ClientProtocolException,
 			IOException {
 		HttpClient client = HttpClientBuilder.create().build();
@@ -82,6 +90,17 @@ public class TypeMapperUtil {
 
 	public static String getGoogleSearch(String keyword, Boolean inQuoted)
 			throws IOException {
+		query = (query + 1) % maxQuery;
+		if (query % maxQuery == 0) {
+			// Wait
+			try {
+				System.out.println("WAITING " + delay + " ms");
+			    Thread.sleep(delay);
+			} catch(InterruptedException ex) {
+			    Thread.currentThread().interrupt();
+			}
+		}
+		
 //		keyword = keyword.substring(0, 20);
 		String query = keyword.replaceAll("\\s", "\\+");
 		if (inQuoted)
@@ -89,6 +108,7 @@ public class TypeMapperUtil {
 		String url = String
 				.format("http://www.google.com/search?client=ubuntu&channel=fs&q=%s&ie=utf-8&oe=utf-8",
 						query);
+//		String url = String.format("http://www.bing.com/search?q=%s&pc=MOZI&form=MOZSBR", query);
 		System.out.println(url);
 		
 		String response = sendGet(url).toLowerCase();

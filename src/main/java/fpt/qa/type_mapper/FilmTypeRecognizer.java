@@ -19,7 +19,7 @@ public class FilmTypeRecognizer extends TypeRecognizer {
 	}
 	
 	protected Double customRecognizer(String channel, String prog) {
-		String[] regexes = new String[] {"tap\\d", "\\dt", "t\\d"};
+		String[] regexes = new String[] {"tap\\d", "\\dt", "t\\d", "s\\d", "ep\\d"};
 		for (String reg: regexes) {
 			Pattern pat = Pattern.compile(reg);
 			if (pat.matcher(prog).find()) return QUITE_CONFIDENT;
