@@ -1,4 +1,4 @@
-package fpt.qa.type_mapperTest;
+/*package fpt.qa.type_mapperTest;
 
 import static org.junit.Assert.*;
 
@@ -105,3 +105,4 @@ public class TypeMapperTest {
 //	}
 
 }
+*/
